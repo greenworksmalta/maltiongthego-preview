@@ -1,5 +1,5 @@
-build 20260601u
+build 20260601v
 VERSION 1.0.0-beta.26
-CACHE maltiongthego-1.0.0-beta.26-20260601u
+CACHE maltiongthego-1.0.0-beta.26-20260601v
 date 2026-06-01
-notes: nav layout (Next section in topbar; Previous/Next then Skip); szmc full-phrase audio.
+notes: adjmatch plays only the opposite (no overlap).

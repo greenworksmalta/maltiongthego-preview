@@ -20,7 +20,7 @@ const VERSION = "1.0.0-beta.26";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "20260601u";
+const BUILD = "20260601v";
 function v(url){ return url + (url.includes("?")?"&":"?") + "v=" + VERSION; }
 
 // Lightweight UI strings table for the parts of the app that aren't data-driven.
@@ -2971,11 +2971,10 @@ function makeMatchStep(itemsField, leftField, rightField, headline, getXp){
       const ok = items.some(i => i[leftField]===l && i[rightField]===r);
       if(ok){
         selL.classList.add("right"); selR.classList.add("right");
-        // Voice the left (Maltese). When the RIGHT side is also Maltese (e.g. an
-        // opposite, rightField != "en"), voice it too so the learner hears the
-        // word they matched, not just the original.
-        play(l);
-        if(rightField !== "en" && r) setTimeout(()=>play(r), 750);
+        // Voice ONE side (no overlap): for opposite/synonym matches (rightField
+        // != "en") play the OPPOSITE the learner just matched; for Maltese↔English
+        // matches play the Maltese (left).
+        play(rightField !== "en" && r ? r : l);
         matched++; selL=null; selR=null;
         if(matched===items.length){
           addXp(getXp ? getXp(items) : 15);
