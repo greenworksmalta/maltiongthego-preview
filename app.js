@@ -20,7 +20,7 @@ const VERSION = "1.0.0-beta.26";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "20260601r";
+const BUILD = "20260601s";
 function v(url){ return url + (url.includes("?")?"&":"?") + "v=" + VERSION; }
 
 // Lightweight UI strings table for the parts of the app that aren't data-driven.
@@ -1928,7 +1928,7 @@ function wireDataExercise(sec, ex){
       break;
     case "bucket": {
       const batch = ex.batch || 6;
-      STEP_RENDERERS[fid] = makeBucketSortStep(ex.id, {batch});
+      STEP_RENDERERS[fid] = makeBucketSortStep(ex.id, {batch, ...(ex.opts||{})});
       STEP_COUNTS[fid] = s => Math.ceil(itemsOf(s).length / batch) || 1;
       break;
     }
@@ -2658,6 +2658,9 @@ function makeBucketSortStep(exId, opts){
       // bare word instead of a nonsense concatenation.
       const fullForm = (it.answer && /-$/.test(it.answer)) ? it.answer+it.word : it.word;
       chip.dataset.answer = it.answer; chip.dataset.word = it.word; chip.dataset.full = fullForm;
+      // revealFem: a colour that CHANGES carries its feminine form (it.fem). On a
+      // correct drop we voice the feminine and show "aħmar → ħamra".
+      if(opts.revealFem && it.fem){ chip.dataset.say = it.fem; chip.dataset.reveal = it.word + " → " + it.fem; }
       chip.addEventListener("click", ()=>{ if(!chip.classList.contains("done")) select(chip); });
       pool.appendChild(chip);
     });
@@ -2668,8 +2671,8 @@ function makeBucketSortStep(exId, opts){
         const correct = selected.dataset.answer === b;
         if(correct){
           selected.classList.add("done","right"); selected.classList.remove("sel");
-          play(selected.dataset.full);   // now reveal the full article+word audio
-          const moved = el("span","tile mini", selected.textContent);
+          play(selected.dataset.say || selected.dataset.full);   // reveal full/feminine audio
+          const moved = el("span","tile mini", selected.dataset.reveal || selected.textContent);
           bucketEls[b].appendChild(moved);
           selected.disabled=true; selected=null; placed++; addXp(3);
           if(placed===batch.length){ showFeedback(true,"Sewwa!","All sorted.", onNext); }
@@ -2972,7 +2975,12 @@ function makeMatchStep(itemsField, leftField, rightField, headline, getXp){
       const l = selL.dataset.l, r = selR.dataset.r;
       const ok = items.some(i => i[leftField]===l && i[rightField]===r);
       if(ok){
-        selL.classList.add("right"); selR.classList.add("right"); play(l);
+        selL.classList.add("right"); selR.classList.add("right");
+        // Voice the left (Maltese). When the RIGHT side is also Maltese (e.g. an
+        // opposite, rightField != "en"), voice it too so the learner hears the
+        // word they matched, not just the original.
+        play(l);
+        if(rightField !== "en" && r) setTimeout(()=>play(r), 750);
         matched++; selL=null; selR=null;
         if(matched===items.length){
           addXp(getXp ? getXp(items) : 15);

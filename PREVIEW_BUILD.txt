@@ -1,5 +1,5 @@
-build 20260601r
+build 20260601s
 VERSION 1.0.0-beta.26
-CACHE maltiongthego-1.0.0-beta.26-20260601r
+CACHE maltiongthego-1.0.0-beta.26-20260601s
 date 2026-06-01
-notes: U4 qmis (oranġjo kept, Ġabra-correct) + colour MC plays full phrase (ktieb aħmar).
+notes: U4 colour sort+reveal-feminine merge; adjmatch voices the opposite too.

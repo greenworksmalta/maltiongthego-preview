@@ -292,25 +292,19 @@
         }
       ],
       "exercises": [
-        { "id": "colmc", "type": "mc", "title": "Match the colour to the noun", "instructions": "Pick the form of red that matches the noun.", "opts": { "blankAfter": true, "audioAnswer": true }, "choices": ["aħmar", "ħamra", "ħomor"], "items": [
-          { "word": "ktieb", "en": "book (m)", "answer": "aħmar", "mt": "ktieb aħmar" },
-          { "word": "tazza", "en": "glass (f)", "answer": "ħamra", "mt": "tazza ħamra" },
-          { "word": "qmis", "en": "shirt (f)", "answer": "ħamra", "mt": "qmis ħamra" },
-          { "word": "fjuri", "en": "flowers (pl)", "answer": "ħomor", "mt": "fjuri ħomor" }
-        ] },
-        { "id": "colbucket", "type": "bucket", "batch": 6, "title": "Does the colour change form?", "instructions": "Sort each colour: does it change for gender and number, or stay the same?", "choices": ["Changes", "Never changes"], "items": [
-          { "word": "aħmar", "answer": "Changes" },
-          { "word": "abjad", "answer": "Changes" },
-          { "word": "iswed", "answer": "Changes" },
-          { "word": "isfar", "answer": "Changes" },
-          { "word": "aħdar", "answer": "Changes" },
-          { "word": "griż", "answer": "Changes" },
-          { "word": "blu", "answer": "Never changes" },
-          { "word": "roża", "answer": "Never changes" },
-          { "word": "vjola", "answer": "Never changes" },
-          { "word": "kannella", "answer": "Never changes" },
-          { "word": "oranġjo", "answer": "Never changes" },
-          { "word": "ċelesti", "answer": "Never changes" }
+        { "id": "colsort", "type": "bucket", "batch": 6, "opts": { "revealFem": true }, "title": "Does the colour change form?", "instructions": "Sort each colour: does it change for gender and number, or stay the same? Get a changing one right and you'll hear its feminine form.", "choices": ["Changes form", "Stays the same"], "items": [
+          { "word": "aħmar", "answer": "Changes form", "fem": "ħamra" },
+          { "word": "blu", "answer": "Stays the same" },
+          { "word": "iswed", "answer": "Changes form", "fem": "sewda" },
+          { "word": "roża", "answer": "Stays the same" },
+          { "word": "isfar", "answer": "Changes form", "fem": "safra" },
+          { "word": "vjola", "answer": "Stays the same" },
+          { "word": "aħdar", "answer": "Changes form", "fem": "ħadra" },
+          { "word": "kannella", "answer": "Stays the same" },
+          { "word": "griż", "answer": "Changes form", "fem": "griża" },
+          { "word": "oranġjo", "answer": "Stays the same" },
+          { "word": "abjad", "answer": "Changes form", "fem": "bajda" },
+          { "word": "ċelesti", "answer": "Stays the same" }
         ] }
       ]
     },
