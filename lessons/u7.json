@@ -7,7 +7,7 @@
       "id": "lost",
       "icon": "🧭",
       "title": "Finding your way",
-      "subtitle": "Mitluf? — asking for directions",
+      "subtitle": "Mitluf?: asking for directions",
       "intro": "Asking a passer-by how to get somewhere.",
       "dialogue": [
         {
@@ -36,7 +36,7 @@
       "id": "questions",
       "icon": "❓",
       "title": "Wh-questions",
-      "subtitle": "Mistoqsijiet — asking who, what, when, where, why",
+      "subtitle": "Mistoqsijiet: asking who, what, when, where, why",
       "items": [
         {
           "mt": "Min?",
@@ -145,7 +145,7 @@
       "id": "directions",
       "icon": "🧭",
       "title": "Directions",
-      "subtitle": "Direzzjonijiet — left, right, straight ahead",
+      "subtitle": "Direzzjonijiet: left, right, straight ahead",
       "intro": "To ask for directions, start with: 'Skużani. Tista' tgħidli fejn hi ___, jekk jogħġbok?' Then thank them with 'Grazzi.'",
       "vocab": [
         {
@@ -228,7 +228,7 @@
       "dialogue": [
         {
           "mt": "Skużani — fejn hi l-ispiżerija l-aktar viċin?",
-          "en": "Excuse me — where's the nearest pharmacy?"
+          "en": "Excuse me, where's the nearest pharmacy?"
         },
         {
           "mt": "Bonġu. Imxi sal-pjazza, dur fuq ix-xellug.",
@@ -286,7 +286,7 @@
       "id": "grammar7",
       "icon": "📖",
       "title": "Grammar",
-      "subtitle": "Il-grammatika — asking and finding your way",
+      "subtitle": "Il-grammatika: asking and finding your way",
       "intro": "The question words, and the polite way to ask for directions.",
       "rules": [
         {
@@ -371,7 +371,7 @@
       "id": "vocabulary",
       "icon": "📚",
       "title": "Vocabulary",
-      "subtitle": "Il-vokabularju — every word in one place",
+      "subtitle": "Il-vokabularju: every word in one place",
       "intro": "Everything from this section, gathered to revise. Tap any word to hear it.",
       "groups": [
         {

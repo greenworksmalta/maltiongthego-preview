@@ -7,7 +7,7 @@
       "id": "describing",
       "icon": "🛍️",
       "title": "Choosing an item",
-      "subtitle": "Tagħżel xi ħaġa — at a clothes shop",
+      "subtitle": "Tagħżel xi ħaġa: at a clothes shop",
       "intro": "Picking what you want by colour and size.",
       "dialogue": [
         {
@@ -20,7 +20,7 @@
         },
         {
           "mt": "Le, grazzi — irrid waħda iżgħar.",
-          "en": "No, thanks — I want a smaller one."
+          "en": "No, thanks, I want a smaller one."
         },
         {
           "mt": "U din? Din żgħira u ħamra.",
@@ -47,8 +47,8 @@
       "id": "colours",
       "icon": "🎨",
       "title": "Colours",
-      "subtitle": "Il-kuluri — masculine, feminine, plural",
-      "intro": "Most Maltese colours have three forms — they change to match the gender and number of the noun they describe.",
+      "subtitle": "Il-kuluri: masculine, feminine, plural",
+      "intro": "Most Maltese colours have three forms, they change to match the gender and number of the noun they describe.",
       "items": [
         {
           "mt": "abjad",
@@ -318,8 +318,8 @@
       "id": "adjectives",
       "icon": "✨",
       "title": "Adjectives",
-      "subtitle": "L-aġġettivi — opposite pairs",
-      "intro": "Most Maltese adjectives have masculine, feminine and plural forms — same pattern as colours.",
+      "subtitle": "L-aġġettivi: opposite pairs",
+      "intro": "Most Maltese adjectives have masculine, feminine and plural forms, same pattern as colours.",
       "pairs": [
         {
           "a": {
@@ -491,8 +491,8 @@
       "id": "clothes",
       "icon": "👕",
       "title": "Clothes",
-      "subtitle": "Il-ħwejjeġ — what you wear",
-      "intro": "Everyday clothes — useful when shopping or describing someone.",
+      "subtitle": "Il-ħwejjeġ: what you wear",
+      "intro": "Everyday clothes, useful when shopping or describing someone.",
       "items": [
         {
           "mt": "qmis",
@@ -546,8 +546,8 @@
       "id": "sizes",
       "icon": "📏",
       "title": "Sizes & describing",
-      "subtitle": "Daqsijiet — big, small, and in between",
-      "intro": "Words for size — pair them with the colours and adjectives.",
+      "subtitle": "Daqsijiet: big, small, and in between",
+      "intro": "Words for size, pair them with the colours and adjectives.",
       "items": [
         {
           "mt": "kbir",
@@ -582,13 +582,13 @@
       "id": "grammar4",
       "icon": "📖",
       "title": "Grammar",
-      "subtitle": "Il-grammatika — making words match",
-      "intro": "In Maltese the words around a noun bend to fit it. Here's how colours and adjectives fall into line — and the gender behind it.",
+      "subtitle": "Il-grammatika: making words match",
+      "intro": "In Maltese the words around a noun bend to fit it. Here's how colours and adjectives fall into line, and the gender behind it.",
       "rules": [
         {
           "id": "noun-gender",
           "title": "Every noun is a he or a she",
-          "explanation": "Maltese has no 'neutral' — a table, a car, a book each counts as masculine or feminine, and that choice spreads to the words around it. Rough guide: -a tends feminine (mara, karozza); most other endings lean masculine (raġel, ktieb).",
+          "explanation": "Maltese has no 'neutral', a table, a car, a book each counts as masculine or feminine, and that choice spreads to the words around it. Rough guide: -a tends feminine (mara, karozza); most other endings lean masculine (raġel, ktieb).",
           "examples": [
             {
               "mt": "raġel",
@@ -658,7 +658,7 @@
         {
           "id": "colour-agreement",
           "title": "Colours match too",
-          "explanation": "Colours are just adjectives: kelb abjad / karozza bajda / ħitan bojod. A few borrowed from Italian (blu, roża, vjola, kannella) never change — easy wins.",
+          "explanation": "Colours are just adjectives: kelb abjad / karozza bajda / ħitan bojod. A few borrowed from Italian (blu, roża, vjola, kannella) never change, easy wins.",
           "letters": [
             "Abjad/Bajda/Bojod",
             "Iswed/Sewda/Suwed",
@@ -693,13 +693,13 @@
             },
             {
               "mt": "baħar blu",
-              "en": "the blue sea — blu doesn't change"
+              "en": "the blue sea, blu doesn't change"
             }
           ]
         }
       ],
       "exercises": [
-        { "id": "g4build", "type": "build", "max": 6, "title": "Build the phrase — noun first, then the matching describing word", "items": [
+        { "id": "g4build", "type": "build", "max": 6, "title": "Build the phrase: noun first, then the matching describing word", "items": [
           { "mt": "ktieb abjad", "en": "a white book (m)" },
           { "mt": "karozza bajda", "en": "a white car (f)" },
           { "mt": "ħitan bojod", "en": "white walls (pl)" },
@@ -713,7 +713,7 @@
       "id": "vocabulary",
       "icon": "📚",
       "title": "Vocabulary",
-      "subtitle": "Il-vokabularju — every word in one place",
+      "subtitle": "Il-vokabularju: every word in one place",
       "intro": "Everything from this section, gathered to revise. Tap any word to hear it.",
       "groups": [
         {

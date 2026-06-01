@@ -44,7 +44,7 @@
       "id": "pronouns",
       "icon": "👥",
       "title": "Pronouns",
-      "subtitle": "Pronomi Personali — I, you, he, she, we…",
+      "subtitle": "Pronomi Personali: I, you, he, she, we…",
       "intro": "Pronouns replace nouns. Most have a long form and a short form (e.g. Jien / Jiena both mean 'I'). Use whichever feels natural.",
       "items": [
         {
@@ -184,13 +184,13 @@
       "id": "demonstratives",
       "icon": "👉",
       "title": "Demonstratives",
-      "subtitle": "Pronomi Demonstrattivi — this, that, these, those",
+      "subtitle": "Pronomi Demonstrattivi: this, that, these, those",
       "intro": "Maltese demonstratives change with gender and number. Use 'dan/din/dawn' for things close to you, 'dak/dik/dawk' for things further away.",
       "rules": [
         {
           "id": "this",
           "title": "This / These (close)",
-          "explanation": "Things near you — within reach.",
+          "explanation": "Things near you, within reach.",
           "items": [
             {
               "mt": "Dan",
@@ -223,7 +223,7 @@
         {
           "id": "that",
           "title": "That / Those (further)",
-          "explanation": "Things over there — out of reach.",
+          "explanation": "Things over there, out of reach.",
           "items": [
             {
               "mt": "Dak",
@@ -257,7 +257,7 @@
       "exercises": [
         {
           "id": "ex2",
-          "title": "Exercise 2 — dan, din, dawn?",
+          "title": "Exercise 2: dan, din, dawn?",
           "instructions": "Pick the right form for each word (close to you).",
           "choices": [
             "dan",
@@ -339,7 +339,7 @@
         },
         {
           "id": "ex3",
-          "title": "Exercise 3 — dak, dik, dawk?",
+          "title": "Exercise 3: dak, dik, dawk?",
           "instructions": "Pick the right form for things further away.",
           "choices": [
             "dak",
@@ -420,7 +420,7 @@
       "id": "family",
       "icon": "👨‍👩‍👧",
       "title": "Family",
-      "subtitle": "Il-familja — the people closest to you",
+      "subtitle": "Il-familja: the people closest to you",
       "vocab": [
         {
           "mt": "Familja",
@@ -517,13 +517,23 @@
           "en": "Brother / Siblings"
         }
       ],
-      "intro": "Core family members to start with."
+      "intro": "Core family members to start with.",
+      "exercises": [
+        { "id": "fammatch", "type": "match", "title": "Match each family member to its meaning", "leftField": "mt", "rightField": "en", "items": [
+          { "mt": "Omm", "en": "Mother" },
+          { "mt": "Missier", "en": "Father" },
+          { "mt": "Ħu", "en": "Brother" },
+          { "mt": "Oħt", "en": "Sister" },
+          { "mt": "Nannu", "en": "Grandfather" },
+          { "mt": "Nanna", "en": "Grandmother" }
+        ] }
+      ]
     },
     {
       "id": "possessive",
       "icon": "🏷️",
       "title": "Possessive",
-      "subtitle": "Il-possessiv — using ta' and tiegħi/tiegħek/etc",
+      "subtitle": "Il-possessiv: using ta' and tiegħi/tiegħek/etc",
       "intro": "To say 'someone's something' in Maltese, use the small word ta' (of). 'Joanne's dog' becomes 'the dog of Joanne'.",
       "examples": [
         {
@@ -610,13 +620,22 @@
           "phrase": "il-kelb tagħhom",
           "en": "their dog"
         }
+      ],
+      "exercises": [
+        { "id": "posbuild", "type": "build", "max": 5, "title": "Build the possessive phrase", "items": [
+          { "mt": "il-kelb tiegħi", "en": "my dog" },
+          { "mt": "il-kelb tagħha", "en": "her dog" },
+          { "mt": "il-kelb tagħna", "en": "our dog" },
+          { "mt": "Il-kelb ta' Joanne", "en": "Joanne's dog" },
+          { "mt": "Id-dar ta' Karl", "en": "Karl's house" }
+        ] }
       ]
     },
     {
       "id": "attached",
       "icon": "➕",
       "title": "Attached pronouns",
-      "subtitle": "Il-pronomi mehmużin — suffixes",
+      "subtitle": "Il-pronomi mehmużin: suffixes",
       "intro": "Maltese has a powerful shortcut: the pronoun (my, your, his…) attaches to the noun as a suffix. So 'my house' is one word: dari.",
       "examples": [
         {
@@ -764,13 +783,13 @@
       "id": "grammar5",
       "icon": "📖",
       "title": "Grammar",
-      "subtitle": "Il-grammatika — people, pointing and belonging",
+      "subtitle": "Il-grammatika: people, pointing and belonging",
       "intro": "Pronouns stand in for names; demonstratives point; and two tools show who owns what.",
       "rules": [
         {
           "id": "ta-possessive",
           "title": "Possessive with ta' (of)",
-          "explanation": "The simplest way to show possession: noun + ta' + owner. Literally 'X of Y'. Use 'ta'' for any owner — names, family members, things.",
+          "explanation": "The simplest way to show possession: noun + ta' + owner. Literally 'X of Y'. Use 'ta'' for any owner, names, family members, things.",
           "examples": [
             {
               "mt": "Il-kelb ta' Joseph",
@@ -800,7 +819,7 @@
         },
         {
           "id": "possessive-pronouns",
-          "title": "Possessive pronouns — tiegħi, tiegħek, tiegħu…",
+          "title": "Possessive pronouns: tiegħi, tiegħek, tiegħu…",
           "explanation": "When the owner is a pronoun (my, your, his, her…), use one of these standalone words AFTER the noun. They agree with the OWNER, not the noun.",
           "letters": [
             "Tiegħi",
@@ -844,7 +863,7 @@
         },
         {
           "id": "attached-pronouns",
-          "title": "Attached pronouns — suffix straight onto the noun",
+          "title": "Attached pronouns: suffix straight onto the noun",
           "explanation": "Instead of 'dar tiegħi' (my house), Maltese often attaches a tiny suffix to the noun: dari. The suffixes are -i (my), -ek (your), -u (his), -ha (her), -na (our), -kom (your pl), -hom (their). The article drops away.",
           "letters": [
             "-i (my)",
@@ -889,7 +908,7 @@
         {
           "id": "family-plurals",
           "title": "Family member plurals are irregular",
-          "explanation": "Family-member plurals don't follow a single pattern — many take -ijiet or -iet, some are completely different. Memorise the pairs.",
+          "explanation": "Family-member plurals don't follow a single pattern, many take -ijiet or -iet, some are completely different. Memorise the pairs.",
           "examples": [
             {
               "mt": "omm → ommijiet",
@@ -927,7 +946,7 @@
       "id": "vocabulary",
       "icon": "📚",
       "title": "Vocabulary",
-      "subtitle": "Il-vokabularju — every word in one place",
+      "subtitle": "Il-vokabularju: every word in one place",
       "intro": "Everything from this section, gathered to revise. Tap any word to hear it.",
       "groups": [
         {

@@ -1,13 +1,13 @@
 {
   "id": "u6",
   "title": "Building Sentences & Doing",
-  "subtitle": "Verbs, having, and there is — putting words together",
+  "subtitle": "Verbs, having, and there is: putting words together",
   "sections": [
     {
       "id": "myday",
       "icon": "☀️",
       "title": "My day",
-      "subtitle": "Il-ġurnata tiegħi — a daily routine",
+      "subtitle": "Il-ġurnata tiegħi: a daily routine",
       "intro": "A short run through an ordinary day.",
       "dialogue": [
         {
@@ -40,7 +40,7 @@
       "id": "imperative",
       "icon": "📣",
       "title": "Imperative",
-      "subtitle": "L-Imperattiv — giving commands",
+      "subtitle": "L-Imperattiv: giving commands",
       "intro": "The imperative is what you use when you tell someone to do something. Two forms: singular (you alone) and plural (you all).",
       "facts": [
         "Singular form is for one person.",
@@ -117,8 +117,8 @@
       "exercises": [
         {
           "id": "ex8",
-          "title": "Exercise — singular or plural?",
-          "instructions": "Tap which form you're hearing — for one person, or for many?",
+          "title": "Exercise: singular or plural?",
+          "instructions": "Tap which form you're hearing, for one person, or for many?",
           "choices": [
             "singular",
             "plural"
@@ -173,19 +173,27 @@
               "answer": "plural"
             }
           ]
-        }
+        },
+        { "id": "impmatch", "type": "match", "title": "Match the command: one person to many", "leftField": "singular", "rightField": "plural", "items": [
+          { "singular": "Mur", "plural": "Morru" },
+          { "singular": "Iekol", "plural": "Ieklu" },
+          { "singular": "Ixrob", "plural": "Ixorbu" },
+          { "singular": "Aqra", "plural": "Aqraw" },
+          { "singular": "Imxi", "plural": "Imxu" },
+          { "singular": "Qum", "plural": "Qumu" }
+        ] }
       ]
     },
     {
       "id": "present",
       "icon": "🔁",
       "title": "Present tense",
-      "subtitle": "Il-Preżent — adding a prefix to the imperative",
+      "subtitle": "Il-Preżent: adding a prefix to the imperative",
       "intro": "Add a prefix to the imperative to form the present tense. If the imperative starts with a vowel: n / t / j / t. If it starts with a consonant: in / t / i / t.",
       "rules": [
         {
           "id": "vowel",
-          "title": "Imperative starts with a vowel — e.g. iftaħ (open!)",
+          "title": "Imperative starts with a vowel: e.g. iftaħ (open!)",
           "rows": [
             {
               "person": "Jien (I)",
@@ -233,7 +241,7 @@
         },
         {
           "id": "consonant",
-          "title": "Imperative starts with a consonant — e.g. ġib (bring!)",
+          "title": "Imperative starts with a consonant: e.g. ġib (bring!)",
           "rows": [
             {
               "person": "Jien (I)",
@@ -283,7 +291,7 @@
       "exercises": [
         {
           "id": "ex9",
-          "title": "Exercise — conjugate iekol (to eat)",
+          "title": "Exercise: conjugate iekol (to eat)",
           "instructions": "Pick the right present-tense form for each pronoun.",
           "choices": [
             "niekol",
@@ -338,13 +346,13 @@
       "id": "grammar6",
       "icon": "📖",
       "title": "Grammar",
-      "subtitle": "Il-grammatika — doing things",
+      "subtitle": "Il-grammatika: doing things",
       "intro": "Commands, the present tense, the future, and the everyday 'I have' / 'there is'.",
       "rules": [
         {
           "id": "imperative-form",
           "title": "Telling someone what to do",
-          "explanation": "The command form comes in two shapes: one person (Imxi! — walk!) and a group (Imxu!). The group usually just adds -u.",
+          "explanation": "The command form comes in two shapes: one person (Imxi! means 'walk!') and a group (Imxu!). The group usually just adds -u.",
           "letters": [
             "Imxi/Imxu",
             "Ikteb/Iktbu",
@@ -383,7 +391,7 @@
         {
           "id": "imperative-from-mamma",
           "title": "The root inside a command (advanced)",
-          "explanation": "For Semitic-origin verbs, the imperative is derived from the 'mamma' (3rd-person past tense — what HE did) by switching the first vowel and the first root consonant. Ħaraq (he burnt) → aħraq (you burn!). The pattern keeps three root consonants intact.",
+          "explanation": "For Semitic-origin verbs, the imperative is derived from the 'mamma' (3rd-person past tense, what HE did) by switching the first vowel and the first root consonant. Ħaraq (he burnt) → aħraq (you burn!). The pattern keeps three root consonants intact.",
           "examples": [
             {
               "mt": "Ħaraq → aħraq / aħarqu",
@@ -450,7 +458,7 @@
         {
           "id": "future",
           "title": "The future is one little word: se",
-          "explanation": "Put se (or ser, or ħa) in front of the present and you're in the future: Se niekol — I'm going to eat. Use se, never sa on its own (sa alone means 'until').",
+          "explanation": "Put se (or ser, or ħa) in front of the present and you're in the future: Se niekol (I'm going to eat). Use se, never sa on its own (sa alone means 'until').",
           "letters": [
             "se",
             "ser",
@@ -482,7 +490,7 @@
         {
           "id": "ghandi",
           "title": "Saying what you have: Għandi",
-          "explanation": "Maltese has no plain verb 'to have' — it bolts the same ownership endings from the last unit onto għand-: għandi (I have), għandek (you have), għandu (he has). 'Don't have' wraps around it: m'għandix.",
+          "explanation": "Maltese has no plain verb 'to have', it bolts the same ownership endings from the last unit onto għand-: għandi (I have), għandek (you have), għandu (he has). 'Don't have' wraps around it: m'għandix.",
           "examples": [
             {
               "mt": "Għandi ħin",
@@ -501,7 +509,7 @@
         {
           "id": "hemm",
           "title": "There is / there are: hemm",
-          "explanation": "One word covers both: Hemm ħanut hawn? — is there a shop here? The 'none' version is m'hemmx.",
+          "explanation": "One word covers both: Hemm ħanut hawn? Is there a shop here? The 'none' version is m'hemmx.",
           "examples": [
             {
               "mt": "Hemm problema",
@@ -532,17 +540,34 @@
             }
           ]
         }
+      ],
+      "exercises": [
+        { "id": "g6build", "type": "build", "max": 5, "title": "Build the sentence", "items": [
+          { "mt": "Joseph jixrob il-kafè", "en": "Joseph drinks the coffee" },
+          { "mt": "Mary taqra ktieb", "en": "Mary reads a book" },
+          { "mt": "Se niekol", "en": "I am going to eat" },
+          { "mt": "Ser nikteb", "en": "I am going to write" },
+          { "mt": "Se naqra", "en": "I am going to read" }
+        ] },
+        { "id": "havebucket", "type": "bucket", "batch": 6, "title": "Have, or there is?", "instructions": "Sort each phrase: is it 'I have' (Għandi) or 'there is/are' (Hemm)?", "choices": ["Għandi (have)", "Hemm (there is)"], "items": [
+          { "word": "Għandi ħin", "answer": "Għandi (have)" },
+          { "word": "Għandek karozza?", "answer": "Għandi (have)" },
+          { "word": "M'għandix flus", "answer": "Għandi (have)" },
+          { "word": "Hemm problema", "answer": "Hemm (there is)" },
+          { "word": "Hemm żewġ siġġijiet", "answer": "Hemm (there is)" },
+          { "word": "M'hemmx ħin", "answer": "Hemm (there is)" }
+        ] }
       ]
     },
     {
       "id": "vocabulary",
       "icon": "📚",
       "title": "Vocabulary",
-      "subtitle": "Il-vokabularju — every word in one place",
+      "subtitle": "Il-vokabularju: every word in one place",
       "intro": "Everything from this section, gathered to revise. Tap any word to hear it.",
       "groups": [
         {
-          "title": "Verbs — imperative (sg / pl)",
+          "title": "Verbs: imperative (sg / pl)",
           "items": [
             {
               "mt": "Mur",
