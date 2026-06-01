@@ -20,7 +20,7 @@ const VERSION = "1.0.0-beta.26";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "20260601n";
+const BUILD = "20260601o";
 function v(url){ return url + (url.includes("?")?"&":"?") + "v=" + VERSION; }
 
 // Lightweight UI strings table for the parts of the app that aren't data-driven.
@@ -3112,6 +3112,12 @@ STEP_RENDERERS["numbers:flash"] = (root, sec, idx, onNext) => {
   setTimeout(()=>play(item.mt), 250);
 };
 STEP_RENDERERS["numbers:ordinals"] = (root, sec, idx, onNext) => {
+  if(idx===0 && sec.ordinalsIntro){
+    const head = el("div","card");
+    head.appendChild(el("h3","","Ordinal numbers"));
+    head.appendChild(el("p","muted", sec.ordinalsIntro));
+    root.appendChild(head);
+  }
   const item = sec.ordinals[idx];
   root.appendChild(renderFlash(item.mt, item.en, `Ordinal ${idx+1} of ${sec.ordinals.length}`));
   setTimeout(()=>play(item.mt), 250);

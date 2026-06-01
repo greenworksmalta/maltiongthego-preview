@@ -193,6 +193,7 @@
           "en": "thirty"
         }
       ],
+      "ordinalsIntro": "Ordinal numbers show position or order (first, second, third). In Maltese they take the article and go before the noun: l-ewwel ġurnata (the first day), it-tieni triq (the second street).",
       "ordinals": [
         {
           "mt": "L-ewwel",
