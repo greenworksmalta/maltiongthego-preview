@@ -20,7 +20,7 @@ const VERSION = "1.0.0-beta.26";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "20260601z";
+const BUILD = "20260601aa";
 function v(url){ return url + (url.includes("?")?"&":"?") + "v=" + VERSION; }
 
 // Lightweight UI strings table for the parts of the app that aren't data-driven.
@@ -3355,12 +3355,12 @@ STEP_RENDERERS["possessive:pronouns"] = (root, sec, idx, onNext) => {
   sec.possessives.forEach((item, i) => {
     const ex = sec.examples_pronouns ? sec.examples_pronouns[i] : null;
     const phrase = ex ? ex.phrase : item.mt;
+    // Append mtform + en directly so .form-row's flex aligns every row:
+    // [audio] phrase ................ meaning(right)
     const r = el("div","form-row");
     r.appendChild(audioBtn(phrase));
-    const w = el("div","grow");
-    w.appendChild(el("div","mtform", phrase));
-    w.appendChild(el("div","en", (ex ? ex.en : item.en) + " (" + item.mt + ": " + item.en + ")"));
-    r.appendChild(w);
+    r.appendChild(el("div","mtform", phrase));
+    r.appendChild(el("div","en", ex ? ex.en : item.en));
     card.appendChild(r);
   });
   root.appendChild(card);
@@ -3688,6 +3688,11 @@ STEP_RENDERERS["ghpresent:ex6"] = (root, sec, idx, onNext) => {
 STEP_RENDERERS["transport:card"] = STEP_RENDERERS["table:card"];
 
 STEP_RENDERERS["weekend:flash"] = (root, sec, idx, onNext) => {
+  if(idx===0 && sec.intro){
+    const head = el("div","card");
+    head.appendChild(el("p","muted", sec.intro));
+    root.appendChild(head);
+  }
   const item = sec.vocab[idx];
   root.appendChild(renderFlash(item.mt, item.en, `Phrase ${idx+1} of ${sec.vocab.length}`));
   setTimeout(()=>play(item.mt), 250);
@@ -4165,9 +4170,12 @@ async function boot(){
   initObservability();
   try{
     const [index, manifest, recorded] = await Promise.all([
-      fetch(v("lessons/index.json")).then(r=>r.json()),
-      fetch(v("audio/manifest.json")).then(r=>r.json()),
-      fetch(v("audio/recorded.json")).then(r=>r.ok ? r.json() : {}).catch(()=>({})),
+      // Bust on BUILD (not VERSION) so new lessons/audio register immediately —
+      // VERSION is static across web builds, which left a stale manifest (new
+      // clips silent). ?b=<BUILD> changes every build → fresh fetch past SW cache.
+      fetch("lessons/index.json?b=" + BUILD).then(r=>r.json()),
+      fetch("audio/manifest.json?b=" + BUILD).then(r=>r.json()),
+      fetch("audio/recorded.json?b=" + BUILD).then(r=>r.ok ? r.json() : {}).catch(()=>({})),
     ]);
     State.index = index;
     State.manifest = manifest;
