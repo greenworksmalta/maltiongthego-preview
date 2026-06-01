@@ -1,0 +1,291 @@
+{
+  "id": "extra1",
+  "lang": "es",
+  "module": "Empieza Aquí · Gratis",
+  "title": "Lección de Bienvenida",
+  "subtitle": "Tu lección gratis — maltés de supervivencia para la vida diaria",
+  "sections": [
+    {
+      "id": "polite",
+      "icon": "🤝",
+      "title": "Lo esencial de la cortesía",
+      "subtitle": "Saludos, por favor, gracias, perdón — lo básico",
+      "vocab": [
+        {"mt": "Bonġu", "en": "Buenos días"},
+        {"mt": "Bonswa", "en": "Buenas tardes"},
+        {"mt": "Saħħa", "en": "Salud / Adiós"},
+        {"mt": "Ċaw", "en": "Chao (informal)"},
+        {"mt": "Grazzi", "en": "Gracias"},
+        {"mt": "Grazzi ħafna", "en": "Muchas gracias"},
+        {"mt": "Jekk jogħġbok", "en": "Por favor"},
+        {"mt": "Skużani", "en": "Disculpa / Perdón"},
+        {"mt": "Mhux problema", "en": "No hay problema"},
+        {"mt": "Il-ġurnata t-tajba", "en": "Que tengas un buen día"},
+        {"mt": "Prosit", "en": "¡Bien hecho!"},
+        {"mt": "Iva", "en": "Sí"},
+        {"mt": "Le", "en": "No"},
+        {"mt": "Tajba", "en": "Bien (femenino)"},
+        {"mt": "Tajjeb", "en": "Bien (masculino)"},
+        {"mt": "Ferm", "en": "Muy"}
+      ],
+      "dialogue": [
+        {"mt": "Bonġu! Kif int?", "en": "¡Buenos días! ¿Cómo estás?"},
+        {"mt": "Tajba ħafna, grazzi. U int?", "en": "Muy bien, gracias. ¿Y tú?"},
+        {"mt": "Tajba, grazzi.", "en": "Bien, gracias."},
+        {"mt": "Il-ġurnata t-tajba!", "en": "¡Que tengas buen día!"}
+      ]
+    },
+    {
+      "id": "cafe",
+      "icon": "☕",
+      "title": "En la cafetería",
+      "subtitle": "Pedir café, pagar, despedirse",
+      "vocab": [
+        {"mt": "Nixtieq", "en": "Quisiera"},
+        {"mt": "Kapuċċino", "en": "Capuchino"},
+        {"mt": "Kapuċċino biz-zokkor", "en": "Capuchino con azúcar"},
+        {"mt": "Tè", "en": "Té"},
+        {"mt": "Tè bil-lumi", "en": "Té con limón"},
+        {"mt": "Ilma", "en": "Agua"},
+        {"mt": "Birra", "en": "Cerveza"},
+        {"mt": "Ilma tal-gass", "en": "Agua con gas"},
+        {"mt": "Pastizz", "en": "Hojaldre maltés salado (relleno de ricota o chícharos)"},
+        {"mt": "Kemm jiswa?", "en": "¿Cuánto cuesta?"},
+        {"mt": "Żewġ ewro", "en": "Dos euros"},
+        {"mt": "Bil-flus", "en": "En efectivo"},
+        {"mt": "Bil-karta tal-kreditu", "en": "Con tarjeta de crédito"},
+        {"mt": "Trid xi ħaġa oħra?", "en": "¿Quieres algo más?"},
+        {"mt": "Le grazzi, biżżejjed", "en": "No gracias, eso es todo"},
+        {"mt": "Iva, jekk jogħġbok", "en": "Sí, por favor"}
+      ],
+      "dialogue": [
+        {"mt": "Bonġu! X'se tieħu?", "en": "¡Buenos días! ¿Qué vas a tomar?"},
+        {"mt": "Nixtieq kapuċċino biz-zokkor, jekk jogħġbok.", "en": "Quisiera un capuchino con azúcar, por favor."},
+        {"mt": "Trid xi ħaġa oħra?", "en": "¿Quieres algo más?"},
+        {"mt": "Iva, pastizz jekk jogħġbok.", "en": "Sí, un pastizz por favor."},
+        {"mt": "Kemm jiswa?", "en": "¿Cuánto cuesta?"},
+        {"mt": "Żewġ ewro u sebgħin ċenteżmu", "en": "Dos euros con setenta."},
+        {"mt": "Hawn huma. Grazzi!", "en": "Aquí tienes. ¡Gracias!"}
+      ]
+    },
+    {
+      "id": "work",
+      "icon": "💼",
+      "title": "En el trabajo",
+      "subtitle": "Pedir ayuda y bajar el ritmo de la conversación",
+      "vocab": [
+        {"mt": "Ma nitkellimx bil-Malti", "en": "No hablo maltés"},
+        {"mt": "Nitkellem ftit Malti", "en": "Hablo un poco de maltés"},
+        {"mt": "Qed nitgħallem il-Malti", "en": "Estoy aprendiendo maltés"},
+        {"mt": "Ma nifhimx", "en": "No entiendo"},
+        {"mt": "Tista' tirrepeti?", "en": "¿Puedes repetir?"},
+        {"mt": "Bil-mod, jekk jogħġbok", "en": "Despacio, por favor"},
+        {"mt": "Skużi, ma fhimtx", "en": "Perdón, no entendí"},
+        {"mt": "Tista' tiktibha?", "en": "¿Puedes escribirlo?"},
+        {"mt": "Tista' tgħinni?", "en": "¿Puedes ayudarme?"},
+        {"mt": "Kif tgħid bil-Malti?", "en": "¿Cómo se dice en maltés?"},
+        {"mt": "X'jiġifieri?", "en": "¿Qué significa?"},
+        {"mt": "Naħdem hawn", "en": "Trabajo aquí"},
+        {"mt": "Jien barrani", "en": "Soy extranjero"},
+        {"mt": "Titkellem bl-Ingliż?", "en": "¿Hablas inglés?"}
+      ],
+      "dialogue": [
+        {"mt": "Skużani — ma nitkellimx Malti tajjeb. Titkellem bl-Ingliż?", "en": "Disculpa — no hablo bien el maltés. ¿Hablas inglés?"},
+        {"mt": "Iva, ftit. Kif nista' ngħinek?", "en": "Sí, un poco. ¿En qué te puedo ayudar?"},
+        {"mt": "Tista' tirrepeti, bil-mod jekk jogħġbok?", "en": "¿Puedes repetir, despacio por favor?"},
+        {"mt": "Mhux problema. Hekk hu...", "en": "Sin problema. Así..."}
+      ]
+    },
+    {
+      "id": "shopping",
+      "icon": "🛒",
+      "title": "De compras",
+      "subtitle": "Preguntar precios, pagar, encontrar cosas",
+      "vocab": [
+        {"mt": "Kemm jiswa dan?", "en": "¿Cuánto cuesta esto?"},
+        {"mt": "Kemm jiswew dawn?", "en": "¿Cuánto cuestan estos?"},
+        {"mt": "Għandkom?", "en": "¿Tienen?"},
+        {"mt": "Fejn nista' nsib?", "en": "¿Dónde puedo encontrar...?"},
+        {"mt": "Irħis", "en": "Barato"},
+        {"mt": "Għali", "en": "Caro"},
+        {"mt": "Skont", "en": "Descuento"},
+        {"mt": "Skonti", "en": "Rebajas"},
+        {"mt": "Wieħed", "en": "Uno"},
+        {"mt": "Tnejn", "en": "Dos"},
+        {"mt": "ewro", "en": "Euro"},
+        {"mt": "Ċenteżmu", "en": "Céntimo"},
+        {"mt": "Basket", "en": "Bolsa"},
+        {"mt": "Irċevuta", "en": "Recibo"},
+        {"mt": "Ħanut", "en": "Tienda"},
+        {"mt": "Supermarket", "en": "Supermercado"},
+        {"mt": "Ġib", "en": "Dame (por favor)"}
+      ],
+      "dialogue": [
+        {"mt": "Skużani, kemm jiswa dan?", "en": "Disculpa, ¿cuánto cuesta esto?"},
+        {"mt": "Erbgħa u disgħin ewro.", "en": "Noventa y cuatro euros."},
+        {"mt": "Għandkom xi skont?", "en": "¿Tienen descuento?"},
+        {"mt": "Le, mhux illum.", "en": "No, hoy no."},
+        {"mt": "OK. Nieħu wieħed jekk jogħġbok.", "en": "Vale. Tomo uno por favor."},
+        {"mt": "Trid basket?", "en": "¿Quieres una bolsa?"},
+        {"mt": "Le grazzi.", "en": "No gracias."}
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "icon": "📚",
+      "title": "Vocabulario",
+      "subtitle": "Il-vokabularju — todas las palabras de esta lección, agrupadas",
+      "intro": "Toca cualquier palabra para escucharla. Úsalo como referencia rápida antes o después de las secciones de la lección.",
+      "groups": [
+        {
+          "title": "Saludos y frases de cortesía",
+          "icon": "👋",
+          "items": [
+            {"icon": "🌅", "mt": "Bonġu", "en": "Buenos días"},
+            {"icon": "🌆", "mt": "Bonswa", "en": "Buenas noches (saludo)"},
+            {"icon": "👋", "mt": "Saħħa", "en": "Salud / Adiós"},
+            {"icon": "👋", "mt": "Ċaw", "en": "Adiós (informal)"},
+            {"icon": "💛", "mt": "Grazzi", "en": "Gracias"},
+            {"icon": "💛", "mt": "Grazzi ħafna", "en": "Muchas gracias"},
+            {"icon": "🙏", "mt": "Jekk jogħġbok", "en": "Por favor"},
+            {"icon": "🙋", "mt": "Skużani", "en": "Disculpa / Perdón"},
+            {"icon": "👌", "mt": "Mhux problema", "en": "No hay problema"},
+            {"icon": "☀️", "mt": "Il-ġurnata t-tajba", "en": "Que tengas un buen día"},
+            {"icon": "🎉", "mt": "Prosit", "en": "¡Bien hecho!"},
+            {"icon": "✅", "mt": "Iva", "en": "Sí"},
+            {"icon": "❌", "mt": "Le", "en": "No"}
+          ]
+        },
+        {
+          "title": "En la cafetería",
+          "icon": "☕",
+          "items": [
+            {"icon": "❤️", "mt": "Nixtieq", "en": "Quisiera"},
+            {"icon": "☕", "mt": "Kapuċċino", "en": "Capuchino"},
+            {"icon": "🍯", "mt": "Kapuċċino biz-zokkor", "en": "Capuchino con azúcar"},
+            {"icon": "🍵", "mt": "Tè", "en": "Té"},
+            {"icon": "🍋", "mt": "Tè bil-lumi", "en": "Té con limón"},
+            {"icon": "💧", "mt": "Ilma", "en": "Agua"},
+            {"icon": "🍺", "mt": "Birra", "en": "Cerveza"},
+            {"icon": "🥤", "mt": "Ilma tal-gass", "en": "Agua con gas"},
+            {"icon": "🥟", "mt": "Pastizz", "en": "Hojaldre maltés salado"},
+            {"icon": "❓", "mt": "Kemm jiswa?", "en": "¿Cuánto cuesta?"},
+            {"icon": "💶", "mt": "Żewġ ewro", "en": "Dos euros"},
+            {"icon": "💵", "mt": "Bil-flus", "en": "En efectivo"},
+            {"icon": "💳", "mt": "Bil-karta tal-kreditu", "en": "Con tarjeta"},
+            {"icon": "❓", "mt": "Trid xi ħaġa oħra?", "en": "¿Quieres algo más?"},
+            {"icon": "🙅", "mt": "Le grazzi, biżżejjed", "en": "No gracias, eso es todo"}
+          ]
+        },
+        {
+          "title": "En el trabajo — pedir ayuda con el idioma",
+          "icon": "💼",
+          "subtitle": "Cuando necesitas que alguien cambie al inglés, hable despacio o repita.",
+          "items": [
+            {"icon": "🤐", "mt": "Ma nitkellimx bil-Malti", "en": "No hablo maltés"},
+            {"icon": "🗣️", "mt": "Nitkellem ftit Malti", "en": "Hablo un poco de maltés"},
+            {"icon": "📚", "mt": "Qed nitgħallem il-Malti", "en": "Estoy aprendiendo maltés"},
+            {"icon": "❓", "mt": "Ma nifhimx", "en": "No entiendo"},
+            {"icon": "🔁", "mt": "Tista' tirrepeti?", "en": "¿Puedes repetir?"},
+            {"icon": "🐢", "mt": "Bil-mod, jekk jogħġbok", "en": "Despacio, por favor"},
+            {"icon": "✍️", "mt": "Tista' tiktibha?", "en": "¿Puedes escribirlo?"},
+            {"icon": "🆘", "mt": "Tista' tgħinni?", "en": "¿Puedes ayudarme?"},
+            {"icon": "❓", "mt": "Kif tgħid bil-Malti?", "en": "¿Cómo se dice en maltés?"},
+            {"icon": "❓", "mt": "X'jiġifieri?", "en": "¿Qué significa?"},
+            {"icon": "🇬🇧", "mt": "Titkellem bl-Ingliż?", "en": "¿Hablas inglés?"},
+            {"icon": "🏢", "mt": "Naħdem hawn", "en": "Trabajo aquí"},
+            {"icon": "🌍", "mt": "Jien barrani", "en": "Soy extranjero"}
+          ]
+        },
+        {
+          "title": "Compras",
+          "icon": "🛒",
+          "items": [
+            {"icon": "❓", "mt": "Kemm jiswa dan?", "en": "¿Cuánto cuesta esto?"},
+            {"icon": "❓", "mt": "Kemm jiswew dawn?", "en": "¿Cuánto cuestan estos?"},
+            {"icon": "❓", "mt": "Għandkom?", "en": "¿Tienen alguno?"},
+            {"icon": "🔎", "mt": "Fejn nista' nsib?", "en": "¿Dónde puedo encontrar…?"},
+            {"icon": "💰", "mt": "Irħis", "en": "Barato"},
+            {"icon": "💸", "mt": "Għali", "en": "Caro"},
+            {"icon": "🏷️", "mt": "Skont", "en": "Descuento"},
+            {"icon": "🏷️", "mt": "Skonti", "en": "Rebajas"},
+            {"icon": "1️⃣", "mt": "Wieħed", "en": "Uno"},
+            {"icon": "2️⃣", "mt": "Tnejn", "en": "Dos"},
+            {"icon": "💶", "mt": "ewro", "en": "Euro"},
+            {"icon": "💵", "mt": "Ċenteżmu", "en": "Centavo"},
+            {"icon": "👜", "mt": "Basket", "en": "Bolsa"},
+            {"icon": "🧾", "mt": "Irċevuta", "en": "Recibo"},
+            {"icon": "🏪", "mt": "Ħanut", "en": "Tienda"},
+            {"icon": "🛒", "mt": "Supermarket", "en": "Supermercado"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammarwelcome",
+      "icon": "📖",
+      "title": "Gramática",
+      "subtitle": "Il-grammatika — las pocas reglas detrás de toda esta lección",
+      "intro": "Cinco mini-reglas que abren todo lo que acabas de ver. No intentes memorizarlas — simplemente fíjate en los patrones; las lecciones del curso profundizan más.",
+      "rules": [
+        {
+          "id": "nixtieq-pattern",
+          "title": "Nixtieq + cosa = 'Quisiera…'",
+          "explanation": "La forma cortés y universal de pedir algo. 'Nixtieq' por sí solo = 'quisiera'. Añade lo que quieres justo después. Termina con 'jekk jogħġbok' para sonar aún más educado.",
+          "examples": [
+            {"mt": "Nixtieq kapuċċino", "en": "Quisiera un capuchino"},
+            {"mt": "Nixtieq ilma bil-lumi", "en": "Quisiera agua con limón"},
+            {"mt": "Nixtieq dan, jekk jogħġbok", "en": "Quisiera esto, por favor"},
+            {"mt": "Nixtieq pastizz", "en": "Quisiera un pastizz"}
+          ]
+        },
+        {
+          "id": "bil-with",
+          "title": "bil- = 'con el/la' (y biz- antes de z)",
+          "explanation": "'bi' (con) se fusiona con el artículo 'il-' formando 'bil-' — se usa al pedir bebidas 'con' algo. Antes de palabras que empiezan por z, se vuelve 'biz-' (regla de consonante 'Xemxin' de la Lección 1).",
+          "letters": ["bil-", "biz-"],
+          "examples": [
+            {"mt": "Kapuċċino bil-ħalib", "en": "Capuchino con leche"},
+            {"mt": "Ilma bil-lumi", "en": "Agua con limón"},
+            {"mt": "Kapuċċino biz-zokkor", "en": "Capuchino con azúcar"},
+            {"mt": "Bil-flus / Bil-karta", "en": "En efectivo / con tarjeta"}
+          ]
+        },
+        {
+          "id": "kemm-jiswa",
+          "title": "Kemm jiswa? = '¿Cuánto cuesta?'",
+          "explanation": "'Kemm?' = '¿cuánto / cuántos?'. Júntalo con 'jiswa' (cuesta) para UN artículo, 'jiswew' (cuestan) para varios. Mismo patrón para cualquier pregunta de '¿cuánto?'.",
+          "examples": [
+            {"mt": "Kemm jiswa dan?", "en": "¿Cuánto cuesta esto? (un artículo)"},
+            {"mt": "Kemm jiswew dawn?", "en": "¿Cuánto cuestan estos? (varios)"},
+            {"mt": "Żewġ ewro u sebgħin ċenteżmu", "en": "Dos euros setenta"},
+            {"mt": "Erbgħa u disgħin ewro", "en": "Noventa y cuatro euros"}
+          ]
+        },
+        {
+          "id": "polite-formulas",
+          "title": "Apilar palabras de cortesía",
+          "explanation": "La cortesía en maltés viene de APILAR palabras cortas. 'Grazzi' sola está bien. 'Grazzi ħafna' (muchas gracias) suena más cálido. 'Jekk jogħġbok' (por favor) se pega a casi cualquier petición. 'Skużani' (perdón/disculpa) abre una petición a alguien desconocido. Cuanto más apilas, más educado.",
+          "examples": [
+            {"mt": "Grazzi", "en": "Gracias"},
+            {"mt": "Grazzi ħafna", "en": "Muchas gracias"},
+            {"mt": "Skużani, tista' tgħinni?", "en": "Disculpa, ¿puedes ayudarme?"},
+            {"mt": "Iva, jekk jogħġbok", "en": "Sí, por favor"},
+            {"mt": "Le grazzi", "en": "No gracias"}
+          ]
+        },
+        {
+          "id": "language-help",
+          "title": "Cambiar al inglés con educación",
+          "explanation": "En Malta casi todos hablan muy bien inglés — siempre puedes cambiar. Pero empezar con una de estas frases en maltés te gana muchísima simpatía antes de hacerlo.",
+          "examples": [
+            {"mt": "Nitkellem ftit Malti", "en": "Hablo un poco de maltés"},
+            {"mt": "Qed nitgħallem il-Malti", "en": "Estoy aprendiendo maltés"},
+            {"mt": "Titkellem bl-Ingliż?", "en": "¿Hablas inglés?"},
+            {"mt": "Tista' tirrepeti, bil-mod jekk jogħġbok?", "en": "¿Puedes repetir, despacio por favor?"}
+          ]
+        }
+      ]
+    }
+  ]
+}

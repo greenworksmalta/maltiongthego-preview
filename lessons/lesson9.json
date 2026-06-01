@@ -1,0 +1,1280 @@
+{
+  "id": "lesson9",
+  "title": "Lesson 9 — Time & Directions",
+  "subtitle": "Asking directions, time expressions, telling the time",
+  "sections": [
+    {
+      "id": "directions",
+      "icon": "🧭",
+      "title": "Directions",
+      "subtitle": "Direzzjonijiet — left, right, straight ahead",
+      "intro": "To ask for directions, start with: 'Skużani. Tista' tgħidli fejn hi ___, jekk jogħġbok?' Then thank them with 'Grazzi.'",
+      "vocab": [
+        {
+          "mt": "Skużani",
+          "en": "Sorry / Excuse me"
+        },
+        {
+          "mt": "Lemin",
+          "en": "Right"
+        },
+        {
+          "mt": "Xellug",
+          "en": "Left"
+        },
+        {
+          "mt": "Dur fuq il-lemin",
+          "en": "Turn on your right"
+        },
+        {
+          "mt": "Dur fuq ix-xellug",
+          "en": "Turn on your left"
+        },
+        {
+          "mt": "Kompli bi dritt",
+          "en": "Straight ahead"
+        },
+        {
+          "mt": "Suq",
+          "en": "Drive (singular)"
+        },
+        {
+          "mt": "Imxi",
+          "en": "Walk (singular)"
+        },
+        {
+          "mt": "Dur",
+          "en": "Turn (singular)"
+        },
+        {
+          "mt": "Hawn",
+          "en": "Here"
+        },
+        {
+          "mt": "Hemm",
+          "en": "There"
+        },
+        {
+          "mt": "Wara dak",
+          "en": "After that"
+        },
+        {
+          "mt": "Aqsam it-triq",
+          "en": "Cross the road"
+        },
+        {
+          "mt": "Faċċata ta'",
+          "en": "In front of"
+        },
+        {
+          "mt": "Ħdejn",
+          "en": "Next to"
+        },
+        {
+          "mt": "Bejn",
+          "en": "Between"
+        },
+        {
+          "mt": "L-ewwel triq",
+          "en": "The first street"
+        },
+        {
+          "mt": "L-ewwel kantuniera",
+          "en": "The first corner"
+        },
+        {
+          "mt": "It-tieni dawra",
+          "en": "The second turn"
+        }
+      ],
+      "dialogue": [
+        {
+          "mt": "Skużani — fejn hi l-ispiżerija l-aktar viċin?",
+          "en": "Excuse me — where's the nearest pharmacy?"
+        },
+        {
+          "mt": "Bonġu. Imxi sal-pjazza, dur fuq ix-xellug.",
+          "en": "Good morning. Walk to the square, turn left."
+        },
+        {
+          "mt": "U mbagħad?",
+          "en": "And then?"
+        },
+        {
+          "mt": "Hemmhekk taraha faċċata ta' bank.",
+          "en": "There you'll see it opposite a bank."
+        },
+        {
+          "mt": "Grazzi ħafna!",
+          "en": "Thank you very much!"
+        }
+      ],
+      "winds": [
+        {
+          "mt": "Tramuntana",
+          "en": "North"
+        },
+        {
+          "mt": "Grigal",
+          "en": "North East"
+        },
+        {
+          "mt": "Lvant",
+          "en": "East"
+        },
+        {
+          "mt": "Xlokk",
+          "en": "South East"
+        },
+        {
+          "mt": "Nofsinhar",
+          "en": "South"
+        },
+        {
+          "mt": "Lbiċ",
+          "en": "South West"
+        },
+        {
+          "mt": "Punent",
+          "en": "West"
+        },
+        {
+          "mt": "Majjistral",
+          "en": "North West"
+        }
+      ]
+    },
+    {
+      "id": "timeexp",
+      "icon": "⏳",
+      "title": "Time expressions",
+      "subtitle": "Espressjonijiet tal-ħin",
+      "vocab": [
+        {
+          "mt": "Ilbieraħ",
+          "en": "Yesterday"
+        },
+        {
+          "mt": "Illum",
+          "en": "Today"
+        },
+        {
+          "mt": "Għada",
+          "en": "Tomorrow"
+        },
+        {
+          "mt": "F'nofsinhar",
+          "en": "At noon"
+        },
+        {
+          "mt": "Waranofsinhar",
+          "en": "In the afternoon / after 12pm"
+        },
+        {
+          "mt": "Filgħaxija",
+          "en": "In the evening"
+        },
+        {
+          "mt": "Filgħodu",
+          "en": "In the morning"
+        },
+        {
+          "mt": "Darba fil-ġimgħa",
+          "en": "Once a week"
+        },
+        {
+          "mt": "Kuljum",
+          "en": "Every day"
+        },
+        {
+          "mt": "Kull tieni jum",
+          "en": "Every other day"
+        },
+        {
+          "mt": "Il-ġurnata kollha",
+          "en": "All day"
+        },
+        {
+          "mt": "Issa",
+          "en": "Now"
+        },
+        {
+          "mt": "Ftit ieħor",
+          "en": "In a little while"
+        },
+        {
+          "mt": "Dalwaqt",
+          "en": "Soon"
+        },
+        {
+          "mt": "Aktar tard",
+          "en": "Later"
+        },
+        {
+          "mt": "Sakemm",
+          "en": "Until"
+        },
+        {
+          "mt": "Dakinhar",
+          "en": "On that day"
+        },
+        {
+          "mt": "Kemm-il darba",
+          "en": "How many times"
+        },
+        {
+          "mt": "Ta' spiss",
+          "en": "Often"
+        },
+        {
+          "mt": "Xi kultant",
+          "en": "Sometimes"
+        },
+        {
+          "mt": "Rarament",
+          "en": "Rarely"
+        },
+        {
+          "mt": "Dejjem",
+          "en": "Always"
+        },
+        {
+          "mt": "Qatt",
+          "en": "Never"
+        }
+      ]
+    },
+    {
+      "id": "time",
+      "icon": "🕐",
+      "title": "Telling time",
+      "subtitle": "Il-Ħin — what time is it?",
+      "intro": "Maltese has no word for 'o'clock' — you just say the number. Note: 1 and 2 use special forms (is-siegħa, is-sagħtejn). For everything else, the cardinal number with the article.",
+      "facts": [
+        "Filgħodu = AM (morning, until noon).",
+        "Waranofsinhar = PM (afternoon, after 12 noon).",
+        "Filgħaxija = evening (roughly 6pm to 10pm).",
+        "Ta' billejl = night (after 10pm).",
+        "There's no Maltese word for 'o'clock' — just the number with its article."
+      ],
+      "hours": [
+        {
+          "n": 1,
+          "mt": "is-siegħa",
+          "en": "1 o'clock"
+        },
+        {
+          "n": 2,
+          "mt": "is-sagħtejn",
+          "en": "2 o'clock"
+        },
+        {
+          "n": 3,
+          "mt": "it-tlieta",
+          "en": "3 o'clock"
+        },
+        {
+          "n": 4,
+          "mt": "l-erbgħa",
+          "en": "4 o'clock"
+        },
+        {
+          "n": 5,
+          "mt": "il-ħamsa",
+          "en": "5 o'clock"
+        },
+        {
+          "n": 6,
+          "mt": "is-sitta",
+          "en": "6 o'clock"
+        },
+        {
+          "n": 7,
+          "mt": "is-sebgħa",
+          "en": "7 o'clock"
+        },
+        {
+          "n": 8,
+          "mt": "it-tmienja",
+          "en": "8 o'clock"
+        },
+        {
+          "n": 9,
+          "mt": "id-disgħa",
+          "en": "9 o'clock"
+        },
+        {
+          "n": 10,
+          "mt": "l-għaxra",
+          "en": "10 o'clock"
+        },
+        {
+          "n": 11,
+          "mt": "il-ħdax",
+          "en": "11 o'clock"
+        },
+        {
+          "n": 12,
+          "mt": "nofsinhar",
+          "en": "12 noon"
+        },
+        {
+          "n": 0,
+          "mt": "nofsillejl",
+          "en": "midnight"
+        }
+      ],
+      "patterns": [
+        {
+          "mt": "is-sebgħa u kwart",
+          "en": "7:15 — quarter past seven"
+        },
+        {
+          "mt": "is-sebgħa u nofs",
+          "en": "7:30 — half past seven"
+        },
+        {
+          "mt": "is-sebgħa u għoxrin",
+          "en": "7:20 — twenty past seven"
+        },
+        {
+          "mt": "it-tmienja nieqes kwart",
+          "en": "7:45 — quarter to eight"
+        },
+        {
+          "mt": "it-tmienja nieqes għaxra",
+          "en": "7:50 — ten to eight"
+        },
+        {
+          "mt": "it-tmienja",
+          "en": "8:00 — eight o'clock"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex8",
+          "title": "Convert digital time → Maltese",
+          "instructions": "Pick the correct Maltese phrase for each clock.",
+          "choices": [
+            "L-għaxra u kwart",
+            "Is-sebgħa u nofs",
+            "Il-ħamsa",
+            "It-tmienja nieqes ħamsa",
+            "L-erbgħa u għaxra",
+            "Is-sitta nieqes kwart"
+          ],
+          "items": [
+            {
+              "sentence": "10:15",
+              "en": "Quarter past 10",
+              "answer": "L-għaxra u kwart"
+            },
+            {
+              "sentence": "7:30",
+              "en": "Half past 7",
+              "answer": "Is-sebgħa u nofs"
+            },
+            {
+              "sentence": "5:00",
+              "en": "5 o'clock",
+              "answer": "Il-ħamsa"
+            },
+            {
+              "sentence": "7:55",
+              "en": "5 to 8",
+              "answer": "It-tmienja nieqes ħamsa"
+            },
+            {
+              "sentence": "4:10",
+              "en": "10 past 4",
+              "answer": "L-erbgħa u għaxra"
+            },
+            {
+              "sentence": "5:45",
+              "en": "Quarter to 6",
+              "answer": "Is-sitta nieqes kwart"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "icon": "📚",
+      "title": "Vocabulary",
+      "subtitle": "Il-vokabularju — words & verbs from this lesson",
+      "intro": "All the lesson vocabulary in one place. Verbs (especially the imperative commands) are listed in their own group for the test.",
+      "groups": [
+        {
+          "title": "Polite phrases",
+          "icon": "🙏",
+          "items": [
+            {
+              "icon": "🙋",
+              "mt": "Skużi",
+              "en": "Excuse me (slide form, dialogue)"
+            },
+            {
+              "icon": "🙋",
+              "mt": "Skużani",
+              "en": "Sorry / Excuse me"
+            },
+            {
+              "icon": "🙏",
+              "mt": "Jekk jogħġbok",
+              "en": "Please"
+            },
+            {
+              "icon": "💛",
+              "mt": "Grazzi",
+              "en": "Thanks"
+            },
+            {
+              "icon": "💛",
+              "mt": "Grazzi ħafna",
+              "en": "Thank you very much"
+            },
+            {
+              "icon": "👋",
+              "mt": "Bonġu",
+              "en": "Good morning"
+            }
+          ]
+        },
+        {
+          "title": "Direction words",
+          "icon": "🧭",
+          "items": [
+            {
+              "icon": "➡️",
+              "mt": "Lemin",
+              "en": "Right"
+            },
+            {
+              "icon": "⬅️",
+              "mt": "Xellug",
+              "en": "Left"
+            },
+            {
+              "icon": "⬆️",
+              "mt": "Bi dritt",
+              "en": "Straight ahead"
+            },
+            {
+              "icon": "🛑",
+              "mt": "Hawn",
+              "en": "Here"
+            },
+            {
+              "icon": "📍",
+              "mt": "Hemm",
+              "en": "There"
+            },
+            {
+              "icon": "↪️",
+              "mt": "Wara dak",
+              "en": "After that"
+            },
+            {
+              "icon": "🚦",
+              "mt": "L-ewwel triq",
+              "en": "The first street"
+            },
+            {
+              "icon": "📐",
+              "mt": "L-ewwel kantuniera",
+              "en": "The first corner"
+            },
+            {
+              "icon": "🔄",
+              "mt": "It-tieni dawra",
+              "en": "The second turn"
+            }
+          ]
+        },
+        {
+          "title": "Imperative verbs — singular & plural",
+          "icon": "🗣️",
+          "subtitle": "Singular = telling ONE person; plural = telling more than one.",
+          "items": [
+            {
+              "icon": "🚗",
+              "mt": "Suq / Suqu",
+              "en": "Drive! (sg / pl)"
+            },
+            {
+              "icon": "🚶",
+              "mt": "Imxi / Imxu",
+              "en": "Walk! (sg / pl)"
+            },
+            {
+              "icon": "🔄",
+              "mt": "Dur / Duru",
+              "en": "Turn! (sg / pl)"
+            },
+            {
+              "icon": "🚸",
+              "mt": "Aqsam",
+              "en": "Cross!"
+            },
+            {
+              "icon": "▶️",
+              "mt": "Kompli",
+              "en": "Continue!"
+            },
+            {
+              "icon": "⏸️",
+              "mt": "Ibqa'",
+              "en": "Stay! / Keep going!"
+            },
+            {
+              "icon": "🚶",
+              "mt": "Ibqa' miexi / miexja",
+              "en": "Keep walking! (m / f)"
+            },
+            {
+              "icon": "🚶",
+              "mt": "Ibqa' sejjer / sejra",
+              "en": "Keep going! (m / f)"
+            },
+            {
+              "icon": "👀",
+              "mt": "Ara",
+              "en": "Look! / See!"
+            },
+            {
+              "icon": "👂",
+              "mt": "Isma'",
+              "en": "Listen!"
+            }
+          ]
+        },
+        {
+          "title": "Direction phrases (full sentences)",
+          "icon": "🗨️",
+          "subtitle": "Useful complete phrases from the slide dialogues.",
+          "items": [
+            {
+              "icon": "❓",
+              "mt": "Kif nista' nasal…?",
+              "en": "How can I get to…?"
+            },
+            {
+              "icon": "❓",
+              "mt": "Skużi. Tista' tgħidli fejn hi l-għassa, jekk jogħġbok?",
+              "en": "Excuse me. Can you tell me where the police station is, please?"
+            },
+            {
+              "icon": "➡️",
+              "mt": "Ibqa' sejjer dritt",
+              "en": "Keep going straight"
+            },
+            {
+              "icon": "➡️",
+              "mt": "Ibqa' miexi dritt sakemm…",
+              "en": "Keep walking straight until…"
+            },
+            {
+              "icon": "📍",
+              "mt": "Hemmhekk",
+              "en": "Over there"
+            },
+            {
+              "icon": "📍",
+              "mt": "Ssibha quddiemek",
+              "en": "You'll find it in front of you"
+            },
+            {
+              "icon": "↗️",
+              "mt": "Dur fuq l-ewwel kantuniera tax-xellug",
+              "en": "Take the first left"
+            },
+            {
+              "icon": "↘️",
+              "mt": "Dur fuq l-ewwel dawra tal-lemin",
+              "en": "Take the first right"
+            },
+            {
+              "icon": "↗️",
+              "mt": "Dur fuq it-tieni dawra tax-xellug",
+              "en": "Take the second left"
+            }
+          ]
+        },
+        {
+          "title": "Places (where you might be going)",
+          "icon": "🏢",
+          "subtitle": "From the slide dialogue exercises.",
+          "items": [
+            {
+              "icon": "🚓",
+              "mt": "L-għassa",
+              "en": "The police station"
+            },
+            {
+              "icon": "🏥",
+              "mt": "L-isptar",
+              "en": "The hospital"
+            },
+            {
+              "icon": "💊",
+              "mt": "L-ispiżerija",
+              "en": "The pharmacy"
+            },
+            {
+              "icon": "🏫",
+              "mt": "L-iskola",
+              "en": "The school"
+            },
+            {
+              "icon": "📚",
+              "mt": "Il-librerija",
+              "en": "The library"
+            },
+            {
+              "icon": "🪑",
+              "mt": "Il-klassi",
+              "en": "The classroom"
+            },
+            {
+              "icon": "🌳",
+              "mt": "Il-bitħa",
+              "en": "The yard"
+            },
+            {
+              "icon": "🪜",
+              "mt": "It-taraġ",
+              "en": "The stairs"
+            },
+            {
+              "icon": "🚧",
+              "mt": "It-triq",
+              "en": "The road / street"
+            }
+          ]
+        },
+        {
+          "title": "Place prepositions",
+          "icon": "🗺️",
+          "subtitle": "Where things are in relation to other things.",
+          "items": [
+            {
+              "icon": "👀",
+              "mt": "Faċċata ta'",
+              "en": "In front of / opposite"
+            },
+            {
+              "icon": "🤝",
+              "mt": "Ħdejn",
+              "en": "Next to"
+            },
+            {
+              "icon": "↔️",
+              "mt": "Bejn",
+              "en": "Between"
+            },
+            {
+              "icon": "⬆️",
+              "mt": "Fuq",
+              "en": "On / above"
+            },
+            {
+              "icon": "⬇️",
+              "mt": "Taħt",
+              "en": "Under"
+            },
+            {
+              "icon": "📦",
+              "mt": "Ġo",
+              "en": "In"
+            }
+          ]
+        },
+        {
+          "title": "Question words & helper verbs",
+          "icon": "❓",
+          "items": [
+            {
+              "icon": "❓",
+              "mt": "Kif?",
+              "en": "How?"
+            },
+            {
+              "icon": "❓",
+              "mt": "Fejn?",
+              "en": "Where?"
+            },
+            {
+              "icon": "❓",
+              "mt": "Kemm?",
+              "en": "How many?"
+            },
+            {
+              "icon": "❓",
+              "mt": "X'?",
+              "en": "What?"
+            },
+            {
+              "icon": "🤔",
+              "mt": "Nista'",
+              "en": "I can"
+            },
+            {
+              "icon": "🤔",
+              "mt": "Tista'",
+              "en": "You can"
+            },
+            {
+              "icon": "🏁",
+              "mt": "Nasal",
+              "en": "I arrive"
+            },
+            {
+              "icon": "💬",
+              "mt": "Tgħidli",
+              "en": "You tell me"
+            }
+          ]
+        },
+        {
+          "title": "Time of day",
+          "icon": "🕐",
+          "items": [
+            {
+              "icon": "🌅",
+              "mt": "Filgħodu",
+              "en": "In the morning (AM)"
+            },
+            {
+              "icon": "🌞",
+              "mt": "F'nofsinhar",
+              "en": "At noon"
+            },
+            {
+              "icon": "☀️",
+              "mt": "Waranofsinhar",
+              "en": "In the afternoon (PM)"
+            },
+            {
+              "icon": "🌆",
+              "mt": "Filgħaxija",
+              "en": "In the evening"
+            },
+            {
+              "icon": "🌃",
+              "mt": "Ta' billejl",
+              "en": "At night"
+            },
+            {
+              "icon": "🌙",
+              "mt": "Lejl sħiħ",
+              "en": "All night"
+            },
+            {
+              "icon": "📅",
+              "mt": "Il-ġurnata kollha",
+              "en": "All day"
+            }
+          ]
+        },
+        {
+          "title": "Time expressions",
+          "icon": "⏳",
+          "items": [
+            {
+              "icon": "⬅️",
+              "mt": "Ilbieraħ",
+              "en": "Yesterday"
+            },
+            {
+              "icon": "📍",
+              "mt": "Illum",
+              "en": "Today"
+            },
+            {
+              "icon": "➡️",
+              "mt": "Għada",
+              "en": "Tomorrow"
+            },
+            {
+              "icon": "⏰",
+              "mt": "Issa",
+              "en": "Now"
+            },
+            {
+              "icon": "⏳",
+              "mt": "Ftit ieħor",
+              "en": "In a little while"
+            },
+            {
+              "icon": "🔜",
+              "mt": "Dalwaqt",
+              "en": "Soon"
+            },
+            {
+              "icon": "🌅",
+              "mt": "Minn kmieni",
+              "en": "Since early"
+            },
+            {
+              "icon": "🛑",
+              "mt": "Sakemm",
+              "en": "Until"
+            },
+            {
+              "icon": "📌",
+              "mt": "Dak iż-żmien",
+              "en": "At that time"
+            },
+            {
+              "icon": "🔢",
+              "mt": "Kemm-il darba",
+              "en": "How many times"
+            },
+            {
+              "icon": "🔁",
+              "mt": "Ta' spiss",
+              "en": "Often"
+            },
+            {
+              "icon": "🤷",
+              "mt": "Xi kultant",
+              "en": "Sometimes"
+            },
+            {
+              "icon": "🦄",
+              "mt": "Rarament",
+              "en": "Rarely"
+            },
+            {
+              "icon": "♾️",
+              "mt": "Dejjem",
+              "en": "Always"
+            },
+            {
+              "icon": "🚫",
+              "mt": "Qatt",
+              "en": "Never"
+            },
+            {
+              "icon": "📅",
+              "mt": "Kuljum",
+              "en": "Every day"
+            },
+            {
+              "icon": "📅",
+              "mt": "Darba fil-ġimgħa",
+              "en": "Once a week"
+            },
+            {
+              "icon": "🕓",
+              "mt": "Aktar tard",
+              "en": "Later"
+            },
+            {
+              "icon": "📆",
+              "mt": "Dakinhar",
+              "en": "On that day"
+            },
+            {
+              "icon": "🔂",
+              "mt": "Kull tieni jum",
+              "en": "Every other day"
+            }
+          ]
+        },
+        {
+          "title": "Hours",
+          "icon": "🕐",
+          "subtitle": "1 and 2 use special forms; 3+ uses cardinal + article.",
+          "items": [
+            {
+              "icon": "1️⃣",
+              "mt": "Is-siegħa",
+              "en": "1 o'clock (special form)"
+            },
+            {
+              "icon": "2️⃣",
+              "mt": "Is-sagħtejn",
+              "en": "2 o'clock (special form)"
+            },
+            {
+              "icon": "3️⃣",
+              "mt": "It-tlieta",
+              "en": "3 o'clock"
+            },
+            {
+              "icon": "4️⃣",
+              "mt": "L-erbgħa",
+              "en": "4 o'clock"
+            },
+            {
+              "icon": "5️⃣",
+              "mt": "Il-ħamsa",
+              "en": "5 o'clock"
+            },
+            {
+              "icon": "6️⃣",
+              "mt": "Is-sitta",
+              "en": "6 o'clock"
+            },
+            {
+              "icon": "7️⃣",
+              "mt": "Is-sebgħa",
+              "en": "7 o'clock"
+            },
+            {
+              "icon": "8️⃣",
+              "mt": "It-tmienja",
+              "en": "8 o'clock"
+            },
+            {
+              "icon": "9️⃣",
+              "mt": "Id-disgħa",
+              "en": "9 o'clock"
+            },
+            {
+              "icon": "🔟",
+              "mt": "L-għaxra",
+              "en": "10 o'clock"
+            },
+            {
+              "icon": "1️⃣1️⃣",
+              "mt": "Il-ħdax",
+              "en": "11 o'clock"
+            },
+            {
+              "icon": "🕛",
+              "mt": "Nofsinhar",
+              "en": "12 noon"
+            },
+            {
+              "icon": "🕛",
+              "mt": "Nofsillejl",
+              "en": "Midnight"
+            }
+          ]
+        },
+        {
+          "title": "Minute words",
+          "icon": "⏱️",
+          "items": [
+            {
+              "icon": "➕",
+              "mt": "u",
+              "en": "and (used for 'past' the hour)"
+            },
+            {
+              "icon": "➖",
+              "mt": "nieqes",
+              "en": "less / minus (used for 'to' the hour)"
+            },
+            {
+              "icon": "¼",
+              "mt": "kwart",
+              "en": "a quarter (15 minutes)"
+            },
+            {
+              "icon": "½",
+              "mt": "nofs",
+              "en": "half (30 minutes)"
+            },
+            {
+              "icon": "2️⃣0️⃣",
+              "mt": "għoxrin",
+              "en": "twenty"
+            },
+            {
+              "icon": "🔟",
+              "mt": "għaxra",
+              "en": "ten"
+            },
+            {
+              "icon": "5️⃣",
+              "mt": "ħamsa",
+              "en": "five"
+            }
+          ]
+        },
+        {
+          "title": "The 8 winds (compass)",
+          "icon": "🌬️",
+          "subtitle": "Slide note: wind directions are ALWAYS written with a capital letter.",
+          "items": [
+            {
+              "icon": "⬆️",
+              "mt": "Tramuntana",
+              "en": "North"
+            },
+            {
+              "icon": "↗️",
+              "mt": "Grigal",
+              "en": "North-East"
+            },
+            {
+              "icon": "➡️",
+              "mt": "Lvant",
+              "en": "East"
+            },
+            {
+              "icon": "↘️",
+              "mt": "Xlokk",
+              "en": "South-East"
+            },
+            {
+              "icon": "⬇️",
+              "mt": "Nofsinhar",
+              "en": "South"
+            },
+            {
+              "icon": "↙️",
+              "mt": "Lbiċ",
+              "en": "South-West"
+            },
+            {
+              "icon": "⬅️",
+              "mt": "Punent",
+              "en": "West"
+            },
+            {
+              "icon": "↖️",
+              "mt": "Majjistral",
+              "en": "North-West"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar9",
+      "icon": "📖",
+      "title": "Grammar",
+      "subtitle": "Il-grammatika — the grammar of Lesson 9",
+      "intro": "These are the grammar points covered in the slides — telling time, the imperative, and the polite request structure for asking directions.",
+      "rules": [
+        {
+          "id": "polite-request",
+          "title": "The polite request structure",
+          "explanation": "To ask politely for directions, use this template: 'Skużi. Tista' tgħidli fejn hi/hu/huma ___, jekk jogħġbok?' Important: 'hi/hu/huma' has to agree with the place — feminine 'hi' (for spiżerija, għassa, librerija…), masculine 'hu' (for sptar, ħanut…), plural 'huma'. Always close with 'Grazzi.'",
+          "examples": [
+            {
+              "mt": "Skużi. Tista' tgħidli fejn hi l-għassa, jekk jogħġbok?",
+              "en": "Excuse me. Can you tell me where the police station is, please? (f.)"
+            },
+            {
+              "mt": "Skużi. Tista' tgħidli fejn hu l-isptar, jekk jogħġbok?",
+              "en": "Excuse me. Can you tell me where the hospital is, please? (m.)"
+            },
+            {
+              "mt": "Bonġu. Kif nista' nasal l-għassa, jekk jogħġbok?",
+              "en": "Good morning. How can I get to the police station, please?"
+            },
+            {
+              "mt": "Ibqa' sejjer dritt u taraha fuq il-lemin",
+              "en": "Keep going straight and you'll see it on the right"
+            },
+            {
+              "mt": "Grazzi ħafna",
+              "en": "Thank you very much"
+            }
+          ]
+        },
+        {
+          "id": "imperative",
+          "title": "Imperative — singular and plural",
+          "explanation": "The imperative is the form used to give a direct instruction. Maltese has TWO forms: singular (one person) and plural (more than one). The plural typically just adds -u: suq → suqu, imxi → imxu, dur → duru. With reflexive helpers, use 'miexi/miexja' (m/f) for 'walking' and 'sejjer/sejra' for 'going'.",
+          "letters": [
+            "Suq / Suqu",
+            "Imxi / Imxu",
+            "Dur / Duru",
+            "Aqsam",
+            "Kompli",
+            "Ibqa'"
+          ],
+          "examples": [
+            {
+              "mt": "Dur fuq il-lemin",
+              "en": "Turn on your right (sg)"
+            },
+            {
+              "mt": "Duru fuq ix-xellug",
+              "en": "Turn on your left (pl)"
+            },
+            {
+              "mt": "Kompli bi dritt",
+              "en": "Continue straight ahead"
+            },
+            {
+              "mt": "Aqsam it-triq",
+              "en": "Cross the road"
+            },
+            {
+              "mt": "Ibqa' miexi dritt sakemm issib it-taraġ",
+              "en": "Keep walking straight until you find the stairs (m.)"
+            },
+            {
+              "mt": "Ibqa' miexja dritt sakemm issib it-taraġ",
+              "en": "Keep walking straight until you find the stairs (f.)"
+            },
+            {
+              "mt": "Dur fuq l-ewwel dawra tax-xellug",
+              "en": "Take the first turn on the left"
+            }
+          ]
+        },
+        {
+          "id": "tell-time-hours",
+          "title": "Telling time — the hours",
+          "explanation": "Maltese has no word for 'o'clock' — you just say the number. Note: 1 and 2 take SPECIAL forms — is-siegħa, is-sagħtejn. From 3 onwards, use the cardinal number with the article.",
+          "examples": [
+            {
+              "mt": "Is-siegħa",
+              "en": "1 o'clock (special)"
+            },
+            {
+              "mt": "Is-sagħtejn",
+              "en": "2 o'clock (special)"
+            },
+            {
+              "mt": "It-tlieta",
+              "en": "3 o'clock"
+            },
+            {
+              "mt": "L-erbgħa",
+              "en": "4 o'clock"
+            },
+            {
+              "mt": "Il-ħamsa",
+              "en": "5 o'clock"
+            },
+            {
+              "mt": "Is-sitta",
+              "en": "6 o'clock"
+            }
+          ]
+        },
+        {
+          "id": "tell-time-minutes",
+          "title": "Telling time — the minutes",
+          "explanation": "For minutes PAST the hour, use 'u' (and). For minutes TO the next hour, use 'nieqes' (less / minus). 'Kwart' = quarter (15 min); 'nofs' = half (30 min). Note the special slide patterns at 25 and 35: 5:25 = il-ħamsa u nofs nieqes ħamsa ('half past five less five'); 5:35 = il-ħamsa u nofs u ħamsa ('half past five plus five').",
+          "examples": [
+            {
+              "mt": "Il-ħamsa u ħamsa",
+              "en": "5:05 — five past five"
+            },
+            {
+              "mt": "Il-ħamsa u għaxra",
+              "en": "5:10 — ten past five"
+            },
+            {
+              "mt": "Il-ħamsa u kwart",
+              "en": "5:15 — quarter past five"
+            },
+            {
+              "mt": "Il-ħamsa u għoxrin",
+              "en": "5:20 — twenty past five"
+            },
+            {
+              "mt": "Il-ħamsa u nofs nieqes ħamsa",
+              "en": "5:25 — half past five less five"
+            },
+            {
+              "mt": "Il-ħamsa u nofs",
+              "en": "5:30 — half past five"
+            },
+            {
+              "mt": "Il-ħamsa u nofs u ħamsa",
+              "en": "5:35 — half past five plus five"
+            },
+            {
+              "mt": "Is-sitta nieqes għoxrin",
+              "en": "5:40 — twenty to six"
+            },
+            {
+              "mt": "Is-sitta nieqes kwart",
+              "en": "5:45 — quarter to six"
+            },
+            {
+              "mt": "Is-sitta nieqes għaxra",
+              "en": "5:50 — ten to six"
+            },
+            {
+              "mt": "Is-sitta nieqes ħamsa",
+              "en": "5:55 — five to six"
+            }
+          ]
+        },
+        {
+          "id": "am-pm",
+          "title": "AM, PM, evening, night — the 'ta'' construction",
+          "explanation": "Maltese doesn't use AM/PM. Instead it adds a 'time of day' phrase AFTER the hour, joined with 'ta'' (of). Filgħodu = morning (AM), Waranofsinhar = afternoon (after 12pm), Filgħaxija = evening (~6–10pm), Ta' billejl = night (after 10pm). Pattern: [hour] + ta' + [time of day].",
+          "letters": [
+            "ta' filgħodu",
+            "ta' waranofsinhar",
+            "ta' filgħaxija",
+            "ta' billejl"
+          ],
+          "examples": [
+            {
+              "mt": "Is-sitta ta' filgħodu",
+              "en": "6am — six in the morning"
+            },
+            {
+              "mt": "It-tlieta ta' waranofsinhar",
+              "en": "3pm — three in the afternoon"
+            },
+            {
+              "mt": "It-tmienja ta' filgħaxija",
+              "en": "8pm — eight in the evening"
+            },
+            {
+              "mt": "L-għaxra ta' billejl",
+              "en": "10pm — ten at night"
+            },
+            {
+              "mt": "Is-sebgħa u nofs ta' filgħaxija",
+              "en": "7:30pm — half past seven in the evening"
+            },
+            {
+              "mt": "It-tmienja u ħamsa ta' filgħodu",
+              "en": "8:05am — five past eight in the morning"
+            }
+          ]
+        },
+        {
+          "id": "wind-directions",
+          "title": "The 8 winds — always capitalised",
+          "explanation": "Maltese uses 8 named wind directions (Tramuntana, Grigal, Lvant, Xlokk, Nofsinhar, Lbiċ, Punent, Majjistral). Per the slide: they are ALWAYS written with a capital letter, even mid-sentence.",
+          "letters": [
+            "Tramuntana",
+            "Grigal",
+            "Lvant",
+            "Xlokk",
+            "Nofsinhar",
+            "Lbiċ",
+            "Punent",
+            "Majjistral"
+          ],
+          "examples": [
+            {
+              "mt": "Jiena noqgħod fin-Nofsinhar ta' Malta",
+              "en": "I live in the South of Malta"
+            },
+            {
+              "mt": "Oħti toqgħod fit-Tramuntana ta' Malta",
+              "en": "My sister lives in the North of Malta"
+            },
+            {
+              "mt": "Ir-riħ ġej mix-Xlokk",
+              "en": "The wind is coming from the South-East"
+            },
+            {
+              "mt": "Ir-riħ bejn it-Tramuntana u l-Lvant jissejjaħ Grigal",
+              "en": "The wind between North and East is called Grigal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

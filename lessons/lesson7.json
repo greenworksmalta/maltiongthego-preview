@@ -1,0 +1,1073 @@
+{
+  "id": "lesson7",
+  "title": "Lesson 7 — Getting Around",
+  "subtitle": "Transport, weekend plans, seasons, particles",
+  "sections": [
+    {
+      "id": "transport",
+      "icon": "🚌",
+      "title": "Transport",
+      "subtitle": "Mezzi ta' trasport — modes of transport",
+      "items": [
+        {
+          "singular": "Karozza",
+          "plural": "Karozzi",
+          "en": "Car/s"
+        },
+        {
+          "singular": "Xarabank",
+          "plural": "Xarabankijiet",
+          "en": "Bus/es"
+        },
+        {
+          "singular": "Taksi",
+          "plural": "Taksis",
+          "en": "Taxi/s"
+        },
+        {
+          "singular": "Rota",
+          "plural": "Roti",
+          "en": "Bicycle/s"
+        },
+        {
+          "singular": "Mutur",
+          "plural": "Muturi",
+          "en": "Motorcycle/s"
+        },
+        {
+          "singular": "Skuter",
+          "plural": "Skuters",
+          "en": "Scooter/s"
+        },
+        {
+          "singular": "Vapur",
+          "plural": "Vapuri",
+          "en": "Ship/s"
+        },
+        {
+          "singular": "Dgħajsa",
+          "plural": "Dgħajjes",
+          "en": "Boat/s"
+        },
+        {
+          "singular": "Jott",
+          "plural": "Jottijiet",
+          "en": "Yacht/s"
+        },
+        {
+          "singular": "Ajruplan",
+          "plural": "Ajruplani",
+          "en": "Aeroplane/s"
+        },
+        {
+          "singular": "Ħelikopter",
+          "plural": "Ħelikopters",
+          "en": "Helicopter/s"
+        },
+        {
+          "singular": "Vann",
+          "plural": "Vannijiet",
+          "en": "Van/s"
+        },
+        {
+          "singular": "Trakk",
+          "plural": "Trakkijiet",
+          "en": "Truck/s"
+        },
+        {
+          "singular": "Karozzin",
+          "plural": "Karozzini",
+          "en": "Horse-drawn cab/s"
+        },
+        {
+          "singular": "Lanċa",
+          "plural": "Lanċi",
+          "en": "Ferry/Launches"
+        }
+      ]
+    },
+    {
+      "id": "weekend",
+      "icon": "🗓️",
+      "title": "Weekend plans",
+      "subtitle": "Pjanijiet għall-weekend",
+      "vocab": [
+        {
+          "mt": "Se mmur l-Imdina",
+          "en": "I'm going to Mdina"
+        },
+        {
+          "mt": "Se mmur Kemmuna",
+          "en": "I'm going to Comino"
+        },
+        {
+          "mt": "Se mmur niekol pizza",
+          "en": "I'm going to eat pizza"
+        },
+        {
+          "mt": "Se mmur niġri mat-tfal",
+          "en": "I'm going running with the kids"
+        },
+        {
+          "mt": "Se mmur ngħum",
+          "en": "I'm going swimming"
+        },
+        {
+          "mt": "Se mmur niltaqa' ma' ħabib",
+          "en": "I'm going to meet a friend"
+        },
+        {
+          "mt": "Se mmur kunċert",
+          "en": "I'm going to a concert"
+        },
+        {
+          "mt": "Se mmur tieġ",
+          "en": "I'm going to a wedding"
+        },
+        {
+          "mt": "Se mmur il-festa",
+          "en": "I'm going to a village feast"
+        },
+        {
+          "mt": "Se nibqa' nirrilassa d-dar",
+          "en": "I'm going to chill at home"
+        }
+      ],
+      "dialogue": [
+        {
+          "mt": "X'għandek pjanijiet dan il-weekend?",
+          "en": "What are your plans for the weekend?"
+        },
+        {
+          "mt": "Nhar is-Sibt sejra Kemmuna bil-vapur.",
+          "en": "On Saturday I'm going to Comino by ferry."
+        },
+        {
+          "mt": "U nhar il-Ħadd?",
+          "en": "And on Sunday?"
+        },
+        {
+          "mt": "Se nibqa' d-dar, naqra ftit u norqod kmieni.",
+          "en": "I'll stay home, read a bit and sleep early."
+        }
+      ]
+    },
+    {
+      "id": "seasons",
+      "icon": "🌷",
+      "title": "Seasons",
+      "subtitle": "L-Istaġuni — the four seasons",
+      "items": [
+        {
+          "mt": "Ir-Rebbiegħa",
+          "en": "Spring",
+          "icon": "🌷",
+          "vocab": [
+            {
+              "mt": "Pjanti",
+              "en": "Plants"
+            },
+            {
+              "mt": "Sħab",
+              "en": "Clouds"
+            },
+            {
+              "mt": "Friefet",
+              "en": "Butterflies"
+            },
+            {
+              "mt": "Festa",
+              "en": "Festa (village feast)"
+            },
+            {
+              "mt": "Frawli",
+              "en": "Strawberries"
+            },
+            {
+              "mt": "Xita ħafifa",
+              "en": "Showers"
+            }
+          ]
+        },
+        {
+          "mt": "Is-Sajf",
+          "en": "Summer",
+          "icon": "☀️",
+          "vocab": [
+            {
+              "mt": "Bajja",
+              "en": "Bay / beach"
+            },
+            {
+              "mt": "Granċ",
+              "en": "Crab"
+            },
+            {
+              "mt": "Nuċċali tax-xemx",
+              "en": "Pair of sunglasses"
+            },
+            {
+              "mt": "Granita",
+              "en": "Granita"
+            },
+            {
+              "mt": "Lampuki",
+              "en": "Dorado fish"
+            },
+            {
+              "mt": "Sħana",
+              "en": "Heat"
+            }
+          ]
+        },
+        {
+          "mt": "Il-Ħarifa",
+          "en": "Autumn",
+          "icon": "🍂",
+          "vocab": [
+            {
+              "mt": "Għasel",
+              "en": "Honey"
+            },
+            {
+              "mt": "Ġewż",
+              "en": "Walnuts"
+            },
+            {
+              "mt": "Riħ",
+              "en": "Wind"
+            },
+            {
+              "mt": "Festa tal-għasel",
+              "en": "Honey festival"
+            },
+            {
+              "mt": "Mantell",
+              "en": "Cape / cloak"
+            }
+          ]
+        },
+        {
+          "mt": "Ix-Xitwa",
+          "en": "Winter",
+          "icon": "❄️",
+          "vocab": [
+            {
+              "mt": "Bard",
+              "en": "Cold"
+            },
+            {
+              "mt": "Maltempata",
+              "en": "Storm"
+            },
+            {
+              "mt": "Nar",
+              "en": "Fire"
+            },
+            {
+              "mt": "Brodu",
+              "en": "Broth"
+            },
+            {
+              "mt": "Kowt",
+              "en": "Coat"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "particles",
+      "icon": "🔗",
+      "title": "Particles",
+      "subtitle": "Il-Partiċelli — small linking words",
+      "intro": "Particles are small words that show a relationship between others — 'with', 'of', 'in', 'until'. Used on their own (without the article).",
+      "items": [
+        {
+          "mt": "ma'",
+          "en": "with (someone)"
+        },
+        {
+          "mt": "ta'",
+          "en": "of"
+        },
+        {
+          "mt": "sa",
+          "en": "until / as far as"
+        },
+        {
+          "mt": "ġo",
+          "en": "in"
+        },
+        {
+          "mt": "bi",
+          "en": "with"
+        },
+        {
+          "mt": "fi",
+          "en": "in"
+        },
+        {
+          "mt": "lil",
+          "en": "to (someone)"
+        },
+        {
+          "mt": "bħal",
+          "en": "like"
+        },
+        {
+          "mt": "għal",
+          "en": "for"
+        },
+        {
+          "mt": "minn",
+          "en": "from"
+        },
+        {
+          "mt": "u",
+          "en": "and"
+        }
+      ],
+      "examples": [
+        {
+          "phrase": "Sara mxiet ma' Tom",
+          "en": "Sara walked with Tom"
+        },
+        {
+          "phrase": "Il-fjuri ta' nanna",
+          "en": "Grandma's flowers"
+        },
+        {
+          "phrase": "Stennejt sa nofsinhar",
+          "en": "I waited until noon"
+        },
+        {
+          "phrase": "Pinġejt bi pinna ħamra",
+          "en": "I drew with a red pen"
+        },
+        {
+          "phrase": "Marija toqgħod ġo villaġġ żgħir",
+          "en": "Marija lives in a small village"
+        },
+        {
+          "phrase": "Tom u Sara saru ħbieb",
+          "en": "Tom and Sara became friends"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex7",
+          "title": "Pick the right particle",
+          "instructions": "Choose the particle that fits.",
+          "choices": [
+            "ma'",
+            "ta'",
+            "sa",
+            "ġo",
+            "bi",
+            "fi",
+            "lil",
+            "bħal",
+            "għal",
+            "minn",
+            "u"
+          ],
+          "items": [
+            {
+              "sentence": "Sara ___ Tom marru s-suq.",
+              "en": "Sara and Tom went to the market",
+              "answer": "u"
+            },
+            {
+              "sentence": "Dik il-borża ___ tagħha.",
+              "en": "That bag is like hers",
+              "answer": "bħal"
+            },
+            {
+              "sentence": "Ix-xemx ___ Awwissu sħuna.",
+              "en": "The August sun is hot",
+              "answer": "ta'"
+            },
+            {
+              "sentence": "Stennejt ___ tlieta.",
+              "en": "I waited until three",
+              "answer": "sa"
+            },
+            {
+              "sentence": "Pinġejt il-mappa ___ ftit pinen.",
+              "en": "I drew the map with a few pens",
+              "answer": "bi"
+            },
+            {
+              "sentence": "Toqgħod ___ villaġġ kwiet.",
+              "en": "She lives in a quiet village",
+              "answer": "fi"
+            },
+            {
+              "sentence": "Marja marret il-Belt ___ ommha.",
+              "en": "Marja went to Valletta with her mother",
+              "answer": "ma'"
+            },
+            {
+              "sentence": "Hu jħobb ___ kelb tiegħu.",
+              "en": "He loves his dog",
+              "answer": "lil"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "icon": "📚",
+      "title": "Vocabulary",
+      "subtitle": "Il-vokabularju — words & verbs from this lesson",
+      "intro": "Tap any word to hear it. Grouped by theme — verbs are listed on their own so you can drill them for the test.",
+      "groups": [
+        {
+          "title": "Transport (singular → plural)",
+          "icon": "🚌",
+          "subtitle": "Plurals from the slide. Note the three patterns: regular -i, -ijiet, and the -s ending borrowed words use.",
+          "items": [
+            {
+              "icon": "🚗",
+              "mt": "Karozza → Karozzi",
+              "en": "Car / Cars"
+            },
+            {
+              "icon": "🚌",
+              "mt": "Xarabank → Xarabankijiet",
+              "en": "Bus / Buses"
+            },
+            {
+              "icon": "🚲",
+              "mt": "Rota → Roti",
+              "en": "Bicycle / Bicycles"
+            },
+            {
+              "icon": "🏍️",
+              "mt": "Mutur → Muturi",
+              "en": "Motorcycle / Motorcycles"
+            },
+            {
+              "icon": "🛵",
+              "mt": "Lambretta → Lambretti",
+              "en": "Scooter / Scooters"
+            },
+            {
+              "icon": "🚖",
+              "mt": "Taksi → Taksis",
+              "en": "Taxi / Taxis"
+            },
+            {
+              "icon": "🚐",
+              "mt": "Vann → Vannijiet",
+              "en": "Van / Vans"
+            },
+            {
+              "icon": "🚚",
+              "mt": "Trakk → Trakkijiet",
+              "en": "Truck / Trucks"
+            },
+            {
+              "icon": "🚑",
+              "mt": "Ambulanza → Ambulanzi",
+              "en": "Ambulance / Ambulances"
+            },
+            {
+              "icon": "🚂",
+              "mt": "Ferrovija → Ferroviji",
+              "en": "Train / Trains"
+            },
+            {
+              "icon": "✈️",
+              "mt": "Ajruplan → Ajruplani",
+              "en": "Aeroplane / Aeroplanes"
+            },
+            {
+              "icon": "🚁",
+              "mt": "Ħelikopter → Ħelikopters",
+              "en": "Helicopter / Helicopters"
+            },
+            {
+              "icon": "🚢",
+              "mt": "Vapur → Vapuri",
+              "en": "Ship / Ships"
+            },
+            {
+              "icon": "⛵",
+              "mt": "Dgħajsa → Dgħajjes",
+              "en": "Boat / Boats (irregular)"
+            },
+            {
+              "icon": "🛶",
+              "mt": "Dingi → Dingis",
+              "en": "Dinghy / Dinghies"
+            },
+            {
+              "icon": "🐎",
+              "mt": "Karozzin → Karozzini",
+              "en": "Horse-driven cab / cabs"
+            }
+          ]
+        },
+        {
+          "title": "Verbs (1st person — 'I…')",
+          "icon": "🏃",
+          "subtitle": "Used after 'Se' to say what you're going to do.",
+          "items": [
+            {
+              "icon": "🚶",
+              "mt": "Immur",
+              "en": "I go"
+            },
+            {
+              "icon": "🏠",
+              "mt": "Nibqa'",
+              "en": "I stay / I remain"
+            },
+            {
+              "icon": "👀",
+              "mt": "Nara",
+              "en": "I see / I watch"
+            },
+            {
+              "icon": "🍽️",
+              "mt": "Niekol",
+              "en": "I eat"
+            },
+            {
+              "icon": "🛍️",
+              "mt": "Nixtri",
+              "en": "I buy"
+            },
+            {
+              "icon": "🤝",
+              "mt": "Nieħu",
+              "en": "I take"
+            },
+            {
+              "icon": "🧳",
+              "mt": "Inżur",
+              "en": "I visit"
+            },
+            {
+              "icon": "🏊",
+              "mt": "Ngħum",
+              "en": "I swim"
+            },
+            {
+              "icon": "🛠️",
+              "mt": "Nagħmel",
+              "en": "I do / I make"
+            }
+          ]
+        },
+        {
+          "title": "Verbs (2nd & 3rd person)",
+          "icon": "👥",
+          "subtitle": "Useful for asking and reporting.",
+          "items": [
+            {
+              "icon": "❓",
+              "mt": "Tagħmel",
+              "en": "You do / you make"
+            },
+            {
+              "icon": "❓",
+              "mt": "Sejjer / Sejra",
+              "en": "Going (m. / f.) — present participle"
+            },
+            {
+              "icon": "👉",
+              "mt": "Mar",
+              "en": "He went"
+            },
+            {
+              "icon": "👉",
+              "mt": "Marret",
+              "en": "She went"
+            },
+            {
+              "icon": "👥",
+              "mt": "Ħarġu",
+              "en": "They went out"
+            },
+            {
+              "icon": "❤️",
+              "mt": "Tħobb",
+              "en": "She loves"
+            },
+            {
+              "icon": "👕",
+              "mt": "Libes",
+              "en": "He wore"
+            }
+          ]
+        },
+        {
+          "title": "Weekend places & activities",
+          "icon": "🗓️",
+          "items": [
+            {
+              "icon": "🏖️",
+              "mt": "Baħar",
+              "en": "Sea / beach"
+            },
+            {
+              "icon": "🏛️",
+              "mt": "Mużew",
+              "en": "Museum"
+            },
+            {
+              "icon": "🍝",
+              "mt": "Ristorant",
+              "en": "Restaurant"
+            },
+            {
+              "icon": "🎬",
+              "mt": "Ċinema",
+              "en": "Cinema"
+            },
+            {
+              "icon": "🎞️",
+              "mt": "Film",
+              "en": "Film / movie"
+            },
+            {
+              "icon": "🏨",
+              "mt": "Lukanda",
+              "en": "Hotel"
+            },
+            {
+              "icon": "🍦",
+              "mt": "Ġelat",
+              "en": "Ice-cream"
+            },
+            {
+              "icon": "🚶",
+              "mt": "Mixja",
+              "en": "A walk"
+            },
+            {
+              "icon": "⛺",
+              "mt": "Camping",
+              "en": "Camping"
+            },
+            {
+              "icon": "🏠",
+              "mt": "Ġewwa",
+              "en": "Inside / at home"
+            },
+            {
+              "icon": "📅",
+              "mt": "Weekend",
+              "en": "Weekend"
+            }
+          ]
+        },
+        {
+          "title": "The four seasons",
+          "icon": "🌷",
+          "items": [
+            {
+              "icon": "🌷",
+              "mt": "Ir-Rebbiegħa",
+              "en": "Spring"
+            },
+            {
+              "icon": "☀️",
+              "mt": "Is-Sajf",
+              "en": "Summer"
+            },
+            {
+              "icon": "🍂",
+              "mt": "Il-Ħarifa",
+              "en": "Autumn"
+            },
+            {
+              "icon": "❄️",
+              "mt": "Ix-Xitwa",
+              "en": "Winter"
+            }
+          ]
+        },
+        {
+          "title": "Season weather & nature",
+          "icon": "🌦️",
+          "items": [
+            {
+              "icon": "🌸",
+              "mt": "Fjuri",
+              "en": "Flowers"
+            },
+            {
+              "icon": "🌈",
+              "mt": "Qawsalla",
+              "en": "Rainbow"
+            },
+            {
+              "icon": "🌱",
+              "mt": "Ħaxix",
+              "en": "Grass"
+            },
+            {
+              "icon": "🍓",
+              "mt": "Frawli",
+              "en": "Strawberries"
+            },
+            {
+              "icon": "☀️",
+              "mt": "Xemx",
+              "en": "Sun"
+            },
+            {
+              "icon": "🏖️",
+              "mt": "Ramel",
+              "en": "Sand"
+            },
+            {
+              "icon": "🍉",
+              "mt": "Dulliegħ",
+              "en": "Watermelon"
+            },
+            {
+              "icon": "🎃",
+              "mt": "Qargħa ħamra",
+              "en": "Pumpkin"
+            },
+            {
+              "icon": "🍃",
+              "mt": "Weraq",
+              "en": "Leaves"
+            },
+            {
+              "icon": "🌧️",
+              "mt": "Xita",
+              "en": "Rain"
+            },
+            {
+              "icon": "⛈️",
+              "mt": "Ragħad",
+              "en": "Thunder"
+            },
+            {
+              "icon": "⚡",
+              "mt": "Sajjetti",
+              "en": "Lightning"
+            },
+            {
+              "icon": "🍲",
+              "mt": "Soppa",
+              "en": "Soup"
+            },
+            {
+              "icon": "🧥",
+              "mt": "Ġakketta",
+              "en": "Jacket"
+            },
+            {
+              "icon": "🧣",
+              "mt": "Xalla",
+              "en": "Scarf"
+            },
+            {
+              "icon": "☂️",
+              "mt": "Umbrella",
+              "en": "Umbrella"
+            }
+          ]
+        },
+        {
+          "title": "Particles (small linkers)",
+          "icon": "🔗",
+          "subtitle": "Used on their own — without the article.",
+          "items": [
+            {
+              "icon": "🤝",
+              "mt": "ma'",
+              "en": "with (someone)"
+            },
+            {
+              "icon": "🏷️",
+              "mt": "ta'",
+              "en": "of"
+            },
+            {
+              "icon": "🛑",
+              "mt": "sa",
+              "en": "until / as far as"
+            },
+            {
+              "icon": "📦",
+              "mt": "ġo",
+              "en": "in"
+            },
+            {
+              "icon": "🛠️",
+              "mt": "bi",
+              "en": "with (a tool / means)"
+            },
+            {
+              "icon": "📍",
+              "mt": "fi",
+              "en": "in"
+            },
+            {
+              "icon": "➡️",
+              "mt": "lil",
+              "en": "to (someone)"
+            },
+            {
+              "icon": "≈",
+              "mt": "bħal",
+              "en": "like"
+            },
+            {
+              "icon": "🎯",
+              "mt": "għal",
+              "en": "for"
+            },
+            {
+              "icon": "🔙",
+              "mt": "minn",
+              "en": "from"
+            },
+            {
+              "icon": "➕",
+              "mt": "u",
+              "en": "and"
+            }
+          ]
+        },
+        {
+          "title": "Useful little words",
+          "icon": "💬",
+          "items": [
+            {
+              "icon": "🔮",
+              "mt": "Se",
+              "en": "Going to (future marker)"
+            },
+            {
+              "icon": "❓",
+              "mt": "X'",
+              "en": "What"
+            },
+            {
+              "icon": "📍",
+              "mt": "Fejn",
+              "en": "Where"
+            },
+            {
+              "icon": "👤",
+              "mt": "Inti",
+              "en": "You"
+            },
+            {
+              "icon": "👤",
+              "mt": "Jiena / Jien",
+              "en": "I"
+            },
+            {
+              "icon": "📅",
+              "mt": "Dan il-weekend",
+              "en": "This weekend"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar7",
+      "icon": "📖",
+      "title": "Grammar",
+      "subtitle": "Il-grammatika — the grammar of Lesson 7",
+      "intro": "These are the grammar points covered in the slides. Each rule has examples drawn from the lesson.",
+      "rules": [
+        {
+          "id": "future-se",
+          "title": "Future with 'Se' + verb",
+          "explanation": "To say 'I'm going to (do something)', put 'Se' before the verb. The verb stays in its 1st-person present form. 'Se mmur' = 'I'm going' / 'I'm going to go'.",
+          "examples": [
+            {
+              "mt": "Se mmur il-baħar",
+              "en": "I'm going to the beach"
+            },
+            {
+              "mt": "Se mmur nixtri",
+              "en": "I'm going shopping"
+            },
+            {
+              "mt": "Se mmur nieħu ġelat",
+              "en": "I'm going to have an ice-cream"
+            },
+            {
+              "mt": "Se nibqa' ġewwa",
+              "en": "I'm going to stay at home"
+            },
+            {
+              "mt": "Se nara film",
+              "en": "I'm going to watch a film"
+            }
+          ]
+        },
+        {
+          "id": "verb-stacking",
+          "title": "Stacking verbs after 'Se mmur'",
+          "explanation": "After 'Se mmur' (I'm going) you often add a second verb to say what you'll do there. Both verbs stay in the 1st-person form. No 'to' between them.",
+          "examples": [
+            {
+              "mt": "Se mmur inżur mużew",
+              "en": "I'm going to visit a museum"
+            },
+            {
+              "mt": "Se mmur niekol f'ristorant",
+              "en": "I'm going out to eat in a restaurant"
+            },
+            {
+              "mt": "Se mmur nara film iċ-ċinema",
+              "en": "I'm going to watch a movie at the cinema"
+            },
+            {
+              "mt": "Se mmur nieħu ġelat",
+              "en": "I'm going for an ice-cream"
+            }
+          ]
+        },
+        {
+          "id": "plural-patterns",
+          "title": "Plural patterns for transport nouns",
+          "explanation": "The slide groups transport plurals into three patterns. (1) Most native nouns add -i: karozza → karozzi, mutur → muturi. (2) Some words take -ijiet: vann → vannijiet, trakk → trakkijiet, xarabank → xarabankijiet. (3) Many borrowed words just take an English-style -s: ħelikopters, taksis. A few are irregular: dgħajsa → dgħajjes.",
+          "examples": [
+            {
+              "mt": "Karozza → Karozzi",
+              "en": "car → cars (regular -i)"
+            },
+            {
+              "mt": "Mutur → Muturi",
+              "en": "motorcycle → motorcycles (regular -i)"
+            },
+            {
+              "mt": "Vann → Vannijiet",
+              "en": "van → vans (-ijiet)"
+            },
+            {
+              "mt": "Trakk → Trakkijiet",
+              "en": "truck → trucks (-ijiet)"
+            },
+            {
+              "mt": "Ħelikopter → Ħelikopters",
+              "en": "helicopter → helicopters (-s, borrowed)"
+            },
+            {
+              "mt": "Taksi → Taksis",
+              "en": "taxi → taxis (-s, borrowed)"
+            },
+            {
+              "mt": "Xarabank → Xarabankijiet",
+              "en": "bus → buses (-ijiet)"
+            },
+            {
+              "mt": "Skuter → Skuters",
+              "en": "scooter → scooters (-s, borrowed)"
+            },
+            {
+              "mt": "Dgħajsa → Dgħajjes",
+              "en": "boat → boats (irregular)"
+            }
+          ]
+        },
+        {
+          "id": "article-seasons",
+          "title": "The article with seasons",
+          "explanation": "Each season name takes 'the' from Lesson 1's article rules. R, S and X are 'Xemxin' consonants — the L of il- assimilates to the first letter. Only Il-Ħarifa keeps il- because Ħ is a 'Qamrin' consonant.",
+          "letters": [
+            "Ir-",
+            "Is-",
+            "Il-",
+            "Ix-"
+          ],
+          "examples": [
+            {
+              "mt": "Ir-Rebbiegħa",
+              "en": "Spring (R is a 'Xemxin' consonant)"
+            },
+            {
+              "mt": "Is-Sajf",
+              "en": "Summer (S is a 'Xemxin' consonant)"
+            },
+            {
+              "mt": "Il-Ħarifa",
+              "en": "Autumn (Ħ is a 'Qamrin' consonant)"
+            },
+            {
+              "mt": "Ix-Xitwa",
+              "en": "Winter (X is a 'Xemxin' consonant)"
+            }
+          ]
+        },
+        {
+          "id": "particles-alone",
+          "title": "Particles on their own",
+          "explanation": "Particles are tiny linking words ('with', 'of', 'in', 'until'…). They're used on their own — no article. In Lesson 8 you'll see what happens when they MEET the article: they fuse together (ġo + l- → ġol-).",
+          "letters": [
+            "ma'",
+            "ta'",
+            "sa",
+            "ġo",
+            "bi",
+            "fi",
+            "lil",
+            "bħal",
+            "għal",
+            "minn",
+            "u"
+          ],
+          "examples": [
+            {
+              "mt": "Ġorġ mar il-Belt ma' Ġanni",
+              "en": "Ġorġ went to Valletta with Ġanni"
+            },
+            {
+              "mt": "Mark libes iż-żarbun ta' Sean",
+              "en": "Mark wore Sean's shoe ('the shoe of Sean')"
+            },
+            {
+              "mt": "Jane kienet hawn sa ftit ilu",
+              "en": "Jane was here until a few moments ago"
+            },
+            {
+              "mt": "In-nanna poġġiet l-għaġin ġo platt",
+              "en": "Grandma put the pasta in a plate"
+            },
+            {
+              "mt": "Bi ftit ingredjenti sajjart ikla tajba",
+              "en": "With a few ingredients I cooked a good meal"
+            },
+            {
+              "mt": "Fi ftit minuti irnexxielna naslu",
+              "en": "We managed to arrive in a few minutes"
+            },
+            {
+              "mt": "Tħobb lil kulħadd",
+              "en": "To love everyone"
+            },
+            {
+              "mt": "Dawk it-tfal għandhom ġugarell bħal tiegħi",
+              "en": "Those children have a toy like mine"
+            },
+            {
+              "mt": "Minn fejn xtrajtu l-ktieb?",
+              "en": "Where did you buy the book from?"
+            },
+            {
+              "mt": "Mark u Marija ħarġu",
+              "en": "Mark and Maria went out"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

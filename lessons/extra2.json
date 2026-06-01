@@ -1,0 +1,211 @@
+{
+  "id": "extra2",
+  "module": "Start Here · Free",
+  "title": "Welcome to Malta",
+  "subtitle": "A fun intro to island life — and your first taste of Maltese",
+  "sections": [
+    {
+      "id": "polite",
+      "icon": "🏝️",
+      "title": "The Islands",
+      "subtitle": "Malta, Gozo, and the words you'll see everywhere",
+      "vocab": [
+        {"mt": "Malta", "en": "Malta"},
+        {"mt": "Għawdex", "en": "Gozo"},
+        {"mt": "Kemmuna", "en": "Comino"},
+        {"mt": "il-gżira", "en": "the island"},
+        {"mt": "il-gżejjer", "en": "the islands"},
+        {"mt": "il-baħar", "en": "the sea"},
+        {"mt": "ix-xemx", "en": "the sun"},
+        {"mt": "il-Belt", "en": "Valletta (the City)"},
+        {"mt": "ir-raħal", "en": "the village"},
+        {"mt": "il-pjazza", "en": "the square"},
+        {"mt": "il-knisja", "en": "the church"},
+        {"mt": "il-festa", "en": "the village feast"}
+      ],
+      "dialogue": [
+        {"mt": "Minn fejn int?", "en": "Where are you from?"},
+        {"mt": "Jien barrani, imma ngħix Malta.", "en": "I'm a foreigner, but I live in Malta."},
+        {"mt": "Tgħix il-Belt?", "en": "Do you live in Valletta?"},
+        {"mt": "Le, ngħix f'raħal ħdejn il-baħar.", "en": "No, I live in a village near the sea."},
+        {"mt": "Sabiħ! Malta gżira sabiħa.", "en": "Lovely! Malta is a beautiful island."}
+      ]
+    },
+    {
+      "id": "cafe",
+      "icon": "🥟",
+      "title": "Tastes of Malta",
+      "subtitle": "The food and drink you have to try",
+      "vocab": [
+        {"mt": "pastizz", "en": "flaky pastry with ricotta or peas"},
+        {"mt": "ftira", "en": "Maltese bread / Gozitan flatbread"},
+        {"mt": "ħobż biż-żejt", "en": "bread with oil, tomato paste and tuna"},
+        {"mt": "imqaret", "en": "date-filled fried pastries"},
+        {"mt": "kannoli", "en": "ricotta-filled pastry tubes"},
+        {"mt": "ġelat", "en": "ice cream"},
+        {"mt": "Kinnie", "en": "Malta's bitter-orange soft drink"},
+        {"mt": "inbid", "en": "wine"},
+        {"mt": "birra", "en": "beer"},
+        {"mt": "kafè", "en": "coffee"},
+        {"mt": "platt Malti", "en": "a Maltese dish"},
+        {"mt": "bnin", "en": "delicious"}
+      ],
+      "dialogue": [
+        {"mt": "X'se tieħu?", "en": "What will you have?"},
+        {"mt": "Żewġ pastizzi u Kinnie, jekk jogħġbok.", "en": "Two pastizzi and a Kinnie, please."},
+        {"mt": "Tal-irkotta jew tal-piżelli?", "en": "Ricotta or pea ones?"},
+        {"mt": "Wieħed minn kull wieħed!", "en": "One of each!"},
+        {"mt": "Prosit, dik għażla Maltija!", "en": "Nice — that's a Maltese choice!"}
+      ]
+    },
+    {
+      "id": "work",
+      "icon": "💬",
+      "title": "Sounds Like Malta",
+      "subtitle": "The little expressions you'll hear all the time",
+      "vocab": [
+        {"mt": "Mela", "en": "so / well / of course (the most used Maltese word!)"},
+        {"mt": "Isma'", "en": "listen / hey"},
+        {"mt": "Ajma", "en": "ouch / oh dear"},
+        {"mt": "Ħanini", "en": "darling / dear (to a man)"},
+        {"mt": "Ħanina", "en": "darling / dear (to a woman)"},
+        {"mt": "Iva mela", "en": "yes, of course"},
+        {"mt": "Le le", "en": "no no"},
+        {"mt": "Mhux hekk?", "en": "isn't it? / right?"},
+        {"mt": "Tassew?", "en": "really?"},
+        {"mt": "Prosit", "en": "well done"},
+        {"mt": "Sabiħ", "en": "beautiful / lovely"},
+        {"mt": "Mela hekk", "en": "that's right / exactly"}
+      ],
+      "dialogue": [
+        {"mt": "Isma', ġej il-festa llejla?", "en": "Hey, are you coming to the feast tonight?"},
+        {"mt": "Mela! Ma nitlifhiex.", "en": "Of course! I wouldn't miss it."},
+        {"mt": "Ajma, qed tagħmel ħafna sħana.", "en": "Oh, it's so hot."},
+        {"mt": "Iva, imma l-logħob tan-nar isbaħ billejl.", "en": "Yes, but the fireworks are nicer at night."},
+        {"mt": "Mela hekk, ħanini!", "en": "That's right, dear!"}
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "icon": "📚",
+      "title": "Vocabulary",
+      "subtitle": "Il-vokabularju — every word from this lesson",
+      "intro": "Tap any word to hear it. A quick reference for your first taste of Maltese.",
+      "groups": [
+        {
+          "title": "The islands",
+          "icon": "🏝️",
+          "items": [
+            {"icon": "🇲🇹", "mt": "Malta", "en": "Malta"},
+            {"icon": "🏖️", "mt": "Għawdex", "en": "Gozo"},
+            {"icon": "🐚", "mt": "Kemmuna", "en": "Comino"},
+            {"icon": "🏝️", "mt": "il-gżira", "en": "the island"},
+            {"icon": "🌊", "mt": "il-baħar", "en": "the sea"},
+            {"icon": "☀️", "mt": "ix-xemx", "en": "the sun"},
+            {"icon": "🏛️", "mt": "il-Belt", "en": "Valletta (the City)"},
+            {"icon": "🏘️", "mt": "ir-raħal", "en": "the village"},
+            {"icon": "⛲", "mt": "il-pjazza", "en": "the square"},
+            {"icon": "⛪", "mt": "il-knisja", "en": "the church"},
+            {"icon": "🎆", "mt": "il-festa", "en": "the village feast"}
+          ]
+        },
+        {
+          "title": "Tastes of Malta",
+          "icon": "🥟",
+          "items": [
+            {"icon": "🥟", "mt": "pastizz", "en": "ricotta / pea pastry"},
+            {"icon": "🫓", "mt": "ftira", "en": "Maltese bread / flatbread"},
+            {"icon": "🍅", "mt": "ħobż biż-żejt", "en": "bread with oil, tomato & tuna"},
+            {"icon": "🥮", "mt": "imqaret", "en": "date-filled pastries"},
+            {"icon": "🧁", "mt": "kannoli", "en": "ricotta pastry tubes"},
+            {"icon": "🍦", "mt": "ġelat", "en": "ice cream"},
+            {"icon": "🥤", "mt": "Kinnie", "en": "bitter-orange soft drink"},
+            {"icon": "🍷", "mt": "inbid", "en": "wine"},
+            {"icon": "🍺", "mt": "birra", "en": "beer"},
+            {"icon": "☕", "mt": "kafè", "en": "coffee"},
+            {"icon": "😋", "mt": "bnin", "en": "delicious"}
+          ]
+        },
+        {
+          "title": "Everyday expressions",
+          "icon": "💬",
+          "items": [
+            {"icon": "🤌", "mt": "Mela", "en": "so / well / of course"},
+            {"icon": "👂", "mt": "Isma'", "en": "listen / hey"},
+            {"icon": "😣", "mt": "Ajma", "en": "ouch / oh dear"},
+            {"icon": "💙", "mt": "Ħanini", "en": "darling (to a man)"},
+            {"icon": "💗", "mt": "Ħanina", "en": "darling (to a woman)"},
+            {"icon": "✅", "mt": "Iva mela", "en": "yes, of course"},
+            {"icon": "🙅", "mt": "Le le", "en": "no no"},
+            {"icon": "❓", "mt": "Mhux hekk?", "en": "isn't it? / right?"},
+            {"icon": "😮", "mt": "Tassew?", "en": "really?"},
+            {"icon": "🎉", "mt": "Prosit", "en": "well done"},
+            {"icon": "✨", "mt": "Sabiħ", "en": "beautiful / lovely"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammarwelcome",
+      "icon": "🇲🇹",
+      "title": "Good to Know",
+      "subtitle": "A few things that make Malta, Malta",
+      "intro": "Not grammar to memorise — just five things worth knowing before you start. Each one comes with a phrase you can actually use.",
+      "rules": [
+        {
+          "id": "two-languages",
+          "title": "Two languages, zero stress",
+          "explanation": "Malta has TWO official languages — Maltese and English. Almost everyone speaks excellent English, so you'll always get by. But a few words of Maltese earn huge goodwill — locals love it when visitors try.",
+          "examples": [
+            {"mt": "Titkellem bl-Ingliż?", "en": "Do you speak English?"},
+            {"mt": "Qed nitgħallem il-Malti", "en": "I'm learning Maltese"},
+            {"mt": "Bonġu", "en": "Good morning"}
+          ]
+        },
+        {
+          "id": "one-of-a-kind",
+          "title": "Maltese is one of a kind",
+          "explanation": "Maltese is the only Semitic language written in the Latin alphabet, and the EU's only Semitic official language. Its roots are Arabic, but centuries of rule mixed in Italian, English and French — so you'll spot familiar words everywhere.",
+          "letters": ["Bonġu (French)", "Skużi (Italian)", "Strajk (English)", "Mela (Maltese)"],
+          "examples": [
+            {"mt": "Bonġu", "en": "Good morning (from French 'bonjour')"},
+            {"mt": "Skużi", "en": "Excuse me (from Italian 'scusi')"},
+            {"mt": "Grazzi", "en": "Thank you (from Italian 'grazie')"}
+          ]
+        },
+        {
+          "id": "mela",
+          "title": "Mela — the most used Maltese word",
+          "explanation": "If you learn one word, learn 'Mela'. It means so, well, of course, indeed — and fills almost any gap in a sentence. Maltese people use it constantly. Drop it in and you'll instantly sound local.",
+          "examples": [
+            {"mt": "Mela!", "en": "Of course! / Sure!"},
+            {"mt": "Iva mela", "en": "Yes, of course"},
+            {"mt": "Mela ejja", "en": "Come on then"},
+            {"mt": "Mela hekk", "en": "That's right / exactly"}
+          ]
+        },
+        {
+          "id": "il-festa",
+          "title": "Il-festa — the village feast",
+          "explanation": "Every summer, each village throws a 'festa' for its patron saint: church decorations, brass-band marches, food stalls and spectacular fireworks. If you're invited to one, go — it's Malta at its most joyful.",
+          "examples": [
+            {"mt": "il-festa tar-raħal", "en": "the village feast"},
+            {"mt": "il-logħob tan-nar", "en": "the fireworks"},
+            {"mt": "il-banda", "en": "the band"}
+          ]
+        },
+        {
+          "id": "il-the",
+          "title": "il- is everywhere",
+          "explanation": "Maltese sticks 'the' onto the front of a word as il- (or l-): il-baħar (the sea), il-Belt (the City). You'll see it on signs and place names all over the islands. Lesson 1 of the course shows you exactly how it works.",
+          "letters": ["il-baħar", "il-Belt", "ir-raħal", "ix-xemx"],
+          "examples": [
+            {"mt": "il-baħar", "en": "the sea"},
+            {"mt": "il-Belt", "en": "Valletta (the City)"},
+            {"mt": "ix-xemx", "en": "the sun"}
+          ]
+        }
+      ]
+    }
+  ]
+}

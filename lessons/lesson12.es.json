@@ -1,0 +1,254 @@
+{
+  "id": "lesson12",
+  "title": "Lección 12 — Más Muebles, el Pasado (għ) y Tiendas Antiguas",
+  "subtitle": "Muebles de baño y de sala, el pasado con għ, tiendas antiguas",
+  "sections": [
+    {
+      "id": "table",
+      "icon": "🚿",
+      "title": "Muebles de Baño",
+      "subtitle": "L-għamara tal-kamra tal-banju — qué hay en el baño",
+      "intro": "Los muebles y elementos de un cuarto de baño maltés, cada uno con su plural.",
+      "items": [
+        {"singular": "kabord", "plural": "kabords", "en": "armario"},
+        {"singular": "sink", "plural": "sinkijiet", "en": "lavabo"},
+        {"singular": "bieb", "plural": "bibien", "en": "puerta"},
+        {"singular": "tieqa", "plural": "twieqi", "en": "ventana"},
+        {"singular": "mera", "plural": "mirja", "en": "espejo"},
+        {"singular": "banju", "plural": "banjijiet", "en": "bañera"},
+        {"singular": "xawer", "plural": "xawers", "en": "ducha"},
+        {"singular": "tojlit", "plural": "tojlits", "en": "inodoro"},
+        {"singular": "swiċċ", "plural": "swiċċijiet", "en": "interruptor"}
+      ]
+    },
+    {
+      "id": "transport",
+      "icon": "🛋️",
+      "title": "Muebles de Sala",
+      "subtitle": "L-għamara tas-salott — qué hay en la sala de estar",
+      "intro": "Los muebles de una sala de estar maltesa, cada uno con su plural. Algunos — como coffee table y wall unit — conservan su nombre en inglés.",
+      "items": [
+        {"singular": "sufan", "plural": "sufanijiet", "en": "sofá"},
+        {"singular": "coffee table", "plural": "coffee tables", "en": "mesa de centro"},
+        {"singular": "librerija", "plural": "libreriji", "en": "estantería / librería"},
+        {"singular": "wall unit", "plural": "wall units", "en": "mueble de pared"},
+        {"singular": "skrivanija", "plural": "skrivaniji", "en": "escritorio"},
+        {"singular": "ħnejja", "plural": "ħnejjiet", "en": "arco"},
+        {"singular": "kolonna", "plural": "kolonni", "en": "columna"},
+        {"singular": "inkwatru", "plural": "inkwatri", "en": "marco / cuadro"}
+      ]
+    },
+    {
+      "id": "ghpresent",
+      "icon": "⏮️",
+      "title": "El Pasado — Verbos con għ",
+      "subtitle": "Il-passat (għ) — el pasado con la letra għ",
+      "intro": "El pasado funciona igual que en la Lección 11 — la mamma más un sufijo para cada persona (Jien -t, Int -t, Hu —, Hi -et, Aħna -na, Intom -tu, Huma -u). Esta lección se centra en verbos cuya raíz contiene għ — al principio (għamel, għażel) o en el medio (lagħab, xegħel). Estudia las tablas y luego prueba los ejercicios.",
+      "rules": [
+        {
+          "id": "ghamel",
+          "title": "Għamel — hacer (raíz għ-m-l)",
+          "rows": [
+            {"person": "Jien", "pronoun": "Jien", "form": "għamilt", "en": "yo hice"},
+            {"person": "Int", "pronoun": "Int", "form": "għamilt", "en": "tú hiciste"},
+            {"person": "Hu", "pronoun": "Hu", "form": "għamel", "en": "él hizo (mamma)"},
+            {"person": "Hi", "pronoun": "Hi", "form": "għamlet", "en": "ella hizo"},
+            {"person": "Aħna", "pronoun": "Aħna", "form": "għamilna", "en": "nosotros hicimos"},
+            {"person": "Intom", "pronoun": "Intom", "form": "għamiltu", "en": "vosotros hicisteis"},
+            {"person": "Huma", "pronoun": "Huma", "form": "għamlu", "en": "ellos hicieron"}
+          ]
+        },
+        {
+          "id": "ghazel",
+          "title": "Għażel — elegir (raíz għ-ż-l)",
+          "rows": [
+            {"person": "Jien", "pronoun": "Jien", "form": "għażilt", "en": "yo elegí"},
+            {"person": "Int", "pronoun": "Int", "form": "għażilt", "en": "tú elegiste"},
+            {"person": "Hu", "pronoun": "Hu", "form": "għażel", "en": "él eligió (mamma)"},
+            {"person": "Hi", "pronoun": "Hi", "form": "għażlet", "en": "ella eligió"},
+            {"person": "Aħna", "pronoun": "Aħna", "form": "għażilna", "en": "nosotros elegimos"},
+            {"person": "Intom", "pronoun": "Intom", "form": "għażiltu", "en": "vosotros elegisteis"},
+            {"person": "Huma", "pronoun": "Huma", "form": "għażlu", "en": "ellos eligieron"}
+          ]
+        },
+        {
+          "id": "laghab",
+          "title": "Lagħab — jugar (raíz l-għ-b, għ en el medio)",
+          "rows": [
+            {"person": "Jien", "pronoun": "Jien", "form": "lgħabt", "en": "yo jugué"},
+            {"person": "Int", "pronoun": "Int", "form": "lgħabt", "en": "tú jugaste"},
+            {"person": "Hu", "pronoun": "Hu", "form": "lagħab", "en": "él jugó (mamma)"},
+            {"person": "Hi", "pronoun": "Hi", "form": "lagħbet", "en": "ella jugó"},
+            {"person": "Aħna", "pronoun": "Aħna", "form": "lgħabna", "en": "nosotros jugamos"},
+            {"person": "Intom", "pronoun": "Intom", "form": "lgħabtu", "en": "vosotros jugasteis"},
+            {"person": "Huma", "pronoun": "Huma", "form": "lagħbu", "en": "ellos jugaron"}
+          ]
+        },
+        {
+          "id": "xeghel",
+          "title": "Xegħel — encender (raíz x-għ-l, għ en el medio)",
+          "rows": [
+            {"person": "Jien", "pronoun": "Jien", "form": "xgħelt", "en": "yo encendí"},
+            {"person": "Int", "pronoun": "Int", "form": "xgħelt", "en": "tú encendiste"},
+            {"person": "Hu", "pronoun": "Hu", "form": "xegħel", "en": "él encendió (mamma)"},
+            {"person": "Hi", "pronoun": "Hi", "form": "xegħlet", "en": "ella encendió"},
+            {"person": "Aħna", "pronoun": "Aħna", "form": "xgħelna", "en": "nosotros encendimos"},
+            {"person": "Intom", "pronoun": "Intom", "form": "xgħeltu", "en": "vosotros encendisteis"},
+            {"person": "Huma", "pronoun": "Huma", "form": "xegħlu", "en": "ellos encendieron"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex5",
+          "title": "Conjuga għamel (hacer) en pasado",
+          "instructions": "Elige la forma de pasado correcta para cada pronombre.",
+          "choices": ["għamilt", "għamel", "għamlet", "għamilna", "għamiltu", "għamlu"],
+          "items": [
+            {"pronoun": "Jien", "en": "Yo hice", "answer": "għamilt"},
+            {"pronoun": "Int", "en": "Tú hiciste", "answer": "għamilt"},
+            {"pronoun": "Hu", "en": "Él hizo", "answer": "għamel"},
+            {"pronoun": "Hi", "en": "Ella hizo", "answer": "għamlet"},
+            {"pronoun": "Aħna", "en": "Nosotros hicimos", "answer": "għamilna"},
+            {"pronoun": "Intom", "en": "Vosotros hicisteis", "answer": "għamiltu"},
+            {"pronoun": "Huma", "en": "Ellos hicieron", "answer": "għamlu"}
+          ]
+        },
+        {
+          "id": "ex6",
+          "title": "Elige el verbo correcto",
+          "instructions": "Elige el verbo con għ en pasado que encaja en cada frase.",
+          "choices": ["lgħabt", "għażel", "għamlet", "xegħlu", "lgħabna", "għażilt", "xgħeltu", "għażilna"],
+          "items": [
+            {"sentence": "Jien ___ logħba futbol.", "en": "Jugué un partido de fútbol. (lagħab)", "answer": "lgħabt"},
+            {"sentence": "Hu ___ qalziet sabiħ.", "en": "Él eligió unos pantalones bonitos. (għażel)", "answer": "għażel"},
+            {"sentence": "Hi ___ platt għaġin tajjeb.", "en": "Ella hizo un buen plato de pasta. (għamel)", "answer": "għamlet"},
+            {"sentence": "Huma ___ id-dawl tal-kamra.", "en": "Ellos encendieron la luz de la habitación. (xegħel)", "answer": "xegħlu"},
+            {"sentence": "Aħna ___ bil-PlayStation.", "en": "Jugamos a la PlayStation. (lagħab)", "answer": "lgħabna"},
+            {"sentence": "Int ___ libsa sabiħa.", "en": "Elegiste un vestido bonito. (għażel)", "answer": "għażilt"},
+            {"sentence": "Intom ___ id-dawl.", "en": "Vosotros encendisteis la luz. (xegħel)", "answer": "xgħeltu"},
+            {"sentence": "Aħna ___ ktieb sabiħ.", "en": "Elegimos un buen libro. (għażel)", "answer": "għażilna"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "food",
+      "icon": "🏪",
+      "title": "Tiendas Antiguas",
+      "subtitle": "Ħwienet antiki — las tiendas tradicionales de la vieja Malta",
+      "intro": "En la vieja Malta, cada pueblo tenía sus tiendas y oficios especializados. Muchos se han perdido con la vida moderna, pero algunos aún sobreviven. Aquí están sus nombres malteses.",
+      "vocab": [
+        {"mt": "il-barbier", "en": "el barbero — cortaba el pelo y afeitaba a los hombres del pueblo"},
+        {"mt": "il-furnar", "en": "el panadero — las familias llevaban su masa al horno de leña"},
+        {"mt": "il-ħajjata", "en": "la costurera — cosía, remendaba y bordaba la ropa a mano"},
+        {"mt": "l-iskarpan", "en": "el zapatero — remendaba zapatos gastados y artículos de cuero"},
+        {"mt": "il-ħaddied", "en": "el herrero — forjaba y reparaba herramientas, verjas y objetos de hierro a mano"},
+        {"mt": "ħanut tal-merċa", "en": "la tienda de comestibles — una pequeña tienda familiar de comida diaria"},
+        {"mt": "ħanut tal-ħelu", "en": "la dulcería — dulces y golosinas malteses tradicionales"},
+        {"mt": "ħanut tal-gazzetti", "en": "el quiosco de prensa — periódicos y revistas"}
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "icon": "📚",
+      "title": "Vocabulario",
+      "subtitle": "Il-vokabularju — todas las palabras de la Lección 12",
+      "intro": "Todo el vocabulario de la lección en un solo lugar — muebles de baño y de sala, los verbos en pasado con għ, y las tiendas antiguas.",
+      "groups": [
+        {
+          "title": "Muebles de baño",
+          "icon": "🚿",
+          "items": [
+            {"icon": "🗄️", "mt": "kabord", "en": "armario"},
+            {"icon": "🚰", "mt": "sink", "en": "lavabo"},
+            {"icon": "🚪", "mt": "bieb", "en": "puerta"},
+            {"icon": "🪟", "mt": "tieqa", "en": "ventana"},
+            {"icon": "🪞", "mt": "mera", "en": "espejo"},
+            {"icon": "🛁", "mt": "banju", "en": "bañera"},
+            {"icon": "🚿", "mt": "xawer", "en": "ducha"},
+            {"icon": "🚽", "mt": "tojlit", "en": "inodoro"},
+            {"icon": "🔘", "mt": "swiċċ", "en": "interruptor"}
+          ]
+        },
+        {
+          "title": "Muebles de sala",
+          "icon": "🛋️",
+          "items": [
+            {"icon": "🛋️", "mt": "sufan", "en": "sofá"},
+            {"icon": "🪑", "mt": "coffee table", "en": "mesa de centro"},
+            {"icon": "📚", "mt": "librerija", "en": "estantería / librería"},
+            {"icon": "🗄️", "mt": "wall unit", "en": "mueble de pared"},
+            {"icon": "🪑", "mt": "skrivanija", "en": "escritorio"},
+            {"icon": "🌉", "mt": "ħnejja", "en": "arco"},
+            {"icon": "🏛️", "mt": "kolonna", "en": "columna"},
+            {"icon": "🖼️", "mt": "inkwatru", "en": "marco / cuadro"}
+          ]
+        },
+        {
+          "title": "Verbos en pasado con għ",
+          "icon": "⏮️",
+          "subtitle": "La mamma — la forma simple de 'él'.",
+          "items": [
+            {"icon": "🛠️", "mt": "għamel", "en": "él hizo"},
+            {"icon": "✅", "mt": "għażel", "en": "él eligió"},
+            {"icon": "⚽", "mt": "lagħab", "en": "él jugó"},
+            {"icon": "💡", "mt": "xegħel", "en": "él encendió"}
+          ]
+        },
+        {
+          "title": "Tiendas antiguas",
+          "icon": "🏪",
+          "items": [
+            {"icon": "💈", "mt": "il-barbier", "en": "el barbero"},
+            {"icon": "🥖", "mt": "il-furnar", "en": "el panadero"},
+            {"icon": "🧵", "mt": "il-ħajjata", "en": "la costurera"},
+            {"icon": "👞", "mt": "l-iskarpan", "en": "el zapatero"},
+            {"icon": "🔨", "mt": "il-ħaddied", "en": "el herrero"},
+            {"icon": "🛒", "mt": "ħanut tal-merċa", "en": "la tienda de comestibles"},
+            {"icon": "🍬", "mt": "ħanut tal-ħelu", "en": "la dulcería"},
+            {"icon": "📰", "mt": "ħanut tal-gazzetti", "en": "el quiosco de prensa"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar12",
+      "icon": "📝",
+      "title": "Gramática",
+      "subtitle": "Il-grammatika — la gramática de la Lección 12",
+      "intro": "El pasado otra vez — un repaso rápido, y luego el comportamiento especial de los verbos cuya raíz contiene għ.",
+      "rules": [
+        {
+          "id": "past-recap",
+          "title": "El pasado — repaso rápido",
+          "explanation": "El pasado es la mamma (la forma desnuda de 'él') más un sufijo personal. Hu no lleva sufijo. Las tres consonantes de la raíz se quedan fijas mientras las vocales se desplazan.",
+          "letters": ["Jien -t", "Int -t", "Hu —", "Hi -et", "Aħna -na", "Intom -tu", "Huma -u"],
+          "examples": [
+            {"mt": "Hu għamel", "en": "Él hizo — la mamma"},
+            {"mt": "Jien għamilt", "en": "Yo hice — mamma + -t"},
+            {"mt": "Huma għamlu", "en": "Ellos hicieron — mamma + -u"}
+          ]
+        },
+        {
+          "id": "gh-at-start",
+          "title": "għ al principio de la raíz",
+          "explanation": "Cuando għ es la primera letra de la raíz — como en għamel (raíz għ-m-l) y għażel (raíz għ-ż-l) — el għ se queda delante durante toda la conjugación; solo se mueven las vocales que le siguen.",
+          "examples": [
+            {"mt": "għamel — għamilt — għamlet", "en": "hacer: él / yo / ella hizo"},
+            {"mt": "għażel — għażilt — għażlu", "en": "elegir: él / yo elegí — ellos eligieron"}
+          ]
+        },
+        {
+          "id": "gh-in-middle",
+          "title": "għ en el medio de la raíz",
+          "explanation": "Cuando għ está en el medio de la raíz — como en lagħab (raíz l-għ-b) y xegħel (raíz x-għ-l) — el verbo cambia de forma más notoriamente. En las formas yo / tú / nosotros la primera vocal desaparece: lagħab → lgħabt, xegħel → xgħelt.",
+          "examples": [
+            {"mt": "lagħab — lgħabt — lagħbet", "en": "jugar: él / yo / ella jugó"},
+            {"mt": "xegħel — xgħelt — xegħlu", "en": "encender: él / yo encendí — ellos encendieron"}
+          ]
+        }
+      ]
+    }
+  ]
+}

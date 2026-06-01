@@ -1,0 +1,1007 @@
+{
+  "id": "lesson5",
+  "title": "Lesson 5 — Food & Verbs",
+  "subtitle": "Fruit, vegetables, the imperative, present tense",
+  "sections": [
+    {
+      "id": "fruit",
+      "icon": "🍓",
+      "title": "Fruit",
+      "subtitle": "Frott — singular, collective, plural",
+      "intro": "Most Maltese fruit nouns come in three forms: singular (one piece), collective (the type in general), and plural (specific multiples).",
+      "items": [
+        {
+          "singular": "Tuffieħa",
+          "collective": "Tuffieħ",
+          "plural": "Tuffiħat",
+          "en": "Apple/s"
+        },
+        {
+          "singular": "Lanġasa",
+          "collective": "Lanġas",
+          "plural": "Lanġasiet",
+          "en": "Pear/s"
+        },
+        {
+          "singular": "Larinġa",
+          "collective": "Larinġ",
+          "plural": "Larinġiet",
+          "en": "Orange/s"
+        },
+        {
+          "singular": "Lumija",
+          "collective": "Lumi",
+          "plural": "Lumijiet",
+          "en": "Lemon/s"
+        },
+        {
+          "singular": "Mandolina",
+          "collective": "Mandolin",
+          "plural": "Mandolini",
+          "en": "Mandarin/s"
+        },
+        {
+          "singular": "Frawla",
+          "collective": "Frawli",
+          "plural": "Frawliet",
+          "en": "Strawberry/ies"
+        },
+        {
+          "singular": "Għenba",
+          "collective": "Għeneb",
+          "plural": "Għenbiet",
+          "en": "Grape/s"
+        },
+        {
+          "singular": "Bettieħa",
+          "collective": "Bettieħ",
+          "plural": "Bettiħat",
+          "en": "Melon/s"
+        },
+        {
+          "singular": "Dulliegħa",
+          "collective": "Dulliegħ",
+          "plural": "Dulligħat",
+          "en": "Watermelon/s"
+        },
+        {
+          "singular": "Ħawħa",
+          "collective": "Ħawħ",
+          "plural": "Ħawħiet",
+          "en": "Peach/es"
+        },
+        {
+          "singular": "Berquqa",
+          "collective": "Berquq",
+          "plural": "Berquqiet",
+          "en": "Apricot/s"
+        },
+        {
+          "singular": "Tina",
+          "collective": "Tin",
+          "plural": "Tiniet",
+          "en": "Fig/s"
+        },
+        {
+          "singular": "Banana",
+          "collective": "Banana",
+          "plural": "Bananiet",
+          "en": "Banana/s"
+        },
+        {
+          "singular": "Ananas",
+          "collective": "Ananas",
+          "plural": "Ananas",
+          "en": "Pineapple/s"
+        },
+        {
+          "singular": "Ċirasa",
+          "collective": "Ċiras",
+          "plural": "Ċirasiet",
+          "en": "Cherry/ies"
+        },
+        {
+          "singular": "Bajtra tax-xewk",
+          "collective": "Bajtar tax-xewk",
+          "plural": "Bajtriet tax-xewk",
+          "en": "Prickly pear/s"
+        }
+      ]
+    },
+    {
+      "id": "vegetables",
+      "icon": "🥬",
+      "title": "Vegetables",
+      "subtitle": "Ħaxix — singular, collective, plural",
+      "intro": "Vegetables follow the same three-form pattern as fruit — one piece, the type in general, and a specific plural.",
+      "items": [
+        {
+          "singular": "Patata",
+          "collective": "Patata",
+          "plural": "Patatiet",
+          "en": "Potato/es"
+        },
+        {
+          "singular": "Tadama",
+          "collective": "Tadam",
+          "plural": "Tadamiet",
+          "en": "Tomato/es"
+        },
+        {
+          "singular": "Basla",
+          "collective": "Basal",
+          "plural": "Basliet",
+          "en": "Onion/s"
+        },
+        {
+          "singular": "Tewma",
+          "collective": "Tewm",
+          "plural": "Tewmiet",
+          "en": "Garlic"
+        },
+        {
+          "singular": "Karrotta",
+          "collective": "Karrotti",
+          "plural": "Karrotti",
+          "en": "Carrot/s"
+        },
+        {
+          "singular": "Brokkli",
+          "collective": "Brokkli",
+          "plural": "Brokkli",
+          "en": "Broccoli"
+        },
+        {
+          "singular": "Pastarda",
+          "collective": "Pastard",
+          "plural": "Pastard",
+          "en": "Cauliflower/s"
+        },
+        {
+          "singular": "Kaboċċa",
+          "collective": "Kaboċċi",
+          "plural": "Kaboċċi",
+          "en": "Cabbage/s"
+        },
+        {
+          "singular": "Ħjara",
+          "collective": "Ħjar",
+          "plural": "Ħjariet",
+          "en": "Cucumber/s"
+        },
+        {
+          "singular": "Bżaru",
+          "collective": "Bżar",
+          "plural": "Bżariet",
+          "en": "Bell pepper/s (e.g., Bżaru aħdar = green bell pepper). Note: 'Bżar' alone is the spice (black pepper)."
+        },
+        {
+          "singular": "Faqqiegħa",
+          "collective": "Faqqiegħ",
+          "plural": "Faqqiegħat",
+          "en": "Mushroom/s"
+        },
+        {
+          "singular": "Ħassa",
+          "collective": "Ħass",
+          "plural": "Ħassiet",
+          "en": "Lettuce"
+        },
+        {
+          "singular": "Spinaċi",
+          "collective": "Spinaċi",
+          "plural": "Spinaċi",
+          "en": "Spinach"
+        },
+        {
+          "singular": "Piżella",
+          "collective": "Piżelli",
+          "plural": "Piżelli",
+          "en": "Pea/s"
+        },
+        {
+          "singular": "Fażola",
+          "collective": "Fażol",
+          "plural": "Fażoli",
+          "en": "Bean/s"
+        },
+        {
+          "singular": "Qargħa ħamra",
+          "collective": "Qargħat ħomor",
+          "plural": "Qargħat ħomor",
+          "en": "Pumpkin/s"
+        }
+      ]
+    },
+    {
+      "id": "imperative",
+      "icon": "📣",
+      "title": "Imperative",
+      "subtitle": "L-Imperattiv — giving commands",
+      "intro": "The imperative is what you use when you tell someone to do something. Two forms: singular (you alone) and plural (you all).",
+      "facts": [
+        "Singular form is for one person.",
+        "Plural form adds -u on the end (or similar suffix).",
+        "Tip: drop the first letter of the present-tense verb to get the imperative. nifhem (I understand) → ifhem (you understand!)."
+      ],
+      "items": [
+        {
+          "singular": "Mur",
+          "plural": "Morru",
+          "en": "Go"
+        },
+        {
+          "singular": "Ejja",
+          "plural": "Ejjew",
+          "en": "Come"
+        },
+        {
+          "singular": "Iekol",
+          "plural": "Ieklu",
+          "en": "Eat"
+        },
+        {
+          "singular": "Ixrob",
+          "plural": "Ixorbu",
+          "en": "Drink"
+        },
+        {
+          "singular": "Aqra",
+          "plural": "Aqraw",
+          "en": "Read"
+        },
+        {
+          "singular": "Ikteb",
+          "plural": "Iktbu",
+          "en": "Write"
+        },
+        {
+          "singular": "Imxi",
+          "plural": "Imxu",
+          "en": "Walk"
+        },
+        {
+          "singular": "Iġri",
+          "plural": "Iġru",
+          "en": "Run"
+        },
+        {
+          "singular": "Oqgħod",
+          "plural": "Oqogħdu",
+          "en": "Sit / stay"
+        },
+        {
+          "singular": "Qum",
+          "plural": "Qumu",
+          "en": "Get up"
+        },
+        {
+          "singular": "Iftaħ",
+          "plural": "Iftħu",
+          "en": "Open"
+        },
+        {
+          "singular": "Agħlaq",
+          "plural": "Agħlqu",
+          "en": "Close"
+        },
+        {
+          "singular": "Isma'",
+          "plural": "Isimgħu",
+          "en": "Listen"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex8",
+          "title": "Exercise — singular or plural?",
+          "instructions": "Tap which form you're hearing — for one person, or for many?",
+          "choices": [
+            "singular",
+            "plural"
+          ],
+          "items": [
+            {
+              "present": "nikteb",
+              "imperative": "ikteb",
+              "en": "to write",
+              "answer": "singular"
+            },
+            {
+              "present": "niktbu",
+              "imperative": "iktbu",
+              "en": "to write (pl)",
+              "answer": "plural"
+            },
+            {
+              "present": "naqra",
+              "imperative": "aqra",
+              "en": "to read",
+              "answer": "singular"
+            },
+            {
+              "present": "naqraw",
+              "imperative": "aqraw",
+              "en": "to read (pl)",
+              "answer": "plural"
+            },
+            {
+              "present": "niekol",
+              "imperative": "iekol",
+              "en": "to eat",
+              "answer": "singular"
+            },
+            {
+              "present": "nieklu",
+              "imperative": "ieklu",
+              "en": "to eat (pl)",
+              "answer": "plural"
+            },
+            {
+              "present": "norqod",
+              "imperative": "orqod",
+              "en": "to sleep",
+              "answer": "singular"
+            },
+            {
+              "present": "norqdu",
+              "imperative": "orqdu",
+              "en": "to sleep (pl)",
+              "answer": "plural"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "present",
+      "icon": "🔁",
+      "title": "Present tense",
+      "subtitle": "Il-Preżent — adding a prefix to the imperative",
+      "intro": "Add a prefix to the imperative to form the present tense. If the imperative starts with a vowel: n / t / j / t. If it starts with a consonant: in / t / i / t.",
+      "rules": [
+        {
+          "id": "vowel",
+          "title": "Imperative starts with a vowel — e.g. iftaħ (open!)",
+          "rows": [
+            {
+              "person": "Jien (I)",
+              "prefix": "n",
+              "form": "niftaħ",
+              "en": "I open"
+            },
+            {
+              "person": "Int (you)",
+              "prefix": "t",
+              "form": "tiftaħ",
+              "en": "you open"
+            },
+            {
+              "person": "Hu (he)",
+              "prefix": "j",
+              "form": "jiftaħ",
+              "en": "he opens"
+            },
+            {
+              "person": "Hi (she)",
+              "prefix": "t",
+              "form": "tiftaħ",
+              "en": "she opens"
+            },
+            {
+              "person": "Aħna (we)",
+              "prefix": "n",
+              "form": "niftħu",
+              "en": "we open"
+            },
+            {
+              "person": "Intom (you pl)",
+              "prefix": "t",
+              "form": "tiftħu",
+              "en": "you (pl) open"
+            },
+            {
+              "person": "Huma (they)",
+              "prefix": "j",
+              "form": "jiftħu",
+              "en": "they open"
+            }
+          ]
+        },
+        {
+          "id": "consonant",
+          "title": "Imperative starts with a consonant — e.g. ġib (bring!)",
+          "rows": [
+            {
+              "person": "Jien (I)",
+              "prefix": "in",
+              "form": "inġib",
+              "en": "I bring"
+            },
+            {
+              "person": "Int (you)",
+              "prefix": "t",
+              "form": "iġġib",
+              "en": "you bring"
+            },
+            {
+              "person": "Hu (he)",
+              "prefix": "i",
+              "form": "iġib",
+              "en": "he brings"
+            },
+            {
+              "person": "Hi (she)",
+              "prefix": "t",
+              "form": "iġġib",
+              "en": "she brings"
+            },
+            {
+              "person": "Aħna (we)",
+              "prefix": "in",
+              "form": "inġibu",
+              "en": "we bring"
+            },
+            {
+              "person": "Intom (you pl)",
+              "prefix": "t",
+              "form": "iġġibu",
+              "en": "you (pl) bring"
+            },
+            {
+              "person": "Huma (they)",
+              "prefix": "i",
+              "form": "iġibu",
+              "en": "they bring"
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex9",
+          "title": "Exercise — conjugate iekol (to eat)",
+          "instructions": "Pick the right present-tense form for each pronoun.",
+          "choices": [
+            "niekol",
+            "tiekol",
+            "jiekol",
+            "tiekol",
+            "nieklu",
+            "tieklu",
+            "jieklu"
+          ],
+          "items": [
+            {
+              "pronoun": "Jien",
+              "en": "I eat",
+              "answer": "niekol"
+            },
+            {
+              "pronoun": "Int",
+              "en": "You eat",
+              "answer": "tiekol"
+            },
+            {
+              "pronoun": "Hu",
+              "en": "He eats",
+              "answer": "jiekol"
+            },
+            {
+              "pronoun": "Hi",
+              "en": "She eats",
+              "answer": "tiekol"
+            },
+            {
+              "pronoun": "Aħna",
+              "en": "We eat",
+              "answer": "nieklu"
+            },
+            {
+              "pronoun": "Intom",
+              "en": "You (pl) eat",
+              "answer": "tieklu"
+            },
+            {
+              "pronoun": "Huma",
+              "en": "They eat",
+              "answer": "jieklu"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "icon": "📚",
+      "title": "Vocabulary",
+      "subtitle": "Il-vokabularju — words & verbs from this lesson",
+      "intro": "Fruits and vegetables show three forms: singular (one piece) → collective (the type as a whole) → plural (specific multiple). Verbs are listed in their imperative + present forms for drilling.",
+      "groups": [
+        {
+          "title": "Fruit (singular → collective → plural)",
+          "icon": "🍎",
+          "items": [
+            {
+              "icon": "🍎",
+              "mt": "Tuffieħa → Tuffieħ → Tuffiħat",
+              "en": "Apple → apples (the fruit) → specific apples"
+            },
+            {
+              "icon": "🍌",
+              "mt": "Banana → Banana → Bananiet",
+              "en": "Banana / Bananas"
+            },
+            {
+              "icon": "🌵",
+              "mt": "Bajtra tax-xewk → Bajtar tax-xewk → Bajtriet tax-xewk",
+              "en": "Prickly pear / Prickly pears"
+            },
+            {
+              "icon": "🍈",
+              "mt": "Bettieħa → Bettieħ → Bettiħat",
+              "en": "Melon / Melons"
+            },
+            {
+              "icon": "🍉",
+              "mt": "Dulliegħa → Dulliegħ → Dulligħat",
+              "en": "Watermelon / Watermelons"
+            },
+            {
+              "icon": "🍓",
+              "mt": "Frawla → Frawli → Frawliet",
+              "en": "Strawberry / Strawberries"
+            },
+            {
+              "icon": "🍇",
+              "mt": "Għenba → Għeneb → Għenbiet",
+              "en": "Grape / Grapes"
+            },
+            {
+              "icon": "🍑",
+              "mt": "Ħawħa → Ħawħ → Ħawħiet",
+              "en": "Peach / Peaches"
+            },
+            {
+              "icon": "🥝",
+              "mt": "Kiwi",
+              "en": "Kiwi / Kiwis"
+            },
+            {
+              "icon": "🍐",
+              "mt": "Lanġasa → Lanġas → Lanġasiet",
+              "en": "Pear / Pears"
+            },
+            {
+              "icon": "🍊",
+              "mt": "Larinġa → Larinġ → Larinġiet",
+              "en": "Orange / Oranges"
+            },
+            {
+              "icon": "🍋",
+              "mt": "Lumija → Lumi → Lumijiet",
+              "en": "Lemon / Lemons"
+            },
+            {
+              "icon": "🟣",
+              "mt": "Tina → Tin → Tiniet",
+              "en": "Fig / Figs"
+            },
+            {
+              "icon": "🫐",
+              "mt": "Tuta → Tut → Tutiet",
+              "en": "Black mulberry / Black mulberries"
+            },
+            {
+              "icon": "🟡",
+              "mt": "Naspla → Naspli → Naspliet",
+              "en": "Loquat / Loquats"
+            },
+            {
+              "icon": "🍒",
+              "mt": "Ċirasa → Ċiras → Ċirasiet",
+              "en": "Cherry / Cherries"
+            }
+          ]
+        },
+        {
+          "title": "Vegetables (singular → collective → plural)",
+          "icon": "🥬",
+          "items": [
+            {
+              "icon": "🧅",
+              "mt": "Basla → Basal → Basliet",
+              "en": "Onion / Onions"
+            },
+            {
+              "icon": "🍆",
+              "mt": "Brunġiela → Brunġiel → Brunġiliet",
+              "en": "Aubergine / Aubergines"
+            },
+            {
+              "icon": "🫑",
+              "mt": "Bżaru → Bżar → Bżariet",
+              "en": "Bell pepper / Bell peppers"
+            },
+            {
+              "icon": "🍄",
+              "mt": "Faqqiegħa → Faqqiegħ → Faqqigħat",
+              "en": "Mushroom / Mushrooms"
+            },
+            {
+              "icon": "🥬",
+              "mt": "Ġidra → Ġdur → Ġidriet",
+              "en": "Turnip / Turnips"
+            },
+            {
+              "icon": "🥬",
+              "mt": "Ħassa → Ħass → Ħassiet",
+              "en": "Lettuce"
+            },
+            {
+              "icon": "🥒",
+              "mt": "Ħjara → Ħjar → Ħjariet",
+              "en": "Cucumber / Cucumbers"
+            },
+            {
+              "icon": "🥬",
+              "mt": "Kaboċċa → Kaboċċi",
+              "en": "Cabbage / Cabbages"
+            },
+            {
+              "icon": "🥕",
+              "mt": "Karrotta → Karrotti",
+              "en": "Carrot / Carrots"
+            },
+            {
+              "icon": "🥦",
+              "mt": "Pastarda → Pastard → Pastardiet",
+              "en": "Cauliflower / Cauliflowers"
+            },
+            {
+              "icon": "🥔",
+              "mt": "Patata → Patatiet",
+              "en": "Potato / Potatoes"
+            },
+            {
+              "icon": "🫛",
+              "mt": "Piżella → Piżelli",
+              "en": "Pea / Peas"
+            },
+            {
+              "icon": "🎃",
+              "mt": "Qargħa ħamra → Qargħat ħomor",
+              "en": "Pumpkin / Pumpkins"
+            },
+            {
+              "icon": "🥬",
+              "mt": "Spinaċi",
+              "en": "Spinach"
+            },
+            {
+              "icon": "🍅",
+              "mt": "Tadama → Tadam → Tadamiet",
+              "en": "Tomato / Tomatoes"
+            },
+            {
+              "icon": "🧄",
+              "mt": "Tewma → Tewm → Tewmiet",
+              "en": "Garlic"
+            }
+          ]
+        },
+        {
+          "title": "Imperative — singular & plural",
+          "icon": "🗣️",
+          "subtitle": "Used to give a command, request, warning or advice.",
+          "items": [
+            {
+              "icon": "🚶",
+              "mt": "Imxi / Imxu",
+              "en": "Walk! (sg / pl)"
+            },
+            {
+              "icon": "✍️",
+              "mt": "Ikteb / Iktbu",
+              "en": "Write! (sg / pl)"
+            },
+            {
+              "icon": "🪑",
+              "mt": "Poġġi / Poġġu",
+              "en": "Sit! (sg / pl)"
+            },
+            {
+              "icon": "🖨️",
+              "mt": "Ipprintja / Ipprintjaw",
+              "en": "Print! (sg / pl)"
+            },
+            {
+              "icon": "💔",
+              "mt": "Ikser / Iksru",
+              "en": "Break! (sg / pl)"
+            },
+            {
+              "icon": "🚗",
+              "mt": "Mur / Morru",
+              "en": "Go! (sg / pl)"
+            },
+            {
+              "icon": "👀",
+              "mt": "Ara / Araw",
+              "en": "Look! (sg / pl)"
+            },
+            {
+              "icon": "🍷",
+              "mt": "Ixrob / Ixorbu",
+              "en": "Drink! (sg / pl)"
+            },
+            {
+              "icon": "🏃",
+              "mt": "Aħrab / Aħarbu",
+              "en": "Run away! (sg / pl)"
+            },
+            {
+              "icon": "🍴",
+              "mt": "Kul / Kulu",
+              "en": "Eat! (sg / pl)"
+            }
+          ]
+        },
+        {
+          "title": "Present tense — 'I…'",
+          "icon": "🏃",
+          "subtitle": "Built by adding a prefix in front of the imperative.",
+          "items": [
+            {
+              "icon": "🚶",
+              "mt": "Nimxi",
+              "en": "I walk"
+            },
+            {
+              "icon": "✍️",
+              "mt": "Nikteb",
+              "en": "I write"
+            },
+            {
+              "icon": "🪑",
+              "mt": "Inpoġġi / Npoġġi",
+              "en": "I sit"
+            },
+            {
+              "icon": "🍷",
+              "mt": "Nixrob",
+              "en": "I drink"
+            },
+            {
+              "icon": "🍴",
+              "mt": "Niekol",
+              "en": "I eat"
+            },
+            {
+              "icon": "🛒",
+              "mt": "Nixtri",
+              "en": "I buy"
+            },
+            {
+              "icon": "💤",
+              "mt": "Norqod",
+              "en": "I sleep"
+            },
+            {
+              "icon": "⏰",
+              "mt": "Inqum",
+              "en": "I wake up / get up"
+            },
+            {
+              "icon": "🚗",
+              "mt": "Immur",
+              "en": "I go"
+            },
+            {
+              "icon": "👂",
+              "mt": "Nisma'",
+              "en": "I listen / hear"
+            },
+            {
+              "icon": "🏋️",
+              "mt": "Nittrennja",
+              "en": "I train"
+            }
+          ]
+        },
+        {
+          "title": "Future markers — ser / sa / ħa",
+          "icon": "🔮",
+          "subtitle": "Place ONE of these before the present tense to talk about the future.",
+          "items": [
+            {
+              "icon": "🔮",
+              "mt": "ser nikteb",
+              "en": "I am going to write"
+            },
+            {
+              "icon": "🔮",
+              "mt": "se niekol",
+              "en": "I am going to eat"
+            },
+            {
+              "icon": "🔮",
+              "mt": "ħa npoġġi",
+              "en": "I am going to sit down"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar5",
+      "icon": "📖",
+      "title": "Grammar",
+      "subtitle": "Il-grammatika — the grammar of Lesson 5",
+      "intro": "Three big patterns: the singular/collective/plural for fruit & veg, the imperative, and how the present tense is built from the imperative.",
+      "rules": [
+        {
+          "id": "sing-coll-plural",
+          "title": "Singular vs collective vs plural",
+          "explanation": "Fruit and vegetable nouns have THREE forms. SINGULAR = one piece (Tuffieħa = one apple). COLLECTIVE = the fruit / type as a whole (Tuffieħ = apples in general, the apple-stuff). PLURAL = a specific number of pieces (Tuffiħat = several specific apples).",
+          "examples": [
+            {
+              "mt": "Tuffieħa → Tuffieħ → Tuffiħat",
+              "en": "one apple → apples (the fruit) → specific apples"
+            },
+            {
+              "mt": "Larinġa → Larinġ → Larinġiet",
+              "en": "one orange → oranges → specific oranges"
+            },
+            {
+              "mt": "Basla → Basal → Basliet",
+              "en": "one onion → onions → specific onions"
+            },
+            {
+              "mt": "Tadama → Tadam → Tadamiet",
+              "en": "one tomato → tomatoes → specific tomatoes"
+            }
+          ]
+        },
+        {
+          "id": "imperative-form",
+          "title": "The imperative — giving a command",
+          "explanation": "The imperative is used to tell someone what to do. It has TWO forms: singular (one person — int) and plural (more than one — intom). Plural usually adds -u to the singular: imxi → imxu, ikteb → iktbu, dur → duru.",
+          "letters": [
+            "Imxi/Imxu",
+            "Ikteb/Iktbu",
+            "Dur/Duru",
+            "Ikser/Iksru",
+            "Mur/Morru",
+            "Poġġi/Poġġu"
+          ],
+          "examples": [
+            {
+              "mt": "Imxi dritt",
+              "en": "Walk straight (to one person)"
+            },
+            {
+              "mt": "Imxu dritt",
+              "en": "Walk straight (to a group)"
+            },
+            {
+              "mt": "Ikteb l-isem tiegħek",
+              "en": "Write your name (to one person)"
+            },
+            {
+              "mt": "Iktbu l-isem tagħkom",
+              "en": "Write your name (to a group)"
+            },
+            {
+              "mt": "Dur fuq il-lemin",
+              "en": "Turn on your right (sg)"
+            },
+            {
+              "mt": "Duru fuq il-lemin",
+              "en": "Turn on your right (pl)"
+            }
+          ]
+        },
+        {
+          "id": "imperative-from-mamma",
+          "title": "Where the imperative comes from (Semitic root)",
+          "explanation": "For Semitic-origin verbs, the imperative is derived from the 'mamma' (3rd-person past tense — what HE did) by switching the first vowel and the first root consonant. Ħaraq (he burnt) → aħraq (you burn!). The pattern keeps three root consonants intact.",
+          "examples": [
+            {
+              "mt": "Ħaraq → aħraq / aħarqu",
+              "en": "he burnt → burn! (sg / pl)"
+            },
+            {
+              "mt": "Kiser → ikser / iksru",
+              "en": "he broke → break! (sg / pl)"
+            },
+            {
+              "mt": "Ħeles → eħles / eħilsu",
+              "en": "he freed → free! (sg / pl)"
+            },
+            {
+              "mt": "Kiteb → ikteb / iktbu",
+              "en": "he wrote → write! (sg / pl)"
+            },
+            {
+              "mt": "Resaq → ersaq / ersqu",
+              "en": "he approached → approach! (sg / pl)"
+            }
+          ]
+        },
+        {
+          "id": "present-from-imperative",
+          "title": "Building the present tense",
+          "explanation": "Add a prefix to the imperative to form each person of the present tense. If the imperative starts with a VOWEL, prefix n / t / j / t (jien/int/hu/hi). If it starts with a CONSONANT, prefix in / t / i / t. Plural drops the trailing person-vowel.",
+          "letters": [
+            "jien — n",
+            "int — t",
+            "hu — j",
+            "hi — t",
+            "aħna — n",
+            "intom — t",
+            "huma — j"
+          ],
+          "examples": [
+            {
+              "mt": "oħroġ → noħroġ",
+              "en": "go out (imp) → I go out"
+            },
+            {
+              "mt": "oħroġ → toħroġ",
+              "en": "→ you go out / she goes out"
+            },
+            {
+              "mt": "oħroġ → joħroġ",
+              "en": "→ he goes out"
+            },
+            {
+              "mt": "poġġi → inpoġġi",
+              "en": "sit (imp, consonant start) → I sit"
+            },
+            {
+              "mt": "poġġi → tpoġġi",
+              "en": "→ you sit / she sits"
+            },
+            {
+              "mt": "ixrob → nixrob / tixrob / jixrob",
+              "en": "drink → I/you/he drink"
+            }
+          ]
+        },
+        {
+          "id": "future",
+          "title": "The future — ser, sa, ħa",
+          "explanation": "To make the future, just add ONE of these markers in front of the present tense: ser, sa, or ħa. They all mean 'going to'.",
+          "letters": [
+            "ser",
+            "sa",
+            "ħa"
+          ],
+          "examples": [
+            {
+              "mt": "Ser nikteb",
+              "en": "I am going to write"
+            },
+            {
+              "mt": "Se niekol",
+              "en": "I am going to eat"
+            },
+            {
+              "mt": "Ħa npoġġi",
+              "en": "I am going to sit down"
+            },
+            {
+              "mt": "Ser jixrob",
+              "en": "He is going to drink"
+            },
+            {
+              "mt": "Se naqra",
+              "en": "I am going to read"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,379 @@
+{
+  "id": "lesson10",
+  "title": "Lección 10 — Trabajos, el Artículo y las Casas",
+  "subtitle": "Trabajos, el artículo maltés, animales, casas y habitaciones",
+  "sections": [
+    {
+      "id": "family",
+      "icon": "💼",
+      "title": "Trabajos",
+      "subtitle": "Xogħlijiet — a qué se dedica la gente",
+      "intro": "Las palabras malteses para los trabajos cambian según el género y el número. El masculino es la forma base; el femenino suele añadir -a (tabib → tabiba); el plural es a menudo un plural fracto (tabib → tobba).",
+      "vocab": [
+        {"mt": "avukat", "en": "abogado"},
+        {"mt": "bidwi", "en": "agricultor"},
+        {"mt": "dentist", "en": "dentista"},
+        {"mt": "furnar", "en": "panadero"},
+        {"mt": "ġurnalist", "en": "periodista"},
+        {"mt": "għalliem", "en": "maestro"},
+        {"mt": "ħaddied", "en": "herrero"},
+        {"mt": "infermier", "en": "enfermero"},
+        {"mt": "kaħħal", "en": "yesero"},
+        {"mt": "kok", "en": "cocinero / chef"},
+        {"mt": "mastrudaxxa", "en": "carpintero"},
+        {"mt": "mekkanik", "en": "mecánico"},
+        {"mt": "skrivan", "en": "oficinista"},
+        {"mt": "spiżjar", "en": "farmacéutico"},
+        {"mt": "tabib", "en": "médico"},
+        {"mt": "wejter", "en": "camarero"}
+      ],
+      "plurals": [
+        {"singular": "avukat", "plural": "avukati", "en": "abogado"},
+        {"singular": "bidwi", "plural": "bdiewa", "en": "agricultor"},
+        {"singular": "dentist", "plural": "dentisti", "en": "dentista"},
+        {"singular": "furnar", "plural": "furnara", "en": "panadero"},
+        {"singular": "ġurnalist", "plural": "ġurnalisti", "en": "periodista"},
+        {"singular": "għalliem", "plural": "għalliema", "en": "maestro"},
+        {"singular": "ħaddied", "plural": "ħaddieda", "en": "herrero"},
+        {"singular": "infermier", "plural": "infermiera", "en": "enfermero"},
+        {"singular": "kaħħal", "plural": "kaħħala", "en": "yesero"},
+        {"singular": "kok", "plural": "koki", "en": "cocinero"},
+        {"singular": "mastrudaxxa", "plural": "mastrudaxxi", "en": "carpintero"},
+        {"singular": "mekkanik", "plural": "mekkaniks", "en": "mecánico"},
+        {"singular": "skrivan", "plural": "skrivani", "en": "oficinista"},
+        {"singular": "spiżjar", "plural": "spiżjara", "en": "farmacéutico"},
+        {"singular": "tabib", "plural": "tobba", "en": "médico"},
+        {"singular": "wejter", "plural": "wejters", "en": "camarero"}
+      ]
+    },
+    {
+      "id": "grammar",
+      "icon": "📖",
+      "title": "El Artículo",
+      "subtitle": "L-artiklu — decir 'el / la' en maltés",
+      "intro": "El maltés tiene un solo artículo para 'el / la'. Se escribe il- o l- y se une al sustantivo con un guion. Pero la grafía cambia según la primera letra de la palabra — lee las reglas y luego prueba los ejercicios.",
+      "rules": [
+        {
+          "id": "the-article",
+          "title": "il- y l- — el artículo",
+          "explanation": "El artículo maltés se forma añadiendo il- (o l-) delante de un sustantivo o adjetivo. Define el sustantivo — convierte 'una familia' en 'la familia'.",
+          "examples": [
+            {"mt": "il-familja", "en": "la familia (familja → il-familja)"},
+            {"mt": "il-kuġin", "en": "el primo (kuġin → il-kuġin)"},
+            {"mt": "il-baħar", "en": "el mar"},
+            {"mt": "il-labra", "en": "la aguja"}
+          ]
+        },
+        {
+          "id": "before-vowel",
+          "title": "Ante vocal — usa l-",
+          "explanation": "Si la palabra empieza por vocal (a, e, i, ie, o, u) la i del artículo desaparece y se usa solo l-. Esta regla suele aplicarse también a las palabras que empiezan por għ y h.",
+          "examples": [
+            {"mt": "l-omm", "en": "la madre"},
+            {"mt": "l-aħwa", "en": "los hermanos / las hermanas"},
+            {"mt": "l-għasfur", "en": "el pájaro"},
+            {"mt": "l-hena", "en": "la alegría"}
+          ]
+        },
+        {
+          "id": "sun-consonants",
+          "title": "Consonantes 'Xemxin' — la l se asimila",
+          "explanation": "Hay nueve consonantes 'Xemxin': ċ, d, n, r, s, t, x, ż y z. Cuando una palabra empieza por una de ellas, la l de il-/l- cambia para igualar esa consonante — es decir, se duplica.",
+          "letters": ["ċ", "d", "n", "r", "s", "t", "x", "ż", "z"],
+          "examples": [
+            {"mt": "iċ-ċurkett", "en": "el anillo"},
+            {"mt": "id-dar", "en": "la casa"},
+            {"mt": "in-nar", "en": "el fuego"},
+            {"mt": "ir-raġel", "en": "el hombre"},
+            {"mt": "ix-xalla", "en": "la bufanda"},
+            {"mt": "iż-żejt", "en": "el aceite"},
+            {"mt": "iz-zokkor", "en": "el azúcar"}
+          ]
+        },
+        {
+          "id": "moon-consonants",
+          "title": "Consonantes 'Qamrin' — mantienen il- o l-",
+          "explanation": "Las quince consonantes 'Qamrin' — b, f, ġ, g, għ, h, ħ, j, k, l, m, p, q, v y w — NO se asimilan. Simplemente toman il- (o l- cuando la palabra empieza por vocal, għ o h).",
+          "letters": ["b", "f", "ġ", "g", "għ", "h", "ħ", "j", "k", "l", "m", "p", "q", "v", "w"],
+          "examples": [
+            {"mt": "il-baħar", "en": "el mar"},
+            {"mt": "il-ġebla", "en": "la piedra"},
+            {"mt": "il-kelb", "en": "el perro"},
+            {"mt": "l-arloġġ", "en": "el reloj"},
+            {"mt": "l-għaġin", "en": "la pasta"}
+          ]
+        },
+        {
+          "id": "vowel-before",
+          "title": "Una vocal antes del artículo — elimina la i",
+          "explanation": "Cuando la palabra anterior al artículo termina una frase con vocal, la i del artículo desaparece: 'Mort nixtri iċ-ċurkett' se convierte en 'Mort nixtri ċ-ċurkett'.",
+          "examples": [
+            {"mt": "Mort nixtri ċ-ċurkett", "en": "Fui a comprar el anillo"},
+            {"mt": "Jien inħobb ħafna x-xemx", "en": "Me encanta mucho el sol"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex3",
+          "title": "Consonantes 'Xemxin' — elige el artículo",
+          "instructions": "Elige el artículo que corresponde a la primera letra de la palabra.",
+          "choices": ["iċ-", "id-", "in-", "ir-", "is-", "it-", "ix-", "iż-"],
+          "items": [
+            {"word": "ċavetta", "answer": "iċ-", "en": "la llave"},
+            {"word": "dar", "answer": "id-", "en": "la casa"},
+            {"word": "nar", "answer": "in-", "en": "el fuego"},
+            {"word": "raġel", "answer": "ir-", "en": "el hombre"},
+            {"word": "serp", "answer": "is-", "en": "la serpiente"},
+            {"word": "tifel", "answer": "it-", "en": "el niño"},
+            {"word": "xemx", "answer": "ix-", "en": "el sol"},
+            {"word": "żunżana", "answer": "iż-", "en": "la avispa"},
+            {"word": "ċurkett", "answer": "iċ-", "en": "el anillo"},
+            {"word": "triq", "answer": "it-", "en": "la calle"}
+          ]
+        },
+        {
+          "id": "ex4",
+          "title": "Consonantes 'Qamrin' — ¿il- o l-?",
+          "instructions": "Las consonantes 'Qamrin' mantienen il-; usa l- solo cuando la palabra empieza por vocal, għ o h.",
+          "choices": ["il-", "l-"],
+          "items": [
+            {"word": "baħar", "answer": "il-", "en": "el mar"},
+            {"word": "labra", "answer": "il-", "en": "la aguja"},
+            {"word": "ġebla", "answer": "il-", "en": "la piedra"},
+            {"word": "qattus", "answer": "il-", "en": "el gato"},
+            {"word": "ħuta", "answer": "il-", "en": "el pez"},
+            {"word": "kelb", "answer": "il-", "en": "el perro"},
+            {"word": "arloġġ", "answer": "l-", "en": "el reloj"},
+            {"word": "għaġin", "answer": "l-", "en": "la pasta"},
+            {"word": "ors", "answer": "l-", "en": "el oso"},
+            {"word": "iljun", "answer": "l-", "en": "el león"}
+          ]
+        },
+        {
+          "id": "ex5",
+          "title": "Mixto — elige el artículo",
+          "instructions": "¿'Xemxin' o 'Qamrin'? Elige el artículo correcto para cada palabra.",
+          "choices": ["il-", "l-", "iċ-", "id-", "in-", "ir-", "is-", "ix-", "iż-"],
+          "items": [
+            {"word": "omm", "answer": "l-", "en": "la madre"},
+            {"word": "dar", "answer": "id-", "en": "la casa"},
+            {"word": "ċurkett", "answer": "iċ-", "en": "el anillo"},
+            {"word": "baħar", "answer": "il-", "en": "el mar"},
+            {"word": "nar", "answer": "in-", "en": "el fuego"},
+            {"word": "raġel", "answer": "ir-", "en": "el hombre"},
+            {"word": "xemx", "answer": "ix-", "en": "el sol"},
+            {"word": "żejt", "answer": "iż-", "en": "el aceite"},
+            {"word": "siġra", "answer": "is-", "en": "el árbol"},
+            {"word": "għasfur", "answer": "l-", "en": "el pájaro"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seasons",
+      "icon": "🐾",
+      "title": "Animales",
+      "subtitle": "Annimali — el masculino, el femenino y el plural",
+      "intro": "Cada tarjeta de animal muestra la palabra masculina, luego su forma femenina y su plural. Igual que con los trabajos, el femenino suele añadir -a y el plural es a menudo un plural fracto.",
+      "items": [
+        {"mt": "fenek", "en": "conejo", "icon": "🐰", "vocab": [{"mt": "fenka", "en": "hembra (coneja)"}, {"mt": "fniek", "en": "plural (conejos)"}]},
+        {"mt": "ġeru", "en": "cachorro", "icon": "🐶", "vocab": [{"mt": "ġerwa", "en": "cachorra"}, {"mt": "ġriewi", "en": "plural (cachorros)"}]},
+        {"mt": "ġurdien", "en": "ratón", "icon": "🐭", "vocab": [{"mt": "ġurdiena", "en": "ratona"}, {"mt": "ġrieden", "en": "plural (ratones)"}]},
+        {"mt": "ċerv", "en": "ciervo", "icon": "🦌", "vocab": [{"mt": "ċerva", "en": "cierva"}, {"mt": "ċrievi", "en": "plural (ciervos)"}]},
+        {"mt": "ħanżir", "en": "cerdo", "icon": "🐷", "vocab": [{"mt": "ħanżira", "en": "cerda"}, {"mt": "ħnieżer", "en": "plural (cerdos)"}]},
+        {"mt": "ħmar", "en": "burro", "icon": "🫏", "vocab": [{"mt": "ħmara", "en": "burra"}, {"mt": "ħmir", "en": "plural (burros)"}]},
+        {"mt": "kelb", "en": "perro", "icon": "🐕", "vocab": [{"mt": "kelba", "en": "perra"}, {"mt": "klieb", "en": "plural (perros)"}]},
+        {"mt": "ors", "en": "oso", "icon": "🐻", "vocab": [{"mt": "orsa", "en": "osa"}, {"mt": "orsijiet", "en": "plural (osos)"}]},
+        {"mt": "papru", "en": "pato", "icon": "🦆", "vocab": [{"mt": "papra", "en": "pata"}, {"mt": "papri", "en": "plural (patos)"}]},
+        {"mt": "qattus", "en": "gato", "icon": "🐈", "vocab": [{"mt": "qattusa", "en": "gata"}, {"mt": "qtates", "en": "plural (gatos)"}]},
+        {"mt": "xadin", "en": "mono", "icon": "🐒", "vocab": [{"mt": "xadina", "en": "mona"}, {"mt": "xadini", "en": "plural (monos)"}]},
+        {"mt": "barri", "en": "toro", "icon": "🐂", "vocab": [{"mt": "baqra", "en": "vaca"}, {"mt": "barrin / baqar", "en": "plural (toros / vacas)"}]},
+        {"mt": "bodbod", "en": "macho cabrío", "icon": "🐐", "vocab": [{"mt": "mogħża", "en": "cabra"}, {"mt": "bdabad / mogħoż", "en": "plural (cabras)"}]},
+        {"mt": "muntun", "en": "carnero", "icon": "🐏", "vocab": [{"mt": "nagħġa", "en": "oveja"}, {"mt": "mtaten / nagħaġ", "en": "plural (ovejas)"}]},
+        {"mt": "serduk", "en": "gallo", "icon": "🐓", "vocab": [{"mt": "tiġieġa", "en": "gallina"}, {"mt": "sriedaq / tiġieġ", "en": "plural (gallos / gallinas)"}]},
+        {"mt": "żiemel", "en": "caballo", "icon": "🐴", "vocab": [{"mt": "debba", "en": "yegua"}, {"mt": "żwiemel", "en": "plural (caballos)"}]}
+      ]
+    },
+    {
+      "id": "transport",
+      "icon": "🏠",
+      "title": "Casas y Habitaciones",
+      "subtitle": "Djar — tipos de vivienda y las habitaciones",
+      "intro": "Primero los tipos de vivienda, luego las habitaciones y partes de una casa. Cada tarjeta muestra la palabra y, cuando lo tiene, su plural.",
+      "items": [
+        {"singular": "dar", "plural": "djar", "en": "casa"},
+        {"singular": "flett", "plural": "flettijiet", "en": "piso / apartamento"},
+        {"singular": "villa", "plural": "vilel", "en": "villa"},
+        {"singular": "mezzanin", "plural": "mezzanin", "en": "dúplex bajo (maisonette)"},
+        {"singular": "bungalow", "plural": "bungalows", "en": "bungaló"},
+        {"singular": "bejt", "plural": "bjut", "en": "azotea / tejado"},
+        {"singular": "bitħa", "plural": "btieħi", "en": "patio"},
+        {"singular": "ċavetta", "plural": "ċwievet", "en": "llave"},
+        {"singular": "ġnien", "plural": "ġonna", "en": "jardín"},
+        {"singular": "garaxx", "plural": "garaxxijiet", "en": "garaje"},
+        {"singular": "intrata", "plural": "intrati", "en": "vestíbulo de entrada"},
+        {"singular": "kamra tal-banju", "plural": "kmamar tal-banju", "en": "cuarto de baño"},
+        {"singular": "kamra tal-ikel", "plural": "kmamar tal-ikel", "en": "comedor"},
+        {"singular": "kamra tas-sodda", "plural": "kmamar tas-sodda", "en": "dormitorio"},
+        {"singular": "kantina", "plural": "kantini", "en": "sótano"},
+        {"singular": "kċina", "plural": "kċejjen", "en": "cocina"},
+        {"singular": "lift", "plural": "liftijiet", "en": "ascensor"},
+        {"singular": "pixxina", "plural": "pixxini", "en": "piscina"},
+        {"singular": "salott", "plural": "salotti", "en": "sala de estar"},
+        {"singular": "taraġ", "plural": "turġien", "en": "escalera"},
+        {"singular": "terazzin", "plural": "terazzini", "en": "terraza pequeña"}
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "icon": "📚",
+      "title": "Vocabulario",
+      "subtitle": "Il-vokabularju — todas las palabras de la Lección 10",
+      "intro": "Todo el vocabulario de la lección en un solo lugar — trabajos, palabras del artículo, animales y casas y habitaciones.",
+      "groups": [
+        {
+          "title": "Trabajos — masculino",
+          "icon": "💼",
+          "items": [
+            {"icon": "⚖️", "mt": "avukat", "en": "abogado"},
+            {"icon": "🌾", "mt": "bidwi", "en": "agricultor"},
+            {"icon": "🦷", "mt": "dentist", "en": "dentista"},
+            {"icon": "🥖", "mt": "furnar", "en": "panadero"},
+            {"icon": "📰", "mt": "ġurnalist", "en": "periodista"},
+            {"icon": "🍎", "mt": "għalliem", "en": "maestro"},
+            {"icon": "🔨", "mt": "ħaddied", "en": "herrero"},
+            {"icon": "💉", "mt": "infermier", "en": "enfermero"},
+            {"icon": "🧱", "mt": "kaħħal", "en": "yesero"},
+            {"icon": "👨‍🍳", "mt": "kok", "en": "cocinero / chef"},
+            {"icon": "🪚", "mt": "mastrudaxxa", "en": "carpintero"},
+            {"icon": "🔧", "mt": "mekkanik", "en": "mecánico"},
+            {"icon": "🖊️", "mt": "skrivan", "en": "oficinista"},
+            {"icon": "💊", "mt": "spiżjar", "en": "farmacéutico"},
+            {"icon": "🩺", "mt": "tabib", "en": "médico"},
+            {"icon": "🍽️", "mt": "wejter", "en": "camarero"}
+          ]
+        },
+        {
+          "title": "Trabajos — femenino",
+          "icon": "👩‍⚕️",
+          "subtitle": "El femenino suele añadir -a (o -ja).",
+          "items": [
+            {"icon": "🌾", "mt": "bidwija", "en": "agricultora"},
+            {"icon": "🦷", "mt": "dentista", "en": "dentista (f.)"},
+            {"icon": "📰", "mt": "ġurnalista", "en": "periodista (f.)"},
+            {"icon": "🍎", "mt": "għalliema", "en": "maestra"},
+            {"icon": "💉", "mt": "infermiera", "en": "enfermera"},
+            {"icon": "👩‍🍳", "mt": "koka", "en": "cocinera"},
+            {"icon": "🖊️", "mt": "skrivana", "en": "oficinista (f.)"},
+            {"icon": "💊", "mt": "spiżjara", "en": "farmacéutica"},
+            {"icon": "🩺", "mt": "tabiba", "en": "médica"}
+          ]
+        },
+        {
+          "title": "El artículo",
+          "icon": "📖",
+          "subtitle": "il- / l- y las formas con consonante 'Xemxin'.",
+          "items": [
+            {"icon": "🔤", "mt": "il-", "en": "el / la (forma por defecto)"},
+            {"icon": "🔤", "mt": "l-", "en": "el / la (ante vocal, għ o h)"},
+            {"icon": "☀️", "mt": "id-dar", "en": "la casa (consonante 'Xemxin' d)"},
+            {"icon": "☀️", "mt": "ir-raġel", "en": "el hombre (consonante 'Xemxin' r)"},
+            {"icon": "☀️", "mt": "ix-xemx", "en": "el sol (consonante 'Xemxin' x)"},
+            {"icon": "🌙", "mt": "il-baħar", "en": "el mar (consonante 'Qamrin' b)"},
+            {"icon": "🌙", "mt": "l-arloġġ", "en": "el reloj ('Qamrin', ante vocal)"}
+          ]
+        },
+        {
+          "title": "Animales",
+          "icon": "🐾",
+          "items": [
+            {"icon": "🐰", "mt": "fenek", "en": "conejo"},
+            {"icon": "🐶", "mt": "ġeru", "en": "cachorro"},
+            {"icon": "🐭", "mt": "ġurdien", "en": "ratón"},
+            {"icon": "🦌", "mt": "ċerv", "en": "ciervo"},
+            {"icon": "🐷", "mt": "ħanżir", "en": "cerdo"},
+            {"icon": "🫏", "mt": "ħmar", "en": "burro"},
+            {"icon": "🐕", "mt": "kelb", "en": "perro"},
+            {"icon": "🐻", "mt": "ors", "en": "oso"},
+            {"icon": "🦆", "mt": "papru", "en": "pato"},
+            {"icon": "🐈", "mt": "qattus", "en": "gato"},
+            {"icon": "🐒", "mt": "xadin", "en": "mono"},
+            {"icon": "🐂", "mt": "barri", "en": "toro"},
+            {"icon": "🐐", "mt": "bodbod", "en": "macho cabrío"},
+            {"icon": "🐏", "mt": "muntun", "en": "carnero"},
+            {"icon": "🐓", "mt": "serduk", "en": "gallo"},
+            {"icon": "🐴", "mt": "żiemel", "en": "caballo"}
+          ]
+        },
+        {
+          "title": "Casas y habitaciones",
+          "icon": "🏠",
+          "items": [
+            {"icon": "🏠", "mt": "dar", "en": "casa"},
+            {"icon": "🏢", "mt": "flett", "en": "piso / apartamento"},
+            {"icon": "🏡", "mt": "villa", "en": "villa"},
+            {"icon": "🏘️", "mt": "mezzanin", "en": "dúplex bajo"},
+            {"icon": "🏚️", "mt": "bungalow", "en": "bungaló"},
+            {"icon": "🧱", "mt": "bejt", "en": "azotea / tejado"},
+            {"icon": "🌳", "mt": "bitħa", "en": "patio"},
+            {"icon": "🔑", "mt": "ċavetta", "en": "llave"},
+            {"icon": "🌷", "mt": "ġnien", "en": "jardín"},
+            {"icon": "🚗", "mt": "garaxx", "en": "garaje"},
+            {"icon": "🚪", "mt": "intrata", "en": "vestíbulo de entrada"},
+            {"icon": "🛁", "mt": "kamra tal-banju", "en": "cuarto de baño"},
+            {"icon": "🍽️", "mt": "kamra tal-ikel", "en": "comedor"},
+            {"icon": "🛏️", "mt": "kamra tas-sodda", "en": "dormitorio"},
+            {"icon": "📦", "mt": "kantina", "en": "sótano"},
+            {"icon": "🍳", "mt": "kċina", "en": "cocina"},
+            {"icon": "🛗", "mt": "lift", "en": "ascensor"},
+            {"icon": "🏊", "mt": "pixxina", "en": "piscina"},
+            {"icon": "🛋️", "mt": "salott", "en": "sala de estar"},
+            {"icon": "🪜", "mt": "taraġ", "en": "escalera"},
+            {"icon": "☀️", "mt": "terazzin", "en": "terraza pequeña"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar10",
+      "icon": "📝",
+      "title": "Gramática",
+      "subtitle": "Il-grammatika — la gramática de la Lección 10",
+      "intro": "Los puntos gramaticales de las diapositivas — el artículo y cómo cambian los sustantivos según el género y el número.",
+      "rules": [
+        {
+          "id": "article-summary",
+          "title": "El artículo — il-, l- y la asimilación",
+          "explanation": "'El / la' es il- por defecto, l- ante vocal (y normalmente għ / h). Ante una consonante 'Xemxin' (ċ, d, n, r, s, t, x, ż, z) la l se duplica para igualarla: id-dar, ix-xemx. Las quince consonantes 'Qamrin' mantienen il-/l-: il-baħar, l-arloġġ.",
+          "letters": ["il-", "l-", "iċ-", "id-", "in-", "ir-", "is-", "it-", "ix-", "iż-", "iz-"],
+          "examples": [
+            {"mt": "id-dar", "en": "la casa — consonante 'Xemxin'"},
+            {"mt": "il-baħar", "en": "el mar — consonante 'Qamrin'"},
+            {"mt": "l-omm", "en": "la madre — ante vocal"}
+          ]
+        },
+        {
+          "id": "feminine-rule",
+          "title": "Formar el femenino",
+          "explanation": "La mayoría de trabajos y animales forman el femenino añadiendo -a al masculino: tabib → tabiba, kok → koka, kelb → kelba, qattus → qattusa. Algunos añaden -ja (bidwi → bidwija) o tienen su propia palabra (barri → baqra, serduk → tiġieġa).",
+          "examples": [
+            {"mt": "tabib — tabiba", "en": "médico (m.) — médica (f.)"},
+            {"mt": "kelb — kelba", "en": "perro — perra"},
+            {"mt": "barri — baqra", "en": "toro — vaca (palabra propia)"}
+          ]
+        },
+        {
+          "id": "plural-rule",
+          "title": "Formar el plural",
+          "explanation": "Algunos plurales solo añaden una terminación — dentist → dentisti, lift → liftijiet. Pero muchos plurales malteses son 'fractos': la palabra misma se reconfigura — tabib → tobba, kelb → klieb, dar → djar, kamra → kmamar. Estos hay que aprenderlos uno a uno.",
+          "examples": [
+            {"mt": "dentist — dentisti", "en": "dentista — dentistas (regular)"},
+            {"mt": "tabib — tobba", "en": "médico — médicos (fracto)"},
+            {"mt": "dar — djar", "en": "casa — casas (fracto)"}
+          ]
+        }
+      ]
+    }
+  ]
+}

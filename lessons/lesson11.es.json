@@ -1,0 +1,266 @@
+{
+  "id": "lesson11",
+  "title": "Lección 11 — Muebles y el Pasado",
+  "subtitle": "Muebles de cocina y dormitorio, el pasado, medios de transporte antiguos",
+  "sections": [
+    {
+      "id": "table",
+      "icon": "🍳",
+      "title": "Muebles de Cocina",
+      "subtitle": "L-għamara tal-kċina — qué hay en la cocina",
+      "intro": "Los muebles y elementos de una cocina maltesa. Cada tarjeta muestra la palabra y su plural — fíjate en los plurales fractos como forn → fran.",
+      "items": [
+        {"singular": "siġġu", "plural": "siġġijiet", "en": "silla"},
+        {"singular": "mejda", "plural": "imwejjed", "en": "mesa"},
+        {"singular": "kabord", "plural": "kabords", "en": "armario / alacena"},
+        {"singular": "bank tal-kċina", "plural": "bankijiet tal-kċina", "en": "encimera de cocina"},
+        {"singular": "banketta", "plural": "banketti", "en": "taburete"},
+        {"singular": "dawl", "plural": "dwal", "en": "luz"},
+        {"singular": "forn", "plural": "fran", "en": "horno"},
+        {"singular": "friġġ", "plural": "friġis", "en": "nevera"},
+        {"singular": "friżer", "plural": "friżers", "en": "congelador"},
+        {"singular": "kitla", "plural": "ktieli", "en": "hervidor"},
+        {"singular": "kuker", "plural": "kukers", "en": "cocina (fogón)"},
+        {"singular": "sink", "plural": "sinkijiet", "en": "fregadero"},
+        {"singular": "swiċċ", "plural": "swiċċijiet", "en": "interruptor"}
+      ]
+    },
+    {
+      "id": "transport",
+      "icon": "🛏️",
+      "title": "Muebles de Dormitorio",
+      "subtitle": "L-għamara tas-sodda — qué hay en el dormitorio",
+      "intro": "Los muebles de un dormitorio maltés, cada uno con su plural.",
+      "items": [
+        {"singular": "sodda", "plural": "soddod", "en": "cama"},
+        {"singular": "tistiera", "plural": "tistieri", "en": "cabecero"},
+        {"singular": "bieb", "plural": "bibien", "en": "puerta"},
+        {"singular": "tieqa", "plural": "twieqi", "en": "ventana"},
+        {"singular": "gwardarobba", "plural": "gwardarobbi", "en": "armario ropero"},
+        {"singular": "gradenza", "plural": "gradenzi", "en": "cómoda"},
+        {"singular": "kommodina", "plural": "kommodini", "en": "mesita de noche"},
+        {"singular": "xkaffa", "plural": "xkafef", "en": "estante"}
+      ]
+    },
+    {
+      "id": "ghpresent",
+      "icon": "⏮️",
+      "title": "El Pasado",
+      "subtitle": "Il-passat — hablar de ayer",
+      "intro": "El pasado se construye sobre la mamma — la forma simple de 'él', la respuesta a 'Hu x'għamel ilbieraħ?' (¿Qué hizo ayer?). Se añade un sufijo para cada persona: Jien -t, Int -t, Hu (sin cambio), Hi -et, Aħna -na, Intom -tu, Huma -u. Las tres consonantes de la raíz se quedan fijas mientras las vocales se desplazan. Estudia las tablas y luego prueba los ejercicios.",
+      "rules": [
+        {
+          "id": "kiteb",
+          "title": "Kiteb — escribir (raíz k-t-b)",
+          "rows": [
+            {"person": "Jien", "pronoun": "Jien", "form": "ktibt", "en": "yo escribí"},
+            {"person": "Int", "pronoun": "Int", "form": "ktibt", "en": "tú escribiste"},
+            {"person": "Hu", "pronoun": "Hu", "form": "kiteb", "en": "él escribió (mamma)"},
+            {"person": "Hi", "pronoun": "Hi", "form": "kitbet", "en": "ella escribió"},
+            {"person": "Aħna", "pronoun": "Aħna", "form": "ktibna", "en": "nosotros escribimos"},
+            {"person": "Intom", "pronoun": "Intom", "form": "ktibtu", "en": "vosotros escribisteis"},
+            {"person": "Huma", "pronoun": "Huma", "form": "kitbu", "en": "ellos escribieron"}
+          ]
+        },
+        {
+          "id": "raqad",
+          "title": "Raqad — dormir (raíz r-q-d)",
+          "rows": [
+            {"person": "Jien", "pronoun": "Jien", "form": "rqadt", "en": "yo dormí"},
+            {"person": "Int", "pronoun": "Int", "form": "rqadt", "en": "tú dormiste"},
+            {"person": "Hu", "pronoun": "Hu", "form": "raqad", "en": "él durmió (mamma)"},
+            {"person": "Hi", "pronoun": "Hi", "form": "raqdet", "en": "ella durmió"},
+            {"person": "Aħna", "pronoun": "Aħna", "form": "rqadna", "en": "nosotros dormimos"},
+            {"person": "Intom", "pronoun": "Intom", "form": "rqadtu", "en": "vosotros dormisteis"},
+            {"person": "Huma", "pronoun": "Huma", "form": "raqdu", "en": "ellos durmieron"}
+          ]
+        },
+        {
+          "id": "hareg",
+          "title": "Ħareġ — salir (raíz ħ-r-ġ)",
+          "rows": [
+            {"person": "Jien", "pronoun": "Jien", "form": "ħriġt", "en": "yo salí"},
+            {"person": "Int", "pronoun": "Int", "form": "ħriġt", "en": "tú saliste"},
+            {"person": "Hu", "pronoun": "Hu", "form": "ħareġ", "en": "él salió (mamma)"},
+            {"person": "Hi", "pronoun": "Hi", "form": "ħarġet", "en": "ella salió"},
+            {"person": "Aħna", "pronoun": "Aħna", "form": "ħriġna", "en": "nosotros salimos"},
+            {"person": "Intom", "pronoun": "Intom", "form": "ħriġtu", "en": "vosotros salisteis"},
+            {"person": "Huma", "pronoun": "Huma", "form": "ħarġu", "en": "ellos salieron"}
+          ]
+        },
+        {
+          "id": "mar",
+          "title": "Mar — ir (irregular, raíz débil m-w-r)",
+          "rows": [
+            {"person": "Jien", "pronoun": "Jien", "form": "mort", "en": "yo fui"},
+            {"person": "Int", "pronoun": "Int", "form": "mort", "en": "tú fuiste"},
+            {"person": "Hu", "pronoun": "Hu", "form": "mar", "en": "él fue (mamma)"},
+            {"person": "Hi", "pronoun": "Hi", "form": "marret", "en": "ella fue"},
+            {"person": "Aħna", "pronoun": "Aħna", "form": "morna", "en": "nosotros fuimos"},
+            {"person": "Intom", "pronoun": "Intom", "form": "mortu", "en": "vosotros fuisteis"},
+            {"person": "Huma", "pronoun": "Huma", "form": "marru", "en": "ellos fueron"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex5",
+          "title": "Conjuga kiteb (escribir) en pasado",
+          "instructions": "Elige la forma de pasado correcta para cada pronombre.",
+          "choices": ["ktibt", "kiteb", "kitbet", "ktibna", "ktibtu", "kitbu"],
+          "items": [
+            {"pronoun": "Jien", "en": "Yo escribí", "answer": "ktibt"},
+            {"pronoun": "Int", "en": "Tú escribiste", "answer": "ktibt"},
+            {"pronoun": "Hu", "en": "Él escribió", "answer": "kiteb"},
+            {"pronoun": "Hi", "en": "Ella escribió", "answer": "kitbet"},
+            {"pronoun": "Aħna", "en": "Nosotros escribimos", "answer": "ktibna"},
+            {"pronoun": "Intom", "en": "Vosotros escribisteis", "answer": "ktibtu"},
+            {"pronoun": "Huma", "en": "Ellos escribieron", "answer": "kitbu"}
+          ]
+        },
+        {
+          "id": "ex6",
+          "title": "Elige el verbo correcto",
+          "instructions": "Elige el verbo en pasado que encaja en cada frase.",
+          "choices": ["rqadt", "ħareġ", "marret", "telqu", "ktibt", "rkibt", "dħalna", "ħdimtu"],
+          "items": [
+            {"sentence": "Jien ___ tard.", "en": "Dormí tarde. (raqad)", "answer": "rqadt"},
+            {"sentence": "Hu ___ kmieni.", "en": "Él salió temprano. (ħareġ)", "answer": "ħareġ"},
+            {"sentence": "Hi ___ fil-ħin.", "en": "Ella fue a tiempo. (mar)", "answer": "marret"},
+            {"sentence": "Huma ___ jiġru.", "en": "Ellos se fueron corriendo. (telaq)", "answer": "telqu"},
+            {"sentence": "Jien ___ ittra.", "en": "Escribí una carta. (kiteb)", "answer": "ktibt"},
+            {"sentence": "Int ___ tal-linja.", "en": "Cogiste el autobús. (rikeb)", "answer": "rkibt"},
+            {"sentence": "Aħna ___ ġo kamra kbira.", "en": "Entramos en una habitación grande. (daħal)", "answer": "dħalna"},
+            {"sentence": "Intom ___ ħafna.", "en": "Vosotros trabajasteis mucho. (ħadem)", "answer": "ħdimtu"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "food",
+      "icon": "🚋",
+      "title": "Medios de Transporte Antiguos",
+      "subtitle": "Mezzi ta' trasport antiki — cómo viajaba Malta antes",
+      "intro": "Antes de los autobuses de hoy, los malteses viajaban en carruajes de caballos, un tranvía e incluso un ferrocarril. Aquí están los nombres de esos transportes públicos antiguos.",
+      "vocab": [
+        {"mt": "il-kaless", "en": "el kaless — un carro de caballos de la época de los Caballeros"},
+        {"mt": "il-karozzin", "en": "el karozzin — el carruaje de caballos, aún usado hoy por los turistas"},
+        {"mt": "l-omnibus", "en": "el ómnibus — el primer transporte público de Malta, tirado por tres caballos"},
+        {"mt": "il-ferrovija", "en": "el ferrocarril — el Tren de Malta, de La Valeta a Mdina (1883–1931)"},
+        {"mt": "it-tramm", "en": "el tranvía — un tranvía eléctrico de dos pisos, funcionó de 1905 a 1929"},
+        {"mt": "il-karozza tal-linja", "en": "el autobús de línea — el transporte público principal hoy"},
+        {"mt": "il-vapur ta' Għawdex", "en": "el ferry de Gozo — el enlace marítimo entre Malta y Gozo"}
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "icon": "📚",
+      "title": "Vocabulario",
+      "subtitle": "Il-vokabularju — todas las palabras de la Lección 11",
+      "intro": "Todo el vocabulario de la lección en un solo lugar — muebles de cocina y dormitorio, verbos en pasado y transporte antiguo.",
+      "groups": [
+        {
+          "title": "Muebles de cocina",
+          "icon": "🍳",
+          "items": [
+            {"icon": "🪑", "mt": "siġġu", "en": "silla"},
+            {"icon": "🪑", "mt": "mejda", "en": "mesa"},
+            {"icon": "🗄️", "mt": "kabord", "en": "armario / alacena"},
+            {"icon": "🧱", "mt": "bank tal-kċina", "en": "encimera de cocina"},
+            {"icon": "🪑", "mt": "banketta", "en": "taburete"},
+            {"icon": "💡", "mt": "dawl", "en": "luz"},
+            {"icon": "🔥", "mt": "forn", "en": "horno"},
+            {"icon": "🧊", "mt": "friġġ", "en": "nevera"},
+            {"icon": "❄️", "mt": "friżer", "en": "congelador"},
+            {"icon": "🫖", "mt": "kitla", "en": "hervidor"},
+            {"icon": "🍳", "mt": "kuker", "en": "cocina (fogón)"},
+            {"icon": "🚰", "mt": "sink", "en": "fregadero"},
+            {"icon": "🔘", "mt": "swiċċ", "en": "interruptor"}
+          ]
+        },
+        {
+          "title": "Muebles de dormitorio",
+          "icon": "🛏️",
+          "items": [
+            {"icon": "🛏️", "mt": "sodda", "en": "cama"},
+            {"icon": "🛏️", "mt": "tistiera", "en": "cabecero"},
+            {"icon": "🚪", "mt": "bieb", "en": "puerta"},
+            {"icon": "🪟", "mt": "tieqa", "en": "ventana"},
+            {"icon": "🚪", "mt": "gwardarobba", "en": "armario ropero"},
+            {"icon": "🗄️", "mt": "gradenza", "en": "cómoda"},
+            {"icon": "🛋️", "mt": "kommodina", "en": "mesita de noche"},
+            {"icon": "📚", "mt": "xkaffa", "en": "estante"}
+          ]
+        },
+        {
+          "title": "Verbos en pasado (mamma)",
+          "icon": "⏮️",
+          "subtitle": "La forma simple de 'él' — la base del pasado.",
+          "items": [
+            {"icon": "✍️", "mt": "kiteb", "en": "él escribió"},
+            {"icon": "😴", "mt": "raqad", "en": "él durmió"},
+            {"icon": "🚪", "mt": "ħareġ", "en": "él salió"},
+            {"icon": "➡️", "mt": "daħal", "en": "él entró"},
+            {"icon": "🚌", "mt": "rikeb", "en": "él montó"},
+            {"icon": "🔨", "mt": "ħadem", "en": "él trabajó"},
+            {"icon": "👋", "mt": "telaq", "en": "él se fue"},
+            {"icon": "💥", "mt": "kisser", "en": "él rompió"},
+            {"icon": "🚶", "mt": "mar", "en": "él fue (irregular)"}
+          ]
+        },
+        {
+          "title": "Medios de transporte antiguos",
+          "icon": "🚋",
+          "items": [
+            {"icon": "🐎", "mt": "il-kaless", "en": "el kaless (carro de caballos antiguo)"},
+            {"icon": "🛒", "mt": "il-karozzin", "en": "el carruaje de caballos"},
+            {"icon": "🐴", "mt": "l-omnibus", "en": "el ómnibus"},
+            {"icon": "🚂", "mt": "il-ferrovija", "en": "el ferrocarril"},
+            {"icon": "🚋", "mt": "it-tramm", "en": "el tranvía"},
+            {"icon": "🚌", "mt": "il-karozza tal-linja", "en": "el autobús de línea"},
+            {"icon": "⛴️", "mt": "il-vapur ta' Għawdex", "en": "el ferry de Gozo"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar11",
+      "icon": "📝",
+      "title": "Gramática",
+      "subtitle": "Il-grammatika — la gramática de la Lección 11",
+      "intro": "El pasado explicado — la mamma, los sufijos, la raíz y los verbos irregulares.",
+      "rules": [
+        {
+          "id": "mamma-suffixes",
+          "title": "La mamma y los siete sufijos",
+          "explanation": "El pasado se construye sobre la mamma — la forma desnuda de 'él'. A ella se añade un sufijo para cada persona. Hu no lleva ningún sufijo (ES la mamma).",
+          "letters": ["Jien -t", "Int -t", "Hu —", "Hi -et", "Aħna -na", "Intom -tu", "Huma -u"],
+          "examples": [
+            {"mt": "Hu kiteb", "en": "Él escribió — la mamma, sin sufijo"},
+            {"mt": "Jien ktibt", "en": "Yo escribí — mamma + -t"},
+            {"mt": "Hi kitbet", "en": "Ella escribió — mamma + -et"},
+            {"mt": "Huma kitbu", "en": "Ellos escribieron — mamma + -u"}
+          ]
+        },
+        {
+          "id": "root-vowel",
+          "title": "La raíz y la vocal que cambia",
+          "explanation": "La mayoría de los verbos malteses se apoyan en una raíz de tres consonantes. En kiteb la raíz es k-t-b. Al añadir los sufijos, esas tres consonantes se quedan fijas pero las vocales a su alrededor se desplazan — este sistema de raíz y patrón se hereda del árabe y es típico de las lenguas semíticas.",
+          "examples": [
+            {"mt": "kiteb — ktibt — kitbet — kitbu", "en": "escribir: la raíz k-t-b se queda, las vocales se mueven"},
+            {"mt": "ħareġ — ħriġt — ħarġet", "en": "salir: la raíz ħ-r-ġ se queda"}
+          ]
+        },
+        {
+          "id": "weak-roots",
+          "title": "Raíces débiles — verbos irregulares",
+          "explanation": "Algunos verbos tienen una 'letra débil' en la raíz — en maltés, l-għerq dgħajjef. El verbo mar (ir) tiene la raíz m-w-r; la w es débil y desaparece o se transforma al añadir los sufijos, así que el verbo cambia bastante de forma.",
+          "examples": [
+            {"mt": "mar — mort", "en": "él fue — yo fui"},
+            {"mt": "marret — morna — marru", "en": "ella fue — nosotros fuimos — ellos fueron"}
+          ]
+        }
+      ]
+    }
+  ]
+}

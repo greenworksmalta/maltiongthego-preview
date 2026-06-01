@@ -1,0 +1,880 @@
+{
+  "id": "lesson4",
+  "lang": "es",
+  "title": "Lección 4 — Familia y Posesión",
+  "subtitle": "Miembros de la familia, pasatiempos, ta', pronombres pegados",
+  "sections": [
+    {
+      "id": "family",
+      "icon": "👨‍👩‍👧",
+      "title": "Familia",
+      "subtitle": "Il-membri tal-familja — los miembros de la familia",
+      "vocab": [
+        {
+          "mt": "Familja",
+          "en": "Familia"
+        },
+        {
+          "mt": "Omm",
+          "en": "Madre"
+        },
+        {
+          "mt": "Missier",
+          "en": "Padre"
+        },
+        {
+          "mt": "Ġenituri",
+          "en": "Padres"
+        },
+        {
+          "mt": "Ħu",
+          "en": "Hermano"
+        },
+        {
+          "mt": "Oħt",
+          "en": "Hermana"
+        },
+        {
+          "mt": "Iben",
+          "en": "Hijo"
+        },
+        {
+          "mt": "Bint",
+          "en": "Hija"
+        },
+        {
+          "mt": "Ulied",
+          "en": "Hijos / hijas"
+        },
+        {
+          "mt": "Nannu",
+          "en": "Abuelo"
+        },
+        {
+          "mt": "Nanna",
+          "en": "Abuela"
+        },
+        {
+          "mt": "Nanniet",
+          "en": "Abuelos"
+        },
+        {
+          "mt": "Ziju",
+          "en": "Tío"
+        },
+        {
+          "mt": "Zija",
+          "en": "Tía"
+        },
+        {
+          "mt": "Kuġin",
+          "en": "Primo (m)"
+        },
+        {
+          "mt": "Kuġina",
+          "en": "Prima (f)"
+        },
+        {
+          "mt": "Neputi",
+          "en": "Sobrino / nieto"
+        },
+        {
+          "mt": "Neputija",
+          "en": "Sobrina / nieta"
+        },
+        {
+          "mt": "Raġel",
+          "en": "Esposo / hombre"
+        },
+        {
+          "mt": "Mara",
+          "en": "Esposa / mujer"
+        }
+      ],
+      "plurals": [
+        {
+          "singular": "Iben",
+          "plural": "Ulied",
+          "en": "Hijo / Hijos"
+        },
+        {
+          "singular": "Bint",
+          "plural": "Bniet",
+          "en": "Hija / Hijas"
+        },
+        {
+          "singular": "Kuġin",
+          "plural": "Kuġini",
+          "en": "Primo / Primos"
+        },
+        {
+          "singular": "Missier",
+          "plural": "Missirijiet",
+          "en": "Padre / Padres"
+        },
+        {
+          "singular": "Omm",
+          "plural": "Ommijiet",
+          "en": "Madre / Madres"
+        },
+        {
+          "singular": "Nannu",
+          "plural": "Nanniet",
+          "en": "Abuelo / Abuelos"
+        },
+        {
+          "singular": "Neputi",
+          "plural": "Neputijiet",
+          "en": "Sobrino / Sobrinos"
+        },
+        {
+          "singular": "Ziju",
+          "plural": "Zijiet",
+          "en": "Tío / Tíos"
+        },
+        {
+          "singular": "Zija",
+          "plural": "Zijiet",
+          "en": "Tía / Tías"
+        },
+        {
+          "singular": "Ħu",
+          "plural": "Aħwa",
+          "en": "Hermano / Hermanos"
+        }
+      ]
+    },
+    {
+      "id": "possessive",
+      "icon": "🏷️",
+      "title": "Posesivo",
+      "subtitle": "Il-possessiv — usar ta' y tiegħi/tiegħek/etc.",
+      "intro": "Para decir 'algo de alguien' en maltés, usa la palabrita ta' (de). 'El perro de Sara' se vuelve 'el perro de Sara' literalmente.",
+      "examples": [
+        {
+          "phrase": "Il-kelb ta' Sara",
+          "en": "El perro de Sara"
+        },
+        {
+          "phrase": "Id-dar ta' Tom",
+          "en": "La casa de Tom"
+        },
+        {
+          "phrase": "Il-karozza tal-missier",
+          "en": "El coche de papá"
+        },
+        {
+          "phrase": "Il-ġuvni ta' Marta",
+          "en": "El novio de Marta"
+        },
+        {
+          "phrase": "Il-villa tan-nanna",
+          "en": "La villa de la abuela"
+        },
+        {
+          "phrase": "Il-pjanti taz-zija",
+          "en": "Las plantas de la tía"
+        }
+      ],
+      "possessives": [
+        {
+          "mt": "tiegħi",
+          "en": "mi / mío"
+        },
+        {
+          "mt": "tiegħek",
+          "en": "tu / tuyo (sing)"
+        },
+        {
+          "mt": "tiegħu",
+          "en": "su / suyo (de él)"
+        },
+        {
+          "mt": "tagħha",
+          "en": "su / suya (de ella)"
+        },
+        {
+          "mt": "tagħna",
+          "en": "nuestro / nuestra"
+        },
+        {
+          "mt": "tagħkom",
+          "en": "su / suyo (de ustedes)"
+        },
+        {
+          "mt": "tagħhom",
+          "en": "su / suyo (de ellos)"
+        }
+      ],
+      "examples_pronouns": [
+        {
+          "phrase": "il-kelb tiegħi",
+          "en": "mi perro"
+        },
+        {
+          "phrase": "il-kelb tiegħek",
+          "en": "tu perro"
+        },
+        {
+          "phrase": "il-kelb tiegħu",
+          "en": "el perro de él"
+        },
+        {
+          "phrase": "il-kelb tagħha",
+          "en": "el perro de ella"
+        },
+        {
+          "phrase": "il-kelb tagħna",
+          "en": "nuestro perro"
+        },
+        {
+          "phrase": "il-kelb tagħkom",
+          "en": "el perro de ustedes"
+        },
+        {
+          "phrase": "il-kelb tagħhom",
+          "en": "el perro de ellos"
+        }
+      ]
+    },
+    {
+      "id": "attached",
+      "icon": "➕",
+      "title": "Pronombres pegados",
+      "subtitle": "Il-pronomi mehmużin — sufijos",
+      "intro": "El maltés tiene un atajo poderoso: el pronombre (mi, tu, su…) se pega al sustantivo como sufijo. Así 'mi casa' es una sola palabra: dari.",
+      "examples": [
+        {
+          "long": "missier tiegħi",
+          "short": "missieri",
+          "en": "mi padre"
+        },
+        {
+          "long": "missier tiegħek",
+          "short": "missierek",
+          "en": "tu padre"
+        },
+        {
+          "long": "missier tiegħu",
+          "short": "missieru",
+          "en": "su padre (de él)"
+        },
+        {
+          "long": "missier tagħha",
+          "short": "missierha",
+          "en": "su padre (de ella)"
+        },
+        {
+          "long": "missier tagħna",
+          "short": "missierna",
+          "en": "nuestro padre"
+        },
+        {
+          "long": "missier tagħkom",
+          "short": "missierkom",
+          "en": "el padre de ustedes"
+        },
+        {
+          "long": "missier tagħhom",
+          "short": "missierhom",
+          "en": "el padre de ellos"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex6",
+          "title": "Forma el pronombre pegado (juego 1)",
+          "instructions": "¿Cuál es la forma pegada de cada frase?",
+          "choices": [
+            "darha",
+            "darkom",
+            "dari",
+            "darhom",
+            "daru",
+            "darna",
+            "darek"
+          ],
+          "items": [
+            {
+              "long": "dar tiegħi",
+              "en": "mi casa",
+              "answer": "dari"
+            },
+            {
+              "long": "dar tiegħek",
+              "en": "tu casa",
+              "answer": "darek"
+            },
+            {
+              "long": "dar tiegħu",
+              "en": "su casa (de él)",
+              "answer": "daru"
+            },
+            {
+              "long": "dar tagħha",
+              "en": "su casa (de ella)",
+              "answer": "darha"
+            },
+            {
+              "long": "dar tagħna",
+              "en": "nuestra casa",
+              "answer": "darna"
+            },
+            {
+              "long": "dar tagħkom",
+              "en": "la casa de ustedes",
+              "answer": "darkom"
+            },
+            {
+              "long": "dar tagħhom",
+              "en": "la casa de ellos",
+              "answer": "darhom"
+            }
+          ]
+        },
+        {
+          "id": "ex7",
+          "title": "Forma el pronombre pegado (juego 2)",
+          "instructions": "Elige la forma contraída de cada uno.",
+          "choices": [
+            "wiċċna",
+            "idu",
+            "qalbi",
+            "snienkom",
+            "flusek",
+            "arthom",
+            "ommha"
+          ],
+          "items": [
+            {
+              "long": "qalb tiegħi",
+              "en": "mi corazón",
+              "answer": "qalbi"
+            },
+            {
+              "long": "omm tagħha",
+              "en": "su mamá (de ella)",
+              "answer": "ommha"
+            },
+            {
+              "long": "flus tiegħek",
+              "en": "tu dinero",
+              "answer": "flusek"
+            },
+            {
+              "long": "wiċċ tagħna",
+              "en": "nuestra cara",
+              "answer": "wiċċna"
+            },
+            {
+              "long": "snien tagħkom",
+              "en": "los dientes de ustedes",
+              "answer": "snienkom"
+            },
+            {
+              "long": "art tagħhom",
+              "en": "la tierra de ellos",
+              "answer": "arthom"
+            },
+            {
+              "long": "id tiegħu",
+              "en": "su mano (de él)",
+              "answer": "idu"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "icon": "📚",
+      "title": "Vocabulario",
+      "subtitle": "Il-vokabularju — palabras y verbos de esta lección",
+      "intro": "Miembros de la familia (con sus plurales), verbos de pasatiempos, palabras posesivas y ejemplos de pronombres pegados — todo en un solo sitio.",
+      "groups": [
+        {
+          "title": "Familia inmediata (singular → plural)",
+          "icon": "👨‍👩‍👧",
+          "items": [
+            {
+              "icon": "👩‍🦰",
+              "mt": "Omm → Ommijiet",
+              "en": "Madre / Madres"
+            },
+            {
+              "icon": "👨‍🦰",
+              "mt": "Missier → Missirijiet",
+              "en": "Padre / Padres"
+            },
+            {
+              "icon": "👩",
+              "mt": "Bint → Ulied",
+              "en": "Hija (plural compartido con hijos)"
+            },
+            {
+              "icon": "👨",
+              "mt": "Iben → Ulied",
+              "en": "Hijo / Hijos (hijos + hijas)"
+            },
+            {
+              "icon": "👫",
+              "mt": "Oħt",
+              "en": "Hermana"
+            },
+            {
+              "icon": "👬",
+              "mt": "Ħu / Ħija",
+              "en": "Hermano / Mi hermano"
+            },
+            {
+              "icon": "💑",
+              "mt": "Mara / Marti",
+              "en": "Esposa / Mi esposa"
+            },
+            {
+              "icon": "💑",
+              "mt": "Raġel / Żewġi",
+              "en": "Esposo / Mi esposo"
+            }
+          ]
+        },
+        {
+          "title": "Familia extendida",
+          "icon": "👴",
+          "items": [
+            {
+              "icon": "👵",
+              "mt": "Nanna → Nanniet",
+              "en": "Abuela / Abuelas"
+            },
+            {
+              "icon": "👴",
+              "mt": "Nannu → Nanniet",
+              "en": "Abuelo / Abuelos"
+            },
+            {
+              "icon": "👵",
+              "mt": "Bużnanna",
+              "en": "Bisabuela"
+            },
+            {
+              "icon": "👴",
+              "mt": "Bużnannu",
+              "en": "Bisabuelo"
+            },
+            {
+              "icon": "👩",
+              "mt": "Zija → Zijiet",
+              "en": "Tía / Tías"
+            },
+            {
+              "icon": "👨",
+              "mt": "Ziju → Zijiet",
+              "en": "Tío / Tíos"
+            },
+            {
+              "icon": "👨",
+              "mt": "Kuġin → Kuġini",
+              "en": "Primo / Primos"
+            },
+            {
+              "icon": "👩",
+              "mt": "Kuġina → Kuġini",
+              "en": "Prima / Primas"
+            },
+            {
+              "icon": "👨",
+              "mt": "Neputi → Neputijiet",
+              "en": "Sobrino / nieto"
+            },
+            {
+              "icon": "👩",
+              "mt": "Neputija → Neputijiet",
+              "en": "Sobrina / nieta"
+            }
+          ]
+        },
+        {
+          "title": "Familia política y compromiso",
+          "icon": "💍",
+          "items": [
+            {
+              "icon": "💍",
+              "mt": "Għarus → Għarajjes",
+              "en": "Prometido / Prometidos"
+            },
+            {
+              "icon": "💍",
+              "mt": "Għarusa → Għarajjes",
+              "en": "Prometida / Prometidas"
+            },
+            {
+              "icon": "👨",
+              "mt": "Raġel t'oħti",
+              "en": "Cuñado (lit. el esposo de mi hermana)"
+            },
+            {
+              "icon": "👩",
+              "mt": "Mara ta' ħija",
+              "en": "Cuñada (lit. la esposa de mi hermano)"
+            }
+          ]
+        },
+        {
+          "title": "Pasatiempos — 'Jien inħobb…' (Me gusta…)",
+          "icon": "🎯",
+          "items": [
+            {
+              "icon": "⚽",
+              "mt": "Nilgħab il-futbol",
+              "en": "Yo juego al fútbol"
+            },
+            {
+              "icon": "🏀",
+              "mt": "Nilgħab il-basketball",
+              "en": "Yo juego al baloncesto"
+            },
+            {
+              "icon": "🎾",
+              "mt": "Nilgħab it-tenis",
+              "en": "Yo juego al tenis"
+            },
+            {
+              "icon": "🎮",
+              "mt": "Nilgħab il-Playstation",
+              "en": "Yo juego a la Playstation"
+            },
+            {
+              "icon": "🍳",
+              "mt": "Insajjar",
+              "en": "Yo cocino"
+            },
+            {
+              "icon": "🏃",
+              "mt": "Niġri",
+              "en": "Yo corro"
+            },
+            {
+              "icon": "📷",
+              "mt": "Nieħu r-ritratti",
+              "en": "Yo saco fotos"
+            },
+            {
+              "icon": "🎤",
+              "mt": "Inkanta",
+              "en": "Yo canto"
+            },
+            {
+              "icon": "🧶",
+              "mt": "Naħdem is-suf",
+              "en": "Yo tejo"
+            },
+            {
+              "icon": "🪡",
+              "mt": "Inħit",
+              "en": "Yo coso"
+            },
+            {
+              "icon": "✍️",
+              "mt": "Nikteb",
+              "en": "Yo escribo"
+            },
+            {
+              "icon": "📖",
+              "mt": "Naqra",
+              "en": "Yo leo"
+            }
+          ]
+        },
+        {
+          "title": "Pronombres posesivos — palabras separadas",
+          "icon": "🏷️",
+          "subtitle": "Se usan después del sustantivo: 'il-kelb tiegħi' = 'mi perro'.",
+          "items": [
+            {
+              "icon": "👤",
+              "mt": "Tiegħi",
+              "en": "Mi / mío"
+            },
+            {
+              "icon": "👤",
+              "mt": "Tiegħek",
+              "en": "Tu / tuyo (sing)"
+            },
+            {
+              "icon": "👨",
+              "mt": "Tiegħu",
+              "en": "Su / suyo (de él)"
+            },
+            {
+              "icon": "👩",
+              "mt": "Tagħha",
+              "en": "Su / suyo (de ella)"
+            },
+            {
+              "icon": "👥",
+              "mt": "Tagħna",
+              "en": "Nuestro/a"
+            },
+            {
+              "icon": "👥",
+              "mt": "Tagħkom",
+              "en": "Vuestro/a / suyo (de ustedes)"
+            },
+            {
+              "icon": "👥",
+              "mt": "Tagħhom",
+              "en": "Su / suyo (de ellos)"
+            }
+          ]
+        },
+        {
+          "title": "Ejemplos con pronombres pegados (dar = casa)",
+          "icon": "🏠",
+          "subtitle": "Se añade un sufijo directamente al sustantivo.",
+          "items": [
+            {
+              "icon": "🏠",
+              "mt": "Dari",
+              "en": "Mi casa"
+            },
+            {
+              "icon": "🏠",
+              "mt": "Darek",
+              "en": "Tu casa (sing)"
+            },
+            {
+              "icon": "🏠",
+              "mt": "Daru",
+              "en": "Su casa (de él)"
+            },
+            {
+              "icon": "🏠",
+              "mt": "Darha",
+              "en": "Su casa (de ella)"
+            },
+            {
+              "icon": "🏠",
+              "mt": "Darna",
+              "en": "Nuestra casa"
+            },
+            {
+              "icon": "🏠",
+              "mt": "Darkom",
+              "en": "Vuestra casa"
+            },
+            {
+              "icon": "🏠",
+              "mt": "Darhom",
+              "en": "Su casa (de ellos)"
+            }
+          ]
+        },
+        {
+          "title": "Otras palabras que toman pronombres pegados",
+          "icon": "🔤",
+          "items": [
+            {
+              "icon": "👂",
+              "mt": "Rasi",
+              "en": "Mi cabeza (ras + i)"
+            },
+            {
+              "icon": "🦵",
+              "mt": "Sieqi",
+              "en": "Mi pierna (sieq + i)"
+            },
+            {
+              "icon": "✋",
+              "mt": "Idna",
+              "en": "Nuestra mano (id + na)"
+            },
+            {
+              "icon": "👄",
+              "mt": "Ħalqu",
+              "en": "Su boca (ħalq + u)"
+            },
+            {
+              "icon": "💰",
+              "mt": "Flusek",
+              "en": "Tu dinero (flus + ek)"
+            },
+            {
+              "icon": "❤️",
+              "mt": "Qalbi",
+              "en": "Mi corazón (qalb + i)"
+            },
+            {
+              "icon": "🌍",
+              "mt": "Arthom",
+              "en": "Su tierra (art + hom)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar4",
+      "icon": "📖",
+      "title": "Gramática",
+      "subtitle": "Il-grammatika — la gramática de la Lección 4",
+      "intro": "Dos formas de mostrar 'de quién': la palabra ta', y los pronombres pegados.",
+      "rules": [
+        {
+          "id": "ta-possessive",
+          "title": "Posesivo con ta' (de)",
+          "explanation": "La forma más sencilla de mostrar posesión: sustantivo + ta' + dueño. Literalmente 'X de Y'. Usa 'ta'' para cualquier dueño — nombres, familiares, cosas.",
+          "examples": [
+            {
+              "mt": "Il-kelb ta' Matthew",
+              "en": "El perro de Matthew"
+            },
+            {
+              "mt": "Il-pupa ta' Sarah",
+              "en": "La muñeca de Sarah"
+            },
+            {
+              "mt": "Il-ktieb ta' Sean",
+              "en": "El libro de Sean"
+            },
+            {
+              "mt": "Il-basket ta' Maria",
+              "en": "El bolso de Maria"
+            },
+            {
+              "mt": "Ir-rota ta' Jessica",
+              "en": "La bicicleta de Jessica"
+            },
+            {
+              "mt": "It-tfal ta' Marika",
+              "en": "Los hijos de Marika"
+            }
+          ]
+        },
+        {
+          "id": "possessive-pronouns",
+          "title": "Pronombres posesivos — tiegħi, tiegħek, tiegħu…",
+          "explanation": "Cuando el dueño es un pronombre (mi, tu, su…), usa una de estas palabras independientes DESPUÉS del sustantivo. Concuerdan con el DUEÑO, no con el sustantivo.",
+          "letters": [
+            "Tiegħi",
+            "Tiegħek",
+            "Tiegħu",
+            "Tagħha",
+            "Tagħna",
+            "Tagħkom",
+            "Tagħhom"
+          ],
+          "examples": [
+            {
+              "mt": "Il-kelb tiegħi",
+              "en": "Mi perro"
+            },
+            {
+              "mt": "Il-kelb tiegħek",
+              "en": "Tu perro"
+            },
+            {
+              "mt": "Il-kelb tiegħu",
+              "en": "Su perro (de él)"
+            },
+            {
+              "mt": "Il-kelb tagħha",
+              "en": "Su perro (de ella)"
+            },
+            {
+              "mt": "Il-kelb tagħna",
+              "en": "Nuestro perro"
+            },
+            {
+              "mt": "Il-kelb tagħkom",
+              "en": "Vuestro perro"
+            },
+            {
+              "mt": "Il-kelb tagħhom",
+              "en": "Su perro (de ellos)"
+            }
+          ]
+        },
+        {
+          "id": "attached-pronouns",
+          "title": "Pronombres pegados — sufijo directo al sustantivo",
+          "explanation": "En vez de 'dar tiegħi' (mi casa), el maltés muchas veces pega un pequeño sufijo al sustantivo: dari. Los sufijos son -i (mi), -ek (tu), -u (su m), -ha (su f), -na (nuestro), -kom (vuestro), -hom (su pl). El artículo desaparece.",
+          "letters": [
+            "-i (mi)",
+            "-ek (tu)",
+            "-u (su m)",
+            "-ha (su f)",
+            "-na (nuestro)",
+            "-kom (vuestro)",
+            "-hom (su pl)"
+          ],
+          "examples": [
+            {
+              "mt": "dar tiegħi → dari",
+              "en": "mi casa"
+            },
+            {
+              "mt": "dar tiegħek → darek",
+              "en": "tu casa"
+            },
+            {
+              "mt": "dar tiegħu → daru",
+              "en": "su casa (de él)"
+            },
+            {
+              "mt": "missier tagħha → missierha",
+              "en": "su padre (de ella)"
+            },
+            {
+              "mt": "missier tagħna → missierna",
+              "en": "nuestro padre"
+            },
+            {
+              "mt": "qalb tiegħi → qalbi",
+              "en": "mi corazón"
+            },
+            {
+              "mt": "art tagħhom → arthom",
+              "en": "su tierra (de ellos)"
+            }
+          ]
+        },
+        {
+          "id": "family-plurals",
+          "title": "Los plurales familiares son irregulares",
+          "explanation": "Los plurales de los miembros de la familia no siguen un único patrón — muchos toman -ijiet o -iet, algunos son completamente distintos. Memoriza las parejas.",
+          "examples": [
+            {
+              "mt": "omm → ommijiet",
+              "en": "madre → madres"
+            },
+            {
+              "mt": "missier → missirijiet",
+              "en": "padre → padres"
+            },
+            {
+              "mt": "nanna → nanniet",
+              "en": "abuela → abuelas"
+            },
+            {
+              "mt": "iben/bint → ulied",
+              "en": "hijo/hija → hijos (plural compartido)"
+            },
+            {
+              "mt": "ziju/zija → zijiet",
+              "en": "tío/tía → tíos y tías"
+            },
+            {
+              "mt": "kuġin/kuġina → kuġini",
+              "en": "primo → primos"
+            },
+            {
+              "mt": "għarus/għarusa → għarajjes",
+              "en": "prometido/prometida → parejas comprometidas"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

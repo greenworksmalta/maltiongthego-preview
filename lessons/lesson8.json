@@ -1,0 +1,1085 @@
+{
+  "id": "lesson8",
+  "title": "Lesson 8 — Particles & the Map",
+  "subtitle": "Date words, particle + article fusion, the map of Malta, places",
+  "sections": [
+    {
+      "id": "datetime",
+      "icon": "📅",
+      "title": "Date words",
+      "subtitle": "Ġranet u xhur — talking about dates",
+      "intro": "How to write a date in Maltese: It-Tnejn 24 ta' Frar, 2024 (Monday 24th February 2024).",
+      "vocab": [
+        {
+          "mt": "Illum",
+          "en": "Today"
+        },
+        {
+          "mt": "Għada",
+          "en": "Tomorrow"
+        },
+        {
+          "mt": "Ilbieraħ",
+          "en": "Yesterday"
+        },
+        {
+          "mt": "Pitgħada",
+          "en": "The day after tomorrow"
+        },
+        {
+          "mt": "Ilbieraħtlula",
+          "en": "The day before yesterday"
+        },
+        {
+          "mt": "Filgħodu",
+          "en": "In the morning"
+        },
+        {
+          "mt": "Waranofsinhar",
+          "en": "In the afternoon"
+        },
+        {
+          "mt": "Filgħaxija",
+          "en": "In the evening"
+        },
+        {
+          "mt": "Billejl",
+          "en": "At night"
+        },
+        {
+          "mt": "Dakinhar",
+          "en": "On that day"
+        },
+        {
+          "mt": "Il-ġimgħa d-dieħla",
+          "en": "Next week"
+        },
+        {
+          "mt": "Il-ġimgħa li għaddiet",
+          "en": "Last week"
+        },
+        {
+          "mt": "Ix-xahar id-dieħel",
+          "en": "Next month"
+        },
+        {
+          "mt": "Ix-xahar li għadda",
+          "en": "Last month"
+        },
+        {
+          "mt": "Is-sena d-dieħla",
+          "en": "Next year"
+        },
+        {
+          "mt": "Is-sena li għaddiet",
+          "en": "Last year"
+        },
+        {
+          "mt": "Xahar",
+          "en": "Month"
+        },
+        {
+          "mt": "Sena",
+          "en": "Year"
+        }
+      ]
+    },
+    {
+      "id": "partarticle",
+      "icon": "🔗",
+      "title": "Particles + the",
+      "subtitle": "Partiċelli mal-artiklu — particle contractions",
+      "intro": "When a particle meets the article 'l-', they fuse into one word. Example: bi + l → bil-, ġo + l → ġol-.",
+      "items": [
+        {
+          "long": "ma' + l-",
+          "short": "mal-",
+          "en": "with the"
+        },
+        {
+          "long": "ta' + l-",
+          "short": "tal-",
+          "en": "of the"
+        },
+        {
+          "long": "sa + l-",
+          "short": "sal-",
+          "en": "until the / as far as the"
+        },
+        {
+          "long": "ġo + l-",
+          "short": "ġol-",
+          "en": "in the"
+        },
+        {
+          "long": "bi + l-",
+          "short": "bil-",
+          "en": "with the"
+        },
+        {
+          "long": "fi + l-",
+          "short": "fil-",
+          "en": "in the"
+        },
+        {
+          "long": "lil + l-",
+          "short": "lill-",
+          "en": "to the"
+        },
+        {
+          "long": "bħal + l-",
+          "short": "bħall-",
+          "en": "like the"
+        },
+        {
+          "long": "għal + l-",
+          "short": "għall-",
+          "en": "for the"
+        },
+        {
+          "long": "minn + l-",
+          "short": "mill-",
+          "en": "from the"
+        }
+      ],
+      "facts": [
+        "These contractions still follow the 'Xemxin' consonant rule from Lesson 1.",
+        "Before 'Xemxin' consonants (ċ, d, n, r, s, t, x, ż, z), the L assimilates: fil-xemx → fix-xemx; ġol-sodda → ġos-sodda.",
+        "Before vowels, h, or għ — the particles bi, fi shorten to b' / f': fi dar → f'dar; bi ajruplan → b'ajruplan.",
+        "The particles sa, ma', ta' may also shorten before vowels: sa Għawdex → s'Għawdex; ma' ommi → m'ommi."
+      ],
+      "exercises": [
+        {
+          "id": "ex3",
+          "title": "Combine particle + article",
+          "instructions": "Pick the correct contracted form for the gap.",
+          "choices": [
+            "sal-",
+            "bil-",
+            "ġol-",
+            "lill-",
+            "mill-",
+            "fil-",
+            "mal-",
+            "tal-",
+            "bħall-",
+            "għall-"
+          ],
+          "items": [
+            {
+              "sentence": "Tom mar ___ pjazza",
+              "en": "Tom went to the square",
+              "answer": "sal-"
+            },
+            {
+              "sentence": "Sara kelmitni ___ Malti ġenwin",
+              "en": "Sara spoke to me with proper Maltese",
+              "answer": "bil-"
+            },
+            {
+              "sentence": "Ix-xita waqgħet ___ ġnien",
+              "en": "The rain fell into the garden",
+              "answer": "ġol-"
+            },
+            {
+              "sentence": "Tajt ir-rigal ___ kuġina",
+              "en": "I gave the gift to the cousin",
+              "answer": "lill-"
+            },
+            {
+              "sentence": "Tom ġej ___ ajruport",
+              "en": "Tom is coming from the airport",
+              "answer": "mill-"
+            },
+            {
+              "sentence": "Iltqajna ___ kafetterija",
+              "en": "We met at the café",
+              "answer": "fil-"
+            },
+            {
+              "sentence": "Marija marret ___ familja tagħha",
+              "en": "Marija went with her family",
+              "answer": "mal-"
+            },
+            {
+              "sentence": "Dak l-arloġġ ___ nannu",
+              "en": "That clock is grandpa's",
+              "answer": "tal-"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "map",
+      "icon": "🗺️",
+      "title": "Maltese map",
+      "subtitle": "Mappa ta' Malta — three islands & localities",
+      "facts": [
+        "Malta is a small country in the Mediterranean Sea, south of Sicily.",
+        "It is made up of three inhabited islands: Malta, Gozo (Għawdex), and Comino (Kemmuna).",
+        "Malta is the biggest island where most people live. The capital city is Valletta — a UNESCO World Heritage Site.",
+        "Gozo is smaller and more rural. The capital city is Victoria, also called Rabat.",
+        "Comino is very small with permanent population in single digits — famous for the Blue Lagoon."
+      ],
+      "vocab": [
+        {
+          "mt": "Malta",
+          "en": "Malta"
+        },
+        {
+          "mt": "Għawdex",
+          "en": "Gozo"
+        },
+        {
+          "mt": "Kemmuna",
+          "en": "Comino"
+        },
+        {
+          "mt": "Il-Belt Valletta",
+          "en": "Valletta (capital of Malta)"
+        },
+        {
+          "mt": "Ir-Rabat",
+          "en": "Victoria / Rabat (capital of Gozo)"
+        },
+        {
+          "mt": "Il-pajjiż",
+          "en": "The country"
+        },
+        {
+          "mt": "Tramuntana",
+          "en": "North"
+        },
+        {
+          "mt": "Nofsinhar",
+          "en": "South"
+        },
+        {
+          "mt": "Ċentrali",
+          "en": "Central"
+        }
+      ],
+      "regions": [
+        {
+          "name": "North (Tramuntana)",
+          "places": [
+            "Il-Mellieħa",
+            "Buġibba",
+            "San Pawl il-Baħar",
+            "Il-Qawra",
+            "Mġarr"
+          ]
+        },
+        {
+          "name": "Central",
+          "places": [
+            "L-Imdina",
+            "Ir-Rabat (Malta)",
+            "Birkirkara",
+            "Ħal-Lija",
+            "Ħ'Attard",
+            "In-Naxxar",
+            "Ħaż-Żebbuġ"
+          ]
+        },
+        {
+          "name": "South (Nofsinhar)",
+          "places": [
+            "Marsaxlokk",
+            "Birżebbuġa",
+            "Iż-Żurrieq",
+            "Iż-Żejtun",
+            "Il-Qrendi",
+            "Marsaskala"
+          ]
+        },
+        {
+          "name": "Northern Harbour",
+          "places": [
+            "Tas-Sliema",
+            "St Julian's",
+            "Pembroke",
+            "Il-Gżira",
+            "Paceville",
+            "San Ġwann"
+          ]
+        },
+        {
+          "name": "Southern Harbour",
+          "places": [
+            "Il-Belt Valletta",
+            "Il-Furjana",
+            "Il-Birgu",
+            "L-Isla",
+            "Il-Bormla",
+            "Ħaż-Żabbar",
+            "Il-Marsa"
+          ]
+        },
+        {
+          "name": "Gozo (Għawdex)",
+          "places": [
+            "Ir-Rabat",
+            "Marsalforn",
+            "Ix-Xagħra",
+            "Ix-Xewkija",
+            "Għajnsielem",
+            "L-Għarb",
+            "Ta' Sannat"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "places",
+      "icon": "🏛️",
+      "title": "Interesting places",
+      "subtitle": "Postijiet importanti — historic & natural sites",
+      "items": [
+        {
+          "mt": "Il-Belt Valletta",
+          "en": "Valletta",
+          "kind": "🏛️ Historical",
+          "note": "Walled capital — UNESCO World Heritage Site, full of museums, baroque architecture, and the famous Saluting Battery."
+        },
+        {
+          "mt": "L-Imdina",
+          "en": "Mdina",
+          "kind": "🏛️ Historical",
+          "note": "The 'Silent City'. Was Malta's capital before Valletta. Walking inside its walls feels like time travel."
+        },
+        {
+          "mt": "It-Tlett Ibliet",
+          "en": "The Three Cities",
+          "kind": "🏛️ Historical",
+          "note": "Senglea (L-Isla), Vittoriosa (Birgu), and Cospicua (Bormla) — Malta's original harbour fortifications."
+        },
+        {
+          "mt": "Il-Laguna Blu",
+          "en": "Blue Lagoon (Comino)",
+          "kind": "🌊 Natural",
+          "note": "Crystal-clear shallow waters between Comino and Cominotto — Malta's most photographed swim spot."
+        },
+        {
+          "mt": "L-Irdum ta' Ħad-Dingli",
+          "en": "Dingli Cliffs",
+          "kind": "🌊 Natural",
+          "note": "The highest point in Malta — sheer cliffs with sea views. Especially good at sunset."
+        },
+        {
+          "mt": "Il-Grotta Blu",
+          "en": "Blue Grotto",
+          "kind": "🌊 Natural",
+          "note": "Sea caves in the south where light reflects vivid blue from the water inside."
+        },
+        {
+          "mt": "Il-Mixquqa",
+          "en": "Golden Bay",
+          "kind": "🏖️ Beach",
+          "note": "Wide sandy beach in the north — popular for swimming and watching the sunset over the water."
+        },
+        {
+          "mt": "Bajja tal-Mellieħa",
+          "en": "Mellieħa Bay (Għadira)",
+          "kind": "🏖️ Beach",
+          "note": "The longest sandy beach on the island — calm shallow water, family-friendly."
+        },
+        {
+          "mt": "Ta' Pinu",
+          "en": "Ta' Pinu (Gozo)",
+          "kind": "⛪ Sacred",
+          "note": "Pilgrimage church in Gozo — visitors leave offerings of thanks for healing and answered prayers."
+        },
+        {
+          "mt": "Dwejra",
+          "en": "Dwejra (Gozo)",
+          "kind": "🌊 Natural",
+          "note": "Dramatic coastal landscape in Gozo — inland sea, sea cliffs, the Fungus Rock."
+        }
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "icon": "📚",
+      "title": "Vocabulary",
+      "subtitle": "Il-vokabularju — words & verbs from this lesson",
+      "intro": "All the words from Lesson 8 in one place. Verbs are listed in a group of their own to drill before the test.",
+      "groups": [
+        {
+          "title": "Days of the week",
+          "icon": "📆",
+          "subtitle": "Reviewed in Lesson 8 — used in date phrases like 'It-Tnejn 24 ta' Frar'.",
+          "items": [
+            {
+              "icon": "☀️",
+              "mt": "Il-Ħadd",
+              "en": "Sunday"
+            },
+            {
+              "icon": "1️⃣",
+              "mt": "It-Tnejn",
+              "en": "Monday"
+            },
+            {
+              "icon": "2️⃣",
+              "mt": "It-Tlieta",
+              "en": "Tuesday"
+            },
+            {
+              "icon": "3️⃣",
+              "mt": "L-Erbgħa",
+              "en": "Wednesday"
+            },
+            {
+              "icon": "4️⃣",
+              "mt": "Il-Ħamis",
+              "en": "Thursday"
+            },
+            {
+              "icon": "5️⃣",
+              "mt": "Il-Ġimgħa",
+              "en": "Friday"
+            },
+            {
+              "icon": "6️⃣",
+              "mt": "Is-Sibt",
+              "en": "Saturday"
+            }
+          ]
+        },
+        {
+          "title": "Months",
+          "icon": "🗓️",
+          "subtitle": "Used in date phrases — '24 ta' Frar' = 24th February.",
+          "items": [
+            {
+              "icon": "❄️",
+              "mt": "Jannar",
+              "en": "January"
+            },
+            {
+              "icon": "❄️",
+              "mt": "Frar",
+              "en": "February"
+            },
+            {
+              "icon": "🌷",
+              "mt": "Marzu",
+              "en": "March"
+            },
+            {
+              "icon": "🌸",
+              "mt": "April",
+              "en": "April"
+            },
+            {
+              "icon": "🌼",
+              "mt": "Mejju",
+              "en": "May"
+            },
+            {
+              "icon": "☀️",
+              "mt": "Ġunju",
+              "en": "June"
+            },
+            {
+              "icon": "☀️",
+              "mt": "Lulju",
+              "en": "July"
+            },
+            {
+              "icon": "☀️",
+              "mt": "Awwissu",
+              "en": "August"
+            },
+            {
+              "icon": "🍂",
+              "mt": "Settembru",
+              "en": "September"
+            },
+            {
+              "icon": "🍂",
+              "mt": "Ottubru",
+              "en": "October"
+            },
+            {
+              "icon": "🍁",
+              "mt": "Novembru",
+              "en": "November"
+            },
+            {
+              "icon": "🎄",
+              "mt": "Diċembru",
+              "en": "December"
+            }
+          ]
+        },
+        {
+          "title": "Date & time words",
+          "icon": "📅",
+          "items": [
+            {
+              "icon": "📆",
+              "mt": "Nhar",
+              "en": "Day (specific)"
+            },
+            {
+              "icon": "☀️",
+              "mt": "Illum",
+              "en": "Today"
+            },
+            {
+              "icon": "➡️",
+              "mt": "Għada",
+              "en": "Tomorrow"
+            },
+            {
+              "icon": "⬅️",
+              "mt": "Ilbieraħ",
+              "en": "Yesterday"
+            },
+            {
+              "icon": "⏩",
+              "mt": "Pitgħada",
+              "en": "The day after tomorrow"
+            },
+            {
+              "icon": "⏪",
+              "mt": "Ilbieraħtlula",
+              "en": "The day before yesterday"
+            },
+            {
+              "icon": "🌅",
+              "mt": "Filgħodu",
+              "en": "In the morning"
+            },
+            {
+              "icon": "🌞",
+              "mt": "Waranofsinhar",
+              "en": "In the afternoon"
+            },
+            {
+              "icon": "🌆",
+              "mt": "Filgħaxija",
+              "en": "In the evening"
+            },
+            {
+              "icon": "📍",
+              "mt": "Dakinhar",
+              "en": "On that day"
+            },
+            {
+              "icon": "📅",
+              "mt": "Il-ġimgħa d-dieħla",
+              "en": "Next week"
+            },
+            {
+              "icon": "📅",
+              "mt": "Ix-xahar id-dieħel",
+              "en": "Next month"
+            },
+            {
+              "icon": "📅",
+              "mt": "Ix-xahar li għadda",
+              "en": "Last month"
+            },
+            {
+              "icon": "📆",
+              "mt": "Xahar",
+              "en": "Month"
+            },
+            {
+              "icon": "📆",
+              "mt": "Xhur",
+              "en": "Months (plural)"
+            }
+          ]
+        },
+        {
+          "title": "Particles + 'the' (fused forms)",
+          "icon": "🔗",
+          "subtitle": "Particle meets the article 'l-' and they merge into one word.",
+          "items": [
+            {
+              "icon": "🤝",
+              "mt": "mal-",
+              "en": "with the (ma' + l-)"
+            },
+            {
+              "icon": "🏷️",
+              "mt": "tal-",
+              "en": "of the (ta' + l-)"
+            },
+            {
+              "icon": "🛑",
+              "mt": "sal-",
+              "en": "until the / as far as the (sa + l-)"
+            },
+            {
+              "icon": "📦",
+              "mt": "ġol-",
+              "en": "in the (ġo + l-)"
+            },
+            {
+              "icon": "🛠️",
+              "mt": "bil-",
+              "en": "with the (bi + l-)"
+            },
+            {
+              "icon": "📍",
+              "mt": "fil-",
+              "en": "in the (fi + l-)"
+            },
+            {
+              "icon": "➡️",
+              "mt": "lill-",
+              "en": "to the (lil + l-)"
+            },
+            {
+              "icon": "≈",
+              "mt": "bħall-",
+              "en": "like the (bħal + l-)"
+            },
+            {
+              "icon": "🎯",
+              "mt": "għall-",
+              "en": "for the (għal + l-)"
+            },
+            {
+              "icon": "🔙",
+              "mt": "mill-",
+              "en": "from the (minn + l-)"
+            }
+          ]
+        },
+        {
+          "title": "The map — islands & directions",
+          "icon": "🗺️",
+          "items": [
+            {
+              "icon": "🇲🇹",
+              "mt": "Malta",
+              "en": "Malta (the country and the largest island)"
+            },
+            {
+              "icon": "🏝️",
+              "mt": "Għawdex",
+              "en": "Gozo (the second-largest island)"
+            },
+            {
+              "icon": "🏖️",
+              "mt": "Kemmuna",
+              "en": "Comino (small island, Blue Lagoon)"
+            },
+            {
+              "icon": "🏛️",
+              "mt": "Il-Belt Valletta",
+              "en": "Valletta — capital of Malta"
+            },
+            {
+              "icon": "🏛️",
+              "mt": "Ir-Rabat (Għawdex)",
+              "en": "Victoria / Rabat — capital of Gozo"
+            },
+            {
+              "icon": "⬆️",
+              "mt": "Tramuntana",
+              "en": "North"
+            },
+            {
+              "icon": "⬇️",
+              "mt": "Nofsinhar",
+              "en": "South"
+            },
+            {
+              "icon": "🎯",
+              "mt": "Ċentrali",
+              "en": "Central"
+            }
+          ]
+        },
+        {
+          "title": "Towns & places",
+          "icon": "🏘️",
+          "items": [
+            {
+              "icon": "🏖️",
+              "mt": "Il-Mellieħa",
+              "en": "Mellieħa (north)"
+            },
+            {
+              "icon": "🌊",
+              "mt": "San Pawl il-Baħar",
+              "en": "St Paul's Bay (north)"
+            },
+            {
+              "icon": "🏘️",
+              "mt": "Buġibba",
+              "en": "Buġibba (north)"
+            },
+            {
+              "icon": "🏛️",
+              "mt": "L-Imdina",
+              "en": "Mdina — the Silent City"
+            },
+            {
+              "icon": "🏘️",
+              "mt": "Birkirkara",
+              "en": "Birkirkara (central)"
+            },
+            {
+              "icon": "⚓",
+              "mt": "Marsaxlokk",
+              "en": "Marsaxlokk — fishing village (south)"
+            },
+            {
+              "icon": "🌊",
+              "mt": "Marsaskala",
+              "en": "Marsaskala (south)"
+            },
+            {
+              "icon": "🏖️",
+              "mt": "Tas-Sliema",
+              "en": "Sliema (Northern Harbour)"
+            },
+            {
+              "icon": "🌃",
+              "mt": "Paceville",
+              "en": "Paceville — nightlife area"
+            },
+            {
+              "icon": "🏰",
+              "mt": "It-Tlett Ibliet",
+              "en": "The Three Cities (Birgu, L-Isla, Bormla)"
+            },
+            {
+              "icon": "⛪",
+              "mt": "Ta' Pinu",
+              "en": "Ta' Pinu (Gozo) — pilgrimage church"
+            },
+            {
+              "icon": "🌊",
+              "mt": "Dwejra",
+              "en": "Dwejra (Gozo) — inland sea"
+            },
+            {
+              "icon": "🌅",
+              "mt": "L-Irdum ta' Ħad-Dingli",
+              "en": "Dingli Cliffs"
+            },
+            {
+              "icon": "🏖️",
+              "mt": "Bajja tal-Mellieħa",
+              "en": "Mellieħa Bay (Għadira)"
+            },
+            {
+              "icon": "🟦",
+              "mt": "Il-Grotta Blu",
+              "en": "Blue Grotto"
+            }
+          ]
+        },
+        {
+          "title": "Verbs from the lesson",
+          "icon": "🏃",
+          "subtitle": "Past-tense verbs that appear in the example sentences.",
+          "items": [
+            {
+              "icon": "🚶",
+              "mt": "Mort",
+              "en": "I went"
+            },
+            {
+              "icon": "🚶",
+              "mt": "Mar",
+              "en": "He went"
+            },
+            {
+              "icon": "🚶‍♀️",
+              "mt": "Marret",
+              "en": "She went"
+            },
+            {
+              "icon": "🚪",
+              "mt": "Ħarġet",
+              "en": "She went out / left"
+            },
+            {
+              "icon": "🛍️",
+              "mt": "Xtrajt",
+              "en": "I bought"
+            },
+            {
+              "icon": "🍞",
+              "mt": "Dlikt",
+              "en": "I spread"
+            },
+            {
+              "icon": "🛗",
+              "mt": "Weħilt",
+              "en": "I got stuck"
+            },
+            {
+              "icon": "❤️",
+              "mt": "Inħobbu",
+              "en": "I love him / it"
+            },
+            {
+              "icon": "🍝",
+              "mt": "Sajjart",
+              "en": "I cooked"
+            },
+            {
+              "icon": "🍽️",
+              "mt": "Poġġiet",
+              "en": "She put / placed"
+            },
+            {
+              "icon": "👕",
+              "mt": "Libes",
+              "en": "He wore"
+            },
+            {
+              "icon": "📍",
+              "mt": "Kienet",
+              "en": "She was"
+            },
+            {
+              "icon": "📖",
+              "mt": "Naqra",
+              "en": "I read"
+            }
+          ]
+        },
+        {
+          "title": "Useful little words",
+          "icon": "💬",
+          "items": [
+            {
+              "icon": "🏷️",
+              "mt": "ta'",
+              "en": "of (used in dates: 24 ta' Frar)"
+            },
+            {
+              "icon": "🏛️",
+              "mt": "Il-Belt",
+              "en": "The City (= Valletta)"
+            },
+            {
+              "icon": "🌊",
+              "mt": "Baħar",
+              "en": "Sea"
+            },
+            {
+              "icon": "🏖️",
+              "mt": "Bajja",
+              "en": "Bay"
+            },
+            {
+              "icon": "🏘️",
+              "mt": "Raħal",
+              "en": "Village"
+            },
+            {
+              "icon": "🗺️",
+              "mt": "Mappa",
+              "en": "Map"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar8",
+      "icon": "📖",
+      "title": "Grammar",
+      "subtitle": "Il-grammatika — the grammar of Lesson 8",
+      "intro": "These are the grammar points covered in the slides. They build on Lesson 1 (the article) and Lesson 7 (particles).",
+      "rules": [
+        {
+          "id": "date-format",
+          "title": "Writing the date",
+          "explanation": "The Maltese date order is: Day-of-week + number + ta' + Month + Year. The little word 'ta'' here means 'of' — '24 of February'. Use 'Nhar' before a day if you want to say 'on Monday' specifically.",
+          "examples": [
+            {
+              "mt": "It-Tnejn 24 ta' Frar, 2024",
+              "en": "Monday 24th February 2024"
+            },
+            {
+              "mt": "Il-Ġimgħa 5 ta' Mejju, 2026",
+              "en": "Friday 5th May 2026"
+            },
+            {
+              "mt": "Nhar it-Tlieta",
+              "en": "On Tuesday"
+            },
+            {
+              "mt": "Ix-xahar id-dieħel",
+              "en": "Next month"
+            }
+          ]
+        },
+        {
+          "id": "particle-fusion",
+          "title": "Particle + article = one word",
+          "explanation": "When a particle (ma', ta', sa, ġo, bi, fi, lil, bħal, għal, minn) is followed by 'l-' (the), they fuse into one word. The pattern is: particle + l-, written together.",
+          "letters": [
+            "mal-",
+            "tal-",
+            "sal-",
+            "ġol-",
+            "bil-",
+            "fil-",
+            "lill-",
+            "bħall-",
+            "għall-",
+            "mill-"
+          ],
+          "examples": [
+            {
+              "mt": "ma' + l-kelb → mal-kelb",
+              "en": "with the dog"
+            },
+            {
+              "mt": "ġo + l-ġnien → ġol-ġnien",
+              "en": "in the garden"
+            },
+            {
+              "mt": "bi + l-butir → bil-butir",
+              "en": "with the butter"
+            },
+            {
+              "mt": "fi + l-lift → fil-lift",
+              "en": "in the lift"
+            },
+            {
+              "mt": "minn + l-ħanut → mill-ħanut",
+              "en": "from the shop"
+            },
+            {
+              "mt": "lil + l-kuġin → lill-kuġin",
+              "en": "to the cousin"
+            }
+          ]
+        },
+        {
+          "id": "sun-assimilation",
+          "title": "'Xemxin' consonants in fused forms",
+          "explanation": "The fused forms still follow the 'Xemxin' consonant rule from Lesson 1. Before a 'Xemxin' consonant (ċ, d, n, r, s, t, x, ż, z) the L of the fused particle changes to match the next letter. The slide gives these five canonical examples.",
+          "letters": [
+            "ċ",
+            "d",
+            "n",
+            "r",
+            "s",
+            "t",
+            "x",
+            "ż",
+            "z"
+          ],
+          "examples": [
+            {
+              "mt": "fil-xemx → fix-xemx",
+              "en": "in the sun"
+            },
+            {
+              "mt": "ġol-sodda → ġos-sodda",
+              "en": "in the bed"
+            },
+            {
+              "mt": "lill-xadin → lix-xadin",
+              "en": "to the monkey"
+            },
+            {
+              "mt": "bħall-żunżan → bħaż-żunżan",
+              "en": "like the wasp"
+            },
+            {
+              "mt": "għall-dar → għad-dar",
+              "en": "for the house"
+            },
+            {
+              "mt": "ta' + zija → taz-zija",
+              "en": "of the aunt"
+            },
+            {
+              "mt": "fi + dar → fid-dar",
+              "en": "in the house"
+            },
+            {
+              "mt": "ma' + ċavetta → maċ-ċavetta",
+              "en": "with the key"
+            }
+          ]
+        },
+        {
+          "id": "vowel-shortening",
+          "title": "Shortening before vowels",
+          "explanation": "Before a vowel (or h / għ), the particles 'bi' and 'fi' drop their vowel and become b' / f' (compulsory). The particles sa, ma' and ta' may ALSO shorten — but it's not compulsory.",
+          "examples": [
+            {
+              "mt": "fi dar kbira → f'dar kbira",
+              "en": "in a big house"
+            },
+            {
+              "mt": "bi ajruplan ġdid → b'ajruplan ġdid",
+              "en": "by a new aeroplane"
+            },
+            {
+              "mt": "fi villa → f'villa",
+              "en": "in a villa"
+            },
+            {
+              "mt": "sa Għawdex → s'Għawdex",
+              "en": "as far as Gozo"
+            },
+            {
+              "mt": "sa Għajn Tuffieħa → s'Għajn Tuffieħa",
+              "en": "as far as Għajn Tuffieħa"
+            },
+            {
+              "mt": "ma' ommi → m'ommi",
+              "en": "with my mum"
+            },
+            {
+              "mt": "ma' Alfred → m'Alfred",
+              "en": "with Alfred"
+            },
+            {
+              "mt": "ta' Alessia → t'Alessia",
+              "en": "of Alessia"
+            }
+          ]
+        },
+        {
+          "id": "map-of-malta",
+          "title": "The map of Malta",
+          "explanation": "Malta is one country made up of three islands: Malta, Għawdex (Gozo), and Kemmuna (Comino). The capital of Malta is Il-Belt Valletta. The capital of Gozo is Ir-Rabat (also called Victoria). Knowing the directions — Tramuntana (N), Nofsinhar (S), Lvant (E), Punent (W) — helps you place each town.",
+          "examples": [
+            {
+              "mt": "Malta",
+              "en": "Malta — the biggest island, where the capital is"
+            },
+            {
+              "mt": "Għawdex",
+              "en": "Gozo — smaller, more rural"
+            },
+            {
+              "mt": "Kemmuna",
+              "en": "Comino — tiny, famous for the Blue Lagoon"
+            },
+            {
+              "mt": "Il-Belt Valletta",
+              "en": "Valletta — capital of Malta"
+            },
+            {
+              "mt": "Ir-Rabat",
+              "en": "Victoria/Rabat — capital of Gozo"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,266 @@
+{
+  "id": "lesson11",
+  "title": "Lesson 11 — Furniture & the Past Tense",
+  "subtitle": "Kitchen and bedroom furniture, the past tense, old means of transport",
+  "sections": [
+    {
+      "id": "table",
+      "icon": "🍳",
+      "title": "Kitchen Furniture",
+      "subtitle": "L-għamara tal-kċina — what's in the kitchen",
+      "intro": "The furniture and fittings of a Maltese kitchen. Each card shows the word and its plural — watch for broken plurals like forn → fran.",
+      "items": [
+        {"singular": "siġġu", "plural": "siġġijiet", "en": "chair"},
+        {"singular": "mejda", "plural": "imwejjed", "en": "table"},
+        {"singular": "kabord", "plural": "kabords", "en": "cupboard"},
+        {"singular": "bank tal-kċina", "plural": "bankijiet tal-kċina", "en": "kitchen countertop"},
+        {"singular": "banketta", "plural": "banketti", "en": "stool"},
+        {"singular": "dawl", "plural": "dwal", "en": "light"},
+        {"singular": "forn", "plural": "fran", "en": "oven"},
+        {"singular": "friġġ", "plural": "friġis", "en": "fridge"},
+        {"singular": "friżer", "plural": "friżers", "en": "freezer"},
+        {"singular": "kitla", "plural": "ktieli", "en": "kettle"},
+        {"singular": "kuker", "plural": "kukers", "en": "cooker"},
+        {"singular": "sink", "plural": "sinkijiet", "en": "sink"},
+        {"singular": "swiċċ", "plural": "swiċċijiet", "en": "switch"}
+      ]
+    },
+    {
+      "id": "transport",
+      "icon": "🛏️",
+      "title": "Bedroom Furniture",
+      "subtitle": "L-għamara tas-sodda — what's in the bedroom",
+      "intro": "The furniture of a Maltese bedroom, each with its plural.",
+      "items": [
+        {"singular": "sodda", "plural": "soddod", "en": "bed"},
+        {"singular": "tistiera", "plural": "tistieri", "en": "headrest / headboard"},
+        {"singular": "bieb", "plural": "bibien", "en": "door"},
+        {"singular": "tieqa", "plural": "twieqi", "en": "window"},
+        {"singular": "gwardarobba", "plural": "gwardarobbi", "en": "wardrobe"},
+        {"singular": "gradenza", "plural": "gradenzi", "en": "chest of drawers"},
+        {"singular": "kommodina", "plural": "kommodini", "en": "bedside table"},
+        {"singular": "xkaffa", "plural": "xkafef", "en": "shelf"}
+      ]
+    },
+    {
+      "id": "ghpresent",
+      "icon": "⏮️",
+      "title": "The Past Tense",
+      "subtitle": "Il-passat — talking about yesterday",
+      "intro": "The past tense is built on the mamma — the plain 'he' form, the answer to 'Hu x'għamel ilbieraħ?' (What did he do yesterday?). You add a suffix for each person: Jien -t, Int -t, Hu (no change), Hi -et, Aħna -na, Intom -tu, Huma -u. The three root consonants stay put while the vowels shift around them. Study the tables, then try the exercises.",
+      "rules": [
+        {
+          "id": "kiteb",
+          "title": "Kiteb — to write (root k-t-b)",
+          "rows": [
+            {"person": "Jien", "pronoun": "Jien", "form": "ktibt", "en": "I wrote"},
+            {"person": "Int", "pronoun": "Int", "form": "ktibt", "en": "you wrote"},
+            {"person": "Hu", "pronoun": "Hu", "form": "kiteb", "en": "he wrote (mamma)"},
+            {"person": "Hi", "pronoun": "Hi", "form": "kitbet", "en": "she wrote"},
+            {"person": "Aħna", "pronoun": "Aħna", "form": "ktibna", "en": "we wrote"},
+            {"person": "Intom", "pronoun": "Intom", "form": "ktibtu", "en": "you (pl) wrote"},
+            {"person": "Huma", "pronoun": "Huma", "form": "kitbu", "en": "they wrote"}
+          ]
+        },
+        {
+          "id": "raqad",
+          "title": "Raqad — to sleep (root r-q-d)",
+          "rows": [
+            {"person": "Jien", "pronoun": "Jien", "form": "rqadt", "en": "I slept"},
+            {"person": "Int", "pronoun": "Int", "form": "rqadt", "en": "you slept"},
+            {"person": "Hu", "pronoun": "Hu", "form": "raqad", "en": "he slept (mamma)"},
+            {"person": "Hi", "pronoun": "Hi", "form": "raqdet", "en": "she slept"},
+            {"person": "Aħna", "pronoun": "Aħna", "form": "rqadna", "en": "we slept"},
+            {"person": "Intom", "pronoun": "Intom", "form": "rqadtu", "en": "you (pl) slept"},
+            {"person": "Huma", "pronoun": "Huma", "form": "raqdu", "en": "they slept"}
+          ]
+        },
+        {
+          "id": "hareg",
+          "title": "Ħareġ — to go out (root ħ-r-ġ)",
+          "rows": [
+            {"person": "Jien", "pronoun": "Jien", "form": "ħriġt", "en": "I went out"},
+            {"person": "Int", "pronoun": "Int", "form": "ħriġt", "en": "you went out"},
+            {"person": "Hu", "pronoun": "Hu", "form": "ħareġ", "en": "he went out (mamma)"},
+            {"person": "Hi", "pronoun": "Hi", "form": "ħarġet", "en": "she went out"},
+            {"person": "Aħna", "pronoun": "Aħna", "form": "ħriġna", "en": "we went out"},
+            {"person": "Intom", "pronoun": "Intom", "form": "ħriġtu", "en": "you (pl) went out"},
+            {"person": "Huma", "pronoun": "Huma", "form": "ħarġu", "en": "they went out"}
+          ]
+        },
+        {
+          "id": "mar",
+          "title": "Mar — to go (irregular, weak root m-w-r)",
+          "rows": [
+            {"person": "Jien", "pronoun": "Jien", "form": "mort", "en": "I went"},
+            {"person": "Int", "pronoun": "Int", "form": "mort", "en": "you went"},
+            {"person": "Hu", "pronoun": "Hu", "form": "mar", "en": "he went (mamma)"},
+            {"person": "Hi", "pronoun": "Hi", "form": "marret", "en": "she went"},
+            {"person": "Aħna", "pronoun": "Aħna", "form": "morna", "en": "we went"},
+            {"person": "Intom", "pronoun": "Intom", "form": "mortu", "en": "you (pl) went"},
+            {"person": "Huma", "pronoun": "Huma", "form": "marru", "en": "they went"}
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex5",
+          "title": "Conjugate kiteb (to write) in the past",
+          "instructions": "Pick the correct past-tense form for each pronoun.",
+          "choices": ["ktibt", "kiteb", "kitbet", "ktibna", "ktibtu", "kitbu"],
+          "items": [
+            {"pronoun": "Jien", "en": "I wrote", "answer": "ktibt"},
+            {"pronoun": "Int", "en": "You wrote", "answer": "ktibt"},
+            {"pronoun": "Hu", "en": "He wrote", "answer": "kiteb"},
+            {"pronoun": "Hi", "en": "She wrote", "answer": "kitbet"},
+            {"pronoun": "Aħna", "en": "We wrote", "answer": "ktibna"},
+            {"pronoun": "Intom", "en": "You (pl) wrote", "answer": "ktibtu"},
+            {"pronoun": "Huma", "en": "They wrote", "answer": "kitbu"}
+          ]
+        },
+        {
+          "id": "ex6",
+          "title": "Choose the correct verb",
+          "instructions": "Pick the past-tense verb that fits each sentence.",
+          "choices": ["rqadt", "ħareġ", "marret", "telqu", "ktibt", "rkibt", "dħalna", "ħdimtu"],
+          "items": [
+            {"sentence": "Jien ___ tard.", "en": "I slept late. (raqad)", "answer": "rqadt"},
+            {"sentence": "Hu ___ kmieni.", "en": "He went out early. (ħareġ)", "answer": "ħareġ"},
+            {"sentence": "Hi ___ fil-ħin.", "en": "She went on time. (mar)", "answer": "marret"},
+            {"sentence": "Huma ___ jiġru.", "en": "They left running. (telaq)", "answer": "telqu"},
+            {"sentence": "Jien ___ ittra.", "en": "I wrote a letter. (kiteb)", "answer": "ktibt"},
+            {"sentence": "Int ___ tal-linja.", "en": "You rode the bus. (rikeb)", "answer": "rkibt"},
+            {"sentence": "Aħna ___ ġo kamra kbira.", "en": "We entered a big room. (daħal)", "answer": "dħalna"},
+            {"sentence": "Intom ___ ħafna.", "en": "You (pl) worked a lot. (ħadem)", "answer": "ħdimtu"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "food",
+      "icon": "🚋",
+      "title": "Old Means of Transport",
+      "subtitle": "Mezzi ta' trasport antiki — how Malta used to travel",
+      "intro": "Before today's buses, the Maltese travelled by horse-drawn carriages, a tram and even a railway. Here are the names of those old public transports.",
+      "vocab": [
+        {"mt": "il-kaless", "en": "the kaless — a horse cart from the time of the Knights"},
+        {"mt": "il-karozzin", "en": "the karozzin — the horse-drawn carriage, still used by tourists today"},
+        {"mt": "l-omnibus", "en": "the omnibus — Malta's first public transport, drawn by three horses"},
+        {"mt": "il-ferrovija", "en": "the railway — the Malta Railway, Valletta to Mdina (1883–1931)"},
+        {"mt": "it-tramm", "en": "the tram — a two-deck electric tram, ran 1905–1929"},
+        {"mt": "il-karozza tal-linja", "en": "the route bus — the main public transport today"},
+        {"mt": "il-vapur ta' Għawdex", "en": "the Gozo ferry — the sea link between Malta and Gozo"}
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "icon": "📚",
+      "title": "Vocabulary",
+      "subtitle": "Il-vokabularju — every word from Lesson 11",
+      "intro": "All the lesson vocabulary in one place — kitchen and bedroom furniture, past-tense verbs, and old transport.",
+      "groups": [
+        {
+          "title": "Kitchen furniture",
+          "icon": "🍳",
+          "items": [
+            {"icon": "🪑", "mt": "siġġu", "en": "chair"},
+            {"icon": "🪑", "mt": "mejda", "en": "table"},
+            {"icon": "🗄️", "mt": "kabord", "en": "cupboard"},
+            {"icon": "🧱", "mt": "bank tal-kċina", "en": "kitchen countertop"},
+            {"icon": "🪑", "mt": "banketta", "en": "stool"},
+            {"icon": "💡", "mt": "dawl", "en": "light"},
+            {"icon": "🔥", "mt": "forn", "en": "oven"},
+            {"icon": "🧊", "mt": "friġġ", "en": "fridge"},
+            {"icon": "❄️", "mt": "friżer", "en": "freezer"},
+            {"icon": "🫖", "mt": "kitla", "en": "kettle"},
+            {"icon": "🍳", "mt": "kuker", "en": "cooker"},
+            {"icon": "🚰", "mt": "sink", "en": "sink"},
+            {"icon": "🔘", "mt": "swiċċ", "en": "switch"}
+          ]
+        },
+        {
+          "title": "Bedroom furniture",
+          "icon": "🛏️",
+          "items": [
+            {"icon": "🛏️", "mt": "sodda", "en": "bed"},
+            {"icon": "🛏️", "mt": "tistiera", "en": "headrest / headboard"},
+            {"icon": "🚪", "mt": "bieb", "en": "door"},
+            {"icon": "🪟", "mt": "tieqa", "en": "window"},
+            {"icon": "🚪", "mt": "gwardarobba", "en": "wardrobe"},
+            {"icon": "🗄️", "mt": "gradenza", "en": "chest of drawers"},
+            {"icon": "🛋️", "mt": "kommodina", "en": "bedside table"},
+            {"icon": "📚", "mt": "xkaffa", "en": "shelf"}
+          ]
+        },
+        {
+          "title": "Past-tense verbs (mamma)",
+          "icon": "⏮️",
+          "subtitle": "The plain 'he' form — the base for the past tense.",
+          "items": [
+            {"icon": "✍️", "mt": "kiteb", "en": "he wrote"},
+            {"icon": "😴", "mt": "raqad", "en": "he slept"},
+            {"icon": "🚪", "mt": "ħareġ", "en": "he went out"},
+            {"icon": "➡️", "mt": "daħal", "en": "he entered"},
+            {"icon": "🚌", "mt": "rikeb", "en": "he rode"},
+            {"icon": "🔨", "mt": "ħadem", "en": "he worked"},
+            {"icon": "👋", "mt": "telaq", "en": "he left"},
+            {"icon": "💥", "mt": "kisser", "en": "he broke / smashed"},
+            {"icon": "🚶", "mt": "mar", "en": "he went (irregular)"}
+          ]
+        },
+        {
+          "title": "Old means of transport",
+          "icon": "🚋",
+          "items": [
+            {"icon": "🐎", "mt": "il-kaless", "en": "the kaless (old horse cart)"},
+            {"icon": "🛒", "mt": "il-karozzin", "en": "the horse-drawn carriage"},
+            {"icon": "🐴", "mt": "l-omnibus", "en": "the omnibus"},
+            {"icon": "🚂", "mt": "il-ferrovija", "en": "the railway"},
+            {"icon": "🚋", "mt": "it-tramm", "en": "the tram"},
+            {"icon": "🚌", "mt": "il-karozza tal-linja", "en": "the route bus"},
+            {"icon": "⛴️", "mt": "il-vapur ta' Għawdex", "en": "the Gozo ferry"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar11",
+      "icon": "📝",
+      "title": "Grammar",
+      "subtitle": "Il-grammatika — the grammar of Lesson 11",
+      "intro": "The past tense explained — the mamma, the suffixes, the root, and irregular verbs.",
+      "rules": [
+        {
+          "id": "mamma-suffixes",
+          "title": "The mamma and the seven suffixes",
+          "explanation": "The past tense is built on the mamma — the bare 'he' form. To it you add a suffix for each person. Hu takes no suffix at all (it IS the mamma).",
+          "letters": ["Jien -t", "Int -t", "Hu —", "Hi -et", "Aħna -na", "Intom -tu", "Huma -u"],
+          "examples": [
+            {"mt": "Hu kiteb", "en": "He wrote — the mamma, no suffix"},
+            {"mt": "Jien ktibt", "en": "I wrote — mamma + -t"},
+            {"mt": "Hi kitbet", "en": "She wrote — mamma + -et"},
+            {"mt": "Huma kitbu", "en": "They wrote — mamma + -u"}
+          ]
+        },
+        {
+          "id": "root-vowel",
+          "title": "The root and the changing vowel",
+          "explanation": "Most Maltese verbs sit on a three-consonant root. In kiteb the root is k-t-b. When you add suffixes, those three consonants stay fixed but the vowels around them shift — this root-and-pattern system is inherited from Arabic and is typical of Semitic languages.",
+          "examples": [
+            {"mt": "kiteb — ktibt — kitbet — kitbu", "en": "to write: the k-t-b root stays, the vowels move"},
+            {"mt": "ħareġ — ħriġt — ħarġet", "en": "to go out: the ħ-r-ġ root stays"}
+          ]
+        },
+        {
+          "id": "weak-roots",
+          "title": "Weak roots — irregular verbs",
+          "explanation": "Some verbs have a 'weak letter' in the root — in Maltese, l-għerq dgħajjef. The verb mar (to go) has the root m-w-r; the w is weak and disappears or transforms when suffixes are added, so the verb changes shape quite dramatically.",
+          "examples": [
+            {"mt": "mar — mort", "en": "he went — I went"},
+            {"mt": "marret — morna — marru", "en": "she went — we went — they went"}
+          ]
+        }
+      ]
+    }
+  ]
+}

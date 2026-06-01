@@ -1,0 +1,561 @@
+{
+  "id": "u2",
+  "title": "Numbers & Everyday Info",
+  "subtitle": "Numbers, tens, money, age, months",
+  "sections": [
+    {
+      "id": "buying",
+      "icon": "🛒",
+      "title": "Buying something small",
+      "subtitle": "Nixtri xi ħaġa — numbers, prices, paying",
+      "intro": "Buying pastizzi at the counter.",
+      "dialogue": [
+        {
+          "mt": "Bonġu, kemm jiswa dan il-pastizz?",
+          "en": "Good morning, how much is this pastizz?"
+        },
+        {
+          "mt": "Tletin ċenteżmu.",
+          "en": "Thirty cents."
+        },
+        {
+          "mt": "U żewġ pastizzi?",
+          "en": "And two pastizzi?"
+        },
+        {
+          "mt": "Sittin ċenteżmu.",
+          "en": "Sixty cents."
+        },
+        {
+          "mt": "Tajjeb, nieħu tnejn.",
+          "en": "Good, I'll take two."
+        },
+        {
+          "mt": "Hawn huma. Grazzi!",
+          "en": "Here they are. Thanks!"
+        }
+      ]
+    },
+    {
+      "id": "numbers",
+      "icon": "🔢",
+      "title": "Numbers 1–30",
+      "subtitle": "In-numri — counting in Maltese",
+      "items": [
+        {
+          "n": 1,
+          "mt": "wieħed",
+          "en": "one"
+        },
+        {
+          "n": 2,
+          "mt": "tnejn",
+          "en": "two"
+        },
+        {
+          "n": 3,
+          "mt": "tlieta",
+          "en": "three"
+        },
+        {
+          "n": 4,
+          "mt": "erbgħa",
+          "en": "four"
+        },
+        {
+          "n": 5,
+          "mt": "ħamsa",
+          "en": "five"
+        },
+        {
+          "n": 6,
+          "mt": "sitta",
+          "en": "six"
+        },
+        {
+          "n": 7,
+          "mt": "sebgħa",
+          "en": "seven"
+        },
+        {
+          "n": 8,
+          "mt": "tmienja",
+          "en": "eight"
+        },
+        {
+          "n": 9,
+          "mt": "disgħa",
+          "en": "nine"
+        },
+        {
+          "n": 10,
+          "mt": "għaxra",
+          "en": "ten"
+        },
+        {
+          "n": 11,
+          "mt": "ħdax",
+          "en": "eleven"
+        },
+        {
+          "n": 12,
+          "mt": "tnax",
+          "en": "twelve"
+        },
+        {
+          "n": 13,
+          "mt": "tlettax",
+          "en": "thirteen"
+        },
+        {
+          "n": 14,
+          "mt": "erbatax",
+          "en": "fourteen"
+        },
+        {
+          "n": 15,
+          "mt": "ħmistax",
+          "en": "fifteen"
+        },
+        {
+          "n": 16,
+          "mt": "sittax",
+          "en": "sixteen"
+        },
+        {
+          "n": 17,
+          "mt": "sbatax",
+          "en": "seventeen"
+        },
+        {
+          "n": 18,
+          "mt": "tmintax",
+          "en": "eighteen"
+        },
+        {
+          "n": 19,
+          "mt": "dsatax",
+          "en": "nineteen"
+        },
+        {
+          "n": 20,
+          "mt": "għoxrin",
+          "en": "twenty"
+        },
+        {
+          "n": 21,
+          "mt": "wieħed u għoxrin",
+          "en": "twenty-one"
+        },
+        {
+          "n": 22,
+          "mt": "tnejn u għoxrin",
+          "en": "twenty-two"
+        },
+        {
+          "n": 23,
+          "mt": "tlieta u għoxrin",
+          "en": "twenty-three"
+        },
+        {
+          "n": 24,
+          "mt": "erbgħa u għoxrin",
+          "en": "twenty-four"
+        },
+        {
+          "n": 25,
+          "mt": "ħamsa u għoxrin",
+          "en": "twenty-five"
+        },
+        {
+          "n": 26,
+          "mt": "sitta u għoxrin",
+          "en": "twenty-six"
+        },
+        {
+          "n": 27,
+          "mt": "sebgħa u għoxrin",
+          "en": "twenty-seven"
+        },
+        {
+          "n": 28,
+          "mt": "tmienja u għoxrin",
+          "en": "twenty-eight"
+        },
+        {
+          "n": 29,
+          "mt": "disgħa u għoxrin",
+          "en": "twenty-nine"
+        },
+        {
+          "n": 30,
+          "mt": "tletin",
+          "en": "thirty"
+        }
+      ],
+      "ordinals": [
+        {
+          "mt": "L-ewwel",
+          "en": "First"
+        },
+        {
+          "mt": "It-tieni",
+          "en": "Second"
+        },
+        {
+          "mt": "It-tielet",
+          "en": "Third"
+        },
+        {
+          "mt": "Ir-raba'",
+          "en": "Fourth"
+        },
+        {
+          "mt": "Il-ħames",
+          "en": "Fifth"
+        },
+        {
+          "mt": "Is-sitt",
+          "en": "Sixth"
+        },
+        {
+          "mt": "Is-seba'",
+          "en": "Seventh"
+        },
+        {
+          "mt": "It-tmien",
+          "en": "Eighth"
+        },
+        {
+          "mt": "Id-disa'",
+          "en": "Ninth"
+        },
+        {
+          "mt": "L-għaxar",
+          "en": "Tenth"
+        }
+      ]
+    },
+    {
+      "id": "tens",
+      "icon": "🔢",
+      "title": "Tens & hundred",
+      "subtitle": "Għexieren — counting in tens",
+      "intro": "The tens, plus zero and one hundred.",
+      "items": [
+        {
+          "mt": "żero",
+          "en": "zero"
+        },
+        {
+          "mt": "erbgħin",
+          "en": "forty"
+        },
+        {
+          "mt": "ħamsin",
+          "en": "fifty"
+        },
+        {
+          "mt": "sittin",
+          "en": "sixty"
+        },
+        {
+          "mt": "sebgħin",
+          "en": "seventy"
+        },
+        {
+          "mt": "tmenin",
+          "en": "eighty"
+        },
+        {
+          "mt": "disgħin",
+          "en": "ninety"
+        },
+        {
+          "mt": "mija",
+          "en": "one hundred"
+        }
+      ]
+    },
+    {
+      "id": "money",
+      "icon": "💶",
+      "title": "Money & age",
+      "subtitle": "Flus u età — prices, age, phone",
+      "intro": "Talking about money, your age, and phone numbers.",
+      "items": [
+        {
+          "mt": "flus",
+          "en": "money"
+        },
+        {
+          "mt": "ewro",
+          "en": "euro"
+        },
+        {
+          "mt": "ċenteżmu / ċenteżmi",
+          "en": "cent / cents"
+        },
+        {
+          "mt": "Kemm jiswa?",
+          "en": "How much does it cost?"
+        },
+        {
+          "mt": "Bil-flus",
+          "en": "with cash"
+        },
+        {
+          "mt": "Bil-karta tal-kreditu",
+          "en": "by (credit) card"
+        },
+        {
+          "mt": "Kemm għandek żmien?",
+          "en": "How old are you?"
+        },
+        {
+          "mt": "Għandi tletin sena.",
+          "en": "I'm thirty years old."
+        },
+        {
+          "mt": "in-numru tat-telefon",
+          "en": "the phone number"
+        },
+        {
+          "mt": "X'inhu n-numru tiegħek?",
+          "en": "What's your number?"
+        }
+      ]
+    },
+    {
+      "id": "months",
+      "icon": "📆",
+      "title": "Months",
+      "subtitle": "Ix-xhur — months of the year",
+      "items": [
+        {
+          "mt": "Jannar",
+          "en": "January"
+        },
+        {
+          "mt": "Frar",
+          "en": "February"
+        },
+        {
+          "mt": "Marzu",
+          "en": "March"
+        },
+        {
+          "mt": "April",
+          "en": "April"
+        },
+        {
+          "mt": "Mejju",
+          "en": "May"
+        },
+        {
+          "mt": "Ġunju",
+          "en": "June"
+        },
+        {
+          "mt": "Lulju",
+          "en": "July"
+        },
+        {
+          "mt": "Awwissu",
+          "en": "August"
+        },
+        {
+          "mt": "Settembru",
+          "en": "September"
+        },
+        {
+          "mt": "Ottubru",
+          "en": "October"
+        },
+        {
+          "mt": "Novembru",
+          "en": "November"
+        },
+        {
+          "mt": "Diċembru",
+          "en": "December"
+        }
+      ]
+    },
+    {
+      "id": "grammar2",
+      "icon": "📖",
+      "title": "Grammar",
+      "subtitle": "In-numri — counting, and how it bends the noun",
+      "intro": "Counting in Maltese does something English never does: the number changes the noun after it. Here's how — plus first, second, third.",
+      "rules": [
+        {
+          "id": "noun-gender",
+          "title": "Every noun is a he or a she",
+          "explanation": "Maltese has no 'neutral' — a table, a car, a book each counts as masculine or feminine, and that choice spreads to the words around it. Rough guide: -a tends feminine (mara, karozza); most other endings lean masculine (raġel, ktieb).",
+          "examples": [
+            {
+              "mt": "raġel",
+              "en": "man (m)"
+            },
+            {
+              "mt": "kelb",
+              "en": "dog (m)"
+            },
+            {
+              "mt": "nannu",
+              "en": "grandfather (m, -u)"
+            },
+            {
+              "mt": "ktieb",
+              "en": "book (m)"
+            },
+            {
+              "mt": "mara",
+              "en": "woman (f, -a)"
+            },
+            {
+              "mt": "kelba",
+              "en": "female dog (f, -a)"
+            },
+            {
+              "mt": "tazza",
+              "en": "glass (f, -a)"
+            },
+            {
+              "mt": "karozza",
+              "en": "car (f, -a)"
+            }
+          ]
+        },
+        {
+          "id": "adjective-agreement",
+          "title": "Describing words change to match",
+          "explanation": "An adjective copies its noun: plain for a he-noun, +a for a she-noun, a reshaped plural for many. Tall → raġel twil / mara twila / tfal twal. And it sits after the noun, not before.",
+          "examples": [
+            {
+              "mt": "raġel twil",
+              "en": "a tall man (m)"
+            },
+            {
+              "mt": "mara twila",
+              "en": "a tall woman (f)"
+            },
+            {
+              "mt": "tfal twal",
+              "en": "tall children (pl)"
+            },
+            {
+              "mt": "ktieb sabiħ",
+              "en": "a beautiful book (m)"
+            },
+            {
+              "mt": "fjura sabiħa",
+              "en": "a beautiful flower (f)"
+            },
+            {
+              "mt": "fjuri sbieħ",
+              "en": "beautiful flowers (pl)"
+            }
+          ]
+        },
+        {
+          "id": "colour-agreement",
+          "title": "Colours match too",
+          "explanation": "Colours are just adjectives: flokk abjad / mejda bajda / fniek bojod. A few borrowed from Italian (blu, roża, vjola, kannella) never change — easy wins.",
+          "letters": [
+            "Abjad/Bajda/Bojod",
+            "Iswed/Sewda/Suwed",
+            "Aħmar/Ħamra/Ħomor",
+            "Isfar/Safra/Sofor",
+            "Aħdar/Ħadra/Ħodor"
+          ],
+          "examples": [
+            {
+              "mt": "flokk abjad",
+              "en": "a white t-shirt (m)"
+            },
+            {
+              "mt": "mejda bajda",
+              "en": "a white table (f)"
+            },
+            {
+              "mt": "fniek bojod",
+              "en": "white rabbits (pl)"
+            },
+            {
+              "mt": "vann aħmar",
+              "en": "a red van (m)"
+            },
+            {
+              "mt": "zalza ħamra",
+              "en": "red sauce (f)"
+            },
+            {
+              "mt": "għasafar ħomor",
+              "en": "red birds (pl)"
+            },
+            {
+              "mt": "ġakketta blu",
+              "en": "a blue jacket — blu doesn't change"
+            }
+          ]
+        },
+        {
+          "id": "numbers-noun-rule",
+          "title": "Counting has two gears",
+          "explanation": "Maltese shifts gear as you count, and three things follow the number. 'Two' before a noun is żewġ, not tnejn (żewġ pastizzi). The numbers 3–10 slim down — tlieta→tliet, ħamsa→ħames, għaxra→għaxar — and the noun goes plural (tliet snin, three years). From 11 up the number links on with -il and the noun flips back to singular (ħdax-il sena, eleven years). Compare għaxar snin (10 years, plural) with tlieta u għoxrin sena (23 years, singular) — English never does this, so give it a few reps.",
+          "examples": [
+            {
+              "mt": "Għandi tliet snin",
+              "en": "I am 3 years old (3 + plural noun)"
+            },
+            {
+              "mt": "Għandi għaxar snin",
+              "en": "I am 10 years old (10 + plural noun)"
+            },
+            {
+              "mt": "Għandi tlieta u għoxrin sena",
+              "en": "I am 23 years old (23 + singular noun)"
+            },
+            {
+              "mt": "Għandi ħamsa u ħamsin sena",
+              "en": "I am 55 years old (55 + singular noun)"
+            }
+          ]
+        },
+        {
+          "id": "ordinals",
+          "title": "Putting things in order",
+          "explanation": "First, second, third always travel with 'the': l-ewwel, it-tieni, it-tielet. Past tenth, just use the plain number with 'the' (il-wieħed u għoxrin = 21st).",
+          "letters": [
+            "L-ewwel",
+            "It-tieni",
+            "It-tielet",
+            "Ir-raba'",
+            "Il-ħames",
+            "Is-sitt",
+            "Is-seba'",
+            "It-tmien",
+            "Id-disa'",
+            "L-għaxar"
+          ],
+          "examples": [
+            {
+              "mt": "L-ewwel ġurnata",
+              "en": "The first day"
+            },
+            {
+              "mt": "It-tieni triq fuq il-lemin",
+              "en": "The second street on the right"
+            },
+            {
+              "mt": "Fl-eżami ġejt il-wieħed u għoxrin",
+              "en": "In the exam, I came 21st"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1420 @@
+{
+  "id": "lesson2",
+  "title": "Lesson 2 — Describing Things",
+  "subtitle": "Colours, adjectives, numbers 1–30, months",
+  "sections": [
+    {
+      "id": "colours",
+      "icon": "🎨",
+      "title": "Colours",
+      "subtitle": "Il-kuluri — masculine, feminine, plural",
+      "intro": "Most Maltese colours have three forms — they change to match the gender and number of the noun they describe.",
+      "items": [
+        {
+          "mt": "abjad",
+          "feminine": "bajda",
+          "plural": "bojod",
+          "en": "white",
+          "examples": [
+            {
+              "mt": "ktieb abjad",
+              "en": "white book"
+            },
+            {
+              "mt": "tieqa bajda",
+              "en": "white window"
+            },
+            {
+              "mt": "ħitan bojod",
+              "en": "white walls"
+            }
+          ]
+        },
+        {
+          "mt": "iswed",
+          "feminine": "sewda",
+          "plural": "suwed",
+          "en": "black",
+          "examples": [
+            {
+              "mt": "kelb iswed",
+              "en": "black dog"
+            },
+            {
+              "mt": "tazza sewda",
+              "en": "black cup"
+            },
+            {
+              "mt": "żraben suwed",
+              "en": "black shoes"
+            }
+          ]
+        },
+        {
+          "mt": "aħmar",
+          "feminine": "ħamra",
+          "plural": "ħomor",
+          "en": "red",
+          "examples": [
+            {
+              "mt": "qalb ħamra",
+              "en": "red heart"
+            },
+            {
+              "mt": "tadama ħamra",
+              "en": "red tomato"
+            },
+            {
+              "mt": "fjuri ħomor",
+              "en": "red flowers"
+            }
+          ]
+        },
+        {
+          "mt": "isfar",
+          "feminine": "safra",
+          "plural": "sofor",
+          "en": "yellow",
+          "examples": [
+            {
+              "mt": "lumi isfar",
+              "en": "yellow lemon"
+            },
+            {
+              "mt": "ċavetta safra",
+              "en": "yellow key"
+            },
+            {
+              "mt": "stilel sofor",
+              "en": "yellow stars"
+            }
+          ]
+        },
+        {
+          "mt": "aħdar",
+          "feminine": "ħadra",
+          "plural": "ħodor",
+          "en": "green",
+          "examples": [
+            {
+              "mt": "ġnien aħdar",
+              "en": "green garden"
+            },
+            {
+              "mt": "tuffieħa ħadra",
+              "en": "green apple"
+            },
+            {
+              "mt": "weraq ħodor",
+              "en": "green leaves"
+            }
+          ]
+        },
+        {
+          "mt": "griż",
+          "feminine": "griża",
+          "plural": "griżi",
+          "en": "grey",
+          "examples": [
+            {
+              "mt": "qattus griż",
+              "en": "grey cat"
+            },
+            {
+              "mt": "sħaba griża",
+              "en": "grey cloud"
+            },
+            {
+              "mt": "ġebel griż",
+              "en": "grey stones"
+            }
+          ]
+        },
+        {
+          "mt": "blu",
+          "feminine": "blu",
+          "plural": "blu",
+          "en": "blue",
+          "examples": [
+            {
+              "mt": "baħar blu",
+              "en": "blue sea"
+            },
+            {
+              "mt": "qalziet blu",
+              "en": "blue trousers"
+            },
+            {
+              "mt": "għajnejn blu",
+              "en": "blue eyes"
+            }
+          ]
+        },
+        {
+          "mt": "ċelesti",
+          "feminine": "ċelesti",
+          "plural": "ċelesti",
+          "en": "light blue",
+          "examples": [
+            {
+              "mt": "sema ċelesti",
+              "en": "light blue sky"
+            },
+            {
+              "mt": "munita ċelesti",
+              "en": "light blue coin"
+            },
+            {
+              "mt": "ħitan ċelesti",
+              "en": "light blue walls"
+            }
+          ]
+        },
+        {
+          "mt": "roża",
+          "feminine": "roża",
+          "plural": "roża",
+          "en": "pink",
+          "examples": [
+            {
+              "mt": "kejk roża",
+              "en": "pink cake"
+            },
+            {
+              "mt": "warda roża",
+              "en": "pink rose"
+            },
+            {
+              "mt": "bżieżaq roża",
+              "en": "pink balloons"
+            }
+          ]
+        },
+        {
+          "mt": "vjola",
+          "feminine": "vjola",
+          "plural": "vjola",
+          "en": "purple",
+          "examples": [
+            {
+              "mt": "ċoff vjola",
+              "en": "purple ribbon"
+            },
+            {
+              "mt": "fjura vjola",
+              "en": "purple flower"
+            },
+            {
+              "mt": "bużżieqa vjola",
+              "en": "purple balloon"
+            }
+          ]
+        },
+        {
+          "mt": "oranġjo",
+          "feminine": "oranġjo",
+          "plural": "oranġjo",
+          "en": "orange",
+          "examples": [
+            {
+              "mt": "karozza oranġjo",
+              "en": "orange car"
+            },
+            {
+              "mt": "qamis oranġjo",
+              "en": "orange shirt"
+            },
+            {
+              "mt": "inżul ix-xemx oranġjo",
+              "en": "orange sunset"
+            }
+          ]
+        },
+        {
+          "mt": "kannella",
+          "feminine": "kannella",
+          "plural": "kannella",
+          "en": "brown",
+          "examples": [
+            {
+              "mt": "ċikkulata kannella",
+              "en": "brown chocolate"
+            },
+            {
+              "mt": "borża kannella",
+              "en": "brown bag"
+            },
+            {
+              "mt": "stivali kannella",
+              "en": "brown boots"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adjectives",
+      "icon": "✨",
+      "title": "Adjectives",
+      "subtitle": "L-aġġettivi — opposite pairs",
+      "intro": "Most Maltese adjectives have masculine, feminine and plural forms — same pattern as colours.",
+      "pairs": [
+        {
+          "a": {
+            "mt": "kbir",
+            "feminine": "kbira",
+            "plural": "kbar",
+            "en": "big (m)"
+          },
+          "b": {
+            "mt": "żgħir",
+            "feminine": "żgħira",
+            "plural": "żgħar",
+            "en": "small (m)"
+          }
+        },
+        {
+          "a": {
+            "mt": "twil",
+            "feminine": "twila",
+            "plural": "twal",
+            "en": "long / tall (m)"
+          },
+          "b": {
+            "mt": "qasir",
+            "feminine": "qasira",
+            "plural": "qosra",
+            "en": "short (m)"
+          }
+        },
+        {
+          "a": {
+            "mt": "sabiħ",
+            "feminine": "sabiħa",
+            "plural": "sbieħ",
+            "en": "beautiful (m)"
+          },
+          "b": {
+            "mt": "ikrah",
+            "feminine": "kerha",
+            "plural": "koroh",
+            "en": "ugly (m)"
+          }
+        },
+        {
+          "a": {
+            "mt": "tajjeb",
+            "feminine": "tajba",
+            "plural": "tajbin",
+            "en": "good (m)"
+          },
+          "b": {
+            "mt": "ħażin",
+            "feminine": "ħażina",
+            "plural": "ħżiena",
+            "en": "bad (m)"
+          }
+        },
+        {
+          "a": {
+            "mt": "nadif",
+            "feminine": "nadifa",
+            "plural": "nodfa",
+            "en": "clean (m)"
+          },
+          "b": {
+            "mt": "maħmuġ",
+            "feminine": "maħmuġa",
+            "plural": "maħmuġin",
+            "en": "dirty (m)"
+          }
+        },
+        {
+          "a": {
+            "mt": "ferħan",
+            "feminine": "ferħana",
+            "plural": "ferħanin",
+            "en": "happy (m)"
+          },
+          "b": {
+            "mt": "imdejjaq",
+            "feminine": "imdejqa",
+            "plural": "imdejqin",
+            "en": "sad (m)"
+          }
+        },
+        {
+          "a": {
+            "mt": "ġdid",
+            "feminine": "ġdida",
+            "plural": "ġodda",
+            "en": "new (m)"
+          },
+          "b": {
+            "mt": "qadim",
+            "feminine": "qadima",
+            "plural": "qodma",
+            "en": "old (m)"
+          }
+        },
+        {
+          "a": {
+            "mt": "sħun",
+            "feminine": "sħuna",
+            "plural": "sħan",
+            "en": "hot (m)"
+          },
+          "b": {
+            "mt": "kiesaħ",
+            "feminine": "kiesħa",
+            "plural": "kesħin",
+            "en": "cold (m)"
+          }
+        },
+        {
+          "a": {
+            "mt": "irħis",
+            "feminine": "rħisa",
+            "plural": "rħas",
+            "en": "cheap (m)"
+          },
+          "b": {
+            "mt": "għali",
+            "feminine": "għalja",
+            "plural": "għaljin",
+            "en": "expensive (m)"
+          }
+        },
+        {
+          "a": {
+            "mt": "veloċi",
+            "feminine": "veloċi",
+            "plural": "veloċi",
+            "en": "fast"
+          },
+          "b": {
+            "mt": "bil-mod",
+            "feminine": "bil-mod",
+            "plural": "bil-mod",
+            "en": "slow"
+          }
+        },
+        {
+          "a": {
+            "mt": "qawwi",
+            "feminine": "qawwija",
+            "plural": "qawwijin",
+            "en": "strong (m)"
+          },
+          "b": {
+            "mt": "dgħajjef",
+            "feminine": "dgħajfa",
+            "plural": "dgħajfin",
+            "en": "weak (m)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "numbers",
+      "icon": "🔢",
+      "title": "Numbers 1–30",
+      "subtitle": "In-numri — counting in Maltese",
+      "items": [
+        {
+          "n": 1,
+          "mt": "wieħed",
+          "en": "one"
+        },
+        {
+          "n": 2,
+          "mt": "tnejn",
+          "en": "two"
+        },
+        {
+          "n": 3,
+          "mt": "tlieta",
+          "en": "three"
+        },
+        {
+          "n": 4,
+          "mt": "erbgħa",
+          "en": "four"
+        },
+        {
+          "n": 5,
+          "mt": "ħamsa",
+          "en": "five"
+        },
+        {
+          "n": 6,
+          "mt": "sitta",
+          "en": "six"
+        },
+        {
+          "n": 7,
+          "mt": "sebgħa",
+          "en": "seven"
+        },
+        {
+          "n": 8,
+          "mt": "tmienja",
+          "en": "eight"
+        },
+        {
+          "n": 9,
+          "mt": "disgħa",
+          "en": "nine"
+        },
+        {
+          "n": 10,
+          "mt": "għaxra",
+          "en": "ten"
+        },
+        {
+          "n": 11,
+          "mt": "ħdax",
+          "en": "eleven"
+        },
+        {
+          "n": 12,
+          "mt": "tnax",
+          "en": "twelve"
+        },
+        {
+          "n": 13,
+          "mt": "tlettax",
+          "en": "thirteen"
+        },
+        {
+          "n": 14,
+          "mt": "erbatax",
+          "en": "fourteen"
+        },
+        {
+          "n": 15,
+          "mt": "ħmistax",
+          "en": "fifteen"
+        },
+        {
+          "n": 16,
+          "mt": "sittax",
+          "en": "sixteen"
+        },
+        {
+          "n": 17,
+          "mt": "sbatax",
+          "en": "seventeen"
+        },
+        {
+          "n": 18,
+          "mt": "tmintax",
+          "en": "eighteen"
+        },
+        {
+          "n": 19,
+          "mt": "dsatax",
+          "en": "nineteen"
+        },
+        {
+          "n": 20,
+          "mt": "għoxrin",
+          "en": "twenty"
+        },
+        {
+          "n": 21,
+          "mt": "wieħed u għoxrin",
+          "en": "twenty-one"
+        },
+        {
+          "n": 22,
+          "mt": "tnejn u għoxrin",
+          "en": "twenty-two"
+        },
+        {
+          "n": 23,
+          "mt": "tlieta u għoxrin",
+          "en": "twenty-three"
+        },
+        {
+          "n": 24,
+          "mt": "erbgħa u għoxrin",
+          "en": "twenty-four"
+        },
+        {
+          "n": 25,
+          "mt": "ħamsa u għoxrin",
+          "en": "twenty-five"
+        },
+        {
+          "n": 26,
+          "mt": "sitta u għoxrin",
+          "en": "twenty-six"
+        },
+        {
+          "n": 27,
+          "mt": "sebgħa u għoxrin",
+          "en": "twenty-seven"
+        },
+        {
+          "n": 28,
+          "mt": "tmienja u għoxrin",
+          "en": "twenty-eight"
+        },
+        {
+          "n": 29,
+          "mt": "disgħa u għoxrin",
+          "en": "twenty-nine"
+        },
+        {
+          "n": 30,
+          "mt": "tletin",
+          "en": "thirty"
+        }
+      ],
+      "ordinals": [
+        {
+          "mt": "L-ewwel",
+          "en": "First"
+        },
+        {
+          "mt": "It-tieni",
+          "en": "Second"
+        },
+        {
+          "mt": "It-tielet",
+          "en": "Third"
+        },
+        {
+          "mt": "Ir-raba'",
+          "en": "Fourth"
+        },
+        {
+          "mt": "Il-ħames",
+          "en": "Fifth"
+        },
+        {
+          "mt": "Is-sitt",
+          "en": "Sixth"
+        },
+        {
+          "mt": "Is-seba'",
+          "en": "Seventh"
+        },
+        {
+          "mt": "It-tmien",
+          "en": "Eighth"
+        },
+        {
+          "mt": "Id-disa'",
+          "en": "Ninth"
+        },
+        {
+          "mt": "L-għaxar",
+          "en": "Tenth"
+        }
+      ]
+    },
+    {
+      "id": "months",
+      "icon": "📆",
+      "title": "Months",
+      "subtitle": "Ix-xhur — months of the year",
+      "items": [
+        {
+          "mt": "Jannar",
+          "en": "January"
+        },
+        {
+          "mt": "Frar",
+          "en": "February"
+        },
+        {
+          "mt": "Marzu",
+          "en": "March"
+        },
+        {
+          "mt": "April",
+          "en": "April"
+        },
+        {
+          "mt": "Mejju",
+          "en": "May"
+        },
+        {
+          "mt": "Ġunju",
+          "en": "June"
+        },
+        {
+          "mt": "Lulju",
+          "en": "July"
+        },
+        {
+          "mt": "Awwissu",
+          "en": "August"
+        },
+        {
+          "mt": "Settembru",
+          "en": "September"
+        },
+        {
+          "mt": "Ottubru",
+          "en": "October"
+        },
+        {
+          "mt": "Novembru",
+          "en": "November"
+        },
+        {
+          "mt": "Diċembru",
+          "en": "December"
+        }
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "icon": "📚",
+      "title": "Vocabulary",
+      "subtitle": "Il-vokabularju — words & verbs from this lesson",
+      "intro": "All the lesson vocabulary in one place. Adjectives and colours show the three forms (masculine / feminine / plural) — those endings change to match the noun.",
+      "groups": [
+        {
+          "title": "Describing people (the 'Serquni' dialogue)",
+          "icon": "🗣️",
+          "items": [
+            {
+              "icon": "🆘",
+              "mt": "Ajjut!",
+              "en": "Help!"
+            },
+            {
+              "icon": "🤔",
+              "mt": "Xi ġralek?",
+              "en": "What happened to you?"
+            },
+            {
+              "icon": "💼",
+              "mt": "Basket",
+              "en": "Bag / handbag"
+            },
+            {
+              "icon": "🦹",
+              "mt": "Seraqli",
+              "en": "He/she stole from me"
+            },
+            {
+              "icon": "👀",
+              "mt": "Iddeskrivih",
+              "en": "Describe him"
+            },
+            {
+              "icon": "👀",
+              "mt": "Iddeskriviha",
+              "en": "Describe her"
+            },
+            {
+              "icon": "🧓",
+              "mt": "Kemm kellu żmien?",
+              "en": "How old was he?"
+            },
+            {
+              "icon": "👮",
+              "mt": "Pulizija",
+              "en": "Police"
+            }
+          ]
+        },
+        {
+          "title": "Adjectives — physical (m / f / plural)",
+          "icon": "📏",
+          "subtitle": "Pattern: masculine → feminine → plural. The ending changes with the noun's gender.",
+          "items": [
+            {
+              "icon": "📏",
+              "mt": "Twil / Twila / Twal",
+              "en": "Tall (m / f / pl)"
+            },
+            {
+              "icon": "📐",
+              "mt": "Qasir / Qasira / Qosra",
+              "en": "Short (m / f / pl)"
+            },
+            {
+              "icon": "🟫",
+              "mt": "Oħxon / Ħoxna / Ħoxnin",
+              "en": "Fat (m / f / pl)"
+            },
+            {
+              "icon": "📌",
+              "mt": "Irqiq / Irqiqa / Irqaq",
+              "en": "Slim / thin (m / f / pl)"
+            },
+            {
+              "icon": "🔼",
+              "mt": "Kbir / Kbira / Kbar",
+              "en": "Big (m / f / pl)"
+            },
+            {
+              "icon": "🔽",
+              "mt": "Żgħir / Żgħira / Żgħar",
+              "en": "Small (m / f / pl)"
+            }
+          ]
+        },
+        {
+          "title": "Adjectives — quality (m / f / plural)",
+          "icon": "✨",
+          "items": [
+            {
+              "icon": "🌟",
+              "mt": "Sabiħ / Sabiħa / Sbieħ",
+              "en": "Beautiful (m / f / pl)"
+            },
+            {
+              "icon": "😖",
+              "mt": "Ikrah / Kerha / Koroh",
+              "en": "Ugly (m / f / pl)"
+            },
+            {
+              "icon": "👍",
+              "mt": "Tajjeb / Tajba / Tajbin",
+              "en": "Good (m / f / pl)"
+            },
+            {
+              "icon": "👎",
+              "mt": "Ħażin / Ħażina / Ħżiena",
+              "en": "Bad (m / f / pl)"
+            },
+            {
+              "icon": "🧼",
+              "mt": "Nadif / Nadifa / Nodfa",
+              "en": "Clean / tidy (m / f / pl)"
+            },
+            {
+              "icon": "🟤",
+              "mt": "Maħmuġ / Maħmuġa / Maħmuġin",
+              "en": "Dirty (m / f / pl)"
+            },
+            {
+              "icon": "💛",
+              "mt": "Ħanin / Ħanina / Ħnien",
+              "en": "Kind (m / f / pl)"
+            },
+            {
+              "icon": "😈",
+              "mt": "Kattiv / Kattiva / Kattivi",
+              "en": "Cruel (m / f / pl)"
+            },
+            {
+              "icon": "🆕",
+              "mt": "Ġdid / Ġdida / Ġodda",
+              "en": "New (m / f / pl)"
+            },
+            {
+              "icon": "🪦",
+              "mt": "Qadim / Qadima / Qodma",
+              "en": "Old (m / f / pl)"
+            },
+            {
+              "icon": "😀",
+              "mt": "Ferħan / Ferħana / Ferħanin",
+              "en": "Happy (m / f / pl)"
+            },
+            {
+              "icon": "😢",
+              "mt": "Imdejjaq / Imdejqa / Imdejqin",
+              "en": "Sad (m / f / pl)"
+            },
+            {
+              "icon": "💰",
+              "mt": "Sinjur / Sinjura / Sinjuri",
+              "en": "Rich (m / f / pl)"
+            },
+            {
+              "icon": "🙏",
+              "mt": "Fqir / Fqira / Fqar",
+              "en": "Poor (m / f / pl)"
+            },
+            {
+              "icon": "🪨",
+              "mt": "Tqil / Tqila / Tqal",
+              "en": "Heavy (m / f / pl)"
+            },
+            {
+              "icon": "🪶",
+              "mt": "Ħafif / Ħafifa / Ħfief",
+              "en": "Light (m / f / pl)"
+            },
+            {
+              "icon": "🤩",
+              "mt": "Interessanti",
+              "en": "Interesting (no change)"
+            },
+            {
+              "icon": "🧠",
+              "mt": "Intelliġenti",
+              "en": "Intelligent (no change)"
+            }
+          ]
+        },
+        {
+          "title": "Colours (m / f / plural)",
+          "icon": "🎨",
+          "items": [
+            {
+              "icon": "⚪",
+              "mt": "Abjad / Bajda / Bojod",
+              "en": "White (m / f / pl)"
+            },
+            {
+              "icon": "⚫",
+              "mt": "Iswed / Sewda / Suwed",
+              "en": "Black (m / f / pl)"
+            },
+            {
+              "icon": "🔴",
+              "mt": "Aħmar / Ħamra / Ħomor",
+              "en": "Red (m / f / pl)"
+            },
+            {
+              "icon": "🟡",
+              "mt": "Isfar / Safra / Sofor",
+              "en": "Yellow (m / f / pl)"
+            },
+            {
+              "icon": "🟢",
+              "mt": "Aħdar / Ħadra / Ħodor",
+              "en": "Green (m / f / pl)"
+            },
+            {
+              "icon": "⚪",
+              "mt": "Griż / Griża / Griżi",
+              "en": "Grey (m / f / pl)"
+            },
+            {
+              "icon": "🔵",
+              "mt": "Blu",
+              "en": "Blue (no change)"
+            },
+            {
+              "icon": "🩵",
+              "mt": "Ċelesti",
+              "en": "Light blue (no change)"
+            },
+            {
+              "icon": "🩷",
+              "mt": "Roża",
+              "en": "Pink (no change)"
+            },
+            {
+              "icon": "🟣",
+              "mt": "Vjola",
+              "en": "Purple (no change)"
+            },
+            {
+              "icon": "🟠",
+              "mt": "Oranġjo",
+              "en": "Orange (no change)"
+            },
+            {
+              "icon": "🟤",
+              "mt": "Kannella",
+              "en": "Brown (no change)"
+            }
+          ]
+        },
+        {
+          "title": "Numbers 1–30",
+          "icon": "🔢",
+          "items": [
+            {
+              "icon": "1️⃣",
+              "mt": "Wieħed",
+              "en": "1"
+            },
+            {
+              "icon": "2️⃣",
+              "mt": "Tnejn",
+              "en": "2"
+            },
+            {
+              "icon": "3️⃣",
+              "mt": "Tlieta",
+              "en": "3"
+            },
+            {
+              "icon": "4️⃣",
+              "mt": "Erbgħa",
+              "en": "4"
+            },
+            {
+              "icon": "5️⃣",
+              "mt": "Ħamsa",
+              "en": "5"
+            },
+            {
+              "icon": "6️⃣",
+              "mt": "Sitta",
+              "en": "6"
+            },
+            {
+              "icon": "7️⃣",
+              "mt": "Sebgħa",
+              "en": "7"
+            },
+            {
+              "icon": "8️⃣",
+              "mt": "Tmienja",
+              "en": "8"
+            },
+            {
+              "icon": "9️⃣",
+              "mt": "Disgħa",
+              "en": "9"
+            },
+            {
+              "icon": "🔟",
+              "mt": "Għaxra",
+              "en": "10"
+            },
+            {
+              "icon": "1️⃣1️⃣",
+              "mt": "Ħdax",
+              "en": "11"
+            },
+            {
+              "icon": "1️⃣2️⃣",
+              "mt": "Tnax",
+              "en": "12"
+            },
+            {
+              "icon": "1️⃣3️⃣",
+              "mt": "Tlettax",
+              "en": "13"
+            },
+            {
+              "icon": "1️⃣4️⃣",
+              "mt": "Erbatax",
+              "en": "14"
+            },
+            {
+              "icon": "1️⃣5️⃣",
+              "mt": "Ħmistax",
+              "en": "15"
+            },
+            {
+              "icon": "1️⃣6️⃣",
+              "mt": "Sittax",
+              "en": "16"
+            },
+            {
+              "icon": "1️⃣7️⃣",
+              "mt": "Sbatax",
+              "en": "17"
+            },
+            {
+              "icon": "1️⃣8️⃣",
+              "mt": "Tmintax",
+              "en": "18"
+            },
+            {
+              "icon": "1️⃣9️⃣",
+              "mt": "Dsatax",
+              "en": "19"
+            },
+            {
+              "icon": "2️⃣0️⃣",
+              "mt": "Għoxrin",
+              "en": "20"
+            },
+            {
+              "icon": "2️⃣1️⃣",
+              "mt": "Wieħed u għoxrin",
+              "en": "21"
+            },
+            {
+              "icon": "2️⃣2️⃣",
+              "mt": "Tnejn u għoxrin",
+              "en": "22"
+            },
+            {
+              "icon": "2️⃣3️⃣",
+              "mt": "Tlieta u għoxrin",
+              "en": "23"
+            },
+            {
+              "icon": "2️⃣4️⃣",
+              "mt": "Erbgħa u għoxrin",
+              "en": "24"
+            },
+            {
+              "icon": "2️⃣5️⃣",
+              "mt": "Ħamsa u għoxrin",
+              "en": "25"
+            },
+            {
+              "icon": "2️⃣6️⃣",
+              "mt": "Sitta u għoxrin",
+              "en": "26"
+            },
+            {
+              "icon": "2️⃣7️⃣",
+              "mt": "Sebgħa u għoxrin",
+              "en": "27"
+            },
+            {
+              "icon": "2️⃣8️⃣",
+              "mt": "Tmienja u għoxrin",
+              "en": "28"
+            },
+            {
+              "icon": "2️⃣9️⃣",
+              "mt": "Disgħa u għoxrin",
+              "en": "29"
+            },
+            {
+              "icon": "3️⃣0️⃣",
+              "mt": "Tletin",
+              "en": "30"
+            }
+          ]
+        },
+        {
+          "title": "Ordinals 1–10",
+          "icon": "🥇",
+          "subtitle": "Used with the definite article (L-ewwel = 'the first').",
+          "items": [
+            {
+              "icon": "🥇",
+              "mt": "L-ewwel",
+              "en": "First"
+            },
+            {
+              "icon": "🥈",
+              "mt": "It-tieni",
+              "en": "Second"
+            },
+            {
+              "icon": "🥉",
+              "mt": "It-tielet",
+              "en": "Third"
+            },
+            {
+              "icon": "4️⃣",
+              "mt": "Ir-raba'",
+              "en": "Fourth"
+            },
+            {
+              "icon": "5️⃣",
+              "mt": "Il-ħames",
+              "en": "Fifth"
+            },
+            {
+              "icon": "6️⃣",
+              "mt": "Is-sitt",
+              "en": "Sixth"
+            },
+            {
+              "icon": "7️⃣",
+              "mt": "Is-seba'",
+              "en": "Seventh"
+            },
+            {
+              "icon": "8️⃣",
+              "mt": "It-tmien",
+              "en": "Eighth"
+            },
+            {
+              "icon": "9️⃣",
+              "mt": "Id-disa'",
+              "en": "Ninth"
+            },
+            {
+              "icon": "🔟",
+              "mt": "L-għaxar",
+              "en": "Tenth"
+            }
+          ]
+        },
+        {
+          "title": "Months",
+          "icon": "📆",
+          "items": [
+            {
+              "icon": "❄️",
+              "mt": "Jannar",
+              "en": "January"
+            },
+            {
+              "icon": "❄️",
+              "mt": "Frar",
+              "en": "February"
+            },
+            {
+              "icon": "🌷",
+              "mt": "Marzu",
+              "en": "March"
+            },
+            {
+              "icon": "🌸",
+              "mt": "April",
+              "en": "April"
+            },
+            {
+              "icon": "🌼",
+              "mt": "Mejju",
+              "en": "May"
+            },
+            {
+              "icon": "☀️",
+              "mt": "Ġunju",
+              "en": "June"
+            },
+            {
+              "icon": "☀️",
+              "mt": "Lulju",
+              "en": "July"
+            },
+            {
+              "icon": "☀️",
+              "mt": "Awwissu",
+              "en": "August"
+            },
+            {
+              "icon": "🍂",
+              "mt": "Settembru",
+              "en": "September"
+            },
+            {
+              "icon": "🍂",
+              "mt": "Ottubru",
+              "en": "October"
+            },
+            {
+              "icon": "🍁",
+              "mt": "Novembru",
+              "en": "November"
+            },
+            {
+              "icon": "🎄",
+              "mt": "Diċembru",
+              "en": "December"
+            }
+          ]
+        },
+        {
+          "title": "Verbs & useful phrases from the dialogue",
+          "icon": "💬",
+          "items": [
+            {
+              "icon": "👀",
+              "mt": "Rajt",
+              "en": "I saw"
+            },
+            {
+              "icon": "❓",
+              "mt": "Min kien?",
+              "en": "Who was it?"
+            },
+            {
+              "icon": "👕",
+              "mt": "Liebes / Liebsa",
+              "en": "Wearing (m / f)"
+            },
+            {
+              "icon": "🧣",
+              "mt": "Beritta",
+              "en": "Cap / hat"
+            },
+            {
+              "icon": "👖",
+              "mt": "Jeans",
+              "en": "Jeans"
+            },
+            {
+              "icon": "🟦",
+              "mt": "Flokk",
+              "en": "T-shirt / sweater"
+            },
+            {
+              "icon": "👴",
+              "mt": "Anzjan / Anzjana",
+              "en": "Elderly (m / f)"
+            },
+            {
+              "icon": "🤵",
+              "mt": "Raġel",
+              "en": "Man"
+            },
+            {
+              "icon": "🙍‍♀️",
+              "mt": "Mara",
+              "en": "Woman"
+            },
+            {
+              "icon": "📞",
+              "mt": "Numru tat-telefown",
+              "en": "Telephone number"
+            },
+            {
+              "icon": "🤞",
+              "mt": "Nawguralek",
+              "en": "I wish you (luck)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar2",
+      "icon": "📖",
+      "title": "Grammar",
+      "subtitle": "Il-grammatika — the grammar of Lesson 2",
+      "intro": "These are the grammar points covered in the slides. They build on the article from Lesson 1 and set up the agreement rules you'll see throughout the course.",
+      "rules": [
+        {
+          "id": "noun-gender",
+          "title": "Noun gender — masculine or feminine",
+          "explanation": "Every Maltese noun is either masculine (maskil) or feminine (femminil). It matters because adjectives, verbs and demonstratives all have to AGREE with the noun's gender. Often (not always): masculine nouns end in a consonant or in -u / -i; feminine nouns end in -a.",
+          "examples": [
+            {"mt": "raġel", "en": "man (m)"},
+            {"mt": "kelb", "en": "dog (m)"},
+            {"mt": "nannu", "en": "grandfather (m, -u)"},
+            {"mt": "ktieb", "en": "book (m)"},
+            {"mt": "mara", "en": "woman (f, -a)"},
+            {"mt": "kelba", "en": "female dog (f, -a)"},
+            {"mt": "tazza", "en": "glass (f, -a)"},
+            {"mt": "karozza", "en": "car (f, -a)"}
+          ]
+        },
+        {
+          "id": "adjective-agreement",
+          "title": "Adjective agreement — three forms",
+          "explanation": "Most Maltese adjectives have THREE forms: masculine, feminine, and plural. You match the form to the noun. The pattern often follows: masculine ends in a consonant; feminine adds -a; plural takes a special collective form (often with vowel changes inside the word).",
+          "examples": [
+            {
+              "mt": "raġel twil",
+              "en": "a tall man (m)"
+            },
+            {
+              "mt": "mara twila",
+              "en": "a tall woman (f)"
+            },
+            {
+              "mt": "tfal twal",
+              "en": "tall children (pl)"
+            },
+            {
+              "mt": "ktieb sabiħ",
+              "en": "a beautiful book (m)"
+            },
+            {
+              "mt": "fjura sabiħa",
+              "en": "a beautiful flower (f)"
+            },
+            {
+              "mt": "fjuri sbieħ",
+              "en": "beautiful flowers (pl)"
+            }
+          ]
+        },
+        {
+          "id": "colour-agreement",
+          "title": "Colours follow the same agreement",
+          "explanation": "Colours behave like adjectives — they have three forms and match the noun. A few colours (blu, ċelesti, roża, vjola, oranġjo, kannella) are borrowed and don't change form.",
+          "letters": [
+            "Abjad/Bajda/Bojod",
+            "Iswed/Sewda/Suwed",
+            "Aħmar/Ħamra/Ħomor",
+            "Isfar/Safra/Sofor",
+            "Aħdar/Ħadra/Ħodor"
+          ],
+          "examples": [
+            {
+              "mt": "flokk abjad",
+              "en": "a white t-shirt (m)"
+            },
+            {
+              "mt": "mejda bajda",
+              "en": "a white table (f)"
+            },
+            {
+              "mt": "fniek bojod",
+              "en": "white rabbits (pl)"
+            },
+            {
+              "mt": "vann aħmar",
+              "en": "a red van (m)"
+            },
+            {
+              "mt": "zalza ħamra",
+              "en": "red sauce (f)"
+            },
+            {
+              "mt": "għasafar ħomor",
+              "en": "red birds (pl)"
+            },
+            {
+              "mt": "ġakketta blu",
+              "en": "a blue jacket — blu doesn't change"
+            }
+          ]
+        },
+        {
+          "id": "numbers-noun-rule",
+          "title": "Numbers 2–10 use plural; 11+ uses singular",
+          "explanation": "Important rule: after numbers from 2 to 10 the noun goes in the PLURAL form. After numbers from 11 to 99 the noun stays SINGULAR. Watch the difference between 'għaxar snin' (10 years — plural) and 'tlieta u għoxrin sena' (23 years — singular).",
+          "examples": [
+            {
+              "mt": "Għandi tliet snin",
+              "en": "I am 3 years old (3 + plural noun)"
+            },
+            {
+              "mt": "Għandi għaxar snin",
+              "en": "I am 10 years old (10 + plural noun)"
+            },
+            {
+              "mt": "Għandi tlieta u għoxrin sena",
+              "en": "I am 23 years old (23 + singular noun)"
+            },
+            {
+              "mt": "Għandi ħamsa u ħamsin sena",
+              "en": "I am 55 years old (55 + singular noun)"
+            }
+          ]
+        },
+        {
+          "id": "ordinals",
+          "title": "Ordinal numbers 1–10",
+          "explanation": "Ordinals show order or rank. They're used with the definite article (L-ewwel, It-tieni, etc.). From 11 onwards, just use the cardinal number with the definite article (e.g., il-wieħed u għoxrin = 21st).",
+          "letters": [
+            "L-ewwel",
+            "It-tieni",
+            "It-tielet",
+            "Ir-raba'",
+            "Il-ħames",
+            "Is-sitt",
+            "Is-seba'",
+            "It-tmien",
+            "Id-disa'",
+            "L-għaxar"
+          ],
+          "examples": [
+            {
+              "mt": "L-ewwel ġurnata",
+              "en": "The first day"
+            },
+            {
+              "mt": "It-tieni triq fuq il-lemin",
+              "en": "The second street on the right"
+            },
+            {
+              "mt": "Fl-eżami ġejt il-wieħed u għoxrin",
+              "en": "In the exam, I came 21st"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

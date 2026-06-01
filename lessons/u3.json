@@ -1,0 +1,248 @@
+{
+  "id": "u3",
+  "title": "Getting Help",
+  "subtitle": "Asking for help, slowing things down, switching to English",
+  "sections": [
+    {
+      "id": "work",
+      "icon": "💼",
+      "title": "Getting help",
+      "subtitle": "Titlob l-għajnuna — asking someone to slow down, repeat, help",
+      "vocab": [
+        {
+          "mt": "Ma nitkellimx bil-Malti",
+          "en": "I don't speak Maltese"
+        },
+        {
+          "mt": "Nitkellem ftit Malti",
+          "en": "I speak a little Maltese"
+        },
+        {
+          "mt": "Qed nitgħallem il-Malti",
+          "en": "I am learning Maltese"
+        },
+        {
+          "mt": "Ma nifhimx",
+          "en": "I don't understand"
+        },
+        {
+          "mt": "Tista' tirrepeti?",
+          "en": "Can you repeat that?"
+        },
+        {
+          "mt": "Bil-mod, jekk jogħġbok",
+          "en": "Slowly, please"
+        },
+        {
+          "mt": "Skużi, ma fhimtx",
+          "en": "Sorry, I didn't understand"
+        },
+        {
+          "mt": "Tista' tiktibha?",
+          "en": "Can you write it down?"
+        },
+        {
+          "mt": "Tista' tgħinni?",
+          "en": "Can you help me?"
+        },
+        {
+          "mt": "Kif tgħid bil-Malti?",
+          "en": "How do you say it in Maltese?"
+        },
+        {
+          "mt": "X'jiġifieri?",
+          "en": "What does it mean?"
+        },
+        {
+          "mt": "Naħdem hawn",
+          "en": "I work here"
+        },
+        {
+          "mt": "Jien barrani",
+          "en": "I'm a foreigner"
+        },
+        {
+          "mt": "Titkellem bl-Ingliż?",
+          "en": "Do you speak English?"
+        }
+      ],
+      "dialogue": [
+        {
+          "mt": "Skużani — ma nitkellimx Malti tajjeb. Titkellem bl-Ingliż?",
+          "en": "Sorry — I don't speak Maltese well. Do you speak English?"
+        },
+        {
+          "mt": "Iva, ftit. Kif nista' ngħinek?",
+          "en": "Yes, a little. How can I help you?"
+        },
+        {
+          "mt": "Tista' tirrepeti, bil-mod jekk jogħġbok?",
+          "en": "Can you repeat, slowly please?"
+        },
+        {
+          "mt": "Mhux problema. Hekk hu...",
+          "en": "No problem. Like this..."
+        }
+      ]
+    },
+    {
+      "id": "grammar",
+      "icon": "📖",
+      "title": "Grammar",
+      "subtitle": "Il-grammatika — being polite and asking for help",
+      "intro": "Two small habits carry most of Maltese politeness: stacking short polite words, and the \"Tista'…?\" request.",
+      "rules": [
+        {
+          "id": "polite-formulas",
+          "title": "Politeness is stacking",
+          "explanation": "Maltese gets more polite by piling small words up. Grazzi is fine; Grazzi ħafna is warmer; open with Skużani to a stranger and close with jekk jogħġbok. Stack as much as the moment needs.",
+          "examples": [
+            {
+              "mt": "Grazzi",
+              "en": "Thanks"
+            },
+            {
+              "mt": "Grazzi ħafna",
+              "en": "Thanks a lot"
+            },
+            {
+              "mt": "Skużani, tista' tgħinni?",
+              "en": "Excuse me, can you help me?"
+            },
+            {
+              "mt": "Iva, jekk jogħġbok",
+              "en": "Yes, please"
+            },
+            {
+              "mt": "Le grazzi",
+              "en": "No thanks"
+            }
+          ]
+        },
+        {
+          "id": "language-help",
+          "title": "Earn a smile, then switch",
+          "explanation": "Nearly everyone here speaks great English, so you can always switch over — but leading with a line of Maltese (Qed nitgħallem il-Malti) buys real goodwill first.",
+          "examples": [
+            {
+              "mt": "Nitkellem ftit Malti",
+              "en": "I speak a little Maltese"
+            },
+            {
+              "mt": "Qed nitgħallem il-Malti",
+              "en": "I am learning Maltese"
+            },
+            {
+              "mt": "Titkellem bl-Ingliż?",
+              "en": "Do you speak English?"
+            },
+            {
+              "mt": "Tista' tirrepeti, bil-mod jekk jogħġbok?",
+              "en": "Can you repeat, slowly please?"
+            }
+          ]
+        },
+        {
+          "id": "tista-requests",
+          "title": "Asking with 'Tista'…?'",
+          "explanation": "Tista' is just the 'you' form of 'can'. Put any everyday verb after it for a polite request: Tista' tgħinni? (Can you help me?), Tista' tirrepeti? (Can you repeat?), Tista' tiktibha? (Can you write it down?). The full set is nista' (I can), tista' (you can), jista' (he can).",
+          "examples": [
+            {
+              "mt": "Tista' tgħinni?",
+              "en": "Can you help me?"
+            },
+            {
+              "mt": "Tista' tirrepeti?",
+              "en": "Can you repeat?"
+            },
+            {
+              "mt": "Tista' tiktibha?",
+              "en": "Can you write it down?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "icon": "📚",
+      "title": "Vocabulary",
+      "subtitle": "Il-vokabularju — every phrase from this section",
+      "intro": "All the help phrases in one place. Tap any to hear it.",
+      "groups": [
+        {
+          "title": "At work — language help",
+          "icon": "💼",
+          "subtitle": "When you need someone to switch to English, slow down, or repeat.",
+          "items": [
+            {
+              "icon": "🤐",
+              "mt": "Ma nitkellimx bil-Malti",
+              "en": "I don't speak Maltese"
+            },
+            {
+              "icon": "🗣️",
+              "mt": "Nitkellem ftit Malti",
+              "en": "I speak a little Maltese"
+            },
+            {
+              "icon": "📚",
+              "mt": "Qed nitgħallem il-Malti",
+              "en": "I am learning Maltese"
+            },
+            {
+              "icon": "❓",
+              "mt": "Ma nifhimx",
+              "en": "I don't understand"
+            },
+            {
+              "icon": "🔁",
+              "mt": "Tista' tirrepeti?",
+              "en": "Can you repeat that?"
+            },
+            {
+              "icon": "🐢",
+              "mt": "Bil-mod, jekk jogħġbok",
+              "en": "Slowly, please"
+            },
+            {
+              "icon": "✍️",
+              "mt": "Tista' tiktibha?",
+              "en": "Can you write it down?"
+            },
+            {
+              "icon": "🆘",
+              "mt": "Tista' tgħinni?",
+              "en": "Can you help me?"
+            },
+            {
+              "icon": "❓",
+              "mt": "Kif tgħid bil-Malti?",
+              "en": "How do you say it in Maltese?"
+            },
+            {
+              "icon": "❓",
+              "mt": "X'jiġifieri?",
+              "en": "What does it mean?"
+            },
+            {
+              "icon": "🇬🇧",
+              "mt": "Titkellem bl-Ingliż?",
+              "en": "Do you speak English?"
+            },
+            {
+              "icon": "🏢",
+              "mt": "Naħdem hawn",
+              "en": "I work here"
+            },
+            {
+              "icon": "🌍",
+              "mt": "Jien barrani",
+              "en": "I'm a foreigner"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

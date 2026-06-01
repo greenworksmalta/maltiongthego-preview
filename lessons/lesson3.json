@@ -1,0 +1,923 @@
+{
+  "id": "lesson3",
+  "title": "Lesson 3 — Pronouns & Pointing",
+  "subtitle": "Personal pronouns, this vs that, syllable splitting",
+  "sections": [
+    {
+      "id": "pronouns",
+      "icon": "👥",
+      "title": "Pronouns",
+      "subtitle": "Pronomi Personali — I, you, he, she, we…",
+      "intro": "Pronouns replace nouns. Most have a long form and a short form (e.g. Jien / Jiena both mean 'I'). Use whichever feels natural.",
+      "items": [
+        {
+          "mt": "Jien",
+          "alt": "Jiena",
+          "en": "I"
+        },
+        {
+          "mt": "Int",
+          "alt": "Inti",
+          "en": "You (singular)"
+        },
+        {
+          "mt": "Hu",
+          "alt": "Huwa",
+          "en": "He"
+        },
+        {
+          "mt": "Hi",
+          "alt": "Hija",
+          "en": "She"
+        },
+        {
+          "mt": "Aħna",
+          "alt": "Aħna",
+          "en": "We"
+        },
+        {
+          "mt": "Intom",
+          "alt": "Intom",
+          "en": "You (plural)"
+        },
+        {
+          "mt": "Huma",
+          "alt": "Huma",
+          "en": "They"
+        }
+      ],
+      "dialogue": [
+        {
+          "mt": "Jien naqra ktieb kuljum.",
+          "en": "I read a book every day."
+        },
+        {
+          "mt": "Int taqra ħafna?",
+          "en": "Do you read a lot?"
+        },
+        {
+          "mt": "Hu jaħdem fl-uffiċċju.",
+          "en": "He works at the office."
+        },
+        {
+          "mt": "Hi ssajjar għaġin.",
+          "en": "She cooks pasta."
+        },
+        {
+          "mt": "Aħna nimxu fil-ġnien.",
+          "en": "We walk in the garden."
+        },
+        {
+          "mt": "Intom titkellmu bil-Malti?",
+          "en": "Do you (pl) speak Maltese?"
+        },
+        {
+          "mt": "Huma ġejjin Malta.",
+          "en": "They are coming to Malta."
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex1",
+          "title": "Replace the noun with the right pronoun",
+          "instructions": "Tap which pronoun replaces the underlined noun.",
+          "choices": [
+            "Hu",
+            "Hi",
+            "Huma",
+            "Aħna",
+            "Int"
+          ],
+          "items": [
+            {
+              "sentence": "Sara taqra ktieb.",
+              "en": "Sara is reading a book.",
+              "answer": "Hi"
+            },
+            {
+              "sentence": "Tom jaħdem fil-belt.",
+              "en": "Tom works in the city.",
+              "answer": "Hu"
+            },
+            {
+              "sentence": "It-turisti jħobbu lill-Malta.",
+              "en": "The tourists love Malta.",
+              "answer": "Huma"
+            },
+            {
+              "sentence": "Il-ġnien sabiħ ħafna.",
+              "en": "The garden is very beautiful.",
+              "answer": "Hu"
+            },
+            {
+              "sentence": "Ommi qed issajjar.",
+              "en": "My mother is cooking.",
+              "answer": "Hi"
+            },
+            {
+              "sentence": "Il-kotba kollha mqattajn.",
+              "en": "The books are all torn.",
+              "answer": "Huma"
+            },
+            {
+              "sentence": "It-triq tkissret bix-xita.",
+              "en": "The street was broken up by the rain.",
+              "answer": "Hi"
+            },
+            {
+              "sentence": "Jien u ommi noħorġu waranofsinhar.",
+              "en": "My mother and I go out in the afternoon.",
+              "answer": "Aħna"
+            },
+            {
+              "sentence": "It-tfal qed jistudjaw.",
+              "en": "The children are studying.",
+              "answer": "Huma"
+            },
+            {
+              "sentence": "Maria, kif kienet il-vaganza?",
+              "en": "Maria, how was the holiday?",
+              "answer": "Int"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demonstratives",
+      "icon": "👉",
+      "title": "Demonstratives",
+      "subtitle": "Pronomi Demonstrattivi — this, that, these, those",
+      "intro": "Maltese demonstratives change with gender and number. Use 'dan/din/dawn' for things close to you, 'dak/dik/dawk' for things further away.",
+      "rules": [
+        {
+          "id": "this",
+          "title": "This / These (close)",
+          "explanation": "Things near you — within reach.",
+          "items": [
+            {
+              "mt": "Dan",
+              "en": "This (masculine)"
+            },
+            {
+              "mt": "Din",
+              "en": "This (feminine)"
+            },
+            {
+              "mt": "Dawn",
+              "en": "These (plural)"
+            }
+          ],
+          "examples": [
+            {
+              "phrase": "Dan il-ktieb",
+              "en": "This book (m)"
+            },
+            {
+              "phrase": "Din it-tazza",
+              "en": "This cup (f)"
+            },
+            {
+              "phrase": "Dawn il-fjuri",
+              "en": "These flowers (pl)"
+            }
+          ]
+        },
+        {
+          "id": "that",
+          "title": "That / Those (further)",
+          "explanation": "Things over there — out of reach.",
+          "items": [
+            {
+              "mt": "Dak",
+              "en": "That (masculine)"
+            },
+            {
+              "mt": "Dik",
+              "en": "That (feminine)"
+            },
+            {
+              "mt": "Dawk",
+              "en": "Those (plural)"
+            }
+          ],
+          "examples": [
+            {
+              "phrase": "Dak il-ġebel",
+              "en": "That stone (m)"
+            },
+            {
+              "phrase": "Dik is-siġra",
+              "en": "That tree (f)"
+            },
+            {
+              "phrase": "Dawk it-tfal",
+              "en": "Those children (pl)"
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex2",
+          "title": "Exercise 2 — dan, din, dawn?",
+          "instructions": "Pick the right form for each word (close to you).",
+          "choices": [
+            "dan",
+            "din",
+            "dawn"
+          ],
+          "items": [
+            {
+              "word": "ktieb",
+              "en": "book (m)",
+              "answer": "dan"
+            },
+            {
+              "word": "tazza",
+              "en": "cup (f)",
+              "answer": "din"
+            },
+            {
+              "word": "kelb",
+              "en": "dog (m)",
+              "answer": "dan"
+            },
+            {
+              "word": "fjura",
+              "en": "flower (f)",
+              "answer": "din"
+            },
+            {
+              "word": "tfal",
+              "en": "children (pl)",
+              "answer": "dawn"
+            },
+            {
+              "word": "raġel",
+              "en": "man (m)",
+              "answer": "dan"
+            },
+            {
+              "word": "siġra",
+              "en": "tree (f)",
+              "answer": "din"
+            },
+            {
+              "word": "qattusi",
+              "en": "cats (pl)",
+              "answer": "dawn"
+            },
+            {
+              "word": "ċavetta",
+              "en": "key (f)",
+              "answer": "din"
+            },
+            {
+              "word": "platt",
+              "en": "plate (m)",
+              "answer": "dan"
+            },
+            {
+              "word": "kotba",
+              "en": "books (pl)",
+              "answer": "dawn"
+            },
+            {
+              "word": "tieqa",
+              "en": "window (f)",
+              "answer": "din"
+            },
+            {
+              "word": "saqqu",
+              "en": "mattress (m)",
+              "answer": "dan"
+            },
+            {
+              "word": "stilel",
+              "en": "stars (pl)",
+              "answer": "dawn"
+            }
+          ]
+        },
+        {
+          "id": "ex3",
+          "title": "Exercise 3 — dak, dik, dawk?",
+          "instructions": "Pick the right form for things further away.",
+          "choices": [
+            "dak",
+            "dik",
+            "dawk"
+          ],
+          "items": [
+            {
+              "word": "muntanja",
+              "en": "mountain (f)",
+              "answer": "dik"
+            },
+            {
+              "word": "vapur",
+              "en": "ship (m)",
+              "answer": "dak"
+            },
+            {
+              "word": "ġurnali",
+              "en": "newspapers (pl)",
+              "answer": "dawk"
+            },
+            {
+              "word": "kappillan",
+              "en": "priest (m)",
+              "answer": "dak"
+            },
+            {
+              "word": "knisja",
+              "en": "church (f)",
+              "answer": "dik"
+            },
+            {
+              "word": "trakkijiet",
+              "en": "trucks (pl)",
+              "answer": "dawk"
+            },
+            {
+              "word": "vann",
+              "en": "van (m)",
+              "answer": "dak"
+            },
+            {
+              "word": "borża",
+              "en": "bag (f)",
+              "answer": "dik"
+            },
+            {
+              "word": "siġar",
+              "en": "trees (pl)",
+              "answer": "dawk"
+            },
+            {
+              "word": "ħanut",
+              "en": "shop (m)",
+              "answer": "dak"
+            },
+            {
+              "word": "raħal",
+              "en": "village (m)",
+              "answer": "dak"
+            },
+            {
+              "word": "festa",
+              "en": "festival (f)",
+              "answer": "dik"
+            },
+            {
+              "word": "stejjer",
+              "en": "stories (pl)",
+              "answer": "dawk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "syllables",
+      "icon": "🔡",
+      "title": "Syllables",
+      "subtitle": "Is-Sillabi — splitting words into syllables",
+      "intro": "In Maltese, splitting a word into syllables makes spelling easier — you can hear (and write) every sound. Three rules: each syllable has only one vowel; the second syllable starts with a consonant; if two consonants meet in the middle, split between them.",
+      "facts": [
+        "Each syllable has only one vowel.",
+        "The second syllable starts with a consonant.",
+        "If two consonants meet in the middle, split between them.",
+        "Examples: omm → omm; mara → ma-ra; kelma → kel-ma."
+      ],
+      "items": [
+        {
+          "word": "kelma",
+          "syllables": "kel-ma"
+        },
+        {
+          "word": "ħabib",
+          "syllables": "ħa-bib"
+        },
+        {
+          "word": "ġnien",
+          "syllables": "ġnien"
+        },
+        {
+          "word": "skola",
+          "syllables": "sko-la"
+        },
+        {
+          "word": "tieqa",
+          "syllables": "tie-qa"
+        },
+        {
+          "word": "ktieb",
+          "syllables": "ktieb"
+        },
+        {
+          "word": "tifel",
+          "syllables": "ti-fel"
+        },
+        {
+          "word": "Malta",
+          "syllables": "Mal-ta"
+        },
+        {
+          "word": "uffiċċju",
+          "syllables": "uf-fiċ-ċju"
+        },
+        {
+          "word": "lingwa",
+          "syllables": "ling-wa"
+        },
+        {
+          "word": "festa",
+          "syllables": "fes-ta"
+        },
+        {
+          "word": "saħħa",
+          "syllables": "saħ-ħa"
+        },
+        {
+          "word": "pjazza",
+          "syllables": "pjaz-za"
+        },
+        {
+          "word": "siġra",
+          "syllables": "siġ-ra"
+        },
+        {
+          "word": "qattus",
+          "syllables": "qat-tus"
+        },
+        {
+          "word": "fenek",
+          "syllables": "fe-nek"
+        },
+        {
+          "word": "Birkirkara",
+          "syllables": "Bir-kir-ka-ra"
+        },
+        {
+          "word": "ġurnata",
+          "syllables": "ġur-na-ta"
+        },
+        {
+          "word": "studju",
+          "syllables": "stu-dju"
+        },
+        {
+          "word": "vjaġġ",
+          "syllables": "vjaġġ"
+        }
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "icon": "📚",
+      "title": "Vocabulary",
+      "subtitle": "Il-vokabularju — words & verbs from this lesson",
+      "intro": "All the lesson vocabulary in one place. Pronouns, demonstratives and example nouns drilled together.",
+      "groups": [
+        {
+          "title": "Personal pronouns",
+          "icon": "👥",
+          "items": [
+            {
+              "icon": "🙋",
+              "mt": "Jien / Jiena",
+              "en": "I"
+            },
+            {
+              "icon": "👉",
+              "mt": "Int / Inti",
+              "en": "You (singular)"
+            },
+            {
+              "icon": "👨",
+              "mt": "Hu / Huwa",
+              "en": "He"
+            },
+            {
+              "icon": "👩",
+              "mt": "Hi / Hija",
+              "en": "She"
+            },
+            {
+              "icon": "👥",
+              "mt": "Aħna",
+              "en": "We"
+            },
+            {
+              "icon": "👥",
+              "mt": "Intom",
+              "en": "You (plural)"
+            },
+            {
+              "icon": "👥",
+              "mt": "Huma",
+              "en": "They"
+            }
+          ]
+        },
+        {
+          "title": "Demonstratives — close (this/these)",
+          "icon": "👇",
+          "subtitle": "Used for things near you. Match the gender / number.",
+          "items": [
+            {
+              "icon": "👨",
+              "mt": "Dan",
+              "en": "This (masculine)"
+            },
+            {
+              "icon": "👩",
+              "mt": "Din",
+              "en": "This (feminine)"
+            },
+            {
+              "icon": "👥",
+              "mt": "Dawn",
+              "en": "These (plural)"
+            }
+          ]
+        },
+        {
+          "title": "Demonstratives — far (that/those)",
+          "icon": "👉",
+          "subtitle": "Used for things further away. Match the gender / number.",
+          "items": [
+            {
+              "icon": "👨",
+              "mt": "Dak",
+              "en": "That (masculine)"
+            },
+            {
+              "icon": "👩",
+              "mt": "Dik",
+              "en": "That (feminine)"
+            },
+            {
+              "icon": "👥",
+              "mt": "Dawk",
+              "en": "Those (plural)"
+            }
+          ]
+        },
+        {
+          "title": "Example nouns from the lesson",
+          "icon": "📦",
+          "items": [
+            {
+              "icon": "⏰",
+              "mt": "Arloġġ",
+              "en": "Clock (m)"
+            },
+            {
+              "icon": "🚪",
+              "mt": "Bieb",
+              "en": "Door (m)"
+            },
+            {
+              "icon": "🔑",
+              "mt": "Ċavetta",
+              "en": "Key (f)"
+            },
+            {
+              "icon": "🧥",
+              "mt": "Ġakketta",
+              "en": "Jacket (f)"
+            },
+            {
+              "icon": "👗",
+              "mt": "Libsa",
+              "en": "Dress (f)"
+            },
+            {
+              "icon": "👶",
+              "mt": "Tfal",
+              "en": "Children (pl)"
+            },
+            {
+              "icon": "🥐",
+              "mt": "Pasti",
+              "en": "Sweet pastries (pl)"
+            },
+            {
+              "icon": "🦋",
+              "mt": "Farfett",
+              "en": "Butterfly (m)"
+            },
+            {
+              "icon": "🌸",
+              "mt": "Werqa",
+              "en": "Leaf (f)"
+            },
+            {
+              "icon": "🐕",
+              "mt": "Kelb",
+              "en": "Dog (m)"
+            },
+            {
+              "icon": "🐈",
+              "mt": "Qattusa",
+              "en": "Cat — female (f)"
+            },
+            {
+              "icon": "👨",
+              "mt": "Raġel",
+              "en": "Man (m)"
+            },
+            {
+              "icon": "👩",
+              "mt": "Mara",
+              "en": "Woman (f)"
+            },
+            {
+              "icon": "🛏️",
+              "mt": "Sodda",
+              "en": "Bed (f)"
+            },
+            {
+              "icon": "🪟",
+              "mt": "Tieqa",
+              "en": "Window (f)"
+            },
+            {
+              "icon": "🪑",
+              "mt": "Siġġu",
+              "en": "Chair (m)"
+            },
+            {
+              "icon": "🌳",
+              "mt": "Siġra",
+              "en": "Tree (f)"
+            },
+            {
+              "icon": "🍊",
+              "mt": "Larinġa",
+              "en": "Orange (f)"
+            },
+            {
+              "icon": "🌼",
+              "mt": "Fjuri",
+              "en": "Flowers (pl)"
+            }
+          ]
+        },
+        {
+          "title": "Common verbs from the dialogues",
+          "icon": "🏃",
+          "items": [
+            {
+              "icon": "⚽",
+              "mt": "Nilgħab",
+              "en": "I play"
+            },
+            {
+              "icon": "⚽",
+              "mt": "Tilgħab",
+              "en": "You play"
+            },
+            {
+              "icon": "⚽",
+              "mt": "Jilgħab",
+              "en": "He plays"
+            },
+            {
+              "icon": "⚽",
+              "mt": "Tilgħab",
+              "en": "She plays"
+            },
+            {
+              "icon": "⚽",
+              "mt": "Nilagħbu",
+              "en": "We play"
+            },
+            {
+              "icon": "❤️",
+              "mt": "Inħobb",
+              "en": "I love"
+            },
+            {
+              "icon": "❤️",
+              "mt": "Tħobb",
+              "en": "You love / she loves"
+            },
+            {
+              "icon": "🧠",
+              "mt": "Naf",
+              "en": "I know"
+            },
+            {
+              "icon": "🧠",
+              "mt": "Taf",
+              "en": "You know / she knows"
+            }
+          ]
+        },
+        {
+          "title": "Syllable rules in action",
+          "icon": "🔤",
+          "subtitle": "How some lesson words split into syllables.",
+          "items": [
+            {
+              "icon": "🚲",
+              "mt": "ro-ta",
+              "en": "rota = bicycle"
+            },
+            {
+              "icon": "🐛",
+              "mt": "in-sett",
+              "en": "insett = insect"
+            },
+            {
+              "icon": "👗",
+              "mt": "lib-sa",
+              "en": "libsa = dress"
+            },
+            {
+              "icon": "🍴",
+              "mt": "fur-ket-ta",
+              "en": "furketta = fork"
+            },
+            {
+              "icon": "👶",
+              "mt": "tfal",
+              "en": "tfal = children (one syllable, no vowel split)"
+            },
+            {
+              "icon": "🛏️",
+              "mt": "sod-da",
+              "en": "sodda = bed"
+            },
+            {
+              "icon": "🍌",
+              "mt": "ba-na-na",
+              "en": "banana = banana"
+            },
+            {
+              "icon": "🌞",
+              "mt": "qa-mar",
+              "en": "qamar = moon"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar3",
+      "icon": "📖",
+      "title": "Grammar",
+      "subtitle": "Il-grammatika — the grammar of Lesson 3",
+      "intro": "Pronouns, demonstratives and the syllable-splitting rules from the slides.",
+      "rules": [
+        {
+          "id": "personal-pronouns",
+          "title": "Personal pronouns — replace nouns",
+          "explanation": "Personal pronouns (Jien, Int, Hu, Hi, Aħna, Intom, Huma) replace a noun. Hu/Huwa = he OR it (masculine); Hi/Hija = she OR it (feminine). Things and animals also get gender — a clock (arloġġ) is 'hu' because it's masculine.",
+          "letters": [
+            "Jien",
+            "Int",
+            "Hu",
+            "Hi",
+            "Aħna",
+            "Intom",
+            "Huma"
+          ],
+          "examples": [
+            {
+              "mt": "Jack imur il-futbol → Hu jmur il-futbol",
+              "en": "Jack goes to football → He goes to football"
+            },
+            {
+              "mt": "Julia għandha pupa → Hi għandha pupa",
+              "en": "Julia has a doll → She has a doll"
+            },
+            {
+              "mt": "It-tfal raqdu → Huma raqdu",
+              "en": "The children slept → They slept"
+            },
+            {
+              "mt": "L-arloġġ kbir → Hu kbir",
+              "en": "The clock is big → It (m) is big"
+            },
+            {
+              "mt": "Il-fjura safra → Hi safra",
+              "en": "The flower is yellow → It (f) is yellow"
+            },
+            {
+              "mt": "Il-karozzi sbieħ → Huma sbieħ",
+              "en": "The cars are beautiful → They are beautiful"
+            }
+          ]
+        },
+        {
+          "id": "demonstratives-close",
+          "title": "Demonstratives — close: dan, din, dawn",
+          "explanation": "When pointing to something near, use dan (m), din (f), dawn (pl). The form has to match the noun's gender and number.",
+          "letters": [
+            "Dan (m)",
+            "Din (f)",
+            "Dawn (pl)"
+          ],
+          "examples": [
+            {
+              "mt": "Dan ir-raġel",
+              "en": "This man (m sing)"
+            },
+            {
+              "mt": "Din il-mara",
+              "en": "This woman (f sing)"
+            },
+            {
+              "mt": "Dan l-arloġġ",
+              "en": "This clock (m sing)"
+            },
+            {
+              "mt": "Din iċ-ċavetta",
+              "en": "This key (f sing)"
+            },
+            {
+              "mt": "Dawn it-tfal",
+              "en": "These children (pl)"
+            },
+            {
+              "mt": "Dawn il-pasti",
+              "en": "These pastries (pl)"
+            }
+          ]
+        },
+        {
+          "id": "demonstratives-far",
+          "title": "Demonstratives — far: dak, dik, dawk",
+          "explanation": "When pointing to something further away, use dak (m), dik (f), dawk (pl). Same agreement rules as the close forms.",
+          "letters": [
+            "Dak (m)",
+            "Dik (f)",
+            "Dawk (pl)"
+          ],
+          "examples": [
+            {
+              "mt": "Dak ir-raġel",
+              "en": "That man (m sing)"
+            },
+            {
+              "mt": "Dik il-mara",
+              "en": "That woman (f sing)"
+            },
+            {
+              "mt": "Dak il-flixkun",
+              "en": "That bottle (m sing)"
+            },
+            {
+              "mt": "Dik il-larinġa",
+              "en": "That orange (f sing)"
+            },
+            {
+              "mt": "Dawk il-fjuri",
+              "en": "Those flowers (pl)"
+            },
+            {
+              "mt": "Dawk it-tfal",
+              "en": "Those children (pl)"
+            }
+          ]
+        },
+        {
+          "id": "syllables",
+          "title": "Splitting words into syllables",
+          "explanation": "Maltese has three rules. (1) Each syllable must contain exactly one vowel. (2) The second syllable must start with a consonant. (3) When two consonants sit next to each other in the middle of a word, split between them.",
+          "examples": [
+            {
+              "mt": "ma-ra",
+              "en": "mara → ma/ra (one vowel per syllable)"
+            },
+            {
+              "mt": "ra-ġel",
+              "en": "raġel → ra/ġel"
+            },
+            {
+              "mt": "mej-da",
+              "en": "mejda → mej/da (split between two consonants)"
+            },
+            {
+              "mt": "fur-ket-ta",
+              "en": "furketta → fur/ket/ta"
+            },
+            {
+              "mt": "tfal",
+              "en": "tfal stays as one syllable — no vowel to split on"
+            },
+            {
+              "mt": "ors",
+              "en": "ors stays as one syllable"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
