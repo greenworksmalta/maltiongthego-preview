@@ -20,7 +20,7 @@ const VERSION = "1.0.0-beta.26";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "20260601d";
+const BUILD = "20260601e";
 function v(url){ return url + (url.includes("?")?"&":"?") + "v=" + VERSION; }
 
 // Lightweight UI strings table for the parts of the app that aren't data-driven.
@@ -2647,7 +2647,12 @@ function makeBucketSortStep(exId, opts){
     function select(chip){ if(selected) selected.classList.remove("sel"); selected=chip; chip.classList.add("sel"); play(chip.dataset.word); }
     batch.forEach(it=>{
       const chip = el("button","tile bucket-chip", it.word);
-      chip.dataset.answer = it.answer; chip.dataset.word = it.word; chip.dataset.full = (it.answer||"")+it.word;
+      // Reveal-audio concatenates answer+word ONLY when the answer is an article
+      // (ends in "-", e.g. il-/l-/id-) → speaks "il-ktieb". For category buckets
+      // (e.g. "Changes"/"Never changes") the answer isn't an article, so speak the
+      // bare word instead of a nonsense concatenation.
+      const fullForm = (it.answer && /-$/.test(it.answer)) ? it.answer+it.word : it.word;
+      chip.dataset.answer = it.answer; chip.dataset.word = it.word; chip.dataset.full = fullForm;
       chip.addEventListener("click", ()=>{ if(!chip.classList.contains("done")) select(chip); });
       pool.appendChild(chip);
     });

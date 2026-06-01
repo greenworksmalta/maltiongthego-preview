@@ -34,6 +34,13 @@
           "mt": "Ħmistax-il ewro.",
           "en": "Fifteen euro."
         }
+      ],
+      "exercises": [
+        { "id": "desbuild", "type": "build", "max": 3, "title": "Build the lines from the shop", "items": [
+          { "mt": "Skużani, qed infittex qmis ħamra.", "en": "Excuse me, I'm looking for a red shirt." },
+          { "mt": "Din il-qmis il-ħamra togħġbok?", "en": "Do you like this red shirt?" },
+          { "mt": "Perfetta! Kemm tiswa?", "en": "Perfect! How much is it?" }
+        ] }
       ]
     },
     {
@@ -283,6 +290,28 @@
             }
           ]
         }
+      ],
+      "exercises": [
+        { "id": "colmc", "type": "mc", "title": "Match the colour to the noun", "instructions": "Pick the form of red that matches the noun.", "opts": { "blankAfter": true }, "choices": ["aħmar", "ħamra", "ħomor"], "items": [
+          { "word": "ktieb", "en": "book (m)", "answer": "aħmar" },
+          { "word": "tazza", "en": "glass (f)", "answer": "ħamra" },
+          { "word": "qmis", "en": "shirt (f)", "answer": "ħamra" },
+          { "word": "fjuri", "en": "flowers (pl)", "answer": "ħomor" }
+        ] },
+        { "id": "colbucket", "type": "bucket", "batch": 6, "title": "Does the colour change form?", "instructions": "Sort each colour: does it change for gender and number, or stay the same?", "choices": ["Changes", "Never changes"], "items": [
+          { "word": "aħmar", "answer": "Changes" },
+          { "word": "abjad", "answer": "Changes" },
+          { "word": "iswed", "answer": "Changes" },
+          { "word": "isfar", "answer": "Changes" },
+          { "word": "aħdar", "answer": "Changes" },
+          { "word": "griż", "answer": "Changes" },
+          { "word": "blu", "answer": "Never changes" },
+          { "word": "roża", "answer": "Never changes" },
+          { "word": "vjola", "answer": "Never changes" },
+          { "word": "kannella", "answer": "Never changes" },
+          { "word": "oranġjo", "answer": "Never changes" },
+          { "word": "ċelesti", "answer": "Never changes" }
+        ] }
       ]
     },
     {
@@ -446,6 +475,16 @@
             "en": "weak (m)"
           }
         }
+      ],
+      "exercises": [
+        { "id": "adjmatch", "type": "match", "title": "Match each adjective to its opposite", "leftField": "mt", "rightField": "opp", "items": [
+          { "mt": "kbir", "opp": "żgħir" },
+          { "mt": "twil", "opp": "qasir" },
+          { "mt": "sabiħ", "opp": "ikrah" },
+          { "mt": "tajjeb", "opp": "ħażin" },
+          { "mt": "nadif", "opp": "maħmuġ" },
+          { "mt": "sħun", "opp": "kiesaħ" }
+        ] }
       ]
     },
     {
@@ -491,6 +530,16 @@
           "mt": "borża",
           "en": "bag"
         }
+      ],
+      "exercises": [
+        { "id": "clomatch", "type": "match", "title": "Match the clothing to its meaning", "leftField": "mt", "rightField": "en", "items": [
+          { "mt": "qmis", "en": "shirt" },
+          { "mt": "qalziet", "en": "trousers" },
+          { "mt": "libsa", "en": "dress" },
+          { "mt": "ġakketta", "en": "jacket" },
+          { "mt": "żraben", "en": "shoes" },
+          { "mt": "kappell", "en": "hat" }
+        ] }
       ]
     },
     {
@@ -520,6 +569,13 @@
           "mt": "qasir",
           "en": "short (m)"
         }
+      ],
+      "exercises": [
+        { "id": "szmc", "type": "mc", "title": "Make the describing word agree", "instructions": "Pick the form of tall/long that matches.", "opts": { "blankAfter": true }, "choices": ["twil", "twila", "twal"], "items": [
+          { "word": "raġel", "en": "man (m)", "answer": "twil" },
+          { "word": "mara", "en": "woman (f)", "answer": "twila" },
+          { "word": "tfal", "en": "children (pl)", "answer": "twal" }
+        ] }
       ]
     },
     {
@@ -641,6 +697,16 @@
             }
           ]
         }
+      ],
+      "exercises": [
+        { "id": "g4build", "type": "build", "max": 6, "title": "Build the phrase — noun first, then the matching describing word", "items": [
+          { "mt": "ktieb abjad", "en": "a white book (m)" },
+          { "mt": "karozza bajda", "en": "a white car (f)" },
+          { "mt": "ħitan bojod", "en": "white walls (pl)" },
+          { "mt": "raġel twil", "en": "a tall man (m)" },
+          { "mt": "mara twila", "en": "a tall woman (f)" },
+          { "mt": "tfal twal", "en": "tall children (pl)" }
+        ] }
       ]
     },
     {
