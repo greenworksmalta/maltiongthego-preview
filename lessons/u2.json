@@ -760,8 +760,8 @@
               "en": "tall children (pl)"
             },
             {
-              "mt": "ktieb sabiħ",
-              "en": "a beautiful book (m)"
+              "mt": "ġnien sabiħ",
+              "en": "a beautiful garden (m)"
             },
             {
               "mt": "fjura sabiħa",
@@ -786,32 +786,32 @@
           ],
           "examples": [
             {
-              "mt": "flokk abjad",
-              "en": "a white t-shirt (m)"
+              "mt": "kelb abjad",
+              "en": "a white dog (m)"
             },
             {
-              "mt": "mejda bajda",
-              "en": "a white table (f)"
+              "mt": "karozza bajda",
+              "en": "a white car (f)"
             },
             {
-              "mt": "fniek bojod",
-              "en": "white rabbits (pl)"
+              "mt": "ħitan bojod",
+              "en": "white walls (pl)"
             },
             {
-              "mt": "vann aħmar",
-              "en": "a red van (m)"
+              "mt": "ballun aħmar",
+              "en": "a red ball (m)"
             },
             {
-              "mt": "zalza ħamra",
-              "en": "red sauce (f)"
+              "mt": "tuffieħa ħamra",
+              "en": "a red apple (f)"
             },
             {
-              "mt": "għasafar ħomor",
-              "en": "red birds (pl)"
+              "mt": "fjuri ħomor",
+              "en": "red flowers (pl)"
             },
             {
-              "mt": "ġakketta blu",
-              "en": "a blue jacket — blu doesn't change"
+              "mt": "baħar blu",
+              "en": "the blue sea — blu doesn't change"
             }
           ]
         },
@@ -821,20 +821,20 @@
           "explanation": "Maltese shifts gear as you count, and three things follow the number. 'Two' before a noun is żewġ, not tnejn (żewġ pastizzi). The numbers 3–10 slim down — tlieta→tliet, ħamsa→ħames, għaxra→għaxar — and the noun goes plural (tliet snin, three years). From 11 up the number links on with -il and the noun flips back to singular (ħdax-il sena, eleven years). Compare għaxar snin (10 years, plural) with tlieta u għoxrin sena (23 years, singular) — English never does this, so give it a few reps.",
           "examples": [
             {
-              "mt": "Għandi tliet snin",
-              "en": "I am 3 years old (3 + plural noun)"
+              "mt": "Għandi tliet kotba",
+              "en": "I have 3 books (3 + plural noun)"
             },
             {
-              "mt": "Għandi għaxar snin",
-              "en": "I am 10 years old (10 + plural noun)"
+              "mt": "Għandi għaxar kotba",
+              "en": "I have 10 books (10 + plural noun)"
             },
             {
-              "mt": "Għandi tlieta u għoxrin sena",
-              "en": "I am 23 years old (23 + singular noun)"
+              "mt": "Għandi tlieta u għoxrin ktieb",
+              "en": "I have 23 books (23 + singular noun)"
             },
             {
-              "mt": "Għandi ħamsa u ħamsin sena",
-              "en": "I am 55 years old (55 + singular noun)"
+              "mt": "Għandi ħamsa u ħamsin ktieb",
+              "en": "I have 55 books (55 + singular noun)"
             }
           ]
         },
@@ -864,8 +864,8 @@
               "en": "The second street on the right"
             },
             {
-              "mt": "Fl-eżami ġejt il-wieħed u għoxrin",
-              "en": "In the exam, I came 21st"
+              "mt": "Fit-tellieqa spiċċajt il-wieħed u għoxrin",
+              "en": "In the race I finished 21st"
             }
           ]
         }
