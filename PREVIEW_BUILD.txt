@@ -1,5 +1,5 @@
-build 20260601aa
+build 20260601bb
 VERSION 1.0.0-beta.26
-CACHE maltiongthego-1.0.0-beta.26-20260601aa
+CACHE maltiongthego-1.0.0-beta.26-20260601bb
 date 2026-06-01
-notes: stale-manifest fix (new clips now play); Family intro; possessive rows aligned.
+notes: U5 vocab recap completed (demonstratives/possessives/attached).

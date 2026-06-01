@@ -431,7 +431,7 @@
       "icon": "👨‍👩‍👧",
       "title": "Family",
       "subtitle": "Il-familja: the people closest to you",
-      "intro": "The words for the people closest to you. Many take the possessive endings from this unit: ommi (my mother), missieri (my father), ħija (my brother).",
+      "intro": "Core family members to start with.",
       "vocab": [
         {
           "mt": "Familja",
@@ -528,7 +528,6 @@
           "en": "Brother / Siblings"
         }
       ],
-      "intro": "Core family members to start with.",
       "exercises": [
         {
           "id": "fammatch",
@@ -1093,6 +1092,101 @@
             {
               "mt": "Zija",
               "en": "Aunt"
+            }
+          ]
+        },
+        {
+          "title": "Demonstratives",
+          "items": [
+            {
+              "mt": "Dan",
+              "en": "This (m)"
+            },
+            {
+              "mt": "Din",
+              "en": "This (f)"
+            },
+            {
+              "mt": "Dawn",
+              "en": "These (pl)"
+            },
+            {
+              "mt": "Dak",
+              "en": "That (m)"
+            },
+            {
+              "mt": "Dik",
+              "en": "That (f)"
+            },
+            {
+              "mt": "Dawk",
+              "en": "Those (pl)"
+            }
+          ]
+        },
+        {
+          "title": "Possessives",
+          "items": [
+            {
+              "mt": "tiegħi",
+              "en": "my / mine"
+            },
+            {
+              "mt": "tiegħek",
+              "en": "your / yours (sing)"
+            },
+            {
+              "mt": "tiegħu",
+              "en": "his"
+            },
+            {
+              "mt": "tagħha",
+              "en": "her / hers"
+            },
+            {
+              "mt": "tagħna",
+              "en": "our / ours"
+            },
+            {
+              "mt": "tagħkom",
+              "en": "your / yours (pl)"
+            },
+            {
+              "mt": "tagħhom",
+              "en": "their / theirs"
+            }
+          ]
+        },
+        {
+          "title": "Possessive endings (e.g. father)",
+          "items": [
+            {
+              "mt": "missieri",
+              "en": "my father"
+            },
+            {
+              "mt": "missierek",
+              "en": "your father"
+            },
+            {
+              "mt": "missieru",
+              "en": "his father"
+            },
+            {
+              "mt": "missierha",
+              "en": "her father"
+            },
+            {
+              "mt": "missierna",
+              "en": "our father"
+            },
+            {
+              "mt": "missierkom",
+              "en": "your (pl) father"
+            },
+            {
+              "mt": "missierhom",
+              "en": "their father"
             }
           ]
         }
