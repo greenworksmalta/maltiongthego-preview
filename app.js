@@ -20,7 +20,7 @@ const VERSION = "1.0.0-beta.26";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "20260601q";
+const BUILD = "20260601r";
 function v(url){ return url + (url.includes("?")?"&":"?") + "v=" + VERSION; }
 
 // Lightweight UI strings table for the parts of the app that aren't data-driven.
@@ -2733,6 +2733,12 @@ function makeMcStep(exId, opts){
     if(ex.instructions) card.appendChild(el("p","muted",ex.instructions));
     const wordRow = el("div","row");
     const audioStr = audioCombine ? audioCombine(item) : item[wordField];
+    // Full correct phrase to voice AFTER a correct answer (e.g. "ktieb aħmar"),
+    // when opts.audioAnswer is set. Prefer an explicit item.mt; else assemble
+    // respecting blankAfter (noun + answer) vs default (answer + noun). The top
+    // prompt button still plays only audioStr, so the answer isn't given away.
+    const answerAudio = item.mt || (opts.blankAfter ? (item[wordField] + " " + item.answer)
+                                                    : (item.answer + " " + item[wordField]));
     wordRow.appendChild(audioBtn(audioStr, {size:"lg", rate: MC_RATE}));
     const w = el("div","grow");
     // Prompt text: a custom displayFn wins; else fill-in-the-blank. `blankAfter`
@@ -2752,8 +2758,9 @@ function makeMcStep(exId, opts){
       const b = el("button","chip", c);
       b.addEventListener("click", ()=>{
         if(c===item.answer){
-          b.classList.add("right"); addXp(5); play(audioStr, {rate: MC_RATE});
-          showFeedback(true,"Sewwa!", item.answer+(opts.detailFn? " "+opts.detailFn(item):""), onNext);
+          b.classList.add("right"); addXp(5);
+          play(opts.audioAnswer ? answerAudio : audioStr, {rate: MC_RATE});
+          showFeedback(true,"Sewwa!", (opts.audioAnswer ? answerAudio : item.answer)+(opts.detailFn? " "+opts.detailFn(item):""), onNext);
         } else {
           b.classList.add("wrong");
           [...chips.children].forEach(x=>{ if(x.textContent===item.answer) x.classList.add("right"); });

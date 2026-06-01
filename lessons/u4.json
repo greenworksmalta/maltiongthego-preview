@@ -251,21 +251,21 @@
           ]
         },
         {
-          "mt": "oranġo",
-          "feminine": "oranġo",
-          "plural": "oranġo",
+          "mt": "oranġjo",
+          "feminine": "oranġjo",
+          "plural": "oranġjo",
           "en": "orange",
           "examples": [
             {
-              "mt": "karozza oranġo",
+              "mt": "karozza oranġjo",
               "en": "orange car"
             },
             {
-              "mt": "qmis oranġo",
+              "mt": "qmis oranġjo",
               "en": "orange shirt"
             },
             {
-              "mt": "inżul ix-xemx oranġo",
+              "mt": "inżul ix-xemx oranġjo",
               "en": "orange sunset"
             }
           ]
@@ -292,11 +292,11 @@
         }
       ],
       "exercises": [
-        { "id": "colmc", "type": "mc", "title": "Match the colour to the noun", "instructions": "Pick the form of red that matches the noun.", "opts": { "blankAfter": true }, "choices": ["aħmar", "ħamra", "ħomor"], "items": [
-          { "word": "ktieb", "en": "book (m)", "answer": "aħmar" },
-          { "word": "tazza", "en": "glass (f)", "answer": "ħamra" },
-          { "word": "qmis", "en": "shirt (f)", "answer": "ħamra" },
-          { "word": "fjuri", "en": "flowers (pl)", "answer": "ħomor" }
+        { "id": "colmc", "type": "mc", "title": "Match the colour to the noun", "instructions": "Pick the form of red that matches the noun.", "opts": { "blankAfter": true, "audioAnswer": true }, "choices": ["aħmar", "ħamra", "ħomor"], "items": [
+          { "word": "ktieb", "en": "book (m)", "answer": "aħmar", "mt": "ktieb aħmar" },
+          { "word": "tazza", "en": "glass (f)", "answer": "ħamra", "mt": "tazza ħamra" },
+          { "word": "qmis", "en": "shirt (f)", "answer": "ħamra", "mt": "qmis ħamra" },
+          { "word": "fjuri", "en": "flowers (pl)", "answer": "ħomor", "mt": "fjuri ħomor" }
         ] },
         { "id": "colbucket", "type": "bucket", "batch": 6, "title": "Does the colour change form?", "instructions": "Sort each colour: does it change for gender and number, or stay the same?", "choices": ["Changes", "Never changes"], "items": [
           { "word": "aħmar", "answer": "Changes" },
@@ -309,7 +309,7 @@
           { "word": "roża", "answer": "Never changes" },
           { "word": "vjola", "answer": "Never changes" },
           { "word": "kannella", "answer": "Never changes" },
-          { "word": "oranġo", "answer": "Never changes" },
+          { "word": "oranġjo", "answer": "Never changes" },
           { "word": "ċelesti", "answer": "Never changes" }
         ] }
       ]
@@ -760,7 +760,7 @@
               "en": "purple"
             },
             {
-              "mt": "oranġo",
+              "mt": "oranġjo",
               "en": "orange"
             },
             {
