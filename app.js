@@ -731,7 +731,7 @@ function progressBar(pct){
 }
 
 const $fb = () => document.getElementById("feedback");
-function showFeedback(good, title, detail, onNext){
+function showFeedback(good, title, detail, onNext, opts){
   const fb = $fb();
   fb.className = "feedback show "+(good?"good":"bad");
   fb.innerHTML = "";
@@ -740,7 +740,7 @@ function showFeedback(good, title, detail, onNext){
   txt.appendChild(el("h3","",title));
   if(detail){ txt.appendChild(el("p","",detail)); }
   row.appendChild(txt);
-  const nx = el("button","next","Next →");
+  const nx = el("button","next", (opts && opts.label) || "Next →");
   nx.addEventListener("click", ()=>{ hideFeedback(); onNext&&onNext(); });
   row.appendChild(nx);
   fb.appendChild(row);
@@ -1869,10 +1869,41 @@ async function renderOverview(lid, lang){
 //   groups[]              → "list"     (reuses vocabulary:list)
 //   rules[]               → "rules"    (reuses renderGrammarRulesStep)
 //   vocab[] / items[]     → "flash"    (reuses weekend:flash, reading either field)
+// For a section with a HARDCODED flow, drop steps whose backing data is absent
+// (reorg may have stripped a field, e.g. dialogue). Maps each step name to the
+// section field it requires; if that field is missing/empty, the step is removed
+// from the flow so the learner never lands on a renderer that throws.
+const STEP_DATA_REQUIRES = {
+  listen: "dialogue", build: "dialogue", dialogue: "dialogue",
+  passage: "passage", letter: "letters", match: "letters",
+  ordinals: "ordinals", plurals: "plurals", winds: "winds",
+  regions: "regions", hours: "hours", patterns: "patterns",
+};
+function pruneDeadSteps(sec){
+  const flow = SECTION_FLOWS[sec.id];
+  if(!Array.isArray(flow)) return;
+  const kept = flow.filter(step => {
+    const need = STEP_DATA_REQUIRES[step];
+    if(!need) return true;                       // step has no data dependency we track
+    const v = sec[need];
+    return Array.isArray(v) ? v.length > 0 : !!v;
+  });
+  if(kept.length !== flow.length){
+    SECTION_FLOWS[sec.id] = kept.length ? kept : ["flash"]; // never leave it empty
+  }
+}
+
 // Registration is idempotent and never overrides an already-defined id.
 function ensureSectionRegistered(sec){
   if(!sec || !sec.id) return;
-  if(SECTION_FLOWS[sec.id]) return;            // known (hardcoded) — leave as-is
+  if(SECTION_FLOWS[sec.id]){
+    // KNOWN (hardcoded) flow — but the section's DATA may have been trimmed in the
+    // reorg (e.g. a reused 'phrases' section kept its vocab but lost its dialogue).
+    // Prune any flow step whose required data is now missing, so we never advance
+    // into a renderer that reads an absent field and dead-ends on "could not load".
+    pruneDeadSteps(sec);
+    return;
+  }
 
   const id = sec.id;
   const flow = [];
@@ -2349,9 +2380,11 @@ function skipBtn(onNext){
   return b;
 }
 
-// Listen-and-pick with given items array (each having mt/en)
+// Listen-and-pick with given items array (each having mt/en).
+// On a wrong answer the learner gets a "Try again" option (re-renders this same
+// step with a fresh shuffle) instead of being pushed straight on.
 function makeListenStep(field){
-  return (root, sec, idx, onNext) => {
+  const render = (root, sec, idx, onNext) => {
     const items = sec[field];
     const correct = items[idx % items.length];
     const distractors = items.filter(x=>x!==correct).sort(()=>Math.random()-.5).slice(0,3);
@@ -2363,6 +2396,7 @@ function makeListenStep(field){
     row.appendChild(el("div","grow muted","Tap the speaker, then choose."));
     card.appendChild(row);
     root.appendChild(card);
+    const retry = () => { root.innerHTML = ""; render(root, sec, idx, onNext); };
     const choices = el("div","choices col");
     opts.forEach(o=>{
       const b = el("button","choice", o.en);
@@ -2372,7 +2406,8 @@ function makeListenStep(field){
           showFeedback(true,"Sewwa! Correct.", correct.mt+" → "+correct.en, onNext);
         } else {
           b.classList.add("wrong");
-          showFeedback(false,"Not quite.", "Correct: "+correct.mt+" → "+correct.en, onNext);
+          // Wrong → offer a retry. showFeedback's button re-renders this step.
+          showFeedback(false,"Not quite — try again.", "Tap the speaker again and listen carefully.", retry, {label:"Try again ↺"});
         }
         [...choices.children].forEach(c=>{ if(c!==b) c.classList.add("dim"); c.disabled=true; });
       });
@@ -2382,6 +2417,7 @@ function makeListenStep(field){
     root.appendChild(skipBtn(onNext));
     setTimeout(()=>play(correct.mt), 300);
   };
+  return render;
 }
 
 // Tap-to-build sentence

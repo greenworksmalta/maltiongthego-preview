@@ -7,7 +7,7 @@
       "id": "meeting",
       "icon": "👋",
       "title": "Meeting someone",
-      "subtitle": "Jġib ruħu — saying hello and introducing yourself",
+      "subtitle": "Tiltaqa' man-nies — saying hello and introducing yourself",
       "intro": "A first chat with a new neighbour.",
       "dialogue": [
         {
@@ -31,8 +31,8 @@
           "en": "I'm English, but now I live in Malta."
         },
         {
-          "mt": "Mela merħba f'Malta!",
-          "en": "So, welcome to Malta!"
+          "mt": "Tajjeb, merħba f'Malta!",
+          "en": "Good — welcome to Malta!"
         }
       ]
     },
