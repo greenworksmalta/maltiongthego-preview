@@ -20,7 +20,7 @@ const VERSION = "1.0.0-beta.26";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "20260601t";
+const BUILD = "20260601u";
 function v(url){ return url + (url.includes("?")?"&":"?") + "v=" + VERSION; }
 
 // Lightweight UI strings table for the parts of the app that aren't data-driven.
@@ -710,7 +710,7 @@ async function loadOverview(lid, lang){
 // `backHash === null` means we're on the home screen itself — no back arrow,
 // and no home shortcut (we're already there). Every other screen gets a small
 // 🏠 button so testers/users can jump straight home without back-stepping.
-function topbar(title, backHash){
+function topbar(title, backHash, nextSecHash){
   const bar = el("div","topbar");
   const back = el("button","back", backHash ? "←" : "");
   back.setAttribute("aria-label","Back");
@@ -723,6 +723,15 @@ function topbar(title, backHash){
     home.setAttribute("aria-label","Home");
     home.addEventListener("click", ()=>go("/home"));
     bar.appendChild(home);
+  }
+  // Next section lives here, next to Home, so it's out of the way of the
+  // per-item Previous/Next/Skip controls under the card.
+  if(nextSecHash){
+    const ns = el("button","home-btn nextsec-btn","⏭️");
+    ns.setAttribute("aria-label","Next section");
+    ns.title = "Next section";
+    ns.addEventListener("click", ()=>go(nextSecHash));
+    bar.appendChild(ns);
   }
   bar.appendChild(el("div","xp", "⭐ "+State.xp));
   return bar;
@@ -2077,9 +2086,10 @@ function renderSection(lid, sid, step, idx){
 
   ensureSectionRegistered(sec);
 
+  const { nextSid } = findNext(lid, sid);   // next SECTION → button now lives in the topbar
   const root = $app();
   root.innerHTML = "";
-  root.appendChild(topbar(sec.title, "/lesson/"+lid));
+  root.appendChild(topbar(sec.title, "/lesson/"+lid, nextSid ? ("/lesson/"+lid+"/section/"+nextSid) : null));
 
   const flow = SECTION_FLOWS[sid] || [];
   if((step==="intro" || !step) && flow.length){
@@ -2117,41 +2127,31 @@ function renderSection(lid, sid, step, idx){
   //                    first portion of the NEXT exercise type in the section.
   //   Next section →   leave this section for the next one in the lesson.
   const t = I18N[State.lang] || I18N.en;
-  const prevHash   = prevStepHash(lid, sid, step, idx, sec, flow);  // back one portion
-  const nextHash   = nextStepHash(lid, sid, step, idx, sec, flow);  // forward one portion
-  const nextExHash = nextExerciseHash(lid, sid, step, flow);        // next exercise TYPE
-  const { nextSid } = findNext(lid, sid);                           // next SECTION
-  // Don't show "Next exercise" when it would land in the same place as "Next"
-  // (i.e. we're already on the last portion of the current exercise).
-  const nextExDistinct = nextExHash && nextExHash !== nextHash;
-  // If the rendered step already drew its own forward button (e.g. "Next letter
-  // →"), don't add a duplicate nav-row "Next →".
-  const hasIncardNext = !!root.querySelector(".incard-next");
-  const showNavNext = nextHash && !hasIncardNext;
-  if(prevHash || showNavNext || nextExDistinct || nextSid){
-    const wrap = el("div","prev-wrap nav-row");
-    if(prevHash){
-      const back = el("button","btn-prev", t.previous);
-      back.addEventListener("click", ()=>go(prevHash));
-      wrap.appendChild(back);
-    }
-    if(showNavNext){
-      const nx = el("button","btn-prev btn-next", (t.next || "Next") + " →");
-      nx.addEventListener("click", ()=>go(nextHash));
-      wrap.appendChild(nx);
-    }
-    if(nextExDistinct){
-      const ne = el("button","btn-prev btn-nextex", t.nextExercise || "Next exercise →");
-      ne.addEventListener("click", ()=>go(nextExHash));
-      wrap.appendChild(ne);
-    }
-    if(nextSid){
-      const ns = el("button","btn-prev btn-nextsec", t.nextSection || "Next section →");
-      ns.addEventListener("click", ()=>go("/lesson/"+lid+"/section/"+nextSid));
-      wrap.appendChild(ns);
-    }
-    root.appendChild(wrap);
+  const prevHash   = prevStepHash(lid, sid, step, idx, sec, flow);  // back one item
+  const nextExHash = nextExerciseHash(lid, sid, step, flow);        // skip to next exercise
+  // Two-row nav under the card:
+  //   row 1: ← Previous | Next →   — move through the items of this exercise
+  //   row 2: Skip →                — jump to the next exercise (hidden on the last)
+  // Next section lives in the topbar (by Home). "Next" advances+completes via
+  // nextStep so progress/XP stay correct. In-card Next/Skip buttons are gone
+  // (nextBtn/skipBtn are no-ops now), so this is the single control surface.
+  const nav = el("div","prev-wrap nav-col");
+  const row1 = el("div","nav-row");
+  if(prevHash){
+    const back = el("button","btn-prev", t.previous);
+    back.addEventListener("click", ()=>go(prevHash));
+    row1.appendChild(back);
   }
+  const nx = el("button","btn-prev btn-next", (t.next || "Next") + " →");
+  nx.addEventListener("click", ()=>nextStep(lid, sid, step, idx, sec, flow));
+  row1.appendChild(nx);
+  nav.appendChild(row1);
+  if(nextExHash){
+    const sk = el("button","btn-prev btn-skip", (t.skip || "Skip") + " →");
+    sk.addEventListener("click", ()=>go(nextExHash));
+    nav.appendChild(sk);
+  }
+  root.appendChild(nav);
 }
 
 // Jump to the next EXERCISE TYPE in this section: always the first index of the
@@ -2511,25 +2511,12 @@ const NAV_I18N = {
     "Next": "Siguiente",
   },
 };
-function nextBtn(label, onNext){
-  const lang = (typeof State !== "undefined" && State.lang) || "en";
-  const translated = (NAV_I18N[lang] && NAV_I18N[lang][label]) || label || "Next";
-  // "incard-next" marks this as the step's own forward control (e.g. "Next
-  // letter →", "Next rule →"). renderSection looks for it and suppresses the
-  // duplicate nav-row "Next →" so presentation screens don't show two.
-  const b = el("button","btn incard-next",translated);
-  b.addEventListener("click", onNext);
-  return b;
-}
-
-// Skip → small button that lets the learner advance to the next exercise without
-// answering. Used by every interactive question renderer.
-function skipBtn(onNext){
-  const t = I18N[State.lang] || I18N.en;
-  const b = el("button","btn-skip", t.skip);
-  b.addEventListener("click", onNext);
-  return b;
-}
+// In-card forward + skip buttons were replaced by the persistent two-row nav
+// (← Previous | Next → , then Skip →) that renderSection draws under every card,
+// with Next section in the topbar. These helpers now render nothing so the
+// controls don't double up. Kept as no-ops because ~40 renderers still call them.
+function nextBtn(label, onNext){ return document.createComment("nav"); }
+function skipBtn(onNext){ return document.createComment("nav"); }
 
 // Listen-and-pick with given items array (each having mt/en).
 // On a wrong answer the learner gets a "Try again" option (re-renders this same

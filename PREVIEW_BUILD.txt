@@ -1,5 +1,5 @@
-build 20260601t
+build 20260601u
 VERSION 1.0.0-beta.26
-CACHE maltiongthego-1.0.0-beta.26-20260601t
+CACHE maltiongthego-1.0.0-beta.26-20260601u
 date 2026-06-01
-notes: wrong answers say Try again and retry the step (not Next).
+notes: nav layout (Next section in topbar; Previous/Next then Skip); szmc full-phrase audio.

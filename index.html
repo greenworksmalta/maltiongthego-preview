@@ -218,13 +218,15 @@
   .btn-skip:active{transform:scale(.98);background:var(--bg)}
   .btn-skip:hover{background:var(--bg);border-color:var(--ink-2)}
   .prev-wrap{display:flex;justify-content:center;margin-top:12px}
-  .prev-wrap.nav-row{justify-content:flex-start;gap:8px;flex-wrap:wrap}
-  .prev-wrap.nav-row .btn-prev{flex:0 1 auto}
-  /* "Next exercise" starts the skip-ahead group; pushed right only when it has
-     room on the same line, otherwise it wraps cleanly below Previous/Next. */
-  .prev-wrap.nav-row .btn-next{font-weight:700}
-  .prev-wrap.nav-row .btn-nextex{margin-left:auto}
-  .prev-wrap.nav-row .btn-nextex,.prev-wrap.nav-row .btn-nextsec{border-color:var(--ink-2)}
+  /* Two-row nav: row 1 = ← Previous | Next →  (share the width); row 2 = Skip →
+     (centred, narrower). Next section is in the topbar, not here. */
+  .prev-wrap.nav-col{flex-direction:column;align-items:stretch;gap:8px}
+  .prev-wrap.nav-col .nav-row{display:flex;justify-content:space-between;gap:8px;flex-wrap:nowrap}
+  .prev-wrap.nav-col .nav-row .btn-prev{flex:1 1 0}
+  .prev-wrap.nav-col .btn-next{font-weight:700}
+  .prev-wrap.nav-col .btn-skip{align-self:center;padding-left:28px;padding-right:28px;color:var(--ink-2);opacity:.8}
+  /* "Next section" lives in the topbar next to Home. */
+  .topbar .nextsec-btn{margin-left:2px}
   .btn-prev{padding:8px 20px;border-radius:99px;background:transparent;border:1px solid var(--line);color:var(--ink-2);font-size:.88rem;font-weight:600;cursor:pointer;letter-spacing:.005em}
   .btn-prev:active{transform:scale(.98);background:var(--bg)}
   .btn-prev:hover{background:var(--bg);border-color:var(--ink-2)}
@@ -456,7 +458,7 @@
      Loaded before app.js so window.MALTI_CONFIG is available at boot. The file
      is gitignored; the .example one is the canonical shape. -->
 <script src="app-config.js?v=1.0.0-beta.8"></script>
-<script src="app.js?v=20260601t"></script>
+<script src="app.js?v=20260601u"></script>
 <!-- Service-worker registration moved into app.js so we can show an in-app
      "Update available" banner when a new version is detected mid-session. -->
 

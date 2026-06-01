@@ -565,10 +565,10 @@
         }
       ],
       "exercises": [
-        { "id": "szmc", "type": "mc", "title": "Make the describing word agree", "instructions": "Pick the form of tall/long that matches.", "opts": { "blankAfter": true }, "choices": ["twil", "twila", "twal"], "items": [
-          { "word": "raġel", "en": "man (m)", "answer": "twil" },
-          { "word": "mara", "en": "woman (f)", "answer": "twila" },
-          { "word": "tfal", "en": "children (pl)", "answer": "twal" }
+        { "id": "szmc", "type": "mc", "title": "Make the describing word agree", "instructions": "Pick the form of tall/long that matches.", "opts": { "blankAfter": true, "audioAnswer": true }, "choices": ["twil", "twila", "twal"], "items": [
+          { "word": "raġel", "en": "man (m)", "answer": "twil", "mt": "raġel twil" },
+          { "word": "mara", "en": "woman (f)", "answer": "twila", "mt": "mara twila" },
+          { "word": "tfal", "en": "children (pl)", "answer": "twal", "mt": "tfal twal" }
         ] }
       ]
     },
