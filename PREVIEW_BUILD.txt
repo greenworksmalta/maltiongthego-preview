@@ -1,5 +1,5 @@
-build 20260601o
+build 20260601p
 VERSION 1.0.0-beta.26
-CACHE maltiongthego-1.0.0-beta.26-20260601o
+CACHE maltiongthego-1.0.0-beta.26-20260601p
 date 2026-06-01
-notes: U2 ordinals intro/description added.
+notes: U2 tens in-between counting description; item sections now show intro on first card.

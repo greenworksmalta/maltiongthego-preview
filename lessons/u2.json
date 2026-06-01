@@ -242,7 +242,7 @@
       "icon": "🔢",
       "title": "Tens & hundred",
       "subtitle": "Għexieren: counting in tens",
-      "intro": "The tens, plus zero and one hundred.",
+      "intro": "The tens, plus zero and one hundred. To count the numbers in between, say the unit first, then 'u' (and), then the ten: wieħed u ħamsin (51), tnejn u ħamsin (52), tlieta u sittin (63).",
       "items": [
         {
           "mt": "żero",

@@ -20,7 +20,7 @@ const VERSION = "1.0.0-beta.26";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "20260601o";
+const BUILD = "20260601p";
 function v(url){ return url + (url.includes("?")?"&":"?") + "v=" + VERSION; }
 
 // Lightweight UI strings table for the parts of the app that aren't data-driven.
@@ -2018,6 +2018,11 @@ function ensureSectionRegistered(sec){
       STEP_RENDERERS[id+":flash"] = STEP_RENDERERS["weekend:flash"];
     } else {
       STEP_RENDERERS[id+":flash"] = (root, sec2, i, onNext) => {
+        if(i===0 && sec2.intro){
+          const head = el("div","card");
+          head.appendChild(el("p","muted", sec2.intro));
+          root.appendChild(head);
+        }
         const item = sec2.items[i];
         root.appendChild(renderFlash(item.mt, item.en, `Word ${i+1} of ${sec2.items.length}`));
         setTimeout(()=>play(item.mt), 250);
