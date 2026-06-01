@@ -1,5 +1,5 @@
-build 20260601x
+build 20260601y
 VERSION 1.0.0-beta.26
-CACHE maltiongthego-1.0.0-beta.26-20260601x
+CACHE maltiongthego-1.0.0-beta.26-20260601y
 date 2026-06-01
-notes: U5 qattusi -> qtates.
+notes: demonstratives voice answer+word; għarus; ta missieri.

@@ -20,7 +20,7 @@ const VERSION = "1.0.0-beta.26";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "20260601x";
+const BUILD = "20260601y";
 function v(url){ return url + (url.includes("?")?"&":"?") + "v=" + VERSION; }
 
 // Lightweight UI strings table for the parts of the app that aren't data-driven.
@@ -2651,8 +2651,15 @@ function makeBucketSortStep(exId, opts){
       // (ends in "-", e.g. il-/l-/id-) → speaks "il-ktieb". For category buckets
       // (e.g. "Changes"/"Never changes") the answer isn't an article, so speak the
       // bare word instead of a nonsense concatenation.
-      const fullForm = (it.answer && /-$/.test(it.answer)) ? it.answer+it.word : it.word;
+      // Reveal/audio on a correct drop:
+      //  - sayAnswerWord (demonstratives): "din werqa" (answer + space + word)
+      //  - article (answer ends in "-"): "il-ktieb"
+      //  - else: the bare word (category buckets like Changes/Stays)
+      const fullForm = (opts.sayAnswerWord && it.answer) ? (it.answer + " " + it.word)
+                     : (it.answer && /-$/.test(it.answer)) ? it.answer + it.word
+                     : it.word;
       chip.dataset.answer = it.answer; chip.dataset.word = it.word; chip.dataset.full = fullForm;
+      if(opts.sayAnswerWord && it.answer){ chip.dataset.reveal = fullForm; }
       // revealFem: a colour that CHANGES carries its feminine form (it.fem). On a
       // correct drop we voice the feminine and show "aħmar → ħamra".
       if(opts.revealFem && it.fem){ chip.dataset.say = it.fem; chip.dataset.reveal = it.word + " → " + it.fem; }
@@ -3224,8 +3231,8 @@ STEP_RENDERERS["demonstratives:rules"] = (root, sec, idx, onNext) => {
 // Audio plays just the noun (which is in the manifest) — combining article+noun
 // produces strings like "dan ktieb" that we don't have MP3s for.
 // dan/din/dawn (and dak/dik/dawk) -> bucket-sort (3 buckets); replaces slide-style MC.
-STEP_RENDERERS["demonstratives:ex2"] = makeBucketSortStep("ex2");
-STEP_RENDERERS["demonstratives:ex3"] = makeBucketSortStep("ex3");
+STEP_RENDERERS["demonstratives:ex2"] = makeBucketSortStep("ex2", {sayAnswerWord:true});
+STEP_RENDERERS["demonstratives:ex3"] = makeBucketSortStep("ex3", {sayAnswerWord:true});
 
 STEP_RENDERERS["syllables:card"] = (root, sec, idx, onNext) => {
   if(idx===0 && (sec.intro || (sec.facts && sec.facts.length))){
