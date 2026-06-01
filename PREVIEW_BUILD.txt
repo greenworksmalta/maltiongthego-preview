@@ -1,5 +1,5 @@
-build 20260601k
+build 20260601l
 VERSION 1.0.0-beta.26
-CACHE maltiongthego-1.0.0-beta.26-20260601k
+CACHE maltiongthego-1.0.0-beta.26-20260601l
 date 2026-06-01
-notes: U9 Bil-karta tal-kreditu fix (reuse reviewed form). All U1-U9 checker clean.
+notes: U1-U9 audio generated (177 new clips). Tap words/phrases to hear them.
