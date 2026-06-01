@@ -1,5 +1,5 @@
-build 20260601g
+build 20260601h
 VERSION 1.0.0-beta.26
-CACHE maltiongthego-1.0.0-beta.26-20260601g
+CACHE maltiongthego-1.0.0-beta.26-20260601h
 date 2026-06-01
-notes: FIX stale-cache (index.html now busts app.js per build) + U1-U3 fixes A/B/C live.
+notes: em-dash removed from English; article-drill instruction fixed; U1 vocab nationality group removed (now in U3).

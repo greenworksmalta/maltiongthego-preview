@@ -7,7 +7,7 @@
       "id": "work",
       "icon": "💼",
       "title": "Getting help",
-      "subtitle": "Titlob l-għajnuna — asking someone to slow down, repeat, help",
+      "subtitle": "Titlob l-għajnuna: asking someone to slow down, repeat, help",
       "vocab": [
         {
           "mt": "Ma nitkellimx bil-Malti",
@@ -69,7 +69,7 @@
       "dialogue": [
         {
           "mt": "Skużani — ma nitkellimx Malti tajjeb. Titkellem bl-Ingliż?",
-          "en": "Sorry — I don't speak Maltese well. Do you speak English?"
+          "en": "Sorry, I don't speak Maltese well. Do you speak English?"
         },
         {
           "mt": "Iva, ftit. Kif nista' ngħinek?",
@@ -89,7 +89,7 @@
       "id": "nationalities",
       "icon": "🌍",
       "title": "Nationalities",
-      "subtitle": "Nazzjonalitajiet — m / f",
+      "subtitle": "Nazzjonalitajiet: m / f",
       "intro": "Saying where you and others are from. Each has a masculine and feminine form.",
       "items": [
         {
@@ -130,7 +130,7 @@
       "id": "grammarhelp",
       "icon": "📖",
       "title": "Grammar",
-      "subtitle": "Il-grammatika — being polite and asking for help",
+      "subtitle": "Il-grammatika: being polite and asking for help",
       "intro": "Two small habits carry most of Maltese politeness: stacking short polite words, and the \"Tista'…?\" request.",
       "rules": [
         {
@@ -163,7 +163,7 @@
         {
           "id": "language-help",
           "title": "Earn a smile, then switch",
-          "explanation": "Nearly everyone here speaks great English, so you can always switch over — but leading with a line of Maltese (Qed nitgħallem il-Malti) buys real goodwill first.",
+          "explanation": "Nearly everyone here speaks great English, so you can always switch over, but leading with a line of Maltese (Qed nitgħallem il-Malti) buys real goodwill first.",
           "examples": [
             {
               "mt": "Nitkellem ftit Malti",
@@ -208,11 +208,11 @@
       "id": "vocabulary",
       "icon": "📚",
       "title": "Vocabulary",
-      "subtitle": "Il-vokabularju — every phrase from this section",
+      "subtitle": "Il-vokabularju: every phrase from this section",
       "intro": "All the help phrases in one place. Tap any to hear it.",
       "groups": [
         {
-          "title": "At work — language help",
+          "title": "At work: language help",
           "icon": "💼",
           "subtitle": "When you need someone to switch to English, slow down, or repeat.",
           "items": [

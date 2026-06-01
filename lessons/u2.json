@@ -7,7 +7,7 @@
       "id": "buying",
       "icon": "🛒",
       "title": "Buying something small",
-      "subtitle": "Nixtri xi ħaġa — numbers, prices, paying",
+      "subtitle": "Nixtri xi ħaġa: numbers, prices, paying",
       "intro": "Buying pastizzi at the counter.",
       "dialogue": [
         {
@@ -40,7 +40,7 @@
       "id": "numbers",
       "icon": "🔢",
       "title": "Numbers 1–30",
-      "subtitle": "In-numri — counting in Maltese",
+      "subtitle": "In-numri: counting in Maltese",
       "items": [
         {
           "n": 1,
@@ -240,7 +240,7 @@
       "id": "tens",
       "icon": "🔢",
       "title": "Tens & hundred",
-      "subtitle": "Għexieren — counting in tens",
+      "subtitle": "Għexieren: counting in tens",
       "intro": "The tens, plus zero and one hundred.",
       "items": [
         {
@@ -281,7 +281,7 @@
       "id": "money",
       "icon": "💶",
       "title": "Money & age",
-      "subtitle": "Flus u età — prices, age, phone",
+      "subtitle": "Flus u età: prices, age, phone",
       "intro": "Talking about money, your age, and phone numbers.",
       "items": [
         {
@@ -330,7 +330,7 @@
       "id": "months",
       "icon": "📆",
       "title": "Months",
-      "subtitle": "Ix-xhur — months of the year",
+      "subtitle": "Ix-xhur: months of the year",
       "items": [
         {
           "mt": "Jannar",
@@ -386,13 +386,13 @@
       "id": "grammar2",
       "icon": "📖",
       "title": "Grammar",
-      "subtitle": "In-numri — counting, and how it bends the noun",
-      "intro": "Counting in Maltese does something English never does: the number changes the noun after it. Here's how — plus first, second, third.",
+      "subtitle": "In-numri: counting, and how it bends the noun",
+      "intro": "Counting in Maltese does something English never does: the number changes the noun after it. Here's how, plus first, second, third.",
       "rules": [
         {
           "id": "numbers-noun-rule",
           "title": "Counting has two gears",
-          "explanation": "Maltese shifts gear as you count, and three things follow the number. 'Two' before a noun is żewġ, not tnejn (żewġ pastizzi). The numbers 3–10 slim down — tlieta→tliet, ħamsa→ħames, għaxra→għaxar — and the noun goes plural (tliet snin, three years). From 11 up the number links on with -il and the noun flips back to singular (ħdax-il sena, eleven years). Compare għaxar snin (10 years, plural) with tlieta u għoxrin sena (23 years, singular) — English never does this, so give it a few reps.",
+          "explanation": "Maltese shifts gear as you count, and three things follow the number. 'Two' before a noun is żewġ, not tnejn (żewġ pastizzi). The numbers 3–10 slim down (tlieta→tliet, ħamsa→ħames, għaxra→għaxar) and the noun goes plural (tliet snin, three years). From 11 up the number links on with -il and the noun flips back to singular (ħdax-il sena, eleven years). Compare għaxar snin (10 years, plural) with tlieta u għoxrin sena (23 years, singular). English never does this, so give it a few reps.",
           "examples": [
             {
               "mt": "Għandi tliet kotba",
@@ -449,7 +449,7 @@
       "id": "vocabulary",
       "icon": "📚",
       "title": "Vocabulary",
-      "subtitle": "Il-vokabularju — every word in one place",
+      "subtitle": "Il-vokabularju: every word in one place",
       "intro": "Everything from this section, gathered to revise. Tap any word to hear it.",
       "groups": [
         {

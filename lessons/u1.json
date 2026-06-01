@@ -7,7 +7,7 @@
       "id": "meeting",
       "icon": "👋",
       "title": "Meeting someone",
-      "subtitle": "Tiltaqa' man-nies — saying hello and introducing yourself",
+      "subtitle": "Tiltaqa' man-nies: saying hello and introducing yourself",
       "intro": "A first chat with a new neighbour.",
       "dialogue": [
         {
@@ -32,7 +32,7 @@
         },
         {
           "mt": "Tajjeb, merħba f'Malta!",
-          "en": "Good — welcome to Malta!"
+          "en": "Good, welcome to Malta!"
         }
       ]
     },
@@ -40,7 +40,7 @@
       "id": "phrases",
       "icon": "💬",
       "title": "Phrases",
-      "subtitle": "Bonġu — meeting and introducing yourself",
+      "subtitle": "Bonġu: meeting and introducing yourself",
       "vocab": [
         {
           "mt": "Bonġu",
@@ -136,7 +136,7 @@
       "id": "days",
       "icon": "📅",
       "title": "Days",
-      "subtitle": "Il-ġranet tal-ġimgħa — Days of the week",
+      "subtitle": "Il-ġranet tal-ġimgħa: Days of the week",
       "items": [
         {
           "mt": "Il-Ħadd",
@@ -179,12 +179,12 @@
       "id": "alphabet",
       "icon": "🔤",
       "title": "Alphabet",
-      "subtitle": "L-alfabett Malti — 30 letters",
+      "subtitle": "L-alfabett Malti: 30 letters",
       "facts": [
-        "There are 30 letters in all — 24 consonants and 6 vowels: a, e, i, o, u and ie.",
+        "There are 30 letters in all: 24 consonants and 6 vowels (a, e, i, o, u and ie).",
         "That last vowel, ie, is written with two symbols but counts as a single letter.",
         "Five letters belong to Maltese alone: ċ, ġ, ħ, ż and għ (and għ counts as one).",
-        "Spelling is friendly here — Maltese is largely written as it's spoken, so once you know the sounds you can read almost anything.",
+        "Spelling is friendly here: Maltese is largely written as it's spoken, so once you know the sounds you can read almost anything.",
         "Underneath it's a Semitic language (Arabic roots), layered over the centuries with Italian and English."
       ],
       "letters": [
@@ -730,7 +730,7 @@
         }
       ],
       "passage": {
-        "title": "Reading practice — A Mosta morning",
+        "title": "Reading practice: A Mosta morning",
         "lines": [
           {
             "mt": "Kienet ġurnata sabiħa fir-raħal tal-Mosta.",
@@ -767,8 +767,8 @@
       "id": "syllables",
       "icon": "🔡",
       "title": "Syllables",
-      "subtitle": "Is-Sillabi — hearing the beats in a word",
-      "intro": "Break a word into beats and Maltese spelling falls into place — every sound steps forward where you can hear and write it.",
+      "subtitle": "Is-Sillabi: hearing the beats in a word",
+      "intro": "Break a word into beats and Maltese spelling falls into place. Every sound steps forward where you can hear and write it.",
       "facts": [
         "One vowel = one beat.",
         "Every beat after the first opens on a consonant sound.",
@@ -862,13 +862,13 @@
       "id": "grammar",
       "icon": "📖",
       "title": "Grammar",
-      "subtitle": "L-artiklu — saying 'the' in Maltese",
-      "intro": "There's one word for 'the' in Maltese, but it reshapes to fit the word in front of it — and which shape you use is decided entirely by that word's first sound. It sorts into three tidy groups.",
+      "subtitle": "L-artiklu: saying 'the' in Maltese",
+      "intro": "There's one word for 'the' in Maltese, but it reshapes to fit the word in front of it, and which shape you use is decided entirely by that word's first sound. It sorts into three tidy groups.",
       "rules": [
         {
           "id": "moon",
           "title": "When 'the' is just il-",
-          "explanation": "Most consonants are easy — 'the' is simply il-, no change. Maltese files these as the 'Qamrin' consonants. So: il-ktieb, il-baħar, il-qalb.",
+          "explanation": "Most consonants are easy: 'the' is simply il-, no change. Maltese files these as the 'Qamrin' consonants. So: il-ktieb, il-baħar, il-qalb.",
           "letters": [
             "b",
             "f",
@@ -920,7 +920,7 @@
         {
           "id": "vowels",
           "title": "Before a vowel, shrink to l-",
-          "explanation": "When the next word opens with a vowel — or a silent h or għ — there's no room for the i, so 'the' drops to l-: l-art, l-omm, l-għajn.",
+          "explanation": "When the next word opens with a vowel, or a silent h or għ, there's no room for the i, so 'the' drops to l-: l-art, l-omm, l-għajn.",
           "letters": [
             "a",
             "e",
@@ -973,7 +973,7 @@
         {
           "id": "sun",
           "title": "The matching trick: 'Xemxin' consonants",
-          "explanation": "Nine consonants swallow the l and double their own sound — the 'Xemxin' consonants ċ d n r s t x ż z. Not il-dar but id-dar; not il-xemx but ix-xemx. If you hear the first letter double, you've nailed it.",
+          "explanation": "Nine consonants swallow the l and double their own sound: the 'Xemxin' consonants ċ d n r s t x ż z. Not il-dar but id-dar; not il-xemx but ix-xemx. If you hear the first letter double, you've nailed it.",
           "letters": [
             "ċ",
             "d",
@@ -1371,7 +1371,7 @@
       "id": "vocabulary",
       "icon": "📚",
       "title": "Vocabulary",
-      "subtitle": "Il-vokabularju — every word in one place",
+      "subtitle": "Il-vokabularju: every word in one place",
       "intro": "Everything from this section, gathered to revise. Tap any word to hear it; the 'I…' verbs sit in their own group so you can practise them together.",
       "groups": [
         {
@@ -1529,32 +1529,6 @@
               "icon": "❤️",
               "mt": "Jien inħobb…",
               "en": "I like…"
-            }
-          ]
-        },
-        {
-          "title": "Identity & nationality",
-          "icon": "🇲🇹",
-          "items": [
-            {
-              "icon": "🇲🇹",
-              "mt": "Jien Malti",
-              "en": "I am Maltese (m.)"
-            },
-            {
-              "icon": "🇲🇹",
-              "mt": "Jien Maltija",
-              "en": "I am Maltese (f.)"
-            },
-            {
-              "icon": "🌍",
-              "mt": "Jien barrani",
-              "en": "I am a foreigner (m.)"
-            },
-            {
-              "icon": "🌍",
-              "mt": "Jien barranija",
-              "en": "I am a foreigner (f.)"
             },
             {
               "icon": "👩‍🏫",
@@ -1569,7 +1543,7 @@
           ]
         },
         {
-          "title": "Verbs (1st person — 'I…')",
+          "title": "Verbs (1st person: 'I…')",
           "icon": "🏃",
           "subtitle": "Use these in self-introductions and the dialogue exercises.",
           "items": [

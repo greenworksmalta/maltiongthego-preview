@@ -20,7 +20,7 @@ const VERSION = "1.0.0-beta.26";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "20260601g";
+const BUILD = "20260601h";
 function v(url){ return url + (url.includes("?")?"&":"?") + "v=" + VERSION; }
 
 // Lightweight UI strings table for the parts of the app that aren't data-driven.
@@ -2687,7 +2687,7 @@ function makeArticleBuildStep(exId){
     const full = item.answer + item.word;
     const card = el("div","card");
     card.appendChild(el("h3","", ex.title));
-    card.appendChild(el("p","muted","Tap the right article, then the word, to build it."));
+    card.appendChild(el("p","muted","Tap the article that goes with the word."));
     const prompt = el("div","row");
     prompt.appendChild(el("div","grow mtline", "___ " + item.word));
     if(item.en) prompt.appendChild(el("div","muted", item.en));
