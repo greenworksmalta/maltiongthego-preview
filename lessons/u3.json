@@ -1,7 +1,7 @@
 {
   "id": "u3",
-  "title": "Getting Help",
-  "subtitle": "Asking for help, slowing things down, switching to English",
+  "title": "Getting Started & Getting Help",
+  "subtitle": "Nationalities, syllables, and asking for help",
   "sections": [
     {
       "id": "work",
@@ -82,6 +82,142 @@
         {
           "mt": "Mhux problema. Hekk hu...",
           "en": "No problem. Like this..."
+        }
+      ]
+    },
+    {
+      "id": "nationalities",
+      "icon": "🌍",
+      "title": "Nationalities",
+      "subtitle": "Nazzjonalitajiet — m / f",
+      "intro": "Saying where you and others are from. Each has a masculine and feminine form.",
+      "items": [
+        {
+          "mt": "Malti / Maltija",
+          "en": "Maltese (m/f)"
+        },
+        {
+          "mt": "Ingliż / Ingliża",
+          "en": "English"
+        },
+        {
+          "mt": "Taljan / Taljana",
+          "en": "Italian"
+        },
+        {
+          "mt": "Franċiż / Franċiża",
+          "en": "French"
+        },
+        {
+          "mt": "Ġermaniż / Ġermaniża",
+          "en": "German"
+        },
+        {
+          "mt": "Spanjol / Spanjola",
+          "en": "Spanish"
+        },
+        {
+          "mt": "Amerikan / Amerikana",
+          "en": "American"
+        },
+        {
+          "mt": "barrani / barranija",
+          "en": "foreigner"
+        }
+      ]
+    },
+    {
+      "id": "syllables",
+      "icon": "🔡",
+      "title": "Syllables",
+      "subtitle": "Is-Sillabi — hearing the beats in a word",
+      "intro": "Break a word into beats and Maltese spelling falls into place — every sound steps forward where you can hear and write it.",
+      "facts": [
+        "One vowel = one beat.",
+        "Every beat after the first opens on a consonant sound.",
+        "When two consonants collide mid-word, the break falls between them: kel-ma, fes-ta.",
+        "Hear it: omm → omm; mara → ma-ra; kelma → kel-ma."
+      ],
+      "items": [
+        {
+          "word": "kelma",
+          "syllables": "kel-ma"
+        },
+        {
+          "word": "ħabib",
+          "syllables": "ħa-bib"
+        },
+        {
+          "word": "ġnien",
+          "syllables": "ġnien"
+        },
+        {
+          "word": "skola",
+          "syllables": "sko-la"
+        },
+        {
+          "word": "tieqa",
+          "syllables": "tie-qa"
+        },
+        {
+          "word": "ktieb",
+          "syllables": "ktieb"
+        },
+        {
+          "word": "tifel",
+          "syllables": "ti-fel"
+        },
+        {
+          "word": "Malta",
+          "syllables": "Mal-ta"
+        },
+        {
+          "word": "uffiċċju",
+          "syllables": "uf-fiċ-ċju"
+        },
+        {
+          "word": "lingwa",
+          "syllables": "ling-wa"
+        },
+        {
+          "word": "festa",
+          "syllables": "fes-ta"
+        },
+        {
+          "word": "saħħa",
+          "syllables": "saħ-ħa"
+        },
+        {
+          "word": "pjazza",
+          "syllables": "pjaz-za"
+        },
+        {
+          "word": "siġra",
+          "syllables": "siġ-ra"
+        },
+        {
+          "word": "qattus",
+          "syllables": "qat-tus"
+        },
+        {
+          "word": "fenek",
+          "syllables": "fe-nek"
+        },
+        {
+          "word": "Birkirkara",
+          "syllables": "Bir-kir-ka-ra"
+        },
+        {
+          "word": "ġurnata",
+          "syllables": "ġur-na-ta"
+        },
+        {
+          "word": "studju",
+          "syllables": "stu-dju"
+        },
+        {
+          "word": "vjaġġ",
+          "syllables": "vjaġġ"
         }
       ]
     },

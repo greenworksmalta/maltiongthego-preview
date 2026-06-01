@@ -383,6 +383,320 @@
       ]
     },
     {
+      "id": "vocabulary",
+      "icon": "📚",
+      "title": "Vocabulary",
+      "subtitle": "Il-vokabularju — every word in one place",
+      "intro": "Everything from this section, gathered to revise. Tap any word to hear it.",
+      "groups": [
+        {
+          "title": "Numbers 1–30",
+          "items": [
+            {
+              "mt": "wieħed",
+              "en": "one"
+            },
+            {
+              "mt": "tnejn",
+              "en": "two"
+            },
+            {
+              "mt": "tlieta",
+              "en": "three"
+            },
+            {
+              "mt": "erbgħa",
+              "en": "four"
+            },
+            {
+              "mt": "ħamsa",
+              "en": "five"
+            },
+            {
+              "mt": "sitta",
+              "en": "six"
+            },
+            {
+              "mt": "sebgħa",
+              "en": "seven"
+            },
+            {
+              "mt": "tmienja",
+              "en": "eight"
+            },
+            {
+              "mt": "disgħa",
+              "en": "nine"
+            },
+            {
+              "mt": "għaxra",
+              "en": "ten"
+            },
+            {
+              "mt": "ħdax",
+              "en": "eleven"
+            },
+            {
+              "mt": "tnax",
+              "en": "twelve"
+            },
+            {
+              "mt": "tlettax",
+              "en": "thirteen"
+            },
+            {
+              "mt": "erbatax",
+              "en": "fourteen"
+            },
+            {
+              "mt": "ħmistax",
+              "en": "fifteen"
+            },
+            {
+              "mt": "sittax",
+              "en": "sixteen"
+            },
+            {
+              "mt": "sbatax",
+              "en": "seventeen"
+            },
+            {
+              "mt": "tmintax",
+              "en": "eighteen"
+            },
+            {
+              "mt": "dsatax",
+              "en": "nineteen"
+            },
+            {
+              "mt": "għoxrin",
+              "en": "twenty"
+            },
+            {
+              "mt": "wieħed u għoxrin",
+              "en": "twenty-one"
+            },
+            {
+              "mt": "tnejn u għoxrin",
+              "en": "twenty-two"
+            },
+            {
+              "mt": "tlieta u għoxrin",
+              "en": "twenty-three"
+            },
+            {
+              "mt": "erbgħa u għoxrin",
+              "en": "twenty-four"
+            },
+            {
+              "mt": "ħamsa u għoxrin",
+              "en": "twenty-five"
+            },
+            {
+              "mt": "sitta u għoxrin",
+              "en": "twenty-six"
+            },
+            {
+              "mt": "sebgħa u għoxrin",
+              "en": "twenty-seven"
+            },
+            {
+              "mt": "tmienja u għoxrin",
+              "en": "twenty-eight"
+            },
+            {
+              "mt": "disgħa u għoxrin",
+              "en": "twenty-nine"
+            },
+            {
+              "mt": "tletin",
+              "en": "thirty"
+            }
+          ]
+        },
+        {
+          "title": "Ordinals",
+          "items": [
+            {
+              "mt": "L-ewwel",
+              "en": "First"
+            },
+            {
+              "mt": "It-tieni",
+              "en": "Second"
+            },
+            {
+              "mt": "It-tielet",
+              "en": "Third"
+            },
+            {
+              "mt": "Ir-raba'",
+              "en": "Fourth"
+            },
+            {
+              "mt": "Il-ħames",
+              "en": "Fifth"
+            },
+            {
+              "mt": "Is-sitt",
+              "en": "Sixth"
+            },
+            {
+              "mt": "Is-seba'",
+              "en": "Seventh"
+            },
+            {
+              "mt": "It-tmien",
+              "en": "Eighth"
+            },
+            {
+              "mt": "Id-disa'",
+              "en": "Ninth"
+            },
+            {
+              "mt": "L-għaxar",
+              "en": "Tenth"
+            }
+          ]
+        },
+        {
+          "title": "Tens & hundred",
+          "items": [
+            {
+              "mt": "żero",
+              "en": "zero"
+            },
+            {
+              "mt": "erbgħin",
+              "en": "forty"
+            },
+            {
+              "mt": "ħamsin",
+              "en": "fifty"
+            },
+            {
+              "mt": "sittin",
+              "en": "sixty"
+            },
+            {
+              "mt": "sebgħin",
+              "en": "seventy"
+            },
+            {
+              "mt": "tmenin",
+              "en": "eighty"
+            },
+            {
+              "mt": "disgħin",
+              "en": "ninety"
+            },
+            {
+              "mt": "mija",
+              "en": "one hundred"
+            }
+          ]
+        },
+        {
+          "title": "Money, age & phone",
+          "items": [
+            {
+              "mt": "flus",
+              "en": "money"
+            },
+            {
+              "mt": "ewro",
+              "en": "euro"
+            },
+            {
+              "mt": "ċenteżmu / ċenteżmi",
+              "en": "cent / cents"
+            },
+            {
+              "mt": "Kemm jiswa?",
+              "en": "How much does it cost?"
+            },
+            {
+              "mt": "Bil-flus",
+              "en": "with cash"
+            },
+            {
+              "mt": "Bil-karta tal-kreditu",
+              "en": "by (credit) card"
+            },
+            {
+              "mt": "Kemm għandek żmien?",
+              "en": "How old are you?"
+            },
+            {
+              "mt": "Għandi tletin sena.",
+              "en": "I'm thirty years old."
+            },
+            {
+              "mt": "in-numru tat-telefon",
+              "en": "the phone number"
+            },
+            {
+              "mt": "X'inhu n-numru tiegħek?",
+              "en": "What's your number?"
+            }
+          ]
+        },
+        {
+          "title": "Months",
+          "items": [
+            {
+              "mt": "Jannar",
+              "en": "January"
+            },
+            {
+              "mt": "Frar",
+              "en": "February"
+            },
+            {
+              "mt": "Marzu",
+              "en": "March"
+            },
+            {
+              "mt": "April",
+              "en": "April"
+            },
+            {
+              "mt": "Mejju",
+              "en": "May"
+            },
+            {
+              "mt": "Ġunju",
+              "en": "June"
+            },
+            {
+              "mt": "Lulju",
+              "en": "July"
+            },
+            {
+              "mt": "Awwissu",
+              "en": "August"
+            },
+            {
+              "mt": "Settembru",
+              "en": "September"
+            },
+            {
+              "mt": "Ottubru",
+              "en": "October"
+            },
+            {
+              "mt": "Novembru",
+              "en": "November"
+            },
+            {
+              "mt": "Diċembru",
+              "en": "December"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "grammar2",
       "icon": "📖",
       "title": "Grammar",
