@@ -20,7 +20,7 @@ const VERSION = "1.0.0-beta.26";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "20260601e";
+const BUILD = "20260601f";
 function v(url){ return url + (url.includes("?")?"&":"?") + "v=" + VERSION; }
 
 // Lightweight UI strings table for the parts of the app that aren't data-driven.
@@ -2802,8 +2802,10 @@ STEP_RENDERERS["alphabet:letter"] = (root, sec, idx, onNext) => {
 
 STEP_RENDERERS["alphabet:match"] = (root, sec, idx, onNext) => {
   const all = sec.letters;
-  const letter = all[Math.floor(Math.random()*all.length)];
-  const word = letter.words[Math.floor(Math.random()*letter.words.length)];
+  // Key the tested letter to idx so the 6 rounds are stable and Previous/Next
+  // are deterministic (distractors stay shuffled for variety).
+  const letter = all[idx % all.length];
+  const word = letter.words[idx % letter.words.length];
   const distractors = all.filter(l=>l!==letter).sort(()=>Math.random()-.5).slice(0,3).map(l=>l.upper);
   const opts = [letter.upper, ...distractors].sort(()=>Math.random()-.5);
   const card = el("div","card");
@@ -3206,6 +3208,13 @@ STEP_RENDERERS["demonstratives:ex2"] = makeBucketSortStep("ex2");
 STEP_RENDERERS["demonstratives:ex3"] = makeBucketSortStep("ex3");
 
 STEP_RENDERERS["syllables:card"] = (root, sec, idx, onNext) => {
+  if(idx===0 && (sec.intro || (sec.facts && sec.facts.length))){
+    const head = el("div","card");
+    if(sec.subtitle) head.appendChild(el("h3","",sec.subtitle));
+    if(sec.intro) head.appendChild(el("p","",sec.intro));
+    (sec.facts||[]).forEach(f => head.appendChild(el("p","muted","• "+f)));
+    root.appendChild(head);
+  }
   const item = sec.items[idx];
   const card = el("div","card syllable-card");
   card.appendChild(el("div","word", item.word));
@@ -4010,6 +4019,12 @@ STEP_RENDERERS["vocabulary:list"] = (root, sec, idx, onNext) => {
 // CTA is "Done →" when the section has no exercises (lessons 7/8/9 don't yet).
 function renderGrammarRulesStep(root, sec, idx, onNext){
   const r = sec.rules[idx];
+  if(idx===0 && (sec.subtitle || sec.intro)){
+    const head = el("div","card");
+    if(sec.subtitle) head.appendChild(el("h3","",sec.subtitle));
+    if(sec.intro) head.appendChild(el("p","muted",sec.intro));
+    root.appendChild(head);
+  }
   const card = el("div","card rule");
   card.appendChild(el("h2","",r.title));
   card.appendChild(el("p","",r.explanation));

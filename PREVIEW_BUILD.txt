@@ -1,2 +1,5 @@
-1.0.0-beta.26 · build 20260601e
-U4 graded exercises (build/mc/bucket/match) + data-driven exercise wiring
+build 20260601f
+VERSION 1.0.0-beta.26
+CACHE maltiongthego-1.0.0-beta.26-20260601f
+date 2026-06-01
+notes: U1-U3 fixes A (alphabet listen deterministic), B (grammar heading shown), C (syllables intro+facts shown). Includes U4 graded exercises.
