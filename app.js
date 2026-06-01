@@ -20,7 +20,7 @@ const VERSION = "1.0.0-beta.26";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "20260601y";
+const BUILD = "20260601z";
 function v(url){ return url + (url.includes("?")?"&":"?") + "v=" + VERSION; }
 
 // Lightweight UI strings table for the parts of the app that aren't data-driven.
@@ -2412,7 +2412,7 @@ const STEP_COUNTS = {
   "hobbies:flash": s => s.vocab.length,
   "hobbies:dialogue": s => 1,
   "possessive:examples": s => 1,
-  "possessive:pronouns": s => s.possessives.length,
+  "possessive:pronouns": () => 1,
   "attached:examples": s => 1,
   "attached:ex6": s => s.exercises.find(e=>e.id==="ex6").items.length,
   "attached:ex7": s => s.exercises.find(e=>e.id==="ex7").items.length,
@@ -3347,28 +3347,23 @@ STEP_RENDERERS["possessive:examples"] = (root, sec, idx, onNext) => {
   root.appendChild(nextBtn("Continue →", onNext));
 };
 STEP_RENDERERS["possessive:pronouns"] = (root, sec, idx, onNext) => {
-  const item = sec.possessives[idx];
-  const examplePhrase = sec.examples_pronouns ? sec.examples_pronouns[idx]?.phrase : null;
-  const exampleEn = sec.examples_pronouns ? sec.examples_pronouns[idx]?.en : null;
+  // The whole possessive paradigm on ONE screen (tiegħi, tiegħek, tiegħu…),
+  // each with its example phrase. Tap a row to hear the phrase.
   const card = el("div","card");
-  const head = el("div","row");
-  head.appendChild(audioBtn(item.mt, {size:"lg"}));
-  const w = el("div","grow");
-  w.appendChild(el("div","mtline", item.mt));
-  w.appendChild(el("div","muted", item.en));
-  head.appendChild(w);
-  card.appendChild(head);
-  if(examplePhrase){
+  card.appendChild(el("h3","","Possessives: tiegħi, tiegħek, tiegħu…"));
+  card.appendChild(el("p","muted","All the forms together. Tap any to hear it."));
+  sec.possessives.forEach((item, i) => {
+    const ex = sec.examples_pronouns ? sec.examples_pronouns[i] : null;
+    const phrase = ex ? ex.phrase : item.mt;
     const r = el("div","form-row");
-    r.appendChild(audioBtn(examplePhrase));
-    r.appendChild(el("div","mtform", examplePhrase));
-    r.appendChild(el("div","en", exampleEn));
+    r.appendChild(audioBtn(phrase));
+    const w = el("div","grow");
+    w.appendChild(el("div","mtform", phrase));
+    w.appendChild(el("div","en", (ex ? ex.en : item.en) + " (" + item.mt + ": " + item.en + ")"));
+    r.appendChild(w);
     card.appendChild(r);
-  }
+  });
   root.appendChild(card);
-  root.appendChild(el("p","muted center", (idx+1)+" / "+sec.possessives.length));
-  root.appendChild(nextBtn("Next →", onNext));
-  setTimeout(()=>play(item.mt), 250);
 };
 
 STEP_RENDERERS["attached:examples"] = (root, sec, idx, onNext) => {
