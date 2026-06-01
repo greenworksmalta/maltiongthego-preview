@@ -55,8 +55,20 @@
           "en": "Cheers / Bye"
         },
         {
+          "mt": "Ċaw",
+          "en": "Bye"
+        },
+        {
           "mt": "Għandi pjaċir",
           "en": "Pleasure (nice to meet you)"
+        },
+        {
+          "mt": "Jekk jogħġbok",
+          "en": "Please"
+        },
+        {
+          "mt": "Skużani",
+          "en": "Excuse me"
         },
         {
           "mt": "Jiena",
@@ -69,6 +81,14 @@
         {
           "mt": "X'jismek?",
           "en": "What is your name?"
+        },
+        {
+          "mt": "X'kunjomok?",
+          "en": "What is your surname?"
+        },
+        {
+          "mt": "Kunjomi…",
+          "en": "My surname is…"
         },
         {
           "mt": "Minn fejn int?",
@@ -97,6 +117,10 @@
         {
           "mt": "Kemm ilek hawn?",
           "en": "How long have you been here?"
+        },
+        {
+          "mt": "Ili Malta…",
+          "en": "I have been in Malta…"
         },
         {
           "mt": "Kif int?",
@@ -1461,11 +1485,6 @@
             },
             {
               "icon": "❓",
-              "mt": "Xi tħobb tagħmel?",
-              "en": "What do you like to do?"
-            },
-            {
-              "icon": "❓",
               "mt": "U int?",
               "en": "And you?"
             }
@@ -1511,86 +1530,9 @@
               "en": "I have been in Malta…"
             },
             {
-              "icon": "😊",
-              "mt": "Jien inħossni tajba",
-              "en": "I'm feeling well (f.)"
-            },
-            {
-              "icon": "😊",
-              "mt": "Jien inħossni tajjeb",
-              "en": "I'm feeling well (m.)"
-            },
-            {
               "icon": "👍",
               "mt": "Tajjeb, grazzi",
               "en": "Well, thanks"
-            },
-            {
-              "icon": "❤️",
-              "mt": "Jien inħobb…",
-              "en": "I like…"
-            },
-            {
-              "icon": "👩‍🏫",
-              "mt": "Jien għalliema",
-              "en": "I am a teacher (f.)"
-            },
-            {
-              "icon": "👨‍🏫",
-              "mt": "Jien għalliem",
-              "en": "I am a teacher (m.)"
-            }
-          ]
-        },
-        {
-          "title": "Verbs (1st person: 'I…')",
-          "icon": "🏃",
-          "subtitle": "Use these in self-introductions and the dialogue exercises.",
-          "items": [
-            {
-              "icon": "📛",
-              "mt": "Jisimni",
-              "en": "My name is (lit. 'I am called')"
-            },
-            {
-              "icon": "💼",
-              "mt": "Naħdem",
-              "en": "I work"
-            },
-            {
-              "icon": "🏠",
-              "mt": "Noqgħod",
-              "en": "I live"
-            },
-            {
-              "icon": "🌍",
-              "mt": "Twelidt",
-              "en": "I was born"
-            },
-            {
-              "icon": "🏠",
-              "mt": "Għext",
-              "en": "I lived"
-            },
-            {
-              "icon": "❤️",
-              "mt": "Inħobb",
-              "en": "I love / I like"
-            },
-            {
-              "icon": "📖",
-              "mt": "Naqra",
-              "en": "I read"
-            },
-            {
-              "icon": "✈️",
-              "mt": "Nsiefer",
-              "en": "I travel abroad"
-            },
-            {
-              "icon": "😊",
-              "mt": "Inħossni",
-              "en": "I feel"
             }
           ]
         },

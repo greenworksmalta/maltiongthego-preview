@@ -1,5 +1,5 @@
-build 20260601h
+build 20260601i
 VERSION 1.0.0-beta.26
-CACHE maltiongthego-1.0.0-beta.26-20260601h
+CACHE maltiongthego-1.0.0-beta.26-20260601i
 date 2026-06-01
-notes: em-dash removed from English; article-drill instruction fixed; U1 vocab nationality group removed (now in U3).
+notes: U1 vocab matches content (added courtesy/surname/duration to phrases reusing audio; removed slide-residue verbs/hobby/teacher). U2/U3 already matched.
