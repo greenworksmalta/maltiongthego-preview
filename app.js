@@ -2018,17 +2018,25 @@ function renderSection(lid, sid, step, idx){
   }
   renderer(root, sec, idx, ()=>nextStep(lid, sid, step, idx, sec, flow));
 
-  // Universal "← Previous" affordance at the bottom of every interactive
-  // exercise / phrase / letter screen, so learners can step back without
-  // restarting the section. Hidden on the very first step+idx of a section
-  // (the section list is one tap away via the topbar arrow).
+  // Bottom navigation row: "← Previous" (step back within the section) and, when
+  // there's another section in this lesson, "Next section →" so learners can move
+  // straight on (e.g. Meeting someone → Phrases) without returning to the lesson
+  // list. Previous is hidden on the very first step+idx of a section.
+  const t = I18N[State.lang] || I18N.en;
   const prevHash = prevStepHash(lid, sid, step, idx, sec, flow);
-  if(prevHash){
-    const t = I18N[State.lang] || I18N.en;
-    const wrap = el("div","prev-wrap");
-    const back = el("button","btn-prev", t.previous);
-    back.addEventListener("click", ()=>go(prevHash));
-    wrap.appendChild(back);
+  const { nextSid } = findNext(lid, sid);
+  if(prevHash || nextSid){
+    const wrap = el("div","prev-wrap nav-row");
+    if(prevHash){
+      const back = el("button","btn-prev", t.previous);
+      back.addEventListener("click", ()=>go(prevHash));
+      wrap.appendChild(back);
+    }
+    if(nextSid){
+      const ns = el("button","btn-prev btn-nextsec", t.nextSection || "Next section →");
+      ns.addEventListener("click", ()=>go("/lesson/"+lid+"/section/"+nextSid));
+      wrap.appendChild(ns);
+    }
     root.appendChild(wrap);
   }
 }
