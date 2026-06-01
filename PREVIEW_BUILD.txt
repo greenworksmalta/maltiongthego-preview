@@ -1,5 +1,5 @@
-build 20260601bb
+build 20260601cc
 VERSION 1.0.0-beta.26
-CACHE maltiongthego-1.0.0-beta.26-20260601bb
+CACHE maltiongthego-1.0.0-beta.26-20260601cc
 date 2026-06-01
-notes: U5 vocab recap completed (demonstratives/possessives/attached).
+notes: U3 recap nationalities + help phrase added.

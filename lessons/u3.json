@@ -237,6 +237,10 @@
               "en": "I don't understand"
             },
             {
+              "mt": "Skużi, ma fhimtx",
+              "en": "Sorry, I didn't understand"
+            },
+            {
               "icon": "🔁",
               "mt": "Tista' tirrepeti?",
               "en": "Can you repeat that?"
@@ -280,6 +284,43 @@
               "icon": "🌍",
               "mt": "Jien barrani",
               "en": "I'm a foreigner"
+            }
+          ]
+        },
+        {
+          "title": "Nationalities",
+          "items": [
+            {
+              "mt": "Malti / Maltija",
+              "en": "Maltese (m/f)"
+            },
+            {
+              "mt": "Ingliż / Ingliża",
+              "en": "English"
+            },
+            {
+              "mt": "Taljan / Taljana",
+              "en": "Italian"
+            },
+            {
+              "mt": "Franċiż / Franċiża",
+              "en": "French"
+            },
+            {
+              "mt": "Ġermaniż / Ġermaniża",
+              "en": "German"
+            },
+            {
+              "mt": "Spanjol / Spanjola",
+              "en": "Spanish"
+            },
+            {
+              "mt": "Amerikan / Amerikana",
+              "en": "American"
+            },
+            {
+              "mt": "barrani / barranija",
+              "en": "foreigner"
             }
           ]
         }
