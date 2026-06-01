@@ -11,15 +11,15 @@
       "intro": "Asking a passer-by how to get somewhere.",
       "dialogue": [
         {
-          "mt": "Skużi, fejn hi l-ispiżerija?",
-          "en": "Excuse me, where is the pharmacy?"
+          "mt": "Skużi, fejn hu l-bank?",
+          "en": "Excuse me, where is the bank?"
         },
         {
           "mt": "Mur dritt, imbagħad dur fuq il-lemin.",
           "en": "Go straight, then turn right."
         },
         {
-          "mt": "Hi 'l bogħod?",
+          "mt": "Hu 'l bogħod?",
           "en": "Is it far?"
         },
         {
@@ -227,8 +227,8 @@
       ],
       "dialogue": [
         {
-          "mt": "Skużani — fejn hi l-ispiżerija l-aktar viċin?",
-          "en": "Excuse me, where's the nearest pharmacy?"
+          "mt": "Skużani — fejn hu l-bank l-aktar viċin?",
+          "en": "Excuse me, where's the nearest bank?"
         },
         {
           "mt": "Bonġu. Imxi sal-pjazza, dur fuq ix-xellug.",
@@ -239,8 +239,8 @@
           "en": "And then?"
         },
         {
-          "mt": "Hemmhekk taraha faċċata ta' bank.",
-          "en": "There you'll see it opposite a bank."
+          "mt": "Hemmhekk tarah faċċata tal-knisja.",
+          "en": "There you'll see it opposite the church."
         },
         {
           "mt": "Grazzi ħafna!",
@@ -341,19 +341,19 @@
         {
           "id": "polite-request",
           "title": "Asking the way, politely",
-          "explanation": "A reliable opener: Skużi. Tista' tgħidli fejn hi…?, jekk jogħġbok. Match hi/hu to the place (hi for l-ispiżerija, hu for il-mużew). Close with Grazzi.",
+          "explanation": "A reliable opener: Skużi. Tista' tgħidli fejn hi…?, jekk jogħġbok. Match hi/hu to the place (hi for l-iskola, hu for il-bank). Close with Grazzi.",
           "examples": [
             {
-              "mt": "Skużi. Tista' tgħidli fejn hi l-ispiżerija, jekk jogħġbok?",
-              "en": "Excuse me. Can you tell me where the pharmacy is, please? (f.)"
+              "mt": "Skużi. Tista' tgħidli fejn hi l-iskola, jekk jogħġbok?",
+              "en": "Excuse me. Can you tell me where the school is, please? (f.)"
             },
             {
               "mt": "Skużi. Tista' tgħidli fejn hu l-isptar, jekk jogħġbok?",
               "en": "Excuse me. Can you tell me where the hospital is, please? (m.)"
             },
             {
-              "mt": "Bonġu. Kif nista' nasal l-ispiżerija, jekk jogħġbok?",
-              "en": "Good morning. How can I get to the pharmacy, please?"
+              "mt": "Bonġu. Kif nista' nasal il-bank, jekk jogħġbok?",
+              "en": "Good morning. How can I get to the bank, please?"
             },
             {
               "mt": "Ibqa' sejjer dritt u taraha fuq il-lemin",

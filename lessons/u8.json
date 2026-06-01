@@ -1,16 +1,211 @@
 {
   "id": "u8",
   "title": "Food, Cafés & Eating Out",
-  "subtitle": "Ordering, fruit & veg, Maltese dishes",
+  "subtitle": "Ordering drinks and food, and paying the bill",
   "sections": [
     {
-      "id": "soon",
-      "icon": "🚧",
-      "title": "Coming soon",
-      "subtitle": "Preview: this unit is being built",
-      "facts": [
-        "This unit is part of the new structure but isn't built yet in this preview.",
-        "Pack 1 (Hello & the Alphabet, Numbers & Everyday Info, Getting Help) is ready to explore."
+      "id": "cafe",
+      "icon": "☕",
+      "title": "At the café",
+      "subtitle": "Fil-kafetterija: ordering a drink and a bite",
+      "intro": "Mary and Joseph stop for a coffee. Listen to how they order.",
+      "dialogue": [
+        { "mt": "Bonġu! X'tieħu?", "en": "Good morning! What will you have?" },
+        { "mt": "Nixtieq kafè bil-ħalib, jekk jogħġbok.", "en": "I'd like a coffee with milk, please." },
+        { "mt": "U int, Mary?", "en": "And you, Mary?" },
+        { "mt": "Għalija tè bil-lumi, grazzi.", "en": "For me a tea with lemon, thanks." },
+        { "mt": "Tridu xi ħaġa tieklu?", "en": "Would you like something to eat?" },
+        { "mt": "Iva, żewġ ftajjar, jekk jogħġbok.", "en": "Yes, two ftiras, please." }
+      ]
+    },
+    {
+      "id": "drinks",
+      "icon": "🥤",
+      "title": "Drinks",
+      "subtitle": "Ix-xorb: what to order",
+      "intro": "The drinks you'll order most. Tap any word to hear it.",
+      "vocab": [
+        { "mt": "kafè", "en": "coffee" },
+        { "mt": "tè", "en": "tea" },
+        { "mt": "kikkra kafè", "en": "a cup of coffee" },
+        { "mt": "kafè bil-ħalib", "en": "coffee with milk" },
+        { "mt": "tè bil-lumi", "en": "tea with lemon" },
+        { "mt": "ilma", "en": "water" },
+        { "mt": "flixkun ilma", "en": "a bottle of water" },
+        { "mt": "luminata", "en": "soft drink" },
+        { "mt": "meraq tal-larinġ", "en": "orange juice" },
+        { "mt": "birra", "en": "beer" },
+        { "mt": "inbid", "en": "wine" }
+      ],
+      "exercises": [
+        {
+          "id": "drinkmatch",
+          "type": "match",
+          "title": "Match the drink to its meaning",
+          "leftField": "mt",
+          "rightField": "en",
+          "items": [
+            { "mt": "kafè", "en": "coffee" },
+            { "mt": "tè", "en": "tea" },
+            { "mt": "ilma", "en": "water" },
+            { "mt": "luminata", "en": "soft drink" },
+            { "mt": "inbid", "en": "wine" },
+            { "mt": "birra", "en": "beer" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "food",
+      "icon": "🍽️",
+      "title": "Food",
+      "subtitle": "L-ikel: snacks and Maltese dishes",
+      "intro": "Everyday foods and a few Maltese favourites.",
+      "items": [
+        { "mt": "ħobż", "en": "bread" },
+        { "mt": "ftira", "en": "Maltese flatbread" },
+        { "mt": "pastizz", "en": "pastizz (savoury pastry)" },
+        { "mt": "ravjul", "en": "ravioli" },
+        { "mt": "timpana", "en": "baked pasta pie" },
+        { "mt": "fenek", "en": "rabbit" },
+        { "mt": "ġbejna", "en": "cheeselet" },
+        { "mt": "insalata", "en": "salad" },
+        { "mt": "soppa", "en": "soup" },
+        { "mt": "ġelat", "en": "ice cream" }
+      ],
+      "exercises": [
+        {
+          "id": "foodlisten",
+          "type": "listen",
+          "items": [
+            { "mt": "ħobż", "en": "bread" },
+            { "mt": "ftira", "en": "Maltese flatbread" },
+            { "mt": "fenek", "en": "rabbit" },
+            { "mt": "soppa", "en": "soup" },
+            { "mt": "ġelat", "en": "ice cream" },
+            { "mt": "insalata", "en": "salad" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ordering",
+      "icon": "🧾",
+      "title": "Ordering & paying",
+      "subtitle": "Tordna u tħallas: the phrases you need",
+      "intro": "From ordering to asking for the bill.",
+      "vocab": [
+        { "mt": "Nixtieq…", "en": "I'd like…" },
+        { "mt": "Jien nieħu…", "en": "I'll have…" },
+        { "mt": "Għalija…", "en": "For me…" },
+        { "mt": "X'tieħu?", "en": "What will you have?" },
+        { "mt": "Kemm jiswa?", "en": "How much is it?" },
+        { "mt": "Il-kont, jekk jogħġbok", "en": "The bill, please" },
+        { "mt": "Bnin!", "en": "Delicious!" }
+      ],
+      "exercises": [
+        {
+          "id": "orderbuild",
+          "type": "build",
+          "items": [
+            { "mt": "Nixtieq kafè, jekk jogħġbok", "en": "I'd like a coffee, please" },
+            { "mt": "Jien nieħu ftira", "en": "I'll have a ftira" },
+            { "mt": "Il-kont, jekk jogħġbok", "en": "The bill, please" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar8",
+      "icon": "📖",
+      "title": "Grammar",
+      "subtitle": "Il-grammatika: ordering, and saying 'with'",
+      "intro": "How to ask, order, and add milk or lemon to anything.",
+      "rules": [
+        {
+          "id": "what-will-you-have",
+          "title": "Asking and answering an order",
+          "explanation": "Staff ask X'tieħu? (what will you have?). You answer with Jien nieħu… (I'll have…) or the more polite Nixtieq… (I'd like…). Add jekk jogħġbok to be polite.",
+          "examples": [
+            { "mt": "X'tieħu?", "en": "What will you have?" },
+            { "mt": "Jien nieħu kafè.", "en": "I'll have a coffee." },
+            { "mt": "Nixtieq ftira, jekk jogħġbok.", "en": "I'd like a ftira, please." }
+          ]
+        },
+        {
+          "id": "with-bil",
+          "title": "Saying 'with': bil-",
+          "explanation": "To add something, use bil- (with). It follows the same Xemxin/Qamrin rule as the article: before most letters it stays bil- (bil-ħalib, bil-lumi), but before a Xemxin letter it doubles (biz-zokkor, with sugar).",
+          "examples": [
+            { "mt": "kafè bil-ħalib", "en": "coffee with milk" },
+            { "mt": "tè bil-lumi", "en": "tea with lemon" },
+            { "mt": "kafè biz-zokkor", "en": "coffee with sugar" }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "withmc",
+          "type": "mc",
+          "choices": ["bil-", "biz-"],
+          "items": [
+            { "word": "kafè ___ ħalib", "answer": "bil-", "en": "coffee with milk" },
+            { "word": "tè ___ lumi", "answer": "bil-", "en": "tea with lemon" },
+            { "word": "kafè ___ zokkor", "answer": "biz-", "en": "coffee with sugar" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "icon": "📚",
+      "title": "Vocabulary",
+      "subtitle": "Il-vokabularju: every word in one place",
+      "intro": "Everything from this unit, gathered to revise. Tap any word to hear it.",
+      "groups": [
+        {
+          "title": "Drinks",
+          "items": [
+            { "mt": "kafè", "en": "coffee" },
+            { "mt": "tè", "en": "tea" },
+            { "mt": "kikkra kafè", "en": "a cup of coffee" },
+            { "mt": "kafè bil-ħalib", "en": "coffee with milk" },
+            { "mt": "tè bil-lumi", "en": "tea with lemon" },
+            { "mt": "ilma", "en": "water" },
+            { "mt": "flixkun ilma", "en": "a bottle of water" },
+            { "mt": "luminata", "en": "soft drink" },
+            { "mt": "meraq tal-larinġ", "en": "orange juice" },
+            { "mt": "birra", "en": "beer" },
+            { "mt": "inbid", "en": "wine" }
+          ]
+        },
+        {
+          "title": "Food",
+          "items": [
+            { "mt": "ħobż", "en": "bread" },
+            { "mt": "ftira", "en": "Maltese flatbread" },
+            { "mt": "pastizz", "en": "pastizz (savoury pastry)" },
+            { "mt": "ravjul", "en": "ravioli" },
+            { "mt": "timpana", "en": "baked pasta pie" },
+            { "mt": "fenek", "en": "rabbit" },
+            { "mt": "ġbejna", "en": "cheeselet" },
+            { "mt": "insalata", "en": "salad" },
+            { "mt": "soppa", "en": "soup" },
+            { "mt": "ġelat", "en": "ice cream" }
+          ]
+        },
+        {
+          "title": "Ordering & paying",
+          "items": [
+            { "mt": "Nixtieq…", "en": "I'd like…" },
+            { "mt": "Jien nieħu…", "en": "I'll have…" },
+            { "mt": "Għalija…", "en": "For me…" },
+            { "mt": "X'tieħu?", "en": "What will you have?" },
+            { "mt": "Kemm jiswa?", "en": "How much is it?" },
+            { "mt": "Il-kont, jekk jogħġbok", "en": "The bill, please" },
+            { "mt": "Bnin!", "en": "Delicious!" }
+          ]
+        }
       ]
     }
   ]

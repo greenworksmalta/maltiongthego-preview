@@ -2,4 +2,4 @@ build 20260601j
 VERSION 1.0.0-beta.26
 CACHE maltiongthego-1.0.0-beta.26-20260601j
 date 2026-06-01
-notes: U5 (family match, possessive build) + U6 (imperative match, grammar build + have/there-is bucket) graded exercises; A19 em-dash sweep u4-u9. Includes U1-U3 + U4.
+notes: U8 Food/Cafés + U9 Shopping/Money/Time BUILT (launch U1-U9 complete). U6/U7 originality tweaks.

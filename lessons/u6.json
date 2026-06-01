@@ -391,11 +391,11 @@
         {
           "id": "imperative-from-mamma",
           "title": "The root inside a command (advanced)",
-          "explanation": "For Semitic-origin verbs, the imperative is derived from the 'mamma' (3rd-person past tense, what HE did) by switching the first vowel and the first root consonant. Ħaraq (he burnt) → aħraq (you burn!). The pattern keeps three root consonants intact.",
+          "explanation": "For Semitic-origin verbs, the imperative is derived from the 'mamma' (3rd-person past tense, what HE did) by switching the first vowel and the first root consonant. Xorob (he drank) → ixrob (drink!). The pattern keeps three root consonants intact.",
           "examples": [
             {
-              "mt": "Ħaraq → aħraq / aħarqu",
-              "en": "he burnt → burn! (sg / pl)"
+              "mt": "Xorob → ixrob / ixorbu",
+              "en": "he drank → drink! (sg / pl)"
             },
             {
               "mt": "Kiser → ikser / iksru",

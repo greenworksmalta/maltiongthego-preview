@@ -1,16 +1,213 @@
 {
   "id": "u9",
   "title": "Shopping, Money & Time",
-  "subtitle": "Shopping, paying, telling the time",
+  "subtitle": "Shopping, paying, and telling the time",
   "sections": [
     {
-      "id": "soon",
-      "icon": "🚧",
-      "title": "Coming soon",
-      "subtitle": "Preview: this unit is being built",
-      "facts": [
-        "This unit is part of the new structure but isn't built yet in this preview.",
-        "Pack 1 (Hello & the Alphabet, Numbers & Everyday Info, Getting Help) is ready to explore."
+      "id": "market",
+      "icon": "🛒",
+      "title": "At the shop",
+      "subtitle": "Fil-ħanut: buying a few things",
+      "intro": "Buying fruit, veg and bread at a local shop.",
+      "dialogue": [
+        { "mt": "Bonġu, x'tixtieq?", "en": "Good morning, what would you like?" },
+        { "mt": "Nixtieq kilo tadam, jekk jogħġbok.", "en": "I'd like a kilo of tomatoes, please." },
+        { "mt": "Xi ħaġa oħra?", "en": "Anything else?" },
+        { "mt": "Iva, ħobża waħda.", "en": "Yes, one loaf." },
+        { "mt": "Kemm huma kollox?", "en": "How much is it all together?" },
+        { "mt": "Żewġ ewro u nofs.", "en": "Two euro fifty." }
+      ]
+    },
+    {
+      "id": "shops",
+      "icon": "🏪",
+      "title": "Shops & groceries",
+      "subtitle": "Ħwienet u xirja: where you buy what",
+      "intro": "Places to shop and the things you pick up.",
+      "items": [
+        { "mt": "ħanut", "en": "shop" },
+        { "mt": "suq", "en": "market" },
+        { "mt": "ġroċerija", "en": "grocer's" },
+        { "mt": "forn", "en": "bakery" },
+        { "mt": "frott", "en": "fruit" },
+        { "mt": "ħaxix", "en": "vegetables" },
+        { "mt": "laħam", "en": "meat" },
+        { "mt": "ħut", "en": "fish" },
+        { "mt": "ħalib", "en": "milk" },
+        { "mt": "bajd", "en": "eggs" },
+        { "mt": "tadam", "en": "tomatoes" },
+        { "mt": "kilo", "en": "a kilo" }
+      ],
+      "exercises": [
+        {
+          "id": "shopmatch",
+          "type": "match",
+          "title": "Match the word to its meaning",
+          "leftField": "mt",
+          "rightField": "en",
+          "items": [
+            { "mt": "ħanut", "en": "shop" },
+            { "mt": "forn", "en": "bakery" },
+            { "mt": "frott", "en": "fruit" },
+            { "mt": "ħaxix", "en": "vegetables" },
+            { "mt": "ħut", "en": "fish" },
+            { "mt": "ħalib", "en": "milk" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "time",
+      "icon": "🕐",
+      "title": "Telling the time",
+      "subtitle": "X'ħin hu?: hours, half and quarter",
+      "intro": "Asking and giving the time. Tap any phrase to hear it.",
+      "items": [
+        { "mt": "X'ħin hu?", "en": "What time is it?" },
+        { "mt": "Is-siegħa", "en": "one o'clock" },
+        { "mt": "Is-sagħtejn", "en": "two o'clock" },
+        { "mt": "It-tlieta", "en": "three o'clock" },
+        { "mt": "Is-sitta u nofs", "en": "half past six" },
+        { "mt": "Il-ħamsa u kwart", "en": "quarter past five" },
+        { "mt": "Id-disgħa nieqes kwart", "en": "quarter to nine" },
+        { "mt": "filgħodu", "en": "in the morning" },
+        { "mt": "waranofsinhar", "en": "in the afternoon" },
+        { "mt": "filgħaxija", "en": "in the evening" }
+      ],
+      "exercises": [
+        {
+          "id": "timelisten",
+          "type": "listen",
+          "items": [
+            { "mt": "Is-siegħa", "en": "one o'clock" },
+            { "mt": "It-tlieta", "en": "three o'clock" },
+            { "mt": "Is-sitta u nofs", "en": "half past six" },
+            { "mt": "Il-ħamsa u kwart", "en": "quarter past five" },
+            { "mt": "Id-disgħa nieqes kwart", "en": "quarter to nine" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "money",
+      "icon": "💶",
+      "title": "Money & paying",
+      "subtitle": "Flus u ħlas: prices and paying",
+      "intro": "Asking the price, paying, and the change.",
+      "vocab": [
+        { "mt": "Kemm jiswa?", "en": "How much is it?" },
+        { "mt": "Kemm huma?", "en": "How much are they?" },
+        { "mt": "Bil-flus", "en": "In cash" },
+        { "mt": "Bil-karta", "en": "By card" },
+        { "mt": "Il-bqija", "en": "The change" },
+        { "mt": "irħis", "en": "cheap" },
+        { "mt": "għali", "en": "expensive" }
+      ],
+      "exercises": [
+        {
+          "id": "moneybuild",
+          "type": "build",
+          "items": [
+            { "mt": "Kemm jiswa dan?", "en": "How much is this?" },
+            { "mt": "Inħallas bil-karta", "en": "I'll pay by card" },
+            { "mt": "Dan għali wisq", "en": "This is too expensive" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar9",
+      "icon": "📖",
+      "title": "Grammar",
+      "subtitle": "Il-grammatika: the time, and asking the price",
+      "intro": "How the clock works in Maltese, and the two 'how much' questions.",
+      "rules": [
+        {
+          "id": "telling-time",
+          "title": "The time: u (past) and nieqes (to)",
+          "explanation": "Ask X'ħin hu? (what time is it?). The hour takes the article: Is-siegħa (1:00), Is-sitta (6:00). Add minutes with u (past) or nieqes (to): Is-sitta u nofs (6:30), Id-disgħa nieqes kwart (8:45).",
+          "examples": [
+            { "mt": "X'ħin hu?", "en": "What time is it?" },
+            { "mt": "Is-sitta u nofs.", "en": "Half past six." },
+            { "mt": "Il-ħamsa u kwart.", "en": "Quarter past five." },
+            { "mt": "Id-disgħa nieqes kwart.", "en": "Quarter to nine." }
+          ]
+        },
+        {
+          "id": "how-much",
+          "title": "Two ways to ask the price",
+          "explanation": "Use Kemm jiswa? for one thing (how much is it?) and Kemm huma? for more than one (how much are they?). Answer with the number plus ewro or ċenteżmu.",
+          "examples": [
+            { "mt": "Kemm jiswa dan?", "en": "How much is this?" },
+            { "mt": "Kemm huma t-tadam?", "en": "How much are the tomatoes?" },
+            { "mt": "Żewġ ewro u nofs.", "en": "Two euro fifty." }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "timemc",
+          "type": "mc",
+          "choices": ["u", "nieqes"],
+          "items": [
+            { "word": "Is-sitta ___ nofs (6:30)", "answer": "u", "en": "half past six" },
+            { "word": "Il-ħamsa ___ kwart (5:15)", "answer": "u", "en": "quarter past five" },
+            { "word": "Id-disgħa ___ kwart (8:45)", "answer": "nieqes", "en": "quarter to nine" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "icon": "📚",
+      "title": "Vocabulary",
+      "subtitle": "Il-vokabularju: every word in one place",
+      "intro": "Everything from this unit, gathered to revise. Tap any word to hear it.",
+      "groups": [
+        {
+          "title": "Shops & groceries",
+          "items": [
+            { "mt": "ħanut", "en": "shop" },
+            { "mt": "suq", "en": "market" },
+            { "mt": "ġroċerija", "en": "grocer's" },
+            { "mt": "forn", "en": "bakery" },
+            { "mt": "frott", "en": "fruit" },
+            { "mt": "ħaxix", "en": "vegetables" },
+            { "mt": "laħam", "en": "meat" },
+            { "mt": "ħut", "en": "fish" },
+            { "mt": "ħalib", "en": "milk" },
+            { "mt": "bajd", "en": "eggs" },
+            { "mt": "tadam", "en": "tomatoes" },
+            { "mt": "kilo", "en": "a kilo" }
+          ]
+        },
+        {
+          "title": "Telling the time",
+          "items": [
+            { "mt": "X'ħin hu?", "en": "What time is it?" },
+            { "mt": "Is-siegħa", "en": "one o'clock" },
+            { "mt": "Is-sagħtejn", "en": "two o'clock" },
+            { "mt": "It-tlieta", "en": "three o'clock" },
+            { "mt": "Is-sitta u nofs", "en": "half past six" },
+            { "mt": "Il-ħamsa u kwart", "en": "quarter past five" },
+            { "mt": "Id-disgħa nieqes kwart", "en": "quarter to nine" },
+            { "mt": "filgħodu", "en": "in the morning" },
+            { "mt": "waranofsinhar", "en": "in the afternoon" },
+            { "mt": "filgħaxija", "en": "in the evening" }
+          ]
+        },
+        {
+          "title": "Money & paying",
+          "items": [
+            { "mt": "Kemm jiswa?", "en": "How much is it?" },
+            { "mt": "Kemm huma?", "en": "How much are they?" },
+            { "mt": "Bil-flus", "en": "In cash" },
+            { "mt": "Bil-karta", "en": "By card" },
+            { "mt": "Il-bqija", "en": "The change" },
+            { "mt": "irħis", "en": "cheap" },
+            { "mt": "għali", "en": "expensive" }
+          ]
+        }
       ]
     }
   ]
