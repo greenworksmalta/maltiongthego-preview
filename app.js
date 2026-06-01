@@ -20,7 +20,7 @@ const VERSION = "1.0.0-beta.26";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "20260601s";
+const BUILD = "20260601t";
 function v(url){ return url + (url.includes("?")?"&":"?") + "v=" + VERSION; }
 
 // Lightweight UI strings table for the parts of the app that aren't data-driven.
@@ -745,8 +745,16 @@ function showFeedback(good, title, detail, onNext, opts){
   txt.appendChild(el("h3","",title));
   if(detail){ txt.appendChild(el("p","",detail)); }
   row.appendChild(txt);
-  const nx = el("button","next", (opts && opts.label) || "Next →");
-  nx.addEventListener("click", ()=>{ hideFeedback(); onNext&&onNext(); });
+  // On a WRONG answer with no explicit button label, offer a real retry: use the
+  // same "Try again ↺" phrase the other exercises use and re-render the current
+  // step (route()) instead of advancing. Correct answers, and wrong answers that
+  // already supply their own retry (opts.label), are unchanged.
+  const retryDefault = (good === false) && !(opts && opts.label);
+  const nx = el("button","next", (opts && opts.label) || (good ? "Next →" : "Try again ↺"));
+  nx.addEventListener("click", ()=>{
+    hideFeedback();
+    if(retryDefault){ route(); } else { onNext && onNext(); }
+  });
   row.appendChild(nx);
   fb.appendChild(row);
 }

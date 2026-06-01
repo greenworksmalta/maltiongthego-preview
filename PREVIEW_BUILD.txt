@@ -1,5 +1,5 @@
-build 20260601s
+build 20260601t
 VERSION 1.0.0-beta.26
-CACHE maltiongthego-1.0.0-beta.26-20260601s
+CACHE maltiongthego-1.0.0-beta.26-20260601t
 date 2026-06-01
-notes: U4 colour sort+reveal-feminine merge; adjmatch voices the opposite too.
+notes: wrong answers say Try again and retry the step (not Next).
