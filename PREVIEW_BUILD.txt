@@ -1,5 +1,5 @@
-build 20260601f
+build 20260601g
 VERSION 1.0.0-beta.26
-CACHE maltiongthego-1.0.0-beta.26-20260601f
+CACHE maltiongthego-1.0.0-beta.26-20260601g
 date 2026-06-01
-notes: U1-U3 fixes A (alphabet listen deterministic), B (grammar heading shown), C (syllables intro+facts shown). Includes U4 graded exercises.
+notes: FIX stale-cache (index.html now busts app.js per build) + U1-U3 fixes A/B/C live.
