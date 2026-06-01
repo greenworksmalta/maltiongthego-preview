@@ -1,5 +1,5 @@
-build 20260601m
+build 20260601n
 VERSION 1.0.0-beta.26
-CACHE maltiongthego-1.0.0-beta.26-20260601m
+CACHE maltiongthego-1.0.0-beta.26-20260601n
 date 2026-06-01
-notes: U9 "Kemm huma b kollox?" fix + clip.
+notes: U9 euro u hamsin centezmu fix.

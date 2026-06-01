@@ -15,7 +15,7 @@
         { "mt": "Xi ħaġa oħra?", "en": "Anything else?" },
         { "mt": "Iva, ħobża waħda.", "en": "Yes, one loaf." },
         { "mt": "Kemm huma b'kollox?", "en": "How much is it all together?" },
-        { "mt": "Żewġ ewro u nofs.", "en": "Two euro fifty." }
+        { "mt": "Żewġ ewro u ħamsin ċenteżmu.", "en": "Two euro fifty." }
       ]
     },
     {
@@ -140,7 +140,7 @@
           "examples": [
             { "mt": "Kemm jiswa dan?", "en": "How much is this?" },
             { "mt": "Kemm huma t-tadam?", "en": "How much are the tomatoes?" },
-            { "mt": "Żewġ ewro u nofs.", "en": "Two euro fifty." }
+            { "mt": "Żewġ ewro u ħamsin ċenteżmu.", "en": "Two euro fifty." }
           ]
         }
       ],
