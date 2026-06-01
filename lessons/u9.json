@@ -98,7 +98,7 @@
         { "mt": "Kemm jiswa?", "en": "How much is it?" },
         { "mt": "Kemm huma?", "en": "How much are they?" },
         { "mt": "Bil-flus", "en": "In cash" },
-        { "mt": "Bil-karta", "en": "By card" },
+        { "mt": "Bil-karta tal-kreditu", "en": "By card" },
         { "mt": "Il-bqija", "en": "The change" },
         { "mt": "irħis", "en": "cheap" },
         { "mt": "għali", "en": "expensive" }
@@ -109,7 +109,7 @@
           "type": "build",
           "items": [
             { "mt": "Kemm jiswa dan?", "en": "How much is this?" },
-            { "mt": "Inħallas bil-karta", "en": "I'll pay by card" },
+            { "mt": "Inħallas bil-karta tal-kreditu", "en": "I'll pay by card" },
             { "mt": "Dan għali wisq", "en": "This is too expensive" }
           ]
         }
@@ -202,7 +202,7 @@
             { "mt": "Kemm jiswa?", "en": "How much is it?" },
             { "mt": "Kemm huma?", "en": "How much are they?" },
             { "mt": "Bil-flus", "en": "In cash" },
-            { "mt": "Bil-karta", "en": "By card" },
+            { "mt": "Bil-karta tal-kreditu", "en": "By card" },
             { "mt": "Il-bqija", "en": "The change" },
             { "mt": "irħis", "en": "cheap" },
             { "mt": "għali", "en": "expensive" }
