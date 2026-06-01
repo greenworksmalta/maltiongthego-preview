@@ -1,5 +1,5 @@
-build 20260601l
+build 20260601m
 VERSION 1.0.0-beta.26
-CACHE maltiongthego-1.0.0-beta.26-20260601l
+CACHE maltiongthego-1.0.0-beta.26-20260601m
 date 2026-06-01
-notes: U1-U9 audio generated (177 new clips). Tap words/phrases to hear them.
+notes: U9 "Kemm huma b kollox?" fix + clip.
