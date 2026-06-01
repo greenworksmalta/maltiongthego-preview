@@ -20,7 +20,7 @@ const VERSION = "1.0.0-beta.26";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "20260601v";
+const BUILD = "20260601w";
 function v(url){ return url + (url.includes("?")?"&":"?") + "v=" + VERSION; }
 
 // Lightweight UI strings table for the parts of the app that aren't data-driven.
@@ -3176,8 +3176,8 @@ STEP_RENDERERS["pronouns:ex1"] = (root, sec, idx, onNext) => {
     const b = el("button","chip", c);
     b.addEventListener("click", ()=>{
       if(c===item.answer){
-        b.classList.add("right"); addXp(5); play(item.answer);
-        showFeedback(true,"Sewwa!", item.answer+" replaces it.", onNext);
+        b.classList.add("right"); addXp(5); play(item.full || item.answer);
+        showFeedback(true,"Sewwa!", item.full || (item.answer+" replaces it."), onNext);
       } else {
         b.classList.add("wrong");
         [...chips.children].forEach(x=>{ if(x.textContent===item.answer) x.classList.add("right"); });

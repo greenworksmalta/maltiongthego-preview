@@ -129,52 +129,62 @@
             {
               "sentence": "Joanne taqra ktieb.",
               "en": "Joanne is reading a book.",
-              "answer": "Hi"
+              "answer": "Hi",
+              "full": "Hi taqra ktieb."
             },
             {
               "sentence": "Karl jaħdem fil-belt.",
               "en": "Karl works in the city.",
-              "answer": "Hu"
+              "answer": "Hu",
+              "full": "Hu jaħdem fil-belt."
             },
             {
               "sentence": "It-turisti jħobbu lill-Malta.",
               "en": "The tourists love Malta.",
-              "answer": "Huma"
+              "answer": "Huma",
+              "full": "Huma jħobbu lill-Malta."
             },
             {
               "sentence": "Il-ġnien sabiħ ħafna.",
               "en": "The garden is very beautiful.",
-              "answer": "Hu"
+              "answer": "Hu",
+              "full": "Hu sabiħ ħafna."
             },
             {
               "sentence": "Ommi qed issajjar.",
               "en": "My mother is cooking.",
-              "answer": "Hi"
+              "answer": "Hi",
+              "full": "Hi qed issajjar."
             },
             {
               "sentence": "Il-kotba kollha mqattajn.",
               "en": "The books are all torn.",
-              "answer": "Huma"
+              "answer": "Huma",
+              "full": "Huma kollha mqattajn."
             },
             {
               "sentence": "It-triq tkissret bix-xita.",
               "en": "The street was broken up by the rain.",
-              "answer": "Hi"
+              "answer": "Hi",
+              "full": "Hi tkissret bix-xita."
             },
             {
               "sentence": "Jien u ommi noħorġu waranofsinhar.",
               "en": "My mother and I go out in the afternoon.",
-              "answer": "Aħna"
+              "answer": "Aħna",
+              "full": "Aħna noħorġu waranofsinhar."
             },
             {
               "sentence": "It-tfal qed jistudjaw.",
               "en": "The children are studying.",
-              "answer": "Huma"
+              "answer": "Huma",
+              "full": "Huma qed jistudjaw."
             },
             {
               "sentence": "Mary, kif kienet il-vaganza?",
               "en": "Mary, how was the holiday?",
-              "answer": "Int"
+              "answer": "Int",
+              "full": "Int, kif kienet il-vaganza?"
             }
           ]
         }
@@ -519,14 +529,39 @@
       ],
       "intro": "Core family members to start with.",
       "exercises": [
-        { "id": "fammatch", "type": "match", "title": "Match each family member to its meaning", "leftField": "mt", "rightField": "en", "items": [
-          { "mt": "Omm", "en": "Mother" },
-          { "mt": "Missier", "en": "Father" },
-          { "mt": "Ħu", "en": "Brother" },
-          { "mt": "Oħt", "en": "Sister" },
-          { "mt": "Nannu", "en": "Grandfather" },
-          { "mt": "Nanna", "en": "Grandmother" }
-        ] }
+        {
+          "id": "fammatch",
+          "type": "match",
+          "title": "Match each family member to its meaning",
+          "leftField": "mt",
+          "rightField": "en",
+          "items": [
+            {
+              "mt": "Omm",
+              "en": "Mother"
+            },
+            {
+              "mt": "Missier",
+              "en": "Father"
+            },
+            {
+              "mt": "Ħu",
+              "en": "Brother"
+            },
+            {
+              "mt": "Oħt",
+              "en": "Sister"
+            },
+            {
+              "mt": "Nannu",
+              "en": "Grandfather"
+            },
+            {
+              "mt": "Nanna",
+              "en": "Grandmother"
+            }
+          ]
+        }
       ]
     },
     {
@@ -622,13 +657,34 @@
         }
       ],
       "exercises": [
-        { "id": "posbuild", "type": "build", "max": 5, "title": "Build the possessive phrase", "items": [
-          { "mt": "il-kelb tiegħi", "en": "my dog" },
-          { "mt": "il-kelb tagħha", "en": "her dog" },
-          { "mt": "il-kelb tagħna", "en": "our dog" },
-          { "mt": "Il-kelb ta' Joanne", "en": "Joanne's dog" },
-          { "mt": "Id-dar ta' Karl", "en": "Karl's house" }
-        ] }
+        {
+          "id": "posbuild",
+          "type": "build",
+          "max": 5,
+          "title": "Build the possessive phrase",
+          "items": [
+            {
+              "mt": "il-kelb tiegħi",
+              "en": "my dog"
+            },
+            {
+              "mt": "il-kelb tagħha",
+              "en": "her dog"
+            },
+            {
+              "mt": "il-kelb tagħna",
+              "en": "our dog"
+            },
+            {
+              "mt": "Il-kelb ta' Joanne",
+              "en": "Joanne's dog"
+            },
+            {
+              "mt": "Id-dar ta' Karl",
+              "en": "Karl's house"
+            }
+          ]
+        }
       ]
     },
     {
