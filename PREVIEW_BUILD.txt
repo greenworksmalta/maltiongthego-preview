@@ -1,5 +1,5 @@
-build 20260601c
+build 20260601d
 VERSION 1.0.0-beta.26
-CACHE maltiongthego-1.0.0-beta.26-20260601c
+CACHE maltiongthego-1.0.0-beta.26-20260601d
 date 2026-06-01
-notes: U1 flow reshuffle (days before alphabet; syllables moved in from U3); U3 now work/nationalities/grammar/vocab. + earlier four-button nav, vocab trims, etc.
+notes: nav repetition fixed (no duplicate Next on alphabet/flash); + U1 flow reshuffle, syllables in U1.

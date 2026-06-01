@@ -20,7 +20,7 @@ const VERSION = "1.0.0-beta.26";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "20260601c";
+const BUILD = "20260601d";
 function v(url){ return url + (url.includes("?")?"&":"?") + "v=" + VERSION; }
 
 // Lightweight UI strings table for the parts of the app that aren't data-driven.
@@ -1902,6 +1902,71 @@ function pruneDeadSteps(sec){
   }
 }
 
+// ── Data-driven graded exercises (keystone extension) ────────────────────────
+// Lets ANY section — known-id, new-id, or OTA-delivered — carry graded exercises
+// as PURE DATA. A section gains `exercises: [{id, type, ...}]`; each type-tagged
+// exercise is auto-wired to its existing maker and APPENDED to the section's flow
+// (after the presentation steps), so "practice follows presentation" within a
+// section. Gated on a `type` field, so legacy exercises (grammar/pronouns/… — wired
+// via hardcoded SECTION_FLOWS, no `type`) are NEVER touched. Idempotent.
+//   type "mc"      → makeMcStep         · ex.items[{word,answer,en}], ex.choices, ex.opts
+//   type "bucket"  → makeBucketSortStep · ex.items[{word,answer}], ex.choices, ex.batch
+//   type "article" → makeArticleBuildStep · ex.items[{word,answer,en}], ex.choices
+//   type "match"   → makeMatchStep      · ex.items[…], ex.leftField/rightField, ex.title
+//   type "build"   → makeBuildStep      · ex.items[{mt,en}]
+//   type "listen"  → makeListenStep     · ex.items[{mt,en}]
+// match/build/listen makers read a SECTION field (not the exercises array), so we
+// expose ex.items under a derived field name; renderer+count wiring is idempotent.
+function wireDataExercise(sec, ex){
+  const fid = sec.id + ":" + ex.id;
+  if(STEP_RENDERERS[fid]) return;          // already wired (global) — idempotent
+  const itemsOf = s => ((s.exercises || []).find(e => e.id === ex.id) || {}).items || [];
+  switch(ex.type){
+    case "mc":
+      STEP_RENDERERS[fid] = makeMcStep(ex.id, ex.opts || {});
+      STEP_COUNTS[fid] = s => Math.min(ex.max || 10, itemsOf(s).length) || 1;
+      break;
+    case "bucket": {
+      const batch = ex.batch || 6;
+      STEP_RENDERERS[fid] = makeBucketSortStep(ex.id, {batch});
+      STEP_COUNTS[fid] = s => Math.ceil(itemsOf(s).length / batch) || 1;
+      break;
+    }
+    case "article":
+      STEP_RENDERERS[fid] = makeArticleBuildStep(ex.id);
+      STEP_COUNTS[fid] = s => itemsOf(s).length || 1;
+      break;
+    case "match":
+      STEP_RENDERERS[fid] = makeMatchStep("_mx_" + ex.id, ex.leftField || "mt", ex.rightField || "en", ex.title || "Match the pairs");
+      STEP_COUNTS[fid] = () => 1;
+      break;
+    case "build":
+      STEP_RENDERERS[fid] = makeBuildStep("_bd_" + ex.id);
+      STEP_COUNTS[fid] = s => Math.min(ex.max || 8, itemsOf(s).length) || 1;
+      break;
+    case "listen":
+      STEP_RENDERERS[fid] = makeListenStep("_ls_" + ex.id);
+      STEP_COUNTS[fid] = s => Math.min(ex.max || 6, itemsOf(s).length) || 1;
+      break;
+    default: return;                       // unknown type → not ours; leave alone
+  }
+}
+function appendDataExercises(sec){
+  if(!Array.isArray(sec.exercises) || !sec.exercises.length) return;
+  const flow = SECTION_FLOWS[sec.id];
+  if(!Array.isArray(flow)) return;
+  sec.exercises.forEach(ex => {
+    if(!ex || !ex.id || !ex.type) return;  // only OUR type-tagged exercises
+    // Field-injection for the field-based makers — done on EVERY call so a freshly
+    // loaded lesson object (e.g. after a language switch) is always populated.
+    if(ex.type === "match")  sec["_mx_" + ex.id] = ex.items;
+    if(ex.type === "build")  sec["_bd_" + ex.id] = ex.items;
+    if(ex.type === "listen") sec["_ls_" + ex.id] = ex.items;
+    wireDataExercise(sec, ex);
+    if(STEP_RENDERERS[sec.id + ":" + ex.id] && !flow.includes(ex.id)) flow.push(ex.id);
+  });
+}
+
 // Registration is idempotent and never overrides an already-defined id.
 function ensureSectionRegistered(sec){
   if(!sec || !sec.id) return;
@@ -1911,6 +1976,7 @@ function ensureSectionRegistered(sec){
     // Prune any flow step whose required data is now missing, so we never advance
     // into a renderer that reads an absent field and dead-ends on "could not load".
     pruneDeadSteps(sec);
+    appendDataExercises(sec);   // append any data-driven graded exercises
     return;
   }
 
@@ -1987,6 +2053,7 @@ function ensureSectionRegistered(sec){
   }
 
   SECTION_FLOWS[id] = flow;
+  appendDataExercises(sec);   // append any data-driven graded exercises after presentation
 }
 
 // ── Section dispatcher ────────────────────────
@@ -2044,14 +2111,18 @@ function renderSection(lid, sid, step, idx){
   // Don't show "Next exercise" when it would land in the same place as "Next"
   // (i.e. we're already on the last portion of the current exercise).
   const nextExDistinct = nextExHash && nextExHash !== nextHash;
-  if(prevHash || nextHash || nextExDistinct || nextSid){
+  // If the rendered step already drew its own forward button (e.g. "Next letter
+  // →"), don't add a duplicate nav-row "Next →".
+  const hasIncardNext = !!root.querySelector(".incard-next");
+  const showNavNext = nextHash && !hasIncardNext;
+  if(prevHash || showNavNext || nextExDistinct || nextSid){
     const wrap = el("div","prev-wrap nav-row");
     if(prevHash){
       const back = el("button","btn-prev", t.previous);
       back.addEventListener("click", ()=>go(prevHash));
       wrap.appendChild(back);
     }
-    if(nextHash){
+    if(showNavNext){
       const nx = el("button","btn-prev btn-next", (t.next || "Next") + " →");
       nx.addEventListener("click", ()=>go(nextHash));
       wrap.appendChild(nx);
@@ -2430,7 +2501,10 @@ const NAV_I18N = {
 function nextBtn(label, onNext){
   const lang = (typeof State !== "undefined" && State.lang) || "en";
   const translated = (NAV_I18N[lang] && NAV_I18N[lang][label]) || label || "Next";
-  const b = el("button","btn",translated);
+  // "incard-next" marks this as the step's own forward control (e.g. "Next
+  // letter →", "Next rule →"). renderSection looks for it and suppresses the
+  // duplicate nav-row "Next →" so presentation screens don't show two.
+  const b = el("button","btn incard-next",translated);
   b.addEventListener("click", onNext);
   return b;
 }
@@ -2651,7 +2725,13 @@ function makeMcStep(exId, opts){
     const audioStr = audioCombine ? audioCombine(item) : item[wordField];
     wordRow.appendChild(audioBtn(audioStr, {size:"lg", rate: MC_RATE}));
     const w = el("div","grow");
-    w.appendChild(el("div","mtline", opts.displayFn ? opts.displayFn(item) : ("____ "+item[wordField])));
+    // Prompt text: a custom displayFn wins; else fill-in-the-blank. `blankAfter`
+    // (JSON-friendly) puts the blank AFTER the word — needed because Maltese
+    // adjectives/colours FOLLOW the noun (tadama ____, not ____ tadama).
+    const promptText = opts.displayFn ? opts.displayFn(item)
+      : opts.blankAfter ? (item[wordField] + " ____")
+      : ("____ " + item[wordField]);
+    w.appendChild(el("div","mtline", promptText));
     if(item[subField]) w.appendChild(el("div","muted", item[subField]));
     wordRow.appendChild(w);
     card.appendChild(wordRow);
