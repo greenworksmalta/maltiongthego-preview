@@ -1,16 +1,1025 @@
 {
   "id": "u5",
   "title": "People, Family & Belonging",
-  "subtitle": "Pronouns, family, this/that, belonging",
+  "subtitle": "Pronouns, family, this and that, who owns what",
   "sections": [
     {
-      "id": "soon",
-      "icon": "🚧",
-      "title": "Coming soon",
-      "subtitle": "Preview — this unit is being built",
-      "facts": [
-        "This unit is part of the new structure but isn't built yet in this preview.",
-        "Pack 1 (Hello & the Alphabet, Numbers & Everyday Info, Getting Help) is ready to explore."
+      "id": "familytalk",
+      "icon": "👪",
+      "title": "Talking about family",
+      "subtitle": "Nitkellmu fuq il-familja",
+      "intro": "A quick chat about who's in your family.",
+      "dialogue": [
+        {
+          "mt": "Għandek familja kbira?",
+          "en": "Do you have a big family?"
+        },
+        {
+          "mt": "Iva, għandi żewġt aħwa.",
+          "en": "Yes, I have two siblings."
+        },
+        {
+          "mt": "Subien jew bniet?",
+          "en": "Boys or girls?"
+        },
+        {
+          "mt": "Ħija u oħti. U int?",
+          "en": "My brother and my sister. And you?"
+        },
+        {
+          "mt": "Jien għandi tifel wieħed.",
+          "en": "I have one son."
+        },
+        {
+          "mt": "Kemm għandu żmien?",
+          "en": "How old is he?"
+        },
+        {
+          "mt": "Għandu ħames snin.",
+          "en": "He's five years old."
+        }
+      ]
+    },
+    {
+      "id": "pronouns",
+      "icon": "👥",
+      "title": "Pronouns",
+      "subtitle": "Pronomi Personali — I, you, he, she, we…",
+      "intro": "Pronouns replace nouns. Most have a long form and a short form (e.g. Jien / Jiena both mean 'I'). Use whichever feels natural.",
+      "items": [
+        {
+          "mt": "Jien",
+          "alt": "Jiena",
+          "en": "I"
+        },
+        {
+          "mt": "Int",
+          "alt": "Inti",
+          "en": "You (singular)"
+        },
+        {
+          "mt": "Hu",
+          "alt": "Huwa",
+          "en": "He"
+        },
+        {
+          "mt": "Hi",
+          "alt": "Hija",
+          "en": "She"
+        },
+        {
+          "mt": "Aħna",
+          "alt": "Aħna",
+          "en": "We"
+        },
+        {
+          "mt": "Intom",
+          "alt": "Intom",
+          "en": "You (plural)"
+        },
+        {
+          "mt": "Huma",
+          "alt": "Huma",
+          "en": "They"
+        }
+      ],
+      "dialogue": [
+        {
+          "mt": "Jien naqra ktieb kuljum.",
+          "en": "I read a book every day."
+        },
+        {
+          "mt": "Int taqra ħafna?",
+          "en": "Do you read a lot?"
+        },
+        {
+          "mt": "Hu jaħdem fl-uffiċċju.",
+          "en": "He works at the office."
+        },
+        {
+          "mt": "Hi ssajjar għaġin.",
+          "en": "She cooks pasta."
+        },
+        {
+          "mt": "Aħna nimxu fil-ġnien.",
+          "en": "We walk in the garden."
+        },
+        {
+          "mt": "Intom titkellmu bil-Malti?",
+          "en": "Do you (pl) speak Maltese?"
+        },
+        {
+          "mt": "Huma ġejjin Malta.",
+          "en": "They are coming to Malta."
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex1",
+          "title": "Replace the noun with the right pronoun",
+          "instructions": "Tap which pronoun replaces the underlined noun.",
+          "choices": [
+            "Hu",
+            "Hi",
+            "Huma",
+            "Aħna",
+            "Int"
+          ],
+          "items": [
+            {
+              "sentence": "Joanne taqra ktieb.",
+              "en": "Joanne is reading a book.",
+              "answer": "Hi"
+            },
+            {
+              "sentence": "Karl jaħdem fil-belt.",
+              "en": "Karl works in the city.",
+              "answer": "Hu"
+            },
+            {
+              "sentence": "It-turisti jħobbu lill-Malta.",
+              "en": "The tourists love Malta.",
+              "answer": "Huma"
+            },
+            {
+              "sentence": "Il-ġnien sabiħ ħafna.",
+              "en": "The garden is very beautiful.",
+              "answer": "Hu"
+            },
+            {
+              "sentence": "Ommi qed issajjar.",
+              "en": "My mother is cooking.",
+              "answer": "Hi"
+            },
+            {
+              "sentence": "Il-kotba kollha mqattajn.",
+              "en": "The books are all torn.",
+              "answer": "Huma"
+            },
+            {
+              "sentence": "It-triq tkissret bix-xita.",
+              "en": "The street was broken up by the rain.",
+              "answer": "Hi"
+            },
+            {
+              "sentence": "Jien u ommi noħorġu waranofsinhar.",
+              "en": "My mother and I go out in the afternoon.",
+              "answer": "Aħna"
+            },
+            {
+              "sentence": "It-tfal qed jistudjaw.",
+              "en": "The children are studying.",
+              "answer": "Huma"
+            },
+            {
+              "sentence": "Mary, kif kienet il-vaganza?",
+              "en": "Mary, how was the holiday?",
+              "answer": "Int"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demonstratives",
+      "icon": "👉",
+      "title": "Demonstratives",
+      "subtitle": "Pronomi Demonstrattivi — this, that, these, those",
+      "intro": "Maltese demonstratives change with gender and number. Use 'dan/din/dawn' for things close to you, 'dak/dik/dawk' for things further away.",
+      "rules": [
+        {
+          "id": "this",
+          "title": "This / These (close)",
+          "explanation": "Things near you — within reach.",
+          "items": [
+            {
+              "mt": "Dan",
+              "en": "This (masculine)"
+            },
+            {
+              "mt": "Din",
+              "en": "This (feminine)"
+            },
+            {
+              "mt": "Dawn",
+              "en": "These (plural)"
+            }
+          ],
+          "examples": [
+            {
+              "phrase": "Dan il-ktieb",
+              "en": "This book (m)"
+            },
+            {
+              "phrase": "Din it-tazza",
+              "en": "This cup (f)"
+            },
+            {
+              "phrase": "Dawn il-fjuri",
+              "en": "These flowers (pl)"
+            }
+          ]
+        },
+        {
+          "id": "that",
+          "title": "That / Those (further)",
+          "explanation": "Things over there — out of reach.",
+          "items": [
+            {
+              "mt": "Dak",
+              "en": "That (masculine)"
+            },
+            {
+              "mt": "Dik",
+              "en": "That (feminine)"
+            },
+            {
+              "mt": "Dawk",
+              "en": "Those (plural)"
+            }
+          ],
+          "examples": [
+            {
+              "phrase": "Dak il-ġebel",
+              "en": "That stone (m)"
+            },
+            {
+              "phrase": "Dik is-siġra",
+              "en": "That tree (f)"
+            },
+            {
+              "phrase": "Dawk it-tfal",
+              "en": "Those children (pl)"
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex2",
+          "title": "Exercise 2 — dan, din, dawn?",
+          "instructions": "Pick the right form for each word (close to you).",
+          "choices": [
+            "dan",
+            "din",
+            "dawn"
+          ],
+          "items": [
+            {
+              "word": "ktieb",
+              "en": "book (m)",
+              "answer": "dan"
+            },
+            {
+              "word": "tazza",
+              "en": "cup (f)",
+              "answer": "din"
+            },
+            {
+              "word": "kelb",
+              "en": "dog (m)",
+              "answer": "dan"
+            },
+            {
+              "word": "fjura",
+              "en": "flower (f)",
+              "answer": "din"
+            },
+            {
+              "word": "tfal",
+              "en": "children (pl)",
+              "answer": "dawn"
+            },
+            {
+              "word": "raġel",
+              "en": "man (m)",
+              "answer": "dan"
+            },
+            {
+              "word": "siġra",
+              "en": "tree (f)",
+              "answer": "din"
+            },
+            {
+              "word": "qattusi",
+              "en": "cats (pl)",
+              "answer": "dawn"
+            },
+            {
+              "word": "ċavetta",
+              "en": "key (f)",
+              "answer": "din"
+            },
+            {
+              "word": "platt",
+              "en": "plate (m)",
+              "answer": "dan"
+            },
+            {
+              "word": "kotba",
+              "en": "books (pl)",
+              "answer": "dawn"
+            },
+            {
+              "word": "tieqa",
+              "en": "window (f)",
+              "answer": "din"
+            },
+            {
+              "word": "saqqu",
+              "en": "mattress (m)",
+              "answer": "dan"
+            },
+            {
+              "word": "stilel",
+              "en": "stars (pl)",
+              "answer": "dawn"
+            }
+          ]
+        },
+        {
+          "id": "ex3",
+          "title": "Exercise 3 — dak, dik, dawk?",
+          "instructions": "Pick the right form for things further away.",
+          "choices": [
+            "dak",
+            "dik",
+            "dawk"
+          ],
+          "items": [
+            {
+              "word": "muntanja",
+              "en": "mountain (f)",
+              "answer": "dik"
+            },
+            {
+              "word": "vapur",
+              "en": "ship (m)",
+              "answer": "dak"
+            },
+            {
+              "word": "ġurnali",
+              "en": "newspapers (pl)",
+              "answer": "dawk"
+            },
+            {
+              "word": "kappillan",
+              "en": "priest (m)",
+              "answer": "dak"
+            },
+            {
+              "word": "knisja",
+              "en": "church (f)",
+              "answer": "dik"
+            },
+            {
+              "word": "trakkijiet",
+              "en": "trucks (pl)",
+              "answer": "dawk"
+            },
+            {
+              "word": "vann",
+              "en": "van (m)",
+              "answer": "dak"
+            },
+            {
+              "word": "borża",
+              "en": "bag (f)",
+              "answer": "dik"
+            },
+            {
+              "word": "siġar",
+              "en": "trees (pl)",
+              "answer": "dawk"
+            },
+            {
+              "word": "ħanut",
+              "en": "shop (m)",
+              "answer": "dak"
+            },
+            {
+              "word": "raħal",
+              "en": "village (m)",
+              "answer": "dak"
+            },
+            {
+              "word": "festa",
+              "en": "festival (f)",
+              "answer": "dik"
+            },
+            {
+              "word": "stejjer",
+              "en": "stories (pl)",
+              "answer": "dawk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family",
+      "icon": "👨‍👩‍👧",
+      "title": "Family",
+      "subtitle": "Il-familja — the people closest to you",
+      "vocab": [
+        {
+          "mt": "Familja",
+          "en": "Family"
+        },
+        {
+          "mt": "Omm",
+          "en": "Mother"
+        },
+        {
+          "mt": "Missier",
+          "en": "Father"
+        },
+        {
+          "mt": "Ġenituri",
+          "en": "Parents"
+        },
+        {
+          "mt": "Ħu",
+          "en": "Brother"
+        },
+        {
+          "mt": "Oħt",
+          "en": "Sister"
+        },
+        {
+          "mt": "Iben",
+          "en": "Son"
+        },
+        {
+          "mt": "Bint",
+          "en": "Daughter"
+        },
+        {
+          "mt": "Ulied",
+          "en": "Children"
+        },
+        {
+          "mt": "Nannu",
+          "en": "Grandfather"
+        },
+        {
+          "mt": "Nanna",
+          "en": "Grandmother"
+        },
+        {
+          "mt": "Ziju",
+          "en": "Uncle"
+        },
+        {
+          "mt": "Zija",
+          "en": "Aunt"
+        }
+      ],
+      "plurals": [
+        {
+          "singular": "Iben",
+          "plural": "Ulied",
+          "en": "Son / Children"
+        },
+        {
+          "singular": "Bint",
+          "plural": "Bniet",
+          "en": "Daughter / Daughters"
+        },
+        {
+          "singular": "Missier",
+          "plural": "Missirijiet",
+          "en": "Father / Fathers"
+        },
+        {
+          "singular": "Omm",
+          "plural": "Ommijiet",
+          "en": "Mother / Mothers"
+        },
+        {
+          "singular": "Nannu",
+          "plural": "Nanniet",
+          "en": "Grandfather / Grandparents"
+        },
+        {
+          "singular": "Ziju",
+          "plural": "Zijiet",
+          "en": "Uncle / Uncles"
+        },
+        {
+          "singular": "Zija",
+          "plural": "Zijiet",
+          "en": "Aunt / Aunts"
+        },
+        {
+          "singular": "Ħu",
+          "plural": "Aħwa",
+          "en": "Brother / Siblings"
+        }
+      ],
+      "intro": "Core family members to start with."
+    },
+    {
+      "id": "possessive",
+      "icon": "🏷️",
+      "title": "Possessive",
+      "subtitle": "Il-possessiv — using ta' and tiegħi/tiegħek/etc",
+      "intro": "To say 'someone's something' in Maltese, use the small word ta' (of). 'Joanne's dog' becomes 'the dog of Joanne'.",
+      "examples": [
+        {
+          "phrase": "Il-kelb ta' Joanne",
+          "en": "Joanne's dog"
+        },
+        {
+          "phrase": "Id-dar ta' Karl",
+          "en": "Karl's house"
+        },
+        {
+          "phrase": "Il-karozza tal-missier",
+          "en": "Father's car"
+        },
+        {
+          "phrase": "Il-ġuvni ta' Joanne",
+          "en": "Joanne's boyfriend"
+        },
+        {
+          "phrase": "Il-villa tan-nanna",
+          "en": "Grandmother's villa"
+        },
+        {
+          "phrase": "Il-pjanti taz-zija",
+          "en": "Aunt's plants"
+        }
+      ],
+      "possessives": [
+        {
+          "mt": "tiegħi",
+          "en": "my / mine"
+        },
+        {
+          "mt": "tiegħek",
+          "en": "your / yours (sing)"
+        },
+        {
+          "mt": "tiegħu",
+          "en": "his"
+        },
+        {
+          "mt": "tagħha",
+          "en": "her / hers"
+        },
+        {
+          "mt": "tagħna",
+          "en": "our / ours"
+        },
+        {
+          "mt": "tagħkom",
+          "en": "your / yours (pl)"
+        },
+        {
+          "mt": "tagħhom",
+          "en": "their / theirs"
+        }
+      ],
+      "examples_pronouns": [
+        {
+          "phrase": "il-kelb tiegħi",
+          "en": "my dog"
+        },
+        {
+          "phrase": "il-kelb tiegħek",
+          "en": "your dog"
+        },
+        {
+          "phrase": "il-kelb tiegħu",
+          "en": "his dog"
+        },
+        {
+          "phrase": "il-kelb tagħha",
+          "en": "her dog"
+        },
+        {
+          "phrase": "il-kelb tagħna",
+          "en": "our dog"
+        },
+        {
+          "phrase": "il-kelb tagħkom",
+          "en": "your (pl) dog"
+        },
+        {
+          "phrase": "il-kelb tagħhom",
+          "en": "their dog"
+        }
+      ]
+    },
+    {
+      "id": "attached",
+      "icon": "➕",
+      "title": "Attached pronouns",
+      "subtitle": "Il-pronomi mehmużin — suffixes",
+      "intro": "Maltese has a powerful shortcut: the pronoun (my, your, his…) attaches to the noun as a suffix. So 'my house' is one word: dari.",
+      "examples": [
+        {
+          "long": "missier tiegħi",
+          "short": "missieri",
+          "en": "my father"
+        },
+        {
+          "long": "missier tiegħek",
+          "short": "missierek",
+          "en": "your father"
+        },
+        {
+          "long": "missier tiegħu",
+          "short": "missieru",
+          "en": "his father"
+        },
+        {
+          "long": "missier tagħha",
+          "short": "missierha",
+          "en": "her father"
+        },
+        {
+          "long": "missier tagħna",
+          "short": "missierna",
+          "en": "our father"
+        },
+        {
+          "long": "missier tagħkom",
+          "short": "missierkom",
+          "en": "your (pl) father"
+        },
+        {
+          "long": "missier tagħhom",
+          "short": "missierhom",
+          "en": "their father"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex6",
+          "title": "Form the attached pronoun (set 1)",
+          "instructions": "What's the attached form of each phrase?",
+          "choices": [
+            "darha",
+            "darkom",
+            "dari",
+            "darhom",
+            "daru",
+            "darna",
+            "darek"
+          ],
+          "items": [
+            {
+              "long": "dar tiegħi",
+              "en": "my house",
+              "answer": "dari"
+            },
+            {
+              "long": "dar tiegħek",
+              "en": "your house",
+              "answer": "darek"
+            },
+            {
+              "long": "dar tiegħu",
+              "en": "his house",
+              "answer": "daru"
+            },
+            {
+              "long": "dar tagħha",
+              "en": "her house",
+              "answer": "darha"
+            },
+            {
+              "long": "dar tagħna",
+              "en": "our house",
+              "answer": "darna"
+            },
+            {
+              "long": "dar tagħkom",
+              "en": "your (pl) house",
+              "answer": "darkom"
+            },
+            {
+              "long": "dar tagħhom",
+              "en": "their house",
+              "answer": "darhom"
+            }
+          ]
+        },
+        {
+          "id": "ex7",
+          "title": "Form the attached pronoun (set 2)",
+          "instructions": "Pick the contracted form of each.",
+          "choices": [
+            "wiċċna",
+            "idu",
+            "qalbi",
+            "snienkom",
+            "flusek",
+            "arthom",
+            "ommha"
+          ],
+          "items": [
+            {
+              "long": "qalb tiegħi",
+              "en": "my heart",
+              "answer": "qalbi"
+            },
+            {
+              "long": "omm tagħha",
+              "en": "her mother",
+              "answer": "ommha"
+            },
+            {
+              "long": "flus tiegħek",
+              "en": "your money",
+              "answer": "flusek"
+            },
+            {
+              "long": "wiċċ tagħna",
+              "en": "our face",
+              "answer": "wiċċna"
+            },
+            {
+              "long": "snien tagħkom",
+              "en": "your (pl) teeth",
+              "answer": "snienkom"
+            },
+            {
+              "long": "art tagħhom",
+              "en": "their land",
+              "answer": "arthom"
+            },
+            {
+              "long": "id tiegħu",
+              "en": "his hand",
+              "answer": "idu"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar5",
+      "icon": "📖",
+      "title": "Grammar",
+      "subtitle": "Il-grammatika — people, pointing and belonging",
+      "intro": "Pronouns stand in for names; demonstratives point; and two tools show who owns what.",
+      "rules": [
+        {
+          "id": "ta-possessive",
+          "title": "Possessive with ta' (of)",
+          "explanation": "The simplest way to show possession: noun + ta' + owner. Literally 'X of Y'. Use 'ta'' for any owner — names, family members, things.",
+          "examples": [
+            {
+              "mt": "Il-kelb ta' Joseph",
+              "en": "Joseph's dog"
+            },
+            {
+              "mt": "Il-pupa ta' Joanne",
+              "en": "Joanne's doll"
+            },
+            {
+              "mt": "Il-ktieb ta' Karl",
+              "en": "Karl's book"
+            },
+            {
+              "mt": "Il-basket ta' Mary",
+              "en": "Mary's bag"
+            },
+            {
+              "mt": "Ir-rota ta' Joanne",
+              "en": "Joanne's bike"
+            },
+            {
+              "mt": "It-tfal ta' Mary",
+              "en": "Mary's children"
+            }
+          ]
+        },
+        {
+          "id": "possessive-pronouns",
+          "title": "Possessive pronouns — tiegħi, tiegħek, tiegħu…",
+          "explanation": "When the owner is a pronoun (my, your, his, her…), use one of these standalone words AFTER the noun. They agree with the OWNER, not the noun.",
+          "letters": [
+            "Tiegħi",
+            "Tiegħek",
+            "Tiegħu",
+            "Tagħha",
+            "Tagħna",
+            "Tagħkom",
+            "Tagħhom"
+          ],
+          "examples": [
+            {
+              "mt": "Il-kelb tiegħi",
+              "en": "My dog"
+            },
+            {
+              "mt": "Il-kelb tiegħek",
+              "en": "Your dog"
+            },
+            {
+              "mt": "Il-kelb tiegħu",
+              "en": "His dog"
+            },
+            {
+              "mt": "Il-kelb tagħha",
+              "en": "Her dog"
+            },
+            {
+              "mt": "Il-kelb tagħna",
+              "en": "Our dog"
+            },
+            {
+              "mt": "Il-kelb tagħkom",
+              "en": "Your dog (pl)"
+            },
+            {
+              "mt": "Il-kelb tagħhom",
+              "en": "Their dog"
+            }
+          ]
+        },
+        {
+          "id": "attached-pronouns",
+          "title": "Attached pronouns — suffix straight onto the noun",
+          "explanation": "Instead of 'dar tiegħi' (my house), Maltese often attaches a tiny suffix to the noun: dari. The suffixes are -i (my), -ek (your), -u (his), -ha (her), -na (our), -kom (your pl), -hom (their). The article drops away.",
+          "letters": [
+            "-i (my)",
+            "-ek (your)",
+            "-u (his)",
+            "-ha (her)",
+            "-na (our)",
+            "-kom (your pl)",
+            "-hom (their)"
+          ],
+          "examples": [
+            {
+              "mt": "dar tiegħi → dari",
+              "en": "my house"
+            },
+            {
+              "mt": "dar tiegħek → darek",
+              "en": "your house"
+            },
+            {
+              "mt": "dar tiegħu → daru",
+              "en": "his house"
+            },
+            {
+              "mt": "missier tagħha → missierha",
+              "en": "her father"
+            },
+            {
+              "mt": "missier tagħna → missierna",
+              "en": "our father"
+            },
+            {
+              "mt": "qalb tiegħi → qalbi",
+              "en": "my heart"
+            },
+            {
+              "mt": "art tagħhom → arthom",
+              "en": "their land"
+            }
+          ]
+        },
+        {
+          "id": "family-plurals",
+          "title": "Family member plurals are irregular",
+          "explanation": "Family-member plurals don't follow a single pattern — many take -ijiet or -iet, some are completely different. Memorise the pairs.",
+          "examples": [
+            {
+              "mt": "omm → ommijiet",
+              "en": "mother → mothers"
+            },
+            {
+              "mt": "missier → missirijiet",
+              "en": "father → fathers"
+            },
+            {
+              "mt": "nanna → nanniet",
+              "en": "grandmother → grandmothers"
+            },
+            {
+              "mt": "iben/bint → ulied",
+              "en": "son/daughter → children (shared plural)"
+            },
+            {
+              "mt": "ziju/zija → zijiet",
+              "en": "uncle/aunt → uncles & aunts"
+            },
+            {
+              "mt": "kuġin/kuġina → kuġini",
+              "en": "cousin → cousins"
+            },
+            {
+              "mt": "għarus/għarusa → għarajjes",
+              "en": "fiancé/fiancée → engaged couples"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "icon": "📚",
+      "title": "Vocabulary",
+      "subtitle": "Il-vokabularju — every word in one place",
+      "intro": "Everything from this section, gathered to revise. Tap any word to hear it.",
+      "groups": [
+        {
+          "title": "Pronouns",
+          "items": [
+            {
+              "mt": "Jien",
+              "en": "I"
+            },
+            {
+              "mt": "Int",
+              "en": "You (singular)"
+            },
+            {
+              "mt": "Hu",
+              "en": "He"
+            },
+            {
+              "mt": "Hi",
+              "en": "She"
+            },
+            {
+              "mt": "Aħna",
+              "en": "We"
+            },
+            {
+              "mt": "Intom",
+              "en": "You (plural)"
+            },
+            {
+              "mt": "Huma",
+              "en": "They"
+            }
+          ]
+        },
+        {
+          "title": "Family",
+          "items": [
+            {
+              "mt": "Familja",
+              "en": "Family"
+            },
+            {
+              "mt": "Omm",
+              "en": "Mother"
+            },
+            {
+              "mt": "Missier",
+              "en": "Father"
+            },
+            {
+              "mt": "Ġenituri",
+              "en": "Parents"
+            },
+            {
+              "mt": "Ħu",
+              "en": "Brother"
+            },
+            {
+              "mt": "Oħt",
+              "en": "Sister"
+            },
+            {
+              "mt": "Iben",
+              "en": "Son"
+            },
+            {
+              "mt": "Bint",
+              "en": "Daughter"
+            },
+            {
+              "mt": "Ulied",
+              "en": "Children"
+            },
+            {
+              "mt": "Nannu",
+              "en": "Grandfather"
+            },
+            {
+              "mt": "Nanna",
+              "en": "Grandmother"
+            },
+            {
+              "mt": "Ziju",
+              "en": "Uncle"
+            },
+            {
+              "mt": "Zija",
+              "en": "Aunt"
+            }
+          ]
+        }
       ]
     }
   ]

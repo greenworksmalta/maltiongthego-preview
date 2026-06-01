@@ -2288,8 +2288,8 @@ const STEP_COUNTS = {
   "pronouns:flash": s => s.items.length,
   "pronouns:ex1": s => Math.min(8, s.exercises[0].items.length),
   "demonstratives:rules": s => s.rules.length,
-  "demonstratives:ex2": s => Math.min(10, s.exercises.find(e=>e.id==="ex2").items.length),
-  "demonstratives:ex3": s => Math.min(10, s.exercises.find(e=>e.id==="ex3").items.length),
+  "demonstratives:ex2": s => Math.ceil(s.exercises.find(e=>e.id==="ex2").items.length/6), // bucket-sort rounds
+  "demonstratives:ex3": s => Math.ceil(s.exercises.find(e=>e.id==="ex3").items.length/6),
   "syllables:card": s => Math.min(12, s.items.length),
   // Lesson 4
   "family:flash": s => s.vocab.length,
@@ -3081,8 +3081,9 @@ STEP_RENDERERS["demonstratives:rules"] = (root, sec, idx, onNext) => {
 };
 // Audio plays just the noun (which is in the manifest) — combining article+noun
 // produces strings like "dan ktieb" that we don't have MP3s for.
-STEP_RENDERERS["demonstratives:ex2"] = makeMcStep("ex2", { audioCombine: it=>it.word, detailFn: it=>it.word });
-STEP_RENDERERS["demonstratives:ex3"] = makeMcStep("ex3", { audioCombine: it=>it.word, detailFn: it=>it.word });
+// dan/din/dawn (and dak/dik/dawk) -> bucket-sort (3 buckets); replaces slide-style MC.
+STEP_RENDERERS["demonstratives:ex2"] = makeBucketSortStep("ex2");
+STEP_RENDERERS["demonstratives:ex3"] = makeBucketSortStep("ex3");
 
 STEP_RENDERERS["syllables:card"] = (root, sec, idx, onNext) => {
   const item = sec.items[idx];
