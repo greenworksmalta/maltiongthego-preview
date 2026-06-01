@@ -1,5 +1,5 @@
-build 20260601w
+build 20260601x
 VERSION 1.0.0-beta.26
-CACHE maltiongthego-1.0.0-beta.26-20260601w
+CACHE maltiongthego-1.0.0-beta.26-20260601x
 date 2026-06-01
-notes: U5 pronoun exercise voices the whole sentence with the pronoun.
+notes: U5 qattusi -> qtates.
