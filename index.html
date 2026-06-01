@@ -220,7 +220,11 @@
   .prev-wrap{display:flex;justify-content:center;margin-top:12px}
   .prev-wrap.nav-row{justify-content:flex-start;gap:8px;flex-wrap:wrap}
   .prev-wrap.nav-row .btn-prev{flex:0 1 auto}
+  /* "Next exercise" starts the skip-ahead group; pushed right only when it has
+     room on the same line, otherwise it wraps cleanly below Previous/Next. */
+  .prev-wrap.nav-row .btn-next{font-weight:700}
   .prev-wrap.nav-row .btn-nextex{margin-left:auto}
+  .prev-wrap.nav-row .btn-nextex,.prev-wrap.nav-row .btn-nextsec{border-color:var(--ink-2)}
   .btn-prev{padding:8px 20px;border-radius:99px;background:transparent;border:1px solid var(--line);color:var(--ink-2);font-size:.88rem;font-weight:600;cursor:pointer;letter-spacing:.005em}
   .btn-prev:active{transform:scale(.98);background:var(--bg)}
   .btn-prev:hover{background:var(--bg);border-color:var(--ink-2)}

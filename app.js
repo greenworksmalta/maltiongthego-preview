@@ -20,7 +20,7 @@ const VERSION = "1.0.0-beta.26";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "20260601a";
+const BUILD = "20260601b";
 function v(url){ return url + (url.includes("?")?"&":"?") + "v=" + VERSION; }
 
 // Lightweight UI strings table for the parts of the app that aren't data-driven.
@@ -2027,22 +2027,36 @@ function renderSection(lid, sid, step, idx){
   }
   renderer(root, sec, idx, ()=>nextStep(lid, sid, step, idx, sec, flow));
 
-  // Bottom navigation row: "← Previous" (step back within the section) and, when
-  // there's another section in this lesson, "Next section →" so learners can move
-  // straight on (e.g. Meeting someone → Phrases) without returning to the lesson
-  // list. Previous is hidden on the very first step+idx of a section.
+  // Bottom navigation row, four affordances in order:
+  //   ← Previous       step back one PORTION within this section (prev item, or
+  //                    last item of the previous exercise). Hidden on the very
+  //                    first portion of the section.
+  //   Next →           step forward one PORTION (next item, or first item of the
+  //                    next exercise) — the symmetric partner to Previous.
+  //   Next exercise →  skip the rest of this exercise's items and jump to the
+  //                    first portion of the NEXT exercise type in the section.
+  //   Next section →   leave this section for the next one in the lesson.
   const t = I18N[State.lang] || I18N.en;
-  const prevHash = prevStepHash(lid, sid, step, idx, sec, flow);
-  const nextExHash = nextExerciseHash(lid, sid, step, flow);       // next exercise TYPE (skips leftover items)
-  const { nextSid } = findNext(lid, sid);                          // next SECTION in the lesson
-  if(prevHash || nextExHash || nextSid){
+  const prevHash   = prevStepHash(lid, sid, step, idx, sec, flow);  // back one portion
+  const nextHash   = nextStepHash(lid, sid, step, idx, sec, flow);  // forward one portion
+  const nextExHash = nextExerciseHash(lid, sid, step, flow);        // next exercise TYPE
+  const { nextSid } = findNext(lid, sid);                           // next SECTION
+  // Don't show "Next exercise" when it would land in the same place as "Next"
+  // (i.e. we're already on the last portion of the current exercise).
+  const nextExDistinct = nextExHash && nextExHash !== nextHash;
+  if(prevHash || nextHash || nextExDistinct || nextSid){
     const wrap = el("div","prev-wrap nav-row");
     if(prevHash){
       const back = el("button","btn-prev", t.previous);
       back.addEventListener("click", ()=>go(prevHash));
       wrap.appendChild(back);
     }
-    if(nextExHash){
+    if(nextHash){
+      const nx = el("button","btn-prev btn-next", (t.next || "Next") + " →");
+      nx.addEventListener("click", ()=>go(nextHash));
+      wrap.appendChild(nx);
+    }
+    if(nextExDistinct){
       const ne = el("button","btn-prev btn-nextex", t.nextExercise || "Next exercise →");
       ne.addEventListener("click", ()=>go(nextExHash));
       wrap.appendChild(ne);

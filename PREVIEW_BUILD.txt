@@ -1,5 +1,5 @@
-build 20260601a
+build 20260601b
 VERSION 1.0.0-beta.26
-CACHE maltiongthego-1.0.0-beta.26-20260601a
+CACHE maltiongthego-1.0.0-beta.26-20260601b
 date 2026-06-01
-notes: U1-U3 testing fixes (nav exercise/section, Mosta passage text, il-/l- audio timing, vocabulary last + U1 vocab trim) + stivali->butz. butz/Mosta audio pending next Azure batch.
+notes: + four-button section nav (Previous / Next / Next exercise / Next section). Audio for butz + Mosta line still pending.
