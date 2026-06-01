@@ -218,9 +218,9 @@
   .btn-skip:active{transform:scale(.98);background:var(--bg)}
   .btn-skip:hover{background:var(--bg);border-color:var(--ink-2)}
   .prev-wrap{display:flex;justify-content:center;margin-top:12px}
-  .prev-wrap.nav-row{justify-content:space-between;gap:10px}
+  .prev-wrap.nav-row{justify-content:flex-start;gap:8px;flex-wrap:wrap}
   .prev-wrap.nav-row .btn-prev{flex:0 1 auto}
-  .prev-wrap.nav-row .btn-nextsec{margin-left:auto}
+  .prev-wrap.nav-row .btn-nextex{margin-left:auto}
   .btn-prev{padding:8px 20px;border-radius:99px;background:transparent;border:1px solid var(--line);color:var(--ink-2);font-size:.88rem;font-weight:600;cursor:pointer;letter-spacing:.005em}
   .btn-prev:active{transform:scale(.98);background:var(--bg)}
   .btn-prev:hover{background:var(--bg);border-color:var(--ink-2)}
@@ -235,6 +235,17 @@
   .pool{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
   .tile{padding:8px 14px;background:var(--card);border:2px solid var(--line);border-radius:10px;font-weight:600;font-size:1rem;color:var(--primary-2)}
   .tile.used{visibility:hidden}
+  .tile.sel{border-color:var(--primary);background:var(--good-bg)}
+  .tile.right{border-color:var(--good);background:var(--good-bg)}
+  .tile.wrong{border-color:var(--bad);background:var(--bad-bg)}
+  .tile.mini{font-size:.85rem;padding:5px 9px;margin:3px 3px 0 0}
+  /* bucket-sort exercise */
+  .bucket-pool{margin-bottom:14px}
+  .bucket-chip.done{opacity:.45}
+  .bucket-row{display:flex;gap:10px;flex-wrap:wrap}
+  .bucket{flex:1 1 0;min-width:120px;border:2px dashed var(--line);border-radius:12px;padding:10px;background:var(--card)}
+  .bucket-label{font-weight:800;color:var(--primary-2);text-align:center;margin-bottom:6px}
+  .bucket-drop{display:flex;flex-wrap:wrap;min-height:40px}
 
   .match{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
   .match button{min-height:58px;padding:10px;border-radius:12px;border:2px solid var(--line);background:var(--card);font-weight:600;font-size:.95rem;color:var(--ink);text-align:center;letter-spacing:.005em}

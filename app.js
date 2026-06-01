@@ -30,6 +30,7 @@ const I18N = {
     totalXp: "Total XP",
     backToLesson: "Back",
     nextSection: "Next section →",
+    nextExercise: "Next exercise →",
     nextLesson: "Next →",
     lessonComplete: "Complete! 🎉",
     skip: "Skip →",
@@ -2028,13 +2029,19 @@ function renderSection(lid, sid, step, idx){
   // list. Previous is hidden on the very first step+idx of a section.
   const t = I18N[State.lang] || I18N.en;
   const prevHash = prevStepHash(lid, sid, step, idx, sec, flow);
-  const { nextSid } = findNext(lid, sid);
-  if(prevHash || nextSid){
+  const nextExHash = nextStepHash(lid, sid, step, idx, sec, flow); // next step WITHIN this section
+  const { nextSid } = findNext(lid, sid);                          // next SECTION in the lesson
+  if(prevHash || nextExHash || nextSid){
     const wrap = el("div","prev-wrap nav-row");
     if(prevHash){
       const back = el("button","btn-prev", t.previous);
       back.addEventListener("click", ()=>go(prevHash));
       wrap.appendChild(back);
+    }
+    if(nextExHash){
+      const ne = el("button","btn-prev btn-nextex", t.nextExercise || "Next exercise →");
+      ne.addEventListener("click", ()=>go(nextExHash));
+      wrap.appendChild(ne);
     }
     if(nextSid){
       const ns = el("button","btn-prev btn-nextsec", t.nextSection || "Next section →");
@@ -2043,6 +2050,20 @@ function renderSection(lid, sid, step, idx){
     }
     root.appendChild(wrap);
   }
+}
+
+// Forward within the SAME section: next index in this step, else first index of
+// the next step. Returns null at the last step+idx (use "Next section" there).
+function nextStepHash(lid, sid, step, idx, sec, flow){
+  const count = (STEP_COUNTS[sid+":"+step] ? STEP_COUNTS[sid+":"+step](sec) : 1);
+  if(idx+1 < count){
+    return "/lesson/"+lid+"/section/"+sid+"/"+step+"/"+(idx+1);
+  }
+  const i = flow.indexOf(step);
+  if(i>=0 && i+1 < flow.length){
+    return "/lesson/"+lid+"/section/"+sid+"/"+flow[i+1]+"/0";
+  }
+  return null;
 }
 
 function nextStep(lid, sid, step, idx, sec, flow){
@@ -2247,11 +2268,11 @@ const STEP_COUNTS = {
   "alphabet:match": s => 6,
   "alphabet:passage": s => 1,
   "grammar:rules": s => s.rules.length,
-  "grammar:ex3": s => Math.min(10, s.exercises.find(e=>e.id==="ex3").items.length),
-  "grammar:ex4": s => Math.min(10, s.exercises.find(e=>e.id==="ex4").items.length),
-  "grammar:ex5": s => Math.min(10, s.exercises.find(e=>e.id==="ex5").items.length),
+  "grammar:ex3": s => Math.ceil(s.exercises.find(e=>e.id==="ex3").items.length/6), // bucket-sort rounds of 6
+  "grammar:ex4": s => Math.min(8, s.exercises.find(e=>e.id==="ex4").items.length), // tap-to-build, 1 per screen
+  "grammar:ex5": s => Math.min(8, s.exercises.find(e=>e.id==="ex5").items.length),
   "days:flash": s => s.items.length,
-  "days:match": s => 1,
+  "days:match": s => Math.min(6, s.items.length),   // listen & pick rounds
   "days:scramble": s => Math.min(5, s.items.length),
   // Lesson 2
   "serquni:flash": s => s.vocab.length,
@@ -2262,7 +2283,7 @@ const STEP_COUNTS = {
   "numbers:flash": s => s.items.length,
   "numbers:ordinals": s => s.ordinals.length,
   "months:flash": s => s.items.length,
-  "months:match": s => 1,
+  "months:match": s => Math.min(6, s.items.length),   // listen & pick rounds
   // Lesson 3
   "pronouns:flash": s => s.items.length,
   "pronouns:ex1": s => Math.min(8, s.exercises[0].items.length),
@@ -2485,6 +2506,101 @@ function makeBuildStep(field){
 const MC_RATE = 0.86;
 
 // Multiple-choice exercise (looking up exercises[].id)
+// Bucket-sort: tap each word into the correct article bucket. Used for the
+// il-/l- article exercise — an interaction the paper slides can't do. Shows a few
+// words at a time; the whole exercise is one step (idx ignored). `buckets` are the
+// article forms; each item has {word, answer}. Audio plays the full form (answer+word).
+function makeBucketSortStep(exId, opts){
+  opts = opts || {};
+  const N = opts.batch || 6;           // words per round
+  return (root, sec, idx, onNext) => {
+    const ex = sec.exercises.find(e=>e.id===exId);
+    const buckets = ex.choices.slice();
+    // take a batch (idx-based so revisits vary), wrap around
+    const start = (idx*N) % ex.items.length;
+    const batch = [];
+    for(let i=0;i<Math.min(N, ex.items.length);i++) batch.push(ex.items[(start+i)%ex.items.length]);
+    const card = el("div","card");
+    card.appendChild(el("h3","", ex.title));
+    card.appendChild(el("p","muted", ex.instructions || "Tap a word, then tap its bucket."));
+    root.appendChild(card);
+    // word chips
+    const pool = el("div","pool bucket-pool");
+    // bucket columns
+    const bwrap = el("div","bucket-row");
+    const bucketEls = {};
+    buckets.forEach(b=>{
+      const col = el("div","bucket");
+      col.appendChild(el("div","bucket-label", b));
+      const drop = el("div","bucket-drop");
+      col.appendChild(drop); bucketEls[b]=drop; bwrap.appendChild(col);
+    });
+    let selected=null, placed=0;
+    function select(chip){ if(selected) selected.classList.remove("sel"); selected=chip; chip.classList.add("sel"); play(chip.dataset.full); }
+    batch.forEach(it=>{
+      const chip = el("button","tile bucket-chip", it.word);
+      chip.dataset.answer = it.answer; chip.dataset.full = (it.answer||"")+it.word;
+      chip.addEventListener("click", ()=>{ if(!chip.classList.contains("done")) select(chip); });
+      pool.appendChild(chip);
+    });
+    card.appendChild(pool); card.appendChild(bwrap);
+    buckets.forEach(b=>{
+      bucketEls[b].parentElement.addEventListener("click", ()=>{
+        if(!selected) return;
+        const correct = selected.dataset.answer === b;
+        if(correct){
+          selected.classList.add("done","right"); selected.classList.remove("sel");
+          const moved = el("span","tile mini", selected.textContent);
+          bucketEls[b].appendChild(moved);
+          selected.disabled=true; selected=null; placed++; addXp(3);
+          if(placed===batch.length){ showFeedback(true,"Sewwa!","All sorted.", onNext); }
+        } else {
+          const s=selected; s.classList.add("wrong"); setTimeout(()=>s.classList.remove("wrong","sel"),600); selected=null;
+        }
+      });
+    });
+    root.appendChild(skipBtn(onNext));
+  };
+}
+
+// Article tap-to-build: assemble the full form by tapping the article tile then
+// the word (e.g. id- + dar -> id-dar). Different from the slide multiple-choice;
+// reinforces the sound-doubling. Each item {word, answer(article)}.
+function makeArticleBuildStep(exId){
+  return (root, sec, idx, onNext) => {
+    const ex = sec.exercises.find(e=>e.id===exId);
+    const item = ex.items[idx % ex.items.length];
+    const full = item.answer + item.word;
+    const card = el("div","card");
+    card.appendChild(el("h3","", ex.title));
+    card.appendChild(el("p","muted","Tap the right article, then the word, to build it."));
+    const prompt = el("div","row");
+    prompt.appendChild(el("div","grow mtline", "___ " + item.word));
+    if(item.en) prompt.appendChild(el("div","muted", item.en));
+    card.appendChild(prompt);
+    const built = el("div","built"); card.appendChild(built);
+    root.appendChild(card);
+    // offer a few article options (correct + distractors from choices)
+    const others = ex.choices.filter(c=>c!==item.answer).sort(()=>Math.random()-.5).slice(0,3);
+    const opts=[item.answer,...others].sort(()=>Math.random()-.5);
+    const pool=el("div","pool");
+    let chosenArticle=null;
+    opts.forEach(a=>{
+      const t=el("button","tile",a);
+      t.addEventListener("click", ()=>{
+        chosenArticle=a; [...pool.children].forEach(c=>c.classList.remove("sel")); t.classList.add("sel");
+        built.innerHTML=""; built.appendChild(el("span","tile",a)); built.appendChild(el("span","tile",item.word));
+        // auto-check
+        if(a===item.answer){ addXp(5); play(full); showFeedback(true,"Sewwa!", full+(item.en?" — "+item.en:""), onNext); }
+        else { t.classList.add("wrong"); showFeedback(false,"Not quite — try again.", "Listen for the doubled sound.", ()=>{ root.innerHTML=""; STEP_RENDERERS[sec.id+":"+exId]&&makeArticleBuildStep(exId)(root,sec,idx,onNext); }, {label:"Try again ↺"}); }
+      });
+      pool.appendChild(t);
+    });
+    card.appendChild(pool);
+    root.appendChild(skipBtn(onNext));
+  };
+}
+
 function makeMcStep(exId, opts){
   opts = opts || {};
   const wordField = opts.wordField || "word";          // field that holds the displayed Maltese
@@ -2641,18 +2757,12 @@ STEP_RENDERERS["grammar:rules"] = (root, sec, idx, onNext) => {
   root.appendChild(nextBtn(idx+1===sec.rules.length ? "Try the exercises →" : "Next rule →", onNext));
 };
 
-STEP_RENDERERS["grammar:ex3"] = makeMcStep("ex3", {
-  audioCombine: it => it.answer + it.word,
-  detailFn: it => it.word
-});
-STEP_RENDERERS["grammar:ex4"] = makeMcStep("ex4", {
-  audioCombine: it => it.answer + it.word,
-  detailFn: it => it.word
-});
-STEP_RENDERERS["grammar:ex5"] = makeMcStep("ex5", {
-  audioCombine: it => it.answer + it.word,
-  detailFn: it => it.word
-});
+// ex3 (il-/l-, 2 buckets) -> bucket-sort; ex4/ex5 (many article forms) -> tap-to-build.
+// Both are interactions the paper slides can't do (sorting / assembling), replacing
+// the slide-style multiple-choice. Same content, our own format.
+STEP_RENDERERS["grammar:ex3"] = makeBucketSortStep("ex3");
+STEP_RENDERERS["grammar:ex4"] = makeArticleBuildStep("ex4");
+STEP_RENDERERS["grammar:ex5"] = makeArticleBuildStep("ex5");
 
 STEP_RENDERERS["days:flash"] = (root, sec, idx, onNext) => {
   const item = sec.items[idx];
@@ -2661,7 +2771,7 @@ STEP_RENDERERS["days:flash"] = (root, sec, idx, onNext) => {
   root.appendChild(nextBtn("Next", onNext));
 };
 
-STEP_RENDERERS["days:match"] = makeMatchStep("items", "mt", "en", "Match the days");
+STEP_RENDERERS["days:match"] = makeListenStep("items");  // listen & pick (slides use 'qabbel' match — ours is audio-led)
 
 STEP_RENDERERS["days:scramble"] = (root, sec, idx, onNext) => {
   const item = sec.items[idx % sec.items.length];
@@ -2892,7 +3002,7 @@ STEP_RENDERERS["months:flash"] = (root, sec, idx, onNext) => {
   setTimeout(()=>play(item.mt), 250);
   root.appendChild(nextBtn("Next →", onNext));
 };
-STEP_RENDERERS["months:match"] = makeMatchStep("items", "mt", "en", "Match the months");
+STEP_RENDERERS["months:match"] = makeListenStep("items");  // listen & pick (replaces 'qabbel'-style match)
 
 /* ============================================================
    Lesson 3 renderers
