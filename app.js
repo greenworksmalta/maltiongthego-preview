@@ -1878,6 +1878,10 @@ const STEP_DATA_REQUIRES = {
   passage: "passage", letter: "letters", match: "letters",
   ordinals: "ordinals", plurals: "plurals", winds: "winds",
   regions: "regions", hours: "hours", patterns: "patterns",
+  // exercise steps (ex3/ex4/…/ex8) require an `exercises` array; drop them if a
+  // section reuses a hardcoded flow id but carries no exercises (id collision safety).
+  ex1:"exercises", ex2:"exercises", ex3:"exercises", ex4:"exercises", ex5:"exercises",
+  ex6:"exercises", ex7:"exercises", ex8:"exercises", ex9:"exercises",
 };
 function pruneDeadSteps(sec){
   const flow = SECTION_FLOWS[sec.id];
