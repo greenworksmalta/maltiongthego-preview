@@ -133,6 +133,49 @@
       ]
     },
     {
+      "id": "days",
+      "icon": "📅",
+      "title": "Days",
+      "subtitle": "Il-ġranet tal-ġimgħa — Days of the week",
+      "items": [
+        {
+          "mt": "Il-Ħadd",
+          "en": "Sunday",
+          "scrambled": "ddĦa"
+        },
+        {
+          "mt": "It-Tnejn",
+          "en": "Monday",
+          "scrambled": "Tnnje"
+        },
+        {
+          "mt": "It-Tlieta",
+          "en": "Tuesday",
+          "scrambled": "tlaiTe"
+        },
+        {
+          "mt": "L-Erbgħa",
+          "en": "Wednesday",
+          "scrambled": "bEħrag"
+        },
+        {
+          "mt": "Il-Ħamis",
+          "en": "Thursday",
+          "scrambled": "miĦsa"
+        },
+        {
+          "mt": "Il-Ġimgħa",
+          "en": "Friday",
+          "scrambled": "iħmĠga"
+        },
+        {
+          "mt": "Is-Sibt",
+          "en": "Saturday",
+          "scrambled": "tbiS"
+        }
+      ]
+    },
+    {
       "id": "alphabet",
       "icon": "🔤",
       "title": "Alphabet",
@@ -721,45 +764,97 @@
       }
     },
     {
-      "id": "days",
-      "icon": "📅",
-      "title": "Days",
-      "subtitle": "Il-ġranet tal-ġimgħa — Days of the week",
+      "id": "syllables",
+      "icon": "🔡",
+      "title": "Syllables",
+      "subtitle": "Is-Sillabi — hearing the beats in a word",
+      "intro": "Break a word into beats and Maltese spelling falls into place — every sound steps forward where you can hear and write it.",
+      "facts": [
+        "One vowel = one beat.",
+        "Every beat after the first opens on a consonant sound.",
+        "When two consonants collide mid-word, the break falls between them: kel-ma, fes-ta.",
+        "Hear it: omm → omm; mara → ma-ra; kelma → kel-ma."
+      ],
       "items": [
         {
-          "mt": "Il-Ħadd",
-          "en": "Sunday",
-          "scrambled": "ddĦa"
+          "word": "kelma",
+          "syllables": "kel-ma"
         },
         {
-          "mt": "It-Tnejn",
-          "en": "Monday",
-          "scrambled": "Tnnje"
+          "word": "ħabib",
+          "syllables": "ħa-bib"
         },
         {
-          "mt": "It-Tlieta",
-          "en": "Tuesday",
-          "scrambled": "tlaiTe"
+          "word": "ġnien",
+          "syllables": "ġnien"
         },
         {
-          "mt": "L-Erbgħa",
-          "en": "Wednesday",
-          "scrambled": "bEħrag"
+          "word": "skola",
+          "syllables": "sko-la"
         },
         {
-          "mt": "Il-Ħamis",
-          "en": "Thursday",
-          "scrambled": "miĦsa"
+          "word": "tieqa",
+          "syllables": "tie-qa"
         },
         {
-          "mt": "Il-Ġimgħa",
-          "en": "Friday",
-          "scrambled": "iħmĠga"
+          "word": "ktieb",
+          "syllables": "ktieb"
         },
         {
-          "mt": "Is-Sibt",
-          "en": "Saturday",
-          "scrambled": "tbiS"
+          "word": "tifel",
+          "syllables": "ti-fel"
+        },
+        {
+          "word": "Malta",
+          "syllables": "Mal-ta"
+        },
+        {
+          "word": "uffiċċju",
+          "syllables": "uf-fiċ-ċju"
+        },
+        {
+          "word": "lingwa",
+          "syllables": "ling-wa"
+        },
+        {
+          "word": "festa",
+          "syllables": "fes-ta"
+        },
+        {
+          "word": "saħħa",
+          "syllables": "saħ-ħa"
+        },
+        {
+          "word": "pjazza",
+          "syllables": "pjaz-za"
+        },
+        {
+          "word": "siġra",
+          "syllables": "siġ-ra"
+        },
+        {
+          "word": "qattus",
+          "syllables": "qat-tus"
+        },
+        {
+          "word": "fenek",
+          "syllables": "fe-nek"
+        },
+        {
+          "word": "Birkirkara",
+          "syllables": "Bir-kir-ka-ra"
+        },
+        {
+          "word": "ġurnata",
+          "syllables": "ġur-na-ta"
+        },
+        {
+          "word": "studju",
+          "syllables": "stu-dju"
+        },
+        {
+          "word": "vjaġġ",
+          "syllables": "vjaġġ"
         }
       ]
     },
