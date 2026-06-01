@@ -251,21 +251,21 @@
           ]
         },
         {
-          "mt": "oranġjo",
-          "feminine": "oranġjo",
-          "plural": "oranġjo",
+          "mt": "oranġo",
+          "feminine": "oranġo",
+          "plural": "oranġo",
           "en": "orange",
           "examples": [
             {
-              "mt": "karozza oranġjo",
+              "mt": "karozza oranġo",
               "en": "orange car"
             },
             {
-              "mt": "qamis oranġjo",
+              "mt": "qmis oranġo",
               "en": "orange shirt"
             },
             {
-              "mt": "inżul ix-xemx oranġjo",
+              "mt": "inżul ix-xemx oranġo",
               "en": "orange sunset"
             }
           ]
@@ -309,7 +309,7 @@
           { "word": "roża", "answer": "Never changes" },
           { "word": "vjola", "answer": "Never changes" },
           { "word": "kannella", "answer": "Never changes" },
-          { "word": "oranġjo", "answer": "Never changes" },
+          { "word": "oranġo", "answer": "Never changes" },
           { "word": "ċelesti", "answer": "Never changes" }
         ] }
       ]
@@ -760,7 +760,7 @@
               "en": "purple"
             },
             {
-              "mt": "oranġjo",
+              "mt": "oranġo",
               "en": "orange"
             },
             {
