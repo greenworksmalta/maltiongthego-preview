@@ -383,6 +383,69 @@
       ]
     },
     {
+      "id": "grammar2",
+      "icon": "📖",
+      "title": "Grammar",
+      "subtitle": "In-numri — counting, and how it bends the noun",
+      "intro": "Counting in Maltese does something English never does: the number changes the noun after it. Here's how — plus first, second, third.",
+      "rules": [
+        {
+          "id": "numbers-noun-rule",
+          "title": "Counting has two gears",
+          "explanation": "Maltese shifts gear as you count, and three things follow the number. 'Two' before a noun is żewġ, not tnejn (żewġ pastizzi). The numbers 3–10 slim down — tlieta→tliet, ħamsa→ħames, għaxra→għaxar — and the noun goes plural (tliet snin, three years). From 11 up the number links on with -il and the noun flips back to singular (ħdax-il sena, eleven years). Compare għaxar snin (10 years, plural) with tlieta u għoxrin sena (23 years, singular) — English never does this, so give it a few reps.",
+          "examples": [
+            {
+              "mt": "Għandi tliet kotba",
+              "en": "I have 3 books (3 + plural noun)"
+            },
+            {
+              "mt": "Għandi għaxar kotba",
+              "en": "I have 10 books (10 + plural noun)"
+            },
+            {
+              "mt": "Għandi tlieta u għoxrin ktieb",
+              "en": "I have 23 books (23 + singular noun)"
+            },
+            {
+              "mt": "Għandi ħamsa u ħamsin ktieb",
+              "en": "I have 55 books (55 + singular noun)"
+            }
+          ]
+        },
+        {
+          "id": "ordinals",
+          "title": "Putting things in order",
+          "explanation": "First, second, third always travel with 'the': l-ewwel, it-tieni, it-tielet. Past tenth, just use the plain number with 'the' (il-wieħed u għoxrin = 21st).",
+          "letters": [
+            "L-ewwel",
+            "It-tieni",
+            "It-tielet",
+            "Ir-raba'",
+            "Il-ħames",
+            "Is-sitt",
+            "Is-seba'",
+            "It-tmien",
+            "Id-disa'",
+            "L-għaxar"
+          ],
+          "examples": [
+            {
+              "mt": "L-ewwel ġurnata",
+              "en": "The first day"
+            },
+            {
+              "mt": "It-tieni triq fuq il-lemin",
+              "en": "The second street on the right"
+            },
+            {
+              "mt": "Fit-tellieqa spiċċajt il-wieħed u għoxrin",
+              "en": "In the race I finished 21st"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "vocabulary",
       "icon": "📚",
       "title": "Vocabulary",
@@ -691,69 +754,6 @@
             {
               "mt": "Diċembru",
               "en": "December"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "grammar2",
-      "icon": "📖",
-      "title": "Grammar",
-      "subtitle": "In-numri — counting, and how it bends the noun",
-      "intro": "Counting in Maltese does something English never does: the number changes the noun after it. Here's how — plus first, second, third.",
-      "rules": [
-        {
-          "id": "numbers-noun-rule",
-          "title": "Counting has two gears",
-          "explanation": "Maltese shifts gear as you count, and three things follow the number. 'Two' before a noun is żewġ, not tnejn (żewġ pastizzi). The numbers 3–10 slim down — tlieta→tliet, ħamsa→ħames, għaxra→għaxar — and the noun goes plural (tliet snin, three years). From 11 up the number links on with -il and the noun flips back to singular (ħdax-il sena, eleven years). Compare għaxar snin (10 years, plural) with tlieta u għoxrin sena (23 years, singular) — English never does this, so give it a few reps.",
-          "examples": [
-            {
-              "mt": "Għandi tliet kotba",
-              "en": "I have 3 books (3 + plural noun)"
-            },
-            {
-              "mt": "Għandi għaxar kotba",
-              "en": "I have 10 books (10 + plural noun)"
-            },
-            {
-              "mt": "Għandi tlieta u għoxrin ktieb",
-              "en": "I have 23 books (23 + singular noun)"
-            },
-            {
-              "mt": "Għandi ħamsa u ħamsin ktieb",
-              "en": "I have 55 books (55 + singular noun)"
-            }
-          ]
-        },
-        {
-          "id": "ordinals",
-          "title": "Putting things in order",
-          "explanation": "First, second, third always travel with 'the': l-ewwel, it-tieni, it-tielet. Past tenth, just use the plain number with 'the' (il-wieħed u għoxrin = 21st).",
-          "letters": [
-            "L-ewwel",
-            "It-tieni",
-            "It-tielet",
-            "Ir-raba'",
-            "Il-ħames",
-            "Is-sitt",
-            "Is-seba'",
-            "It-tmien",
-            "Id-disa'",
-            "L-għaxar"
-          ],
-          "examples": [
-            {
-              "mt": "L-ewwel ġurnata",
-              "en": "The first day"
-            },
-            {
-              "mt": "It-tieni triq fuq il-lemin",
-              "en": "The second street on the right"
-            },
-            {
-              "mt": "Fit-tellieqa spiċċajt il-wieħed u għoxrin",
-              "en": "In the race I finished 21st"
             }
           ]
         }

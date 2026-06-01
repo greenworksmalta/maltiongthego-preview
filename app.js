@@ -17,6 +17,10 @@
 //   - <script src="app.js?v=..."> tag in index.html
 //   - CACHE_NAME in sw.js              (forces SW reinstall)
 const VERSION = "1.0.0-beta.26";
+// BUILD changes on EVERY content/code push (VERSION stays pinned to the native
+// release). The footer shows it so you can confirm at a glance you're on the
+// latest local/preview build — match it against the sw.js CACHE_NAME suffix.
+const BUILD = "20260601a";
 function v(url){ return url + (url.includes("?")?"&":"?") + "v=" + VERSION; }
 
 // Lightweight UI strings table for the parts of the app that aren't data-driven.
@@ -1378,7 +1382,7 @@ function renderHome(){
   // Static version label in the footer. The hidden 7-tap tester unlock was
   // removed before production launch to close a payment-bypass; testing now
   // uses real sandbox accounts (Play license testers / Apple sandbox testers).
-  const verSpan = el("span","ver", t.version + " " + VERSION);
+  const verSpan = el("span","ver", t.version + " " + VERSION + " · build " + BUILD);
   footer.appendChild(verSpan);
   // Manage-plan link — opens the paywall as a settings surface. Only after
   // launch will this also expose the store's native "Manage subscription" deep
@@ -2029,7 +2033,7 @@ function renderSection(lid, sid, step, idx){
   // list. Previous is hidden on the very first step+idx of a section.
   const t = I18N[State.lang] || I18N.en;
   const prevHash = prevStepHash(lid, sid, step, idx, sec, flow);
-  const nextExHash = nextStepHash(lid, sid, step, idx, sec, flow); // next step WITHIN this section
+  const nextExHash = nextExerciseHash(lid, sid, step, flow);       // next exercise TYPE (skips leftover items)
   const { nextSid } = findNext(lid, sid);                          // next SECTION in the lesson
   if(prevHash || nextExHash || nextSid){
     const wrap = el("div","prev-wrap nav-row");
@@ -2050,6 +2054,19 @@ function renderSection(lid, sid, step, idx){
     }
     root.appendChild(wrap);
   }
+}
+
+// Jump to the next EXERCISE TYPE in this section: always the first index of the
+// next step in the flow, skipping any remaining items of the current exercise.
+// Returns null on the last step (callers fall back to "Next section"). This is
+// what the bottom-row "Next exercise →" button uses — distinct from the in-card
+// "Next" which walks item-by-item within the same exercise.
+function nextExerciseHash(lid, sid, step, flow){
+  const i = flow.indexOf(step);
+  if(i>=0 && i+1 < flow.length){
+    return "/lesson/"+lid+"/section/"+sid+"/"+flow[i+1]+"/0";
+  }
+  return null;
 }
 
 // Forward within the SAME section: next index in this step, else first index of
@@ -2522,7 +2539,7 @@ function makeBucketSortStep(exId, opts){
     for(let i=0;i<Math.min(N, ex.items.length);i++) batch.push(ex.items[(start+i)%ex.items.length]);
     const card = el("div","card");
     card.appendChild(el("h3","", ex.title));
-    card.appendChild(el("p","muted", ex.instructions || "Tap a word, then tap its bucket."));
+    card.appendChild(el("p","muted", ex.instructions || "First pick the word, then pick the article that should go with it."));
     root.appendChild(card);
     // word chips
     const pool = el("div","pool bucket-pool");
@@ -2536,10 +2553,13 @@ function makeBucketSortStep(exId, opts){
       col.appendChild(drop); bucketEls[b]=drop; bwrap.appendChild(col);
     });
     let selected=null, placed=0;
-    function select(chip){ if(selected) selected.classList.remove("sel"); selected=chip; chip.classList.add("sel"); play(chip.dataset.full); }
+    // On select, play only the BARE word — playing the full article+word here
+    // would give away the answer before the learner picks the article. The full
+    // correct form plays after a correct bucket choice (below).
+    function select(chip){ if(selected) selected.classList.remove("sel"); selected=chip; chip.classList.add("sel"); play(chip.dataset.word); }
     batch.forEach(it=>{
       const chip = el("button","tile bucket-chip", it.word);
-      chip.dataset.answer = it.answer; chip.dataset.full = (it.answer||"")+it.word;
+      chip.dataset.answer = it.answer; chip.dataset.word = it.word; chip.dataset.full = (it.answer||"")+it.word;
       chip.addEventListener("click", ()=>{ if(!chip.classList.contains("done")) select(chip); });
       pool.appendChild(chip);
     });
@@ -2550,6 +2570,7 @@ function makeBucketSortStep(exId, opts){
         const correct = selected.dataset.answer === b;
         if(correct){
           selected.classList.add("done","right"); selected.classList.remove("sel");
+          play(selected.dataset.full);   // now reveal the full article+word audio
           const moved = el("span","tile mini", selected.textContent);
           bucketEls[b].appendChild(moved);
           selected.disabled=true; selected=null; placed++; addXp(3);

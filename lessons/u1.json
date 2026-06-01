@@ -690,8 +690,8 @@
         "title": "Reading practice — A Mosta morning",
         "lines": [
           {
-            "mt": "Bdiet ġurnata sabiħa fil-Mosta.",
-            "en": "A nice day started in Mosta."
+            "mt": "Kienet ġurnata sabiħa fir-raħal tal-Mosta.",
+            "en": "It was a lovely day in the village of Mosta."
           },
           {
             "mt": "Mary qamet kmieni u fetħet it-tieqa.",
@@ -952,7 +952,7 @@
         {
           "id": "ex3",
           "title": "Choose il- or l-",
-          "instructions": "Tap the right form. il- before consonants, l- before vowels / h / għ.",
+          "instructions": "First pick the word, then pick the article that should go with it. il- before consonants, l- before vowels / h / għ.",
           "choices": [
             "il-",
             "l-"
@@ -1563,95 +1563,6 @@
               "icon": "6️⃣",
               "mt": "Is-Sibt",
               "en": "Saturday"
-            }
-          ]
-        },
-        {
-          "title": "The article — all forms",
-          "icon": "📖",
-          "subtitle": "il- ('Qamrin') · l- (vowels/h/għ) · iċ-/id-/in-/ir-/is-/it-/ix-/iż-/iz- ('Xemxin' consonants)",
-          "items": [
-            {
-              "icon": "🌙",
-              "mt": "il-",
-              "en": "the (before the 'Qamrin' consonants: b, f, ġ, g, ħ, j, k, l, m, p, q, v, w)"
-            },
-            {
-              "icon": "🔤",
-              "mt": "l-",
-              "en": "the (before vowels, h, or għ)"
-            },
-            {
-              "icon": "☀️",
-              "mt": "iċ-",
-              "en": "the (before ċ — 'Xemxin')"
-            },
-            {
-              "icon": "☀️",
-              "mt": "id-",
-              "en": "the (before d — 'Xemxin')"
-            },
-            {
-              "icon": "☀️",
-              "mt": "in-",
-              "en": "the (before n — 'Xemxin')"
-            },
-            {
-              "icon": "☀️",
-              "mt": "ir-",
-              "en": "the (before r — 'Xemxin')"
-            },
-            {
-              "icon": "☀️",
-              "mt": "is-",
-              "en": "the (before s — 'Xemxin')"
-            },
-            {
-              "icon": "☀️",
-              "mt": "it-",
-              "en": "the (before t — 'Xemxin')"
-            },
-            {
-              "icon": "☀️",
-              "mt": "ix-",
-              "en": "the (before x — 'Xemxin')"
-            },
-            {
-              "icon": "☀️",
-              "mt": "iż-",
-              "en": "the (before ż — 'Xemxin')"
-            },
-            {
-              "icon": "☀️",
-              "mt": "iz-",
-              "en": "the (before z — 'Xemxin')"
-            }
-          ]
-        },
-        {
-          "title": "Alphabet — quick facts",
-          "icon": "🔤",
-          "subtitle": "Drill the full 30 letters in the Alphabet section above.",
-          "items": [
-            {
-              "icon": "🔢",
-              "mt": "Tletin ittra",
-              "en": "Thirty letters total (24 consonants + 6 vowels)"
-            },
-            {
-              "icon": "🅰️",
-              "mt": "a, e, i, o, u, ie",
-              "en": "The 6 Maltese vowels (ie counts as one)"
-            },
-            {
-              "icon": "🌟",
-              "mt": "ċ, ġ, ħ, ż, għ",
-              "en": "The 5 letters unique to Maltese (għ counts as one consonant)"
-            },
-            {
-              "icon": "🏛️",
-              "mt": "Bażi Semitika",
-              "en": "Semitic base — strong Arabic roots, with Italian and English borrowings"
             }
           ]
         }
