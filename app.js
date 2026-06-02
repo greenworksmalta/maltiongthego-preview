@@ -20,7 +20,7 @@ const VERSION = "1.0.0-beta.27";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "20260602f";
+const BUILD = "20260602g";
 // Bump ONLY when audio clips are regenerated (re-voiced). Audio filenames are
 // sha1(mt) so a re-voiced clip keeps its name; without a changing query the
 // browser/SW serve the OLD cached audio. play() busts on this.
@@ -327,9 +327,9 @@ function normalizeEntitlement(e){
 // content (Module 4+) stays subscription-only so the subscription always leads.
 // Welcome (extra1) is free regardless and gated by the lesson's own `free` flag.
 const PACKS = [
-  { key: "starter",  lessons: ["lesson1", "lesson2", "lesson3"], productId: "com.greenworksmalta.maltiongthego.starter" },
-  { key: "core",     lessons: ["lesson4", "lesson5", "lesson6"], productId: "com.greenworksmalta.maltiongthego.core" },
-  { key: "advanced", lessons: ["lesson7", "lesson8", "lesson9"], productId: "com.greenworksmalta.maltiongthego.advanced" },
+  { key: "starter",  lessons: ["u1", "u2", "u3"], productId: "com.greenworksmalta.maltiongthego.starter" },
+  { key: "core",     lessons: ["u4", "u5", "u6"], productId: "com.greenworksmalta.maltiongthego.core" },
+  { key: "advanced", lessons: ["u7", "u8", "u9"], productId: "com.greenworksmalta.maltiongthego.advanced" },
 ];
 function ownsPack(key){ return !!(State.entitlement.packs && State.entitlement.packs[key]); }
 function hasAnyPack(){ return PACKS.some(p => ownsPack(p.key)); }

@@ -1,5 +1,5 @@
-build 20260602f
+build 20260602g
 VERSION 1.0.0-beta.27
-CACHE maltiongthego-1.0.0-beta.27-20260602f
+CACHE maltiongthego-1.0.0-beta.27-20260602g
 date 2026-06-02
-notes: align VERSION to beta.27.
+notes: fix pack->unit mapping (u1-u9).
