@@ -1,5 +1,5 @@
-build 20260602c
+build 20260602d
 VERSION 1.0.0-beta.26
-CACHE maltiongthego-1.0.0-beta.26-20260602c
+CACHE maltiongthego-1.0.0-beta.26-20260602d
 date 2026-06-02
-notes: U8 emoji icons sample (revert line icons).
+notes: emoji on word/vocab flash cards.

@@ -20,7 +20,7 @@ const VERSION = "1.0.0-beta.26";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "20260602c";
+const BUILD = "20260602d";
 // Bump ONLY when audio clips are regenerated (re-voiced). Audio filenames are
 // sha1(mt) so a re-voiced clip keeps its name; without a changing query the
 // browser/SW serve the OLD cached audio. play() busts on this.
@@ -2062,7 +2062,7 @@ function ensureSectionRegistered(sec){
           root.appendChild(head);
         }
         const item = sec2.items[i];
-        root.appendChild(renderFlash(item.mt, item.en, `Word ${i+1} of ${sec2.items.length}`));
+        root.appendChild(renderFlash(item.mt, item.en, `Word ${i+1} of ${sec2.items.length}`, null, item.icon));
         setTimeout(()=>play(item.mt), 250);
         root.appendChild(nextBtn("Next →", onNext));
       };
@@ -2510,10 +2510,10 @@ const STEP_COUNTS = {
    ============================================================ */
 
 // vocab/items flashcard (mt + en visible)
-function renderFlash(mt, en, hint, secondary){
+function renderFlash(mt, en, hint, secondary, icon){
   const card = el("div","flash");
   if(hint) card.appendChild(el("div","hint", hint));
-  card.appendChild(el("div","mtword", mt));
+  card.appendChild(el("div","mtword", (icon ? icon + " " : "") + mt));
   if(secondary) card.appendChild(el("div","alt", secondary));
   card.appendChild(el("div","enword", en));
   card.appendChild(audioBtn(mt));
@@ -3717,7 +3717,7 @@ STEP_RENDERERS["weekend:flash"] = (root, sec, idx, onNext) => {
     root.appendChild(head);
   }
   const item = sec.vocab[idx];
-  root.appendChild(renderFlash(item.mt, item.en, `Phrase ${idx+1} of ${sec.vocab.length}`));
+  root.appendChild(renderFlash(item.mt, item.en, `Phrase ${idx+1} of ${sec.vocab.length}`, null, item.icon));
   setTimeout(()=>play(item.mt), 250);
   root.appendChild(nextBtn("Next →", onNext));
 };
