@@ -152,11 +152,11 @@
           "en": "three o'clock"
         },
         {
-          "mt": "Is-sitta u nofs",
+          "mt": "Is-sitta u tletin minuta",
           "en": "half past six"
         },
         {
-          "mt": "Il-ħamsa u kwart",
+          "mt": "Il-ħamsa u ħmistax-il minuta",
           "en": "quarter past five"
         },
         {
@@ -190,11 +190,11 @@
               "en": "three o'clock"
             },
             {
-              "mt": "Is-sitta u nofs",
+              "mt": "Is-sitta u tletin minuta",
               "en": "half past six"
             },
             {
-              "mt": "Il-ħamsa u kwart",
+              "mt": "Il-ħamsa u ħmistax-il minuta",
               "en": "quarter past five"
             },
             {
@@ -272,18 +272,18 @@
         {
           "id": "telling-time",
           "title": "The time: u (past) and nieqes (to)",
-          "explanation": "Ask X'ħin hu? (what time is it?). The hour takes the article: Is-siegħa (1:00), Is-sitta (6:00). Add minutes with u (past) or nieqes (to): Is-sitta u nofs (6:30), Id-disgħa nieqes kwart (8:45).",
+          "explanation": "Ask X'ħin hu? (what time is it?). The hour takes the article: Is-siegħa (1:00), Is-sitta (6:00). Add minutes with u (past) or nieqes (to). When you give the minutes as a number, add minuta after it: Is-sitta u tletin minuta (6:30), Il-ħamsa u ħmistax-il minuta (5:15), Id-disgħa nieqes kwart (8:45).",
           "examples": [
             {
               "mt": "X'ħin hu?",
               "en": "What time is it?"
             },
             {
-              "mt": "Is-sitta u nofs.",
+              "mt": "Is-sitta u tletin minuta.",
               "en": "Half past six."
             },
             {
-              "mt": "Il-ħamsa u kwart.",
+              "mt": "Il-ħamsa u ħmistax-il minuta.",
               "en": "Quarter past five."
             },
             {
@@ -322,16 +322,16 @@
           ],
           "items": [
             {
-              "word": "Is-sitta ___ nofs (6:30)",
+              "word": "Is-sitta ___ tletin minuta (6:30)",
               "answer": "u",
               "en": "half past six",
-              "mt": "Is-sitta u nofs"
+              "mt": "Is-sitta u tletin minuta"
             },
             {
-              "word": "Il-ħamsa ___ kwart (5:15)",
+              "word": "Il-ħamsa ___ ħmistax-il minuta (5:15)",
               "answer": "u",
               "en": "quarter past five",
-              "mt": "Il-ħamsa u kwart"
+              "mt": "Il-ħamsa u ħmistax-il minuta"
             },
             {
               "word": "Id-disgħa ___ kwart (8:45)",
@@ -427,11 +427,11 @@
               "en": "three o'clock"
             },
             {
-              "mt": "Is-sitta u nofs",
+              "mt": "Is-sitta u tletin minuta",
               "en": "half past six"
             },
             {
-              "mt": "Il-ħamsa u kwart",
+              "mt": "Il-ħamsa u ħmistax-il minuta",
               "en": "quarter past five"
             },
             {

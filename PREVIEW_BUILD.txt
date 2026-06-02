@@ -1,5 +1,5 @@
-build 20260601oo
+build 20260601pp
 VERSION 1.0.0-beta.26
-CACHE maltiongthego-1.0.0-beta.26-20260601oo
+CACHE maltiongthego-1.0.0-beta.26-20260601pp
 date 2026-06-02
-notes: timemc prompt fix (no double blank) + full-phrase audio.
+notes: time uses u tletin minuta / u ħmistax-il minuta.
