@@ -37,11 +37,26 @@
         }
       ],
       "exercises": [
-        { "id": "desbuild", "type": "build", "max": 3, "title": "Arma las frases de la tienda", "items": [
-          { "mt": "Skużani, qed infittex qmis ħamra.", "en": "Disculpe, estoy buscando una camisa roja." },
-          { "mt": "Din il-qmis il-ħamra togħġbok?", "en": "¿Te gusta esta camisa roja?" },
-          { "mt": "Perfetta! Kemm tiswa?", "en": "¡Perfecta! ¿Cuánto cuesta?" }
-        ] }
+        {
+          "id": "desbuild",
+          "type": "build",
+          "max": 3,
+          "title": "Arma las frases de la tienda",
+          "items": [
+            {
+              "mt": "Skużani, qed infittex qmis ħamra.",
+              "en": "Disculpe, estoy buscando una camisa roja."
+            },
+            {
+              "mt": "Din il-qmis il-ħamra togħġbok?",
+              "en": "¿Te gusta esta camisa roja?"
+            },
+            {
+              "mt": "Perfetta! Kemm tiswa?",
+              "en": "¡Perfecta! ¿Cuánto cuesta?"
+            }
+          ]
+        }
       ]
     },
     {
@@ -69,7 +84,8 @@
               "mt": "ħitan bojod",
               "en": "paredes blancas"
             }
-          ]
+          ],
+          "icon": "⚪"
         },
         {
           "mt": "iswed",
@@ -89,7 +105,8 @@
               "mt": "żraben suwed",
               "en": "zapatos negros"
             }
-          ]
+          ],
+          "icon": "⚫"
         },
         {
           "mt": "aħmar",
@@ -109,7 +126,8 @@
               "mt": "fjuri ħomor",
               "en": "flores rojas"
             }
-          ]
+          ],
+          "icon": "🔴"
         },
         {
           "mt": "isfar",
@@ -129,7 +147,8 @@
               "mt": "stilel sofor",
               "en": "estrellas amarillas"
             }
-          ]
+          ],
+          "icon": "🟡"
         },
         {
           "mt": "aħdar",
@@ -149,7 +168,8 @@
               "mt": "weraq ħodor",
               "en": "hojas verdes"
             }
-          ]
+          ],
+          "icon": "🟢"
         },
         {
           "mt": "griż",
@@ -169,7 +189,8 @@
               "mt": "ġebel griż",
               "en": "piedras grises"
             }
-          ]
+          ],
+          "icon": "🩶"
         },
         {
           "mt": "blu",
@@ -189,7 +210,8 @@
               "mt": "għajnejn blu",
               "en": "ojos azules"
             }
-          ]
+          ],
+          "icon": "🔵"
         },
         {
           "mt": "ċelesti",
@@ -209,7 +231,8 @@
               "mt": "ħitan ċelesti",
               "en": "paredes azul claro"
             }
-          ]
+          ],
+          "icon": "🩵"
         },
         {
           "mt": "roża",
@@ -229,7 +252,8 @@
               "mt": "bżieżaq roża",
               "en": "globos rosas"
             }
-          ]
+          ],
+          "icon": "💗"
         },
         {
           "mt": "vjola",
@@ -249,7 +273,8 @@
               "mt": "bużżieqa vjola",
               "en": "globo morado"
             }
-          ]
+          ],
+          "icon": "🟣"
         },
         {
           "mt": "oranġjo",
@@ -269,7 +294,8 @@
               "mt": "inżul ix-xemx oranġjo",
               "en": "atardecer naranja"
             }
-          ]
+          ],
+          "icon": "🟠"
         },
         {
           "mt": "kannella",
@@ -289,24 +315,81 @@
               "mt": "butz kannella",
               "en": "botas marrones"
             }
-          ]
+          ],
+          "icon": "🟤"
         }
       ],
       "exercises": [
-        { "id": "colsort", "type": "bucket", "batch": 6, "opts": { "revealFem": true }, "title": "¿El color cambia de forma?", "instructions": "Clasifica cada color: ¿cambia según el género y el número, o se queda igual? Si aciertas uno que cambia, escucharás su forma femenina.", "choices": ["Cambia de forma", "Se queda igual"], "items": [
-          { "word": "aħmar", "answer": "Cambia de forma", "fem": "ħamra" },
-          { "word": "blu", "answer": "Se queda igual" },
-          { "word": "iswed", "answer": "Cambia de forma", "fem": "sewda" },
-          { "word": "roża", "answer": "Se queda igual" },
-          { "word": "isfar", "answer": "Cambia de forma", "fem": "safra" },
-          { "word": "vjola", "answer": "Se queda igual" },
-          { "word": "aħdar", "answer": "Cambia de forma", "fem": "ħadra" },
-          { "word": "kannella", "answer": "Se queda igual" },
-          { "word": "griż", "answer": "Cambia de forma", "fem": "griża" },
-          { "word": "oranġjo", "answer": "Se queda igual" },
-          { "word": "abjad", "answer": "Cambia de forma", "fem": "bajda" },
-          { "word": "ċelesti", "answer": "Se queda igual" }
-        ] }
+        {
+          "id": "colsort",
+          "type": "bucket",
+          "batch": 6,
+          "opts": {
+            "revealFem": true
+          },
+          "title": "¿El color cambia de forma?",
+          "instructions": "Clasifica cada color: ¿cambia según el género y el número, o se queda igual? Si aciertas uno que cambia, escucharás su forma femenina.",
+          "choices": [
+            "Cambia de forma",
+            "Se queda igual"
+          ],
+          "items": [
+            {
+              "word": "aħmar",
+              "answer": "Cambia de forma",
+              "fem": "ħamra"
+            },
+            {
+              "word": "blu",
+              "answer": "Se queda igual"
+            },
+            {
+              "word": "iswed",
+              "answer": "Cambia de forma",
+              "fem": "sewda"
+            },
+            {
+              "word": "roża",
+              "answer": "Se queda igual"
+            },
+            {
+              "word": "isfar",
+              "answer": "Cambia de forma",
+              "fem": "safra"
+            },
+            {
+              "word": "vjola",
+              "answer": "Se queda igual"
+            },
+            {
+              "word": "aħdar",
+              "answer": "Cambia de forma",
+              "fem": "ħadra"
+            },
+            {
+              "word": "kannella",
+              "answer": "Se queda igual"
+            },
+            {
+              "word": "griż",
+              "answer": "Cambia de forma",
+              "fem": "griża"
+            },
+            {
+              "word": "oranġjo",
+              "answer": "Se queda igual"
+            },
+            {
+              "word": "abjad",
+              "answer": "Cambia de forma",
+              "fem": "bajda"
+            },
+            {
+              "word": "ċelesti",
+              "answer": "Se queda igual"
+            }
+          ]
+        }
       ]
     },
     {
@@ -472,14 +555,39 @@
         }
       ],
       "exercises": [
-        { "id": "adjmatch", "type": "match", "title": "Empareja cada adjetivo con su opuesto", "leftField": "mt", "rightField": "opp", "items": [
-          { "mt": "kbir", "opp": "żgħir" },
-          { "mt": "twil", "opp": "qasir" },
-          { "mt": "sabiħ", "opp": "ikrah" },
-          { "mt": "tajjeb", "opp": "ħażin" },
-          { "mt": "nadif", "opp": "maħmuġ" },
-          { "mt": "sħun", "opp": "kiesaħ" }
-        ] }
+        {
+          "id": "adjmatch",
+          "type": "match",
+          "title": "Empareja cada adjetivo con su opuesto",
+          "leftField": "mt",
+          "rightField": "opp",
+          "items": [
+            {
+              "mt": "kbir",
+              "opp": "żgħir"
+            },
+            {
+              "mt": "twil",
+              "opp": "qasir"
+            },
+            {
+              "mt": "sabiħ",
+              "opp": "ikrah"
+            },
+            {
+              "mt": "tajjeb",
+              "opp": "ħażin"
+            },
+            {
+              "mt": "nadif",
+              "opp": "maħmuġ"
+            },
+            {
+              "mt": "sħun",
+              "opp": "kiesaħ"
+            }
+          ]
+        }
       ]
     },
     {
@@ -491,50 +599,84 @@
       "items": [
         {
           "mt": "qmis",
-          "en": "camisa"
+          "en": "camisa",
+          "icon": "👔"
         },
         {
           "mt": "flokk",
-          "en": "camiseta / suéter"
+          "en": "camiseta / suéter",
+          "icon": "👕"
         },
         {
           "mt": "qalziet",
-          "en": "pantalón"
+          "en": "pantalón",
+          "icon": "👖"
         },
         {
           "mt": "libsa",
-          "en": "vestido"
+          "en": "vestido",
+          "icon": "👗"
         },
         {
           "mt": "dublett",
-          "en": "falda"
+          "en": "falda",
+          "icon": "🩱"
         },
         {
           "mt": "ġakketta",
-          "en": "chaqueta"
+          "en": "chaqueta",
+          "icon": "🧥"
         },
         {
           "mt": "żraben",
-          "en": "zapatos"
+          "en": "zapatos",
+          "icon": "👞"
         },
         {
           "mt": "kappell",
-          "en": "sombrero"
+          "en": "sombrero",
+          "icon": "🎩"
         },
         {
           "mt": "borża",
-          "en": "bolsa"
+          "en": "bolsa",
+          "icon": "👜"
         }
       ],
       "exercises": [
-        { "id": "clomatch", "type": "match", "title": "Empareja la ropa con su significado", "leftField": "mt", "rightField": "en", "items": [
-          { "mt": "qmis", "en": "camisa" },
-          { "mt": "qalziet", "en": "pantalón" },
-          { "mt": "libsa", "en": "vestido" },
-          { "mt": "ġakketta", "en": "chaqueta" },
-          { "mt": "żraben", "en": "zapatos" },
-          { "mt": "kappell", "en": "sombrero" }
-        ] }
+        {
+          "id": "clomatch",
+          "type": "match",
+          "title": "Empareja la ropa con su significado",
+          "leftField": "mt",
+          "rightField": "en",
+          "items": [
+            {
+              "mt": "qmis",
+              "en": "camisa"
+            },
+            {
+              "mt": "qalziet",
+              "en": "pantalón"
+            },
+            {
+              "mt": "libsa",
+              "en": "vestido"
+            },
+            {
+              "mt": "ġakketta",
+              "en": "chaqueta"
+            },
+            {
+              "mt": "żraben",
+              "en": "zapatos"
+            },
+            {
+              "mt": "kappell",
+              "en": "sombrero"
+            }
+          ]
+        }
       ]
     },
     {
@@ -546,31 +688,66 @@
       "items": [
         {
           "mt": "kbir",
-          "en": "grande (m)"
+          "en": "grande (m)",
+          "icon": "🔲"
         },
         {
           "mt": "żgħir",
-          "en": "pequeño (m)"
+          "en": "pequeño (m)",
+          "icon": "🔹"
         },
         {
           "mt": "medju",
-          "en": "mediano"
+          "en": "mediano",
+          "icon": "📐"
         },
         {
           "mt": "twil",
-          "en": "largo / alto (m)"
+          "en": "largo / alto (m)",
+          "icon": "📏"
         },
         {
           "mt": "qasir",
-          "en": "corto (m)"
+          "en": "corto (m)",
+          "icon": "📌"
         }
       ],
       "exercises": [
-        { "id": "szmc", "type": "mc", "title": "Haz que el adjetivo concuerde", "instructions": "Elige la forma de alto/largo que corresponda.", "opts": { "blankAfter": true, "audioAnswer": true }, "choices": ["twil", "twila", "twal"], "items": [
-          { "word": "raġel", "en": "hombre (m)", "answer": "twil", "mt": "raġel twil" },
-          { "word": "mara", "en": "mujer (f)", "answer": "twila", "mt": "mara twila" },
-          { "word": "tfal", "en": "niños (pl)", "answer": "twal", "mt": "tfal twal" }
-        ] }
+        {
+          "id": "szmc",
+          "type": "mc",
+          "title": "Haz que el adjetivo concuerde",
+          "instructions": "Elige la forma de alto/largo que corresponda.",
+          "opts": {
+            "blankAfter": true,
+            "audioAnswer": true
+          },
+          "choices": [
+            "twil",
+            "twila",
+            "twal"
+          ],
+          "items": [
+            {
+              "word": "raġel",
+              "en": "hombre (m)",
+              "answer": "twil",
+              "mt": "raġel twil"
+            },
+            {
+              "word": "mara",
+              "en": "mujer (f)",
+              "answer": "twila",
+              "mt": "mara twila"
+            },
+            {
+              "word": "tfal",
+              "en": "niños (pl)",
+              "answer": "twal",
+              "mt": "tfal twal"
+            }
+          ]
+        }
       ]
     },
     {
@@ -694,14 +871,38 @@
         }
       ],
       "exercises": [
-        { "id": "g4build", "type": "build", "max": 6, "title": "Arma la frase: sustantivo primero, luego el adjetivo concordante", "items": [
-          { "mt": "ktieb abjad", "en": "un libro blanco (m)" },
-          { "mt": "karozza bajda", "en": "un carro blanco (f)" },
-          { "mt": "ħitan bojod", "en": "paredes blancas (pl)" },
-          { "mt": "raġel twil", "en": "un hombre alto (m)" },
-          { "mt": "mara twila", "en": "una mujer alta (f)" },
-          { "mt": "tfal twal", "en": "niños altos (pl)" }
-        ] }
+        {
+          "id": "g4build",
+          "type": "build",
+          "max": 6,
+          "title": "Arma la frase: sustantivo primero, luego el adjetivo concordante",
+          "items": [
+            {
+              "mt": "ktieb abjad",
+              "en": "un libro blanco (m)"
+            },
+            {
+              "mt": "karozza bajda",
+              "en": "un carro blanco (f)"
+            },
+            {
+              "mt": "ħitan bojod",
+              "en": "paredes blancas (pl)"
+            },
+            {
+              "mt": "raġel twil",
+              "en": "un hombre alto (m)"
+            },
+            {
+              "mt": "mara twila",
+              "en": "una mujer alta (f)"
+            },
+            {
+              "mt": "tfal twal",
+              "en": "niños altos (pl)"
+            }
+          ]
+        }
       ]
     },
     {
@@ -716,119 +917,148 @@
           "items": [
             {
               "mt": "abjad",
-              "en": "blanco"
+              "en": "blanco",
+              "icon": "⚪"
             },
             {
               "mt": "iswed",
-              "en": "negro"
+              "en": "negro",
+              "icon": "⚫"
             },
             {
               "mt": "aħmar",
-              "en": "rojo"
+              "en": "rojo",
+              "icon": "🔴"
             },
             {
               "mt": "isfar",
-              "en": "amarillo"
+              "en": "amarillo",
+              "icon": "🟡"
             },
             {
               "mt": "aħdar",
-              "en": "verde"
+              "en": "verde",
+              "icon": "🟢"
             },
             {
               "mt": "griż",
-              "en": "gris"
+              "en": "gris",
+              "icon": "🩶"
             },
             {
               "mt": "blu",
-              "en": "azul"
+              "en": "azul",
+              "icon": "🔵"
             },
             {
               "mt": "ċelesti",
-              "en": "azul claro"
+              "en": "azul claro",
+              "icon": "🩵"
             },
             {
               "mt": "roża",
-              "en": "rosa"
+              "en": "rosa",
+              "icon": "💗"
             },
             {
               "mt": "vjola",
-              "en": "morado"
+              "en": "morado",
+              "icon": "🟣"
             },
             {
               "mt": "oranġjo",
-              "en": "naranja"
+              "en": "naranja",
+              "icon": "🟠"
             },
             {
               "mt": "kannella",
-              "en": "marrón"
+              "en": "marrón",
+              "icon": "🟤"
             }
-          ]
+          ],
+          "icon": "🎨"
         },
         {
           "title": "Ropa",
           "items": [
             {
               "mt": "qmis",
-              "en": "camisa"
+              "en": "camisa",
+              "icon": "👔"
             },
             {
               "mt": "flokk",
-              "en": "camiseta / suéter"
+              "en": "camiseta / suéter",
+              "icon": "👕"
             },
             {
               "mt": "qalziet",
-              "en": "pantalón"
+              "en": "pantalón",
+              "icon": "👖"
             },
             {
               "mt": "libsa",
-              "en": "vestido"
+              "en": "vestido",
+              "icon": "👗"
             },
             {
               "mt": "dublett",
-              "en": "falda"
+              "en": "falda",
+              "icon": "🩱"
             },
             {
               "mt": "ġakketta",
-              "en": "chaqueta"
+              "en": "chaqueta",
+              "icon": "🧥"
             },
             {
               "mt": "żraben",
-              "en": "zapatos"
+              "en": "zapatos",
+              "icon": "👞"
             },
             {
               "mt": "kappell",
-              "en": "sombrero"
+              "en": "sombrero",
+              "icon": "🎩"
             },
             {
               "mt": "borża",
-              "en": "bolsa"
+              "en": "bolsa",
+              "icon": "👜"
             }
-          ]
+          ],
+          "icon": "👕"
         },
         {
           "title": "Tallas",
           "items": [
             {
               "mt": "kbir",
-              "en": "grande (m)"
+              "en": "grande (m)",
+              "icon": "🔲"
             },
             {
               "mt": "żgħir",
-              "en": "pequeño (m)"
+              "en": "pequeño (m)",
+              "icon": "🔹"
             },
             {
               "mt": "medju",
-              "en": "mediano"
+              "en": "mediano",
+              "icon": "📐"
             },
             {
               "mt": "twil",
-              "en": "largo / alto (m)"
+              "en": "largo / alto (m)",
+              "icon": "📏"
             },
             {
               "mt": "qasir",
-              "en": "corto (m)"
+              "en": "corto (m)",
+              "icon": "📌"
             }
-          ]
+          ],
+          "icon": "📏"
         }
       ]
     }

@@ -36,11 +36,26 @@
         }
       ],
       "exercises": [
-        { "id": "desbuild", "type": "build", "max": 3, "title": "Build the lines from the shop", "items": [
-          { "mt": "Skużani, qed infittex qmis ħamra.", "en": "Excuse me, I'm looking for a red shirt." },
-          { "mt": "Din il-qmis il-ħamra togħġbok?", "en": "Do you like this red shirt?" },
-          { "mt": "Perfetta! Kemm tiswa?", "en": "Perfect! How much is it?" }
-        ] }
+        {
+          "id": "desbuild",
+          "type": "build",
+          "max": 3,
+          "title": "Build the lines from the shop",
+          "items": [
+            {
+              "mt": "Skużani, qed infittex qmis ħamra.",
+              "en": "Excuse me, I'm looking for a red shirt."
+            },
+            {
+              "mt": "Din il-qmis il-ħamra togħġbok?",
+              "en": "Do you like this red shirt?"
+            },
+            {
+              "mt": "Perfetta! Kemm tiswa?",
+              "en": "Perfect! How much is it?"
+            }
+          ]
+        }
       ]
     },
     {
@@ -68,7 +83,8 @@
               "mt": "ħitan bojod",
               "en": "white walls"
             }
-          ]
+          ],
+          "icon": "⚪"
         },
         {
           "mt": "iswed",
@@ -88,7 +104,8 @@
               "mt": "żraben suwed",
               "en": "black shoes"
             }
-          ]
+          ],
+          "icon": "⚫"
         },
         {
           "mt": "aħmar",
@@ -108,7 +125,8 @@
               "mt": "fjuri ħomor",
               "en": "red flowers"
             }
-          ]
+          ],
+          "icon": "🔴"
         },
         {
           "mt": "isfar",
@@ -128,7 +146,8 @@
               "mt": "stilel sofor",
               "en": "yellow stars"
             }
-          ]
+          ],
+          "icon": "🟡"
         },
         {
           "mt": "aħdar",
@@ -148,7 +167,8 @@
               "mt": "weraq ħodor",
               "en": "green leaves"
             }
-          ]
+          ],
+          "icon": "🟢"
         },
         {
           "mt": "griż",
@@ -168,7 +188,8 @@
               "mt": "ġebel griż",
               "en": "grey stones"
             }
-          ]
+          ],
+          "icon": "🩶"
         },
         {
           "mt": "blu",
@@ -188,7 +209,8 @@
               "mt": "għajnejn blu",
               "en": "blue eyes"
             }
-          ]
+          ],
+          "icon": "🔵"
         },
         {
           "mt": "ċelesti",
@@ -208,7 +230,8 @@
               "mt": "ħitan ċelesti",
               "en": "light blue walls"
             }
-          ]
+          ],
+          "icon": "🩵"
         },
         {
           "mt": "roża",
@@ -228,7 +251,8 @@
               "mt": "bżieżaq roża",
               "en": "pink balloons"
             }
-          ]
+          ],
+          "icon": "💗"
         },
         {
           "mt": "vjola",
@@ -248,7 +272,8 @@
               "mt": "bużżieqa vjola",
               "en": "purple balloon"
             }
-          ]
+          ],
+          "icon": "🟣"
         },
         {
           "mt": "oranġjo",
@@ -268,7 +293,8 @@
               "mt": "inżul ix-xemx oranġjo",
               "en": "orange sunset"
             }
-          ]
+          ],
+          "icon": "🟠"
         },
         {
           "mt": "kannella",
@@ -288,24 +314,81 @@
               "mt": "butz kannella",
               "en": "brown boots"
             }
-          ]
+          ],
+          "icon": "🟤"
         }
       ],
       "exercises": [
-        { "id": "colsort", "type": "bucket", "batch": 6, "opts": { "revealFem": true }, "title": "Does the colour change form?", "instructions": "Sort each colour: does it change for gender and number, or stay the same? Get a changing one right and you'll hear its feminine form.", "choices": ["Changes form", "Stays the same"], "items": [
-          { "word": "aħmar", "answer": "Changes form", "fem": "ħamra" },
-          { "word": "blu", "answer": "Stays the same" },
-          { "word": "iswed", "answer": "Changes form", "fem": "sewda" },
-          { "word": "roża", "answer": "Stays the same" },
-          { "word": "isfar", "answer": "Changes form", "fem": "safra" },
-          { "word": "vjola", "answer": "Stays the same" },
-          { "word": "aħdar", "answer": "Changes form", "fem": "ħadra" },
-          { "word": "kannella", "answer": "Stays the same" },
-          { "word": "griż", "answer": "Changes form", "fem": "griża" },
-          { "word": "oranġjo", "answer": "Stays the same" },
-          { "word": "abjad", "answer": "Changes form", "fem": "bajda" },
-          { "word": "ċelesti", "answer": "Stays the same" }
-        ] }
+        {
+          "id": "colsort",
+          "type": "bucket",
+          "batch": 6,
+          "opts": {
+            "revealFem": true
+          },
+          "title": "Does the colour change form?",
+          "instructions": "Sort each colour: does it change for gender and number, or stay the same? Get a changing one right and you'll hear its feminine form.",
+          "choices": [
+            "Changes form",
+            "Stays the same"
+          ],
+          "items": [
+            {
+              "word": "aħmar",
+              "answer": "Changes form",
+              "fem": "ħamra"
+            },
+            {
+              "word": "blu",
+              "answer": "Stays the same"
+            },
+            {
+              "word": "iswed",
+              "answer": "Changes form",
+              "fem": "sewda"
+            },
+            {
+              "word": "roża",
+              "answer": "Stays the same"
+            },
+            {
+              "word": "isfar",
+              "answer": "Changes form",
+              "fem": "safra"
+            },
+            {
+              "word": "vjola",
+              "answer": "Stays the same"
+            },
+            {
+              "word": "aħdar",
+              "answer": "Changes form",
+              "fem": "ħadra"
+            },
+            {
+              "word": "kannella",
+              "answer": "Stays the same"
+            },
+            {
+              "word": "griż",
+              "answer": "Changes form",
+              "fem": "griża"
+            },
+            {
+              "word": "oranġjo",
+              "answer": "Stays the same"
+            },
+            {
+              "word": "abjad",
+              "answer": "Changes form",
+              "fem": "bajda"
+            },
+            {
+              "word": "ċelesti",
+              "answer": "Stays the same"
+            }
+          ]
+        }
       ]
     },
     {
@@ -471,14 +554,39 @@
         }
       ],
       "exercises": [
-        { "id": "adjmatch", "type": "match", "title": "Match each adjective to its opposite", "leftField": "mt", "rightField": "opp", "items": [
-          { "mt": "kbir", "opp": "żgħir" },
-          { "mt": "twil", "opp": "qasir" },
-          { "mt": "sabiħ", "opp": "ikrah" },
-          { "mt": "tajjeb", "opp": "ħażin" },
-          { "mt": "nadif", "opp": "maħmuġ" },
-          { "mt": "sħun", "opp": "kiesaħ" }
-        ] }
+        {
+          "id": "adjmatch",
+          "type": "match",
+          "title": "Match each adjective to its opposite",
+          "leftField": "mt",
+          "rightField": "opp",
+          "items": [
+            {
+              "mt": "kbir",
+              "opp": "żgħir"
+            },
+            {
+              "mt": "twil",
+              "opp": "qasir"
+            },
+            {
+              "mt": "sabiħ",
+              "opp": "ikrah"
+            },
+            {
+              "mt": "tajjeb",
+              "opp": "ħażin"
+            },
+            {
+              "mt": "nadif",
+              "opp": "maħmuġ"
+            },
+            {
+              "mt": "sħun",
+              "opp": "kiesaħ"
+            }
+          ]
+        }
       ]
     },
     {
@@ -490,50 +598,84 @@
       "items": [
         {
           "mt": "qmis",
-          "en": "shirt"
+          "en": "shirt",
+          "icon": "👔"
         },
         {
           "mt": "flokk",
-          "en": "t-shirt / jumper"
+          "en": "t-shirt / jumper",
+          "icon": "👕"
         },
         {
           "mt": "qalziet",
-          "en": "trousers"
+          "en": "trousers",
+          "icon": "👖"
         },
         {
           "mt": "libsa",
-          "en": "dress"
+          "en": "dress",
+          "icon": "👗"
         },
         {
           "mt": "dublett",
-          "en": "skirt"
+          "en": "skirt",
+          "icon": "🩱"
         },
         {
           "mt": "ġakketta",
-          "en": "jacket"
+          "en": "jacket",
+          "icon": "🧥"
         },
         {
           "mt": "żraben",
-          "en": "shoes"
+          "en": "shoes",
+          "icon": "👞"
         },
         {
           "mt": "kappell",
-          "en": "hat"
+          "en": "hat",
+          "icon": "🎩"
         },
         {
           "mt": "borża",
-          "en": "bag"
+          "en": "bag",
+          "icon": "👜"
         }
       ],
       "exercises": [
-        { "id": "clomatch", "type": "match", "title": "Match the clothing to its meaning", "leftField": "mt", "rightField": "en", "items": [
-          { "mt": "qmis", "en": "shirt" },
-          { "mt": "qalziet", "en": "trousers" },
-          { "mt": "libsa", "en": "dress" },
-          { "mt": "ġakketta", "en": "jacket" },
-          { "mt": "żraben", "en": "shoes" },
-          { "mt": "kappell", "en": "hat" }
-        ] }
+        {
+          "id": "clomatch",
+          "type": "match",
+          "title": "Match the clothing to its meaning",
+          "leftField": "mt",
+          "rightField": "en",
+          "items": [
+            {
+              "mt": "qmis",
+              "en": "shirt"
+            },
+            {
+              "mt": "qalziet",
+              "en": "trousers"
+            },
+            {
+              "mt": "libsa",
+              "en": "dress"
+            },
+            {
+              "mt": "ġakketta",
+              "en": "jacket"
+            },
+            {
+              "mt": "żraben",
+              "en": "shoes"
+            },
+            {
+              "mt": "kappell",
+              "en": "hat"
+            }
+          ]
+        }
       ]
     },
     {
@@ -545,31 +687,66 @@
       "items": [
         {
           "mt": "kbir",
-          "en": "big (m)"
+          "en": "big (m)",
+          "icon": "🔲"
         },
         {
           "mt": "żgħir",
-          "en": "small (m)"
+          "en": "small (m)",
+          "icon": "🔹"
         },
         {
           "mt": "medju",
-          "en": "medium"
+          "en": "medium",
+          "icon": "📐"
         },
         {
           "mt": "twil",
-          "en": "long / tall (m)"
+          "en": "long / tall (m)",
+          "icon": "📏"
         },
         {
           "mt": "qasir",
-          "en": "short (m)"
+          "en": "short (m)",
+          "icon": "📌"
         }
       ],
       "exercises": [
-        { "id": "szmc", "type": "mc", "title": "Make the describing word agree", "instructions": "Pick the form of tall/long that matches.", "opts": { "blankAfter": true, "audioAnswer": true }, "choices": ["twil", "twila", "twal"], "items": [
-          { "word": "raġel", "en": "man (m)", "answer": "twil", "mt": "raġel twil" },
-          { "word": "mara", "en": "woman (f)", "answer": "twila", "mt": "mara twila" },
-          { "word": "tfal", "en": "children (pl)", "answer": "twal", "mt": "tfal twal" }
-        ] }
+        {
+          "id": "szmc",
+          "type": "mc",
+          "title": "Make the describing word agree",
+          "instructions": "Pick the form of tall/long that matches.",
+          "opts": {
+            "blankAfter": true,
+            "audioAnswer": true
+          },
+          "choices": [
+            "twil",
+            "twila",
+            "twal"
+          ],
+          "items": [
+            {
+              "word": "raġel",
+              "en": "man (m)",
+              "answer": "twil",
+              "mt": "raġel twil"
+            },
+            {
+              "word": "mara",
+              "en": "woman (f)",
+              "answer": "twila",
+              "mt": "mara twila"
+            },
+            {
+              "word": "tfal",
+              "en": "children (pl)",
+              "answer": "twal",
+              "mt": "tfal twal"
+            }
+          ]
+        }
       ]
     },
     {
@@ -693,14 +870,38 @@
         }
       ],
       "exercises": [
-        { "id": "g4build", "type": "build", "max": 6, "title": "Build the phrase: noun first, then the matching describing word", "items": [
-          { "mt": "ktieb abjad", "en": "a white book (m)" },
-          { "mt": "karozza bajda", "en": "a white car (f)" },
-          { "mt": "ħitan bojod", "en": "white walls (pl)" },
-          { "mt": "raġel twil", "en": "a tall man (m)" },
-          { "mt": "mara twila", "en": "a tall woman (f)" },
-          { "mt": "tfal twal", "en": "tall children (pl)" }
-        ] }
+        {
+          "id": "g4build",
+          "type": "build",
+          "max": 6,
+          "title": "Build the phrase: noun first, then the matching describing word",
+          "items": [
+            {
+              "mt": "ktieb abjad",
+              "en": "a white book (m)"
+            },
+            {
+              "mt": "karozza bajda",
+              "en": "a white car (f)"
+            },
+            {
+              "mt": "ħitan bojod",
+              "en": "white walls (pl)"
+            },
+            {
+              "mt": "raġel twil",
+              "en": "a tall man (m)"
+            },
+            {
+              "mt": "mara twila",
+              "en": "a tall woman (f)"
+            },
+            {
+              "mt": "tfal twal",
+              "en": "tall children (pl)"
+            }
+          ]
+        }
       ]
     },
     {
@@ -715,119 +916,148 @@
           "items": [
             {
               "mt": "abjad",
-              "en": "white"
+              "en": "white",
+              "icon": "⚪"
             },
             {
               "mt": "iswed",
-              "en": "black"
+              "en": "black",
+              "icon": "⚫"
             },
             {
               "mt": "aħmar",
-              "en": "red"
+              "en": "red",
+              "icon": "🔴"
             },
             {
               "mt": "isfar",
-              "en": "yellow"
+              "en": "yellow",
+              "icon": "🟡"
             },
             {
               "mt": "aħdar",
-              "en": "green"
+              "en": "green",
+              "icon": "🟢"
             },
             {
               "mt": "griż",
-              "en": "grey"
+              "en": "grey",
+              "icon": "🩶"
             },
             {
               "mt": "blu",
-              "en": "blue"
+              "en": "blue",
+              "icon": "🔵"
             },
             {
               "mt": "ċelesti",
-              "en": "light blue"
+              "en": "light blue",
+              "icon": "🩵"
             },
             {
               "mt": "roża",
-              "en": "pink"
+              "en": "pink",
+              "icon": "💗"
             },
             {
               "mt": "vjola",
-              "en": "purple"
+              "en": "purple",
+              "icon": "🟣"
             },
             {
               "mt": "oranġjo",
-              "en": "orange"
+              "en": "orange",
+              "icon": "🟠"
             },
             {
               "mt": "kannella",
-              "en": "brown"
+              "en": "brown",
+              "icon": "🟤"
             }
-          ]
+          ],
+          "icon": "🎨"
         },
         {
           "title": "Clothes",
           "items": [
             {
               "mt": "qmis",
-              "en": "shirt"
+              "en": "shirt",
+              "icon": "👔"
             },
             {
               "mt": "flokk",
-              "en": "t-shirt / jumper"
+              "en": "t-shirt / jumper",
+              "icon": "👕"
             },
             {
               "mt": "qalziet",
-              "en": "trousers"
+              "en": "trousers",
+              "icon": "👖"
             },
             {
               "mt": "libsa",
-              "en": "dress"
+              "en": "dress",
+              "icon": "👗"
             },
             {
               "mt": "dublett",
-              "en": "skirt"
+              "en": "skirt",
+              "icon": "🩱"
             },
             {
               "mt": "ġakketta",
-              "en": "jacket"
+              "en": "jacket",
+              "icon": "🧥"
             },
             {
               "mt": "żraben",
-              "en": "shoes"
+              "en": "shoes",
+              "icon": "👞"
             },
             {
               "mt": "kappell",
-              "en": "hat"
+              "en": "hat",
+              "icon": "🎩"
             },
             {
               "mt": "borża",
-              "en": "bag"
+              "en": "bag",
+              "icon": "👜"
             }
-          ]
+          ],
+          "icon": "👕"
         },
         {
           "title": "Sizes",
           "items": [
             {
               "mt": "kbir",
-              "en": "big (m)"
+              "en": "big (m)",
+              "icon": "🔲"
             },
             {
               "mt": "żgħir",
-              "en": "small (m)"
+              "en": "small (m)",
+              "icon": "🔹"
             },
             {
               "mt": "medju",
-              "en": "medium"
+              "en": "medium",
+              "icon": "📐"
             },
             {
               "mt": "twil",
-              "en": "long / tall (m)"
+              "en": "long / tall (m)",
+              "icon": "📏"
             },
             {
               "mt": "qasir",
-              "en": "short (m)"
+              "en": "short (m)",
+              "icon": "📌"
             }
-          ]
+          ],
+          "icon": "📏"
         }
       ]
     }

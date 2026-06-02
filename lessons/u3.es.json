@@ -13,59 +13,73 @@
       "vocab": [
         {
           "mt": "Ma nitkellimx bil-Malti",
-          "en": "No hablo maltés"
+          "en": "No hablo maltés",
+          "icon": "🤐"
         },
         {
           "mt": "Nitkellem ftit Malti",
-          "en": "Hablo un poco de maltés"
+          "en": "Hablo un poco de maltés",
+          "icon": "🗣️"
         },
         {
           "mt": "Qed nitgħallem il-Malti",
-          "en": "Estoy aprendiendo maltés"
+          "en": "Estoy aprendiendo maltés",
+          "icon": "📚"
         },
         {
           "mt": "Ma nifhimx",
-          "en": "No entiendo"
+          "en": "No entiendo",
+          "icon": "❓"
         },
         {
           "mt": "Tista' tirrepeti?",
-          "en": "¿Puedes repetir eso?"
+          "en": "¿Puedes repetir eso?",
+          "icon": "🔁"
         },
         {
           "mt": "Bil-mod, jekk jogħġbok",
-          "en": "Despacio, por favor"
+          "en": "Despacio, por favor",
+          "icon": "🐢"
         },
         {
           "mt": "Skużi, ma fhimtx",
-          "en": "Disculpa, no entendí"
+          "en": "Disculpa, no entendí",
+          "icon": "😕"
         },
         {
           "mt": "Tista' tiktibha?",
-          "en": "¿Puedes escribirlo?"
+          "en": "¿Puedes escribirlo?",
+          "icon": "✍️"
         },
         {
           "mt": "Tista' tgħinni?",
-          "en": "¿Puedes ayudarme?"
+          "en": "¿Puedes ayudarme?",
+          "icon": "🆘"
         },
         {
           "mt": "Kif tgħid bil-Malti?",
-          "en": "¿Cómo se dice en maltés?"
+          "en": "¿Cómo se dice en maltés?",
+          "icon": "❓"
         },
         {
           "mt": "X'jiġifieri?",
-          "en": "¿Qué significa?"
+          "en": "¿Qué significa?",
+          "icon": "❓"
         },
         {
           "mt": "Naħdem hawn",
-          "en": "Trabajo aquí"
+          "en": "Trabajo aquí",
+          "icon": "🏢"
         },
         {
           "mt": "Jien barrani",
-          "en": "Soy extranjero"
+          "en": "Soy extranjero",
+          "icon": "🌍"
         },
         {
           "mt": "Titkellem bl-Ingliż?",
-          "en": "¿Hablas inglés?"
+          "en": "¿Hablas inglés?",
+          "icon": "🇬🇧"
         }
       ],
       "dialogue": [
@@ -96,35 +110,43 @@
       "items": [
         {
           "mt": "Malti / Maltija",
-          "en": "maltés / maltesa (m/f)"
+          "en": "maltés / maltesa (m/f)",
+          "icon": "🇲🇹"
         },
         {
           "mt": "Ingliż / Ingliża",
-          "en": "inglés / inglesa"
+          "en": "inglés / inglesa",
+          "icon": "🇬🇧"
         },
         {
           "mt": "Taljan / Taljana",
-          "en": "italiano / italiana"
+          "en": "italiano / italiana",
+          "icon": "🇮🇹"
         },
         {
           "mt": "Franċiż / Franċiża",
-          "en": "francés / francesa"
+          "en": "francés / francesa",
+          "icon": "🇫🇷"
         },
         {
           "mt": "Ġermaniż / Ġermaniża",
-          "en": "alemán / alemana"
+          "en": "alemán / alemana",
+          "icon": "🇩🇪"
         },
         {
           "mt": "Spanjol / Spanjola",
-          "en": "español / española"
+          "en": "español / española",
+          "icon": "🇪🇸"
         },
         {
           "mt": "Amerikan / Amerikana",
-          "en": "americano / americana"
+          "en": "americano / americana",
+          "icon": "🇺🇸"
         },
         {
           "mt": "barrani / barranija",
-          "en": "extranjero / extranjera"
+          "en": "extranjero / extranjera",
+          "icon": "🌍"
         }
       ]
     },
@@ -240,7 +262,8 @@
             },
             {
               "mt": "Skużi, ma fhimtx",
-              "en": "Disculpa, no entendí"
+              "en": "Disculpa, no entendí",
+              "icon": "😕"
             },
             {
               "icon": "🔁",
@@ -294,37 +317,46 @@
           "items": [
             {
               "mt": "Malti / Maltija",
-              "en": "maltés / maltesa (m/f)"
+              "en": "maltés / maltesa (m/f)",
+              "icon": "🇲🇹"
             },
             {
               "mt": "Ingliż / Ingliża",
-              "en": "inglés / inglesa"
+              "en": "inglés / inglesa",
+              "icon": "🇬🇧"
             },
             {
               "mt": "Taljan / Taljana",
-              "en": "italiano / italiana"
+              "en": "italiano / italiana",
+              "icon": "🇮🇹"
             },
             {
               "mt": "Franċiż / Franċiża",
-              "en": "francés / francesa"
+              "en": "francés / francesa",
+              "icon": "🇫🇷"
             },
             {
               "mt": "Ġermaniż / Ġermaniża",
-              "en": "alemán / alemana"
+              "en": "alemán / alemana",
+              "icon": "🇩🇪"
             },
             {
               "mt": "Spanjol / Spanjola",
-              "en": "español / española"
+              "en": "español / española",
+              "icon": "🇪🇸"
             },
             {
               "mt": "Amerikan / Amerikana",
-              "en": "americano / americana"
+              "en": "americano / americana",
+              "icon": "🇺🇸"
             },
             {
               "mt": "barrani / barranija",
-              "en": "extranjero / extranjera"
+              "en": "extranjero / extranjera",
+              "icon": "🌍"
             }
-          ]
+          ],
+          "icon": "🌍"
         }
       ]
     }

@@ -44,51 +44,59 @@
           "mt": "Min?",
           "en": "¿Quién?",
           "example": "Min hu l-għalliem tiegħek?",
-          "example_en": "¿Quién es tu maestro?"
+          "example_en": "¿Quién es tu maestro?",
+          "icon": "🧑"
         },
         {
           "mt": "Fejn?",
           "en": "¿Dónde?",
           "example": "Fejn toqgħod?",
-          "example_en": "¿Dónde vives?"
+          "example_en": "¿Dónde vives?",
+          "icon": "📍"
         },
         {
           "mt": "Xi?",
           "alt": "Xiex?",
           "en": "¿Qué?/¿Cuántos?",
           "example": "X'tieħu?",
-          "example_en": "¿Qué vas a tomar?"
+          "example_en": "¿Qué vas a tomar?",
+          "icon": "❓"
         },
         {
           "mt": "Għaliex?",
           "alt": "Għala?",
           "en": "¿Por qué?",
           "example": "Għaliex int hawn?",
-          "example_en": "¿Por qué estás aquí?"
+          "example_en": "¿Por qué estás aquí?",
+          "icon": "🤔"
         },
         {
           "mt": "Meta?",
           "en": "¿Cuándo?",
           "example": "Meta ġej il-vapur?",
-          "example_en": "¿Cuándo llega el barco?"
+          "example_en": "¿Cuándo llega el barco?",
+          "icon": "🕐"
         },
         {
           "mt": "Liema?",
           "en": "¿Cuál?",
           "example": "Liema tip ta' kapuċċino trid?",
-          "example_en": "¿Qué tipo de capuchino quieres?"
+          "example_en": "¿Qué tipo de capuchino quieres?",
+          "icon": "👆"
         },
         {
           "mt": "Ta' min?",
           "en": "¿De quién?",
           "example": "Ta' min hi din il-borża?",
-          "example_en": "¿De quién es esta bolsa?"
+          "example_en": "¿De quién es esta bolsa?",
+          "icon": "🔑"
         },
         {
           "mt": "Kif?",
           "en": "¿Cómo?",
           "example": "Kif tasal hemm?",
-          "example_en": "¿Cómo llegas allí?"
+          "example_en": "¿Cómo llegas allí?",
+          "icon": "💡"
         }
       ],
       "passage": {
@@ -152,79 +160,98 @@
       "vocab": [
         {
           "mt": "Skużani",
-          "en": "Lo siento / Disculpe"
+          "en": "Lo siento / Disculpe",
+          "icon": "🙏"
         },
         {
           "mt": "Lemin",
-          "en": "Derecha"
+          "en": "Derecha",
+          "icon": "➡️"
         },
         {
           "mt": "Xellug",
-          "en": "Izquierda"
+          "en": "Izquierda",
+          "icon": "⬅️"
         },
         {
           "mt": "Dur fuq il-lemin",
-          "en": "Gira a la derecha"
+          "en": "Gira a la derecha",
+          "icon": "↪️"
         },
         {
           "mt": "Dur fuq ix-xellug",
-          "en": "Gira a la izquierda"
+          "en": "Gira a la izquierda",
+          "icon": "↩️"
         },
         {
           "mt": "Kompli bi dritt",
-          "en": "Sigue recto"
+          "en": "Sigue recto",
+          "icon": "⬆️"
         },
         {
           "mt": "Suq",
-          "en": "Maneja (singular)"
+          "en": "Maneja (singular)",
+          "icon": "🚗"
         },
         {
           "mt": "Imxi",
-          "en": "Camina (singular)"
+          "en": "Camina (singular)",
+          "icon": "🚶"
         },
         {
           "mt": "Dur",
-          "en": "Gira (singular)"
+          "en": "Gira (singular)",
+          "icon": "🔄"
         },
         {
           "mt": "Hawn",
-          "en": "Aquí"
+          "en": "Aquí",
+          "icon": "📍"
         },
         {
           "mt": "Hemm",
-          "en": "Allí"
+          "en": "Allí",
+          "icon": "👉"
         },
         {
           "mt": "Wara dak",
-          "en": "Después de eso"
+          "en": "Después de eso",
+          "icon": "➡️"
         },
         {
           "mt": "Aqsam it-triq",
-          "en": "Cruza la calle"
+          "en": "Cruza la calle",
+          "icon": "🛤️"
         },
         {
           "mt": "Faċċata ta'",
-          "en": "Frente a"
+          "en": "Frente a",
+          "icon": "🏢"
         },
         {
           "mt": "Ħdejn",
-          "en": "Al lado de"
+          "en": "Al lado de",
+          "icon": "↔️"
         },
         {
           "mt": "Bejn",
-          "en": "Entre"
+          "en": "Entre",
+          "icon": "↕️"
         },
         {
           "mt": "L-ewwel triq",
-          "en": "La primera calle"
+          "en": "La primera calle",
+          "icon": "🛣️"
         },
         {
           "mt": "L-ewwel kantuniera",
-          "en": "La primera esquina"
+          "en": "La primera esquina",
+          "icon": "🔀"
         },
         {
           "mt": "It-tieni dawra",
-          "en": "La segunda vuelta"
+          "en": "La segunda vuelta",
+          "icon": "🔀"
         }
       ],
       "dialogue": [
@@ -381,118 +408,147 @@
           "items": [
             {
               "mt": "Min?",
-              "en": "¿Quién?"
+              "en": "¿Quién?",
+              "icon": "🧑"
             },
             {
               "mt": "Fejn?",
-              "en": "¿Dónde?"
+              "en": "¿Dónde?",
+              "icon": "📍"
             },
             {
               "mt": "Xi?",
-              "en": "¿Qué?/¿Cuántos?"
+              "en": "¿Qué?/¿Cuántos?",
+              "icon": "❓"
             },
             {
               "mt": "Għaliex?",
-              "en": "¿Por qué?"
+              "en": "¿Por qué?",
+              "icon": "🤔"
             },
             {
               "mt": "Meta?",
-              "en": "¿Cuándo?"
+              "en": "¿Cuándo?",
+              "icon": "🕐"
             },
             {
               "mt": "Liema?",
-              "en": "¿Cuál?"
+              "en": "¿Cuál?",
+              "icon": "👆"
             },
             {
               "mt": "Ta' min?",
-              "en": "¿De quién?"
+              "en": "¿De quién?",
+              "icon": "🔑"
             },
             {
               "mt": "Kif?",
-              "en": "¿Cómo?"
+              "en": "¿Cómo?",
+              "icon": "💡"
             }
-          ]
+          ],
+          "icon": "❓"
         },
         {
           "title": "Indicaciones",
           "items": [
             {
               "mt": "Skużani",
-              "en": "Lo siento / Disculpe"
+              "en": "Lo siento / Disculpe",
+              "icon": "🙏"
             },
             {
               "mt": "Lemin",
-              "en": "Derecha"
+              "en": "Derecha",
+              "icon": "➡️"
             },
             {
               "mt": "Xellug",
-              "en": "Izquierda"
+              "en": "Izquierda",
+              "icon": "⬅️"
             },
             {
               "mt": "Dur fuq il-lemin",
-              "en": "Gira a la derecha"
+              "en": "Gira a la derecha",
+              "icon": "↪️"
             },
             {
               "mt": "Dur fuq ix-xellug",
-              "en": "Gira a la izquierda"
+              "en": "Gira a la izquierda",
+              "icon": "↩️"
             },
             {
               "mt": "Kompli bi dritt",
-              "en": "Sigue recto"
+              "en": "Sigue recto",
+              "icon": "⬆️"
             },
             {
               "mt": "Suq",
-              "en": "Maneja (singular)"
+              "en": "Maneja (singular)",
+              "icon": "🚗"
             },
             {
               "mt": "Imxi",
-              "en": "Camina (singular)"
+              "en": "Camina (singular)",
+              "icon": "🚶"
             },
             {
               "mt": "Dur",
-              "en": "Gira (singular)"
+              "en": "Gira (singular)",
+              "icon": "🔄"
             },
             {
               "mt": "Hawn",
-              "en": "Aquí"
+              "en": "Aquí",
+              "icon": "📍"
             },
             {
               "mt": "Hemm",
-              "en": "Allí"
+              "en": "Allí",
+              "icon": "👉"
             },
             {
               "mt": "Wara dak",
-              "en": "Después de eso"
+              "en": "Después de eso",
+              "icon": "➡️"
             },
             {
               "mt": "Aqsam it-triq",
-              "en": "Cruza la calle"
+              "en": "Cruza la calle",
+              "icon": "🛤️"
             },
             {
               "mt": "Faċċata ta'",
-              "en": "Frente a"
+              "en": "Frente a",
+              "icon": "🏢"
             },
             {
               "mt": "Ħdejn",
-              "en": "Al lado de"
+              "en": "Al lado de",
+              "icon": "↔️"
             },
             {
               "mt": "Bejn",
-              "en": "Entre"
+              "en": "Entre",
+              "icon": "↕️"
             },
             {
               "mt": "L-ewwel triq",
-              "en": "La primera calle"
+              "en": "La primera calle",
+              "icon": "🛣️"
             },
             {
               "mt": "L-ewwel kantuniera",
-              "en": "La primera esquina"
+              "en": "La primera esquina",
+              "icon": "🔀"
             },
             {
               "mt": "It-tieni dawra",
-              "en": "La segunda vuelta"
+              "en": "La segunda vuelta",
+              "icon": "🔀"
             }
-          ]
+          ],
+          "icon": "🗺️"
         }
       ]
     }

@@ -175,14 +175,39 @@
             }
           ]
         },
-        { "id": "impmatch", "type": "match", "title": "Empareja el comando: una persona con muchas", "leftField": "singular", "rightField": "plural", "items": [
-          { "singular": "Mur", "plural": "Morru" },
-          { "singular": "Iekol", "plural": "Ieklu" },
-          { "singular": "Ixrob", "plural": "Ixorbu" },
-          { "singular": "Aqra", "plural": "Aqraw" },
-          { "singular": "Imxi", "plural": "Imxu" },
-          { "singular": "Qum", "plural": "Qumu" }
-        ] }
+        {
+          "id": "impmatch",
+          "type": "match",
+          "title": "Empareja el comando: una persona con muchas",
+          "leftField": "singular",
+          "rightField": "plural",
+          "items": [
+            {
+              "singular": "Mur",
+              "plural": "Morru"
+            },
+            {
+              "singular": "Iekol",
+              "plural": "Ieklu"
+            },
+            {
+              "singular": "Ixrob",
+              "plural": "Ixorbu"
+            },
+            {
+              "singular": "Aqra",
+              "plural": "Aqraw"
+            },
+            {
+              "singular": "Imxi",
+              "plural": "Imxu"
+            },
+            {
+              "singular": "Qum",
+              "plural": "Qumu"
+            }
+          ]
+        }
       ]
     },
     {
@@ -543,21 +568,71 @@
         }
       ],
       "exercises": [
-        { "id": "g6build", "type": "build", "max": 5, "title": "Arma la oración", "items": [
-          { "mt": "Joseph jixrob il-kapuċċino", "en": "Joseph toma el capuchino" },
-          { "mt": "Mary taqra ktieb", "en": "Mary lee un libro" },
-          { "mt": "Se niekol", "en": "Voy a comer" },
-          { "mt": "Ser nikteb", "en": "Voy a escribir" },
-          { "mt": "Se naqra", "en": "Voy a leer" }
-        ] },
-        { "id": "havebucket", "type": "bucket", "batch": 6, "title": "¿Tener o hay?", "instructions": "Clasifica cada frase: ¿es 'yo tengo' (Għandi) o 'hay' (Hemm)?", "choices": ["Għandi (tener)", "Hemm (hay)"], "items": [
-          { "word": "Għandi ħin", "answer": "Għandi (tener)" },
-          { "word": "Għandek karozza?", "answer": "Għandi (tener)" },
-          { "word": "M'għandix flus", "answer": "Għandi (tener)" },
-          { "word": "Hemm problema", "answer": "Hemm (hay)" },
-          { "word": "Hemm żewġ siġġijiet", "answer": "Hemm (hay)" },
-          { "word": "M'hemmx ħin", "answer": "Hemm (hay)" }
-        ] }
+        {
+          "id": "g6build",
+          "type": "build",
+          "max": 5,
+          "title": "Arma la oración",
+          "items": [
+            {
+              "mt": "Joseph jixrob il-kapuċċino",
+              "en": "Joseph toma el capuchino"
+            },
+            {
+              "mt": "Mary taqra ktieb",
+              "en": "Mary lee un libro"
+            },
+            {
+              "mt": "Se niekol",
+              "en": "Voy a comer"
+            },
+            {
+              "mt": "Ser nikteb",
+              "en": "Voy a escribir"
+            },
+            {
+              "mt": "Se naqra",
+              "en": "Voy a leer"
+            }
+          ]
+        },
+        {
+          "id": "havebucket",
+          "type": "bucket",
+          "batch": 6,
+          "title": "¿Tener o hay?",
+          "instructions": "Clasifica cada frase: ¿es 'yo tengo' (Għandi) o 'hay' (Hemm)?",
+          "choices": [
+            "Għandi (tener)",
+            "Hemm (hay)"
+          ],
+          "items": [
+            {
+              "word": "Għandi ħin",
+              "answer": "Għandi (tener)"
+            },
+            {
+              "word": "Għandek karozza?",
+              "answer": "Għandi (tener)"
+            },
+            {
+              "word": "M'għandix flus",
+              "answer": "Għandi (tener)"
+            },
+            {
+              "word": "Hemm problema",
+              "answer": "Hemm (hay)"
+            },
+            {
+              "word": "Hemm żewġ siġġijiet",
+              "answer": "Hemm (hay)"
+            },
+            {
+              "word": "M'hemmx ħin",
+              "answer": "Hemm (hay)"
+            }
+          ]
+        }
       ]
     },
     {
@@ -572,82 +647,102 @@
           "items": [
             {
               "mt": "Mur",
-              "en": "Ve / Ir"
+              "en": "Ve / Ir",
+              "icon": "🚶"
             },
             {
               "mt": "Ejja",
-              "en": "Ven / Venir"
+              "en": "Ven / Venir",
+              "icon": "🫷"
             },
             {
               "mt": "Iekol",
-              "en": "Come / Comer"
+              "en": "Come / Comer",
+              "icon": "🍽️"
             },
             {
               "mt": "Ixrob",
-              "en": "Bebe / Beber"
+              "en": "Bebe / Beber",
+              "icon": "🥤"
             },
             {
               "mt": "Aqra",
-              "en": "Lee / Leer"
+              "en": "Lee / Leer",
+              "icon": "📖"
             },
             {
               "mt": "Ikteb",
-              "en": "Escribe / Escribir"
+              "en": "Escribe / Escribir",
+              "icon": "✏️"
             },
             {
               "mt": "Imxi",
-              "en": "Camina / Caminar"
+              "en": "Camina / Caminar",
+              "icon": "🦶"
             },
             {
               "mt": "Iġri",
-              "en": "Corre / Correr"
+              "en": "Corre / Correr",
+              "icon": "🏃"
             },
             {
               "mt": "Oqgħod",
-              "en": "Siéntate / Quedarse"
+              "en": "Siéntate / Quedarse",
+              "icon": "🪑"
             },
             {
               "mt": "Qum",
-              "en": "Levántate / Levantarse"
+              "en": "Levántate / Levantarse",
+              "icon": "⬆️"
             },
             {
               "mt": "Iftaħ",
-              "en": "Abre / Abrir"
+              "en": "Abre / Abrir",
+              "icon": "🔓"
             },
             {
               "mt": "Agħlaq",
-              "en": "Cierra / Cerrar"
+              "en": "Cierra / Cerrar",
+              "icon": "🔒"
             }
-          ]
+          ],
+          "icon": "📣"
         },
         {
           "title": "Tener / hay",
           "items": [
             {
               "mt": "Għandi",
-              "en": "Yo tengo"
+              "en": "Yo tengo",
+              "icon": "✋"
             },
             {
               "mt": "Għandek",
-              "en": "tú tienes"
+              "en": "tú tienes",
+              "icon": "✋"
             },
             {
               "mt": "Għandu",
-              "en": "él tiene"
+              "en": "él tiene",
+              "icon": "✋"
             },
             {
               "mt": "M'għandix",
-              "en": "yo no tengo"
+              "en": "yo no tengo",
+              "icon": "🙅"
             },
             {
               "mt": "Hemm",
-              "en": "hay"
+              "en": "hay",
+              "icon": "📍"
             },
             {
               "mt": "M'hemmx",
-              "en": "no hay"
+              "en": "no hay",
+              "icon": "❌"
             }
-          ]
+          ],
+          "icon": "✋"
         }
       ]
     }

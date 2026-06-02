@@ -51,37 +51,44 @@
         {
           "mt": "Jien",
           "alt": "Jiena",
-          "en": "Yo"
+          "en": "Yo",
+          "icon": "🙋"
         },
         {
           "mt": "Int",
           "alt": "Inti",
-          "en": "Tú (singular)"
+          "en": "Tú (singular)",
+          "icon": "👉"
         },
         {
           "mt": "Hu",
           "alt": "Huwa",
-          "en": "Él"
+          "en": "Él",
+          "icon": "👨"
         },
         {
           "mt": "Hi",
           "alt": "Hija",
-          "en": "Ella"
+          "en": "Ella",
+          "icon": "👩"
         },
         {
           "mt": "Aħna",
           "alt": "Aħna",
-          "en": "Nosotros"
+          "en": "Nosotros",
+          "icon": "👥"
         },
         {
           "mt": "Intom",
           "alt": "Intom",
-          "en": "Ustedes"
+          "en": "Ustedes",
+          "icon": "🫂"
         },
         {
           "mt": "Huma",
           "alt": "Huma",
-          "en": "Ellos / Ellas"
+          "en": "Ellos / Ellas",
+          "icon": "👫"
         }
       ],
       "dialogue": [
@@ -436,55 +443,68 @@
       "vocab": [
         {
           "mt": "Familja",
-          "en": "Familia"
+          "en": "Familia",
+          "icon": "👨‍👩‍👧‍👦"
         },
         {
           "mt": "Omm",
-          "en": "Madre"
+          "en": "Madre",
+          "icon": "👩"
         },
         {
           "mt": "Missier",
-          "en": "Padre"
+          "en": "Padre",
+          "icon": "👨"
         },
         {
           "mt": "Ġenituri",
-          "en": "Padres"
+          "en": "Padres",
+          "icon": "👫"
         },
         {
           "mt": "Ħu",
-          "en": "Hermano"
+          "en": "Hermano",
+          "icon": "👦"
         },
         {
           "mt": "Oħt",
-          "en": "Hermana"
+          "en": "Hermana",
+          "icon": "👧"
         },
         {
           "mt": "Iben",
-          "en": "Hijo"
+          "en": "Hijo",
+          "icon": "👶"
         },
         {
           "mt": "Bint",
-          "en": "Hija"
+          "en": "Hija",
+          "icon": "👶"
         },
         {
           "mt": "Ulied",
-          "en": "Hijos / Niños"
+          "en": "Hijos / Niños",
+          "icon": "👧‍👦"
         },
         {
           "mt": "Nannu",
-          "en": "Abuelo"
+          "en": "Abuelo",
+          "icon": "👴"
         },
         {
           "mt": "Nanna",
-          "en": "Abuela"
+          "en": "Abuela",
+          "icon": "👵"
         },
         {
           "mt": "Ziju",
-          "en": "Tío"
+          "en": "Tío",
+          "icon": "🧔"
         },
         {
           "mt": "Zija",
-          "en": "Tía"
+          "en": "Tía",
+          "icon": "👩‍🦳"
         }
       ],
       "plurals": [
@@ -1011,185 +1031,230 @@
           "items": [
             {
               "mt": "Jien",
-              "en": "Yo"
+              "en": "Yo",
+              "icon": "🙋"
             },
             {
               "mt": "Int",
-              "en": "Tú (singular)"
+              "en": "Tú (singular)",
+              "icon": "👉"
             },
             {
               "mt": "Hu",
-              "en": "Él"
+              "en": "Él",
+              "icon": "👨"
             },
             {
               "mt": "Hi",
-              "en": "Ella"
+              "en": "Ella",
+              "icon": "👩"
             },
             {
               "mt": "Aħna",
-              "en": "Nosotros"
+              "en": "Nosotros",
+              "icon": "👥"
             },
             {
               "mt": "Intom",
-              "en": "Ustedes"
+              "en": "Ustedes",
+              "icon": "🫂"
             },
             {
               "mt": "Huma",
-              "en": "Ellos / Ellas"
+              "en": "Ellos / Ellas",
+              "icon": "👫"
             }
-          ]
+          ],
+          "icon": "👥"
         },
         {
           "title": "Familia",
           "items": [
             {
               "mt": "Familja",
-              "en": "Familia"
+              "en": "Familia",
+              "icon": "👨‍👩‍👧‍👦"
             },
             {
               "mt": "Omm",
-              "en": "Madre"
+              "en": "Madre",
+              "icon": "👩"
             },
             {
               "mt": "Missier",
-              "en": "Padre"
+              "en": "Padre",
+              "icon": "👨"
             },
             {
               "mt": "Ġenituri",
-              "en": "Padres"
+              "en": "Padres",
+              "icon": "👫"
             },
             {
               "mt": "Ħu",
-              "en": "Hermano"
+              "en": "Hermano",
+              "icon": "👦"
             },
             {
               "mt": "Oħt",
-              "en": "Hermana"
+              "en": "Hermana",
+              "icon": "👧"
             },
             {
               "mt": "Iben",
-              "en": "Hijo"
+              "en": "Hijo",
+              "icon": "👶"
             },
             {
               "mt": "Bint",
-              "en": "Hija"
+              "en": "Hija",
+              "icon": "👶"
             },
             {
               "mt": "Ulied",
-              "en": "Hijos / Niños"
+              "en": "Hijos / Niños",
+              "icon": "👧‍👦"
             },
             {
               "mt": "Nannu",
-              "en": "Abuelo"
+              "en": "Abuelo",
+              "icon": "👴"
             },
             {
               "mt": "Nanna",
-              "en": "Abuela"
+              "en": "Abuela",
+              "icon": "👵"
             },
             {
               "mt": "Ziju",
-              "en": "Tío"
+              "en": "Tío",
+              "icon": "🧔"
             },
             {
               "mt": "Zija",
-              "en": "Tía"
+              "en": "Tía",
+              "icon": "👩‍🦳"
             }
-          ]
+          ],
+          "icon": "👨‍👩‍👧"
         },
         {
           "title": "Demostrativos",
           "items": [
             {
               "mt": "Dan",
-              "en": "Este (m)"
+              "en": "Este (m)",
+              "icon": "👆"
             },
             {
               "mt": "Din",
-              "en": "Esta (f)"
+              "en": "Esta (f)",
+              "icon": "👆"
             },
             {
               "mt": "Dawn",
-              "en": "Estos / Estas (pl)"
+              "en": "Estos / Estas (pl)",
+              "icon": "👆"
             },
             {
               "mt": "Dak",
-              "en": "Ese (m)"
+              "en": "Ese (m)",
+              "icon": "👇"
             },
             {
               "mt": "Dik",
-              "en": "Esa (f)"
+              "en": "Esa (f)",
+              "icon": "👇"
             },
             {
               "mt": "Dawk",
-              "en": "Esos / Esas (pl)"
+              "en": "Esos / Esas (pl)",
+              "icon": "👇"
             }
-          ]
+          ],
+          "icon": "👆"
         },
         {
           "title": "Posesivos",
           "items": [
             {
               "mt": "tiegħi",
-              "en": "mi / mío"
+              "en": "mi / mío",
+              "icon": "🙋"
             },
             {
               "mt": "tiegħek",
-              "en": "tu / tuyo (sing)"
+              "en": "tu / tuyo (sing)",
+              "icon": "👉"
             },
             {
               "mt": "tiegħu",
-              "en": "su / suyo (él)"
+              "en": "su / suyo (él)",
+              "icon": "👨"
             },
             {
               "mt": "tagħha",
-              "en": "su / suya (ella)"
+              "en": "su / suya (ella)",
+              "icon": "👩"
             },
             {
               "mt": "tagħna",
-              "en": "nuestro / nuestra"
+              "en": "nuestro / nuestra",
+              "icon": "👥"
             },
             {
               "mt": "tagħkom",
-              "en": "su / suyo (ustedes)"
+              "en": "su / suyo (ustedes)",
+              "icon": "🫂"
             },
             {
               "mt": "tagħhom",
-              "en": "su / suyo (ellos)"
+              "en": "su / suyo (ellos)",
+              "icon": "👫"
             }
-          ]
+          ],
+          "icon": "🏷️"
         },
         {
           "title": "Terminaciones posesivas (ej. padre)",
           "items": [
             {
               "mt": "missieri",
-              "en": "mi padre"
+              "en": "mi padre",
+              "icon": "🙋"
             },
             {
               "mt": "missierek",
-              "en": "tu padre"
+              "en": "tu padre",
+              "icon": "👉"
             },
             {
               "mt": "missieru",
-              "en": "su padre (de él)"
+              "en": "su padre (de él)",
+              "icon": "👨"
             },
             {
               "mt": "missierha",
-              "en": "su padre (de ella)"
+              "en": "su padre (de ella)",
+              "icon": "👩"
             },
             {
               "mt": "missierna",
-              "en": "nuestro padre"
+              "en": "nuestro padre",
+              "icon": "👥"
             },
             {
               "mt": "missierkom",
-              "en": "su padre (de ustedes)"
+              "en": "su padre (de ustedes)",
+              "icon": "🫂"
             },
             {
               "mt": "missierhom",
-              "en": "su padre (de ellos)"
+              "en": "su padre (de ellos)",
+              "icon": "👫"
             }
-          ]
+          ],
+          "icon": "👨"
         }
       ]
     }

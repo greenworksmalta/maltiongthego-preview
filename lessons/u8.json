@@ -240,19 +240,23 @@
       "vocab": [
         {
           "mt": "Nixtieq…",
-          "en": "I'd like…"
+          "en": "I'd like…",
+          "icon": "🙋"
         },
         {
           "mt": "Jien nieħu…",
-          "en": "I'll have…"
+          "en": "I'll have…",
+          "icon": "👌"
         },
         {
           "mt": "Għalija…",
-          "en": "For me…"
+          "en": "For me…",
+          "icon": "🫵"
         },
         {
           "mt": "X'tieħu?",
-          "en": "What will you have?"
+          "en": "What will you have?",
+          "icon": "❓"
         },
         {
           "mt": "Kemm jiswa?",
@@ -506,19 +510,23 @@
           "items": [
             {
               "mt": "Nixtieq…",
-              "en": "I'd like…"
+              "en": "I'd like…",
+              "icon": "🙋"
             },
             {
               "mt": "Jien nieħu…",
-              "en": "I'll have…"
+              "en": "I'll have…",
+              "icon": "👌"
             },
             {
               "mt": "Għalija…",
-              "en": "For me…"
+              "en": "For me…",
+              "icon": "🫵"
             },
             {
               "mt": "X'tieħu?",
-              "en": "What will you have?"
+              "en": "What will you have?",
+              "icon": "❓"
             },
             {
               "mt": "Kemm jiswa?",

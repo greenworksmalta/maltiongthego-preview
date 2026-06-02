@@ -46,115 +46,143 @@
       "vocab": [
         {
           "mt": "Bonġu",
-          "en": "Buenos días"
+          "en": "Buenos días",
+          "icon": "🌅"
         },
         {
           "mt": "Ħelow",
-          "en": "Hola"
+          "en": "Hola",
+          "icon": "👋"
         },
         {
           "mt": "Saħħa",
-          "en": "Salud / Adiós"
+          "en": "Salud / Adiós",
+          "icon": "👋"
         },
         {
           "mt": "Ċaw",
-          "en": "Chao"
+          "en": "Chao",
+          "icon": "👋"
         },
         {
           "mt": "Għandi pjaċir",
-          "en": "Un placer (encantado de conocerte)"
+          "en": "Un placer (encantado de conocerte)",
+          "icon": "🤝"
         },
         {
           "mt": "Jekk jogħġbok",
-          "en": "Por favor"
+          "en": "Por favor",
+          "icon": "🙏"
         },
         {
           "mt": "Skużani",
-          "en": "Disculpa"
+          "en": "Disculpa",
+          "icon": "🙋"
         },
         {
           "mt": "Jiena",
-          "en": "Yo"
+          "en": "Yo",
+          "icon": "🙋"
         },
         {
           "mt": "Jisimni",
-          "en": "Me llamo"
+          "en": "Me llamo",
+          "icon": "📛"
         },
         {
           "mt": "X'jismek?",
-          "en": "¿Cómo te llamas?"
+          "en": "¿Cómo te llamas?",
+          "icon": "📛"
         },
         {
           "mt": "X'kunjomok?",
-          "en": "¿Cuál es tu apellido?"
+          "en": "¿Cuál es tu apellido?",
+          "icon": "📛"
         },
         {
           "mt": "Kunjomi…",
-          "en": "Mi apellido es…"
+          "en": "Mi apellido es…",
+          "icon": "📛"
         },
         {
           "mt": "Minn fejn int?",
-          "en": "¿De dónde eres?"
+          "en": "¿De dónde eres?",
+          "icon": "📍"
         },
         {
           "mt": "Jien minn",
-          "en": "Soy de"
+          "en": "Soy de",
+          "icon": "📍"
         },
         {
           "mt": "Fejn toqgħod?",
-          "en": "¿Dónde vives?"
+          "en": "¿Dónde vives?",
+          "icon": "🏠"
         },
         {
           "mt": "Jien noqgħod",
-          "en": "Vivo"
+          "en": "Vivo",
+          "icon": "🏠"
         },
         {
           "mt": "X'taħdem?",
-          "en": "¿En qué trabajas?"
+          "en": "¿En qué trabajas?",
+          "icon": "💼"
         },
         {
           "mt": "Jien naħdem",
-          "en": "Yo trabajo"
+          "en": "Yo trabajo",
+          "icon": "💼"
         },
         {
           "mt": "Kemm ilek hawn?",
-          "en": "¿Cuánto llevas aquí?"
+          "en": "¿Cuánto llevas aquí?",
+          "icon": "⏳"
         },
         {
           "mt": "Ili Malta…",
-          "en": "Llevo en Malta…"
+          "en": "Llevo en Malta…",
+          "icon": "⏳"
         },
         {
           "mt": "Kif int?",
-          "en": "¿Cómo estás?"
+          "en": "¿Cómo estás?",
+          "icon": "🤗"
         },
         {
           "mt": "Tajjeb, grazzi",
-          "en": "Bien, gracias"
+          "en": "Bien, gracias",
+          "icon": "👍"
         },
         {
           "mt": "U int?",
-          "en": "¿Y tú?"
+          "en": "¿Y tú?",
+          "icon": "❓"
         },
         {
           "mt": "Jien Malti",
-          "en": "Soy maltés (hombre)"
+          "en": "Soy maltés (hombre)",
+          "icon": "🇲🇹"
         },
         {
           "mt": "Jien Maltija",
-          "en": "Soy maltesa (mujer)"
+          "en": "Soy maltesa (mujer)",
+          "icon": "🇲🇹"
         },
         {
           "mt": "Jien barrani",
-          "en": "Soy extranjero (hombre)"
+          "en": "Soy extranjero (hombre)",
+          "icon": "🌍"
         },
         {
           "mt": "Jien barranija",
-          "en": "Soy extranjera (mujer)"
+          "en": "Soy extranjera (mujer)",
+          "icon": "🌍"
         },
         {
           "mt": "Naħdem bħala perit",
-          "en": "Trabajo como arquitecto"
+          "en": "Trabajo como arquitecto",
+          "icon": "💼"
         }
       ]
     },
@@ -168,37 +196,44 @@
         {
           "mt": "Il-Ħadd",
           "en": "domingo",
-          "scrambled": "ddĦa"
+          "scrambled": "ddĦa",
+          "icon": "☀️"
         },
         {
           "mt": "It-Tnejn",
           "en": "lunes",
-          "scrambled": "Tnnje"
+          "scrambled": "Tnnje",
+          "icon": "1️⃣"
         },
         {
           "mt": "It-Tlieta",
           "en": "martes",
-          "scrambled": "tlaiTe"
+          "scrambled": "tlaiTe",
+          "icon": "2️⃣"
         },
         {
           "mt": "L-Erbgħa",
           "en": "miércoles",
-          "scrambled": "bEħrag"
+          "scrambled": "bEħrag",
+          "icon": "3️⃣"
         },
         {
           "mt": "Il-Ħamis",
           "en": "jueves",
-          "scrambled": "miĦsa"
+          "scrambled": "miĦsa",
+          "icon": "4️⃣"
         },
         {
           "mt": "Il-Ġimgħa",
           "en": "viernes",
-          "scrambled": "iħmĠga"
+          "scrambled": "iħmĠga",
+          "icon": "5️⃣"
         },
         {
           "mt": "Is-Sibt",
           "en": "sábado",
-          "scrambled": "tbiS"
+          "scrambled": "tbiS",
+          "icon": "6️⃣"
         }
       ]
     },

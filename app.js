@@ -20,7 +20,7 @@ const VERSION = "1.0.0-beta.26";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "20260602d";
+const BUILD = "20260602e";
 // Bump ONLY when audio clips are regenerated (re-voiced). Audio filenames are
 // sha1(mt) so a re-voiced clip keeps its name; without a changing query the
 // browser/SW serve the OLD cached audio. play() busts on this.
@@ -4046,11 +4046,11 @@ STEP_RENDERERS["vocabulary:list"] = (root, sec, idx, onNext) => {
     (group.items||[]).forEach(item => {
       const r = el("div","vocab-item");
       r.appendChild(audioBtn(item.mt, {size:"sm"}));
-      if(item.icon){
-        const ic = el("div","vocab-icon");
-        ic.textContent = item.icon;
-        r.appendChild(ic);
-      }
+      // Always render an icon slot so rows stay aligned; fall back to a question
+      // mark for questions, otherwise a neutral default.
+      const ic = el("div","vocab-icon");
+      ic.textContent = item.icon || (/\?\s*$/.test(item.mt || item.en || "") ? "❓" : "🔹");
+      r.appendChild(ic);
       const tx = el("div","grow vocab-text");
       tx.appendChild(el("div","mt",item.mt));
       tx.appendChild(el("div","en",item.en));

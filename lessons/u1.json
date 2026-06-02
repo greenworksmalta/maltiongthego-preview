@@ -44,114 +44,142 @@
       "intro": "The phrases you'll use the moment you meet someone: greetings, names, and introducing yourself.",
       "vocab": [
         {
+          "icon": "🌅",
           "mt": "Bonġu",
           "en": "Good morning"
         },
         {
+          "icon": "👋",
           "mt": "Ħelow",
           "en": "Hello"
         },
         {
+          "icon": "👋",
           "mt": "Saħħa",
           "en": "Cheers / Bye"
         },
         {
+          "icon": "👋",
           "mt": "Ċaw",
           "en": "Bye"
         },
         {
+          "icon": "🤝",
           "mt": "Għandi pjaċir",
           "en": "Pleasure (nice to meet you)"
         },
         {
+          "icon": "🙏",
           "mt": "Jekk jogħġbok",
           "en": "Please"
         },
         {
+          "icon": "🙋",
           "mt": "Skużani",
           "en": "Excuse me"
         },
         {
+          "icon": "🙋",
           "mt": "Jiena",
           "en": "I"
         },
         {
+          "icon": "📛",
           "mt": "Jisimni",
           "en": "My name is"
         },
         {
+          "icon": "📛",
           "mt": "X'jismek?",
           "en": "What is your name?"
         },
         {
+          "icon": "📛",
           "mt": "X'kunjomok?",
           "en": "What is your surname?"
         },
         {
+          "icon": "📛",
           "mt": "Kunjomi…",
           "en": "My surname is…"
         },
         {
+          "icon": "📍",
           "mt": "Minn fejn int?",
           "en": "Where are you from?"
         },
         {
+          "icon": "📍",
           "mt": "Jien minn",
           "en": "I am from"
         },
         {
+          "icon": "🏠",
           "mt": "Fejn toqgħod?",
           "en": "Where do you live?"
         },
         {
+          "icon": "🏠",
           "mt": "Jien noqgħod",
           "en": "I live"
         },
         {
+          "icon": "💼",
           "mt": "X'taħdem?",
           "en": "What is your work?"
         },
         {
+          "icon": "💼",
           "mt": "Jien naħdem",
           "en": "I work"
         },
         {
+          "icon": "⏳",
           "mt": "Kemm ilek hawn?",
           "en": "How long have you been here?"
         },
         {
+          "icon": "⏳",
           "mt": "Ili Malta…",
           "en": "I have been in Malta…"
         },
         {
+          "icon": "🤗",
           "mt": "Kif int?",
           "en": "How are you?"
         },
         {
+          "icon": "👍",
           "mt": "Tajjeb, grazzi",
           "en": "Well, thanks"
         },
         {
+          "icon": "❓",
           "mt": "U int?",
           "en": "And you?"
         },
         {
+          "icon": "🇲🇹",
           "mt": "Jien Malti",
           "en": "I am Maltese (male)"
         },
         {
+          "icon": "🇲🇹",
           "mt": "Jien Maltija",
           "en": "I am Maltese (female)"
         },
         {
+          "icon": "🌍",
           "mt": "Jien barrani",
           "en": "I am a foreigner (male)"
         },
         {
+          "icon": "🌍",
           "mt": "Jien barranija",
           "en": "I am a foreigner (female)"
         },
         {
+          "icon": "💼",
           "mt": "Naħdem bħala perit",
           "en": "I work as an architect"
         }
@@ -165,36 +193,43 @@
       "intro": "The seven days of the week. Each one takes the article (Il-Ħadd, It-Tnejn).",
       "items": [
         {
+          "icon": "☀️",
           "mt": "Il-Ħadd",
           "en": "Sunday",
           "scrambled": "ddĦa"
         },
         {
+          "icon": "1️⃣",
           "mt": "It-Tnejn",
           "en": "Monday",
           "scrambled": "Tnnje"
         },
         {
+          "icon": "2️⃣",
           "mt": "It-Tlieta",
           "en": "Tuesday",
           "scrambled": "tlaiTe"
         },
         {
+          "icon": "3️⃣",
           "mt": "L-Erbgħa",
           "en": "Wednesday",
           "scrambled": "bEħrag"
         },
         {
+          "icon": "4️⃣",
           "mt": "Il-Ħamis",
           "en": "Thursday",
           "scrambled": "miĦsa"
         },
         {
+          "icon": "5️⃣",
           "mt": "Il-Ġimgħa",
           "en": "Friday",
           "scrambled": "iħmĠga"
         },
         {
+          "icon": "6️⃣",
           "mt": "Is-Sibt",
           "en": "Saturday",
           "scrambled": "tbiS"

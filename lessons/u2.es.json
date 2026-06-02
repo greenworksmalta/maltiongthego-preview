@@ -47,152 +47,182 @@
         {
           "n": 1,
           "mt": "wieħed",
-          "en": "uno"
+          "en": "uno",
+          "icon": "1️⃣"
         },
         {
           "n": 2,
           "mt": "tnejn",
-          "en": "dos"
+          "en": "dos",
+          "icon": "2️⃣"
         },
         {
           "n": 3,
           "mt": "tlieta",
-          "en": "tres"
+          "en": "tres",
+          "icon": "3️⃣"
         },
         {
           "n": 4,
           "mt": "erbgħa",
-          "en": "cuatro"
+          "en": "cuatro",
+          "icon": "4️⃣"
         },
         {
           "n": 5,
           "mt": "ħamsa",
-          "en": "cinco"
+          "en": "cinco",
+          "icon": "5️⃣"
         },
         {
           "n": 6,
           "mt": "sitta",
-          "en": "seis"
+          "en": "seis",
+          "icon": "6️⃣"
         },
         {
           "n": 7,
           "mt": "sebgħa",
-          "en": "siete"
+          "en": "siete",
+          "icon": "7️⃣"
         },
         {
           "n": 8,
           "mt": "tmienja",
-          "en": "ocho"
+          "en": "ocho",
+          "icon": "8️⃣"
         },
         {
           "n": 9,
           "mt": "disgħa",
-          "en": "nueve"
+          "en": "nueve",
+          "icon": "9️⃣"
         },
         {
           "n": 10,
           "mt": "għaxra",
-          "en": "diez"
+          "en": "diez",
+          "icon": "🔟"
         },
         {
           "n": 11,
           "mt": "ħdax",
-          "en": "once"
+          "en": "once",
+          "icon": "🔢"
         },
         {
           "n": 12,
           "mt": "tnax",
-          "en": "doce"
+          "en": "doce",
+          "icon": "🔢"
         },
         {
           "n": 13,
           "mt": "tlettax",
-          "en": "trece"
+          "en": "trece",
+          "icon": "🔢"
         },
         {
           "n": 14,
           "mt": "erbatax",
-          "en": "catorce"
+          "en": "catorce",
+          "icon": "🔢"
         },
         {
           "n": 15,
           "mt": "ħmistax",
-          "en": "quince"
+          "en": "quince",
+          "icon": "🔢"
         },
         {
           "n": 16,
           "mt": "sittax",
-          "en": "dieciséis"
+          "en": "dieciséis",
+          "icon": "🔢"
         },
         {
           "n": 17,
           "mt": "sbatax",
-          "en": "diecisiete"
+          "en": "diecisiete",
+          "icon": "🔢"
         },
         {
           "n": 18,
           "mt": "tmintax",
-          "en": "dieciocho"
+          "en": "dieciocho",
+          "icon": "🔢"
         },
         {
           "n": 19,
           "mt": "dsatax",
-          "en": "diecinueve"
+          "en": "diecinueve",
+          "icon": "🔢"
         },
         {
           "n": 20,
           "mt": "għoxrin",
-          "en": "veinte"
+          "en": "veinte",
+          "icon": "🔢"
         },
         {
           "n": 21,
           "mt": "wieħed u għoxrin",
-          "en": "veintiuno"
+          "en": "veintiuno",
+          "icon": "🔢"
         },
         {
           "n": 22,
           "mt": "tnejn u għoxrin",
-          "en": "veintidós"
+          "en": "veintidós",
+          "icon": "🔢"
         },
         {
           "n": 23,
           "mt": "tlieta u għoxrin",
-          "en": "veintitrés"
+          "en": "veintitrés",
+          "icon": "🔢"
         },
         {
           "n": 24,
           "mt": "erbgħa u għoxrin",
-          "en": "veinticuatro"
+          "en": "veinticuatro",
+          "icon": "🔢"
         },
         {
           "n": 25,
           "mt": "ħamsa u għoxrin",
-          "en": "veinticinco"
+          "en": "veinticinco",
+          "icon": "🔢"
         },
         {
           "n": 26,
           "mt": "sitta u għoxrin",
-          "en": "veintiséis"
+          "en": "veintiséis",
+          "icon": "🔢"
         },
         {
           "n": 27,
           "mt": "sebgħa u għoxrin",
-          "en": "veintisiete"
+          "en": "veintisiete",
+          "icon": "🔢"
         },
         {
           "n": 28,
           "mt": "tmienja u għoxrin",
-          "en": "veintiocho"
+          "en": "veintiocho",
+          "icon": "🔢"
         },
         {
           "n": 29,
           "mt": "disgħa u għoxrin",
-          "en": "veintinueve"
+          "en": "veintinueve",
+          "icon": "🔢"
         },
         {
           "n": 30,
           "mt": "tletin",
-          "en": "treinta"
+          "en": "treinta",
+          "icon": "🔢"
         }
       ],
       "ordinalsIntro": "Los números ordinales indican posición u orden (primero, segundo, tercero). En maltés llevan el artículo y van antes del sustantivo: l-ewwel ġurnata (el primer día), it-tieni triq (la segunda calle).",
@@ -248,35 +278,43 @@
       "items": [
         {
           "mt": "żero",
-          "en": "cero"
+          "en": "cero",
+          "icon": "0️⃣"
         },
         {
           "mt": "erbgħin",
-          "en": "cuarenta"
+          "en": "cuarenta",
+          "icon": "🔢"
         },
         {
           "mt": "ħamsin",
-          "en": "cincuenta"
+          "en": "cincuenta",
+          "icon": "🔢"
         },
         {
           "mt": "sittin",
-          "en": "sesenta"
+          "en": "sesenta",
+          "icon": "🔢"
         },
         {
           "mt": "sebgħin",
-          "en": "setenta"
+          "en": "setenta",
+          "icon": "🔢"
         },
         {
           "mt": "tmenin",
-          "en": "ochenta"
+          "en": "ochenta",
+          "icon": "🔢"
         },
         {
           "mt": "disgħin",
-          "en": "noventa"
+          "en": "noventa",
+          "icon": "🔢"
         },
         {
           "mt": "mija",
-          "en": "cien"
+          "en": "cien",
+          "icon": "💯"
         }
       ]
     },
@@ -289,43 +327,53 @@
       "items": [
         {
           "mt": "flus",
-          "en": "dinero"
+          "en": "dinero",
+          "icon": "💰"
         },
         {
           "mt": "ewro",
-          "en": "euro"
+          "en": "euro",
+          "icon": "💶"
         },
         {
           "mt": "ċenteżmu / ċenteżmi",
-          "en": "centavo / centavos"
+          "en": "centavo / centavos",
+          "icon": "🪙"
         },
         {
           "mt": "Kemm jiswa?",
-          "en": "¿Cuánto cuesta?"
+          "en": "¿Cuánto cuesta?",
+          "icon": "❓"
         },
         {
           "mt": "Bil-flus",
-          "en": "en efectivo"
+          "en": "en efectivo",
+          "icon": "💵"
         },
         {
           "mt": "Bil-karta tal-kreditu",
-          "en": "con (tarjeta de) crédito"
+          "en": "con (tarjeta de) crédito",
+          "icon": "💳"
         },
         {
           "mt": "Kemm għandek żmien?",
-          "en": "¿Cuántos años tienes?"
+          "en": "¿Cuántos años tienes?",
+          "icon": "❓"
         },
         {
           "mt": "Għandi tletin sena.",
-          "en": "Tengo treinta años."
+          "en": "Tengo treinta años.",
+          "icon": "🎂"
         },
         {
           "mt": "in-numru tat-telefon",
-          "en": "el número de teléfono"
+          "en": "el número de teléfono",
+          "icon": "📞"
         },
         {
           "mt": "X'inhu n-numru tiegħek?",
-          "en": "¿Cuál es tu número?"
+          "en": "¿Cuál es tu número?",
+          "icon": "❓"
         }
       ]
     },
@@ -338,51 +386,63 @@
       "items": [
         {
           "mt": "Jannar",
-          "en": "enero"
+          "en": "enero",
+          "icon": "❄️"
         },
         {
           "mt": "Frar",
-          "en": "febrero"
+          "en": "febrero",
+          "icon": "💝"
         },
         {
           "mt": "Marzu",
-          "en": "marzo"
+          "en": "marzo",
+          "icon": "🌱"
         },
         {
           "mt": "April",
-          "en": "abril"
+          "en": "abril",
+          "icon": "🌸"
         },
         {
           "mt": "Mejju",
-          "en": "mayo"
+          "en": "mayo",
+          "icon": "🌼"
         },
         {
           "mt": "Ġunju",
-          "en": "junio"
+          "en": "junio",
+          "icon": "☀️"
         },
         {
           "mt": "Lulju",
-          "en": "julio"
+          "en": "julio",
+          "icon": "🌊"
         },
         {
           "mt": "Awwissu",
-          "en": "agosto"
+          "en": "agosto",
+          "icon": "🏖️"
         },
         {
           "mt": "Settembru",
-          "en": "septiembre"
+          "en": "septiembre",
+          "icon": "🍂"
         },
         {
           "mt": "Ottubru",
-          "en": "octubre"
+          "en": "octubre",
+          "icon": "🎃"
         },
         {
           "mt": "Novembru",
-          "en": "noviembre"
+          "en": "noviembre",
+          "icon": "🍁"
         },
         {
           "mt": "Diċembru",
-          "en": "diciembre"
+          "en": "diciembre",
+          "icon": "🎄"
         }
       ]
     },
@@ -461,305 +521,380 @@
           "items": [
             {
               "mt": "wieħed",
-              "en": "uno"
+              "en": "uno",
+              "icon": "1️⃣"
             },
             {
               "mt": "tnejn",
-              "en": "dos"
+              "en": "dos",
+              "icon": "2️⃣"
             },
             {
               "mt": "tlieta",
-              "en": "tres"
+              "en": "tres",
+              "icon": "3️⃣"
             },
             {
               "mt": "erbgħa",
-              "en": "cuatro"
+              "en": "cuatro",
+              "icon": "4️⃣"
             },
             {
               "mt": "ħamsa",
-              "en": "cinco"
+              "en": "cinco",
+              "icon": "5️⃣"
             },
             {
               "mt": "sitta",
-              "en": "seis"
+              "en": "seis",
+              "icon": "6️⃣"
             },
             {
               "mt": "sebgħa",
-              "en": "siete"
+              "en": "siete",
+              "icon": "7️⃣"
             },
             {
               "mt": "tmienja",
-              "en": "ocho"
+              "en": "ocho",
+              "icon": "8️⃣"
             },
             {
               "mt": "disgħa",
-              "en": "nueve"
+              "en": "nueve",
+              "icon": "9️⃣"
             },
             {
               "mt": "għaxra",
-              "en": "diez"
+              "en": "diez",
+              "icon": "🔟"
             },
             {
               "mt": "ħdax",
-              "en": "once"
+              "en": "once",
+              "icon": "🔢"
             },
             {
               "mt": "tnax",
-              "en": "doce"
+              "en": "doce",
+              "icon": "🔢"
             },
             {
               "mt": "tlettax",
-              "en": "trece"
+              "en": "trece",
+              "icon": "🔢"
             },
             {
               "mt": "erbatax",
-              "en": "catorce"
+              "en": "catorce",
+              "icon": "🔢"
             },
             {
               "mt": "ħmistax",
-              "en": "quince"
+              "en": "quince",
+              "icon": "🔢"
             },
             {
               "mt": "sittax",
-              "en": "dieciséis"
+              "en": "dieciséis",
+              "icon": "🔢"
             },
             {
               "mt": "sbatax",
-              "en": "diecisiete"
+              "en": "diecisiete",
+              "icon": "🔢"
             },
             {
               "mt": "tmintax",
-              "en": "dieciocho"
+              "en": "dieciocho",
+              "icon": "🔢"
             },
             {
               "mt": "dsatax",
-              "en": "diecinueve"
+              "en": "diecinueve",
+              "icon": "🔢"
             },
             {
               "mt": "għoxrin",
-              "en": "veinte"
+              "en": "veinte",
+              "icon": "🔢"
             },
             {
               "mt": "wieħed u għoxrin",
-              "en": "veintiuno"
+              "en": "veintiuno",
+              "icon": "🔢"
             },
             {
               "mt": "tnejn u għoxrin",
-              "en": "veintidós"
+              "en": "veintidós",
+              "icon": "🔢"
             },
             {
               "mt": "tlieta u għoxrin",
-              "en": "veintitrés"
+              "en": "veintitrés",
+              "icon": "🔢"
             },
             {
               "mt": "erbgħa u għoxrin",
-              "en": "veinticuatro"
+              "en": "veinticuatro",
+              "icon": "🔢"
             },
             {
               "mt": "ħamsa u għoxrin",
-              "en": "veinticinco"
+              "en": "veinticinco",
+              "icon": "🔢"
             },
             {
               "mt": "sitta u għoxrin",
-              "en": "veintiséis"
+              "en": "veintiséis",
+              "icon": "🔢"
             },
             {
               "mt": "sebgħa u għoxrin",
-              "en": "veintisiete"
+              "en": "veintisiete",
+              "icon": "🔢"
             },
             {
               "mt": "tmienja u għoxrin",
-              "en": "veintiocho"
+              "en": "veintiocho",
+              "icon": "🔢"
             },
             {
               "mt": "disgħa u għoxrin",
-              "en": "veintinueve"
+              "en": "veintinueve",
+              "icon": "🔢"
             },
             {
               "mt": "tletin",
-              "en": "treinta"
+              "en": "treinta",
+              "icon": "🔢"
             }
-          ]
+          ],
+          "icon": "🔢"
         },
         {
           "title": "Ordinales",
           "items": [
             {
               "mt": "L-ewwel",
-              "en": "Primero"
+              "en": "Primero",
+              "icon": "🥇"
             },
             {
               "mt": "It-tieni",
-              "en": "Segundo"
+              "en": "Segundo",
+              "icon": "🥈"
             },
             {
               "mt": "It-tielet",
-              "en": "Tercero"
+              "en": "Tercero",
+              "icon": "🥉"
             },
             {
               "mt": "Ir-raba'",
-              "en": "Cuarto"
+              "en": "Cuarto",
+              "icon": "4️⃣"
             },
             {
               "mt": "Il-ħames",
-              "en": "Quinto"
+              "en": "Quinto",
+              "icon": "5️⃣"
             },
             {
               "mt": "Is-sitt",
-              "en": "Sexto"
+              "en": "Sexto",
+              "icon": "6️⃣"
             },
             {
               "mt": "Is-seba'",
-              "en": "Séptimo"
+              "en": "Séptimo",
+              "icon": "7️⃣"
             },
             {
               "mt": "It-tmien",
-              "en": "Octavo"
+              "en": "Octavo",
+              "icon": "8️⃣"
             },
             {
               "mt": "Id-disa'",
-              "en": "Noveno"
+              "en": "Noveno",
+              "icon": "9️⃣"
             },
             {
               "mt": "L-għaxar",
-              "en": "Décimo"
+              "en": "Décimo",
+              "icon": "🔟"
             }
-          ]
+          ],
+          "icon": "🥇"
         },
         {
           "title": "Decenas y cien",
           "items": [
             {
               "mt": "żero",
-              "en": "cero"
+              "en": "cero",
+              "icon": "0️⃣"
             },
             {
               "mt": "erbgħin",
-              "en": "cuarenta"
+              "en": "cuarenta",
+              "icon": "🔢"
             },
             {
               "mt": "ħamsin",
-              "en": "cincuenta"
+              "en": "cincuenta",
+              "icon": "🔢"
             },
             {
               "mt": "sittin",
-              "en": "sesenta"
+              "en": "sesenta",
+              "icon": "🔢"
             },
             {
               "mt": "sebgħin",
-              "en": "setenta"
+              "en": "setenta",
+              "icon": "🔢"
             },
             {
               "mt": "tmenin",
-              "en": "ochenta"
+              "en": "ochenta",
+              "icon": "🔢"
             },
             {
               "mt": "disgħin",
-              "en": "noventa"
+              "en": "noventa",
+              "icon": "🔢"
             },
             {
               "mt": "mija",
-              "en": "cien"
+              "en": "cien",
+              "icon": "💯"
             }
-          ]
+          ],
+          "icon": "💯"
         },
         {
           "title": "Dinero, edad y teléfono",
           "items": [
             {
               "mt": "flus",
-              "en": "dinero"
+              "en": "dinero",
+              "icon": "💰"
             },
             {
               "mt": "ewro",
-              "en": "euro"
+              "en": "euro",
+              "icon": "💶"
             },
             {
               "mt": "ċenteżmu / ċenteżmi",
-              "en": "centavo / centavos"
+              "en": "centavo / centavos",
+              "icon": "🪙"
             },
             {
               "mt": "Kemm jiswa?",
-              "en": "¿Cuánto cuesta?"
+              "en": "¿Cuánto cuesta?",
+              "icon": "❓"
             },
             {
               "mt": "Bil-flus",
-              "en": "en efectivo"
+              "en": "en efectivo",
+              "icon": "💵"
             },
             {
               "mt": "Bil-karta tal-kreditu",
-              "en": "con (tarjeta de) crédito"
+              "en": "con (tarjeta de) crédito",
+              "icon": "💳"
             },
             {
               "mt": "Kemm għandek żmien?",
-              "en": "¿Cuántos años tienes?"
+              "en": "¿Cuántos años tienes?",
+              "icon": "❓"
             },
             {
               "mt": "Għandi tletin sena.",
-              "en": "Tengo treinta años."
+              "en": "Tengo treinta años.",
+              "icon": "🎂"
             },
             {
               "mt": "in-numru tat-telefon",
-              "en": "el número de teléfono"
+              "en": "el número de teléfono",
+              "icon": "📞"
             },
             {
               "mt": "X'inhu n-numru tiegħek?",
-              "en": "¿Cuál es tu número?"
+              "en": "¿Cuál es tu número?",
+              "icon": "❓"
             }
-          ]
+          ],
+          "icon": "💰"
         },
         {
           "title": "Meses",
           "items": [
             {
               "mt": "Jannar",
-              "en": "enero"
+              "en": "enero",
+              "icon": "❄️"
             },
             {
               "mt": "Frar",
-              "en": "febrero"
+              "en": "febrero",
+              "icon": "💝"
             },
             {
               "mt": "Marzu",
-              "en": "marzo"
+              "en": "marzo",
+              "icon": "🌱"
             },
             {
               "mt": "April",
-              "en": "abril"
+              "en": "abril",
+              "icon": "🌸"
             },
             {
               "mt": "Mejju",
-              "en": "mayo"
+              "en": "mayo",
+              "icon": "🌼"
             },
             {
               "mt": "Ġunju",
-              "en": "junio"
+              "en": "junio",
+              "icon": "☀️"
             },
             {
               "mt": "Lulju",
-              "en": "julio"
+              "en": "julio",
+              "icon": "🌊"
             },
             {
               "mt": "Awwissu",
-              "en": "agosto"
+              "en": "agosto",
+              "icon": "🏖️"
             },
             {
               "mt": "Settembru",
-              "en": "septiembre"
+              "en": "septiembre",
+              "icon": "🍂"
             },
             {
               "mt": "Ottubru",
-              "en": "octubre"
+              "en": "octubre",
+              "icon": "🎃"
             },
             {
               "mt": "Novembru",
-              "en": "noviembre"
+              "en": "noviembre",
+              "icon": "🍁"
             },
             {
               "mt": "Diċembru",
-              "en": "diciembre"
+              "en": "diciembre",
+              "icon": "🎄"
             }
-          ]
+          ],
+          "icon": "📅"
         }
       ]
     }

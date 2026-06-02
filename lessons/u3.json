@@ -11,58 +11,72 @@
       "intro": "Useful phrases for when you're stuck: asking someone to slow down, repeat, or switch to English.",
       "vocab": [
         {
+          "icon": "🤐",
           "mt": "Ma nitkellimx bil-Malti",
           "en": "I don't speak Maltese"
         },
         {
+          "icon": "🗣️",
           "mt": "Nitkellem ftit Malti",
           "en": "I speak a little Maltese"
         },
         {
+          "icon": "📚",
           "mt": "Qed nitgħallem il-Malti",
           "en": "I am learning Maltese"
         },
         {
+          "icon": "❓",
           "mt": "Ma nifhimx",
           "en": "I don't understand"
         },
         {
+          "icon": "🔁",
           "mt": "Tista' tirrepeti?",
           "en": "Can you repeat that?"
         },
         {
+          "icon": "🐢",
           "mt": "Bil-mod, jekk jogħġbok",
           "en": "Slowly, please"
         },
         {
+          "icon": "😕",
           "mt": "Skużi, ma fhimtx",
           "en": "Sorry, I didn't understand"
         },
         {
+          "icon": "✍️",
           "mt": "Tista' tiktibha?",
           "en": "Can you write it down?"
         },
         {
+          "icon": "🆘",
           "mt": "Tista' tgħinni?",
           "en": "Can you help me?"
         },
         {
+          "icon": "❓",
           "mt": "Kif tgħid bil-Malti?",
           "en": "How do you say it in Maltese?"
         },
         {
+          "icon": "❓",
           "mt": "X'jiġifieri?",
           "en": "What does it mean?"
         },
         {
+          "icon": "🏢",
           "mt": "Naħdem hawn",
           "en": "I work here"
         },
         {
+          "icon": "🌍",
           "mt": "Jien barrani",
           "en": "I'm a foreigner"
         },
         {
+          "icon": "🇬🇧",
           "mt": "Titkellem bl-Ingliż?",
           "en": "Do you speak English?"
         }
@@ -94,34 +108,42 @@
       "intro": "Saying where you and others are from. Each has a masculine and feminine form.",
       "items": [
         {
+          "icon": "🇲🇹",
           "mt": "Malti / Maltija",
           "en": "Maltese (m/f)"
         },
         {
+          "icon": "🇬🇧",
           "mt": "Ingliż / Ingliża",
           "en": "English"
         },
         {
+          "icon": "🇮🇹",
           "mt": "Taljan / Taljana",
           "en": "Italian"
         },
         {
+          "icon": "🇫🇷",
           "mt": "Franċiż / Franċiża",
           "en": "French"
         },
         {
+          "icon": "🇩🇪",
           "mt": "Ġermaniż / Ġermaniża",
           "en": "German"
         },
         {
+          "icon": "🇪🇸",
           "mt": "Spanjol / Spanjola",
           "en": "Spanish"
         },
         {
+          "icon": "🇺🇸",
           "mt": "Amerikan / Amerikana",
           "en": "American"
         },
         {
+          "icon": "🌍",
           "mt": "barrani / barranija",
           "en": "foreigner"
         }
@@ -167,14 +189,17 @@
           "explanation": "Nearly everyone here speaks great English, so you can always switch over, but leading with a line of Maltese (Qed nitgħallem il-Malti) buys real goodwill first.",
           "examples": [
             {
+              "icon": "🗣️",
               "mt": "Nitkellem ftit Malti",
               "en": "I speak a little Maltese"
             },
             {
+              "icon": "📚",
               "mt": "Qed nitgħallem il-Malti",
               "en": "I am learning Maltese"
             },
             {
+              "icon": "🇬🇧",
               "mt": "Titkellem bl-Ingliż?",
               "en": "Do you speak English?"
             },
@@ -190,14 +215,17 @@
           "explanation": "Tista' is just the 'you' form of 'can'. Put any everyday verb after it for a polite request: Tista' tgħinni? (Can you help me?), Tista' tirrepeti? (Can you repeat?), Tista' tiktibha? (Can you write it down?). The full set is nista' (I can), tista' (you can), jista' (he can).",
           "examples": [
             {
+              "icon": "🆘",
               "mt": "Tista' tgħinni?",
               "en": "Can you help me?"
             },
             {
+              "icon": "🔁",
               "mt": "Tista' tirrepeti?",
               "en": "Can you repeat?"
             },
             {
+              "icon": "✍️",
               "mt": "Tista' tiktibha?",
               "en": "Can you write it down?"
             }
@@ -238,6 +266,7 @@
               "en": "I don't understand"
             },
             {
+              "icon": "😕",
               "mt": "Skużi, ma fhimtx",
               "en": "Sorry, I didn't understand"
             },
@@ -290,36 +319,45 @@
         },
         {
           "title": "Nationalities",
+          "icon": "🌍",
           "items": [
             {
+              "icon": "🇲🇹",
               "mt": "Malti / Maltija",
               "en": "Maltese (m/f)"
             },
             {
+              "icon": "🇬🇧",
               "mt": "Ingliż / Ingliża",
               "en": "English"
             },
             {
+              "icon": "🇮🇹",
               "mt": "Taljan / Taljana",
               "en": "Italian"
             },
             {
+              "icon": "🇫🇷",
               "mt": "Franċiż / Franċiża",
               "en": "French"
             },
             {
+              "icon": "🇩🇪",
               "mt": "Ġermaniż / Ġermaniża",
               "en": "German"
             },
             {
+              "icon": "🇪🇸",
               "mt": "Spanjol / Spanjola",
               "en": "Spanish"
             },
             {
+              "icon": "🇺🇸",
               "mt": "Amerikan / Amerikana",
               "en": "American"
             },
             {
+              "icon": "🌍",
               "mt": "barrani / barranija",
               "en": "foreigner"
             }

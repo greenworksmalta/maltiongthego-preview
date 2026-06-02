@@ -51,67 +51,80 @@
         {
           "singular": "Mur",
           "plural": "Morru",
-          "en": "Go"
+          "en": "Go",
+          "icon": "🚶"
         },
         {
           "singular": "Ejja",
           "plural": "Ejjew",
-          "en": "Come"
+          "en": "Come",
+          "icon": "🫷"
         },
         {
           "singular": "Iekol",
           "plural": "Ieklu",
-          "en": "Eat"
+          "en": "Eat",
+          "icon": "🍽️"
         },
         {
           "singular": "Ixrob",
           "plural": "Ixorbu",
-          "en": "Drink"
+          "en": "Drink",
+          "icon": "🥤"
         },
         {
           "singular": "Aqra",
           "plural": "Aqraw",
-          "en": "Read"
+          "en": "Read",
+          "icon": "📖"
         },
         {
           "singular": "Ikteb",
           "plural": "Iktbu",
-          "en": "Write"
+          "en": "Write",
+          "icon": "✏️"
         },
         {
           "singular": "Imxi",
           "plural": "Imxu",
-          "en": "Walk"
+          "en": "Walk",
+          "icon": "🦶"
         },
         {
           "singular": "Iġri",
           "plural": "Iġru",
-          "en": "Run"
+          "en": "Run",
+          "icon": "🏃"
         },
         {
           "singular": "Oqgħod",
           "plural": "Oqogħdu",
-          "en": "Sit / stay"
+          "en": "Sit / stay",
+          "icon": "🪑"
         },
         {
           "singular": "Qum",
           "plural": "Qumu",
-          "en": "Get up"
+          "en": "Get up",
+          "icon": "⬆️"
         },
         {
           "singular": "Iftaħ",
           "plural": "Iftħu",
-          "en": "Open"
+          "en": "Open",
+          "icon": "🔓"
         },
         {
           "singular": "Agħlaq",
           "plural": "Agħlqu",
-          "en": "Close"
+          "en": "Close",
+          "icon": "🔒"
         },
         {
           "singular": "Isma'",
           "plural": "Isimgħu",
-          "en": "Listen"
+          "en": "Listen",
+          "icon": "👂"
         }
       ],
       "exercises": [
@@ -174,14 +187,39 @@
             }
           ]
         },
-        { "id": "impmatch", "type": "match", "title": "Match the command: one person to many", "leftField": "singular", "rightField": "plural", "items": [
-          { "singular": "Mur", "plural": "Morru" },
-          { "singular": "Iekol", "plural": "Ieklu" },
-          { "singular": "Ixrob", "plural": "Ixorbu" },
-          { "singular": "Aqra", "plural": "Aqraw" },
-          { "singular": "Imxi", "plural": "Imxu" },
-          { "singular": "Qum", "plural": "Qumu" }
-        ] }
+        {
+          "id": "impmatch",
+          "type": "match",
+          "title": "Match the command: one person to many",
+          "leftField": "singular",
+          "rightField": "plural",
+          "items": [
+            {
+              "singular": "Mur",
+              "plural": "Morru"
+            },
+            {
+              "singular": "Iekol",
+              "plural": "Ieklu"
+            },
+            {
+              "singular": "Ixrob",
+              "plural": "Ixorbu"
+            },
+            {
+              "singular": "Aqra",
+              "plural": "Aqraw"
+            },
+            {
+              "singular": "Imxi",
+              "plural": "Imxu"
+            },
+            {
+              "singular": "Qum",
+              "plural": "Qumu"
+            }
+          ]
+        }
       ]
     },
     {
@@ -542,21 +580,71 @@
         }
       ],
       "exercises": [
-        { "id": "g6build", "type": "build", "max": 5, "title": "Build the sentence", "items": [
-          { "mt": "Joseph jixrob il-kapuċċino", "en": "Joseph drinks the cappuccino" },
-          { "mt": "Mary taqra ktieb", "en": "Mary reads a book" },
-          { "mt": "Se niekol", "en": "I am going to eat" },
-          { "mt": "Ser nikteb", "en": "I am going to write" },
-          { "mt": "Se naqra", "en": "I am going to read" }
-        ] },
-        { "id": "havebucket", "type": "bucket", "batch": 6, "title": "Have, or there is?", "instructions": "Sort each phrase: is it 'I have' (Għandi) or 'there is/are' (Hemm)?", "choices": ["Għandi (have)", "Hemm (there is)"], "items": [
-          { "word": "Għandi ħin", "answer": "Għandi (have)" },
-          { "word": "Għandek karozza?", "answer": "Għandi (have)" },
-          { "word": "M'għandix flus", "answer": "Għandi (have)" },
-          { "word": "Hemm problema", "answer": "Hemm (there is)" },
-          { "word": "Hemm żewġ siġġijiet", "answer": "Hemm (there is)" },
-          { "word": "M'hemmx ħin", "answer": "Hemm (there is)" }
-        ] }
+        {
+          "id": "g6build",
+          "type": "build",
+          "max": 5,
+          "title": "Build the sentence",
+          "items": [
+            {
+              "mt": "Joseph jixrob il-kapuċċino",
+              "en": "Joseph drinks the cappuccino"
+            },
+            {
+              "mt": "Mary taqra ktieb",
+              "en": "Mary reads a book"
+            },
+            {
+              "mt": "Se niekol",
+              "en": "I am going to eat"
+            },
+            {
+              "mt": "Ser nikteb",
+              "en": "I am going to write"
+            },
+            {
+              "mt": "Se naqra",
+              "en": "I am going to read"
+            }
+          ]
+        },
+        {
+          "id": "havebucket",
+          "type": "bucket",
+          "batch": 6,
+          "title": "Have, or there is?",
+          "instructions": "Sort each phrase: is it 'I have' (Għandi) or 'there is/are' (Hemm)?",
+          "choices": [
+            "Għandi (have)",
+            "Hemm (there is)"
+          ],
+          "items": [
+            {
+              "word": "Għandi ħin",
+              "answer": "Għandi (have)"
+            },
+            {
+              "word": "Għandek karozza?",
+              "answer": "Għandi (have)"
+            },
+            {
+              "word": "M'għandix flus",
+              "answer": "Għandi (have)"
+            },
+            {
+              "word": "Hemm problema",
+              "answer": "Hemm (there is)"
+            },
+            {
+              "word": "Hemm żewġ siġġijiet",
+              "answer": "Hemm (there is)"
+            },
+            {
+              "word": "M'hemmx ħin",
+              "answer": "Hemm (there is)"
+            }
+          ]
+        }
       ]
     },
     {
@@ -571,82 +659,102 @@
           "items": [
             {
               "mt": "Mur",
-              "en": "Go"
+              "en": "Go",
+              "icon": "🚶"
             },
             {
               "mt": "Ejja",
-              "en": "Come"
+              "en": "Come",
+              "icon": "🫷"
             },
             {
               "mt": "Iekol",
-              "en": "Eat"
+              "en": "Eat",
+              "icon": "🍽️"
             },
             {
               "mt": "Ixrob",
-              "en": "Drink"
+              "en": "Drink",
+              "icon": "🥤"
             },
             {
               "mt": "Aqra",
-              "en": "Read"
+              "en": "Read",
+              "icon": "📖"
             },
             {
               "mt": "Ikteb",
-              "en": "Write"
+              "en": "Write",
+              "icon": "✏️"
             },
             {
               "mt": "Imxi",
-              "en": "Walk"
+              "en": "Walk",
+              "icon": "🦶"
             },
             {
               "mt": "Iġri",
-              "en": "Run"
+              "en": "Run",
+              "icon": "🏃"
             },
             {
               "mt": "Oqgħod",
-              "en": "Sit / stay"
+              "en": "Sit / stay",
+              "icon": "🪑"
             },
             {
               "mt": "Qum",
-              "en": "Get up"
+              "en": "Get up",
+              "icon": "⬆️"
             },
             {
               "mt": "Iftaħ",
-              "en": "Open"
+              "en": "Open",
+              "icon": "🔓"
             },
             {
               "mt": "Agħlaq",
-              "en": "Close"
+              "en": "Close",
+              "icon": "🔒"
             }
-          ]
+          ],
+          "icon": "📣"
         },
         {
           "title": "Have / there is",
           "items": [
             {
               "mt": "Għandi",
-              "en": "I have"
+              "en": "I have",
+              "icon": "✋"
             },
             {
               "mt": "Għandek",
-              "en": "you have"
+              "en": "you have",
+              "icon": "✋"
             },
             {
               "mt": "Għandu",
-              "en": "he has"
+              "en": "he has",
+              "icon": "✋"
             },
             {
               "mt": "M'għandix",
-              "en": "I don't have"
+              "en": "I don't have",
+              "icon": "🙅"
             },
             {
               "mt": "Hemm",
-              "en": "there is / are"
+              "en": "there is / are",
+              "icon": "📍"
             },
             {
               "mt": "M'hemmx",
-              "en": "there isn't / aren't"
+              "en": "there isn't / aren't",
+              "icon": "❌"
             }
-          ]
+          ],
+          "icon": "✋"
         }
       ]
     }

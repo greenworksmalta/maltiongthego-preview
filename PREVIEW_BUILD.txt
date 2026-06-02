@@ -1,5 +1,5 @@
-build 20260602d
+build 20260602e
 VERSION 1.0.0-beta.26
-CACHE maltiongthego-1.0.0-beta.26-20260602d
+CACHE maltiongthego-1.0.0-beta.26-20260602e
 date 2026-06-02
-notes: emoji on word/vocab flash cards.
+notes: emoji icons on every item, all units (EN+ES).

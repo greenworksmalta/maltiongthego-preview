@@ -46,51 +46,63 @@
       "items": [
         {
           "mt": "ħanut",
-          "en": "tienda"
+          "en": "tienda",
+          "icon": "🏪"
         },
         {
           "mt": "suq",
-          "en": "mercado"
+          "en": "mercado",
+          "icon": "🛒"
         },
         {
           "mt": "ġroċerija",
-          "en": "abarrotes"
+          "en": "abarrotes",
+          "icon": "🛍️"
         },
         {
           "mt": "forn",
-          "en": "panadería"
+          "en": "panadería",
+          "icon": "🥖"
         },
         {
           "mt": "frott",
-          "en": "fruta"
+          "en": "fruta",
+          "icon": "🍎"
         },
         {
           "mt": "ħaxix",
-          "en": "verduras"
+          "en": "verduras",
+          "icon": "🥦"
         },
         {
           "mt": "laħam",
-          "en": "carne"
+          "en": "carne",
+          "icon": "🥩"
         },
         {
           "mt": "ħut",
-          "en": "pescado"
+          "en": "pescado",
+          "icon": "🐟"
         },
         {
           "mt": "ħalib",
-          "en": "leche"
+          "en": "leche",
+          "icon": "🥛"
         },
         {
           "mt": "bajd",
-          "en": "huevos"
+          "en": "huevos",
+          "icon": "🥚"
         },
         {
           "mt": "tadam",
-          "en": "tomates"
+          "en": "tomates",
+          "icon": "🍅"
         },
         {
           "mt": "kilo",
-          "en": "un kilo"
+          "en": "un kilo",
+          "icon": "⚖️"
         }
       ],
       "exercises": [
@@ -138,43 +150,53 @@
       "items": [
         {
           "mt": "X'ħin hu?",
-          "en": "¿Qué hora es?"
+          "en": "¿Qué hora es?",
+          "icon": "❓"
         },
         {
           "mt": "Is-siegħa",
-          "en": "la una"
+          "en": "la una",
+          "icon": "🕐"
         },
         {
           "mt": "Is-sagħtejn",
-          "en": "las dos"
+          "en": "las dos",
+          "icon": "🕑"
         },
         {
           "mt": "It-tlieta",
-          "en": "las tres"
+          "en": "las tres",
+          "icon": "🕒"
         },
         {
           "mt": "Is-sitta u tletin minuta",
-          "en": "las seis y media"
+          "en": "las seis y media",
+          "icon": "🕡"
         },
         {
           "mt": "Il-ħamsa u ħmistax-il minuta",
-          "en": "las cinco y cuarto"
+          "en": "las cinco y cuarto",
+          "icon": "🕔"
         },
         {
           "mt": "Id-disgħa nieqes kwart",
-          "en": "las nueve menos cuarto"
+          "en": "las nueve menos cuarto",
+          "icon": "🕗"
         },
         {
           "mt": "filgħodu",
-          "en": "de la mañana"
+          "en": "de la mañana",
+          "icon": "🌅"
         },
         {
           "mt": "waranofsinhar",
-          "en": "de la tarde"
+          "en": "de la tarde",
+          "icon": "☀️"
         },
         {
           "mt": "filgħaxija",
-          "en": "de la noche"
+          "en": "de la noche",
+          "icon": "🌆"
         }
       ],
       "exercises": [
@@ -215,31 +237,38 @@
       "vocab": [
         {
           "mt": "Kemm jiswa?",
-          "en": "¿Cuánto cuesta?"
+          "en": "¿Cuánto cuesta?",
+          "icon": "💶"
         },
         {
           "mt": "Kemm huma?",
-          "en": "¿Cuánto cuestan?"
+          "en": "¿Cuánto cuestan?",
+          "icon": "💶"
         },
         {
           "mt": "Bil-flus",
-          "en": "En efectivo"
+          "en": "En efectivo",
+          "icon": "💵"
         },
         {
           "mt": "Bil-karta tal-kreditu",
-          "en": "Con tarjeta"
+          "en": "Con tarjeta",
+          "icon": "💳"
         },
         {
           "mt": "Il-bqija",
-          "en": "El cambio"
+          "en": "El cambio",
+          "icon": "🪙"
         },
         {
           "mt": "irħis",
-          "en": "barato"
+          "en": "barato",
+          "icon": "🏷️"
         },
         {
           "mt": "għali",
-          "en": "caro"
+          "en": "caro",
+          "icon": "💸"
         }
       ],
       "exercises": [
@@ -360,131 +389,163 @@
           "items": [
             {
               "mt": "ħanut",
-              "en": "tienda"
+              "en": "tienda",
+              "icon": "🏪"
             },
             {
               "mt": "suq",
-              "en": "mercado"
+              "en": "mercado",
+              "icon": "🛒"
             },
             {
               "mt": "ġroċerija",
-              "en": "abarrotes"
+              "en": "abarrotes",
+              "icon": "🛍️"
             },
             {
               "mt": "forn",
-              "en": "panadería"
+              "en": "panadería",
+              "icon": "🥖"
             },
             {
               "mt": "frott",
-              "en": "fruta"
+              "en": "fruta",
+              "icon": "🍎"
             },
             {
               "mt": "ħaxix",
-              "en": "verduras"
+              "en": "verduras",
+              "icon": "🥦"
             },
             {
               "mt": "laħam",
-              "en": "carne"
+              "en": "carne",
+              "icon": "🥩"
             },
             {
               "mt": "ħut",
-              "en": "pescado"
+              "en": "pescado",
+              "icon": "🐟"
             },
             {
               "mt": "ħalib",
-              "en": "leche"
+              "en": "leche",
+              "icon": "🥛"
             },
             {
               "mt": "bajd",
-              "en": "huevos"
+              "en": "huevos",
+              "icon": "🥚"
             },
             {
               "mt": "tadam",
-              "en": "tomates"
+              "en": "tomates",
+              "icon": "🍅"
             },
             {
               "mt": "kilo",
-              "en": "un kilo"
+              "en": "un kilo",
+              "icon": "⚖️"
             }
-          ]
+          ],
+          "icon": "🏪"
         },
         {
           "title": "Decir la hora",
           "items": [
             {
               "mt": "X'ħin hu?",
-              "en": "¿Qué hora es?"
+              "en": "¿Qué hora es?",
+              "icon": "❓"
             },
             {
               "mt": "Is-siegħa",
-              "en": "la una"
+              "en": "la una",
+              "icon": "🕐"
             },
             {
               "mt": "Is-sagħtejn",
-              "en": "las dos"
+              "en": "las dos",
+              "icon": "🕑"
             },
             {
               "mt": "It-tlieta",
-              "en": "las tres"
+              "en": "las tres",
+              "icon": "🕒"
             },
             {
               "mt": "Is-sitta u tletin minuta",
-              "en": "las seis y media"
+              "en": "las seis y media",
+              "icon": "🕡"
             },
             {
               "mt": "Il-ħamsa u ħmistax-il minuta",
-              "en": "las cinco y cuarto"
+              "en": "las cinco y cuarto",
+              "icon": "🕔"
             },
             {
               "mt": "Id-disgħa nieqes kwart",
-              "en": "las nueve menos cuarto"
+              "en": "las nueve menos cuarto",
+              "icon": "🕗"
             },
             {
               "mt": "filgħodu",
-              "en": "de la mañana"
+              "en": "de la mañana",
+              "icon": "🌅"
             },
             {
               "mt": "waranofsinhar",
-              "en": "de la tarde"
+              "en": "de la tarde",
+              "icon": "☀️"
             },
             {
               "mt": "filgħaxija",
-              "en": "de la noche"
+              "en": "de la noche",
+              "icon": "🌆"
             }
-          ]
+          ],
+          "icon": "🕐"
         },
         {
           "title": "Dinero y pagar",
           "items": [
             {
               "mt": "Kemm jiswa?",
-              "en": "¿Cuánto cuesta?"
+              "en": "¿Cuánto cuesta?",
+              "icon": "💶"
             },
             {
               "mt": "Kemm huma?",
-              "en": "¿Cuánto cuestan?"
+              "en": "¿Cuánto cuestan?",
+              "icon": "💶"
             },
             {
               "mt": "Bil-flus",
-              "en": "En efectivo"
+              "en": "En efectivo",
+              "icon": "💵"
             },
             {
               "mt": "Bil-karta tal-kreditu",
-              "en": "Con tarjeta"
+              "en": "Con tarjeta",
+              "icon": "💳"
             },
             {
               "mt": "Il-bqija",
-              "en": "El cambio"
+              "en": "El cambio",
+              "icon": "🪙"
             },
             {
               "mt": "irħis",
-              "en": "barato"
+              "en": "barato",
+              "icon": "🏷️"
             },
             {
               "mt": "għali",
-              "en": "caro"
+              "en": "caro",
+              "icon": "💸"
             }
-          ]
+          ],
+          "icon": "💶"
         }
       ]
     }

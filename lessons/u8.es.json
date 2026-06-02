@@ -46,51 +46,63 @@
       "vocab": [
         {
           "mt": "kafè",
-          "en": "café"
+          "en": "café",
+          "icon": "☕"
         },
         {
           "mt": "kapuċċino",
-          "en": "capuchino"
+          "en": "capuchino",
+          "icon": "☕"
         },
         {
           "mt": "tè",
-          "en": "té"
+          "en": "té",
+          "icon": "🍵"
         },
         {
           "mt": "kikkra kafè",
-          "en": "una taza de café"
+          "en": "una taza de café",
+          "icon": "☕"
         },
         {
           "mt": "kafè bil-ħalib",
-          "en": "café con leche"
+          "en": "café con leche",
+          "icon": "☕"
         },
         {
           "mt": "ilma bil-lumi",
-          "en": "agua con limón"
+          "en": "agua con limón",
+          "icon": "🍋"
         },
         {
           "mt": "ilma",
-          "en": "agua"
+          "en": "agua",
+          "icon": "💧"
         },
         {
           "mt": "flixkun ilma",
-          "en": "una botella de agua"
+          "en": "una botella de agua",
+          "icon": "🍶"
         },
         {
           "mt": "luminata",
-          "en": "refresco"
+          "en": "refresco",
+          "icon": "🥤"
         },
         {
           "mt": "meraq tal-larinġ",
-          "en": "jugo de naranja"
+          "en": "jugo de naranja",
+          "icon": "🧃"
         },
         {
           "mt": "birra",
-          "en": "cerveza"
+          "en": "cerveza",
+          "icon": "🍺"
         },
         {
           "mt": "inbid",
-          "en": "vino"
+          "en": "vino",
+          "icon": "🍷"
         }
       ],
       "exercises": [
@@ -138,43 +150,53 @@
       "items": [
         {
           "mt": "ħobż",
-          "en": "pan"
+          "en": "pan",
+          "icon": "🍞"
         },
         {
           "mt": "ftira",
-          "en": "pan plano maltés"
+          "en": "pan plano maltés",
+          "icon": "🫓"
         },
         {
           "mt": "pastizz",
-          "en": "pastizz (masa salada)"
+          "en": "pastizz (masa salada)",
+          "icon": "🥟"
         },
         {
           "mt": "ravjul",
-          "en": "ravioli"
+          "en": "ravioli",
+          "icon": "🥟"
         },
         {
           "mt": "timpana",
-          "en": "pastel de pasta horneado"
+          "en": "pastel de pasta horneado",
+          "icon": "🍝"
         },
         {
           "mt": "fenek",
-          "en": "conejo"
+          "en": "conejo",
+          "icon": "🐰"
         },
         {
           "mt": "ġbejna",
-          "en": "quesito maltés"
+          "en": "quesito maltés",
+          "icon": "🧀"
         },
         {
           "mt": "insalata",
-          "en": "ensalada"
+          "en": "ensalada",
+          "icon": "🥗"
         },
         {
           "mt": "soppa",
-          "en": "sopa"
+          "en": "sopa",
+          "icon": "🍲"
         },
         {
           "mt": "ġelat",
-          "en": "helado"
+          "en": "helado",
+          "icon": "🍨"
         }
       ],
       "exercises": [
@@ -219,31 +241,38 @@
       "vocab": [
         {
           "mt": "Nixtieq…",
-          "en": "Quisiera…"
+          "en": "Quisiera…",
+          "icon": "🙋"
         },
         {
           "mt": "Jien nieħu…",
-          "en": "Voy a tomar…"
+          "en": "Voy a tomar…",
+          "icon": "👌"
         },
         {
           "mt": "Għalija…",
-          "en": "Para mí…"
+          "en": "Para mí…",
+          "icon": "🫵"
         },
         {
           "mt": "X'tieħu?",
-          "en": "¿Qué va a tomar?"
+          "en": "¿Qué va a tomar?",
+          "icon": "❓"
         },
         {
           "mt": "Kemm jiswa?",
-          "en": "¿Cuánto cuesta?"
+          "en": "¿Cuánto cuesta?",
+          "icon": "💶"
         },
         {
           "mt": "Il-kont, jekk jogħġbok",
-          "en": "La cuenta, por favor"
+          "en": "La cuenta, por favor",
+          "icon": "🧾"
         },
         {
           "mt": "Bnin!",
-          "en": "¡Delicioso!"
+          "en": "¡Delicioso!",
+          "icon": "😋"
         }
       ],
       "exercises": [
@@ -360,131 +389,163 @@
           "items": [
             {
               "mt": "kafè",
-              "en": "café"
+              "en": "café",
+              "icon": "☕"
             },
             {
               "mt": "kapuċċino",
-              "en": "capuchino"
+              "en": "capuchino",
+              "icon": "☕"
             },
             {
               "mt": "tè",
-              "en": "té"
+              "en": "té",
+              "icon": "🍵"
             },
             {
               "mt": "kikkra kafè",
-              "en": "una taza de café"
+              "en": "una taza de café",
+              "icon": "☕"
             },
             {
               "mt": "kafè bil-ħalib",
-              "en": "café con leche"
+              "en": "café con leche",
+              "icon": "☕"
             },
             {
               "mt": "ilma bil-lumi",
-              "en": "agua con limón"
+              "en": "agua con limón",
+              "icon": "🍋"
             },
             {
               "mt": "ilma",
-              "en": "agua"
+              "en": "agua",
+              "icon": "💧"
             },
             {
               "mt": "flixkun ilma",
-              "en": "una botella de agua"
+              "en": "una botella de agua",
+              "icon": "🍶"
             },
             {
               "mt": "luminata",
-              "en": "refresco"
+              "en": "refresco",
+              "icon": "🥤"
             },
             {
               "mt": "meraq tal-larinġ",
-              "en": "jugo de naranja"
+              "en": "jugo de naranja",
+              "icon": "🧃"
             },
             {
               "mt": "birra",
-              "en": "cerveza"
+              "en": "cerveza",
+              "icon": "🍺"
             },
             {
               "mt": "inbid",
-              "en": "vino"
+              "en": "vino",
+              "icon": "🍷"
             }
-          ]
+          ],
+          "icon": "🥤"
         },
         {
           "title": "Comida",
           "items": [
             {
               "mt": "ħobż",
-              "en": "pan"
+              "en": "pan",
+              "icon": "🍞"
             },
             {
               "mt": "ftira",
-              "en": "pan plano maltés"
+              "en": "pan plano maltés",
+              "icon": "🫓"
             },
             {
               "mt": "pastizz",
-              "en": "pastizz (masa salada)"
+              "en": "pastizz (masa salada)",
+              "icon": "🥟"
             },
             {
               "mt": "ravjul",
-              "en": "ravioli"
+              "en": "ravioli",
+              "icon": "🥟"
             },
             {
               "mt": "timpana",
-              "en": "pastel de pasta horneado"
+              "en": "pastel de pasta horneado",
+              "icon": "🍝"
             },
             {
               "mt": "fenek",
-              "en": "conejo"
+              "en": "conejo",
+              "icon": "🐰"
             },
             {
               "mt": "ġbejna",
-              "en": "quesito maltés"
+              "en": "quesito maltés",
+              "icon": "🧀"
             },
             {
               "mt": "insalata",
-              "en": "ensalada"
+              "en": "ensalada",
+              "icon": "🥗"
             },
             {
               "mt": "soppa",
-              "en": "sopa"
+              "en": "sopa",
+              "icon": "🍲"
             },
             {
               "mt": "ġelat",
-              "en": "helado"
+              "en": "helado",
+              "icon": "🍨"
             }
-          ]
+          ],
+          "icon": "🍽️"
         },
         {
           "title": "Pedir y pagar",
           "items": [
             {
               "mt": "Nixtieq…",
-              "en": "Quisiera…"
+              "en": "Quisiera…",
+              "icon": "🙋"
             },
             {
               "mt": "Jien nieħu…",
-              "en": "Voy a tomar…"
+              "en": "Voy a tomar…",
+              "icon": "👌"
             },
             {
               "mt": "Għalija…",
-              "en": "Para mí…"
+              "en": "Para mí…",
+              "icon": "🫵"
             },
             {
               "mt": "X'tieħu?",
-              "en": "¿Qué va a tomar?"
+              "en": "¿Qué va a tomar?",
+              "icon": "❓"
             },
             {
               "mt": "Kemm jiswa?",
-              "en": "¿Cuánto cuesta?"
+              "en": "¿Cuánto cuesta?",
+              "icon": "💶"
             },
             {
               "mt": "Il-kont, jekk jogħġbok",
-              "en": "La cuenta, por favor"
+              "en": "La cuenta, por favor",
+              "icon": "🧾"
             },
             {
               "mt": "Bnin!",
-              "en": "¡Delicioso!"
+              "en": "¡Delicioso!",
+              "icon": "😋"
             }
-          ]
+          ],
+          "icon": "🧾"
         }
       ]
     }
