@@ -1,0 +1,500 @@
+{
+  "id": "u7",
+  "lang": "es",
+  "title": "Hacer Preguntas y Pedir Indicaciones",
+  "subtitle": "Palabras interrogativas, direcciones, cómo orientarte",
+  "sections": [
+    {
+      "id": "lost",
+      "icon": "🧭",
+      "title": "Cómo orientarte",
+      "subtitle": "Mitluf?: pedir indicaciones",
+      "intro": "Preguntarle a un transeúnte cómo llegar a algún lugar.",
+      "dialogue": [
+        {
+          "mt": "Skużi, fejn hu l-bank?",
+          "en": "Disculpe, ¿dónde está el banco?"
+        },
+        {
+          "mt": "Mur dritt, imbagħad dur fuq il-lemin.",
+          "en": "Siga recto, luego doble a la derecha."
+        },
+        {
+          "mt": "Hu 'l bogħod?",
+          "en": "¿Está lejos?"
+        },
+        {
+          "mt": "Le, ħames minuti biss.",
+          "en": "No, solo cinco minutos."
+        },
+        {
+          "mt": "Grazzi ħafna!",
+          "en": "¡Muchas gracias!"
+        }
+      ]
+    },
+    {
+      "id": "questions",
+      "icon": "❓",
+      "title": "Preguntas con partícula interrogativa",
+      "subtitle": "Mistoqsijiet: preguntar quién, qué, cuándo, dónde, por qué",
+      "intro": "Las palabras interrogativas (quién, qué, dónde, cuándo, por qué, cómo) y cómo usarlas.",
+      "items": [
+        {
+          "mt": "Min?",
+          "en": "¿Quién?",
+          "example": "Min hu l-għalliem tiegħek?",
+          "example_en": "¿Quién es tu maestro?"
+        },
+        {
+          "mt": "Fejn?",
+          "en": "¿Dónde?",
+          "example": "Fejn toqgħod?",
+          "example_en": "¿Dónde vives?"
+        },
+        {
+          "mt": "Xi?",
+          "alt": "Xiex?",
+          "en": "¿Qué?/¿Cuántos?",
+          "example": "X'tieħu?",
+          "example_en": "¿Qué vas a tomar?"
+        },
+        {
+          "mt": "Għaliex?",
+          "alt": "Għala?",
+          "en": "¿Por qué?",
+          "example": "Għaliex int hawn?",
+          "example_en": "¿Por qué estás aquí?"
+        },
+        {
+          "mt": "Meta?",
+          "en": "¿Cuándo?",
+          "example": "Meta ġej il-vapur?",
+          "example_en": "¿Cuándo llega el barco?"
+        },
+        {
+          "mt": "Liema?",
+          "en": "¿Cuál?",
+          "example": "Liema tip ta' kapuċċino trid?",
+          "example_en": "¿Qué tipo de capuchino quieres?"
+        },
+        {
+          "mt": "Ta' min?",
+          "en": "¿De quién?",
+          "example": "Ta' min hi din il-borża?",
+          "example_en": "¿De quién es esta bolsa?"
+        },
+        {
+          "mt": "Kif?",
+          "en": "¿Cómo?",
+          "example": "Kif tasal hemm?",
+          "example_en": "¿Cómo llegas allí?"
+        }
+      ],
+      "passage": {
+        "title": "Lee y responde",
+        "lines": [
+          {
+            "mt": "Nhar il-Ħamis, Joanne u Karl marru jieklu f'ristorant fl-Imdina.",
+            "en": "El jueves, Joanne y Karl fueron a comer a un restaurante en Mdina."
+          },
+          {
+            "mt": "Bdew bi platt timpana u soppa tal-armla.",
+            "en": "Empezaron con un plato de timpana y soppa tal-armla."
+          },
+          {
+            "mt": "Karl ipprova l-fenek għall-ewwel darba u tant ħa pjaċir bih.",
+            "en": "Karl probó el conejo por primera vez y le encantó."
+          },
+          {
+            "mt": "Wara, qassmu kannol u ħadu kapuċċino.",
+            "en": "Después compartieron un cannolo y tomaron un capuchino."
+          },
+          {
+            "mt": "Il-wejter qalilhom: 'Saħħa! Erġgħu lura għada.'",
+            "en": "El mesero les dijo: '¡Saħħa! Vuelvan mañana.'"
+          }
+        ],
+        "questions": [
+          {
+            "q": "Fejn marru Joanne u Karl?",
+            "qen": "¿A dónde fueron Joanne y Karl?",
+            "a": "Marru f'ristorant fl-Imdina.",
+            "aen": "Fueron a un restaurante en Mdina."
+          },
+          {
+            "q": "Min ipprova l-fenek?",
+            "qen": "¿Quién probó el conejo?",
+            "a": "Karl ipprova l-fenek.",
+            "aen": "Karl probó el conejo."
+          },
+          {
+            "q": "Meta marru jieklu?",
+            "qen": "¿Cuándo fueron a comer?",
+            "a": "Marru nhar il-Ħamis.",
+            "aen": "Fueron el jueves."
+          },
+          {
+            "q": "X' qasmu wara?",
+            "qen": "¿Qué compartieron después?",
+            "a": "Qassmu kannol.",
+            "aen": "Compartieron un cannolo."
+          }
+        ]
+      }
+    },
+    {
+      "id": "directions",
+      "icon": "🧭",
+      "title": "Indicaciones",
+      "subtitle": "Direzzjonijiet: izquierda, derecha, recto",
+      "intro": "Para pedir indicaciones, empieza con: 'Skużani. Tista' tgħidli fejn hi ___, jekk jogħġbok?' Luego agradece con 'Grazzi.'",
+      "vocab": [
+        {
+          "mt": "Skużani",
+          "en": "Lo siento / Disculpe"
+        },
+        {
+          "mt": "Lemin",
+          "en": "Derecha"
+        },
+        {
+          "mt": "Xellug",
+          "en": "Izquierda"
+        },
+        {
+          "mt": "Dur fuq il-lemin",
+          "en": "Gira a la derecha"
+        },
+        {
+          "mt": "Dur fuq ix-xellug",
+          "en": "Gira a la izquierda"
+        },
+        {
+          "mt": "Kompli bi dritt",
+          "en": "Sigue recto"
+        },
+        {
+          "mt": "Suq",
+          "en": "Maneja (singular)"
+        },
+        {
+          "mt": "Imxi",
+          "en": "Camina (singular)"
+        },
+        {
+          "mt": "Dur",
+          "en": "Gira (singular)"
+        },
+        {
+          "mt": "Hawn",
+          "en": "Aquí"
+        },
+        {
+          "mt": "Hemm",
+          "en": "Allí"
+        },
+        {
+          "mt": "Wara dak",
+          "en": "Después de eso"
+        },
+        {
+          "mt": "Aqsam it-triq",
+          "en": "Cruza la calle"
+        },
+        {
+          "mt": "Faċċata ta'",
+          "en": "Frente a"
+        },
+        {
+          "mt": "Ħdejn",
+          "en": "Al lado de"
+        },
+        {
+          "mt": "Bejn",
+          "en": "Entre"
+        },
+        {
+          "mt": "L-ewwel triq",
+          "en": "La primera calle"
+        },
+        {
+          "mt": "L-ewwel kantuniera",
+          "en": "La primera esquina"
+        },
+        {
+          "mt": "It-tieni dawra",
+          "en": "La segunda vuelta"
+        }
+      ],
+      "dialogue": [
+        {
+          "mt": "Skużani — fejn hu l-bank l-aktar viċin?",
+          "en": "Disculpe, ¿dónde está el banco más cercano?"
+        },
+        {
+          "mt": "Bonġu. Imxi sal-pjazza, dur fuq ix-xellug.",
+          "en": "Buenos días. Camina hasta la plaza, gira a la izquierda."
+        },
+        {
+          "mt": "U mbagħad?",
+          "en": "¿Y luego?"
+        },
+        {
+          "mt": "Hemmhekk tarah faċċata tal-knisja.",
+          "en": "Allí lo verás frente a la iglesia."
+        },
+        {
+          "mt": "Grazzi ħafna!",
+          "en": "¡Muchas gracias!"
+        }
+      ],
+      "winds": [
+        {
+          "mt": "Tramuntana",
+          "en": "Norte"
+        },
+        {
+          "mt": "Grigal",
+          "en": "Noreste"
+        },
+        {
+          "mt": "Lvant",
+          "en": "Este"
+        },
+        {
+          "mt": "Xlokk",
+          "en": "Sureste"
+        },
+        {
+          "mt": "Nofsinhar",
+          "en": "Sur"
+        },
+        {
+          "mt": "Lbiċ",
+          "en": "Suroeste"
+        },
+        {
+          "mt": "Punent",
+          "en": "Oeste"
+        },
+        {
+          "mt": "Majjistral",
+          "en": "Noroeste"
+        }
+      ]
+    },
+    {
+      "id": "grammar7",
+      "icon": "📖",
+      "title": "Gramática",
+      "subtitle": "Il-grammatika: preguntar y orientarse",
+      "intro": "Las palabras interrogativas y la forma cortés de pedir indicaciones.",
+      "rules": [
+        {
+          "id": "wh-questions",
+          "title": "Las palabras para preguntar",
+          "explanation": "Las partículas interrogativas que necesitas para casi todo: Min (quién), Fejn (dónde), Xiex (qué), Meta (cuándo), Għaliex (por qué), Liema (cuál), Kif (cómo). La mayoría van al principio de la oración.",
+          "letters": [
+            "Min?",
+            "Fejn?",
+            "Xi?/Xiex?",
+            "Għaliex?/Għala?",
+            "Meta?",
+            "Liema?",
+            "Ta' min?",
+            "Kif?"
+          ],
+          "examples": [
+            {
+              "mt": "Min hu l-missierek?",
+              "en": "¿Quién es tu padre?"
+            },
+            {
+              "mt": "Fejn mort?",
+              "en": "¿A dónde fuiste?"
+            },
+            {
+              "mt": "Xi trid tixrob, kapuċċino jew te?",
+              "en": "¿Qué quieres tomar, un capuchino o té?"
+            },
+            {
+              "mt": "Għaliex wasalt tard?",
+              "en": "¿Por qué llegaste tarde?"
+            },
+            {
+              "mt": "Meta jiftaħ il-ħanut?",
+              "en": "¿Cuándo abre la tienda?"
+            },
+            {
+              "mt": "Liema triq twassal il-Belt?",
+              "en": "¿Qué calle lleva a Valletta?"
+            },
+            {
+              "mt": "Ta' min hu dan il-lapes?",
+              "en": "¿De quién es este lápiz?"
+            },
+            {
+              "mt": "Kif immorru l-ajruport?",
+              "en": "¿Cómo vamos al aeropuerto?"
+            }
+          ]
+        },
+        {
+          "id": "polite-request",
+          "title": "Pedir indicaciones con cortesía",
+          "explanation": "Un inicio confiable: Skużi. Tista' tgħidli fejn hi…?, jekk jogħġbok. Usa hi/hu según el lugar (hi para l-iskola, hu para il-bank). Cierra con Grazzi.",
+          "examples": [
+            {
+              "mt": "Skużi. Tista' tgħidli fejn hi l-iskola, jekk jogħġbok?",
+              "en": "Disculpe. ¿Puede decirme dónde está la escuela, por favor? (f.)"
+            },
+            {
+              "mt": "Skużi. Tista' tgħidli fejn hu l-isptar, jekk jogħġbok?",
+              "en": "Disculpe. ¿Puede decirme dónde está el hospital, por favor? (m.)"
+            },
+            {
+              "mt": "Bonġu. Kif nista' nasal il-bank, jekk jogħġbok?",
+              "en": "Buenos días. ¿Cómo puedo llegar al banco, por favor?"
+            },
+            {
+              "mt": "Ibqa' sejjer dritt u taraha fuq il-lemin",
+              "en": "Sigue recto y lo verás a la derecha"
+            },
+            {
+              "mt": "Grazzi ħafna",
+              "en": "Muchas gracias"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "icon": "📚",
+      "title": "Vocabulario",
+      "subtitle": "Il-vokabularju: todas las palabras en un solo lugar",
+      "intro": "Todo de esta sección, reunido para repasar. Toca cualquier palabra para escucharla.",
+      "groups": [
+        {
+          "title": "Palabras para preguntar",
+          "items": [
+            {
+              "mt": "Min?",
+              "en": "¿Quién?"
+            },
+            {
+              "mt": "Fejn?",
+              "en": "¿Dónde?"
+            },
+            {
+              "mt": "Xi?",
+              "en": "¿Qué?/¿Cuántos?"
+            },
+            {
+              "mt": "Għaliex?",
+              "en": "¿Por qué?"
+            },
+            {
+              "mt": "Meta?",
+              "en": "¿Cuándo?"
+            },
+            {
+              "mt": "Liema?",
+              "en": "¿Cuál?"
+            },
+            {
+              "mt": "Ta' min?",
+              "en": "¿De quién?"
+            },
+            {
+              "mt": "Kif?",
+              "en": "¿Cómo?"
+            }
+          ]
+        },
+        {
+          "title": "Indicaciones",
+          "items": [
+            {
+              "mt": "Skużani",
+              "en": "Lo siento / Disculpe"
+            },
+            {
+              "mt": "Lemin",
+              "en": "Derecha"
+            },
+            {
+              "mt": "Xellug",
+              "en": "Izquierda"
+            },
+            {
+              "mt": "Dur fuq il-lemin",
+              "en": "Gira a la derecha"
+            },
+            {
+              "mt": "Dur fuq ix-xellug",
+              "en": "Gira a la izquierda"
+            },
+            {
+              "mt": "Kompli bi dritt",
+              "en": "Sigue recto"
+            },
+            {
+              "mt": "Suq",
+              "en": "Maneja (singular)"
+            },
+            {
+              "mt": "Imxi",
+              "en": "Camina (singular)"
+            },
+            {
+              "mt": "Dur",
+              "en": "Gira (singular)"
+            },
+            {
+              "mt": "Hawn",
+              "en": "Aquí"
+            },
+            {
+              "mt": "Hemm",
+              "en": "Allí"
+            },
+            {
+              "mt": "Wara dak",
+              "en": "Después de eso"
+            },
+            {
+              "mt": "Aqsam it-triq",
+              "en": "Cruza la calle"
+            },
+            {
+              "mt": "Faċċata ta'",
+              "en": "Frente a"
+            },
+            {
+              "mt": "Ħdejn",
+              "en": "Al lado de"
+            },
+            {
+              "mt": "Bejn",
+              "en": "Entre"
+            },
+            {
+              "mt": "L-ewwel triq",
+              "en": "La primera calle"
+            },
+            {
+              "mt": "L-ewwel kantuniera",
+              "en": "La primera esquina"
+            },
+            {
+              "mt": "It-tieni dawra",
+              "en": "La segunda vuelta"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

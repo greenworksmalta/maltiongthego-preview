@@ -20,7 +20,7 @@ const VERSION = "1.0.0-beta.26";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "20260601qq";
+const BUILD = "20260601rr";
 // Bump ONLY when audio clips are regenerated (re-voiced). Audio filenames are
 // sha1(mt) so a re-voiced clip keeps its name; without a changing query the
 // browser/SW serve the OLD cached audio. play() busts on this.
@@ -703,7 +703,9 @@ async function loadOverview(lid, lang){
   if(State.overviews[cacheKey]) return State.overviews[cacheKey];
   // English uses the bare filename; other languages use lid.<lang>.json
   const filename = lang === "en" ? lid + ".json" : lid + "." + lang + ".json";
-  const r = await fetch("lessons/overviews/" + filename + "?b=" + BUILD);
+  let r = await fetch("lessons/overviews/" + filename + "?b=" + BUILD);
+  // Graceful fallback: if a translated overview isn't published yet, use English.
+  if(!r.ok && lang !== "en") r = await fetch("lessons/overviews/" + lid + ".json?b=" + BUILD);
   if(!r.ok) throw new Error("Missing overview: " + lid + " (" + lang + ")");
   const data = await r.json();
   State.overviews[cacheKey] = data;

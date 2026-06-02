@@ -1,0 +1,492 @@
+{
+  "id": "u9",
+  "lang": "es",
+  "title": "Compras, Dinero y la Hora",
+  "subtitle": "Ir de compras, pagar y decir la hora",
+  "sections": [
+    {
+      "id": "market",
+      "icon": "🛒",
+      "title": "En la tienda",
+      "subtitle": "Fil-ħanut: comprar algunas cosas",
+      "intro": "Comprando frutas, verduras y pan en una tienda local.",
+      "dialogue": [
+        {
+          "mt": "Bonġu, x'tixtieq?",
+          "en": "Buenos días, ¿qué desea?"
+        },
+        {
+          "mt": "Nixtieq kilo tadam, jekk jogħġbok.",
+          "en": "Quisiera un kilo de tomates, por favor."
+        },
+        {
+          "mt": "Xi ħaġa oħra?",
+          "en": "¿Algo más?"
+        },
+        {
+          "mt": "Iva, ħobża waħda.",
+          "en": "Sí, una hogaza de pan."
+        },
+        {
+          "mt": "Kemm huma b'kollox?",
+          "en": "¿Cuánto es todo?"
+        },
+        {
+          "mt": "Żewġ ewro u ħamsin ċenteżmu.",
+          "en": "Dos euros con cincuenta."
+        }
+      ]
+    },
+    {
+      "id": "shops",
+      "icon": "🏪",
+      "title": "Tiendas y compras",
+      "subtitle": "Ħwienet u xirja: dónde comprar qué",
+      "intro": "Lugares para hacer compras y las cosas que consigues.",
+      "items": [
+        {
+          "mt": "ħanut",
+          "en": "tienda"
+        },
+        {
+          "mt": "suq",
+          "en": "mercado"
+        },
+        {
+          "mt": "ġroċerija",
+          "en": "abarrotes"
+        },
+        {
+          "mt": "forn",
+          "en": "panadería"
+        },
+        {
+          "mt": "frott",
+          "en": "fruta"
+        },
+        {
+          "mt": "ħaxix",
+          "en": "verduras"
+        },
+        {
+          "mt": "laħam",
+          "en": "carne"
+        },
+        {
+          "mt": "ħut",
+          "en": "pescado"
+        },
+        {
+          "mt": "ħalib",
+          "en": "leche"
+        },
+        {
+          "mt": "bajd",
+          "en": "huevos"
+        },
+        {
+          "mt": "tadam",
+          "en": "tomates"
+        },
+        {
+          "mt": "kilo",
+          "en": "un kilo"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "shopmatch",
+          "type": "match",
+          "title": "Relaciona la palabra con su significado",
+          "leftField": "mt",
+          "rightField": "en",
+          "items": [
+            {
+              "mt": "ħanut",
+              "en": "tienda"
+            },
+            {
+              "mt": "forn",
+              "en": "panadería"
+            },
+            {
+              "mt": "frott",
+              "en": "fruta"
+            },
+            {
+              "mt": "ħaxix",
+              "en": "verduras"
+            },
+            {
+              "mt": "ħut",
+              "en": "pescado"
+            },
+            {
+              "mt": "ħalib",
+              "en": "leche"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "telltime",
+      "icon": "🕐",
+      "title": "Decir la hora",
+      "subtitle": "X'ħin hu?: horas, medias y cuartos",
+      "intro": "Preguntar y dar la hora. Toca cualquier frase para escucharla.",
+      "items": [
+        {
+          "mt": "X'ħin hu?",
+          "en": "¿Qué hora es?"
+        },
+        {
+          "mt": "Is-siegħa",
+          "en": "la una"
+        },
+        {
+          "mt": "Is-sagħtejn",
+          "en": "las dos"
+        },
+        {
+          "mt": "It-tlieta",
+          "en": "las tres"
+        },
+        {
+          "mt": "Is-sitta u tletin minuta",
+          "en": "las seis y media"
+        },
+        {
+          "mt": "Il-ħamsa u ħmistax-il minuta",
+          "en": "las cinco y cuarto"
+        },
+        {
+          "mt": "Id-disgħa nieqes kwart",
+          "en": "las nueve menos cuarto"
+        },
+        {
+          "mt": "filgħodu",
+          "en": "de la mañana"
+        },
+        {
+          "mt": "waranofsinhar",
+          "en": "de la tarde"
+        },
+        {
+          "mt": "filgħaxija",
+          "en": "de la noche"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "timelisten",
+          "type": "listen",
+          "items": [
+            {
+              "mt": "Is-siegħa",
+              "en": "la una"
+            },
+            {
+              "mt": "It-tlieta",
+              "en": "las tres"
+            },
+            {
+              "mt": "Is-sitta u tletin minuta",
+              "en": "las seis y media"
+            },
+            {
+              "mt": "Il-ħamsa u ħmistax-il minuta",
+              "en": "las cinco y cuarto"
+            },
+            {
+              "mt": "Id-disgħa nieqes kwart",
+              "en": "las nueve menos cuarto"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "money",
+      "icon": "💶",
+      "title": "Dinero y pagar",
+      "subtitle": "Flus u ħlas: precios y pagos",
+      "intro": "Preguntar el precio, pagar y el cambio.",
+      "vocab": [
+        {
+          "mt": "Kemm jiswa?",
+          "en": "¿Cuánto cuesta?"
+        },
+        {
+          "mt": "Kemm huma?",
+          "en": "¿Cuánto cuestan?"
+        },
+        {
+          "mt": "Bil-flus",
+          "en": "En efectivo"
+        },
+        {
+          "mt": "Bil-karta tal-kreditu",
+          "en": "Con tarjeta"
+        },
+        {
+          "mt": "Il-bqija",
+          "en": "El cambio"
+        },
+        {
+          "mt": "irħis",
+          "en": "barato"
+        },
+        {
+          "mt": "għali",
+          "en": "caro"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "moneybuild",
+          "type": "build",
+          "items": [
+            {
+              "mt": "Kemm jiswa dan?",
+              "en": "¿Cuánto cuesta esto?"
+            },
+            {
+              "mt": "Inħallas bil-karta tal-kreditu",
+              "en": "Voy a pagar con tarjeta"
+            },
+            {
+              "mt": "Dan għali wisq",
+              "en": "Esto es demasiado caro"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar9",
+      "icon": "📖",
+      "title": "Gramática",
+      "subtitle": "Il-grammatika: la hora y preguntar el precio",
+      "intro": "Cómo funciona el reloj en maltés y las dos formas de preguntar el precio.",
+      "rules": [
+        {
+          "id": "telling-time",
+          "title": "La hora: u (y) y nieqes (menos)",
+          "explanation": "Pregunta X'ħin hu? (¿qué hora es?). La hora lleva el artículo: Is-siegħa (1:00), Is-sitta (6:00). Añade los minutos con u (y) o nieqes (menos). Cuando das los minutos como número, añade minuta después: Is-sitta u tletin minuta (6:30), Il-ħamsa u ħmistax-il minuta (5:15), Id-disgħa nieqes kwart (8:45).",
+          "examples": [
+            {
+              "mt": "X'ħin hu?",
+              "en": "¿Qué hora es?"
+            },
+            {
+              "mt": "Is-sitta u tletin minuta.",
+              "en": "Las seis y media."
+            },
+            {
+              "mt": "Il-ħamsa u ħmistax-il minuta.",
+              "en": "Las cinco y cuarto."
+            },
+            {
+              "mt": "Id-disgħa nieqes kwart.",
+              "en": "Las nueve menos cuarto."
+            }
+          ]
+        },
+        {
+          "id": "how-much",
+          "title": "Dos formas de preguntar el precio",
+          "explanation": "Usa Kemm jiswa? para una sola cosa (¿cuánto cuesta?) y Kemm huma? para más de una (¿cuánto cuestan?). Responde con el número más ewro o ċenteżmu.",
+          "examples": [
+            {
+              "mt": "Kemm jiswa dan?",
+              "en": "¿Cuánto cuesta esto?"
+            },
+            {
+              "mt": "Kemm huma t-tadam?",
+              "en": "¿Cuánto cuestan los tomates?"
+            },
+            {
+              "mt": "Żewġ ewro u ħamsin ċenteżmu.",
+              "en": "Dos euros con cincuenta."
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "timemc",
+          "type": "mc",
+          "choices": [
+            "u",
+            "nieqes"
+          ],
+          "items": [
+            {
+              "word": "Is-sitta ___ tletin minuta (6:30)",
+              "answer": "u",
+              "en": "las seis y media",
+              "mt": "Is-sitta u tletin minuta"
+            },
+            {
+              "word": "Il-ħamsa ___ ħmistax-il minuta (5:15)",
+              "answer": "u",
+              "en": "las cinco y cuarto",
+              "mt": "Il-ħamsa u ħmistax-il minuta"
+            },
+            {
+              "word": "Id-disgħa ___ kwart (8:45)",
+              "answer": "nieqes",
+              "en": "las nueve menos cuarto",
+              "mt": "Id-disgħa nieqes kwart"
+            }
+          ],
+          "opts": {
+            "rawPrompt": true,
+            "audioAnswer": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "icon": "📚",
+      "title": "Vocabulario",
+      "subtitle": "Il-vokabularju: todas las palabras en un solo lugar",
+      "intro": "Todo de esta unidad, reunido para repasar. Toca cualquier palabra para escucharla.",
+      "groups": [
+        {
+          "title": "Tiendas y compras",
+          "items": [
+            {
+              "mt": "ħanut",
+              "en": "tienda"
+            },
+            {
+              "mt": "suq",
+              "en": "mercado"
+            },
+            {
+              "mt": "ġroċerija",
+              "en": "abarrotes"
+            },
+            {
+              "mt": "forn",
+              "en": "panadería"
+            },
+            {
+              "mt": "frott",
+              "en": "fruta"
+            },
+            {
+              "mt": "ħaxix",
+              "en": "verduras"
+            },
+            {
+              "mt": "laħam",
+              "en": "carne"
+            },
+            {
+              "mt": "ħut",
+              "en": "pescado"
+            },
+            {
+              "mt": "ħalib",
+              "en": "leche"
+            },
+            {
+              "mt": "bajd",
+              "en": "huevos"
+            },
+            {
+              "mt": "tadam",
+              "en": "tomates"
+            },
+            {
+              "mt": "kilo",
+              "en": "un kilo"
+            }
+          ]
+        },
+        {
+          "title": "Decir la hora",
+          "items": [
+            {
+              "mt": "X'ħin hu?",
+              "en": "¿Qué hora es?"
+            },
+            {
+              "mt": "Is-siegħa",
+              "en": "la una"
+            },
+            {
+              "mt": "Is-sagħtejn",
+              "en": "las dos"
+            },
+            {
+              "mt": "It-tlieta",
+              "en": "las tres"
+            },
+            {
+              "mt": "Is-sitta u tletin minuta",
+              "en": "las seis y media"
+            },
+            {
+              "mt": "Il-ħamsa u ħmistax-il minuta",
+              "en": "las cinco y cuarto"
+            },
+            {
+              "mt": "Id-disgħa nieqes kwart",
+              "en": "las nueve menos cuarto"
+            },
+            {
+              "mt": "filgħodu",
+              "en": "de la mañana"
+            },
+            {
+              "mt": "waranofsinhar",
+              "en": "de la tarde"
+            },
+            {
+              "mt": "filgħaxija",
+              "en": "de la noche"
+            }
+          ]
+        },
+        {
+          "title": "Dinero y pagar",
+          "items": [
+            {
+              "mt": "Kemm jiswa?",
+              "en": "¿Cuánto cuesta?"
+            },
+            {
+              "mt": "Kemm huma?",
+              "en": "¿Cuánto cuestan?"
+            },
+            {
+              "mt": "Bil-flus",
+              "en": "En efectivo"
+            },
+            {
+              "mt": "Bil-karta tal-kreditu",
+              "en": "Con tarjeta"
+            },
+            {
+              "mt": "Il-bqija",
+              "en": "El cambio"
+            },
+            {
+              "mt": "irħis",
+              "en": "barato"
+            },
+            {
+              "mt": "għali",
+              "en": "caro"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

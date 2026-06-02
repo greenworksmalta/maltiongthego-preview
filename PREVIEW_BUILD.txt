@@ -1,5 +1,5 @@
-build 20260601qq
+build 20260601rr
 VERSION 1.0.0-beta.26
-CACHE maltiongthego-1.0.0-beta.26-20260601qq
+CACHE maltiongthego-1.0.0-beta.26-20260601rr
 date 2026-06-02
-notes: fill-in (mc) audio now speaks the full phrase incl. the blank word.
+notes: Spanish U1-U9 + narration (EN) for all units; overview EN-fallback.

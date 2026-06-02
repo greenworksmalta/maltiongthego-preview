@@ -1,0 +1,836 @@
+{
+  "id": "u4",
+  "lang": "es",
+  "title": "Describir Cosas",
+  "subtitle": "Colores, tamaños, describir objetos y ropa",
+  "sections": [
+    {
+      "id": "describing",
+      "icon": "🛍️",
+      "title": "Elegir un artículo",
+      "subtitle": "Tagħżel xi ħaġa: at a clothes shop",
+      "intro": "Elegir lo que quieres por color y talla.",
+      "dialogue": [
+        {
+          "mt": "Skużani, qed infittex qmis ħamra.",
+          "en": "Disculpe, estoy buscando una camisa roja."
+        },
+        {
+          "mt": "Din il-qmis il-ħamra togħġbok?",
+          "en": "¿Te gusta esta camisa roja?"
+        },
+        {
+          "mt": "Le, grazzi — irrid waħda iżgħar.",
+          "en": "No, gracias — quiero una más pequeña."
+        },
+        {
+          "mt": "U din? Din żgħira u ħamra.",
+          "en": "¿Y esta? Esta es pequeña y roja."
+        },
+        {
+          "mt": "Perfetta! Kemm tiswa?",
+          "en": "¡Perfecta! ¿Cuánto cuesta?"
+        },
+        {
+          "mt": "Ħmistax-il ewro.",
+          "en": "Quince euros."
+        }
+      ],
+      "exercises": [
+        { "id": "desbuild", "type": "build", "max": 3, "title": "Arma las frases de la tienda", "items": [
+          { "mt": "Skużani, qed infittex qmis ħamra.", "en": "Disculpe, estoy buscando una camisa roja." },
+          { "mt": "Din il-qmis il-ħamra togħġbok?", "en": "¿Te gusta esta camisa roja?" },
+          { "mt": "Perfetta! Kemm tiswa?", "en": "¡Perfecta! ¿Cuánto cuesta?" }
+        ] }
+      ]
+    },
+    {
+      "id": "colours",
+      "icon": "🎨",
+      "title": "Colores",
+      "subtitle": "Il-kuluri: masculine, feminine, plural",
+      "intro": "La mayoría de los colores en maltés tienen tres formas: cambian según el género y el número del sustantivo que describen.",
+      "items": [
+        {
+          "mt": "abjad",
+          "feminine": "bajda",
+          "plural": "bojod",
+          "en": "blanco",
+          "examples": [
+            {
+              "mt": "ktieb abjad",
+              "en": "libro blanco"
+            },
+            {
+              "mt": "tieqa bajda",
+              "en": "ventana blanca"
+            },
+            {
+              "mt": "ħitan bojod",
+              "en": "paredes blancas"
+            }
+          ]
+        },
+        {
+          "mt": "iswed",
+          "feminine": "sewda",
+          "plural": "suwed",
+          "en": "negro",
+          "examples": [
+            {
+              "mt": "kelb iswed",
+              "en": "perro negro"
+            },
+            {
+              "mt": "tazza sewda",
+              "en": "taza negra"
+            },
+            {
+              "mt": "żraben suwed",
+              "en": "zapatos negros"
+            }
+          ]
+        },
+        {
+          "mt": "aħmar",
+          "feminine": "ħamra",
+          "plural": "ħomor",
+          "en": "rojo",
+          "examples": [
+            {
+              "mt": "qalb ħamra",
+              "en": "corazón rojo"
+            },
+            {
+              "mt": "tadama ħamra",
+              "en": "tomate rojo"
+            },
+            {
+              "mt": "fjuri ħomor",
+              "en": "flores rojas"
+            }
+          ]
+        },
+        {
+          "mt": "isfar",
+          "feminine": "safra",
+          "plural": "sofor",
+          "en": "amarillo",
+          "examples": [
+            {
+              "mt": "lumi isfar",
+              "en": "limón amarillo"
+            },
+            {
+              "mt": "ċavetta safra",
+              "en": "llave amarilla"
+            },
+            {
+              "mt": "stilel sofor",
+              "en": "estrellas amarillas"
+            }
+          ]
+        },
+        {
+          "mt": "aħdar",
+          "feminine": "ħadra",
+          "plural": "ħodor",
+          "en": "verde",
+          "examples": [
+            {
+              "mt": "ġnien aħdar",
+              "en": "jardín verde"
+            },
+            {
+              "mt": "tuffieħa ħadra",
+              "en": "manzana verde"
+            },
+            {
+              "mt": "weraq ħodor",
+              "en": "hojas verdes"
+            }
+          ]
+        },
+        {
+          "mt": "griż",
+          "feminine": "griża",
+          "plural": "griżi",
+          "en": "gris",
+          "examples": [
+            {
+              "mt": "qattus griż",
+              "en": "gato gris"
+            },
+            {
+              "mt": "sħaba griża",
+              "en": "nube gris"
+            },
+            {
+              "mt": "ġebel griż",
+              "en": "piedras grises"
+            }
+          ]
+        },
+        {
+          "mt": "blu",
+          "feminine": "blu",
+          "plural": "blu",
+          "en": "azul",
+          "examples": [
+            {
+              "mt": "baħar blu",
+              "en": "mar azul"
+            },
+            {
+              "mt": "qalziet blu",
+              "en": "pantalón azul"
+            },
+            {
+              "mt": "għajnejn blu",
+              "en": "ojos azules"
+            }
+          ]
+        },
+        {
+          "mt": "ċelesti",
+          "feminine": "ċelesti",
+          "plural": "ċelesti",
+          "en": "azul claro",
+          "examples": [
+            {
+              "mt": "sema ċelesti",
+              "en": "cielo azul claro"
+            },
+            {
+              "mt": "munita ċelesti",
+              "en": "moneda azul claro"
+            },
+            {
+              "mt": "ħitan ċelesti",
+              "en": "paredes azul claro"
+            }
+          ]
+        },
+        {
+          "mt": "roża",
+          "feminine": "roża",
+          "plural": "roża",
+          "en": "rosa",
+          "examples": [
+            {
+              "mt": "kejk roża",
+              "en": "pastel rosa"
+            },
+            {
+              "mt": "warda roża",
+              "en": "rosa rosa"
+            },
+            {
+              "mt": "bżieżaq roża",
+              "en": "globos rosas"
+            }
+          ]
+        },
+        {
+          "mt": "vjola",
+          "feminine": "vjola",
+          "plural": "vjola",
+          "en": "morado",
+          "examples": [
+            {
+              "mt": "ċoff vjola",
+              "en": "cinta morada"
+            },
+            {
+              "mt": "fjura vjola",
+              "en": "flor morada"
+            },
+            {
+              "mt": "bużżieqa vjola",
+              "en": "globo morado"
+            }
+          ]
+        },
+        {
+          "mt": "oranġjo",
+          "feminine": "oranġjo",
+          "plural": "oranġjo",
+          "en": "naranja",
+          "examples": [
+            {
+              "mt": "karozza oranġjo",
+              "en": "carro naranja"
+            },
+            {
+              "mt": "qmis oranġjo",
+              "en": "camisa naranja"
+            },
+            {
+              "mt": "inżul ix-xemx oranġjo",
+              "en": "atardecer naranja"
+            }
+          ]
+        },
+        {
+          "mt": "kannella",
+          "feminine": "kannella",
+          "plural": "kannella",
+          "en": "marrón",
+          "examples": [
+            {
+              "mt": "ċikkulata kannella",
+              "en": "chocolate marrón"
+            },
+            {
+              "mt": "borża kannella",
+              "en": "bolsa marrón"
+            },
+            {
+              "mt": "butz kannella",
+              "en": "botas marrones"
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "id": "colsort", "type": "bucket", "batch": 6, "opts": { "revealFem": true }, "title": "¿El color cambia de forma?", "instructions": "Clasifica cada color: ¿cambia según el género y el número, o se queda igual? Si aciertas uno que cambia, escucharás su forma femenina.", "choices": ["Cambia de forma", "Se queda igual"], "items": [
+          { "word": "aħmar", "answer": "Cambia de forma", "fem": "ħamra" },
+          { "word": "blu", "answer": "Se queda igual" },
+          { "word": "iswed", "answer": "Cambia de forma", "fem": "sewda" },
+          { "word": "roża", "answer": "Se queda igual" },
+          { "word": "isfar", "answer": "Cambia de forma", "fem": "safra" },
+          { "word": "vjola", "answer": "Se queda igual" },
+          { "word": "aħdar", "answer": "Cambia de forma", "fem": "ħadra" },
+          { "word": "kannella", "answer": "Se queda igual" },
+          { "word": "griż", "answer": "Cambia de forma", "fem": "griża" },
+          { "word": "oranġjo", "answer": "Se queda igual" },
+          { "word": "abjad", "answer": "Cambia de forma", "fem": "bajda" },
+          { "word": "ċelesti", "answer": "Se queda igual" }
+        ] }
+      ]
+    },
+    {
+      "id": "adjectives",
+      "icon": "✨",
+      "title": "Adjetivos",
+      "subtitle": "L-aġġettivi: opposite pairs",
+      "intro": "La mayoría de los adjetivos en maltés tienen formas masculina, femenina y plural, igual que los colores.",
+      "pairs": [
+        {
+          "a": {
+            "mt": "kbir",
+            "feminine": "kbira",
+            "plural": "kbar",
+            "en": "grande (m)"
+          },
+          "b": {
+            "mt": "żgħir",
+            "feminine": "żgħira",
+            "plural": "żgħar",
+            "en": "pequeño (m)"
+          }
+        },
+        {
+          "a": {
+            "mt": "twil",
+            "feminine": "twila",
+            "plural": "twal",
+            "en": "largo / alto (m)"
+          },
+          "b": {
+            "mt": "qasir",
+            "feminine": "qasira",
+            "plural": "qosra",
+            "en": "corto (m)"
+          }
+        },
+        {
+          "a": {
+            "mt": "sabiħ",
+            "feminine": "sabiħa",
+            "plural": "sbieħ",
+            "en": "hermoso (m)"
+          },
+          "b": {
+            "mt": "ikrah",
+            "feminine": "kerha",
+            "plural": "koroh",
+            "en": "feo (m)"
+          }
+        },
+        {
+          "a": {
+            "mt": "tajjeb",
+            "feminine": "tajba",
+            "plural": "tajbin",
+            "en": "bueno (m)"
+          },
+          "b": {
+            "mt": "ħażin",
+            "feminine": "ħażina",
+            "plural": "ħżiena",
+            "en": "malo (m)"
+          }
+        },
+        {
+          "a": {
+            "mt": "nadif",
+            "feminine": "nadifa",
+            "plural": "nodfa",
+            "en": "limpio (m)"
+          },
+          "b": {
+            "mt": "maħmuġ",
+            "feminine": "maħmuġa",
+            "plural": "maħmuġin",
+            "en": "sucio (m)"
+          }
+        },
+        {
+          "a": {
+            "mt": "ferħan",
+            "feminine": "ferħana",
+            "plural": "ferħanin",
+            "en": "contento (m)"
+          },
+          "b": {
+            "mt": "imdejjaq",
+            "feminine": "imdejqa",
+            "plural": "imdejqin",
+            "en": "triste (m)"
+          }
+        },
+        {
+          "a": {
+            "mt": "ġdid",
+            "feminine": "ġdida",
+            "plural": "ġodda",
+            "en": "nuevo (m)"
+          },
+          "b": {
+            "mt": "qadim",
+            "feminine": "qadima",
+            "plural": "qodma",
+            "en": "viejo (m)"
+          }
+        },
+        {
+          "a": {
+            "mt": "sħun",
+            "feminine": "sħuna",
+            "plural": "sħan",
+            "en": "caliente (m)"
+          },
+          "b": {
+            "mt": "kiesaħ",
+            "feminine": "kiesħa",
+            "plural": "kesħin",
+            "en": "frío (m)"
+          }
+        },
+        {
+          "a": {
+            "mt": "irħis",
+            "feminine": "rħisa",
+            "plural": "rħas",
+            "en": "barato (m)"
+          },
+          "b": {
+            "mt": "għali",
+            "feminine": "għalja",
+            "plural": "għaljin",
+            "en": "caro (m)"
+          }
+        },
+        {
+          "a": {
+            "mt": "veloċi",
+            "feminine": "veloċi",
+            "plural": "veloċi",
+            "en": "rápido"
+          },
+          "b": {
+            "mt": "bil-mod",
+            "feminine": "bil-mod",
+            "plural": "bil-mod",
+            "en": "lento"
+          }
+        },
+        {
+          "a": {
+            "mt": "qawwi",
+            "feminine": "qawwija",
+            "plural": "qawwijin",
+            "en": "fuerte (m)"
+          },
+          "b": {
+            "mt": "dgħajjef",
+            "feminine": "dgħajfa",
+            "plural": "dgħajfin",
+            "en": "débil (m)"
+          }
+        }
+      ],
+      "exercises": [
+        { "id": "adjmatch", "type": "match", "title": "Empareja cada adjetivo con su opuesto", "leftField": "mt", "rightField": "opp", "items": [
+          { "mt": "kbir", "opp": "żgħir" },
+          { "mt": "twil", "opp": "qasir" },
+          { "mt": "sabiħ", "opp": "ikrah" },
+          { "mt": "tajjeb", "opp": "ħażin" },
+          { "mt": "nadif", "opp": "maħmuġ" },
+          { "mt": "sħun", "opp": "kiesaħ" }
+        ] }
+      ]
+    },
+    {
+      "id": "clothes",
+      "icon": "👕",
+      "title": "Ropa",
+      "subtitle": "Il-ħwejjeġ: what you wear",
+      "intro": "Ropa del día a día, útil cuando vas de compras o describes a alguien.",
+      "items": [
+        {
+          "mt": "qmis",
+          "en": "camisa"
+        },
+        {
+          "mt": "flokk",
+          "en": "camiseta / suéter"
+        },
+        {
+          "mt": "qalziet",
+          "en": "pantalón"
+        },
+        {
+          "mt": "libsa",
+          "en": "vestido"
+        },
+        {
+          "mt": "dublett",
+          "en": "falda"
+        },
+        {
+          "mt": "ġakketta",
+          "en": "chaqueta"
+        },
+        {
+          "mt": "żraben",
+          "en": "zapatos"
+        },
+        {
+          "mt": "kappell",
+          "en": "sombrero"
+        },
+        {
+          "mt": "borża",
+          "en": "bolsa"
+        }
+      ],
+      "exercises": [
+        { "id": "clomatch", "type": "match", "title": "Empareja la ropa con su significado", "leftField": "mt", "rightField": "en", "items": [
+          { "mt": "qmis", "en": "camisa" },
+          { "mt": "qalziet", "en": "pantalón" },
+          { "mt": "libsa", "en": "vestido" },
+          { "mt": "ġakketta", "en": "chaqueta" },
+          { "mt": "żraben", "en": "zapatos" },
+          { "mt": "kappell", "en": "sombrero" }
+        ] }
+      ]
+    },
+    {
+      "id": "sizes",
+      "icon": "📏",
+      "title": "Tallas y descripción",
+      "subtitle": "Daqsijiet: big, small, and in between",
+      "intro": "Palabras para el tamaño; combínalas con los colores y los adjetivos.",
+      "items": [
+        {
+          "mt": "kbir",
+          "en": "grande (m)"
+        },
+        {
+          "mt": "żgħir",
+          "en": "pequeño (m)"
+        },
+        {
+          "mt": "medju",
+          "en": "mediano"
+        },
+        {
+          "mt": "twil",
+          "en": "largo / alto (m)"
+        },
+        {
+          "mt": "qasir",
+          "en": "corto (m)"
+        }
+      ],
+      "exercises": [
+        { "id": "szmc", "type": "mc", "title": "Haz que el adjetivo concuerde", "instructions": "Elige la forma de alto/largo que corresponda.", "opts": { "blankAfter": true, "audioAnswer": true }, "choices": ["twil", "twila", "twal"], "items": [
+          { "word": "raġel", "en": "hombre (m)", "answer": "twil", "mt": "raġel twil" },
+          { "word": "mara", "en": "mujer (f)", "answer": "twila", "mt": "mara twila" },
+          { "word": "tfal", "en": "niños (pl)", "answer": "twal", "mt": "tfal twal" }
+        ] }
+      ]
+    },
+    {
+      "id": "grammar4",
+      "icon": "📖",
+      "title": "Gramática",
+      "subtitle": "Il-grammatika: making words match",
+      "intro": "En maltés, las palabras que rodean a un sustantivo se adaptan a él. Así funcionan los colores y los adjetivos, y el género que hay detrás.",
+      "rules": [
+        {
+          "id": "noun-gender",
+          "title": "Cada sustantivo es masculino o femenino",
+          "explanation": "El maltés no tiene neutro; una mesa, un carro, un libro son cada uno masculino o femenino, y esa elección se extiende a las palabras que los rodean. Guía básica: -a tiende a ser femenino (mara, karozza); la mayoría de las otras terminaciones son masculinas (raġel, ktieb).",
+          "examples": [
+            {
+              "mt": "raġel",
+              "en": "hombre (m)"
+            },
+            {
+              "mt": "kelb",
+              "en": "perro (m)"
+            },
+            {
+              "mt": "nannu",
+              "en": "abuelo (m, -u)"
+            },
+            {
+              "mt": "ktieb",
+              "en": "libro (m)"
+            },
+            {
+              "mt": "mara",
+              "en": "mujer (f, -a)"
+            },
+            {
+              "mt": "kelba",
+              "en": "perra (f, -a)"
+            },
+            {
+              "mt": "tazza",
+              "en": "vaso (f, -a)"
+            },
+            {
+              "mt": "karozza",
+              "en": "carro (f, -a)"
+            }
+          ]
+        },
+        {
+          "id": "adjective-agreement",
+          "title": "Los adjetivos cambian para concordar",
+          "explanation": "Un adjetivo copia su sustantivo: forma base para masculino, +a para femenino, forma especial para plural. Alto → raġel twil / mara twila / tfal twal. Y siempre va después del sustantivo, no antes.",
+          "examples": [
+            {
+              "mt": "raġel twil",
+              "en": "un hombre alto (m)"
+            },
+            {
+              "mt": "mara twila",
+              "en": "una mujer alta (f)"
+            },
+            {
+              "mt": "tfal twal",
+              "en": "niños altos (pl)"
+            },
+            {
+              "mt": "ġnien sabiħ",
+              "en": "un jardín hermoso (m)"
+            },
+            {
+              "mt": "fjura sabiħa",
+              "en": "una flor hermosa (f)"
+            },
+            {
+              "mt": "fjuri sbieħ",
+              "en": "flores hermosas (pl)"
+            }
+          ]
+        },
+        {
+          "id": "colour-agreement",
+          "title": "Los colores también concuerdan",
+          "explanation": "Los colores son simplemente adjetivos: kelb abjad / karozza bajda / ħitan bojod. Algunos tomados del italiano (blu, roża, vjola, kannella) nunca cambian; son fáciles de recordar.",
+          "letters": [
+            "Abjad/Bajda/Bojod",
+            "Iswed/Sewda/Suwed",
+            "Aħmar/Ħamra/Ħomor",
+            "Isfar/Safra/Sofor",
+            "Aħdar/Ħadra/Ħodor"
+          ],
+          "examples": [
+            {
+              "mt": "kelb abjad",
+              "en": "un perro blanco (m)"
+            },
+            {
+              "mt": "karozza bajda",
+              "en": "un carro blanco (f)"
+            },
+            {
+              "mt": "ħitan bojod",
+              "en": "paredes blancas (pl)"
+            },
+            {
+              "mt": "ballun aħmar",
+              "en": "un balón rojo (m)"
+            },
+            {
+              "mt": "tuffieħa ħamra",
+              "en": "una manzana roja (f)"
+            },
+            {
+              "mt": "fjuri ħomor",
+              "en": "flores rojas (pl)"
+            },
+            {
+              "mt": "baħar blu",
+              "en": "el mar azul, blu no cambia"
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "id": "g4build", "type": "build", "max": 6, "title": "Arma la frase: sustantivo primero, luego el adjetivo concordante", "items": [
+          { "mt": "ktieb abjad", "en": "un libro blanco (m)" },
+          { "mt": "karozza bajda", "en": "un carro blanco (f)" },
+          { "mt": "ħitan bojod", "en": "paredes blancas (pl)" },
+          { "mt": "raġel twil", "en": "un hombre alto (m)" },
+          { "mt": "mara twila", "en": "una mujer alta (f)" },
+          { "mt": "tfal twal", "en": "niños altos (pl)" }
+        ] }
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "icon": "📚",
+      "title": "Vocabulario",
+      "subtitle": "Il-vokabularju: every word in one place",
+      "intro": "Todo lo de esta sección reunido para repasar. Toca cualquier palabra para escucharla.",
+      "groups": [
+        {
+          "title": "Colores",
+          "items": [
+            {
+              "mt": "abjad",
+              "en": "blanco"
+            },
+            {
+              "mt": "iswed",
+              "en": "negro"
+            },
+            {
+              "mt": "aħmar",
+              "en": "rojo"
+            },
+            {
+              "mt": "isfar",
+              "en": "amarillo"
+            },
+            {
+              "mt": "aħdar",
+              "en": "verde"
+            },
+            {
+              "mt": "griż",
+              "en": "gris"
+            },
+            {
+              "mt": "blu",
+              "en": "azul"
+            },
+            {
+              "mt": "ċelesti",
+              "en": "azul claro"
+            },
+            {
+              "mt": "roża",
+              "en": "rosa"
+            },
+            {
+              "mt": "vjola",
+              "en": "morado"
+            },
+            {
+              "mt": "oranġjo",
+              "en": "naranja"
+            },
+            {
+              "mt": "kannella",
+              "en": "marrón"
+            }
+          ]
+        },
+        {
+          "title": "Ropa",
+          "items": [
+            {
+              "mt": "qmis",
+              "en": "camisa"
+            },
+            {
+              "mt": "flokk",
+              "en": "camiseta / suéter"
+            },
+            {
+              "mt": "qalziet",
+              "en": "pantalón"
+            },
+            {
+              "mt": "libsa",
+              "en": "vestido"
+            },
+            {
+              "mt": "dublett",
+              "en": "falda"
+            },
+            {
+              "mt": "ġakketta",
+              "en": "chaqueta"
+            },
+            {
+              "mt": "żraben",
+              "en": "zapatos"
+            },
+            {
+              "mt": "kappell",
+              "en": "sombrero"
+            },
+            {
+              "mt": "borża",
+              "en": "bolsa"
+            }
+          ]
+        },
+        {
+          "title": "Tallas",
+          "items": [
+            {
+              "mt": "kbir",
+              "en": "grande (m)"
+            },
+            {
+              "mt": "żgħir",
+              "en": "pequeño (m)"
+            },
+            {
+              "mt": "medju",
+              "en": "mediano"
+            },
+            {
+              "mt": "twil",
+              "en": "largo / alto (m)"
+            },
+            {
+              "mt": "qasir",
+              "en": "corto (m)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

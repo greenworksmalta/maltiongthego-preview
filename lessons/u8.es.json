@@ -1,0 +1,492 @@
+{
+  "id": "u8",
+  "lang": "es",
+  "title": "Comida, Cafés y Comer Fuera",
+  "subtitle": "Pedir bebidas y comida, y pagar la cuenta",
+  "sections": [
+    {
+      "id": "atcafe",
+      "icon": "☕",
+      "title": "En el café",
+      "subtitle": "Fil-kafetterija: pedir una bebida y algo para comer",
+      "intro": "Mary y Joseph se detienen a tomar un café. Escucha cómo hacen su pedido.",
+      "dialogue": [
+        {
+          "mt": "Bonġu! X'tieħu?",
+          "en": "¡Buenos días! ¿Qué va a tomar?"
+        },
+        {
+          "mt": "Nixtieq kapuċċino, jekk jogħġbok.",
+          "en": "Quisiera un capuchino, por favor."
+        },
+        {
+          "mt": "U int, Mary?",
+          "en": "¿Y tú, Mary?"
+        },
+        {
+          "mt": "Għalija ilma bil-lumi, grazzi.",
+          "en": "Para mí agua con limón, gracias."
+        },
+        {
+          "mt": "Tridu xi ħaġa tieklu?",
+          "en": "¿Desean algo de comer?"
+        },
+        {
+          "mt": "Iva, żewġ ftajjar, jekk jogħġbok.",
+          "en": "Sí, dos ftiras, por favor."
+        }
+      ]
+    },
+    {
+      "id": "drinks",
+      "icon": "🥤",
+      "title": "Bebidas",
+      "subtitle": "Ix-xorb: qué pedir",
+      "intro": "Las bebidas que más vas a pedir. Toca cualquier palabra para escucharla.",
+      "vocab": [
+        {
+          "mt": "kafè",
+          "en": "café"
+        },
+        {
+          "mt": "kapuċċino",
+          "en": "capuchino"
+        },
+        {
+          "mt": "tè",
+          "en": "té"
+        },
+        {
+          "mt": "kikkra kafè",
+          "en": "una taza de café"
+        },
+        {
+          "mt": "kafè bil-ħalib",
+          "en": "café con leche"
+        },
+        {
+          "mt": "ilma bil-lumi",
+          "en": "agua con limón"
+        },
+        {
+          "mt": "ilma",
+          "en": "agua"
+        },
+        {
+          "mt": "flixkun ilma",
+          "en": "una botella de agua"
+        },
+        {
+          "mt": "luminata",
+          "en": "refresco"
+        },
+        {
+          "mt": "meraq tal-larinġ",
+          "en": "jugo de naranja"
+        },
+        {
+          "mt": "birra",
+          "en": "cerveza"
+        },
+        {
+          "mt": "inbid",
+          "en": "vino"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "drinkmatch",
+          "type": "match",
+          "title": "Relaciona la bebida con su significado",
+          "leftField": "mt",
+          "rightField": "en",
+          "items": [
+            {
+              "mt": "kafè",
+              "en": "café"
+            },
+            {
+              "mt": "tè",
+              "en": "té"
+            },
+            {
+              "mt": "ilma",
+              "en": "agua"
+            },
+            {
+              "mt": "luminata",
+              "en": "refresco"
+            },
+            {
+              "mt": "inbid",
+              "en": "vino"
+            },
+            {
+              "mt": "birra",
+              "en": "cerveza"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "foodtypes",
+      "icon": "🍽️",
+      "title": "Comida",
+      "subtitle": "L-ikel: bocadillos y platos malteses",
+      "intro": "Alimentos del día a día y algunos favoritos malteses.",
+      "items": [
+        {
+          "mt": "ħobż",
+          "en": "pan"
+        },
+        {
+          "mt": "ftira",
+          "en": "pan plano maltés"
+        },
+        {
+          "mt": "pastizz",
+          "en": "pastizz (masa salada)"
+        },
+        {
+          "mt": "ravjul",
+          "en": "ravioli"
+        },
+        {
+          "mt": "timpana",
+          "en": "pastel de pasta horneado"
+        },
+        {
+          "mt": "fenek",
+          "en": "conejo"
+        },
+        {
+          "mt": "ġbejna",
+          "en": "quesito maltés"
+        },
+        {
+          "mt": "insalata",
+          "en": "ensalada"
+        },
+        {
+          "mt": "soppa",
+          "en": "sopa"
+        },
+        {
+          "mt": "ġelat",
+          "en": "helado"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "foodlisten",
+          "type": "listen",
+          "items": [
+            {
+              "mt": "ħobż",
+              "en": "pan"
+            },
+            {
+              "mt": "ftira",
+              "en": "pan plano maltés"
+            },
+            {
+              "mt": "fenek",
+              "en": "conejo"
+            },
+            {
+              "mt": "soppa",
+              "en": "sopa"
+            },
+            {
+              "mt": "ġelat",
+              "en": "helado"
+            },
+            {
+              "mt": "insalata",
+              "en": "ensalada"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ordering",
+      "icon": "🧾",
+      "title": "Pedir y pagar",
+      "subtitle": "Tordna u tħallas: las frases que necesitas",
+      "intro": "Desde hacer el pedido hasta pedir la cuenta.",
+      "vocab": [
+        {
+          "mt": "Nixtieq…",
+          "en": "Quisiera…"
+        },
+        {
+          "mt": "Jien nieħu…",
+          "en": "Voy a tomar…"
+        },
+        {
+          "mt": "Għalija…",
+          "en": "Para mí…"
+        },
+        {
+          "mt": "X'tieħu?",
+          "en": "¿Qué va a tomar?"
+        },
+        {
+          "mt": "Kemm jiswa?",
+          "en": "¿Cuánto cuesta?"
+        },
+        {
+          "mt": "Il-kont, jekk jogħġbok",
+          "en": "La cuenta, por favor"
+        },
+        {
+          "mt": "Bnin!",
+          "en": "¡Delicioso!"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "orderbuild",
+          "type": "build",
+          "items": [
+            {
+              "mt": "Nixtieq kapuċċino, jekk jogħġbok",
+              "en": "Quisiera un capuchino, por favor"
+            },
+            {
+              "mt": "Jien nieħu ftira",
+              "en": "Voy a tomar una ftira"
+            },
+            {
+              "mt": "Il-kont, jekk jogħġbok",
+              "en": "La cuenta, por favor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar8",
+      "icon": "📖",
+      "title": "Gramática",
+      "subtitle": "Il-grammatika: pedir, y decir 'con'",
+      "intro": "Cómo preguntar, pedir y añadir leche o limón a cualquier cosa.",
+      "rules": [
+        {
+          "id": "what-will-you-have",
+          "title": "Hacer y responder un pedido",
+          "explanation": "El personal pregunta X'tieħu? (¿qué va a tomar?). Respondes con Jien nieħu… (voy a tomar…) o la forma más cortés Nixtieq… (quisiera…). Añade jekk jogħġbok para ser cortés.",
+          "examples": [
+            {
+              "mt": "X'tieħu?",
+              "en": "¿Qué va a tomar?"
+            },
+            {
+              "mt": "Jien nieħu kapuċċino.",
+              "en": "Voy a tomar un capuchino."
+            },
+            {
+              "mt": "Nixtieq ftira, jekk jogħġbok.",
+              "en": "Quisiera una ftira, por favor."
+            }
+          ]
+        },
+        {
+          "id": "with-bil",
+          "title": "Decir 'con': bil-",
+          "explanation": "Para agregar algo, usa bil- (con). Sigue la misma regla 'Xemxin'/'Qamrin' que el artículo: antes de la mayoría de las letras se queda como bil- (bil-ħalib, bil-lumi), pero antes de una consonante 'Xemxin' se dobla (biz-zokkor, con azúcar).",
+          "examples": [
+            {
+              "mt": "kafè bil-ħalib",
+              "en": "café con leche"
+            },
+            {
+              "mt": "ilma bil-lumi",
+              "en": "agua con limón"
+            },
+            {
+              "mt": "kapuċċino biz-zokkor",
+              "en": "capuchino con azúcar"
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "withmc",
+          "type": "mc",
+          "choices": [
+            "bil-",
+            "biz-"
+          ],
+          "items": [
+            {
+              "word": "kafè ___ ħalib",
+              "answer": "bil-",
+              "en": "café con leche",
+              "mt": "kafè bil-ħalib"
+            },
+            {
+              "word": "ilma ___ lumi",
+              "answer": "bil-",
+              "en": "agua con limón",
+              "mt": "ilma bil-lumi"
+            },
+            {
+              "word": "kapuċċino ___ zokkor",
+              "answer": "biz-",
+              "en": "capuchino con azúcar",
+              "mt": "kapuċċino biz-zokkor"
+            }
+          ],
+          "opts": {
+            "rawPrompt": true,
+            "audioAnswer": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "icon": "📚",
+      "title": "Vocabulario",
+      "subtitle": "Il-vokabularju: todas las palabras en un solo lugar",
+      "intro": "Todo de esta unidad, reunido para repasar. Toca cualquier palabra para escucharla.",
+      "groups": [
+        {
+          "title": "Bebidas",
+          "items": [
+            {
+              "mt": "kafè",
+              "en": "café"
+            },
+            {
+              "mt": "kapuċċino",
+              "en": "capuchino"
+            },
+            {
+              "mt": "tè",
+              "en": "té"
+            },
+            {
+              "mt": "kikkra kafè",
+              "en": "una taza de café"
+            },
+            {
+              "mt": "kafè bil-ħalib",
+              "en": "café con leche"
+            },
+            {
+              "mt": "ilma bil-lumi",
+              "en": "agua con limón"
+            },
+            {
+              "mt": "ilma",
+              "en": "agua"
+            },
+            {
+              "mt": "flixkun ilma",
+              "en": "una botella de agua"
+            },
+            {
+              "mt": "luminata",
+              "en": "refresco"
+            },
+            {
+              "mt": "meraq tal-larinġ",
+              "en": "jugo de naranja"
+            },
+            {
+              "mt": "birra",
+              "en": "cerveza"
+            },
+            {
+              "mt": "inbid",
+              "en": "vino"
+            }
+          ]
+        },
+        {
+          "title": "Comida",
+          "items": [
+            {
+              "mt": "ħobż",
+              "en": "pan"
+            },
+            {
+              "mt": "ftira",
+              "en": "pan plano maltés"
+            },
+            {
+              "mt": "pastizz",
+              "en": "pastizz (masa salada)"
+            },
+            {
+              "mt": "ravjul",
+              "en": "ravioli"
+            },
+            {
+              "mt": "timpana",
+              "en": "pastel de pasta horneado"
+            },
+            {
+              "mt": "fenek",
+              "en": "conejo"
+            },
+            {
+              "mt": "ġbejna",
+              "en": "quesito maltés"
+            },
+            {
+              "mt": "insalata",
+              "en": "ensalada"
+            },
+            {
+              "mt": "soppa",
+              "en": "sopa"
+            },
+            {
+              "mt": "ġelat",
+              "en": "helado"
+            }
+          ]
+        },
+        {
+          "title": "Pedir y pagar",
+          "items": [
+            {
+              "mt": "Nixtieq…",
+              "en": "Quisiera…"
+            },
+            {
+              "mt": "Jien nieħu…",
+              "en": "Voy a tomar…"
+            },
+            {
+              "mt": "Għalija…",
+              "en": "Para mí…"
+            },
+            {
+              "mt": "X'tieħu?",
+              "en": "¿Qué va a tomar?"
+            },
+            {
+              "mt": "Kemm jiswa?",
+              "en": "¿Cuánto cuesta?"
+            },
+            {
+              "mt": "Il-kont, jekk jogħġbok",
+              "en": "La cuenta, por favor"
+            },
+            {
+              "mt": "Bnin!",
+              "en": "¡Delicioso!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

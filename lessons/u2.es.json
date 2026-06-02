@@ -1,0 +1,767 @@
+{
+  "id": "u2",
+  "lang": "es",
+  "title": "Números e Información Cotidiana",
+  "subtitle": "Números, decenas, dinero, edad, meses",
+  "sections": [
+    {
+      "id": "buying",
+      "icon": "🛒",
+      "title": "Comprar algo pequeño",
+      "subtitle": "Nixtri xi ħaġa: numbers, prices, paying",
+      "intro": "Comprando pastizzi en el mostrador.",
+      "dialogue": [
+        {
+          "mt": "Bonġu, kemm jiswa dan il-pastizz?",
+          "en": "Buenos días, ¿cuánto cuesta este pastizz?"
+        },
+        {
+          "mt": "Tletin ċenteżmu.",
+          "en": "Treinta centavos."
+        },
+        {
+          "mt": "U żewġ pastizzi?",
+          "en": "¿Y dos pastizzi?"
+        },
+        {
+          "mt": "Sittin ċenteżmu.",
+          "en": "Sesenta centavos."
+        },
+        {
+          "mt": "Tajjeb, nieħu tnejn.",
+          "en": "Bien, voy a llevar dos."
+        },
+        {
+          "mt": "Hawn huma. Grazzi!",
+          "en": "Aquí están. ¡Gracias!"
+        }
+      ]
+    },
+    {
+      "id": "numbers",
+      "icon": "🔢",
+      "title": "Números del 1 al 30",
+      "subtitle": "In-numri: counting in Maltese",
+      "intro": "Contando del uno al treinta: las bases para precios, edad y fechas.",
+      "items": [
+        {
+          "n": 1,
+          "mt": "wieħed",
+          "en": "uno"
+        },
+        {
+          "n": 2,
+          "mt": "tnejn",
+          "en": "dos"
+        },
+        {
+          "n": 3,
+          "mt": "tlieta",
+          "en": "tres"
+        },
+        {
+          "n": 4,
+          "mt": "erbgħa",
+          "en": "cuatro"
+        },
+        {
+          "n": 5,
+          "mt": "ħamsa",
+          "en": "cinco"
+        },
+        {
+          "n": 6,
+          "mt": "sitta",
+          "en": "seis"
+        },
+        {
+          "n": 7,
+          "mt": "sebgħa",
+          "en": "siete"
+        },
+        {
+          "n": 8,
+          "mt": "tmienja",
+          "en": "ocho"
+        },
+        {
+          "n": 9,
+          "mt": "disgħa",
+          "en": "nueve"
+        },
+        {
+          "n": 10,
+          "mt": "għaxra",
+          "en": "diez"
+        },
+        {
+          "n": 11,
+          "mt": "ħdax",
+          "en": "once"
+        },
+        {
+          "n": 12,
+          "mt": "tnax",
+          "en": "doce"
+        },
+        {
+          "n": 13,
+          "mt": "tlettax",
+          "en": "trece"
+        },
+        {
+          "n": 14,
+          "mt": "erbatax",
+          "en": "catorce"
+        },
+        {
+          "n": 15,
+          "mt": "ħmistax",
+          "en": "quince"
+        },
+        {
+          "n": 16,
+          "mt": "sittax",
+          "en": "dieciséis"
+        },
+        {
+          "n": 17,
+          "mt": "sbatax",
+          "en": "diecisiete"
+        },
+        {
+          "n": 18,
+          "mt": "tmintax",
+          "en": "dieciocho"
+        },
+        {
+          "n": 19,
+          "mt": "dsatax",
+          "en": "diecinueve"
+        },
+        {
+          "n": 20,
+          "mt": "għoxrin",
+          "en": "veinte"
+        },
+        {
+          "n": 21,
+          "mt": "wieħed u għoxrin",
+          "en": "veintiuno"
+        },
+        {
+          "n": 22,
+          "mt": "tnejn u għoxrin",
+          "en": "veintidós"
+        },
+        {
+          "n": 23,
+          "mt": "tlieta u għoxrin",
+          "en": "veintitrés"
+        },
+        {
+          "n": 24,
+          "mt": "erbgħa u għoxrin",
+          "en": "veinticuatro"
+        },
+        {
+          "n": 25,
+          "mt": "ħamsa u għoxrin",
+          "en": "veinticinco"
+        },
+        {
+          "n": 26,
+          "mt": "sitta u għoxrin",
+          "en": "veintiséis"
+        },
+        {
+          "n": 27,
+          "mt": "sebgħa u għoxrin",
+          "en": "veintisiete"
+        },
+        {
+          "n": 28,
+          "mt": "tmienja u għoxrin",
+          "en": "veintiocho"
+        },
+        {
+          "n": 29,
+          "mt": "disgħa u għoxrin",
+          "en": "veintinueve"
+        },
+        {
+          "n": 30,
+          "mt": "tletin",
+          "en": "treinta"
+        }
+      ],
+      "ordinalsIntro": "Los números ordinales indican posición u orden (primero, segundo, tercero). En maltés llevan el artículo y van antes del sustantivo: l-ewwel ġurnata (el primer día), it-tieni triq (la segunda calle).",
+      "ordinals": [
+        {
+          "mt": "L-ewwel",
+          "en": "Primero"
+        },
+        {
+          "mt": "It-tieni",
+          "en": "Segundo"
+        },
+        {
+          "mt": "It-tielet",
+          "en": "Tercero"
+        },
+        {
+          "mt": "Ir-raba'",
+          "en": "Cuarto"
+        },
+        {
+          "mt": "Il-ħames",
+          "en": "Quinto"
+        },
+        {
+          "mt": "Is-sitt",
+          "en": "Sexto"
+        },
+        {
+          "mt": "Is-seba'",
+          "en": "Séptimo"
+        },
+        {
+          "mt": "It-tmien",
+          "en": "Octavo"
+        },
+        {
+          "mt": "Id-disa'",
+          "en": "Noveno"
+        },
+        {
+          "mt": "L-għaxar",
+          "en": "Décimo"
+        }
+      ]
+    },
+    {
+      "id": "tens",
+      "icon": "🔢",
+      "title": "Decenas y cien",
+      "subtitle": "Għexieren: counting in tens",
+      "intro": "Las decenas, más el cero y el cien. Para contar los números intermedios, di primero la unidad, luego 'u' (y), y después la decena: wieħed u ħamsin (51), tnejn u ħamsin (52), tlieta u sittin (63).",
+      "items": [
+        {
+          "mt": "żero",
+          "en": "cero"
+        },
+        {
+          "mt": "erbgħin",
+          "en": "cuarenta"
+        },
+        {
+          "mt": "ħamsin",
+          "en": "cincuenta"
+        },
+        {
+          "mt": "sittin",
+          "en": "sesenta"
+        },
+        {
+          "mt": "sebgħin",
+          "en": "setenta"
+        },
+        {
+          "mt": "tmenin",
+          "en": "ochenta"
+        },
+        {
+          "mt": "disgħin",
+          "en": "noventa"
+        },
+        {
+          "mt": "mija",
+          "en": "cien"
+        }
+      ]
+    },
+    {
+      "id": "money",
+      "icon": "💶",
+      "title": "Dinero y edad",
+      "subtitle": "Flus u età: prices, age, phone",
+      "intro": "Hablando de dinero, tu edad y números de teléfono.",
+      "items": [
+        {
+          "mt": "flus",
+          "en": "dinero"
+        },
+        {
+          "mt": "ewro",
+          "en": "euro"
+        },
+        {
+          "mt": "ċenteżmu / ċenteżmi",
+          "en": "centavo / centavos"
+        },
+        {
+          "mt": "Kemm jiswa?",
+          "en": "¿Cuánto cuesta?"
+        },
+        {
+          "mt": "Bil-flus",
+          "en": "en efectivo"
+        },
+        {
+          "mt": "Bil-karta tal-kreditu",
+          "en": "con (tarjeta de) crédito"
+        },
+        {
+          "mt": "Kemm għandek żmien?",
+          "en": "¿Cuántos años tienes?"
+        },
+        {
+          "mt": "Għandi tletin sena.",
+          "en": "Tengo treinta años."
+        },
+        {
+          "mt": "in-numru tat-telefon",
+          "en": "el número de teléfono"
+        },
+        {
+          "mt": "X'inhu n-numru tiegħek?",
+          "en": "¿Cuál es tu número?"
+        }
+      ]
+    },
+    {
+      "id": "months",
+      "icon": "📆",
+      "title": "Meses",
+      "subtitle": "Ix-xhur: months of the year",
+      "intro": "Los doce meses del año.",
+      "items": [
+        {
+          "mt": "Jannar",
+          "en": "enero"
+        },
+        {
+          "mt": "Frar",
+          "en": "febrero"
+        },
+        {
+          "mt": "Marzu",
+          "en": "marzo"
+        },
+        {
+          "mt": "April",
+          "en": "abril"
+        },
+        {
+          "mt": "Mejju",
+          "en": "mayo"
+        },
+        {
+          "mt": "Ġunju",
+          "en": "junio"
+        },
+        {
+          "mt": "Lulju",
+          "en": "julio"
+        },
+        {
+          "mt": "Awwissu",
+          "en": "agosto"
+        },
+        {
+          "mt": "Settembru",
+          "en": "septiembre"
+        },
+        {
+          "mt": "Ottubru",
+          "en": "octubre"
+        },
+        {
+          "mt": "Novembru",
+          "en": "noviembre"
+        },
+        {
+          "mt": "Diċembru",
+          "en": "diciembre"
+        }
+      ]
+    },
+    {
+      "id": "grammar2",
+      "icon": "📖",
+      "title": "Gramática",
+      "subtitle": "In-numri: counting, and how it bends the noun",
+      "intro": "Contar en maltés hace algo que el español nunca hace: el número cambia el sustantivo que lo sigue. Aquí te lo explicamos, más primero, segundo, tercero.",
+      "rules": [
+        {
+          "id": "numbers-noun-rule",
+          "title": "Contar tiene dos marchas",
+          "explanation": "El maltés cambia de marcha al contar, y tres cosas siguen al número. 'Dos' antes de un sustantivo es żewġ, no tnejn (żewġ pastizzi). Los números del 3 al 10 se reducen (tlieta→tliet, ħamsa→ħames, għaxra→għaxar) y el sustantivo va en plural (tliet snin, tres años). A partir del 11 el número se une con -il y el sustantivo vuelve al singular (ħdax-il sena, once años). Compara għaxar snin (10 años, plural) con tlieta u għoxrin sena (23 años, singular). El español nunca hace esto, así que dale unas cuantas repeticiones.",
+          "examples": [
+            {
+              "mt": "Għandi tliet kotba",
+              "en": "Tengo 3 libros (3 + sustantivo plural)"
+            },
+            {
+              "mt": "Għandi għaxar kotba",
+              "en": "Tengo 10 libros (10 + sustantivo plural)"
+            },
+            {
+              "mt": "Għandi tlieta u għoxrin ktieb",
+              "en": "Tengo 23 libros (23 + sustantivo singular)"
+            },
+            {
+              "mt": "Għandi ħamsa u ħamsin ktieb",
+              "en": "Tengo 55 libros (55 + sustantivo singular)"
+            }
+          ]
+        },
+        {
+          "id": "ordinals",
+          "title": "Poner las cosas en orden",
+          "explanation": "Primero, segundo, tercero siempre van con 'el/la': l-ewwel, it-tieni, it-tielet. A partir del décimo, usa el número simple con 'el/la' (il-wieħed u għoxrin = 21°).",
+          "letters": [
+            "L-ewwel",
+            "It-tieni",
+            "It-tielet",
+            "Ir-raba'",
+            "Il-ħames",
+            "Is-sitt",
+            "Is-seba'",
+            "It-tmien",
+            "Id-disa'",
+            "L-għaxar"
+          ],
+          "examples": [
+            {
+              "mt": "L-ewwel ġurnata",
+              "en": "El primer día"
+            },
+            {
+              "mt": "It-tieni triq fuq il-lemin",
+              "en": "La segunda calle a la derecha"
+            },
+            {
+              "mt": "Fit-tellieqa spiċċajt il-wieħed u għoxrin",
+              "en": "En la carrera llegué en el 21° lugar"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "icon": "📚",
+      "title": "Vocabulario",
+      "subtitle": "Il-vokabularju: every word in one place",
+      "intro": "Todo de esta sección, reunido para repasar. Toca cualquier palabra para escucharla.",
+      "groups": [
+        {
+          "title": "Números del 1 al 30",
+          "items": [
+            {
+              "mt": "wieħed",
+              "en": "uno"
+            },
+            {
+              "mt": "tnejn",
+              "en": "dos"
+            },
+            {
+              "mt": "tlieta",
+              "en": "tres"
+            },
+            {
+              "mt": "erbgħa",
+              "en": "cuatro"
+            },
+            {
+              "mt": "ħamsa",
+              "en": "cinco"
+            },
+            {
+              "mt": "sitta",
+              "en": "seis"
+            },
+            {
+              "mt": "sebgħa",
+              "en": "siete"
+            },
+            {
+              "mt": "tmienja",
+              "en": "ocho"
+            },
+            {
+              "mt": "disgħa",
+              "en": "nueve"
+            },
+            {
+              "mt": "għaxra",
+              "en": "diez"
+            },
+            {
+              "mt": "ħdax",
+              "en": "once"
+            },
+            {
+              "mt": "tnax",
+              "en": "doce"
+            },
+            {
+              "mt": "tlettax",
+              "en": "trece"
+            },
+            {
+              "mt": "erbatax",
+              "en": "catorce"
+            },
+            {
+              "mt": "ħmistax",
+              "en": "quince"
+            },
+            {
+              "mt": "sittax",
+              "en": "dieciséis"
+            },
+            {
+              "mt": "sbatax",
+              "en": "diecisiete"
+            },
+            {
+              "mt": "tmintax",
+              "en": "dieciocho"
+            },
+            {
+              "mt": "dsatax",
+              "en": "diecinueve"
+            },
+            {
+              "mt": "għoxrin",
+              "en": "veinte"
+            },
+            {
+              "mt": "wieħed u għoxrin",
+              "en": "veintiuno"
+            },
+            {
+              "mt": "tnejn u għoxrin",
+              "en": "veintidós"
+            },
+            {
+              "mt": "tlieta u għoxrin",
+              "en": "veintitrés"
+            },
+            {
+              "mt": "erbgħa u għoxrin",
+              "en": "veinticuatro"
+            },
+            {
+              "mt": "ħamsa u għoxrin",
+              "en": "veinticinco"
+            },
+            {
+              "mt": "sitta u għoxrin",
+              "en": "veintiséis"
+            },
+            {
+              "mt": "sebgħa u għoxrin",
+              "en": "veintisiete"
+            },
+            {
+              "mt": "tmienja u għoxrin",
+              "en": "veintiocho"
+            },
+            {
+              "mt": "disgħa u għoxrin",
+              "en": "veintinueve"
+            },
+            {
+              "mt": "tletin",
+              "en": "treinta"
+            }
+          ]
+        },
+        {
+          "title": "Ordinales",
+          "items": [
+            {
+              "mt": "L-ewwel",
+              "en": "Primero"
+            },
+            {
+              "mt": "It-tieni",
+              "en": "Segundo"
+            },
+            {
+              "mt": "It-tielet",
+              "en": "Tercero"
+            },
+            {
+              "mt": "Ir-raba'",
+              "en": "Cuarto"
+            },
+            {
+              "mt": "Il-ħames",
+              "en": "Quinto"
+            },
+            {
+              "mt": "Is-sitt",
+              "en": "Sexto"
+            },
+            {
+              "mt": "Is-seba'",
+              "en": "Séptimo"
+            },
+            {
+              "mt": "It-tmien",
+              "en": "Octavo"
+            },
+            {
+              "mt": "Id-disa'",
+              "en": "Noveno"
+            },
+            {
+              "mt": "L-għaxar",
+              "en": "Décimo"
+            }
+          ]
+        },
+        {
+          "title": "Decenas y cien",
+          "items": [
+            {
+              "mt": "żero",
+              "en": "cero"
+            },
+            {
+              "mt": "erbgħin",
+              "en": "cuarenta"
+            },
+            {
+              "mt": "ħamsin",
+              "en": "cincuenta"
+            },
+            {
+              "mt": "sittin",
+              "en": "sesenta"
+            },
+            {
+              "mt": "sebgħin",
+              "en": "setenta"
+            },
+            {
+              "mt": "tmenin",
+              "en": "ochenta"
+            },
+            {
+              "mt": "disgħin",
+              "en": "noventa"
+            },
+            {
+              "mt": "mija",
+              "en": "cien"
+            }
+          ]
+        },
+        {
+          "title": "Dinero, edad y teléfono",
+          "items": [
+            {
+              "mt": "flus",
+              "en": "dinero"
+            },
+            {
+              "mt": "ewro",
+              "en": "euro"
+            },
+            {
+              "mt": "ċenteżmu / ċenteżmi",
+              "en": "centavo / centavos"
+            },
+            {
+              "mt": "Kemm jiswa?",
+              "en": "¿Cuánto cuesta?"
+            },
+            {
+              "mt": "Bil-flus",
+              "en": "en efectivo"
+            },
+            {
+              "mt": "Bil-karta tal-kreditu",
+              "en": "con (tarjeta de) crédito"
+            },
+            {
+              "mt": "Kemm għandek żmien?",
+              "en": "¿Cuántos años tienes?"
+            },
+            {
+              "mt": "Għandi tletin sena.",
+              "en": "Tengo treinta años."
+            },
+            {
+              "mt": "in-numru tat-telefon",
+              "en": "el número de teléfono"
+            },
+            {
+              "mt": "X'inhu n-numru tiegħek?",
+              "en": "¿Cuál es tu número?"
+            }
+          ]
+        },
+        {
+          "title": "Meses",
+          "items": [
+            {
+              "mt": "Jannar",
+              "en": "enero"
+            },
+            {
+              "mt": "Frar",
+              "en": "febrero"
+            },
+            {
+              "mt": "Marzu",
+              "en": "marzo"
+            },
+            {
+              "mt": "April",
+              "en": "abril"
+            },
+            {
+              "mt": "Mejju",
+              "en": "mayo"
+            },
+            {
+              "mt": "Ġunju",
+              "en": "junio"
+            },
+            {
+              "mt": "Lulju",
+              "en": "julio"
+            },
+            {
+              "mt": "Awwissu",
+              "en": "agosto"
+            },
+            {
+              "mt": "Settembru",
+              "en": "septiembre"
+            },
+            {
+              "mt": "Ottubru",
+              "en": "octubre"
+            },
+            {
+              "mt": "Novembru",
+              "en": "noviembre"
+            },
+            {
+              "mt": "Diċembru",
+              "en": "diciembre"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
