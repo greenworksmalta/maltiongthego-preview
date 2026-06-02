@@ -18,7 +18,7 @@
     {"mt": "Minn fejn int?"},
     {"en": "And to answer — I'm from England, but now I live in Malta:"},
     {"mt": "Jien Ingliża, imma issa ngħix Malta."},
-    {"en": "Notice **Jien** for 'I', and **ngħix** — I live. Compact and confident! 💪"},
+    {"en": "Notice the word for 'I', and the verb meaning 'I live'. Compact and confident! 💪"},
 
     {"en": "💬 PART 2 — PHRASES 💬", "kind": "header"},
     {"en": "The phrases you'll use from day one. To say hello:"},
@@ -99,7 +99,7 @@
     {"en": "time. ⏰"},
     {"en": "And finally the digraph — two letters, one sound:"},
     {"mt": "għ"},
-    {"en": "Mostly silent — it stretches the vowel next to it. Important: always write the full ligature **għ**, never just 'gh'. ✨", "kind": "key"},
+    {"en": "Mostly silent — it stretches the vowel next to it. Important: always write the full ligature, never the plain two-letter version. ✨", "kind": "key"},
     {"en": "Maltese is **mostly phonetic**. Once you know the sounds, you can read almost anything. That's a superpower English learners rarely get. 🎯"},
     {"en": "There's also one vowel you won't find in English — **ie**, written with two letters but counting as one. As in:"},
     {"mt": "tieqa"},
@@ -125,7 +125,7 @@
     {"en": "'The eye':"},
     {"mt": "l-għajn"},
 
-    {"en": "GROUP 3 — the **'Xemxin' consonants**: these nine letters copy the article sound, doubling up. The nine are: ċ, d, n, r, s, t, x, ż, z. 🌞", "kind": "rule"},
+    {"en": "GROUP 3 — the **'Xemxin' consonants**: these nine letters copy the article sound, doubling up. You'll find the full list in the lesson cards. 🌞", "kind": "rule"},
     {"en": "So 'the house':"},
     {"mt": "id-dar"},
     {"en": "'The man':"},
@@ -136,7 +136,7 @@
     {"mt": "ix-xahar"},
     {"en": "There's one special exception: **sk-, sp-, st-** clusters take **l-** plus a helping **i**. So 'the school' is:"},
     {"mt": "l-iskola"},
-    {"en": "Never 'is-skola'. That cluster just doesn't double.", "kind": "tip"},
+    {"en": "Never the doubled form. That cluster just doesn't follow the doubling rule.", "kind": "tip"},
     {"en": "Don't try to memorise all the rules at once. The exercises drill them in the easy way. Your ears learn faster than your brain. 👂", "kind": "tip"},
 
     {"en": "✅ DONE!", "kind": "win"},

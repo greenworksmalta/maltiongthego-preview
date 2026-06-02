@@ -7,7 +7,7 @@
     {"en": "Four sections this unit: a **café dialogue**, **drinks** vocabulary, **Maltese food**, and **ordering and paying**. Plus a handy grammar point on saying 'with'. Let's get started!"},
 
     {"en": "☕ PART 1 — AT THE CAFÉ ☕", "kind": "header"},
-    {"en": "Malta runs on coffee. So let's start where everyone starts — the kafetterija. 🇲🇹"},
+    {"en": "Malta runs on coffee. So let's start where everyone starts — the local café. 🇲🇹"},
     {"en": "The waiter opens with — Good morning! What will you have?"},
     {"mt": "Bonġu! X'tieħu?"},
     {"en": "Joseph answers — I'd like a cappuccino, please:"},
@@ -21,7 +21,7 @@
     {"en": "They say yes — two ftiras, please:"},
     {"mt": "Iva, żewġ ftajjar, jekk jogħġbok."},
     {"en": "Three key ordering phrases from that exchange. Memorise these three and you can order anything:", "kind": "key"},
-    {"en": "**Nixtieq** — I'd like. **X'tieħu?** — What will you have? **Jekk jogħġbok** — please. 🙌"},
+    {"en": "The phrase for 'I'd like'. The phrase for 'What will you have?' And the word for 'please'. 🙌"},
 
     {"en": "🥤 PART 2 — DRINKS 🥤", "kind": "header"},
     {"en": "The drinks menu. Start with the essentials."},
@@ -92,8 +92,8 @@
     {"en": "Delicious! 😋"},
 
     {"en": "📖 GRAMMAR NOTE — BIL- 📖", "kind": "header"},
-    {"en": "One tidy grammar point this unit: how to say 'with'. The prefix is **bil-**.", "kind": "rule"},
-    {"en": "Before most letters, **bil-** stays as is:"},
+    {"en": "One tidy grammar point this unit: how to say 'with'. It uses a little prefix.", "kind": "rule"},
+    {"en": "Before most letters, that prefix stays as is:"},
     {"mt": "kafè bil-ħalib"},
     {"en": "Coffee with milk."},
     {"mt": "ilma bil-lumi"},
@@ -103,8 +103,9 @@
     {"en": "Cappuccino with sugar. The z doubles. Same logic you learned in Unit 1 with the definite article. Pattern recognised! 🧠", "kind": "key"},
 
     {"en": "✅ DONE!", "kind": "win"},
-    {"en": "Café dialogue. Drinks. Maltese food. Ordering and paying. Plus bil- for 'with'. That's Unit 8."},
-    {"en": "Next time you're at a pastizzerija, try ordering in Maltese. You've got the words. 💪"},
-    {"en": "Saħħa! 🇲🇹"}
+    {"en": "Café dialogue. Drinks. Maltese food. Ordering and paying. Plus the little word for 'with'. That's Unit 8."},
+    {"en": "Next time you're at a Maltese snack bar, try ordering in Maltese. You've got the words. 💪"},
+    {"mt": "Saħħa!"},
+    {"en": "Bye for now! 🇲🇹"}
   ]
 }

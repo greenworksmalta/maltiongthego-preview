@@ -35,12 +35,12 @@
     {"en": "Where did you go?"},
     {"en": "What? (or how many?)"},
     {"mt": "Xi?"},
-    {"en": "Also said as Xiex. Example:"},
+    {"en": "Also said with a longer form. Example:"},
     {"mt": "Xi trid tixrob, kapuċċino jew te?"},
     {"en": "What do you want to drink, a cappuccino or tea?"},
     {"en": "Why?"},
     {"mt": "Għaliex?"},
-    {"en": "Also said as Għala. Example:"},
+    {"en": "Also said in a shorter form. Example:"},
     {"mt": "Għaliex wasalt tard?"},
     {"en": "Why did you arrive late?"},
     {"en": "When?"},
@@ -68,8 +68,8 @@
     {"en": "🗺️ PART 3 — DIRECTIONS 🗺️", "kind": "header"},
     {"en": "The polite, foolproof way to ask for directions. This opener works every time:", "kind": "rule"},
     {"mt": "Skużani. Tista' tgħidli fejn hi l-iskola, jekk jogħġbok?"},
-    {"en": "Excuse me. Can you tell me where the school is, please? Note: **Tista'** means 'Can you' — the polite request form. 💡"},
-    {"en": "Match the gender of the place: use **hi** for feminine places like l-iskola, and **hu** for masculine like l-isptar:"},
+    {"en": "Excuse me. Can you tell me where the school is, please? Note: the opener there means 'Can you' — that's the polite request form. 💡"},
+    {"en": "Match the gender of the place: use the feminine form for places like the school, and the masculine form for places like the hospital:"},
     {"mt": "Skużi. Tista' tgħidli fejn hu l-isptar, jekk jogħġbok?"},
     {"en": "Excuse me. Can you tell me where the hospital is, please? 🏥"},
     {"en": "Now the direction words you'll hear in the answer. Right:"},
@@ -107,11 +107,12 @@
     {"en": "South."},
     {"mt": "Punent"},
     {"en": "West."},
-    {"en": "Plus four diagonals: Grigal, Xlokk, Lbiċ, Majjistral — north-east, south-east, south-west, north-west. Always capitalised in writing.", "kind": "fact"},
+    {"en": "Plus four diagonals for north-east, south-east, south-west, and north-west. Always capitalised in writing.", "kind": "fact"},
 
     {"en": "✅ DONE!", "kind": "win"},
     {"en": "Directions dialogue. Eight question words. Asking your way politely. That's Unit 7."},
-    {"en": "Min, Fejn, Kif — three of those eight will handle 80% of your daily questions. Start there. 💪"},
-    {"en": "Saħħa! 🇲🇹"}
+    {"en": "Three of those eight question words — 'who', 'where', and 'how' — will handle 80% of your daily questions. Start there. 💪"},
+    {"mt": "Saħħa!"},
+    {"en": "Bye for now! 🇲🇹"}
   ]
 }

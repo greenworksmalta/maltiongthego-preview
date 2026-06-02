@@ -7,7 +7,7 @@
     {"en": "Four sections today: a **market dialogue**, **shops and groceries**, **telling the time**, and **money and paying**. Practical, everyday stuff. Let's do this!"},
 
     {"en": "🛒 PART 1 — AT THE SHOP 🛒", "kind": "header"},
-    {"en": "You're at a local ħanut — a Maltese shop. Here's how the conversation goes."},
+    {"en": "You're at a local Maltese shop. Here's how the conversation goes."},
     {"en": "The shopkeeper opens with — Good morning, what would you like?"},
     {"mt": "Bonġu, x'tixtieq?"},
     {"en": "You say — I'd like a kilo of tomatoes, please:"},
@@ -20,7 +20,7 @@
     {"mt": "Kemm huma b'kollox?"},
     {"en": "The answer — two euro fifty:"},
     {"mt": "Żewġ ewro u ħamsin ċenteżmu."},
-    {"en": "Notice **ċenteżmu** — that's the Maltese word for cent. A detail that locals notice and appreciate. 💡", "kind": "fact"},
+    {"en": "Notice the Maltese word for cent there. A detail that locals notice and appreciate. 💡", "kind": "fact"},
 
     {"en": "🏪 PART 2 — SHOPS AND GROCERIES 🏪", "kind": "header"},
     {"en": "Where do you buy what? The key places first."},
@@ -61,21 +61,21 @@
     {"en": "From three onwards, the regular number with its article:"},
     {"mt": "It-tlieta"},
     {"en": "Three o'clock."},
-    {"en": "For minutes past the hour, use **u** (meaning 'and' / 'past'). For minutes to the hour, use **nieqes** (meaning 'lacking' / 'to').", "kind": "rule"},
+    {"en": "For minutes past the hour, use the word meaning 'and' or 'past'. For minutes to the hour, use the word meaning 'lacking' or 'to'.", "kind": "rule"},
     {"en": "Now — half past six. In Maltese that's six and thirty minutes:"},
     {"mt": "Is-sitta u tletin minuta"},
-    {"en": "Half past six. Notice **tletin minuta** — thirty minutes. 🕕"},
+    {"en": "Half past six. Notice the phrase for thirty minutes in there. 🕕"},
     {"en": "Quarter past five — five and fifteen minutes:"},
     {"mt": "Il-ħamsa u ħmistax-il minuta"},
-    {"en": "Quarter past five. **Ħmistax** is fifteen. The little **-il** suffix links it to **minuta**. 🕔"},
+    {"en": "Quarter past five. The word for fifteen is in there, linked to the word for 'minute' by a little suffix. 🕔"},
     {"en": "Quarter to nine — nine lacking a quarter:"},
     {"mt": "Id-disgħa nieqes kwart"},
-    {"en": "Quarter to nine. **Nieqes kwart** — lacking a quarter. Beautiful, logical Maltese. 🕘", "kind": "key"},
+    {"en": "Quarter to nine. The phrase literally means 'lacking a quarter'. Beautiful, logical Maltese. 🕘", "kind": "key"},
     {"en": "Morning, afternoon, evening — add these at the end to be precise:"},
     {"mt": "filgħodu"},
     {"en": "In the morning."},
     {"mt": "waranofsinhar"},
-    {"en": "In the afternoon. Note: **waranofsinhar** is one word — always written joined up.", "kind": "tip"},
+    {"en": "In the afternoon. Note: the word for 'afternoon' is one word — always written joined up.", "kind": "tip"},
     {"mt": "filgħaxija"},
     {"en": "In the evening."},
 
@@ -106,6 +106,7 @@
     {"en": "✅ DONE!", "kind": "win"},
     {"en": "Market dialogue. Shops and groceries. Telling the time. Money and paying. That's Unit 9."},
     {"en": "You now have all the tools to shop, ask the time, and handle money in Malta. Go try it out. 💪"},
-    {"en": "Saħħa! Prosit! 🇲🇹"}
+    {"mt": "Saħħa! Prosit!"},
+    {"en": "Bye, and well done! 🇲🇹"}
   ]
 }
