@@ -20,7 +20,7 @@ const VERSION = "1.0.0-beta.26";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "20260601pp";
+const BUILD = "20260601qq";
 // Bump ONLY when audio clips are regenerated (re-voiced). Audio filenames are
 // sha1(mt) so a re-voiced clip keeps its name; without a changing query the
 // browser/SW serve the OLD cached audio. play() busts on this.
@@ -2749,7 +2749,7 @@ function makeMcStep(exId, opts){
     card.appendChild(el("h3","",ex.title));
     if(ex.instructions) card.appendChild(el("p","muted",ex.instructions));
     const wordRow = el("div","row");
-    const audioStr = audioCombine ? audioCombine(item) : item[wordField];
+    const audioStr = audioCombine ? audioCombine(item) : ((opts.rawPrompt && item.mt) ? item.mt : item[wordField]);
     // Full correct phrase to voice AFTER a correct answer (e.g. "ktieb aħmar"),
     // when opts.audioAnswer is set. Prefer an explicit item.mt; else assemble
     // respecting blankAfter (noun + answer) vs default (answer + noun). The top

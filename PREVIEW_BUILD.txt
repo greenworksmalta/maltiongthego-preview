@@ -1,5 +1,5 @@
-build 20260601pp
+build 20260601qq
 VERSION 1.0.0-beta.26
-CACHE maltiongthego-1.0.0-beta.26-20260601pp
+CACHE maltiongthego-1.0.0-beta.26-20260601qq
 date 2026-06-02
-notes: time uses u tletin minuta / u ħmistax-il minuta.
+notes: fill-in (mc) audio now speaks the full phrase incl. the blank word.
