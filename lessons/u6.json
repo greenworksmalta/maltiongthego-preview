@@ -528,11 +528,11 @@
         {
           "id": "word-order",
           "title": "Putting a sentence together",
-          "explanation": "Safe default is Subject–Verb–Object, like English: Joseph jixrob il-kafè. Maltese can lead with the verb for emphasis, but SVO is always understood.",
+          "explanation": "Safe default is Subject–Verb–Object, like English: Joseph jixrob il-kapuċċino. Maltese can lead with the verb for emphasis, but SVO is always understood.",
           "examples": [
             {
-              "mt": "Joseph jixrob il-kafè",
-              "en": "Joseph drinks the coffee"
+              "mt": "Joseph jixrob il-kapuċċino",
+              "en": "Joseph drinks the cappuccino"
             },
             {
               "mt": "Mary taqra ktieb",
@@ -543,7 +543,7 @@
       ],
       "exercises": [
         { "id": "g6build", "type": "build", "max": 5, "title": "Build the sentence", "items": [
-          { "mt": "Joseph jixrob il-kafè", "en": "Joseph drinks the coffee" },
+          { "mt": "Joseph jixrob il-kapuċċino", "en": "Joseph drinks the cappuccino" },
           { "mt": "Mary taqra ktieb", "en": "Mary reads a book" },
           { "mt": "Se niekol", "en": "I am going to eat" },
           { "mt": "Ser nikteb", "en": "I am going to write" },
