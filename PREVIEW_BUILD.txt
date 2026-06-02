@@ -1,5 +1,5 @@
-build 20260601kk
+build 20260601ll
 VERSION 1.0.0-beta.26
-CACHE maltiongthego-1.0.0-beta.26-20260601kk
+CACHE maltiongthego-1.0.0-beta.26-20260601ll
 date 2026-06-02
-notes: kafè test 2 — Spanish voice for the café word.
+notes: kafè test 3 plain kafe spelling single voice.
