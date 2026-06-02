@@ -103,6 +103,7 @@
   .section-card{display:grid;grid-template-columns:56px 1fr 24px;gap:14px;align-items:center;padding:18px;background:var(--card);border:none;border-radius:var(--radius);box-shadow:var(--shadow);text-align:left;width:100%;color:var(--ink);transition:transform .12s ease}
   .section-card:active{transform:scale(.985)}
   .section-card .icon{width:56px;height:56px;border-radius:16px;background:var(--bg);display:flex;align-items:center;justify-content:center;font-size:1.7rem}
+  .section-card .icon-svg svg{width:28px;height:28px;color:var(--primary)}
   .section-card .card-thumb{width:56px;height:56px;border-radius:16px;object-fit:cover;background:var(--bg)}
   /* Home lesson cards — large illustration banner on top, text underneath */
   .lesson-card{display:block;padding:0;overflow:hidden;background:var(--card);border:none;border-radius:var(--radius);box-shadow:var(--shadow);text-align:left;width:100%;color:var(--ink);transition:transform .12s ease}
@@ -473,7 +474,7 @@
      Loaded before app.js so window.MALTI_CONFIG is available at boot. The file
      is gitignored; the .example one is the canonical shape. -->
 <script src="app-config.js?v=1.0.0-beta.8"></script>
-<script src="app.js?v=20260602a"></script>
+<script src="app.js?v=20260602b"></script>
 <!-- Service-worker registration moved into app.js so we can show an in-app
      "Update available" banner when a new version is detected mid-session. -->
 

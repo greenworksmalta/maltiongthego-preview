@@ -20,12 +20,32 @@ const VERSION = "1.0.0-beta.26";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "20260602a";
+const BUILD = "20260602b";
 // Bump ONLY when audio clips are regenerated (re-voiced). Audio filenames are
 // sha1(mt) so a re-voiced clip keeps its name; without a changing query the
 // browser/SW serve the OLD cached audio. play() busts on this.
 const AUDIO_REV = "20260602f";
 function v(url){ return url + (url.includes("?")?"&":"?") + "v=" + VERSION; }
+
+// ── Line-icon set (Lucide-style) ──────────────────────────────────
+// Clean stroked SVGs for section tiles, replacing emoji. Keyed by name.
+const ICON_SVGS = {
+  coffee:   '<path d="M10 2v2"/><path d="M14 2v2"/><path d="M6 2v2"/><path d="M3 8h15a3 3 0 0 1 3 3 3 3 0 0 1-3 3h-1"/><path d="M3 8v8a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4V8"/>',
+  drink:    '<path d="M5 8h14"/><path d="m6 8 1.6 12.2a2 2 0 0 0 2 1.8h4.8a2 2 0 0 0 2-1.8L18 8"/><path d="m12 8 1-6h2"/>',
+  utensils: '<path d="M3 2v7a2 2 0 0 0 2 2 2 2 0 0 0 2-2V2"/><path d="M5 11v11"/><path d="M19 2a4 4 0 0 0-3 6.5V22"/>',
+  receipt:  '<path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/><path d="M8 8h8"/><path d="M8 12h8"/><path d="M8 16h5"/>',
+  book:     '<path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/>',
+  library:  '<path d="m16 6 4 14"/><path d="M12 6v14"/><path d="M8 8v12"/><path d="M4 4v16"/>'
+};
+// Sample mapping: U8 section ids -> icon name (one-unit preview of the icon pass).
+const SECTION_ICONS = {
+  u8: { atcafe:"coffee", drinks:"drink", foodtypes:"utensils", ordering:"receipt", grammar8:"book", vocabulary:"library" }
+};
+function iconTile(name){
+  const d = el("div","icon icon-svg");
+  d.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' + ICON_SVGS[name] + '</svg>';
+  return d;
+}
 
 // Lightweight UI strings table for the parts of the app that aren't data-driven.
 // Keys are accessed via (I18N[State.lang] || I18N.en).<key>.
@@ -1355,7 +1375,10 @@ function renderHome(){
   });
   modKeys.forEach(mod=>{
     const isNumeric = !isNaN(parseInt(mod));
-    const label = isNumeric ? (State.lang === "es" ? "Módulo " : "Module ") + mod : String(mod);
+    const moduleEs = (byMod[mod][0] || {}).moduleEs;
+    const label = isNumeric
+      ? (State.lang === "es" ? "Módulo " : "Module ") + mod
+      : (State.lang === "es" && moduleEs ? moduleEs : String(mod));
     root.appendChild(el("div","module-label",label));
     const list = el("div","section-list");
     for(const L of byMod[mod]){
@@ -1489,7 +1512,10 @@ function renderLessonHome(lid){
     const card = el("button","section-card");
     const pct = (State.progress[lid]||{})[sec.id]||0;
     if(pct>=100) card.classList.add("done");
-    const ic = el("div","icon"); ic.textContent = sec.icon || "📘";
+    const iconName = (SECTION_ICONS[lid] || {})[sec.id];
+    let ic;
+    if(iconName && ICON_SVGS[iconName]){ ic = iconTile(iconName); }
+    else { ic = el("div","icon"); ic.textContent = sec.icon || "📘"; }
     const meta = el("div","meta");
     meta.appendChild(el("strong","",sec.title));
     meta.appendChild(el("span","",sec.subtitle||""));

@@ -39,8 +39,12 @@
       "subtitle": "Greetings, introductions, the 30 letters, the article, the days",
       "icon": "🇲🇹",
       "languages": [
-        "en"
-      ]
+        "en",
+        "es"
+      ],
+      "titleEs": "Hola y el Alfabeto",
+      "subtitleEs": "Saludos, presentarte, las 30 letras, el artículo, los días de la semana",
+      "moduleEs": "Primeras Palabras"
     },
     {
       "id": "u2",
@@ -49,8 +53,12 @@
       "subtitle": "Numbers, tens, money, age, months",
       "icon": "🔢",
       "languages": [
-        "en"
-      ]
+        "en",
+        "es"
+      ],
+      "titleEs": "Números e Información Cotidiana",
+      "subtitleEs": "Números, decenas, dinero, edad, meses",
+      "moduleEs": "Primeras Palabras"
     },
     {
       "id": "u3",
@@ -59,8 +67,12 @@
       "subtitle": "Asking for help, slowing down, switching to English",
       "icon": "🆘",
       "languages": [
-        "en"
-      ]
+        "en",
+        "es"
+      ],
+      "titleEs": "Primeros Pasos y Pedir Ayuda",
+      "subtitleEs": "Nacionalidades, sílabas y pedir ayuda",
+      "moduleEs": "Primeras Palabras"
     },
     {
       "id": "u4",
@@ -69,8 +81,12 @@
       "subtitle": "Colours, sizes, describing objects & clothes",
       "icon": "🎨",
       "languages": [
-        "en"
-      ]
+        "en",
+        "es"
+      ],
+      "titleEs": "Describir Cosas",
+      "subtitleEs": "Colores, tamaños, describir objetos y ropa",
+      "moduleEs": "Maltés Cotidiano"
     },
     {
       "id": "u5",
@@ -79,8 +95,12 @@
       "subtitle": "Pronouns, family, this/that, belonging",
       "icon": "👨‍👩‍👧",
       "languages": [
-        "en"
-      ]
+        "en",
+        "es"
+      ],
+      "titleEs": "Personas, Familia y Pertenencia",
+      "subtitleEs": "Pronombres, familia, este y ese, quién posee qué",
+      "moduleEs": "Maltés Cotidiano"
     },
     {
       "id": "u6",
@@ -89,8 +109,12 @@
       "subtitle": "I am, I have, there is, verbs",
       "icon": "🧩",
       "languages": [
-        "en"
-      ]
+        "en",
+        "es"
+      ],
+      "titleEs": "Construir Oraciones y Actuar",
+      "subtitleEs": "Verbos, tener y hay: uniendo palabras",
+      "moduleEs": "Maltés Cotidiano"
     },
     {
       "id": "u7",
@@ -99,8 +123,12 @@
       "subtitle": "Wh-questions, finding your way",
       "icon": "🧭",
       "languages": [
-        "en"
-      ]
+        "en",
+        "es"
+      ],
+      "titleEs": "Hacer Preguntas y Pedir Indicaciones",
+      "subtitleEs": "Palabras interrogativas, direcciones, cómo orientarte",
+      "moduleEs": "Por la Ciudad"
     },
     {
       "id": "u8",
@@ -109,8 +137,12 @@
       "subtitle": "Ordering, fruit & veg, Maltese dishes",
       "icon": "🍽️",
       "languages": [
-        "en"
-      ]
+        "en",
+        "es"
+      ],
+      "titleEs": "Comida, Cafés y Comer Fuera",
+      "subtitleEs": "Pedir bebidas y comida, y pagar la cuenta",
+      "moduleEs": "Por la Ciudad"
     },
     {
       "id": "u9",
@@ -119,8 +151,12 @@
       "subtitle": "Shopping, paying, telling the time",
       "icon": "🛍️",
       "languages": [
-        "en"
-      ]
+        "en",
+        "es"
+      ],
+      "titleEs": "Compras, Dinero y la Hora",
+      "subtitleEs": "Ir de compras, pagar y decir la hora",
+      "moduleEs": "Por la Ciudad"
     }
   ],
   "packOrder": [
