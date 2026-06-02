@@ -20,7 +20,11 @@ const VERSION = "1.0.0-beta.26";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "20260601ii";
+const BUILD = "20260601jj";
+// Bump ONLY when audio clips are regenerated (re-voiced). Audio filenames are
+// sha1(mt) so a re-voiced clip keeps its name; without a changing query the
+// browser/SW serve the OLD cached audio. play() busts on this.
+const AUDIO_REV = "20260602a";
 function v(url){ return url + (url.includes("?")?"&":"?") + "v=" + VERSION; }
 
 // Lightweight UI strings table for the parts of the app that aren't data-driven.
@@ -411,7 +415,7 @@ function play(mt, opts){
   if(currentBtn){ currentBtn.classList.remove("playing"); currentBtn=null; }
   try{
     player.pause();
-    player.src = v(src);
+    player.src = src + (src.includes("?") ? "&" : "?") + "a=" + AUDIO_REV;
     player.currentTime = 0;
     // Slower playback for short MC clips (article + word combos), where the default
     // -8% SSML rate still feels rushed to learners parsing a single chunk.

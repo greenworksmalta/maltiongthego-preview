@@ -1,5 +1,5 @@
-build 20260601ii
+build 20260601jj
 VERSION 1.0.0-beta.26
-CACHE maltiongthego-1.0.0-beta.26-20260601ii
+CACHE maltiongthego-1.0.0-beta.26-20260601jj
 date 2026-06-02
-notes: lesson fetches busted on BUILD so renamed sections (atcafe) load fresh.
+notes: audio cache-bust + phoneme test on cafe dialogue line.
