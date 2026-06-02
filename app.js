@@ -20,7 +20,7 @@ const VERSION = "1.0.0-beta.26";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "20260601ee";
+const BUILD = "20260601ff";
 function v(url){ return url + (url.includes("?")?"&":"?") + "v=" + VERSION; }
 
 // Lightweight UI strings table for the parts of the app that aren't data-driven.
@@ -2434,7 +2434,7 @@ const STEP_COUNTS = {
   // Lesson 6
   "table:card": s => s.items.length,
   "food:flash": s => s.vocab.length,
-  "questions:flash": s => s.items.length,
+  "questions:flash": () => 1,
   "questions:passage": s => 1,
   "ghpresent:rules": s => s.rules.length,
   "ghpresent:ex5": s => s.exercises.find(e=>e.id==="ex5").items.length,
@@ -3517,7 +3517,7 @@ STEP_RENDERERS["present:ex9"] = (root, sec, idx, onNext) => {
     const b = el("button","chip", c);
     b.addEventListener("click", ()=>{
       if(c===item.answer){
-        b.classList.add("right"); addXp(5); play(item.answer);
+        b.classList.add("right"); addXp(5); play(item.pronoun + " " + item.answer);
         showFeedback(true,"Sewwa!", item.pronoun+" "+item.answer, onNext);
       } else {
         b.classList.add("wrong");
@@ -3567,26 +3567,19 @@ STEP_RENDERERS["food:flash"] = (root, sec, idx, onNext) => {
 };
 
 STEP_RENDERERS["questions:flash"] = (root, sec, idx, onNext) => {
-  const item = sec.items[idx];
+  // All the question words on ONE screen, each with an example. Tap to hear.
   const card = el("div","card");
-  const head = el("div","row");
-  head.appendChild(audioBtn(item.mt, {size:"lg"}));
-  const w = el("div","grow");
-  w.appendChild(el("div","mtline", item.mt));
-  w.appendChild(el("div","muted", item.en));
-  head.appendChild(w);
-  card.appendChild(head);
-  if(item.example){
+  card.appendChild(el("h3","","The question words"));
+  card.appendChild(el("p","muted","Tap any row to hear the example."));
+  sec.items.forEach(item => {
+    const audioStr = item.example || item.mt;
     const r = el("div","form-row");
-    r.appendChild(audioBtn(item.example));
-    r.appendChild(el("div","mtform", item.example));
-    r.appendChild(el("div","en", item.example_en));
+    r.appendChild(audioBtn(audioStr));
+    r.appendChild(el("div","mtform", item.example || item.mt));
+    r.appendChild(el("div","en", item.mt + " = " + item.en));
     card.appendChild(r);
-  }
+  });
   root.appendChild(card);
-  root.appendChild(el("p","muted center", (idx+1)+" / "+sec.items.length));
-  root.appendChild(nextBtn(idx+1===sec.items.length ? "Done →" : "Next →", onNext));
-  setTimeout(()=>play(item.mt), 250);
 };
 STEP_RENDERERS["questions:passage"] = (root, sec, idx, onNext) => {
   const card = el("div","card");
@@ -3645,7 +3638,7 @@ STEP_RENDERERS["ghpresent:ex5"] = (root, sec, idx, onNext) => {
     const b = el("button","chip", c);
     b.addEventListener("click", ()=>{
       if(c===item.answer){
-        b.classList.add("right"); addXp(5); play(item.answer);
+        b.classList.add("right"); addXp(5); play(item.pronoun + " " + item.answer);
         showFeedback(true,"Sewwa!", item.pronoun+" "+item.answer, onNext);
       } else {
         b.classList.add("wrong");

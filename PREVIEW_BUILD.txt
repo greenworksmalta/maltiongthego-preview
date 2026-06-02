@@ -1,5 +1,5 @@
-build 20260601ee
+build 20260601ff
 VERSION 1.0.0-beta.26
-CACHE maltiongthego-1.0.0-beta.26-20260601ee
+CACHE maltiongthego-1.0.0-beta.26-20260601ff
 date 2026-06-01
-notes: every section shows its intro on first screen; 7 intros added.
+notes: wh-questions one page; conjugation says Jien niekol.
