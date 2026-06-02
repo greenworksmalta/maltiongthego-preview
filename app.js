@@ -20,7 +20,7 @@ const VERSION = "1.0.0-beta.26";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "20260601dd";
+const BUILD = "20260601ee";
 function v(url){ return url + (url.includes("?")?"&":"?") + "v=" + VERSION; }
 
 // Lightweight UI strings table for the parts of the app that aren't data-driven.
@@ -2115,7 +2115,15 @@ function renderSection(lid, sid, step, idx){
     root.appendChild(back);
     return;
   }
+  const _beforeRenderer = root.childElementCount;
   renderer(root, sec, idx, ()=>nextStep(lid, sid, step, idx, sec, flow));
+  // Guarantee the section's intro shows on its FIRST screen, whatever the
+  // renderer does. Skip if the renderer already printed it (no duplicates).
+  if(stepIdx === 0 && idx === 0 && sec.intro && !root.textContent.includes(sec.intro)){
+    const introCard = el("div","card");
+    introCard.appendChild(el("p","muted", sec.intro));
+    root.insertBefore(introCard, root.children[_beforeRenderer] || null);
+  }
 
   // Bottom navigation row, four affordances in order:
   //   ← Previous       step back one PORTION within this section (prev item, or

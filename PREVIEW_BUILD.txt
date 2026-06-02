@@ -1,5 +1,5 @@
-build 20260601dd
+build 20260601ee
 VERSION 1.0.0-beta.26
-CACHE maltiongthego-1.0.0-beta.26-20260601dd
+CACHE maltiongthego-1.0.0-beta.26-20260601ee
 date 2026-06-01
-notes: myday nixrob kapuċċino.
+notes: every section shows its intro on first screen; 7 intros added.

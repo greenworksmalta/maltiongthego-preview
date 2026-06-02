@@ -41,6 +41,7 @@
       "icon": "💬",
       "title": "Phrases",
       "subtitle": "Bonġu: meeting and introducing yourself",
+      "intro": "The phrases you'll use the moment you meet someone: greetings, names, and introducing yourself.",
       "vocab": [
         {
           "mt": "Bonġu",
@@ -161,6 +162,7 @@
       "icon": "📅",
       "title": "Days",
       "subtitle": "Il-ġranet tal-ġimgħa: Days of the week",
+      "intro": "The seven days of the week. Each one takes the article (Il-Ħadd, It-Tnejn).",
       "items": [
         {
           "mt": "Il-Ħadd",
@@ -204,6 +206,7 @@
       "icon": "🔤",
       "title": "Alphabet",
       "subtitle": "L-alfabett Malti: 30 letters",
+      "intro": "The Maltese alphabet has 30 letters, including a few you won't find in English (ċ, ġ, ħ, ż, għ). Tap each to hear its sound.",
       "facts": [
         "There are 30 letters in all: 24 consonants and 6 vowels (a, e, i, o, u and ie).",
         "That last vowel, ie, is written with two symbols but counts as a single letter.",

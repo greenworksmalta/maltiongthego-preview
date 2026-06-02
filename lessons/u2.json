@@ -41,6 +41,7 @@
       "icon": "🔢",
       "title": "Numbers 1–30",
       "subtitle": "In-numri: counting in Maltese",
+      "intro": "Counting from one to thirty: the building blocks for prices, age and dates.",
       "items": [
         {
           "n": 1,
@@ -332,6 +333,7 @@
       "icon": "📆",
       "title": "Months",
       "subtitle": "Ix-xhur: months of the year",
+      "intro": "The twelve months of the year.",
       "items": [
         {
           "mt": "Jannar",
