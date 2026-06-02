@@ -20,7 +20,7 @@ const VERSION = "1.0.0-beta.26";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "20260601ss";
+const BUILD = "20260601tt";
 // Bump ONLY when audio clips are regenerated (re-voiced). Audio filenames are
 // sha1(mt) so a re-voiced clip keeps its name; without a changing query the
 // browser/SW serve the OLD cached audio. play() busts on this.
@@ -1433,6 +1433,14 @@ function renderLessonHome(lid){
   root.appendChild(topbar(lesson.title, "/home"));
 
   const hero = el("div","hero");
+  // Unit illustration (if one is published for this unit). Hides itself if absent.
+  const art = document.createElement("img");
+  art.className = "unit-hero-img";
+  art.alt = "";
+  art.loading = "lazy";
+  art.src = "assets/unit-art/" + lid + ".png?b=" + BUILD;
+  art.addEventListener("error", ()=> art.remove());
+  hero.appendChild(art);
   hero.appendChild(el("h1","",lesson.title));
   hero.appendChild(el("p","",lesson.subtitle));
   root.appendChild(hero);

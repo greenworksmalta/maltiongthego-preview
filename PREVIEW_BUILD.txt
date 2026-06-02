@@ -1,5 +1,5 @@
-build 20260601ss
+build 20260601tt
 VERSION 1.0.0-beta.26
-CACHE maltiongthego-1.0.0-beta.26-20260601ss
+CACHE maltiongthego-1.0.0-beta.26-20260601tt
 date 2026-06-02
-notes: Spanish narration (es-MX) for all 9 unit overviews.
+notes: unit hero image; U1+U8 vibrant samples in-app.
