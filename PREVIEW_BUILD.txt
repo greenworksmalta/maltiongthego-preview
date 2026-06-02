@@ -1,5 +1,5 @@
-build 20260601rr
+build 20260601ss
 VERSION 1.0.0-beta.26
-CACHE maltiongthego-1.0.0-beta.26-20260601rr
+CACHE maltiongthego-1.0.0-beta.26-20260601ss
 date 2026-06-02
-notes: Spanish U1-U9 + narration (EN) for all units; overview EN-fallback.
+notes: Spanish narration (es-MX) for all 9 unit overviews.
