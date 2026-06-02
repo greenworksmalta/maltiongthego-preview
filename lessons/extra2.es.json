@@ -86,66 +86,6 @@
       ]
     },
     {
-      "id": "vocabulary",
-      "icon": "📚",
-      "title": "Vocabulario",
-      "subtitle": "Il-vokabularju — todas las palabras de esta lección",
-      "intro": "Toca cualquier palabra para oírla. Una referencia rápida para tu primera probada de maltés.",
-      "groups": [
-        {
-          "title": "Las islas",
-          "icon": "🏝️",
-          "items": [
-            {"icon": "🇲🇹", "mt": "Malta", "en": "Malta"},
-            {"icon": "🏖️", "mt": "Għawdex", "en": "Gozo"},
-            {"icon": "🐚", "mt": "Kemmuna", "en": "Comino"},
-            {"icon": "🏝️", "mt": "il-gżira", "en": "la isla"},
-            {"icon": "🌊", "mt": "il-baħar", "en": "el mar"},
-            {"icon": "☀️", "mt": "ix-xemx", "en": "el sol"},
-            {"icon": "🏛️", "mt": "il-Belt", "en": "La Valeta (la Ciudad)"},
-            {"icon": "🏘️", "mt": "ir-raħal", "en": "el pueblo"},
-            {"icon": "⛲", "mt": "il-pjazza", "en": "la plaza"},
-            {"icon": "⛪", "mt": "il-knisja", "en": "la iglesia"},
-            {"icon": "🎆", "mt": "il-festa", "en": "la fiesta del pueblo"}
-          ]
-        },
-        {
-          "title": "Sabores de Malta",
-          "icon": "🥟",
-          "items": [
-            {"icon": "🥟", "mt": "pastizz", "en": "hojaldre de ricotta / guisantes"},
-            {"icon": "🫓", "mt": "ftira", "en": "pan maltés / pan plano"},
-            {"icon": "🍅", "mt": "ħobż biż-żejt", "en": "pan con aceite, tomate y atún"},
-            {"icon": "🥮", "mt": "imqaret", "en": "pasteles de dátiles"},
-            {"icon": "🧁", "mt": "kannoli", "en": "canutillos de ricotta"},
-            {"icon": "🍦", "mt": "ġelat", "en": "helado"},
-            {"icon": "🥤", "mt": "Kinnie", "en": "refresco de naranja amarga"},
-            {"icon": "🍷", "mt": "inbid", "en": "vino"},
-            {"icon": "🍺", "mt": "birra", "en": "cerveza"},
-            {"icon": "☕", "mt": "kafè", "en": "café"},
-            {"icon": "😋", "mt": "bnin", "en": "delicioso"}
-          ]
-        },
-        {
-          "title": "Expresiones cotidianas",
-          "icon": "💬",
-          "items": [
-            {"icon": "🤌", "mt": "Mela", "en": "pues / claro / por supuesto"},
-            {"icon": "👂", "mt": "Isma'", "en": "escucha / oye"},
-            {"icon": "😣", "mt": "Ajma", "en": "ay / vaya"},
-            {"icon": "💙", "mt": "Ħanini", "en": "cariño (a un hombre)"},
-            {"icon": "💗", "mt": "Ħanina", "en": "cariño (a una mujer)"},
-            {"icon": "✅", "mt": "Iva mela", "en": "sí, claro"},
-            {"icon": "🙅", "mt": "Le le", "en": "no no"},
-            {"icon": "❓", "mt": "Mhux hekk?", "en": "¿verdad? / ¿no?"},
-            {"icon": "😮", "mt": "Tassew?", "en": "¿en serio?"},
-            {"icon": "🎉", "mt": "Prosit", "en": "bien hecho"},
-            {"icon": "✨", "mt": "Sabiħ", "en": "precioso / bonito"}
-          ]
-        }
-      ]
-    },
-    {
       "id": "grammarwelcome",
       "icon": "🇲🇹",
       "title": "Bueno Saber",
@@ -203,6 +143,66 @@
             {"mt": "il-baħar", "en": "el mar"},
             {"mt": "il-Belt", "en": "La Valeta (la Ciudad)"},
             {"mt": "ix-xemx", "en": "el sol"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "icon": "📚",
+      "title": "Vocabulario",
+      "subtitle": "Il-vokabularju — todas las palabras de esta lección",
+      "intro": "Toca cualquier palabra para oírla. Una referencia rápida para tu primera probada de maltés.",
+      "groups": [
+        {
+          "title": "Las islas",
+          "icon": "🏝️",
+          "items": [
+            {"icon": "🇲🇹", "mt": "Malta", "en": "Malta"},
+            {"icon": "🏖️", "mt": "Għawdex", "en": "Gozo"},
+            {"icon": "🐚", "mt": "Kemmuna", "en": "Comino"},
+            {"icon": "🏝️", "mt": "il-gżira", "en": "la isla"},
+            {"icon": "🌊", "mt": "il-baħar", "en": "el mar"},
+            {"icon": "☀️", "mt": "ix-xemx", "en": "el sol"},
+            {"icon": "🏛️", "mt": "il-Belt", "en": "La Valeta (la Ciudad)"},
+            {"icon": "🏘️", "mt": "ir-raħal", "en": "el pueblo"},
+            {"icon": "⛲", "mt": "il-pjazza", "en": "la plaza"},
+            {"icon": "⛪", "mt": "il-knisja", "en": "la iglesia"},
+            {"icon": "🎆", "mt": "il-festa", "en": "la fiesta del pueblo"}
+          ]
+        },
+        {
+          "title": "Sabores de Malta",
+          "icon": "🥟",
+          "items": [
+            {"icon": "🥟", "mt": "pastizz", "en": "hojaldre de ricotta / guisantes"},
+            {"icon": "🫓", "mt": "ftira", "en": "pan maltés / pan plano"},
+            {"icon": "🍅", "mt": "ħobż biż-żejt", "en": "pan con aceite, tomate y atún"},
+            {"icon": "🥮", "mt": "imqaret", "en": "pasteles de dátiles"},
+            {"icon": "🧁", "mt": "kannoli", "en": "canutillos de ricotta"},
+            {"icon": "🍦", "mt": "ġelat", "en": "helado"},
+            {"icon": "🥤", "mt": "Kinnie", "en": "refresco de naranja amarga"},
+            {"icon": "🍷", "mt": "inbid", "en": "vino"},
+            {"icon": "🍺", "mt": "birra", "en": "cerveza"},
+            {"icon": "☕", "mt": "kafè", "en": "café"},
+            {"icon": "😋", "mt": "bnin", "en": "delicioso"}
+          ]
+        },
+        {
+          "title": "Expresiones cotidianas",
+          "icon": "💬",
+          "items": [
+            {"icon": "🤌", "mt": "Mela", "en": "pues / claro / por supuesto"},
+            {"icon": "👂", "mt": "Isma'", "en": "escucha / oye"},
+            {"icon": "😣", "mt": "Ajma", "en": "ay / vaya"},
+            {"icon": "💙", "mt": "Ħanini", "en": "cariño (a un hombre)"},
+            {"icon": "💗", "mt": "Ħanina", "en": "cariño (a una mujer)"},
+            {"icon": "✅", "mt": "Iva mela", "en": "sí, claro"},
+            {"icon": "🙅", "mt": "Le le", "en": "no no"},
+            {"icon": "❓", "mt": "Mhux hekk?", "en": "¿verdad? / ¿no?"},
+            {"icon": "😮", "mt": "Tassew?", "en": "¿en serio?"},
+            {"icon": "🎉", "mt": "Prosit", "en": "bien hecho"},
+            {"icon": "✨", "mt": "Sabiħ", "en": "precioso / bonito"}
           ]
         }
       ]

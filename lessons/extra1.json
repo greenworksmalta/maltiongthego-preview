@@ -279,6 +279,138 @@
       ]
     },
     {
+      "id": "grammarwelcome",
+      "icon": "📖",
+      "title": "Grammar",
+      "subtitle": "Il-grammatika — the few rules behind everything in this lesson",
+      "intro": "Five mini-rules that unlock everything you've just seen. Don't try to memorise — just notice the patterns and the lessons in The Course will go deeper.",
+      "rules": [
+        {
+          "id": "nixtieq-pattern",
+          "title": "Nixtieq + thing = 'I would like…'",
+          "explanation": "The polite, universal way to order or ask for something. 'Nixtieq' on its own = 'I would like'. Add the thing you want straight after. Finish with 'jekk jogħġbok' for extra politeness.",
+          "examples": [
+            {
+              "mt": "Nixtieq kapuċċino",
+              "en": "I would like a cappuccino"
+            },
+            {
+              "mt": "Nixtieq ilma bil-lumi",
+              "en": "I would like water with lemon"
+            },
+            {
+              "mt": "Nixtieq dan, jekk jogħġbok",
+              "en": "I would like this, please"
+            },
+            {
+              "mt": "Nixtieq pastizz",
+              "en": "I would like a pastizz"
+            }
+          ]
+        },
+        {
+          "id": "bil-with",
+          "title": "bil- = 'with the' (and biz- before z)",
+          "explanation": "'bi' (with) fuses with the article 'il-' to become 'bil-' — used when ordering drinks 'with' something. Before words starting with z, it shifts to 'biz-' ('Xemxin' consonant rule from Lesson 1).",
+          "letters": [
+            "bil-",
+            "biz-"
+          ],
+          "examples": [
+            {
+              "mt": "Kapuċċino bil-ħalib",
+              "en": "Cappuccino with milk"
+            },
+            {
+              "mt": "Ilma bil-lumi",
+              "en": "Water with lemon"
+            },
+            {
+              "mt": "Kapuċċino biz-zokkor",
+              "en": "Cappuccino with sugar"
+            },
+            {
+              "mt": "Bil-flus / Bil-karta",
+              "en": "With cash / by card"
+            }
+          ]
+        },
+        {
+          "id": "kemm-jiswa",
+          "title": "Kemm jiswa? = 'How much?'",
+          "explanation": "'Kemm?' = 'how much / how many'. Pair it with 'jiswa' (it costs) for ONE item, 'jiswew' (they cost) for multiple. Same pattern for any 'how much / how many' question.",
+          "examples": [
+            {
+              "mt": "Kemm jiswa dan?",
+              "en": "How much is this? (one item)"
+            },
+            {
+              "mt": "Kemm jiswew dawn?",
+              "en": "How much are these? (multiple)"
+            },
+            {
+              "mt": "Żewġ ewro u sebgħin ċenteżmu",
+              "en": "Two euros seventy"
+            },
+            {
+              "mt": "Erbgħa u disgħin ewro",
+              "en": "Ninety-four euros"
+            }
+          ]
+        },
+        {
+          "id": "polite-formulas",
+          "title": "Stacking polite words",
+          "explanation": "Maltese politeness comes from STACKING short words. 'Grazzi' alone is fine. 'Grazzi ħafna' (thanks a lot) is warmer. 'Jekk jogħġbok' (please) attaches to almost any request. 'Skużani' (excuse me / sorry) opens a request to a stranger. The more you stack, the politer you sound.",
+          "examples": [
+            {
+              "mt": "Grazzi",
+              "en": "Thanks"
+            },
+            {
+              "mt": "Grazzi ħafna",
+              "en": "Thanks a lot"
+            },
+            {
+              "mt": "Skużani, tista' tgħinni?",
+              "en": "Excuse me, can you help me?"
+            },
+            {
+              "mt": "Iva, jekk jogħġbok",
+              "en": "Yes, please"
+            },
+            {
+              "mt": "Le grazzi",
+              "en": "No thanks"
+            }
+          ]
+        },
+        {
+          "id": "language-help",
+          "title": "Switching to English politely",
+          "explanation": "Most people in Malta speak excellent English — you can always switch over. But starting with one of these Maltese phrases buys you huge goodwill before you do.",
+          "examples": [
+            {
+              "mt": "Nitkellem ftit Malti",
+              "en": "I speak a little Maltese"
+            },
+            {
+              "mt": "Qed nitgħallem il-Malti",
+              "en": "I am learning Maltese"
+            },
+            {
+              "mt": "Titkellem bl-Ingliż?",
+              "en": "Do you speak English?"
+            },
+            {
+              "mt": "Tista' tirrepeti, bil-mod jekk jogħġbok?",
+              "en": "Can you repeat, slowly please?"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "vocabulary",
       "icon": "📚",
       "title": "Vocabulary",
@@ -506,138 +638,6 @@
               "icon": "🌍",
               "mt": "Jien barrani",
               "en": "I'm a foreigner"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "grammarwelcome",
-      "icon": "📖",
-      "title": "Grammar",
-      "subtitle": "Il-grammatika — the few rules behind everything in this lesson",
-      "intro": "Five mini-rules that unlock everything you've just seen. Don't try to memorise — just notice the patterns and the lessons in The Course will go deeper.",
-      "rules": [
-        {
-          "id": "nixtieq-pattern",
-          "title": "Nixtieq + thing = 'I would like…'",
-          "explanation": "The polite, universal way to order or ask for something. 'Nixtieq' on its own = 'I would like'. Add the thing you want straight after. Finish with 'jekk jogħġbok' for extra politeness.",
-          "examples": [
-            {
-              "mt": "Nixtieq kapuċċino",
-              "en": "I would like a cappuccino"
-            },
-            {
-              "mt": "Nixtieq ilma bil-lumi",
-              "en": "I would like water with lemon"
-            },
-            {
-              "mt": "Nixtieq dan, jekk jogħġbok",
-              "en": "I would like this, please"
-            },
-            {
-              "mt": "Nixtieq pastizz",
-              "en": "I would like a pastizz"
-            }
-          ]
-        },
-        {
-          "id": "bil-with",
-          "title": "bil- = 'with the' (and biz- before z)",
-          "explanation": "'bi' (with) fuses with the article 'il-' to become 'bil-' — used when ordering drinks 'with' something. Before words starting with z, it shifts to 'biz-' ('Xemxin' consonant rule from Lesson 1).",
-          "letters": [
-            "bil-",
-            "biz-"
-          ],
-          "examples": [
-            {
-              "mt": "Kapuċċino bil-ħalib",
-              "en": "Cappuccino with milk"
-            },
-            {
-              "mt": "Ilma bil-lumi",
-              "en": "Water with lemon"
-            },
-            {
-              "mt": "Kapuċċino biz-zokkor",
-              "en": "Cappuccino with sugar"
-            },
-            {
-              "mt": "Bil-flus / Bil-karta",
-              "en": "With cash / by card"
-            }
-          ]
-        },
-        {
-          "id": "kemm-jiswa",
-          "title": "Kemm jiswa? = 'How much?'",
-          "explanation": "'Kemm?' = 'how much / how many'. Pair it with 'jiswa' (it costs) for ONE item, 'jiswew' (they cost) for multiple. Same pattern for any 'how much / how many' question.",
-          "examples": [
-            {
-              "mt": "Kemm jiswa dan?",
-              "en": "How much is this? (one item)"
-            },
-            {
-              "mt": "Kemm jiswew dawn?",
-              "en": "How much are these? (multiple)"
-            },
-            {
-              "mt": "Żewġ ewro u sebgħin ċenteżmu",
-              "en": "Two euros seventy"
-            },
-            {
-              "mt": "Erbgħa u disgħin ewro",
-              "en": "Ninety-four euros"
-            }
-          ]
-        },
-        {
-          "id": "polite-formulas",
-          "title": "Stacking polite words",
-          "explanation": "Maltese politeness comes from STACKING short words. 'Grazzi' alone is fine. 'Grazzi ħafna' (thanks a lot) is warmer. 'Jekk jogħġbok' (please) attaches to almost any request. 'Skużani' (excuse me / sorry) opens a request to a stranger. The more you stack, the politer you sound.",
-          "examples": [
-            {
-              "mt": "Grazzi",
-              "en": "Thanks"
-            },
-            {
-              "mt": "Grazzi ħafna",
-              "en": "Thanks a lot"
-            },
-            {
-              "mt": "Skużani, tista' tgħinni?",
-              "en": "Excuse me, can you help me?"
-            },
-            {
-              "mt": "Iva, jekk jogħġbok",
-              "en": "Yes, please"
-            },
-            {
-              "mt": "Le grazzi",
-              "en": "No thanks"
-            }
-          ]
-        },
-        {
-          "id": "language-help",
-          "title": "Switching to English politely",
-          "explanation": "Most people in Malta speak excellent English — you can always switch over. But starting with one of these Maltese phrases buys you huge goodwill before you do.",
-          "examples": [
-            {
-              "mt": "Nitkellem ftit Malti",
-              "en": "I speak a little Maltese"
-            },
-            {
-              "mt": "Qed nitgħallem il-Malti",
-              "en": "I am learning Maltese"
-            },
-            {
-              "mt": "Titkellem bl-Ingliż?",
-              "en": "Do you speak English?"
-            },
-            {
-              "mt": "Tista' tirrepeti, bil-mod jekk jogħġbok?",
-              "en": "Can you repeat, slowly please?"
             }
           ]
         }

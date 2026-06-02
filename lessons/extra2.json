@@ -86,66 +86,6 @@
       ]
     },
     {
-      "id": "vocabulary",
-      "icon": "📚",
-      "title": "Vocabulary",
-      "subtitle": "Il-vokabularju — every word from this lesson",
-      "intro": "Tap any word to hear it. A quick reference for your first taste of Maltese.",
-      "groups": [
-        {
-          "title": "The islands",
-          "icon": "🏝️",
-          "items": [
-            {"icon": "🇲🇹", "mt": "Malta", "en": "Malta"},
-            {"icon": "🏖️", "mt": "Għawdex", "en": "Gozo"},
-            {"icon": "🐚", "mt": "Kemmuna", "en": "Comino"},
-            {"icon": "🏝️", "mt": "il-gżira", "en": "the island"},
-            {"icon": "🌊", "mt": "il-baħar", "en": "the sea"},
-            {"icon": "☀️", "mt": "ix-xemx", "en": "the sun"},
-            {"icon": "🏛️", "mt": "il-Belt", "en": "Valletta (the City)"},
-            {"icon": "🏘️", "mt": "ir-raħal", "en": "the village"},
-            {"icon": "⛲", "mt": "il-pjazza", "en": "the square"},
-            {"icon": "⛪", "mt": "il-knisja", "en": "the church"},
-            {"icon": "🎆", "mt": "il-festa", "en": "the village feast"}
-          ]
-        },
-        {
-          "title": "Tastes of Malta",
-          "icon": "🥟",
-          "items": [
-            {"icon": "🥟", "mt": "pastizz", "en": "ricotta / pea pastry"},
-            {"icon": "🫓", "mt": "ftira", "en": "Maltese bread / flatbread"},
-            {"icon": "🍅", "mt": "ħobż biż-żejt", "en": "bread with oil, tomato & tuna"},
-            {"icon": "🥮", "mt": "imqaret", "en": "date-filled pastries"},
-            {"icon": "🧁", "mt": "kannoli", "en": "ricotta pastry tubes"},
-            {"icon": "🍦", "mt": "ġelat", "en": "ice cream"},
-            {"icon": "🥤", "mt": "Kinnie", "en": "bitter-orange soft drink"},
-            {"icon": "🍷", "mt": "inbid", "en": "wine"},
-            {"icon": "🍺", "mt": "birra", "en": "beer"},
-            {"icon": "☕", "mt": "kafè", "en": "coffee"},
-            {"icon": "😋", "mt": "bnin", "en": "delicious"}
-          ]
-        },
-        {
-          "title": "Everyday expressions",
-          "icon": "💬",
-          "items": [
-            {"icon": "🤌", "mt": "Mela", "en": "so / well / of course"},
-            {"icon": "👂", "mt": "Isma'", "en": "listen / hey"},
-            {"icon": "😣", "mt": "Ajma", "en": "ouch / oh dear"},
-            {"icon": "💙", "mt": "Ħanini", "en": "darling (to a man)"},
-            {"icon": "💗", "mt": "Ħanina", "en": "darling (to a woman)"},
-            {"icon": "✅", "mt": "Iva mela", "en": "yes, of course"},
-            {"icon": "🙅", "mt": "Le le", "en": "no no"},
-            {"icon": "❓", "mt": "Mhux hekk?", "en": "isn't it? / right?"},
-            {"icon": "😮", "mt": "Tassew?", "en": "really?"},
-            {"icon": "🎉", "mt": "Prosit", "en": "well done"},
-            {"icon": "✨", "mt": "Sabiħ", "en": "beautiful / lovely"}
-          ]
-        }
-      ]
-    },
-    {
       "id": "grammarwelcome",
       "icon": "🇲🇹",
       "title": "Good to Know",
@@ -203,6 +143,66 @@
             {"mt": "il-baħar", "en": "the sea"},
             {"mt": "il-Belt", "en": "Valletta (the City)"},
             {"mt": "ix-xemx", "en": "the sun"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "icon": "📚",
+      "title": "Vocabulary",
+      "subtitle": "Il-vokabularju — every word from this lesson",
+      "intro": "Tap any word to hear it. A quick reference for your first taste of Maltese.",
+      "groups": [
+        {
+          "title": "The islands",
+          "icon": "🏝️",
+          "items": [
+            {"icon": "🇲🇹", "mt": "Malta", "en": "Malta"},
+            {"icon": "🏖️", "mt": "Għawdex", "en": "Gozo"},
+            {"icon": "🐚", "mt": "Kemmuna", "en": "Comino"},
+            {"icon": "🏝️", "mt": "il-gżira", "en": "the island"},
+            {"icon": "🌊", "mt": "il-baħar", "en": "the sea"},
+            {"icon": "☀️", "mt": "ix-xemx", "en": "the sun"},
+            {"icon": "🏛️", "mt": "il-Belt", "en": "Valletta (the City)"},
+            {"icon": "🏘️", "mt": "ir-raħal", "en": "the village"},
+            {"icon": "⛲", "mt": "il-pjazza", "en": "the square"},
+            {"icon": "⛪", "mt": "il-knisja", "en": "the church"},
+            {"icon": "🎆", "mt": "il-festa", "en": "the village feast"}
+          ]
+        },
+        {
+          "title": "Tastes of Malta",
+          "icon": "🥟",
+          "items": [
+            {"icon": "🥟", "mt": "pastizz", "en": "ricotta / pea pastry"},
+            {"icon": "🫓", "mt": "ftira", "en": "Maltese bread / flatbread"},
+            {"icon": "🍅", "mt": "ħobż biż-żejt", "en": "bread with oil, tomato & tuna"},
+            {"icon": "🥮", "mt": "imqaret", "en": "date-filled pastries"},
+            {"icon": "🧁", "mt": "kannoli", "en": "ricotta pastry tubes"},
+            {"icon": "🍦", "mt": "ġelat", "en": "ice cream"},
+            {"icon": "🥤", "mt": "Kinnie", "en": "bitter-orange soft drink"},
+            {"icon": "🍷", "mt": "inbid", "en": "wine"},
+            {"icon": "🍺", "mt": "birra", "en": "beer"},
+            {"icon": "☕", "mt": "kafè", "en": "coffee"},
+            {"icon": "😋", "mt": "bnin", "en": "delicious"}
+          ]
+        },
+        {
+          "title": "Everyday expressions",
+          "icon": "💬",
+          "items": [
+            {"icon": "🤌", "mt": "Mela", "en": "so / well / of course"},
+            {"icon": "👂", "mt": "Isma'", "en": "listen / hey"},
+            {"icon": "😣", "mt": "Ajma", "en": "ouch / oh dear"},
+            {"icon": "💙", "mt": "Ħanini", "en": "darling (to a man)"},
+            {"icon": "💗", "mt": "Ħanina", "en": "darling (to a woman)"},
+            {"icon": "✅", "mt": "Iva mela", "en": "yes, of course"},
+            {"icon": "🙅", "mt": "Le le", "en": "no no"},
+            {"icon": "❓", "mt": "Mhux hekk?", "en": "isn't it? / right?"},
+            {"icon": "😮", "mt": "Tassew?", "en": "really?"},
+            {"icon": "🎉", "mt": "Prosit", "en": "well done"},
+            {"icon": "✨", "mt": "Sabiħ", "en": "beautiful / lovely"}
           ]
         }
       ]

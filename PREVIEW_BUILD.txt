@@ -1,5 +1,5 @@
-build 20260601xx
+build 20260601yy
 VERSION 1.0.0-beta.26
-CACHE maltiongthego-1.0.0-beta.26-20260601xx
+CACHE maltiongthego-1.0.0-beta.26-20260601yy
 date 2026-06-02
-notes: narration cache-bust + textless extra1.
+notes: free lessons vocab-last; u1 gloss fix.
