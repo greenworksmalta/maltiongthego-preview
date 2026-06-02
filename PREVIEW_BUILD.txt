@@ -1,5 +1,5 @@
-build 20260601uu
+build 20260601vv
 VERSION 1.0.0-beta.26
-CACHE maltiongthego-1.0.0-beta.26-20260601uu
+CACHE maltiongthego-1.0.0-beta.26-20260601vv
 date 2026-06-02
-notes: ship unit-art images (fix 404).
+notes: full hero image set + home-card thumbnails.
