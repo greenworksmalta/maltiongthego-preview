@@ -20,7 +20,7 @@ const VERSION = "1.0.0-beta.26";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "20260601hh";
+const BUILD = "20260601ii";
 function v(url){ return url + (url.includes("?")?"&":"?") + "v=" + VERSION; }
 
 // Lightweight UI strings table for the parts of the app that aren't data-driven.
@@ -678,7 +678,7 @@ async function loadLesson(lid, lang){
   // For non-English, try the language-specific file first; fall back to English silently.
   if(lang !== "en"){
     try {
-      const r = await fetch(v("lessons/" + lid + "." + lang + ".json"));
+      const r = await fetch("lessons/" + lid + "." + lang + ".json?b=" + BUILD);
       if(r.ok){
         const data = await r.json();
         State.lessons[cacheKey] = data;
@@ -686,7 +686,7 @@ async function loadLesson(lid, lang){
       }
     } catch(e){ /* fall through to English */ }
   }
-  const r = await fetch(v("lessons/" + lid + ".json"));
+  const r = await fetch("lessons/" + lid + ".json?b=" + BUILD);
   if(!r.ok) throw new Error("Missing lesson: " + lid);
   const data = await r.json();
   State.lessons[lid + ":en"] = data;
@@ -699,7 +699,7 @@ async function loadOverview(lid, lang){
   if(State.overviews[cacheKey]) return State.overviews[cacheKey];
   // English uses the bare filename; other languages use lid.<lang>.json
   const filename = lang === "en" ? lid + ".json" : lid + "." + lang + ".json";
-  const r = await fetch(v("lessons/overviews/" + filename));
+  const r = await fetch("lessons/overviews/" + filename + "?b=" + BUILD);
   if(!r.ok) throw new Error("Missing overview: " + lid + " (" + lang + ")");
   const data = await r.json();
   State.overviews[cacheKey] = data;
