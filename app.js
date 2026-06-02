@@ -20,7 +20,7 @@ const VERSION = "1.0.0-beta.26";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "20260601mm";
+const BUILD = "20260601nn";
 // Bump ONLY when audio clips are regenerated (re-voiced). Audio filenames are
 // sha1(mt) so a re-voiced clip keeps its name; without a changing query the
 // browser/SW serve the OLD cached audio. play() busts on this.
@@ -2762,6 +2762,7 @@ function makeMcStep(exId, opts){
     // (JSON-friendly) puts the blank AFTER the word — needed because Maltese
     // adjectives/colours FOLLOW the noun (tadama ____, not ____ tadama).
     const promptText = opts.displayFn ? opts.displayFn(item)
+      : opts.rawPrompt ? item[wordField]           // word already contains its own blank (kafè ___ ħalib)
       : opts.blankAfter ? (item[wordField] + " ____")
       : ("____ " + item[wordField]);
     w.appendChild(el("div","mtline", promptText));

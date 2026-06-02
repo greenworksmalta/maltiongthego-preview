@@ -1,5 +1,5 @@
-build 20260601mm
+build 20260601nn
 VERSION 1.0.0-beta.26
-CACHE maltiongthego-1.0.0-beta.26-20260601mm
+CACHE maltiongthego-1.0.0-beta.26-20260601nn
 date 2026-06-02
-notes: kafè reduced to kapuċċino in sentences; ilma bil-lumi; recorded kafè bil-ħalib kept.
+notes: grammar8 withmc prompt fix (no double blank) + full-phrase audio.

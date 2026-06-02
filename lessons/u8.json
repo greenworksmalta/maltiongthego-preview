@@ -324,19 +324,26 @@
             {
               "word": "kafè ___ ħalib",
               "answer": "bil-",
-              "en": "coffee with milk"
+              "en": "coffee with milk",
+              "mt": "kafè bil-ħalib"
             },
             {
               "word": "ilma ___ lumi",
               "answer": "bil-",
-              "en": "water with lemon"
+              "en": "water with lemon",
+              "mt": "ilma bil-lumi"
             },
             {
               "word": "kapuċċino ___ zokkor",
               "answer": "biz-",
-              "en": "cappuccino with sugar"
+              "en": "cappuccino with sugar",
+              "mt": "kapuċċino biz-zokkor"
             }
-          ]
+          ],
+          "opts": {
+            "rawPrompt": true,
+            "audioAnswer": true
+          }
         }
       ]
     },
