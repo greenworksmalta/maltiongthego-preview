@@ -1,5 +1,5 @@
-build 20260601gg
+build 20260601hh
 VERSION 1.0.0-beta.26
-CACHE maltiongthego-1.0.0-beta.26-20260601gg
+CACHE maltiongthego-1.0.0-beta.26-20260601hh
 date 2026-06-02
-notes: kafè café pronunciation; Xi trid tixrob.
+notes: fix cafe/food/time section crash (id collisions).
