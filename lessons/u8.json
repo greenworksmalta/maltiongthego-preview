@@ -45,51 +45,63 @@
       "vocab": [
         {
           "mt": "kafè",
-          "en": "coffee"
+          "en": "coffee",
+          "icon": "☕"
         },
         {
           "mt": "kapuċċino",
-          "en": "cappuccino"
+          "en": "cappuccino",
+          "icon": "☕"
         },
         {
           "mt": "tè",
-          "en": "tea"
+          "en": "tea",
+          "icon": "🍵"
         },
         {
           "mt": "kikkra kafè",
-          "en": "a cup of coffee"
+          "en": "a cup of coffee",
+          "icon": "☕"
         },
         {
           "mt": "kafè bil-ħalib",
-          "en": "coffee with milk"
+          "en": "coffee with milk",
+          "icon": "☕"
         },
         {
           "mt": "ilma bil-lumi",
-          "en": "water with lemon"
+          "en": "water with lemon",
+          "icon": "🍋"
         },
         {
           "mt": "ilma",
-          "en": "water"
+          "en": "water",
+          "icon": "💧"
         },
         {
           "mt": "flixkun ilma",
-          "en": "a bottle of water"
+          "en": "a bottle of water",
+          "icon": "🍶"
         },
         {
           "mt": "luminata",
-          "en": "soft drink"
+          "en": "soft drink",
+          "icon": "🥤"
         },
         {
           "mt": "meraq tal-larinġ",
-          "en": "orange juice"
+          "en": "orange juice",
+          "icon": "🧃"
         },
         {
           "mt": "birra",
-          "en": "beer"
+          "en": "beer",
+          "icon": "🍺"
         },
         {
           "mt": "inbid",
-          "en": "wine"
+          "en": "wine",
+          "icon": "🍷"
         }
       ],
       "exercises": [
@@ -137,43 +149,53 @@
       "items": [
         {
           "mt": "ħobż",
-          "en": "bread"
+          "en": "bread",
+          "icon": "🍞"
         },
         {
           "mt": "ftira",
-          "en": "Maltese flatbread"
+          "en": "Maltese flatbread",
+          "icon": "🫓"
         },
         {
           "mt": "pastizz",
-          "en": "pastizz (savoury pastry)"
+          "en": "pastizz (savoury pastry)",
+          "icon": "🥟"
         },
         {
           "mt": "ravjul",
-          "en": "ravioli"
+          "en": "ravioli",
+          "icon": "🥟"
         },
         {
           "mt": "timpana",
-          "en": "baked pasta pie"
+          "en": "baked pasta pie",
+          "icon": "🍝"
         },
         {
           "mt": "fenek",
-          "en": "rabbit"
+          "en": "rabbit",
+          "icon": "🐰"
         },
         {
           "mt": "ġbejna",
-          "en": "cheeselet"
+          "en": "cheeselet",
+          "icon": "🧀"
         },
         {
           "mt": "insalata",
-          "en": "salad"
+          "en": "salad",
+          "icon": "🥗"
         },
         {
           "mt": "soppa",
-          "en": "soup"
+          "en": "soup",
+          "icon": "🍲"
         },
         {
           "mt": "ġelat",
-          "en": "ice cream"
+          "en": "ice cream",
+          "icon": "🍨"
         }
       ],
       "exercises": [
@@ -234,15 +256,18 @@
         },
         {
           "mt": "Kemm jiswa?",
-          "en": "How much is it?"
+          "en": "How much is it?",
+          "icon": "💶"
         },
         {
           "mt": "Il-kont, jekk jogħġbok",
-          "en": "The bill, please"
+          "en": "The bill, please",
+          "icon": "🧾"
         },
         {
           "mt": "Bnin!",
-          "en": "Delicious!"
+          "en": "Delicious!",
+          "icon": "😋"
         }
       ],
       "exercises": [
@@ -359,98 +384,122 @@
           "items": [
             {
               "mt": "kafè",
-              "en": "coffee"
+              "en": "coffee",
+              "icon": "☕"
             },
             {
               "mt": "kapuċċino",
-              "en": "cappuccino"
+              "en": "cappuccino",
+              "icon": "☕"
             },
             {
               "mt": "tè",
-              "en": "tea"
+              "en": "tea",
+              "icon": "🍵"
             },
             {
               "mt": "kikkra kafè",
-              "en": "a cup of coffee"
+              "en": "a cup of coffee",
+              "icon": "☕"
             },
             {
               "mt": "kafè bil-ħalib",
-              "en": "coffee with milk"
+              "en": "coffee with milk",
+              "icon": "☕"
             },
             {
               "mt": "ilma bil-lumi",
-              "en": "water with lemon"
+              "en": "water with lemon",
+              "icon": "🍋"
             },
             {
               "mt": "ilma",
-              "en": "water"
+              "en": "water",
+              "icon": "💧"
             },
             {
               "mt": "flixkun ilma",
-              "en": "a bottle of water"
+              "en": "a bottle of water",
+              "icon": "🍶"
             },
             {
               "mt": "luminata",
-              "en": "soft drink"
+              "en": "soft drink",
+              "icon": "🥤"
             },
             {
               "mt": "meraq tal-larinġ",
-              "en": "orange juice"
+              "en": "orange juice",
+              "icon": "🧃"
             },
             {
               "mt": "birra",
-              "en": "beer"
+              "en": "beer",
+              "icon": "🍺"
             },
             {
               "mt": "inbid",
-              "en": "wine"
+              "en": "wine",
+              "icon": "🍷"
             }
-          ]
+          ],
+          "icon": "🥤"
         },
         {
           "title": "Food",
           "items": [
             {
               "mt": "ħobż",
-              "en": "bread"
+              "en": "bread",
+              "icon": "🍞"
             },
             {
               "mt": "ftira",
-              "en": "Maltese flatbread"
+              "en": "Maltese flatbread",
+              "icon": "🫓"
             },
             {
               "mt": "pastizz",
-              "en": "pastizz (savoury pastry)"
+              "en": "pastizz (savoury pastry)",
+              "icon": "🥟"
             },
             {
               "mt": "ravjul",
-              "en": "ravioli"
+              "en": "ravioli",
+              "icon": "🥟"
             },
             {
               "mt": "timpana",
-              "en": "baked pasta pie"
+              "en": "baked pasta pie",
+              "icon": "🍝"
             },
             {
               "mt": "fenek",
-              "en": "rabbit"
+              "en": "rabbit",
+              "icon": "🐰"
             },
             {
               "mt": "ġbejna",
-              "en": "cheeselet"
+              "en": "cheeselet",
+              "icon": "🧀"
             },
             {
               "mt": "insalata",
-              "en": "salad"
+              "en": "salad",
+              "icon": "🥗"
             },
             {
               "mt": "soppa",
-              "en": "soup"
+              "en": "soup",
+              "icon": "🍲"
             },
             {
               "mt": "ġelat",
-              "en": "ice cream"
+              "en": "ice cream",
+              "icon": "🍨"
             }
-          ]
+          ],
+          "icon": "🍽️"
         },
         {
           "title": "Ordering & paying",
@@ -473,17 +522,21 @@
             },
             {
               "mt": "Kemm jiswa?",
-              "en": "How much is it?"
+              "en": "How much is it?",
+              "icon": "💶"
             },
             {
               "mt": "Il-kont, jekk jogħġbok",
-              "en": "The bill, please"
+              "en": "The bill, please",
+              "icon": "🧾"
             },
             {
               "mt": "Bnin!",
-              "en": "Delicious!"
+              "en": "Delicious!",
+              "icon": "😋"
             }
-          ]
+          ],
+          "icon": "🧾"
         }
       ]
     }
