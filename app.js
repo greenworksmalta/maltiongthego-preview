@@ -20,7 +20,7 @@ const VERSION = "1.0.0-beta.26";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "20260601ff";
+const BUILD = "20260601gg";
 function v(url){ return url + (url.includes("?")?"&":"?") + "v=" + VERSION; }
 
 // Lightweight UI strings table for the parts of the app that aren't data-driven.
