@@ -20,7 +20,7 @@ const VERSION = "1.0.0-beta.26";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "20260601vv";
+const BUILD = "20260601ww";
 // Bump ONLY when audio clips are regenerated (re-voiced). Audio filenames are
 // sha1(mt) so a re-voiced clip keeps its name; without a changing query the
 // browser/SW serve the OLD cached audio. play() busts on this.
@@ -1360,13 +1360,13 @@ function renderHome(){
     const list = el("div","section-list");
     for(const L of byMod[mod]){
       const unlocked = isLessonUnlocked(L.id);
-      const card = el("button","section-card" + (L.free ? " is-free" : "") + (unlocked ? "" : " is-locked"));
-      // Illustration thumbnail in the icon slot; falls back to the emoji if absent.
-      const thumb = document.createElement("img");
-      thumb.className = "card-thumb"; thumb.alt = ""; thumb.loading = "lazy";
-      thumb.src = "assets/unit-art/" + L.id + ".png?b=" + BUILD;
-      thumb.addEventListener("error", ()=>{ thumb.replaceWith(el("div","icon", L.icon || "📘")); });
-      const ic = thumb;
+      const card = el("button","lesson-card" + (L.free ? " is-free" : "") + (unlocked ? "" : " is-locked"));
+      // Large illustration banner on top; falls back to an emoji placeholder.
+      const banner = document.createElement("img");
+      banner.className = "lesson-banner"; banner.alt = ""; banner.loading = "lazy";
+      banner.src = "assets/unit-art/" + L.id + ".png?b=" + BUILD;
+      banner.addEventListener("error", ()=>{ banner.replaceWith(el("div","lesson-banner placeholder", L.icon || "📘")); });
+      card.appendChild(banner);
       const meta = el("div","meta");
       // Title row carries an optional FREE pill so the free starter is visually marked.
       const titleRow = el("div","title-row");
@@ -1390,8 +1390,7 @@ function renderHome(){
       } else {
         meta.appendChild(el("span","pct locked-pct", tHome.unlock || "Unlock"));
       }
-      const chev = el("div","chev","›");
-      card.appendChild(ic); card.appendChild(meta); card.appendChild(chev);
+      card.appendChild(meta);
       card.addEventListener("click", ()=>{
         if(!unlocked){ go("/paywall?from=" + L.id); return; }
         go("/lesson/"+L.id);

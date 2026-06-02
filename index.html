@@ -104,6 +104,19 @@
   .section-card:active{transform:scale(.985)}
   .section-card .icon{width:56px;height:56px;border-radius:16px;background:var(--bg);display:flex;align-items:center;justify-content:center;font-size:1.7rem}
   .section-card .card-thumb{width:56px;height:56px;border-radius:16px;object-fit:cover;background:var(--bg)}
+  /* Home lesson cards — large illustration banner on top, text underneath */
+  .lesson-card{display:block;padding:0;overflow:hidden;background:var(--card);border:none;border-radius:var(--radius);box-shadow:var(--shadow);text-align:left;width:100%;color:var(--ink);transition:transform .12s ease}
+  .lesson-card:active{transform:scale(.985)}
+  .lesson-card .lesson-banner{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}
+  .lesson-card .lesson-banner.placeholder{display:flex;align-items:center;justify-content:center;font-size:3rem;background:var(--bg)}
+  .lesson-card .meta{padding:14px 16px 16px}
+  .lesson-card .title-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .lesson-card .meta strong{display:block;font-size:1.15rem;font-weight:700}
+  .lesson-card .meta > span{display:block;font-size:.92rem;color:var(--ink-2);margin-top:3px}
+  .lesson-card .pct{display:inline-block;margin-top:8px;font-size:.78rem;font-weight:600;color:var(--primary)}
+  .lesson-card .barwrap{height:6px;background:var(--line);border-radius:99px;overflow:hidden;margin-top:8px}
+  .lesson-card .barwrap > div{height:100%;background:var(--primary);width:0%}
+  .lesson-card.is-locked{opacity:.72}
   .section-card .meta strong{display:block;font-size:1.1rem;font-weight:700}
   .section-card .meta span{display:block;font-size:.92rem;color:var(--ink-2);margin-top:2px}
   .section-card .chev{color:var(--ink-2);font-size:1.3rem;justify-self:end}
@@ -460,7 +473,7 @@
      Loaded before app.js so window.MALTI_CONFIG is available at boot. The file
      is gitignored; the .example one is the canonical shape. -->
 <script src="app-config.js?v=1.0.0-beta.8"></script>
-<script src="app.js?v=20260601vv"></script>
+<script src="app.js?v=20260601ww"></script>
 <!-- Service-worker registration moved into app.js so we can show an in-app
      "Update available" banner when a new version is detected mid-session. -->
 
