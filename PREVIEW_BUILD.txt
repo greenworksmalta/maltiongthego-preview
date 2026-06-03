@@ -1,5 +1,5 @@
-build 20260602g
+build 20260603a
 VERSION 1.0.0-beta.27
-CACHE maltiongthego-1.0.0-beta.27-20260602g
-date 2026-06-02
-notes: fix pack->unit mapping (u1-u9).
+CACHE maltiongthego-1.0.0-beta.27-20260603a
+date 2026-06-03
+notes: cap image height for large-font/zoom devices.
