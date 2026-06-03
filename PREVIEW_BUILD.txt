@@ -1,6 +1,6 @@
-build 20260603e
+build 20260603f
 VERSION 1.0.0-beta.27
-CACHE maltiongthego-1.0.0-beta.27-20260603e
-AUDIO_REV 20260603d
+CACHE maltiongthego-1.0.0-beta.27-20260603f
+AUDIO_REV 20260603e
 date 2026-06-03
-notes: Mary->Mery + U3 statements (lessons+narration).
+notes: Mary->Meri pronunciation.
