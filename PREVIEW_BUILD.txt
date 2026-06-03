@@ -1,5 +1,6 @@
-build 20260603a
+build 20260603b
 VERSION 1.0.0-beta.27
-CACHE maltiongthego-1.0.0-beta.27-20260603a
+CACHE maltiongthego-1.0.0-beta.27-20260603b
+AUDIO_REV 20260603a
 date 2026-06-03
-notes: cap image height for large-font/zoom devices.
+notes: U8 narration uses recorded cafe words.
