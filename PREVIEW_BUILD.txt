@@ -1,6 +1,6 @@
-build 20260603c
+build 20260603d
 VERSION 1.0.0-beta.27
-CACHE maltiongthego-1.0.0-beta.27-20260603c
-AUDIO_REV 20260603b
+CACHE maltiongthego-1.0.0-beta.27-20260603d
+AUDIO_REV 20260603c
 date 2026-06-03
-notes: U8 recorded cafe narration + U3 statement intonation fix.
+notes: U3 statements falling-contour intonation.
