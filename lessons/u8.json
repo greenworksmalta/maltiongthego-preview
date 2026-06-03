@@ -11,7 +11,7 @@
       "intro": "Mary and Joseph stop for a coffee. Listen to how they order.",
       "dialogue": [
         {
-          "mt": "Bonġu! X'tieħu?",
+          "mt": "Bonġu! X'se tieħu?",
           "en": "Good morning! What will you have?"
         },
         {
@@ -254,7 +254,7 @@
           "icon": "🫵"
         },
         {
-          "mt": "X'tieħu?",
+          "mt": "X'se tieħu?",
           "en": "What will you have?",
           "icon": "❓"
         },
@@ -305,10 +305,10 @@
         {
           "id": "what-will-you-have",
           "title": "Asking and answering an order",
-          "explanation": "Staff ask X'tieħu? (what will you have?). You answer with Jien nieħu… (I'll have…) or the more polite Nixtieq… (I'd like…). Add jekk jogħġbok to be polite.",
+          "explanation": "Staff ask X'se tieħu? (what will you have?). You answer with Jien nieħu… (I'll have…) or the more polite Nixtieq… (I'd like…). Add jekk jogħġbok to be polite.",
           "examples": [
             {
-              "mt": "X'tieħu?",
+              "mt": "X'se tieħu?",
               "en": "What will you have?"
             },
             {
@@ -524,7 +524,7 @@
               "icon": "🫵"
             },
             {
-              "mt": "X'tieħu?",
+              "mt": "X'se tieħu?",
               "en": "What will you have?",
               "icon": "❓"
             },

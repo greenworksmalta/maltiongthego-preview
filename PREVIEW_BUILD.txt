@@ -1,6 +1,6 @@
-build 20260603f
+build 20260603g
 VERSION 1.0.0-beta.27
-CACHE maltiongthego-1.0.0-beta.27-20260603f
-AUDIO_REV 20260603e
+CACHE maltiongthego-1.0.0-beta.27-20260603g
+AUDIO_REV 20260603f
 date 2026-06-03
-notes: Mary->Meri pronunciation.
+notes: U8 X-se-tiehu future particle.

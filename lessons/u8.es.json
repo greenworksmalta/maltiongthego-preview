@@ -12,7 +12,7 @@
       "intro": "Mary y Joseph se detienen a tomar un café. Escucha cómo hacen su pedido.",
       "dialogue": [
         {
-          "mt": "Bonġu! X'tieħu?",
+          "mt": "Bonġu! X'se tieħu?",
           "en": "¡Buenos días! ¿Qué va a tomar?"
         },
         {
@@ -255,7 +255,7 @@
           "icon": "🫵"
         },
         {
-          "mt": "X'tieħu?",
+          "mt": "X'se tieħu?",
           "en": "¿Qué va a tomar?",
           "icon": "❓"
         },
@@ -306,10 +306,10 @@
         {
           "id": "what-will-you-have",
           "title": "Hacer y responder un pedido",
-          "explanation": "El personal pregunta X'tieħu? (¿qué va a tomar?). Respondes con Jien nieħu… (voy a tomar…) o la forma más cortés Nixtieq… (quisiera…). Añade jekk jogħġbok para ser cortés.",
+          "explanation": "El personal pregunta X'se tieħu? (¿qué va a tomar?). Respondes con Jien nieħu… (voy a tomar…) o la forma más cortés Nixtieq… (quisiera…). Añade jekk jogħġbok para ser cortés.",
           "examples": [
             {
-              "mt": "X'tieħu?",
+              "mt": "X'se tieħu?",
               "en": "¿Qué va a tomar?"
             },
             {
@@ -525,7 +525,7 @@
               "icon": "🫵"
             },
             {
-              "mt": "X'tieħu?",
+              "mt": "X'se tieħu?",
               "en": "¿Qué va a tomar?",
               "icon": "❓"
             },
