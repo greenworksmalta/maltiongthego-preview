@@ -1,6 +1,3 @@
-build 20260603g
-VERSION 1.0.0-beta.27
-CACHE maltiongthego-1.0.0-beta.27-20260603g
-AUDIO_REV 20260603f
-date 2026-06-03
-notes: U8 X-se-tiehu future particle.
+Preview build: 20260623k (listen-mode)
+Deployed: 2026-06-24
+Feature: Listen / Car mode

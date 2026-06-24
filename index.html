@@ -193,6 +193,9 @@
   .paywall-restore-btn{background:transparent;border:1.5px solid var(--ink-2);color:var(--ink);padding:10px 22px;border-radius:99px;font-weight:600;font-size:.95rem}
   .paywall-meta{margin-top:20px;text-align:center}
   .paywall-meta .small{font-size:.78rem;color:var(--ink-2)}
+  .paywall-legal{margin:0 0 10px;font-size:.85rem}
+  .paywall-legal-link{color:var(--primary-2);text-decoration:underline}
+  .paywall-legal-sep{color:var(--ink-2)}
   .paywall-dev{margin:18px 0 0;padding:14px;background:#fff7d6;border:1px dashed #c2a32a;border-radius:12px;text-align:center}
   .paywall-dev .muted{font-size:.78rem;color:#7a5b00;margin:0 0 8px;letter-spacing:.04em;text-transform:uppercase;font-weight:700}
   .paywall-dev-row{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
@@ -473,7 +476,12 @@
      Loaded before app.js so window.MALTI_CONFIG is available at boot. The file
      is gitignored; the .example one is the canonical shape. -->
 <script src="app-config.js?v=1.0.0-beta.8"></script>
-<script src="app.js?v=20260603g"></script>
+<!-- OTA content layer. Loaded before app.js so window.CONTENT_CONFIG + window.ContentOTA
+     exist at boot. Both no-op while CONTENT_CONFIG.OTA_ENABLED is false (current default),
+     so this changes nothing until OTA is switched on. See app-assets/ota-content-plan.md. -->
+<script src="content-config.js?v=20260623k"></script>
+<script src="content-ota.js?v=20260623k"></script>
+<script src="app.js?v=20260623k"></script>
 <!-- Service-worker registration moved into app.js so we can show an in-app
      "Update available" banner when a new version is detected mid-session. -->
 

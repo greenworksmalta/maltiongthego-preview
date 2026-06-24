@@ -16,11 +16,11 @@
 //   - VERSION below                    (in-app footer + ?v= cache buster)
 //   - <script src="app.js?v=..."> tag in index.html
 //   - CACHE_NAME in sw.js              (forces SW reinstall)
-const VERSION = "1.0.0-beta.27";
+const VERSION = "1.0.4";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "20260603g";
+const BUILD = "20260623k";
 // Bump ONLY when audio clips are regenerated (re-voiced). Audio filenames are
 // sha1(mt) so a re-voiced clip keeps its name; without a changing query the
 // browser/SW serve the OLD cached audio. play() busts on this.
@@ -108,6 +108,8 @@ const I18N = {
       restore: "Restore purchases",
       restoreNote: "Already bought on another device? Tap Restore.",
       manageSub: "Manage subscription",
+      terms: "Terms of Use",
+      privacyLink: "Privacy Policy",
       tierFree: "Free",
       tierStarter: "Starter pack",
       tierCore: "Core pack",
@@ -135,6 +137,20 @@ const I18N = {
       locked: "Search",
       lockedSub: "Search every phrase and topic in the course and jump straight to it — included with a subscription.",
       lockedCta: "Subscribers only 🔒",
+    },
+    listen: {
+      title: "Listen",
+      sub: "Hands-free — learn while you drive or walk",
+      lockedSub: "Play every unlocked lesson as a hands-free audio course.",
+      empty: "Unlock a lesson to start a Listen session.",
+      overview: "Overview",
+      skipIntro: "Skip intro →",
+      nowPlaying: "Now playing",
+      tapToStart: "Tap play to begin",
+      preparing: "Preparing your session…",
+      startUnit: "Start / loop from",
+      allUnits: "All units",
+      vocabOnly: "Vocabulary only (skip dialogues)",
     },
   },
   es: {
@@ -214,6 +230,8 @@ const I18N = {
       restore: "Restaurar compras",
       restoreNote: "¿Ya compraste en otro dispositivo? Toca Restaurar.",
       manageSub: "Gestionar suscripción",
+      terms: "Términos de uso",
+      privacyLink: "Política de privacidad",
       tierFree: "Gratis",
       tierStarter: "Pack inicial",
       tierCore: "Pack básico",
@@ -242,6 +260,20 @@ const I18N = {
       lockedSub: "Busca cualquier frase o tema del curso y salta directo — incluido con la suscripción.",
       lockedCta: "Solo suscriptores 🔒",
     },
+    listen: {
+      title: "Escuchar",
+      sub: "Manos libres — aprende mientras conduces o caminas",
+      lockedSub: "Reproduce cada lección desbloqueada como un curso de audio manos libres.",
+      empty: "Desbloquea una lección para empezar a escuchar.",
+      overview: "Introducción",
+      skipIntro: "Saltar intro →",
+      nowPlaying: "Reproduciendo",
+      tapToStart: "Toca reproducir para empezar",
+      preparing: "Preparando tu sesión…",
+      startUnit: "Empezar / repetir desde",
+      allUnits: "Todas las unidades",
+      vocabOnly: "Solo vocabulario (sin diálogos)",
+    },
   },
 };
 
@@ -251,6 +283,10 @@ const State = {
   lessons: {},           // {<lid>:<lang>: {...}} keyed by lesson id + language
   overviews: {},         // {<lid>:<lang>: {transcript:[...]}}
   manifest: null,        // {mt: filename}
+  // Listen / Car mode: per-language translation-clip map {en|es: {translationText: filename}}.
+  // These are the NEW spoken-translation clips used ONLY by the Listen player; the
+  // Maltese half of each pair still resolves through manifest/recorded as usual.
+  listenManifest: { en: {}, es: {} },
   searchIndex: null,     // {lang, entries:[...]} — flattened phrase list, built lazily
   progress: load("progress") || {},   // {lessonId: {sectionId: pct}}
   xp: load("xp") || 0,
@@ -399,24 +435,39 @@ const $app = () => document.getElementById("app");
 // ── Audio ─────────────────────────────────────
 const player = document.getElementById("player");
 let currentBtn = null;
+// Resolve a Maltese string to its audio URL (recorded clip wins over Azure;
+// OTA object URL wins over bundled for non-bundled clips). Returns null if the
+// string has no audio. Factored out of play() so the Listen player can reuse the
+// exact same resolution for the Maltese half of each pair.
+function audioSrcFor(mt){
+  const recorded = State.recorded && State.recorded[mt];
+  if(recorded) return "audio/recorded/" + recorded;
+  const file = State.manifest && State.manifest[mt];
+  if(!file) return null;
+  // OTA: if the clip isn't in the bundle, use the pre-fetched OTA object URL
+  // (sync lookup keeps us inside the tap gesture for iOS). Falls back to bundled.
+  const bundled = !State.bundledAudio || State.bundledAudio.has(file);
+  const otaURL = (!bundled && window.ContentOTA) ? ContentOTA.getAudioURLSync(file) : null;
+  return otaURL || ("audio/" + file);
+}
 function play(mt, opts){
   if(!mt) return;
   opts = opts || {};
-  // Human-recorded clip wins over the Azure-generated one if mapped.
-  const recorded = State.recorded && State.recorded[mt];
-  let src;
-  if(recorded){
-    src = "audio/recorded/" + recorded;
-  } else {
-    const file = State.manifest && State.manifest[mt];
-    if(!file){ console.warn("No audio for:", mt); return; }
-    src = "audio/" + file;
-  }
+  const src = audioSrcFor(mt);
+  if(!src){ console.warn("No audio for:", mt); return; }
   if(currentBtn){ currentBtn.classList.remove("playing"); currentBtn=null; }
   try{
     player.pause();
-    player.src = src + (src.includes("?") ? "&" : "?") + "a=" + AUDIO_REV;
-    player.currentTime = 0;
+    // Blob URLs + remote CDN URLs (OTA clips) must not get the local ?a= rev
+    // suffix; only bundled relative paths do.
+    const noRev = src.indexOf("blob:") === 0 || src.indexOf("http") === 0;
+    player.src = noRev ? src : src + (src.includes("?") ? "&" : "?") + "a=" + AUDIO_REV;
+    // Reset to start, but GUARD it: on a freshly-set remote (OTA) src that hasn't
+    // loaded yet, iOS WKWebView throws on currentTime before metadata is ready,
+    // which would abort playback. A new src already starts at 0, so a throw here
+    // is harmless — must never stop us reaching play(). (Blob/bundled load fast,
+    // so this only matters for the direct-CDN-URL path.)
+    try { player.currentTime = 0; } catch(_){}
     // Slower playback for short MC clips (article + word combos), where the default
     // -8% SSML rate still feels rushed to learners parsing a single chunk.
     player.playbackRate = (typeof opts.rate === "number") ? opts.rate : 1;
@@ -431,6 +482,29 @@ function playBtn(btn, mt, opts){
   btn.classList.add("playing");
 }
 player.addEventListener("ended", ()=>{ if(currentBtn){ currentBtn.classList.remove("playing"); currentBtn=null; } });
+// Collect every `mt` string in a lesson object (vocab / dialogues / exercises).
+function collectMt(node, out){
+  if(!node) return out;
+  if(Array.isArray(node)){ for(const x of node) collectMt(x, out); return out; }
+  if(typeof node === "object"){
+    if(typeof node.mt === "string" && node.mt) out.push(node.mt);
+    for(const k in node){ if(k !== "mt") collectMt(node[k], out); }
+  }
+  return out;
+}
+// OTA: pre-fetch a lesson's NON-bundled audio when the lesson opens, so taps play
+// instantly and synchronously (iOS gesture-safe). No-op while OTA is disabled.
+function prefetchLessonAudio(lesson){
+  if(!window.ContentOTA || !ContentOTA.prefetchAudio || !State.bundledAudio) return;
+  try{
+    const files = [];
+    for(const mt of collectMt(lesson, [])){
+      const f = State.manifest && State.manifest[mt];
+      if(f) files.push(f);
+    }
+    if(files.length) ContentOTA.prefetchAudio(files, f => State.bundledAudio.has(f));
+  }catch(e){ /* prefetch is best-effort */ }
+}
 function audioBtn(mt, opts){
   opts = opts || {};
   const b = el("button", "audio-btn"+(opts.size?" "+opts.size:""), opts.label||"🔊");
@@ -647,6 +721,328 @@ function dismissInstallPrompt(){
 function go(hash){ location.hash = hash; }
 window.addEventListener("hashchange", route);
 
+// ── Listen / Car mode ─────────────────────────────────────────────────────
+// A hands-free audio course: plays UNLOCKED lessons end to end. Per lesson it
+// announces the lesson title, plays the overview narration (skippable), then for
+// each section announces the section title and plays its vocab + dialogue items
+// as "<translation> … <Maltese>" pairs. Loops back to the chosen start unit.
+//
+// Reuses the existing Maltese clips (audioSrcFor) + overview narration; the only
+// new audio is the spoken translation/title clips (audio/listen/<lang>/, mapped by
+// State.listenManifest). Nothing here touches the normal lesson/exercise playback.
+
+// Collect a section's spoken items in document order, tagging each vocab vs dialogue
+// by its source key, deduped by mt. Skips only interactive drills (LISTEN_SKIP_KEYS) —
+// grammar rule examples + usage examples ARE read, mirroring generate_listen_audio.py
+// so every requested clip exists.
+const LISTEN_SKIP_KEYS = { exercises:1 };
+// Spoken intro played as the header of each unit's Vocabulary section. Must match
+// EXTRA_PHRASES in scripts/generate_listen_audio.py EXACTLY (clip lookup is by text).
+const LISTEN_REVIEW_INTRO = {
+  en: "Now let us review all the vocabulary we used in this unit.",
+  es: "Ahora repasemos todo el vocabulario que usamos en esta unidad."
+};
+// Spoken before each unit, joined with the unit title ("...next Unit. Welcome to Malta").
+// Must match MOVE_ON in scripts/generate_listen_audio.py EXACTLY.
+const LISTEN_MOVE_ON = {
+  en: "Now let's move on to the next Unit.",
+  es: "Ahora pasemos a la siguiente unidad."
+};
+// A "kiteb/ikteb/iktbu-style" verb-transformation row: the Maltese shows a form
+// change ("→") AND the English is a verb conjugation/imperative (has "!", "(imp",
+// or a subject pronoun I/you/he/she/we/they). This excludes the u5 noun/possessive
+// "→" rows (mother→mothers, dar tiegħi→dari), which use possessives (my/your/his).
+// Only these get their Maltese half slowed in Listen (TTS rushes the clusters).
+function isSlowMt(mt, en){
+  if(!mt || mt.indexOf("→") < 0) return false;
+  return /[!]|\(imp|\b(?:I|you|he|she|we|they)\b/i.test(en || "");
+}
+function collectSectionItems(sec){
+  const out = [], seen = new Set();
+  const walk = (node, kind) => {
+    if(Array.isArray(node)){ for(const x of node) walk(x, kind); return; }
+    if(node && typeof node === "object"){
+      if(typeof node.mt === "string" && typeof node.en === "string" && node.mt.trim() && node.en.trim()){
+        if(!seen.has(node.mt)){ seen.add(node.mt); out.push({ mt:node.mt, translation:node.en, kind:kind, slow:isSlowMt(node.mt, node.en) }); }
+      }
+      for(const k in node){ if(!LISTEN_SKIP_KEYS[k]) walk(node[k], kind); }
+    }
+  };
+  for(const key in sec){
+    if(LISTEN_SKIP_KEYS[key]) continue;
+    walk(sec[key], key === "dialogue" ? "dialogue" : "vocab");
+  }
+  return out;
+}
+
+// Nested data: [{id,title,narrFile, sections:[{id,title, items:[{mt,translation,kind}]}]}]
+function buildListenData(lang, lessons){
+  const data = [];
+  for(const L of lessons){
+    const lesson = State.lessons[L.id + ":" + lang] || State.lessons[L.id + ":en"];
+    if(!lesson) continue;
+    const narrFile = lang === "en" ? "narration_"+L.id+".mp3" : "narration_"+L.id+"_"+lang+".mp3";
+    const sections = [];
+    for(const sec of lesson.sections || []){
+      const items = collectSectionItems(sec);
+      if(!items.length) continue;
+      // The end-of-unit Vocabulary section gets a spoken review intro as its header.
+      const headerText = (sec.id === "vocabulary") ? (LISTEN_REVIEW_INTRO[lang] || LISTEN_REVIEW_INTRO.en) : (sec.title || "");
+      sections.push({ id: sec.id || "", title: sec.title || "", headerText: headerText, items: items });
+    }
+    if(sections.length){
+      const title = lesson.title || L.title;
+      const headerText = (LISTEN_MOVE_ON[lang] || LISTEN_MOVE_ON.en) + " " + title;
+      data.push({ id: L.id, title: title, headerText: headerText, narrFile: narrFile, sections: sections });
+    }
+  }
+  return data;
+}
+
+// Flatten nested data into a flat track list for the current mode. vocabOnly drops
+// dialogue items, the overview, and any section left with no items.
+function flattenListen(data, vocabOnly){
+  const tracks = [];
+  for(const lesson of data){
+    const secs = lesson.sections
+      .map(s => ({ id:s.id, title:s.title, headerText:s.headerText, items: vocabOnly ? s.items.filter(i => i.kind === "vocab") : s.items }))
+      .filter(s => s.items.length);
+    if(!secs.length) continue;
+    tracks.push({ type:"header", level:"lesson", lessonId:lesson.id, lessonTitle:lesson.title, headerText:lesson.headerText || lesson.title, plainText:lesson.title });
+    if(!vocabOnly && lesson.narrFile) tracks.push({ type:"overview", lessonId:lesson.id, lessonTitle:lesson.title, narrFile:lesson.narrFile });
+    for(const s of secs){
+      tracks.push({ type:"header", level:"section", lessonId:lesson.id, lessonTitle:lesson.title, sectionTitle:s.title, headerText:s.headerText || s.title });
+      for(const it of s.items) tracks.push({ type:"item", lessonId:lesson.id, lessonTitle:lesson.title, sectionTitle:s.title, mt:it.mt, translation:it.translation, kind:it.kind, slow:it.slow });
+    }
+  }
+  return tracks;
+}
+
+async function renderListen(){
+  const root = $app(); root.innerHTML = "";
+  const lang = State.lang || "en";
+  const t = (I18N[lang] || I18N.en).listen;
+
+  const head = el("div","listen-head");
+  head.style.cssText = "display:flex;align-items:center;gap:12px;margin:10px 0 4px;";
+  const back = el("button","","←");
+  back.setAttribute("aria-label","Back");
+  back.style.cssText = "width:40px;height:40px;flex:0 0 auto;border-radius:50%;border:1px solid var(--border,#e0e0e0);background:var(--card,#fff);color:inherit;cursor:pointer;font-size:1.25rem;line-height:1;display:flex;align-items:center;justify-content:center;";
+  back.addEventListener("click", ()=>go("/home"));
+  head.appendChild(back);
+  const h1 = el("h1","", "🎧 " + t.title); h1.style.cssText = "margin:0;font-size:1.4rem;";
+  head.appendChild(h1);
+  root.appendChild(head);
+
+  // Load unlocked lessons in the current language, then build the nested data.
+  const unlocked = (State.index && State.index.lessons || []).filter(L => isLessonVisible(L) && isLessonUnlocked(L.id));
+  await Promise.all(unlocked.map(L => loadLesson(L.id, lang).catch(()=>{})));
+  const data = buildListenData(lang, unlocked);
+  if(!data.length){ root.appendChild(el("p","muted", t.empty)); return; }
+
+  // ── Settings: start/loop unit + vocabulary-only ──────────────
+  let vocabOnly = !!load("listen_vocab_only");
+  let startUnit = load("listen_start_unit") || "";
+  const settings = el("div","listen-settings");
+  settings.style.cssText = "display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:center;margin:8px 0 4px;font-size:.9rem;";
+  const unitWrap = el("label",""); unitWrap.style.cssText = "display:flex;gap:6px;align-items:center;";
+  unitWrap.appendChild(el("span","muted", t.startUnit));
+  const unitSel = document.createElement("select");
+  unitSel.style.cssText = "padding:4px 8px;border-radius:8px;";
+  const allOpt = document.createElement("option"); allOpt.value = ""; allOpt.textContent = t.allUnits; unitSel.appendChild(allOpt);
+  data.forEach(d => { const o = document.createElement("option"); o.value = d.id; o.textContent = d.title; if(d.id === startUnit) o.selected = true; unitSel.appendChild(o); });
+  unitWrap.appendChild(unitSel); settings.appendChild(unitWrap);
+  const vocabWrap = el("label",""); vocabWrap.style.cssText = "display:flex;gap:6px;align-items:center;cursor:pointer;";
+  const vocabCb = document.createElement("input"); vocabCb.type = "checkbox"; vocabCb.checked = vocabOnly;
+  vocabWrap.appendChild(vocabCb); vocabWrap.appendChild(el("span","", "🔤 " + t.vocabOnly));
+  settings.appendChild(vocabWrap);
+  root.appendChild(settings);
+
+  // Now-playing card
+  const card = el("div","listen-card");
+  card.style.cssText = "text-align:center;padding:24px;margin:14px 0;border-radius:16px;background:var(--card,#fff);box-shadow:0 2px 12px rgba(0,0,0,.08);";
+  const ctxEl = el("div","muted"); ctxEl.style.cssText = "font-size:.85rem;text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px;min-height:1.1em;";
+  const transEl = el("div",""); transEl.style.cssText = "font-size:1.4rem;font-weight:600;margin:6px 0;min-height:1.6em;";
+  const mtEl = el("div",""); mtEl.style.cssText = "font-size:1.6rem;color:var(--brand,#1B5E20);margin:6px 0;min-height:1.7em;";
+  const posEl = el("div","muted"); posEl.style.cssText = "font-size:.8rem;margin-top:12px;";
+  card.appendChild(ctxEl); card.appendChild(transEl); card.appendChild(mtEl); card.appendChild(posEl);
+  root.appendChild(card);
+
+  // Controls
+  const controls = el("div","listen-controls");
+  controls.style.cssText = "display:flex;justify-content:center;align-items:center;gap:18px;margin:8px 0;";
+  // Crisp SVG icons, centred via flex (emoji glyphs sit off-centre in a circle).
+  const SVG_PREV = "<svg width='22' height='22' viewBox='0 0 24 24' fill='currentColor'><path d='M6 6h2v12H6zm3.5 6L18 18V6z'/></svg>";
+  const SVG_NEXT = "<svg width='22' height='22' viewBox='0 0 24 24' fill='currentColor'><path d='M16 6h2v12h-2zM6 18l8.5-6L6 6z'/></svg>";
+  const SVG_PLAY = "<svg width='30' height='30' viewBox='0 0 24 24' fill='currentColor'><path d='M8 5v14l11-7z'/></svg>";
+  const SVG_PAUSE = "<svg width='28' height='28' viewBox='0 0 24 24' fill='currentColor'><path d='M6 5h4v14H6zm8 0h4v14h-4z'/></svg>";
+  const prevB = el("button","listen-btn"); prevB.innerHTML = SVG_PREV; prevB.setAttribute("aria-label","Previous");
+  const playB = el("button","listen-btn"); playB.innerHTML = SVG_PLAY; playB.setAttribute("aria-label","Play / pause");
+  const nextB = el("button","listen-btn"); nextB.innerHTML = SVG_NEXT; nextB.setAttribute("aria-label","Next");
+  [prevB,nextB].forEach(b=>b.style.cssText="width:52px;height:52px;border-radius:50%;border:1px solid var(--border,#e0e0e0);background:var(--card,#fff);color:inherit;cursor:pointer;padding:0;display:flex;align-items:center;justify-content:center;");
+  playB.style.cssText = "width:72px;height:72px;border-radius:50%;border:none;background:var(--brand,#1B5E20);color:#fff;cursor:pointer;padding:0;display:flex;align-items:center;justify-content:center;box-shadow:0 3px 10px rgba(27,94,32,.35);";
+  controls.appendChild(prevB); controls.appendChild(playB); controls.appendChild(nextB);
+  root.appendChild(controls);
+
+  const skipIntroB = el("button","", t.skipIntro);
+  skipIntroB.style.cssText = "display:block;margin:14px auto 4px;padding:9px 20px;border-radius:999px;border:1px solid var(--brand,#1B5E20);background:transparent;color:var(--brand,#1B5E20);cursor:pointer;font-size:.95rem;font-weight:600;";
+  root.appendChild(skipIntroB);
+
+  // ── Player engine ────────────────────────────────────────────
+  const la = new Audio();
+  la.preload = "auto";
+  let tracks = [];
+  let idx = 0, loopStart = 0;
+  let phase = 0;       // for item tracks: 0 = translation clip, 1 = Maltese clip
+  let started = false;
+  let paused = true;   // session paused (true until first play)
+  let gapTimer = null, pending = null, watchdog = null, failCount = 0;
+  let everLooped = false;   // once the playlist wraps, the start unit also gets the "move on" intro
+  const isRemote = (s) => s.indexOf("blob:") === 0 || s.indexOf("http") === 0;
+  const rev = (s) => isRemote(s) ? s : s + (s.includes("?") ? "&" : "?") + "a=" + AUDIO_REV;
+  function clearGap(){ if(gapTimer){ clearTimeout(gapTimer); gapTimer = null; } }
+  function clearWatch(){ if(watchdog){ clearTimeout(watchdog); watchdog = null; } }
+  function scheduleGap(fn, ms){ pending = fn; clearGap(); gapTimer = setTimeout(()=>{ gapTimer = null; pending = null; if(!paused) fn(); }, ms); }
+
+  function paint(){
+    const tr = tracks[idx];
+    posEl.textContent = (idx+1) + " / " + tracks.length;
+    skipIntroB.style.display = (tr && tr.type === "overview") ? "block" : "none";
+    if(!started){ ctxEl.textContent = tracks[loopStart] ? tracks[loopStart].lessonTitle : ""; transEl.textContent = t.tapToStart; mtEl.textContent = ""; return; }
+    if(!tr) return;
+    if(tr.type === "overview"){
+      ctxEl.textContent = tr.lessonTitle; transEl.textContent = "📖 " + t.overview; mtEl.textContent = "";
+    } else if(tr.type === "header"){
+      ctxEl.textContent = tr.level === "lesson" ? "📘" : tr.lessonTitle;
+      transEl.textContent = headerTextFor(tr); mtEl.textContent = "";
+    } else {
+      ctxEl.textContent = tr.lessonTitle + (tr.sectionTitle ? " · " + tr.sectionTitle : "");
+      transEl.textContent = tr.translation; mtEl.textContent = tr.mt;
+    }
+  }
+
+  // Listen content is bundled, so always use the binary path for narration. (We
+  // deliberately skip the OTA blob lookup here — a stale/empty OTA object URL was
+  // making the overview clip fail to start.)
+  function overviewSrc(file){ return "audio/" + file; }
+  function translationSrc(text){
+    const map = State.listenManifest[lang] || State.listenManifest.en || {};
+    const file = map[text];
+    return file ? ("audio/listen/" + lang + "/" + file) : null;
+  }
+  // Opening unit (the start unit, before the playlist has looped) plays its plain
+  // title; every other lesson header — including after a loop — gets "Now let's move on…".
+  function headerTextFor(tr){
+    if(tr && tr.type === "header" && tr.level === "lesson" && idx === loopStart && !everLooped) return tr.plainText || tr.headerText;
+    return tr ? tr.headerText : "";
+  }
+
+  function playCurrent(){
+    const tr = tracks[idx];
+    paint();
+    if(!tr){ return; }
+    if(tr.type === "overview"){ setSrcAndPlay(overviewSrc(tr.narrFile)); return; }
+    if(tr.type === "header"){ const s = translationSrc(headerTextFor(tr)); if(s) setSrcAndPlay(s); else scheduleGap(advance, 50); return; }
+    phase = 0;
+    const ts = translationSrc(tr.translation);
+    if(ts){ setSrcAndPlay(ts); }
+    else { phase = 1; playMaltese(); }   // no translation clip → straight to Maltese
+  }
+  function playMaltese(){
+    const tr = tracks[idx];
+    const src = audioSrcFor(tr.mt);
+    // Kiteb/ikteb/iktbu-style verb-transformation rows get rushed by the TTS —
+    // play only those Maltese halves slower (everything else stays normal speed).
+    if(src){ setSrcAndPlay(src, tr.slow ? 0.72 : 1); }
+    else { advance(); }                  // no Maltese clip either → skip item
+  }
+  function setSrcAndPlay(src, rate){
+    const isOverview = tracks[idx] && tracks[idx].type === "overview";
+    try {
+      la.pause();
+      la.src = rev(src);
+      la.playbackRate = (typeof rate === "number") ? rate : 1;
+      try { la.currentTime = 0; } catch(_){}
+      const p = la.play();
+      if(p && p.catch) p.catch(e=>console.warn("listen play", e));
+      // Watchdog: if a SHORT clip (header/item) silently never starts, skip rather
+      // than stall. The overview is long + skippable, so it never auto-skips — the
+      // user keeps the manual Skip button.
+      clearWatch();
+      if(!isOverview) watchdog = setTimeout(()=>{ if(!paused) failSkip(); }, 6000);
+    } catch(e){ console.warn(e); if(!isOverview) failSkip(); }
+  }
+  function failSkip(){
+    clearWatch();
+    failCount++;
+    if(failCount > tracks.length + 2){ paused = true; clearGap(); transEl.textContent = "⚠️"; return; }  // everything failing — stop
+    if(!paused) scheduleGap(advance, 150);
+  }
+  function advance(){
+    clearGap();
+    idx = idx + 1;
+    if(idx >= tracks.length){ idx = loopStart; everLooped = true; }   // loop back to the chosen start unit
+    phase = 0;
+    playCurrent();
+  }
+
+  la.addEventListener("playing", ()=>{ clearWatch(); failCount = 0; });
+  la.addEventListener("error", ()=>{ if(!paused && !(tracks[idx] && tracks[idx].type === "overview")) failSkip(); });
+  la.addEventListener("ended", ()=>{
+    const tr = tracks[idx];
+    if(tr && tr.type === "item" && phase === 0){ phase = 1; scheduleGap(playMaltese, 280); }   // translation → beat → Maltese
+    else { scheduleGap(advance, tr && tr.type === "header" ? 220 : 380); }
+  });
+
+  // Wake lock — keep the screen on while playing (MVP is screen-on; true
+  // background/Bluetooth playback is a later native phase).
+  let wakeLock = null;
+  async function acquireWakeLock(){
+    try { if(("wakeLock" in navigator) && !wakeLock){ wakeLock = await navigator.wakeLock.request("screen"); wakeLock.addEventListener("release", ()=>{ wakeLock=null; }); } } catch(e){}
+  }
+  function releaseWakeLock(){ if(wakeLock){ wakeLock.release().catch(()=>{}); wakeLock=null; } }
+  document.addEventListener("visibilitychange", ()=>{ if(document.visibilityState==="visible" && !la.paused) acquireWakeLock(); });
+
+  la.addEventListener("play", ()=>{ started = true; playB.innerHTML = SVG_PAUSE; acquireWakeLock(); });
+  la.addEventListener("pause", ()=>{ playB.innerHTML = SVG_PLAY; releaseWakeLock(); });
+
+  // Stop audio + drop the lock when the user leaves the Listen screen.
+  const onLeave = () => { paused = true; clearGap(); clearWatch(); try{ la.pause(); }catch(e){} releaseWakeLock(); };
+  window.addEventListener("hashchange", onLeave, { once: true });
+
+  playB.addEventListener("click", ()=>{
+    if(!started){ started = true; paused = false; failCount = 0; playCurrent(); return; }
+    if(paused){
+      paused = false;
+      if(pending){ const fn = pending; pending = null; clearGap(); fn(); }  // resume from an inter-clip gap
+      else { la.play().catch(e=>console.warn(e)); }                          // resume mid-clip
+    } else {
+      paused = true; clearGap(); clearWatch(); la.pause();
+    }
+  });
+  function jump(delta){ started = true; paused = false; failCount = 0; clearGap(); clearWatch(); pending = null; idx = (idx + delta + tracks.length) % tracks.length; phase = 0; playCurrent(); }
+  nextB.addEventListener("click", ()=>jump(1));
+  prevB.addEventListener("click", ()=>jump(-1));
+  skipIntroB.addEventListener("click", ()=>jump(1));
+
+  // (Re)build the active playlist for the current settings. Keeps playing from the
+  // new start if a session was already in progress, else resets to a paused state.
+  function rebuild(){
+    const wasPlaying = started && !paused;
+    tracks = flattenListen(data, vocabOnly);
+    if(!tracks.length){ vocabOnly = false; tracks = flattenListen(data, false); }
+    loopStart = 0;
+    if(startUnit){ const i = tracks.findIndex(tr => tr.lessonId === startUnit); if(i >= 0) loopStart = i; }
+    idx = loopStart; phase = 0; failCount = 0; everLooped = false; clearGap(); clearWatch();
+    if(wasPlaying){ paused = false; playCurrent(); }
+    else { started = false; paused = true; try{ la.pause(); }catch(e){} paint(); }
+  }
+  unitSel.addEventListener("change", ()=>{ startUnit = unitSel.value; save("listen_start_unit", startUnit); rebuild(); });
+  vocabCb.addEventListener("change", ()=>{ vocabOnly = vocabCb.checked; save("listen_vocab_only", vocabOnly); rebuild(); });
+
+  rebuild();
+}
+
 function route(){
   hideFeedback();
   // Reset scroll to the top on every navigation. Without this, navigating from
@@ -661,6 +1057,7 @@ function route(){
   if(parts[0]==="home" || !parts.length) return renderHome();
   if(parts[0]==="paywall") return renderPaywall();
   if(parts[0]==="search") return renderSearch();
+  if(parts[0]==="listen") return renderListen();
   if(parts[0]==="lesson"){
     const lid = parts[1];
     if(!lid) return renderHome();
@@ -679,6 +1076,14 @@ async function loadLesson(lid, lang){
   lang = lang || State.lang || "en";
   const cacheKey = lid + ":" + lang;
   if(State.lessons[cacheKey]) return State.lessons[cacheKey];
+  // OTA cache-first: prefer over-the-air content if present. Returns null while
+  // OTA is disabled or the file isn't cached → we fall through to the bundled fetch.
+  if(window.ContentOTA){
+    try {
+      const ota = await ContentOTA.getLessonJSON(lid, lang);
+      if(ota){ State.lessons[cacheKey] = ota; return ota; }
+    } catch(e){ /* fall through to bundled */ }
+  }
   // For non-English, try the language-specific file first; fall back to English silently.
   if(lang !== "en"){
     try {
@@ -701,6 +1106,13 @@ async function loadOverview(lid, lang){
   lang = lang || "en";
   const cacheKey = lid + ":" + lang;
   if(State.overviews[cacheKey]) return State.overviews[cacheKey];
+  // OTA cache-first (no-op + null while OTA disabled → falls through to bundled).
+  if(window.ContentOTA){
+    try {
+      const ota = await ContentOTA.getOverviewJSON(lid, lang);
+      if(ota){ State.overviews[cacheKey] = ota; return ota; }
+    } catch(e){ /* fall through to bundled */ }
+  }
   // English uses the bare filename; other languages use lid.<lang>.json
   const filename = lang === "en" ? lid + ".json" : lid + "." + lang + ".json";
   let r = await fetch("lessons/overviews/" + filename + "?b=" + BUILD);
@@ -1025,9 +1437,24 @@ function renderPaywall(){
   restoreWrap.appendChild(rb);
   root.appendChild(restoreWrap);
 
-  // Tiny disclaimer + manage-sub deep-link for the store.
+  // Legal links — Apple requires functional Terms of Use (EULA) + Privacy
+  // Policy links inside the purchase flow (Guideline 3.1.2(c)).
   const meta = el("div","paywall-meta");
-  meta.appendChild(el("p","muted small", p.comingSoon));
+  const legal = el("div","paywall-legal");
+  const terms = el("a","paywall-legal-link", p.terms);
+  terms.href = "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/";
+  terms.target = "_blank"; terms.rel = "noopener";
+  const privacy = el("a","paywall-legal-link", p.privacyLink);
+  privacy.href = "https://www.greenworks.com.mt/maltiongthego/privacy.html";
+  privacy.target = "_blank"; privacy.rel = "noopener";
+  legal.appendChild(terms);
+  legal.appendChild(el("span","paywall-legal-sep", " · "));
+  legal.appendChild(privacy);
+  meta.appendChild(legal);
+  // The "purchases activate at launch" note only makes sense in the web preview
+  // — on native store builds IAP is live, so hide it there (avoids a stray
+  // "not real yet" message in front of App Review).
+  if(!isNativePlatform()) meta.appendChild(el("p","muted small", p.comingSoon));
   root.appendChild(meta);
 
   // (Production: the hidden ?dev=1 / 7-tap unlock and its in-paywall tier-toggle
@@ -1310,6 +1737,19 @@ function renderHome(){
   searchEntry.addEventListener("click", ()=>go("/search"));
   root.appendChild(searchEntry);
 
+  // Listen / Car mode entry — hands-free audio course across all unlocked content.
+  // Always available (the free Welcome lessons give everyone something to play).
+  const tListen = (I18N[State.lang] || I18N.en).listen;
+  const listenEntry = el("button","search-entry listen-entry");
+  listenEntry.appendChild(el("span","search-entry-icon","🎧"));
+  const lMeta = el("div","search-entry-meta");
+  lMeta.appendChild(el("strong","", tListen.title));
+  lMeta.appendChild(el("span","", tListen.sub));
+  listenEntry.appendChild(lMeta);
+  listenEntry.appendChild(el("span","chev","›"));
+  listenEntry.addEventListener("click", ()=>go("/listen"));
+  root.appendChild(listenEntry);
+
   // Group by module — numeric modules ("1", "2", "3") render as "Module N",
   // non-numeric ones ("Extras") render under their own label. We bucket by the
   // language-specific module name so Spanish users see "El Curso", etc.
@@ -1406,9 +1846,14 @@ function renderHome(){
   // Footer with manual update + version display + privacy link.
   const t = I18N[State.lang] || I18N.en;
   const footer = el("div","app-footer");
-  const updBtn = el("button","update", t.checkForUpdates);
-  updBtn.addEventListener("click", () => forceUpdate(updBtn));
-  footer.appendChild(updBtn);
+  // Manual "Check for updates" only makes sense on the web/PWA — in the native
+  // store apps, updates come through the App Store / Play, so hide it there.
+  // (The automatic "Update available" banner + SW logic stay for web + OTA.)
+  if(!isNativeApp()){
+    const updBtn = el("button","update", t.checkForUpdates);
+    updBtn.addEventListener("click", () => forceUpdate(updBtn));
+    footer.appendChild(updBtn);
+  }
   // Static version label in the footer. The hidden 7-tap tester unlock was
   // removed before production launch to close a payment-bypass; testing now
   // uses real sandbox accounts (Play license testers / Apple sandbox testers).
@@ -1435,6 +1880,7 @@ function renderHome(){
 // ── Lesson home (sections) ────────────────────
 function renderLessonHome(lid){
   const lesson = currentLesson(lid);
+  prefetchLessonAudio(lesson); // OTA: warm non-bundled clips (no-op while OTA off)
   const root = $app();
   root.innerHTML = "";
   root.appendChild(topbar(lesson.title, "/home"));
@@ -1581,7 +2027,17 @@ async function renderOverview(lid, lang){
 
   // Audio element (separate from the small mt clip player)
   const audioFile = lang === "en" ? "narration_"+lid+".mp3" : "narration_"+lid+"_"+lang+".mp3";
-  const audio = new Audio("audio/" + audioFile + "?a=" + AUDIO_REV);
+  // OTA: narration for a non-bundled (over-the-air) overview comes from the OTA
+  // cache; bundled narration uses the binary path. No-op while OTA disabled.
+  const narrBundled = !State.bundledAudio || State.bundledAudio.has(audioFile);
+  const narrOTA = (!narrBundled && window.ContentOTA) ? ContentOTA.getAudioURLSync(audioFile) : null;
+  const audio = new Audio(narrOTA || ("audio/" + audioFile + "?a=" + AUDIO_REV));
+  if(!narrBundled && !narrOTA && window.ContentOTA && ContentOTA.prefetchAudio){
+    ContentOTA.prefetchAudio([audioFile], f => State.bundledAudio.has(f)).then(()=>{
+      const u = ContentOTA.getAudioURLSync(audioFile);
+      if(u && audio.src.indexOf("blob:") !== 0) audio.src = u;
+    }).catch(()=>{});
+  }
   audio.preload = "metadata";
   audio.playbackRate = parseFloat(load("speed_"+lid) || "1") || 1;
 
@@ -4192,23 +4648,61 @@ async function boot(){
   // before any UI renders; if config blanks (the default), it does nothing.
   initObservability();
   try{
-    const [index, manifest, recorded] = await Promise.all([
+    const [index, manifest, recorded, bundledIdx, listenEn, listenEs] = await Promise.all([
       // Bust on BUILD (not VERSION) so new lessons/audio register immediately —
       // VERSION is static across web builds, which left a stale manifest (new
       // clips silent). ?b=<BUILD> changes every build → fresh fetch past SW cache.
       fetch("lessons/index.json?b=" + BUILD).then(r=>r.json()),
       fetch("audio/manifest.json?b=" + BUILD).then(r=>r.json()),
       fetch("audio/recorded.json?b=" + BUILD).then(r=>r.ok ? r.json() : {}).catch(()=>({})),
+      // List of clip filenames shipped in the binary (build-dist writes this).
+      // Lets us tell bundled vs. over-the-air clips at play() time. Falls back to
+      // the manifest's filenames if the index isn't present (older build/dev).
+      fetch("audio/bundled-index.json?b=" + BUILD).then(r=>r.ok ? r.json() : null).catch(()=>null),
+      // Listen / Car mode translation-clip maps (one per language). Optional —
+      // absent in builds before Listen shipped, so default to {} silently.
+      fetch("audio/listen/manifest.en.json?b=" + BUILD).then(r=>r.ok ? r.json() : {}).catch(()=>({})),
+      fetch("audio/listen/manifest.es.json?b=" + BUILD).then(r=>r.ok ? r.json() : {}).catch(()=>({})),
     ]);
     State.index = index;
     State.manifest = manifest;
     State.recorded = recorded;
+    State.bundledAudio = new Set(bundledIdx || Object.values(manifest || {}));
+    State.listenManifest = { en: listenEn || {}, es: listenEs || {} };
+    // OTA: merge any remote audio/recorded maps (clips added in a drop) over the
+    // bundled maps so play() can resolve over-the-air filenames. No-op while off.
+    if(window.ContentOTA){
+      try{
+        // New OTA phrase->filename mappings arrive INLINE in the manifest (small,
+        // reliable). We no longer fetch the ~110KB full audio map over OTA — it
+        // timed out on mobile (12s vs timeout) so OTA audio was silent. The bundled
+        // map already covers bundled clips; audioAdditions covers the OTA ones.
+        const addns = ContentOTA.getAudioAdditions ? ContentOTA.getAudioAdditions() : null;
+        if(addns) State.manifest = Object.assign({}, manifest, addns);
+        const rm = ContentOTA.getRemoteMap ? await ContentOTA.getRemoteMap("recorded").catch(()=>null) : null;
+        if(rm) State.recorded = Object.assign({}, recorded, rm);
+      }catch(e){ /* keep bundled maps */ }
+    }
     // preload all lessons so home page shows accurate progress
     await Promise.all(index.lessons.map(L => loadLesson(L.id).catch(e=>console.warn(e))));
     // Native only: configure RevenueCat and sync purchase entitlements before
     // the first render so locked/unlocked cards are correct. No-op on web.
     await Billing.init().catch(e => console.warn("[billing] init", e));
     route();
+    // OTA: refresh content in the background. If a NEWER drop is fetched, surface
+    // the existing "↻ Update available" banner so the user can apply it with one
+    // tap — no hard-close needed. Re-check on every foreground (warm resume) too,
+    // since most users never fully quit the app, so a drop would otherwise sit
+    // unseen for days.
+    if(window.ContentOTA && ContentOTA.syncInBackground){
+      const otaSync = () => ContentOTA.syncInBackground(VERSION)
+        .then(updated => { if(updated) showUpdateAvailableBanner(); })
+        .catch(()=>{});
+      otaSync();
+      document.addEventListener("visibilitychange", () => {
+        if(document.visibilityState === "visible") otaSync();
+      });
+    }
     // If we just came back from a force-update, surface the new version at the top.
     showUpdateConfirmation();
     // Register the SW (replaces the inline script in index.html). Will fire a
