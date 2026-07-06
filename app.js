@@ -20,7 +20,7 @@ const VERSION = "1.0.6";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "20260706c";
+const BUILD = "20260706d";
 // Bump ONLY when audio clips are regenerated (re-voiced). Audio filenames are
 // sha1(mt) so a re-voiced clip keeps its name; without a changing query the
 // browser/SW serve the OLD cached audio. play() busts on this.
@@ -921,10 +921,19 @@ async function renderListen(){
     }
   }
 
-  // Listen content is bundled, so always use the binary path for narration. (We
-  // deliberately skip the OTA blob lookup here — a stale/empty OTA object URL was
-  // making the overview clip fail to start.)
-  function overviewSrc(file){ return "audio/" + file; }
+  // Bundled narration always uses the binary path (a stale/empty OTA object URL
+  // once made bundled overviews fail to start — never consult OTA for those).
+  // Since the binary shrink, LOCKED units' narration is no longer in the bundle:
+  // for those, resolve via OTA exactly like the lesson-overview screen does
+  // (pre-fetched blob, else direct CDN URL), and warm the cache for the next loop.
+  // Returns null when the clip is unreachable (e.g. offline) — caller skips ahead.
+  function overviewSrc(file){
+    const bundled = !State.bundledAudio || State.bundledAudio.has(file);
+    if(bundled) return "audio/" + file;
+    if(!window.ContentOTA) return null;
+    if(ContentOTA.prefetchAudio) ContentOTA.prefetchAudio([file], f => State.bundledAudio.has(f)).catch(()=>{});
+    return ContentOTA.getAudioURLSync(file);
+  }
   function translationSrc(text){
     const map = State.listenManifest[lang] || State.listenManifest.en || {};
     const file = map[text];
@@ -941,7 +950,7 @@ async function renderListen(){
     const tr = tracks[idx];
     paint();
     if(!tr){ return; }
-    if(tr.type === "overview"){ setSrcAndPlay(overviewSrc(tr.narrFile)); return; }
+    if(tr.type === "overview"){ const s = overviewSrc(tr.narrFile); if(s) setSrcAndPlay(s); else scheduleGap(advance, 50); return; }
     if(tr.type === "header"){ const s = translationSrc(headerTextFor(tr)); if(s) setSrcAndPlay(s); else scheduleGap(advance, 50); return; }
     phase = 0;
     const ts = translationSrc(tr.translation);
@@ -965,11 +974,13 @@ async function renderListen(){
       try { la.currentTime = 0; } catch(_){}
       const p = la.play();
       if(p && p.catch) p.catch(e=>console.warn("listen play", e));
-      // Watchdog: if a SHORT clip (header/item) silently never starts, skip rather
-      // than stall. The overview is long + skippable, so it never auto-skips — the
-      // user keeps the manual Skip button.
+      // Watchdog: if a clip silently never STARTS, skip rather than stall ("playing"
+      // clears it, so clip length is irrelevant). Overviews get a longer leash —
+      // since the shrink, locked units' narration streams from the CDN (1-2 MB) and
+      // needs time on slow connections; if it truly can't start (offline), advance
+      // instead of stalling the hands-free session. Manual Skip still works anytime.
       clearWatch();
-      if(!isOverview) watchdog = setTimeout(()=>{ if(!paused) failSkip(); }, 6000);
+      watchdog = setTimeout(()=>{ if(!paused) failSkip(); }, isOverview ? 15000 : 6000);
     } catch(e){ console.warn(e); if(!isOverview) failSkip(); }
   }
   function failSkip(){
