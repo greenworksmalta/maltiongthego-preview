@@ -175,24 +175,45 @@
     return null;
   };
 
+  // Canonical cache key for an audio clip. Clip filenames are sha1
+  // content-addressed (bytes never change for a given name), but audioBase moves
+  // to a new immutable @drop-N tag on every publish — caching by the full CDN URL
+  // would invalidate EVERY user's cached audio each drop. Keying by a synthetic
+  // tag-independent URL keeps clips cached across drops. (Matters since the
+  // binary-shrink: ~2,900 locked-lesson clips + narration ride on audioBase.)
+  function audioCacheKey(file) {
+    return "https://audio-cache.maltiongthego.invalid/" + file;
+  }
+
   // Pre-fetch OTA-only clips for a lesson so play() (sync) can use them at tap time.
   // `files`     : sha1 filenames the lesson needs.
   // `isBundled` : (file)=>bool, lets the caller skip clips already in the binary.
+  // Fetches run a few at a time — a locked lesson can need ~100+ clips, and the
+  // old one-at-a-time loop took minutes to warm a lesson.
   OTA.prefetchAudio = async function (files, isBundled) {
     if (!CFG.OTA_ENABLED || !OTA._manifest || !OTA._manifest.audioBase) return;
     const base = OTA._manifest.audioBase.replace(/\/+$/, "");
     const c = await cacheOpen();
     if (!c) return;
-    for (const f of files || []) {
-      if (!f || OTA._blobURLs[f]) continue;
-      if (isBundled && isBundled(f)) continue; // bundled → app plays from binary
-      const absURL = base + "/" + f;
-      let hit = await c.match(absURL);
-      if (!hit) { if (await cacheURL(absURL)) hit = await c.match(absURL); }
+    const todo = (files || []).filter(f =>
+      f && !OTA._blobURLs[f] && !(isBundled && isBundled(f)));
+    const one = async (f) => {
+      const key = audioCacheKey(f);
+      let hit = await c.match(key);
+      if (!hit) {
+        try {
+          const r = await fetchWithTimeout(base + "/" + f);
+          if (r && r.ok) { await c.put(key, r.clone()); hit = await c.match(key); }
+        } catch (e) { /* offline/timeout → direct-URL fallback still works online */ }
+      }
       if (hit) {
         try { OTA._blobURLs[f] = URL.createObjectURL(await hit.blob()); } catch (e) {}
       }
-    }
+    };
+    const CONCURRENCY = 6;
+    let i = 0;
+    const worker = async () => { while (i < todo.length) { const f = todo[i++]; await one(f); } };
+    await Promise.all(Array.from({ length: Math.min(CONCURRENCY, todo.length) }, worker));
   };
 
   // ── Background sync ────────────────────────────────────────────────────────

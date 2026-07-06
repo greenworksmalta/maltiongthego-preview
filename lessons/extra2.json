@@ -66,7 +66,7 @@
       "vocab": [
         {"mt": "Mela", "en": "so / well / of course (the most used Maltese word!)"},
         {"mt": "Isma'", "en": "listen / hey"},
-        {"mt": "Ajma", "en": "ouch / oh dear"},
+        {"mt": "Ajma", "en": "Ouch"},
         {"mt": "Ħanini", "en": "darling / dear (to a man)"},
         {"mt": "Ħanina", "en": "darling / dear (to a woman)"},
         {"mt": "Iva mela", "en": "yes, of course"},
@@ -194,7 +194,7 @@
           "items": [
             {"icon": "🤌", "mt": "Mela", "en": "so / well / of course"},
             {"icon": "👂", "mt": "Isma'", "en": "listen / hey"},
-            {"icon": "😣", "mt": "Ajma", "en": "ouch / oh dear"},
+            {"icon": "😣", "mt": "Ajma", "en": "Ouch"},
             {"icon": "💙", "mt": "Ħanini", "en": "darling (to a man)"},
             {"icon": "💗", "mt": "Ħanina", "en": "darling (to a woman)"},
             {"icon": "✅", "mt": "Iva mela", "en": "yes, of course"},

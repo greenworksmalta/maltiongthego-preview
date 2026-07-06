@@ -12,7 +12,7 @@
  */
 // Cache name carries the app version so a fresh install + activation happens
 // on every release. Mirrors package.json + app.js VERSION.
-const CACHE_NAME = "maltiongthego-1.0.4-20260623k";
+const CACHE_NAME = "maltiongthego-1.0.6-20260706b";
 const APP_SHELL = [
   "./",
   "./index.html",

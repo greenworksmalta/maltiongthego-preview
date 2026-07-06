@@ -1,3 +1,0 @@
-Preview build: 20260623k (listen-mode)
-Deployed: 2026-06-24
-Feature: Listen / Car mode

@@ -66,7 +66,7 @@
       "vocab": [
         {"mt": "Mela", "en": "pues / claro / por supuesto (¡la palabra más maltesa!)"},
         {"mt": "Isma'", "en": "escucha / oye"},
-        {"mt": "Ajma", "en": "ay / vaya"},
+        {"mt": "Ajma", "en": "Ay"},
         {"mt": "Ħanini", "en": "cariño / querido (a un hombre)"},
         {"mt": "Ħanina", "en": "cariño / querida (a una mujer)"},
         {"mt": "Iva mela", "en": "sí, claro"},
@@ -194,7 +194,7 @@
           "items": [
             {"icon": "🤌", "mt": "Mela", "en": "pues / claro / por supuesto"},
             {"icon": "👂", "mt": "Isma'", "en": "escucha / oye"},
-            {"icon": "😣", "mt": "Ajma", "en": "ay / vaya"},
+            {"icon": "😣", "mt": "Ajma", "en": "Ay"},
             {"icon": "💙", "mt": "Ħanini", "en": "cariño (a un hombre)"},
             {"icon": "💗", "mt": "Ħanina", "en": "cariño (a una mujer)"},
             {"icon": "✅", "mt": "Iva mela", "en": "sí, claro"},
