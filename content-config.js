@@ -1,4 +1,4 @@
-// ─────────────────────────────────────────────────────────────────────────────
+﻿// ─────────────────────────────────────────────────────────────────────────────
 // content-config.js — OTA content delivery configuration
 // ─────────────────────────────────────────────────────────────────────────────
 // Single source of truth for WHERE over-the-air content comes from. The host is
@@ -30,7 +30,7 @@ window.CONTENT_CONFIG = {
   // IMMUTABLE jsDelivr per-drop tag URLs (@drop-N) → permanent cache, instant,
   // never need purging. So raw serves only the tiny manifest; jsDelivr serves the
   // heavy immutable content. Best of both.
-  BASE: "https://raw.githubusercontent.com/greenworksmalta/maltiongthego-content/main",
+  BASE: "https://raw.githubusercontent.com/greenworksmalta/maltiongthego-content/test-listen-ota",
 
   // Manifest path under BASE. Small JSON listing contentVersion + per-lesson files.
   MANIFEST_PATH: "manifest.json",

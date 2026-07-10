@@ -20,11 +20,11 @@ const VERSION = "1.0.6";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "20260706d";
+const BUILD = "20260710a";
 // Bump ONLY when audio clips are regenerated (re-voiced). Audio filenames are
 // sha1(mt) so a re-voiced clip keeps its name; without a changing query the
 // browser/SW serve the OLD cached audio. play() busts on this.
-const AUDIO_REV = "20260603f";
+const AUDIO_REV = "20260707a";
 function v(url){ return url + (url.includes("?")?"&":"?") + "v=" + VERSION; }
 
 // Lightweight UI strings table for the parts of the app that aren't data-driven.
@@ -287,6 +287,9 @@ const State = {
   // These are the NEW spoken-translation clips used ONLY by the Listen player; the
   // Maltese half of each pair still resolves through manifest/recorded as usual.
   listenManifest: { en: {}, es: {} },
+  // Bundled-only snapshot of the Listen maps (no OTA additions merged) — the
+  // Listen player compares against this to route each clip local vs over-the-air.
+  listenBundled: { en: {}, es: {} },
   searchIndex: null,     // {lang, entries:[...]} — flattened phrase list, built lazily
   progress: load("progress") || {},   // {lessonId: {sectionId: pct}}
   xp: load("xp") || 0,
@@ -937,7 +940,16 @@ async function renderListen(){
   function translationSrc(text){
     const map = State.listenManifest[lang] || State.listenManifest.en || {};
     const file = map[text];
-    return file ? ("audio/listen/" + lang + "/" + file) : null;
+    if(!file) return null;
+    // Bundled in this binary → local file. Anything else (a listenAdditions entry:
+    // new unit, or a re-voiced clip under a new name) streams from the CDN and is
+    // cached for offline reuse — same routing regular clips got in the shrink.
+    const bundledMap = (State.listenBundled && State.listenBundled[lang]) || {};
+    if(bundledMap[text] === file) return "audio/listen/" + lang + "/" + file;
+    if(!window.ContentOTA) return null;
+    const rel = "listen/" + lang + "/" + file;
+    if(ContentOTA.prefetchAudio) ContentOTA.prefetchAudio([rel]).catch(()=>{});
+    return ContentOTA.getAudioURLSync(rel);
   }
   // Opening unit (the start unit, before the playlist has looped) plays its plain
   // title; every other lesson header — including after a loop — gets "Now let's move on…".
@@ -1042,6 +1054,21 @@ async function renderListen(){
     const wasPlaying = started && !paused;
     tracks = flattenListen(data, vocabOnly);
     if(!tracks.length){ vocabOnly = false; tracks = flattenListen(data, false); }
+    // Warm any over-the-air Listen clips (OTA-added units / re-voices) in the
+    // background so mid-session playback doesn't depend on the network. Bundled
+    // clips are skipped; per-play translationSrc still covers cache misses.
+    if(window.ContentOTA && ContentOTA.prefetchAudio){
+      const map = State.listenManifest[lang] || State.listenManifest.en || {};
+      const bundledMap = (State.listenBundled && State.listenBundled[lang]) || {};
+      const ota = new Set();
+      for(const tr of tracks){
+        for(const text of [tr.translation, tr.headerText, tr.plainText]){
+          const f = text && map[text];
+          if(f && bundledMap[text] !== f) ota.add("listen/" + lang + "/" + f);
+        }
+      }
+      if(ota.size) ContentOTA.prefetchAudio(Array.from(ota)).catch(()=>{});
+    }
     loopStart = 0;
     if(startUnit){ const i = tracks.findIndex(tr => tr.lessonId === startUnit); if(i >= 0) loopStart = i; }
     idx = loopStart; phase = 0; failCount = 0; everLooped = false; clearGap(); clearWatch();
@@ -1819,7 +1846,17 @@ function renderHome(){
       const banner = document.createElement("img");
       banner.className = "lesson-banner"; banner.alt = ""; banner.loading = "lazy";
       banner.src = "assets/unit-art/" + L.id + ".png?b=" + BUILD;
-      banner.addEventListener("error", ()=>{ banner.replaceWith(el("div","lesson-banner placeholder", L.icon || "📘")); });
+      // Not in the binary (an OTA-added unit) → try the drop's CDN art once, then
+      // fall back to the emoji placeholder as before.
+      banner.addEventListener("error", ()=>{
+        const base = window.ContentOTA && ContentOTA.getArtBase && ContentOTA.getArtBase();
+        if(base && !banner.dataset.otaTried){
+          banner.dataset.otaTried = "1";
+          banner.src = base.replace(/\/+$/,"") + "/" + L.id + ".png";
+          return;
+        }
+        banner.replaceWith(el("div","lesson-banner placeholder", L.icon || "📘"));
+      });
       card.appendChild(banner);
       const meta = el("div","meta");
       // Title row carries an optional FREE pill so the free starter is visually marked.
@@ -1903,7 +1940,16 @@ function renderLessonHome(lid){
   art.alt = "";
   art.loading = "lazy";
   art.src = "assets/unit-art/" + lid + ".png?b=" + BUILD;
-  art.addEventListener("error", ()=> art.remove());
+  // OTA-added units aren't in the binary — try the drop's CDN art once, then hide.
+  art.addEventListener("error", ()=>{
+    const base = window.ContentOTA && ContentOTA.getArtBase && ContentOTA.getArtBase();
+    if(base && !art.dataset.otaTried){
+      art.dataset.otaTried = "1";
+      art.src = base.replace(/\/+$/,"") + "/" + lid + ".png";
+      return;
+    }
+    art.remove();
+  });
   hero.appendChild(art);
   hero.appendChild(el("h1","",lesson.title));
   hero.appendChild(el("p","",lesson.subtitle));
@@ -4679,23 +4725,41 @@ async function boot(){
     State.manifest = manifest;
     State.recorded = recorded;
     State.bundledAudio = new Set(bundledIdx || Object.values(manifest || {}));
+    // Bundled maps stay separate from the merged ones: translationSrc uses the
+    // bundled map to decide local-file vs over-the-air routing per clip.
+    State.listenBundled = { en: listenEn || {}, es: listenEs || {} };
     State.listenManifest = { en: listenEn || {}, es: listenEs || {} };
     // OTA: merge any remote audio/recorded maps (clips added in a drop) over the
     // bundled maps so play() can resolve over-the-air filenames. No-op while off.
     if(window.ContentOTA){
       try{
+        // OTA-first lesson index: lets a content drop ADD units (Pack 4+) with no
+        // store release. Falls back to the bundled index on any doubt — the check
+        // requires every bundled lesson id to still be present so a truncated or
+        // malformed drop can never make existing lessons vanish.
+        const otaIdx = ContentOTA.getIndexJSON ? await ContentOTA.getIndexJSON().catch(()=>null) : null;
+        if(otaIdx && Array.isArray(otaIdx.lessons)
+           && (index.lessons || []).every(b => otaIdx.lessons.some(l => l && l.id === b.id))){
+          State.index = otaIdx;
+        }
         // New OTA phrase->filename mappings arrive INLINE in the manifest (small,
         // reliable). We no longer fetch the ~110KB full audio map over OTA — it
         // timed out on mobile (12s vs timeout) so OTA audio was silent. The bundled
         // map already covers bundled clips; audioAdditions covers the OTA ones.
         const addns = ContentOTA.getAudioAdditions ? ContentOTA.getAudioAdditions() : null;
         if(addns) State.manifest = Object.assign({}, manifest, addns);
+        // Listen-mode mappings for OTA-added/re-voiced clips, same inline pattern.
+        const lAddns = ContentOTA.getListenAdditions ? ContentOTA.getListenAdditions() : null;
+        if(lAddns) State.listenManifest = {
+          en: Object.assign({}, listenEn, lAddns.en || {}),
+          es: Object.assign({}, listenEs, lAddns.es || {}),
+        };
         const rm = ContentOTA.getRemoteMap ? await ContentOTA.getRemoteMap("recorded").catch(()=>null) : null;
         if(rm) State.recorded = Object.assign({}, recorded, rm);
       }catch(e){ /* keep bundled maps */ }
     }
     // preload all lessons so home page shows accurate progress
-    await Promise.all(index.lessons.map(L => loadLesson(L.id).catch(e=>console.warn(e))));
+    await Promise.all(State.index.lessons.map(L => loadLesson(L.id).catch(e=>console.warn(e))));
     // Native only: configure RevenueCat and sync purchase entitlements before
     // the first render so locked/unlocked cards are correct. No-op on web.
     await Billing.init().catch(e => console.warn("[billing] init", e));

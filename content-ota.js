@@ -20,6 +20,10 @@
 //
 // Manifest shape (see app-assets/manifest.sample.json):
 //   { contentVersion, minAppVersion, audioBase, audioManifest, recordedManifest,
+//     index,                    — @drop-N URL of lessons/index.json (lets a drop ADD units)
+//     artBase,                  — @drop-N base URL for assets/unit-art/<id>.png
+//     audioAdditions,           — phrase→file mappings newer than the bundled map
+//     listenAdditions: {en,es}, — Listen text→file mappings newer than the bundled maps
 //     lessons: { <id>: { v, minAppVersion?, files: {
 //         lesson, "lesson.es", overview, "overview.es" } } } }
 // Each files.* value is a FULL URL.
@@ -141,6 +145,13 @@
     return getCachedJSON(u);
   };
 
+  // Lesson index (home-screen unit list). OTA-first like lessons so a drop can ADD
+  // new units without a store release; null → caller keeps the bundled index.json.
+  OTA.getIndexJSON = async function () {
+    if (!CFG.OTA_ENABLED || !OTA._manifest || !OTA._manifest.index) return null;
+    return getCachedJSON(OTA._manifest.index);
+  };
+
   // Remote audio/recorded maps (text->filename), merged over bundled by app.js.
   OTA.getRemoteMap = async function (which) {
     if (!CFG.OTA_ENABLED || !OTA._manifest) return null;
@@ -154,6 +165,23 @@
   // ~110KB audio map over OTA, which timed out on mobile (12s vs the timeout) and
   // left OTA audio silent. The bundled map covers bundled clips; this covers the
   // over-the-air ones. Merged over State.manifest by app.js.
+  // Listen-mode text→filename mappings newer than the bundled manifests, one map
+  // per language. Same inline-in-manifest strategy as audioAdditions (never fetch a
+  // full map over OTA — the 110KB audio map timed out on mobile). The clips
+  // themselves live under audioBase as listen/<lang>/<file> and ride the normal
+  // prefetch/stream-and-cache path.
+  OTA.getListenAdditions = function () {
+    if (!CFG.OTA_ENABLED || !OTA._manifest) return null;
+    return OTA._manifest.listenAdditions || null;
+  };
+
+  // Base URL for unit hero art so OTA-added units get real artwork; null → the
+  // <img> keeps its existing emoji-placeholder fallback.
+  OTA.getArtBase = function () {
+    if (!CFG.OTA_ENABLED || !OTA._manifest) return null;
+    return OTA._manifest.artBase || null;
+  };
+
   OTA.getAudioAdditions = function () {
     if (!CFG.OTA_ENABLED || !OTA._manifest) return null;
     return OTA._manifest.audioAdditions || null;
@@ -247,6 +275,9 @@
     // audio map (m.audioManifest) — it's ~110KB and timed out on mobile, leaving
     // OTA audio silent. New phrase mappings ride in manifest.audioAdditions instead.
     if (m.recordedManifest && c && !(await c.match(m.recordedManifest))) await cacheURL(m.recordedManifest);
+    // Lesson index (adds new units to the home screen). Immutable @drop-N URL, so
+    // a cache-hit means this drop's index is already present.
+    if (m.index && c && !(await c.match(m.index))) await cacheURL(m.index);
 
     try { localStorage.setItem(LS_VERSION, String(m.contentVersion)); } catch (e) {}
     return true; // new content cached → caller can surface the refresh banner
