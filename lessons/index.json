@@ -157,12 +157,38 @@
       "titleEs": "Compras, Dinero y la Hora",
       "subtitleEs": "Ir de compras, pagar y decir la hora",
       "moduleEs": "Por la Ciudad"
+    },
+    {
+      "id": "u10",
+      "module": "Home, Work & the Past",
+      "title": "At Work & At Home",
+      "subtitle": "Jobs, your home, and what you did",
+      "icon": "💼",
+      "languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "u99",
+      "module": "OTA Test",
+      "moduleEs": "Prueba OTA",
+      "title": "OTA Test Unit",
+      "titleEs": "Unidad de Prueba OTA",
+      "subtitle": "Delivered over the air, no app update needed",
+      "subtitleEs": "Entregada por el aire, sin actualizar la app",
+      "icon": "🧪",
+      "dev": true,
+      "languages": [
+        "en",
+        "es"
+      ]
     }
   ],
   "packOrder": [
     "Start Here · Free",
     "First Words",
     "Everyday Malti",
-    "Out & About"
+    "Out & About",
+    "Home, Work & the Past"
   ]
 }

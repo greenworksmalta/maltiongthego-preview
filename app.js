@@ -16,11 +16,11 @@
 //   - VERSION below                    (in-app footer + ?v= cache buster)
 //   - <script src="app.js?v=..."> tag in index.html
 //   - CACHE_NAME in sw.js              (forces SW reinstall)
-const VERSION = "1.0.6";
+const VERSION = "1.0.7";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "20260710a";
+const BUILD = "20260711a";
 // Bump ONLY when audio clips are regenerated (re-voiced). Audio filenames are
 // sha1(mt) so a re-voiced clip keeps its name; without a changing query the
 // browser/SW serve the OLD cached audio. play() busts on this.
@@ -2107,8 +2107,15 @@ async function renderOverview(lid, lang){
     : "narration_"+lid+"_"+lang+".timings.json";
   let realTimings = null;       // [{i, start, end}] from the JSON if present
   let timingsByIdx = null;      // map of transcript-idx -> {start, end}
+  // Bundled first; for OTA-added units (whose timings aren't in any binary) fall
+  // back to the drop's CDN copy so long overviews don't regress to the drifting
+  // estimate. Offline miss → estimate, same as before.
+  const timingsOTAURL = () => {
+    const m = window.ContentOTA && ContentOTA.getAudioURLSync && ContentOTA.getAudioURLSync(timingsFile);
+    return (m && !m.startsWith("blob:")) ? m : null;
+  };
   fetch("audio/" + timingsFile + "?b=" + BUILD)
-    .then(r => r.ok ? r.json() : null)
+    .then(r => r.ok ? r.json() : (timingsOTAURL() ? fetch(timingsOTAURL()).then(r2 => r2.ok ? r2.json() : null) : null))
     .then(j => {
       if(!j || !Array.isArray(j.segments)) return;
       realTimings = j.segments;

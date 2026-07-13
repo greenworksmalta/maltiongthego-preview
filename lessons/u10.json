@@ -1,0 +1,871 @@
+{
+  "id": "u10",
+  "title": "At Work & At Home",
+  "subtitle": "Ix-xogħol u d-dar: jobs, your home, and what you did",
+  "sections": [
+    {
+      "id": "day",
+      "icon": "🗓️",
+      "title": "How was your day?",
+      "subtitle": "X'għamilt illum: the past tense in the wild",
+      "intro": "A short chat about the day. Listen for the '-t' endings, that is the past tense. We explain it right after.",
+      "dialogue": [
+        {
+          "mt": "Fejn ħdimt illum?",
+          "en": "Where did you work today?"
+        },
+        {
+          "mt": "Ħdimt fl-uffiċċju.",
+          "en": "I worked in the office."
+        },
+        {
+          "mt": "X'għamilt wara?",
+          "en": "What did you do after?"
+        },
+        {
+          "mt": "Mort id-dar u kilt.",
+          "en": "I went home and ate."
+        },
+        {
+          "mt": "U lbieraħ x'għamilt?",
+          "en": "And yesterday, what did you do?"
+        },
+        {
+          "mt": "Ilbieraħ ma ħdimtx, mort il-baħar!",
+          "en": "Yesterday I didn't work, I went to the sea!"
+        }
+      ]
+    },
+    {
+      "id": "jobs",
+      "icon": "💼",
+      "title": "Jobs",
+      "subtitle": "Ix-xogħol: what people do",
+      "intro": "Common jobs and how to ask about them. Feminine forms are marked (f) for the teacher to confirm.",
+      "facts": [
+        "Most jobs make the feminine by adding -a: tabib becomes tabiba, kok becomes koka, għalliem becomes għalliema.",
+        "A few borrowed jobs don't change, like mekkanik (mechanic)."
+      ],
+      "items": [
+        {
+          "mt": "Xogħol",
+          "en": "work / job",
+          "icon": "💼"
+        },
+        {
+          "mt": "Għalliem",
+          "en": "teacher (m)",
+          "icon": "👨‍🏫"
+        },
+        {
+          "mt": "Għalliema",
+          "en": "teacher (f)",
+          "icon": "👩‍🏫"
+        },
+        {
+          "mt": "Tabib",
+          "en": "doctor (m)",
+          "icon": "🩺"
+        },
+        {
+          "mt": "Tabiba",
+          "en": "doctor (f)",
+          "icon": "🩺"
+        },
+        {
+          "mt": "Infermier",
+          "en": "nurse (m)",
+          "icon": "🧑‍⚕️"
+        },
+        {
+          "mt": "Infermiera",
+          "en": "nurse (f)",
+          "icon": "👩‍⚕️"
+        },
+        {
+          "mt": "Kok",
+          "en": "chef",
+          "icon": "👨‍🍳"
+        },
+        {
+          "mt": "Bennej",
+          "en": "builder",
+          "icon": "🧱"
+        },
+        {
+          "mt": "Bejjiegħ",
+          "en": "salesperson",
+          "icon": "🛒"
+        },
+        {
+          "mt": "Xufier",
+          "en": "driver",
+          "icon": "🚗"
+        },
+        {
+          "mt": "Spiżjar",
+          "en": "pharmacist",
+          "icon": "💊"
+        },
+        {
+          "mt": "Furnar",
+          "en": "baker",
+          "icon": "🥖"
+        },
+        {
+          "mt": "Mekkanik",
+          "en": "mechanic",
+          "icon": "🔧"
+        },
+        {
+          "mt": "Sid",
+          "en": "boss / owner",
+          "icon": "👔"
+        },
+        {
+          "mt": "Uffiċċju",
+          "en": "office",
+          "icon": "🏢"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "jobsask",
+          "icon": "❓",
+          "title": "Asking about work",
+          "subtitle": "The two phrases you actually use",
+          "items": [
+            {
+              "mt": "X'taħdem?",
+              "en": "What's your job?"
+            },
+            {
+              "mt": "Naħdem bħala kok.",
+              "en": "I work as a chef."
+            },
+            {
+              "mt": "Fejn taħdem?",
+              "en": "Where do you work?"
+            },
+            {
+              "mt": "Naħdem f'uffiċċju.",
+              "en": "I work in an office."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "home",
+      "icon": "🏠",
+      "title": "At home",
+      "subtitle": "Id-dar: rooms and furniture",
+      "intro": "The rooms of a home and the things in them.",
+      "groups": [
+        {
+          "title": "Rooms",
+          "icon": "🚪",
+          "items": [
+            {
+              "mt": "Dar",
+              "en": "house / home",
+              "icon": "🏠"
+            },
+            {
+              "mt": "Kċina",
+              "en": "kitchen",
+              "icon": "🍳"
+            },
+            {
+              "mt": "Kamra tas-sodda",
+              "en": "bedroom",
+              "icon": "🛏️"
+            },
+            {
+              "mt": "Kamra tal-banju",
+              "en": "bathroom",
+              "icon": "🛁"
+            },
+            {
+              "mt": "Salott",
+              "en": "living room",
+              "icon": "🛋️"
+            },
+            {
+              "mt": "Gallarija",
+              "en": "balcony",
+              "icon": "🏙️"
+            },
+            {
+              "mt": "Bieb",
+              "en": "door",
+              "icon": "🚪"
+            },
+            {
+              "mt": "Tieqa",
+              "en": "window",
+              "icon": "🪟"
+            },
+            {
+              "mt": "Bejt",
+              "en": "roof",
+              "icon": "🏚️"
+            },
+            {
+              "mt": "Ġnien",
+              "en": "garden",
+              "icon": "🌳"
+            },
+            {
+              "mt": "Garaxx",
+              "en": "garage",
+              "icon": "🚙"
+            }
+          ]
+        },
+        {
+          "title": "Furniture & things",
+          "icon": "🛋️",
+          "items": [
+            {
+              "mt": "Mejda",
+              "en": "table",
+              "icon": "🪑"
+            },
+            {
+              "mt": "Siġġu",
+              "en": "chair",
+              "icon": "🪑"
+            },
+            {
+              "mt": "Sodda",
+              "en": "bed",
+              "icon": "🛏️"
+            },
+            {
+              "mt": "Sufan",
+              "en": "sofa",
+              "icon": "🛋️"
+            },
+            {
+              "mt": "Friġġ",
+              "en": "fridge",
+              "icon": "🧊"
+            },
+            {
+              "mt": "Forn",
+              "en": "oven",
+              "icon": "🔥"
+            },
+            {
+              "mt": "Kabord",
+              "en": "cupboard",
+              "icon": "🗄️"
+            },
+            {
+              "mt": "Televixin",
+              "en": "television",
+              "icon": "📺"
+            },
+            {
+              "mt": "Dawl",
+              "en": "light",
+              "icon": "💡"
+            },
+            {
+              "mt": "Gwardarobba",
+              "en": "wardrobe",
+              "icon": "🧥"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "past",
+      "icon": "⏪",
+      "title": "The past tense",
+      "subtitle": "Il-Passat: add an ending, not a prefix",
+      "intro": "The present tense added a prefix. The past tense adds an ENDING. Start from what HE did, that is the root, and add an ending for each person.",
+      "facts": [
+        "The endings are: jien -t, int -t, hu (nothing), hi -et, aħna -na, intom -tu, huma -u.",
+        "'Hu' (he did) is the plain root with no ending, it is the form to build from.",
+        "Most verbs follow this pattern. A few 'weak' verbs (like mar, went) shift their vowels, watch the last table."
+      ],
+      "rules": [
+        {
+          "id": "kiteb",
+          "title": "kiteb (he wrote), the model verb",
+          "rows": [
+            {
+              "person": "Jien (I)",
+              "ending": "-t",
+              "form": "ktibt",
+              "en": "I wrote"
+            },
+            {
+              "person": "Int (you)",
+              "ending": "-t",
+              "form": "ktibt",
+              "en": "you wrote"
+            },
+            {
+              "person": "Hu (he)",
+              "ending": "-",
+              "form": "kiteb",
+              "en": "he wrote"
+            },
+            {
+              "person": "Hi (she)",
+              "ending": "-et",
+              "form": "kitbet",
+              "en": "she wrote"
+            },
+            {
+              "person": "Aħna (we)",
+              "ending": "-na",
+              "form": "ktibna",
+              "en": "we wrote"
+            },
+            {
+              "person": "Intom (you pl)",
+              "ending": "-tu",
+              "form": "ktibtu",
+              "en": "you (pl) wrote"
+            },
+            {
+              "person": "Huma (they)",
+              "ending": "-u",
+              "form": "kitbu",
+              "en": "they wrote"
+            }
+          ]
+        },
+        {
+          "id": "ghamel",
+          "title": "għamel (he did / made)",
+          "rows": [
+            {
+              "person": "Jien (I)",
+              "ending": "-t",
+              "form": "għamilt",
+              "en": "I did"
+            },
+            {
+              "person": "Int (you)",
+              "ending": "-t",
+              "form": "għamilt",
+              "en": "you did"
+            },
+            {
+              "person": "Hu (he)",
+              "ending": "-",
+              "form": "għamel",
+              "en": "he did"
+            },
+            {
+              "person": "Hi (she)",
+              "ending": "-et",
+              "form": "għamlet",
+              "en": "she did"
+            },
+            {
+              "person": "Aħna (we)",
+              "ending": "-na",
+              "form": "għamilna",
+              "en": "we did"
+            },
+            {
+              "person": "Intom (you pl)",
+              "ending": "-tu",
+              "form": "għamiltu",
+              "en": "you (pl) did"
+            },
+            {
+              "person": "Huma (they)",
+              "ending": "-u",
+              "form": "għamlu",
+              "en": "they did"
+            }
+          ]
+        },
+        {
+          "id": "hadem",
+          "title": "ħadem (he worked)",
+          "rows": [
+            {
+              "person": "Jien (I)",
+              "ending": "-t",
+              "form": "ħdimt",
+              "en": "I worked"
+            },
+            {
+              "person": "Int (you)",
+              "ending": "-t",
+              "form": "ħdimt",
+              "en": "you worked"
+            },
+            {
+              "person": "Hu (he)",
+              "ending": "-",
+              "form": "ħadem",
+              "en": "he worked"
+            },
+            {
+              "person": "Hi (she)",
+              "ending": "-et",
+              "form": "ħadmet",
+              "en": "she worked"
+            },
+            {
+              "person": "Aħna (we)",
+              "ending": "-na",
+              "form": "ħdimna",
+              "en": "we worked"
+            },
+            {
+              "person": "Intom (you pl)",
+              "ending": "-tu",
+              "form": "ħdimtu",
+              "en": "you (pl) worked"
+            },
+            {
+              "person": "Huma (they)",
+              "ending": "-u",
+              "form": "ħadmu",
+              "en": "they worked"
+            }
+          ]
+        },
+        {
+          "id": "kiel",
+          "title": "kiel (he ate)",
+          "rows": [
+            {
+              "person": "Jien (I)",
+              "ending": "-t",
+              "form": "kilt",
+              "en": "I ate"
+            },
+            {
+              "person": "Int (you)",
+              "ending": "-t",
+              "form": "kilt",
+              "en": "you ate"
+            },
+            {
+              "person": "Hu (he)",
+              "ending": "-",
+              "form": "kiel",
+              "en": "he ate"
+            },
+            {
+              "person": "Hi (she)",
+              "ending": "-et",
+              "form": "kielet",
+              "en": "she ate"
+            },
+            {
+              "person": "Aħna (we)",
+              "ending": "-na",
+              "form": "kilna",
+              "en": "we ate"
+            },
+            {
+              "person": "Intom (you pl)",
+              "ending": "-tu",
+              "form": "kiltu",
+              "en": "you (pl) ate"
+            },
+            {
+              "person": "Huma (they)",
+              "ending": "-u",
+              "form": "kielu",
+              "en": "they ate"
+            }
+          ]
+        },
+        {
+          "id": "mar",
+          "title": "mar (he went), a WEAK verb, watch the vowels",
+          "rows": [
+            {
+              "person": "Jien (I)",
+              "ending": "-t",
+              "form": "mort",
+              "en": "I went"
+            },
+            {
+              "person": "Int (you)",
+              "ending": "-t",
+              "form": "mort",
+              "en": "you went"
+            },
+            {
+              "person": "Hu (he)",
+              "ending": "-",
+              "form": "mar",
+              "en": "he went"
+            },
+            {
+              "person": "Hi (she)",
+              "ending": "-et",
+              "form": "marret",
+              "en": "she went"
+            },
+            {
+              "person": "Aħna (we)",
+              "ending": "-na",
+              "form": "morna",
+              "en": "we went"
+            },
+            {
+              "person": "Intom (you pl)",
+              "ending": "-tu",
+              "form": "mortu",
+              "en": "you (pl) went"
+            },
+            {
+              "person": "Huma (they)",
+              "ending": "-u",
+              "form": "marru",
+              "en": "they went"
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex-past-kiteb",
+          "title": "Exercise: conjugate kiteb (to write) in the past",
+          "instructions": "Pick the right past-tense form for each pronoun.",
+          "choices": [
+            "ktibt",
+            "kiteb",
+            "kitbet",
+            "ktibna",
+            "ktibtu",
+            "kitbu"
+          ],
+          "items": [
+            {
+              "pronoun": "Jien",
+              "en": "I wrote",
+              "answer": "ktibt"
+            },
+            {
+              "pronoun": "Hu",
+              "en": "He wrote",
+              "answer": "kiteb"
+            },
+            {
+              "pronoun": "Hi",
+              "en": "She wrote",
+              "answer": "kitbet"
+            },
+            {
+              "pronoun": "Aħna",
+              "en": "We wrote",
+              "answer": "ktibna"
+            },
+            {
+              "pronoun": "Intom",
+              "en": "You (pl) wrote",
+              "answer": "ktibtu"
+            },
+            {
+              "pronoun": "Huma",
+              "en": "They wrote",
+              "answer": "kitbu"
+            }
+          ]
+        },
+        {
+          "id": "past-match",
+          "type": "match",
+          "title": "Match: he did to I did",
+          "leftField": "he",
+          "rightField": "i",
+          "items": [
+            {
+              "he": "kiteb",
+              "i": "ktibt"
+            },
+            {
+              "he": "għamel",
+              "i": "għamilt"
+            },
+            {
+              "he": "ħadem",
+              "i": "ħdimt"
+            },
+            {
+              "he": "kiel",
+              "i": "kilt"
+            },
+            {
+              "he": "mar",
+              "i": "mort"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar10",
+      "icon": "📖",
+      "title": "Grammar",
+      "subtitle": "Il-grammatika: using the past",
+      "intro": "Two things that make the past tense useful: saying you DIDN'T do something, and saying WHEN.",
+      "rules": [
+        {
+          "id": "negative-past",
+          "title": "Saying you didn't: the ma...x wrap",
+          "explanation": "To make the past negative, wrap the verb: put 'ma' before it and 'x' on the end. Ħdimt (I worked) becomes ma ħdimtx (I didn't work).",
+          "examples": [
+            {
+              "mt": "Ma ħdimtx illum",
+              "en": "I didn't work today"
+            },
+            {
+              "mt": "Ma kiltx il-fenek",
+              "en": "I didn't eat the rabbit"
+            },
+            {
+              "mt": "Ma mortx ix-xogħol",
+              "en": "I didn't go to work"
+            },
+            {
+              "mt": "M'għamilt xejn",
+              "en": "I didn't do anything"
+            }
+          ]
+        },
+        {
+          "id": "time-words",
+          "title": "Saying when: yesterday, last week",
+          "explanation": "Anchor the past with a time word, usually at the start or end of the sentence.",
+          "letters": [
+            "ilbieraħ, yesterday",
+            "illum, today",
+            "il-ġimgħa l-oħra, last week",
+            "is-sena l-oħra, last year"
+          ],
+          "examples": [
+            {
+              "mt": "Ilbieraħ mort Malta",
+              "en": "Yesterday I went to Malta"
+            },
+            {
+              "mt": "Il-ġimgħa l-oħra ħdimt ħafna",
+              "en": "Last week I worked a lot"
+            },
+            {
+              "mt": "Is-sena l-oħra mort Għawdex",
+              "en": "Last year I went to Gozo"
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "g10build",
+          "type": "build",
+          "max": 5,
+          "title": "Build the sentence",
+          "items": [
+            {
+              "mt": "Ilbieraħ mort id-dar",
+              "en": "Yesterday I went home"
+            },
+            {
+              "mt": "Ma ħdimtx illum",
+              "en": "I didn't work today"
+            },
+            {
+              "mt": "Hi kitbet ittra",
+              "en": "She wrote a letter"
+            },
+            {
+              "mt": "Għamilna kollox",
+              "en": "We did everything"
+            },
+            {
+              "mt": "Huma kielu l-pizza",
+              "en": "They ate the pizza"
+            }
+          ]
+        },
+        {
+          "id": "g10bucket",
+          "type": "bucket",
+          "batch": 6,
+          "title": "Now or before?",
+          "instructions": "Sort each verb: is it present (now) or past (before)?",
+          "choices": [
+            "Present (now)",
+            "Past (before)"
+          ],
+          "items": [
+            {
+              "word": "naħdem",
+              "answer": "Present (now)"
+            },
+            {
+              "word": "ħdimt",
+              "answer": "Past (before)"
+            },
+            {
+              "word": "niekol",
+              "answer": "Present (now)"
+            },
+            {
+              "word": "kilt",
+              "answer": "Past (before)"
+            },
+            {
+              "word": "immur",
+              "answer": "Present (now)"
+            },
+            {
+              "word": "mort",
+              "answer": "Past (before)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "icon": "📚",
+      "title": "Vocabulary",
+      "subtitle": "Il-vokabularju: every word in one place",
+      "intro": "Everything from this unit, gathered to revise. Tap any word to hear it.",
+      "groups": [
+        {
+          "title": "Jobs",
+          "icon": "💼",
+          "items": [
+            {
+              "mt": "Xogħol",
+              "en": "work / job",
+              "icon": "💼"
+            },
+            {
+              "mt": "Għalliem",
+              "en": "teacher (m)",
+              "icon": "👨‍🏫"
+            },
+            {
+              "mt": "Tabib",
+              "en": "doctor",
+              "icon": "🩺"
+            },
+            {
+              "mt": "Infermier",
+              "en": "nurse",
+              "icon": "🧑‍⚕️"
+            },
+            {
+              "mt": "Kok",
+              "en": "cook / chef",
+              "icon": "👨‍🍳"
+            },
+            {
+              "mt": "Bennej",
+              "en": "builder",
+              "icon": "🧱"
+            },
+            {
+              "mt": "Xufier",
+              "en": "driver",
+              "icon": "🚗"
+            },
+            {
+              "mt": "Sid",
+              "en": "boss / owner",
+              "icon": "👔"
+            }
+          ]
+        },
+        {
+          "title": "Home",
+          "icon": "🏠",
+          "items": [
+            {
+              "mt": "Dar",
+              "en": "house / home",
+              "icon": "🏠"
+            },
+            {
+              "mt": "Kċina",
+              "en": "kitchen",
+              "icon": "🍳"
+            },
+            {
+              "mt": "Kamra tas-sodda",
+              "en": "bedroom",
+              "icon": "🛏️"
+            },
+            {
+              "mt": "Kamra tal-banju",
+              "en": "bathroom",
+              "icon": "🛁"
+            },
+            {
+              "mt": "Salott",
+              "en": "living room",
+              "icon": "🛋️"
+            },
+            {
+              "mt": "Gallarija",
+              "en": "balcony",
+              "icon": "🏙️"
+            },
+            {
+              "mt": "Mejda",
+              "en": "table",
+              "icon": "🪑"
+            },
+            {
+              "mt": "Siġġu",
+              "en": "chair",
+              "icon": "🪑"
+            }
+          ]
+        },
+        {
+          "title": "Past-tense verbs (he did / I did)",
+          "icon": "⏪",
+          "items": [
+            {
+              "mt": "kiteb / ktibt",
+              "en": "wrote",
+              "icon": "✏️"
+            },
+            {
+              "mt": "għamel / għamilt",
+              "en": "did / made",
+              "icon": "🛠️"
+            },
+            {
+              "mt": "ħadem / ħdimt",
+              "en": "worked",
+              "icon": "💼"
+            },
+            {
+              "mt": "kiel / kilt",
+              "en": "ate",
+              "icon": "🍽️"
+            },
+            {
+              "mt": "mar / mort",
+              "en": "went",
+              "icon": "🚶"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
