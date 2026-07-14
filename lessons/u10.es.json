@@ -231,7 +231,11 @@
           "forms": [
             {
               "mt": "bennej",
-              "label": "m/f"
+              "label": "m"
+            },
+            {
+              "mt": "bennejja",
+              "label": "f"
             },
             {
               "mt": "bennejja",

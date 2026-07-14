@@ -228,7 +228,8 @@
           "en": "builder",
           "icon": "🧱",
           "forms": [
-            {"mt": "bennej", "label": "m/f"},
+            {"mt": "bennej", "label": "m"},
+            {"mt": "bennejja", "label": "f"},
             {"mt": "bennejja", "label": "pl"}
           ]
         },
