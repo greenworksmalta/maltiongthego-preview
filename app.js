@@ -20,7 +20,7 @@ const VERSION = "1.0.7";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "dev0714021257";
+const BUILD = "dev0714021740";
 // Bump ONLY when audio clips are regenerated (re-voiced). Audio filenames are
 // sha1(mt) so a re-voiced clip keeps its name; without a changing query the
 // browser/SW serve the OLD cached audio. play() busts on this.
@@ -524,7 +524,7 @@ player.addEventListener("ended", ()=>{ if(currentBtn){ currentBtn.classList.remo
 })();
 
 const AutoPlay = {
-  entries:[], i:0, active:false, btn:null, timer:null, _ended:null, PAUSE_MS:1000,
+  entries:[], i:0, active:false, btn:null, timer:null, _ended:null, PAUSE_MS:500,
   start(entries, btn, opts){
     opts = opts || {}; this.stop();
     entries = (entries||[]).filter(e => e && e.mt && audioSrcFor(e.mt));
