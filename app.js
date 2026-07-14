@@ -20,7 +20,7 @@ const VERSION = "1.0.7";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "dev0714020727";
+const BUILD = "dev0714021257";
 // Bump ONLY when audio clips are regenerated (re-voiced). Audio filenames are
 // sha1(mt) so a re-voiced clip keeps its name; without a changing query the
 // browser/SW serve the OLD cached audio. play() busts on this.
@@ -578,7 +578,7 @@ function autoPlayBtn(getEntries, opts){
 function apAudioBtn(mt){
   const b = el("button","audio-btn sm","🔊");
   b.setAttribute("aria-label","Play "+mt);
-  b.addEventListener("click", e=>{ e.stopPropagation(); if(!AutoPlay.jumpTo(mt)) playBtn(b, mt); });
+  b.addEventListener("click", e=>{ e.stopPropagation(); if(AutoPlay.active) return; playBtn(b, mt); });
   return b;
 }
 function shuffled(arr){
@@ -609,7 +609,7 @@ function renderVocabScreen(root, sec, onNext){
         fr.appendChild(apAudioBtn(f.mt));
         if(f.label) fr.appendChild(el("span","form-label", f.label));
         fr.appendChild(el("span","form-mt", f.mt));
-        fr.addEventListener("click", e => { if(e.target.tagName!=="BUTTON"){ reveal(); if(!AutoPlay.jumpTo(f.mt)) play(f.mt); } });
+        fr.addEventListener("click", e => { if(e.target.tagName!=="BUTTON"){ if(AutoPlay.active) return; reveal(); play(f.mt); } });
         const entry = { mt:f.mt, node:fr, reveal };
         pushEntry(entry, sink);
         formEntries.push(entry);
@@ -620,9 +620,10 @@ function renderVocabScreen(root, sec, onNext){
       // Once open, individual form taps play just that form (handled above).
       c.addEventListener("click", e => {
         if(e.target.tagName === "BUTTON") return;
+        if(AutoPlay.active) return;   // Play-all running: press Stop for manual flips
         if(c.classList.contains("revealed")) return;
         reveal();
-        if(!AutoPlay.active) AutoPlay.start(formEntries, null);
+        AutoPlay.start(formEntries, null);
       });
       return c;
     }
@@ -639,8 +640,9 @@ function renderVocabScreen(root, sec, onNext){
     const reveal = () => { c.classList.add("revealed"); };
     c.addEventListener("click", e => {
       if(e.target.tagName === "BUTTON") return;
+      if(AutoPlay.active) return;   // Play-all running: press Stop for manual flips
       reveal();
-      if(!AutoPlay.jumpTo(item.mt)) play(item.mt);
+      play(item.mt);
     });
     pushEntry({ mt:item.mt, node:c, reveal }, sink);
     return c;
@@ -4429,7 +4431,7 @@ STEP_RENDERERS["weekend:dialogue"] = (root, sec, idx, onNext) => {
     t.appendChild(el("span","mt", line.mt));
     t.appendChild(el("span","en", line.en));
     r.appendChild(t);
-    r.addEventListener("click", e=>{ if(e.target.tagName!=="BUTTON"){ if(!AutoPlay.jumpTo(line.mt)) play(line.mt); } });
+    r.addEventListener("click", e=>{ if(e.target.tagName!=="BUTTON"){ if(AutoPlay.active) return; play(line.mt); } });
     if(line.mt && audioSrcFor(line.mt)) entries.push({ mt:line.mt, node:r });
     root.appendChild(r);
   });
@@ -4785,7 +4787,7 @@ function renderGrammarRulesStep(root, sec, idx, onNext){
   const r = sec.rules[idx];
   const entries = [];
   root.appendChild(autoPlayBtn(() => entries));
-  const clickPlay = (str) => (evt) => { if(evt.target.tagName!=="BUTTON"){ if(!AutoPlay.jumpTo(str)) play(str); } };
+  const clickPlay = (str) => (evt) => { if(evt.target.tagName!=="BUTTON"){ if(AutoPlay.active) return; play(str); } };
   const card = el("div","card rule");
   if(r.title) card.appendChild(el("h2","",r.title));
   if(r.explanation) card.appendChild(el("p","",r.explanation));
