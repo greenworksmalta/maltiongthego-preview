@@ -20,7 +20,7 @@ const VERSION = "1.0.7";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "dev0714024728";
+const BUILD = "dev0714025923";
 // Bump ONLY when audio clips are regenerated (re-voiced). Audio filenames are
 // sha1(mt) so a re-voiced clip keeps its name; without a changing query the
 // browser/SW serve the OLD cached audio. play() busts on this.
@@ -3128,7 +3128,7 @@ const STEP_COUNTS = {
   "serquni:listen": s => Math.min(6, s.dialogue.length),
   "colours:card": s => s.items.length,
   "adjectives:pair": s => s.pairs.length,
-  "numbers:flash": s => s.items.length,
+  "numbers:flash": s => 1,
   "numbers:ordinals": s => s.ordinals.length,
   "months:flash": s => s.items.length,
   "months:match": s => Math.min(6, s.items.length),   // listen & pick rounds
@@ -3864,19 +3864,9 @@ STEP_RENDERERS["adjectives:pair"] = (root, sec, idx, onNext) => {
   setTimeout(()=>play(p.a.mt), 250);
 };
 
-STEP_RENDERERS["numbers:flash"] = (root, sec, idx, onNext) => {
-  const item = sec.items[idx];
-  const card = el("div","card number-card");
-  card.appendChild(el("div","num", String(item.n)));
-  card.appendChild(el("div","mtword", item.mt));
-  card.appendChild(el("div","enword", item.en));
-  card.appendChild(audioBtn(item.mt, {size:"lg"}));
-  card.addEventListener("click", e=>{ if(e.target.tagName!=="BUTTON") play(item.mt); });
-  root.appendChild(card);
-  root.appendChild(el("p","muted center", (idx+1)+" / "+sec.items.length));
-  root.appendChild(nextBtn("Next →", onNext));
-  setTimeout(()=>play(item.mt), 250);
-};
+// Numbers: single-screen visible grid (via sec.display "grid") + Play-all, instead
+// of one number per screen.
+STEP_RENDERERS["numbers:flash"] = (root, sec, idx, onNext) => renderVocabScreen(root, sec, onNext);
 STEP_RENDERERS["numbers:ordinals"] = (root, sec, idx, onNext) => {
   if(idx===0 && sec.ordinalsIntro){
     const head = el("div","card");
