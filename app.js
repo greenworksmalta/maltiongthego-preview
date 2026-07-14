@@ -20,7 +20,7 @@ const VERSION = "1.0.7";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "dev0714021740";
+const BUILD = "dev0714022348";
 // Bump ONLY when audio clips are regenerated (re-voiced). Audio filenames are
 // sha1(mt) so a re-voiced clip keeps its name; without a changing query the
 // browser/SW serve the OLD cached audio. play() busts on this.
@@ -524,7 +524,7 @@ player.addEventListener("ended", ()=>{ if(currentBtn){ currentBtn.classList.remo
 })();
 
 const AutoPlay = {
-  entries:[], i:0, active:false, btn:null, timer:null, _ended:null, PAUSE_MS:500,
+  entries:[], i:0, active:false, btn:null, timer:null, _ended:null, PAUSE_MS:500, WITHIN_MS:100,
   start(entries, btn, opts){
     opts = opts || {}; this.stop();
     entries = (entries||[]).filter(e => e && e.mt && audioSrcFor(e.mt));
@@ -534,12 +534,15 @@ const AutoPlay = {
     this._ended = () => {
       if(!this.active) return;
       clearTimeout(this.timer);
+      // Short gap between forms of the SAME card (same group), full gap between cards.
+      const cur = this.entries[this.i], nxt = this.entries[this.i+1];
+      const gap = (cur && nxt && cur.group != null && cur.group === nxt.group) ? this.WITHIN_MS : this.PAUSE_MS;
       this.timer = setTimeout(() => {
         if(!this.active) return;
         this.i++;
         if(this.i >= this.entries.length){ this.stop(); return; }
         this._playCur();
-      }, this.PAUSE_MS);
+      }, gap);
     };
     player.addEventListener("ended", this._ended);
     const begin = () => { if(this.active) this._playCur(); };
@@ -610,7 +613,7 @@ function renderVocabScreen(root, sec, onNext){
         if(f.label) fr.appendChild(el("span","form-label", f.label));
         fr.appendChild(el("span","form-mt", f.mt));
         fr.addEventListener("click", e => { if(e.target.tagName!=="BUTTON"){ if(AutoPlay.active) return; reveal(); play(f.mt); } });
-        const entry = { mt:f.mt, node:fr, reveal };
+        const entry = { mt:f.mt, node:fr, reveal, group:c };
         pushEntry(entry, sink);
         formEntries.push(entry);
         face.appendChild(fr);
@@ -644,7 +647,7 @@ function renderVocabScreen(root, sec, onNext){
       reveal();
       play(item.mt);
     });
-    pushEntry({ mt:item.mt, node:c, reveal }, sink);
+    pushEntry({ mt:item.mt, node:c, reveal, group:c }, sink);
     return c;
   };
   const renderGroup = (title, icon, items) => {
