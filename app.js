@@ -20,7 +20,7 @@ const VERSION = "1.0.7";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "dev0714054037";
+const BUILD = "dev0714055713";
 // Bump ONLY when audio clips are regenerated (re-voiced). Audio filenames are
 // sha1(mt) so a re-voiced clip keeps its name; without a changing query the
 // browser/SW serve the OLD cached audio. play() busts on this.
@@ -529,7 +529,14 @@ player.addEventListener("ended", ()=>{ if(currentBtn){ currentBtn.classList.remo
     ".pace-row{display:flex;align-items:center;justify-content:center;gap:6px;margin-top:6px;}",
     ".pace-lbl{font-size:12px;color:#888;}",
     ".pace-pill{border:1px solid #cfd8d8;background:#fff;color:#2f6b6b;border-radius:14px;padding:4px 12px;font-size:13px;font-weight:600;cursor:pointer;}",
-    ".pace-pill.on{background:#2f6b6b;color:#fff;border-color:#2f6b6b;}"
+    ".pace-pill.on{background:#2f6b6b;color:#fff;border-color:#2f6b6b;}",
+    // Option B — framed ledger vocab list: one panel, hairline dividers, faint
+    // alternating tint, and a FULL border around the current (playing) row.
+    ".vocab-list.ledger{gap:0;padding:0;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;}",
+    ".vocab-list.ledger .vocab-item{background:transparent;border-radius:0;border-bottom:1px solid var(--line);padding:12px 12px;}",
+    ".vocab-list.ledger .vocab-item:last-child{border-bottom:0;}",
+    ".vocab-list.ledger .vocab-item:nth-child(even){background:rgba(13,107,106,.05);}",
+    ".vocab-list.ledger .vocab-item.ap-current{box-shadow:inset 0 0 0 2px var(--primary);background:rgba(13,107,106,.10);}"
   ].join("");
   document.head.appendChild(s);
 })();
@@ -684,7 +691,7 @@ function renderVocabScreen(root, sec, onNext){
       head.appendChild(el("h3","", title));
       root.appendChild(head);
     }
-    const wrapClass = gridMode ? "num-grid" : "vocab-list";
+    const wrapClass = gridMode ? "num-grid" : "vocab-list ledger";
     const grid = el("div", wrapClass);
     (items||[]).forEach(it => grid.appendChild(buildCard(it, null)));   // one top-level Play-all only
     root.appendChild(grid);
