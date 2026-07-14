@@ -167,21 +167,6 @@
       "languages": [
         "en"
       ]
-    },
-    {
-      "id": "u99",
-      "module": "OTA Test",
-      "moduleEs": "Prueba OTA",
-      "title": "OTA Test Unit",
-      "titleEs": "Unidad de Prueba OTA",
-      "subtitle": "Delivered over the air, no app update needed",
-      "subtitleEs": "Entregada por el aire, sin actualizar la app",
-      "icon": "🧪",
-      "dev": true,
-      "languages": [
-        "en",
-        "es"
-      ]
     }
   ],
   "packOrder": [

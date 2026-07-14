@@ -41,7 +41,7 @@
       "icon": "💼",
       "title": "Jobs",
       "subtitle": "Ix-xogħol: what people do",
-      "intro": "Common jobs and how to ask about them. Feminine forms are marked (f) for the teacher to confirm.",
+      "intro": "Common jobs and how to ask about them. Feminine forms are marked (f).",
       "facts": [
         "Most jobs make the feminine by adding -a: tabib becomes tabiba, kok becomes koka, għalliem becomes għalliema.",
         "A few borrowed jobs don't change, like mekkanik (mechanic)."
@@ -114,7 +114,7 @@
         },
         {
           "mt": "Mekkanik",
-          "en": "mechanic",
+          "en": "mechanic (m/f)",
           "icon": "🔧"
         },
         {
