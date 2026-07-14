@@ -598,17 +598,22 @@ function renderVocabScreen(root, sec, onNext){
     // with its own audio; auto-play walks through them. Gloss shown (not veiled).
     if(Array.isArray(item.forms) && item.forms.length){
       const c = el("div","flip multi");
-      if(item.icon){ const ic = el("div","flip-icon"); ic.textContent = item.icon; c.appendChild(ic); }
-      c.appendChild(el("div","flip-en", item.en || ""));
+      c.appendChild(el("div","flip-hint","tap to flip"));
+      const face = el("div","flip-face");
+      if(item.icon){ const ic = el("div","flip-icon"); ic.textContent = item.icon; face.appendChild(ic); }
+      face.appendChild(el("div","flip-en", item.en || ""));
+      const reveal = () => { c.classList.add("revealed"); };
       item.forms.forEach(f => {
         const fr = el("div","form-row");
         fr.appendChild(apAudioBtn(f.mt));
         if(f.label) fr.appendChild(el("span","form-label", f.label));
         fr.appendChild(el("span","form-mt", f.mt));
-        fr.addEventListener("click", e => { if(e.target.tagName!=="BUTTON"){ if(!AutoPlay.jumpTo(f.mt)) play(f.mt); } });
-        pushEntry({ mt:f.mt, node:fr }, sink);
-        c.appendChild(fr);
+        fr.addEventListener("click", e => { if(e.target.tagName!=="BUTTON"){ reveal(); if(!AutoPlay.jumpTo(f.mt)) play(f.mt); } });
+        pushEntry({ mt:f.mt, node:fr, reveal }, sink);
+        face.appendChild(fr);
       });
+      c.appendChild(face);
+      c.addEventListener("click", e => { if(e.target.tagName!=="BUTTON") reveal(); });
       return c;
     }
     // Blank front (nothing shown); tap flips to reveal BOTH Maltese + English (and
