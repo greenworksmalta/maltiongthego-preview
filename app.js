@@ -4763,7 +4763,7 @@ function renderGrammarRulesStep(root, sec, idx, onNext){
   }
   const r = sec.rules[idx];
   const entries = [];
-  root.appendChild(autoPlayBtn(() => entries, { initialDelayMs: 3000 }));
+  root.appendChild(autoPlayBtn(() => entries, { initialDelayMs: 2000 }));
   const clickPlay = (str) => (evt) => { if(evt.target.tagName!=="BUTTON"){ if(!AutoPlay.jumpTo(str)) play(str); } };
   const card = el("div","card rule");
   if(r.title) card.appendChild(el("h2","",r.title));
