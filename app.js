@@ -20,7 +20,7 @@ const VERSION = "1.0.7";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "dev0714055713";
+const BUILD = "dev0714060045";
 // Bump ONLY when audio clips are regenerated (re-voiced). Audio filenames are
 // sha1(mt) so a re-voiced clip keeps its name; without a changing query the
 // browser/SW serve the OLD cached audio. play() busts on this.
@@ -637,6 +637,10 @@ function renderVocabScreen(root, sec, onNext){
   if(sec.intro) root.appendChild(el("p","muted", sec.intro));
   (sec.facts||[]).forEach(f => root.appendChild(el("p","muted", f)));
   const gridMode = sec.display === "grid";
+  // Sections with multi-form items (e.g. Jobs: masc/fem/plural) keep the FLIP-CARD
+  // presentation; plain vocab lists render as a visible framed list (Option B ledger).
+  const allItems = [].concat(sec.items || [], sec.vocab || [], ...(sec.groups || []).map(g => g.items || []));
+  const flipMode = !gridMode && allItems.some(it => Array.isArray(it.forms) && it.forms.length);
   const entries = [];
   const pushEntry = (e, sink) => { entries.push(e); if(sink) sink.push(e); };
   root.appendChild(autoPlayBtn(() => entries));
@@ -650,28 +654,57 @@ function renderVocabScreen(root, sec, onNext){
       pushEntry({ mt:item.mt, node:t, group:t }, sink);
       return t;
     }
-    // Multi-form (jobs): a labelled card — icon + gloss, then the m/f/plural forms
-    // as visible rows, each with its own audio. Auto-play reads through them.
-    if(Array.isArray(item.forms) && item.forms.length){
-      const c = el("div","card vocab-multi");
-      const head = el("div","row vocab-head");
-      if(item.icon){ const ic = el("div","vocab-group-icon"); ic.textContent = item.icon; head.appendChild(ic); }
-      head.appendChild(el("h3","", item.en || ""));
-      c.appendChild(head);
-      item.forms.forEach(f => {
-        const fr = el("div","vocab-item");
-        fr.appendChild(apAudioBtn(f.mt));
-        if(f.label) fr.appendChild(el("span","form-label", f.label));
-        const tx = el("div","grow vocab-text");
-        tx.appendChild(el("div","mt", f.mt));
-        fr.appendChild(tx);
-        fr.addEventListener("click", e => { if(e.target.tagName!=="BUTTON"){ if(AutoPlay.active) return; play(f.mt); } });
-        pushEntry({ mt:f.mt, node:fr, group:c }, sink);
-        c.appendChild(fr);
+    if(flipMode){
+      // Multi-form flip card (jobs): blank front, tap to flip → icon+gloss+m/f/pl.
+      if(Array.isArray(item.forms) && item.forms.length){
+        const c = el("div","flip multi");
+        c.appendChild(el("div","flip-hint","tap to flip"));
+        const face = el("div","flip-face");
+        if(item.icon){ const ic = el("div","flip-icon"); ic.textContent = item.icon; face.appendChild(ic); }
+        face.appendChild(el("div","flip-en", item.en || ""));
+        const reveal = () => { c.classList.add("revealed"); };
+        const formEntries = [];
+        item.forms.forEach(f => {
+          const fr = el("div","form-row");
+          fr.appendChild(apAudioBtn(f.mt));
+          if(f.label) fr.appendChild(el("span","form-label", f.label));
+          fr.appendChild(el("span","form-mt", f.mt));
+          fr.addEventListener("click", e => { if(e.target.tagName!=="BUTTON"){ if(AutoPlay.active) return; reveal(); play(f.mt); } });
+          const entry = { mt:f.mt, node:fr, reveal, group:c };
+          pushEntry(entry, sink);
+          formEntries.push(entry);
+          face.appendChild(fr);
+        });
+        c.appendChild(face);
+        c.addEventListener("click", e => {
+          if(e.target.tagName === "BUTTON") return;
+          if(AutoPlay.active) return;
+          if(c.classList.contains("revealed")) return;
+          reveal();
+          AutoPlay.start(formEntries, null);
+        });
+        return c;
+      }
+      // Single flip card (plain items inside a flip section, e.g. Xoghol).
+      const c = el("div","flip");
+      c.appendChild(el("div","flip-hint","tap to flip"));
+      const face = el("div","flip-face");
+      if(item.icon){ const ic = el("div","flip-icon"); ic.textContent = item.icon; face.appendChild(ic); }
+      face.appendChild(apAudioBtn(item.mt));
+      face.appendChild(el("div","flip-mt", item.mt));
+      face.appendChild(el("div","flip-en", item.en || ""));
+      c.appendChild(face);
+      const reveal = () => { c.classList.add("revealed"); };
+      c.addEventListener("click", e => {
+        if(e.target.tagName === "BUTTON") return;
+        if(AutoPlay.active) return;
+        reveal();
+        play(item.mt);
       });
+      pushEntry({ mt:item.mt, node:c, reveal, group:c }, sink);
       return c;
     }
-    // Plain vocab: a VISIBLE list row — audio, icon, Maltese + English. Tap to hear.
+    // Plain vocab (ledger): a VISIBLE list row — audio, icon, Maltese + English.
     const r = el("div","vocab-item");
     r.appendChild(apAudioBtn(item.mt));
     const ic = el("div","vocab-icon"); ic.textContent = item.icon || "🔹"; r.appendChild(ic);
@@ -691,7 +724,7 @@ function renderVocabScreen(root, sec, onNext){
       head.appendChild(el("h3","", title));
       root.appendChild(head);
     }
-    const wrapClass = gridMode ? "num-grid" : "vocab-list ledger";
+    const wrapClass = gridMode ? "num-grid" : (flipMode ? "flip-grid" : "vocab-list ledger");
     const grid = el("div", wrapClass);
     (items||[]).forEach(it => grid.appendChild(buildCard(it, null)));   // one top-level Play-all only
     root.appendChild(grid);
