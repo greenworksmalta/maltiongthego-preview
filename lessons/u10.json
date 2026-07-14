@@ -225,29 +225,47 @@
           ]
         },
         {
-          "mt": "Bennej",
           "en": "builder",
-          "icon": "🧱"
+          "icon": "🧱",
+          "forms": [
+            {"mt": "bennej", "label": "m/f"},
+            {"mt": "bennejja", "label": "pl"}
+          ]
         },
         {
-          "mt": "Bejjiegħ",
           "en": "salesperson",
-          "icon": "🛒"
+          "icon": "🛒",
+          "forms": [
+            {"mt": "bejjiegħ", "label": "m"},
+            {"mt": "bejjiegħa", "label": "f"},
+            {"mt": "bejjiegħa", "label": "pl"}
+          ]
         },
         {
-          "mt": "Xufier",
           "en": "driver",
-          "icon": "🚗"
+          "icon": "🚗",
+          "forms": [
+            {"mt": "xufier", "label": "m"},
+            {"mt": "xufiera", "label": "f"},
+            {"mt": "xufieri", "label": "pl"}
+          ]
         },
         {
-          "mt": "Furnar",
           "en": "baker",
-          "icon": "🥖"
+          "icon": "🥖",
+          "forms": [
+            {"mt": "furnar", "label": "m"},
+            {"mt": "furnara", "label": "f"},
+            {"mt": "furnara", "label": "pl"}
+          ]
         },
         {
-          "mt": "Sid",
           "en": "boss / owner",
-          "icon": "👔"
+          "icon": "👔",
+          "forms": [
+            {"mt": "sid", "label": "m/f"},
+            {"mt": "sidien", "label": "pl"}
+          ]
         },
         {
           "mt": "Uffiċċju",
