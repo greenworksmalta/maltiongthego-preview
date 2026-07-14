@@ -20,7 +20,7 @@ const VERSION = "1.0.7";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "dev0714094347";
+const BUILD = "dev0714143858";
 // Bump ONLY when audio clips are regenerated (re-voiced). Audio filenames are
 // sha1(mt) so a re-voiced clip keeps its name; without a changing query the
 // browser/SW serve the OLD cached audio. play() busts on this.
@@ -997,7 +997,7 @@ window.addEventListener("hashchange", route);
 // by its source key, deduped by mt. Skips only interactive drills (LISTEN_SKIP_KEYS) —
 // grammar rule examples + usage examples ARE read, mirroring generate_listen_audio.py
 // so every requested clip exists.
-const LISTEN_SKIP_KEYS = { exercises:1 };
+const LISTEN_SKIP_KEYS = {};
 // Spoken intro played as the header of each unit's Vocabulary section. Must match
 // EXTRA_PHRASES in scripts/generate_listen_audio.py EXACTLY (clip lookup is by text).
 const LISTEN_REVIEW_INTRO = {

@@ -303,18 +303,17 @@
           "forms": [
             {
               "mt": "sid",
-              "label": "m/f"
+              "label": "m"
+            },
+            {
+              "mt": "sidt",
+              "label": "f"
             },
             {
               "mt": "sidien",
               "label": "pl"
             }
           ]
-        },
-        {
-          "mt": "Uffiċċju",
-          "en": "oficina",
-          "icon": "🏢"
         }
       ],
       "exercises": [
@@ -1009,6 +1008,11 @@
               "mt": "Sid",
               "en": "jefe / dueño",
               "icon": "👔"
+            },
+            {
+              "mt": "Uffiċċju",
+              "en": "oficina",
+              "icon": "🏢"
             }
           ]
         },

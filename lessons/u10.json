@@ -264,14 +264,10 @@
           "en": "boss / owner",
           "icon": "👔",
           "forms": [
-            {"mt": "sid", "label": "m/f"},
+            {"mt": "sid", "label": "m"},
+            {"mt": "sidt", "label": "f"},
             {"mt": "sidien", "label": "pl"}
           ]
-        },
-        {
-          "mt": "Uffiċċju",
-          "en": "office",
-          "icon": "🏢"
         }
       ],
       "exercises": [
@@ -966,6 +962,11 @@
               "mt": "Sid",
               "en": "boss / owner",
               "icon": "👔"
+            },
+            {
+              "mt": "Uffiċċju",
+              "en": "office",
+              "icon": "🏢"
             }
           ]
         },
