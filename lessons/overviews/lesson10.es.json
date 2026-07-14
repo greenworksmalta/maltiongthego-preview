@@ -55,7 +55,14 @@
     {"mt": "kamra tas-sodda"},
     {"en": "Cuarto de baño:"},
     {"mt": "kamra tal-banju"},
-    {"en": "Y fíjate también aquí en los plurales fractos — cocina, kċina, se convierte en kċejjen; escalera, taraġ, se convierte en turġien.", "kind": "tip"},
+    {"en": "Y fíjate también aquí en los plurales fractos — cocina,", "kind": "tip"},
+    {"mt": "kċina"},
+    {"en": "se convierte en"},
+    {"mt": "kċejjen"},
+    {"en": "escalera,"},
+    {"mt": "taraġ"},
+    {"en": "se convierte en"},
+    {"mt": "turġien"},
     {"en": "✅ ¡HECHO!", "kind": "win"},
     {"en": "Trabajos, el artículo, animales, casas. Ahora prueba las secciones. **¡Prosit!** 🇲🇹"}
   ]

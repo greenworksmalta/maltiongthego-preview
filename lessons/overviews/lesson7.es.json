@@ -6,7 +6,6 @@
   "transcript": [
     {"en": "¡Hola! 👋 Lección 7 — la recta final.", "kind": "header"},
     {"en": "Cuatro bloques hoy. Medios de **transporte**, qué vas a hacer este **fin de semana**, las cuatro **estaciones**, y un grupo pequeñito pero potente de palabras: las **partículas**. ¡Vamos!"},
-
     {"en": "🚌 PARTE 1 — TRANSPORTE 🚌", "kind": "header"},
     {"en": "16 maneras de moverte. La mayoría te suenan — el maltés tomó muchas del italiano y del inglés."},
     {"en": "Coche:"},
@@ -23,8 +22,13 @@
     {"en": "Bicicleta:"},
     {"mt": "rota"},
     {"en": "La mayoría de los plurales solo **agregan -i** al final. Karozza → karozzi. Mutur → muturi. Fácil.", "kind": "rule"},
-    {"en": "Pero algunos son medio raros. **Vann** se vuelve **vannijiet**. **Dgħajsa** se vuelve **dgħajjes**. No pelees — escucha y repite. 🎯", "kind": "tip"},
-
+    {"en": "Pero algunos son medio raros.", "kind": "tip"},
+    {"en": "Vann"},
+    {"en": "se vuelve"},
+    {"mt": "vannijiet Dgħajsa"},
+    {"en": "se vuelve"},
+    {"mt": "dgħajjes"},
+    {"en": "No pelees — escucha y repite. 🎯"},
     {"en": "🗓️ PARTE 2 — PLANES DE FIN DE SEMANA 🗓️", "kind": "header"},
     {"en": "Todas estas frases empiezan con dos palabras mágicas:"},
     {"mt": "Se mmur..."},
@@ -40,7 +44,6 @@
     {"en": "O nomás a relajarme en casa:"},
     {"mt": "Se nibqa' nirrilassa d-dar"},
     {"en": "Memoriza 'Se mmur' y le puedes pegar cualquier actividad. 💪"},
-
     {"en": "🌷 PARTE 3 — LAS CUATRO ESTACIONES 🌷", "kind": "header"},
     {"en": "Primavera:"},
     {"mt": "Ir-Rebbiegħa"},
@@ -55,7 +58,6 @@
     {"mt": "Ix-Xitwa"},
     {"en": "Frío, caldo, abrigos, fuego en la chimenea. ❄️"},
     {"en": "Fíjate en el artículo de cada estación — **Ir-, Is-, Il-, Ix-**. Todas las formas de 'el / la' de la Lección 1 en acción.", "kind": "fact"},
-
     {"en": "🔗 PARTE 4 — PARTÍCULAS 🔗", "kind": "header"},
     {"en": "Las partículas son **palabritas que conectan cosas** — como 'con', 'de', 'en', 'hasta'.", "kind": "key"},
     {"en": "Son 11. La mayoría son cortas y raras, pero cada una hace mucho trabajo."},
@@ -87,7 +89,6 @@
     {"mt": "Il-fjuri ta' nanna"},
     {"en": "Las flores de la abuela."},
     {"en": "Estas van **solas** — sin artículo. En la Lección 8 vas a ver qué pasa cuando se TOPAN con el artículo. Spoiler: se fusionan. 🪄", "kind": "tip"},
-
     {"en": "✅ ¡LISTO!", "kind": "win"},
     {"en": "Transporte. Planes de fin de semana. Estaciones. Partículas. Eso es la lección 7."},
     {"en": "Toca una sección, practica, repite. Dos más por delante. 💪"},

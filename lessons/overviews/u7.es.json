@@ -6,7 +6,6 @@
   "transcript": [
     {"en": "¡Bienvenido! 👋 Unidad 7 — Preguntas y Direcciones.", "kind": "header"},
     {"en": "Tres cosas en esta unidad: un **diálogo de direcciones**, las ocho **palabras interrogativas** y la forma educada de pedir y seguir indicaciones. Breve y práctico. ¡Vamos!"},
-
     {"en": "🧭 PARTE 1 — CÓMO ORIENTARSE 🧭", "kind": "header"},
     {"en": "Imagínate esto: estás en un pueblo maltés y necesitas encontrar el banco. Paras a alguien. Así es como va la conversación."},
     {"en": "Empiezas con:"},
@@ -21,7 +20,6 @@
     {"en": "Y terminas con:"},
     {"mt": "Grazzi ħafna!"},
     {"en": "¡Muchas gracias! Intercambio perfecto. Cinco líneas y asunto resuelto. ☕", "kind": "key"},
-
     {"en": "❓ PARTE 2 — PALABRAS INTERROGATIVAS ❓", "kind": "header"},
     {"en": "Ocho palabritas que abren casi cualquier pregunta en maltés. 🗝️", "kind": "fact"},
     {"en": "¿Quién?"},
@@ -41,7 +39,9 @@
     {"en": "¿Qué quieres tomar, un capuchino o té?"},
     {"en": "¿Por qué?"},
     {"mt": "Għaliex?"},
-    {"en": "También se dice Għala. Ejemplo:"},
+    {"en": "También se dice"},
+    {"mt": "Għala"},
+    {"en": "Ejemplo:"},
     {"mt": "Għaliex wasalt tard?"},
     {"en": "¿Por qué llegaste tarde?"},
     {"en": "¿Cuándo?"},
@@ -65,7 +65,6 @@
     {"mt": "Kif immorru l-ajruport?"},
     {"en": "¿Cómo llegamos al aeropuerto?"},
     {"en": "Pon cualquiera de estas palabras al inicio de una oración y ya tienes una pregunta. Ocho palabras, conversaciones infinitas. 🎯", "kind": "key"},
-
     {"en": "🗺️ PARTE 3 — DIRECCIONES 🗺️", "kind": "header"},
     {"en": "La forma educada e infalible de pedir indicaciones. Esta frase de apertura funciona siempre:", "kind": "rule"},
     {"mt": "Skużani. Tista' tgħidli fejn hi l-iskola, jekk jogħġbok?"},
@@ -108,8 +107,9 @@
     {"en": "Sur."},
     {"mt": "Punent"},
     {"en": "Oeste."},
-    {"en": "Más cuatro diagonales: Grigal, Xlokk, Lbiċ, Majjistral — noreste, sureste, suroeste, noroeste. Siempre en mayúscula al escribir.", "kind": "fact"},
-
+    {"en": "Más cuatro diagonales:", "kind": "fact"},
+    {"mt": "Grigal Xlokk Lbiċ Majjistral"},
+    {"en": "— noreste, sureste, suroeste, noroeste. Siempre en mayúscula al escribir."},
     {"en": "✅ ¡LISTO!", "kind": "win"},
     {"en": "Diálogo de direcciones. Ocho palabras interrogativas. Pedir indicaciones de manera educada. Eso es la Unidad 7."},
     {"en": "Min, Fejn, Kif — tres de esas ocho cubrirán el 80% de tus preguntas del día a día. Empieza por ahí. 💪"},

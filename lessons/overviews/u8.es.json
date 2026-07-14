@@ -6,7 +6,6 @@
   "transcript": [
     {"en": "¡Bienvenido! 👋 Unidad 8 — Comida, Cafés y Restaurantes.", "kind": "header"},
     {"en": "Cuatro secciones en esta unidad: un **diálogo en el café**, vocabulario de **bebidas**, **comida maltesa** y **pedir y pagar**. Más un punto gramatical útil sobre cómo decir 'con'. ¡Empecemos!"},
-
     {"en": "☕ PARTE 1 — EN EL CAFÉ ☕", "kind": "header"},
     {"en": "Malta vive del café. Así que empecemos donde empieza todo el mundo — la kafetterija. 🇲🇹"},
     {"en": "El mesero abre con — ¡Buenos días! ¿Qué va a tomar?"},
@@ -22,8 +21,12 @@
     {"en": "Ellos dicen que sí — dos ftiras, por favor:"},
     {"mt": "Iva, żewġ ftajjar, jekk jogħġbok."},
     {"en": "Tres frases clave de ese intercambio. Memoriza estas tres y podrás pedir cualquier cosa:", "kind": "key"},
-    {"en": "**Nixtieq** — quisiera. **X'se tieħu?** — ¿Qué va a tomar? **Jekk jogħġbok** — por favor. 🙌"},
-
+    {"en": "Nixtieq"},
+    {"en": "— quisiera."},
+    {"mt": "X'se tieħu"},
+    {"en": "— ¿Qué va a tomar?"},
+    {"mt": "Jekk jogħġbok"},
+    {"en": "— por favor. 🙌"},
     {"en": "🥤 PARTE 2 — BEBIDAS 🥤", "kind": "header"},
     {"en": "El menú de bebidas. Empieza por lo esencial."},
     {"mt": "kafè"},
@@ -51,7 +54,6 @@
     {"mt": "inbid"},
     {"en": "Vino. 🍷"},
     {"en": "Doce bebidas. Ya estás listo para cualquier bar o café en Malta. 🎯", "kind": "key"},
-
     {"en": "🍽️ PARTE 3 — COMIDA 🍽️", "kind": "header"},
     {"en": "Hora de comer. Algunas palabras cotidianas y unos clásicos malteses.", "kind": "fact"},
     {"mt": "ħobż"},
@@ -75,7 +77,6 @@
     {"mt": "ġelat"},
     {"en": "Helado. 🍦"},
     {"en": "Los verás en los menús de toda Malta. Saber sus nombres significa que puedes pedir con confianza — sin tener que señalar el menú.", "kind": "tip"},
-
     {"en": "🧾 PARTE 4 — PEDIR Y PAGAR 🧾", "kind": "header"},
     {"en": "El conjunto de frases indispensables para toda la experiencia gastronómica. 🍴"},
     {"en": "Para pedir, tienes tres opciones. El educado 'quisiera':"},
@@ -91,7 +92,6 @@
     {"en": "La cuenta, por favor. Y cuando llega la comida y está deliciosa:"},
     {"mt": "Bnin!"},
     {"en": "¡Delicioso! 😋"},
-
     {"en": "📖 NOTA GRAMATICAL — BIL- 📖", "kind": "header"},
     {"en": "Un punto gramatical ordenado en esta unidad: cómo decir 'con'. El prefijo es **bil-**.", "kind": "rule"},
     {"en": "Antes de la mayoría de las letras, **bil-** se mantiene igual:"},
@@ -102,7 +102,6 @@
     {"en": "Pero ante una consonante 'Xemxin' — como la z — se asimila, igual que el artículo:", "kind": "fact"},
     {"mt": "kapuċċino biz-zokkor"},
     {"en": "Capuchino con azúcar. La z se duplica. La misma lógica que aprendiste en la Unidad 1 con el artículo definido. ¡Patrón reconocido! 🧠", "kind": "key"},
-
     {"en": "✅ ¡LISTO!", "kind": "win"},
     {"en": "Diálogo en el café. Bebidas. Comida maltesa. Pedir y pagar. Más bil- para 'con'. Eso es la Unidad 8."},
     {"en": "La próxima vez que estés en una pastizzerija, prueba pedir en maltés. Ya tienes las palabras. 💪"},

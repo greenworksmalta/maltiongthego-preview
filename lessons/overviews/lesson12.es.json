@@ -44,7 +44,13 @@
     {"mt": "il-ħajjata"},
     {"en": "El zapatero:"},
     {"mt": "l-iskarpan"},
-    {"en": "Y la tienda de comestibles — ħanut tal-merċa — para la comida diaria. Fíjate en que 'ħanut' significa tienda, y 'tal-' te dice qué vende.", "kind": "tip"},
+    {"en": "Y la tienda de comestibles —", "kind": "tip"},
+    {"mt": "ħanut tal-merċa"},
+    {"en": "— para la comida diaria. Fíjate en que"},
+    {"mt": "ħanut"},
+    {"en": "significa tienda, y"},
+    {"en": "'tal-'"},
+    {"en": "te dice qué vende."},
     {"en": "✅ ¡HECHO!", "kind": "win"},
     {"en": "Muebles, el pasado con għ, tiendas antiguas. Eso completa el Módulo 4. **¡Prosit!** 🇲🇹"}
   ]

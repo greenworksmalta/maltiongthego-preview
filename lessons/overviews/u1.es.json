@@ -6,7 +6,6 @@
   "transcript": [
     {"en": "¡Bienvenido! 👋 Unidad 1. Tus primeros pasos en el maltés.", "kind": "header"},
     {"en": "Cinco cosas grandes en esta unidad. **Conocer a gente**. **Frases clave** para presentarte. **Los días de la semana**. El **alfabeto** con sus letras únicas del maltés. Y la regla para decir **'el / la'**. ¡Vamos!"},
-
     {"en": "👋 PARTE 1 — CONOCER A ALGUIEN 👋", "kind": "header"},
     {"en": "Imagina que acabas de mudarte a Malta. Un vecino toca la puerta. Así va la conversación. Saludo matutino:"},
     {"mt": "Bonġu"},
@@ -14,13 +13,19 @@
     {"mt": "Merħba!"},
     {"en": "¡Bienvenido! Palabra preciosa. Luego viene la grande — encantado de conocerte:"},
     {"mt": "Għandi pjaċir"},
-    {"en": "**Għandi pjaċir** — literalmente 'tengo placer'. Usa siempre la forma completa, nunca solo 'pjaċir'. 🤝", "kind": "key"},
+    {"mt": "Għandi pjaċir"},
+    {"en": "— literalmente 'tengo placer'. Usa siempre la forma completa, nunca solo"},
+    {"mt": "pjaċir"},
+    {"en": "🤝"},
     {"en": "Para preguntar de dónde es alguien:"},
     {"mt": "Minn fejn int?"},
     {"en": "Y para responder — soy de Inglaterra, pero ahora vivo en Malta:"},
     {"mt": "Jien Ingliża, imma issa ngħix Malta."},
-    {"en": "Fíjate en **Jien** para 'yo', y **ngħix** — yo vivo. ¡Compacto y seguro! 💪"},
-
+    {"en": "Fíjate en"},
+    {"en": "Jien"},
+    {"en": "para 'yo', y"},
+    {"mt": "ngħix"},
+    {"en": "— yo vivo. ¡Compacto y seguro! 💪"},
     {"en": "💬 PARTE 2 — FRASES 💬", "kind": "header"},
     {"en": "Las frases que usarás desde el primer día. Para saludar:"},
     {"mt": "Ħelow"},
@@ -57,7 +62,6 @@
     {"en": "o la forma femenina:"},
     {"mt": "Jien barranija"},
     {"en": "Da siempre las dos formas — masculina y femenina. El maltés marca el género en adjetivos y nacionalidades. 🌍", "kind": "fact"},
-
     {"en": "📅 PARTE 3 — DÍAS DE LA SEMANA 📅", "kind": "header"},
     {"en": "Siete días, siete oportunidades de practicar el artículo. Escucha y observa cómo cambia 'el / la' cada vez. 🎧"},
     {"mt": "Il-Ħadd"},
@@ -75,7 +79,6 @@
     {"mt": "Is-Sibt"},
     {"en": "Sábado. 🗓️"},
     {"en": "Fíjate cómo el artículo salta entre Il-, It-, L-, Is-. La regla del artículo en plena acción — y la Parte 4 explica exactamente por qué. 🌟", "kind": "fact"},
-
     {"en": "🔤 PARTE 4 — EL ALFABETO 🔤", "kind": "header"},
     {"en": "Dato rápido: el maltés tiene **30 letras**. La mayoría son como en inglés. Pero **cinco son únicas**. Vamos a conocer las especiales.", "kind": "fact"},
     {"en": "Primera — c con un punto:"},
@@ -105,7 +108,6 @@
     {"en": "También hay una vocal que no encontrarás en inglés — **ie**, escrita con dos letras pero que cuenta como una. Como en:"},
     {"mt": "tieqa"},
     {"en": "ventana."},
-
     {"en": "📖 PARTE 5 — DECIR 'EL / LA' 📖", "kind": "header"},
     {"en": "Aquí es donde el maltés se pone interesante. Hay **una sola palabra para 'el / la'**, pero cambia de forma según el siguiente sonido. Tres grupos ordenados.", "kind": "rule"},
     {"en": "GRUPO 1 — la mayoría de consonantes: 'el / la' es simplemente:"},
@@ -116,7 +118,6 @@
     {"mt": "il-baħar"},
     {"en": "'El jardín':"},
     {"mt": "il-ġnien"},
-
     {"en": "GRUPO 2 — vocales, h, o għ: se elimina la 'i' y 'el / la' pasa a ser:"},
     {"mt": "l-"},
     {"en": "'La tierra':"},
@@ -125,7 +126,6 @@
     {"mt": "l-ikel"},
     {"en": "'El ojo':"},
     {"mt": "l-għajn"},
-
     {"en": "GRUPO 3 — las **consonantes 'Xemxin'**: estas nueve letras copian el sonido del artículo, duplicándolo. Las nueve son: ċ, d, n, r, s, t, x, ż, z. 🌞", "kind": "rule"},
     {"en": "Así que 'la casa':"},
     {"mt": "id-dar"},
@@ -139,7 +139,6 @@
     {"mt": "l-iskola"},
     {"en": "Nunca 'is-skola'. Ese grupo simplemente no se duplica.", "kind": "tip"},
     {"en": "No intentes memorizar todas las reglas de golpe. Los ejercicios las van metiendo de la forma fácil. Tus oídos aprenden más rápido que tu cerebro. 👂", "kind": "tip"},
-
     {"en": "✅ ¡LISTO!", "kind": "win"},
     {"en": "Saludos e introducciones. Los días de la semana. 30 letras incluidas cinco únicas. Y tres formas de 'el / la'. Eso es la Unidad 1."},
     {"en": "Toca la sección que más te llame y deja que las tarjetas hagan el trabajo. Ya empezaste — ese es el paso más difícil. 💪"},

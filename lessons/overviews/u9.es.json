@@ -6,9 +6,10 @@
   "transcript": [
     {"en": "¡Bienvenido! 👋 Unidad 9 — Compras, Dinero y el Tiempo.", "kind": "header"},
     {"en": "Cuatro secciones hoy: un **diálogo en el mercado**, **tiendas y abarrotes**, **cómo decir la hora** y **dinero y pagos**. Cosas prácticas y cotidianas. ¡A darle!"},
-
     {"en": "🛒 PARTE 1 — EN LA TIENDA 🛒", "kind": "header"},
-    {"en": "Estás en un ħanut local — una tienda maltesa. Así va la conversación."},
+    {"en": "Estás en un"},
+    {"mt": "ħanut"},
+    {"en": "local — una tienda maltesa. Así va la conversación."},
     {"en": "El tendero abre con — ¡Buenos días, qué desea?"},
     {"mt": "Bonġu, x'tixtieq?"},
     {"en": "Tú dices — quisiera un kilo de tomates, por favor:"},
@@ -21,8 +22,9 @@
     {"mt": "Kemm huma b'kollox?"},
     {"en": "La respuesta — dos euros con cincuenta:"},
     {"mt": "Żewġ ewro u ħamsin ċenteżmu."},
-    {"en": "Nota **ċenteżmu** — esa es la palabra maltesa para céntimo. Un detalle que los locales notan y agradecen. 💡", "kind": "fact"},
-
+    {"en": "Nota", "kind": "fact"},
+    {"mt": "ċenteżmu"},
+    {"en": "— esa es la palabra maltesa para céntimo. Un detalle que los locales notan y agradecen. 💡"},
     {"en": "🏪 PARTE 2 — TIENDAS Y ABARROTES 🏪", "kind": "header"},
     {"en": "¿Dónde compras qué? Primero los lugares clave."},
     {"mt": "ħanut"},
@@ -50,7 +52,6 @@
     {"en": "Un kilo:"},
     {"mt": "kilo"},
     {"en": "Lista básica de compras cubierta. Podrías entrar a cualquier mercado maltés ahora mismo. 🛍️", "kind": "key"},
-
     {"en": "🕐 PARTE 3 — CÓMO DECIR LA HORA 🕐", "kind": "header"},
     {"en": "Aquí se vuelve satisfactorio. La primera pregunta — ¿qué hora es?"},
     {"mt": "X'ħin hu?"},
@@ -68,7 +69,11 @@
     {"en": "Las seis y media. Nota **tletin minuta** — treinta minutos. 🕕"},
     {"en": "Las cinco y cuarto — las cinco y quince minutos:"},
     {"mt": "Il-ħamsa u ħmistax-il minuta"},
-    {"en": "Las cinco y cuarto. **Ħmistax** es quince. El pequeño sufijo **-il** lo enlaza con **minuta**. 🕔"},
+    {"en": "Las cinco y cuarto."},
+    {"mt": "Ħmistax"},
+    {"en": "es quince. El pequeño sufijo **-il** lo enlaza con"},
+    {"en": "minuta**."},
+    {"en": "🕔"},
     {"en": "Las nueve menos cuarto — las nueve menos un cuarto:"},
     {"mt": "Id-disgħa nieqes kwart"},
     {"en": "Las nueve menos cuarto. **Nieqes kwart** — falta un cuarto. Maltés bello y lógico. 🕘", "kind": "key"},
@@ -79,7 +84,6 @@
     {"en": "Por la tarde. Nota: **waranofsinhar** es una sola palabra — siempre se escribe junta.", "kind": "tip"},
     {"mt": "filgħaxija"},
     {"en": "Por la noche."},
-
     {"en": "💶 PARTE 4 — DINERO Y PAGOS 💶", "kind": "header"},
     {"en": "Dos maneras de preguntar el precio — y dependen de cuántas cosas estás preguntando.", "kind": "rule"},
     {"en": "Para un artículo — ¿cuánto cuesta?"},
@@ -103,7 +107,6 @@
     {"en": "Caro. Y si algo es demasiado caro:"},
     {"mt": "Dan għali wisq"},
     {"en": "Esto es demasiado caro. ¡Bueno saberlo! 😄", "kind": "key"},
-
     {"en": "✅ ¡LISTO!", "kind": "win"},
     {"en": "Diálogo en el mercado. Tiendas y abarrotes. Cómo decir la hora. Dinero y pagos. Eso es la Unidad 9."},
     {"en": "Ya tienes todas las herramientas para ir de compras, preguntar la hora y manejar el dinero en Malta. Ve a probarlo. 💪"},

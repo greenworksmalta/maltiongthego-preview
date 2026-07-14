@@ -5,7 +5,6 @@
   "transcript": [
     {"en": "Welcome! 👋 Unit 6 — Building Sentences and Doing.", "kind": "header"},
     {"en": "Four big things this unit: a **daily routine dialogue**, the **imperative** (giving commands), the **present tense**, and some key grammar — the future, saying 'I have', and 'there is'. Let's go!"},
-
     {"en": "☀️ PART 1 — MY DAY ☀️", "kind": "header"},
     {"en": "We start with a mini dialogue about a typical day. Listen to how it flows."},
     {"en": "Question one — what do you do in the morning?"},
@@ -21,7 +20,6 @@
     {"en": "I eat at home and read a book:"},
     {"mt": "Niekol id-dar u naqra ktieb."},
     {"en": "Notice how each sentence uses a different verb — get up, drink, go, eat, read. All present tense. All built the same way.", "kind": "key"},
-
     {"en": "📣 PART 2 — THE IMPERATIVE 📣", "kind": "header"},
     {"en": "The imperative is the command form — telling one person or a group what to do.", "kind": "rule"},
     {"en": "Two forms: **singular** for one person, **plural** adds -u on the end.", "kind": "fact"},
@@ -55,7 +53,6 @@
     {"en": "Write your name (a group):"},
     {"mt": "Iktbu l-isem tagħkom"},
     {"en": "The plural is almost always just: add -u. Simple! 🎯", "kind": "key"},
-
     {"en": "🔁 PART 3 — PRESENT TENSE 🔁", "kind": "header"},
     {"en": "The present tense is built from the imperative — just add a person-prefix at the front.", "kind": "rule"},
     {"en": "The prefix set: **n** = I, **t** = you or she, **j** = he. Plurals follow the same pattern.", "kind": "fact"},
@@ -65,7 +62,11 @@
     {"mt": "tiftaħ"},
     {"en": "You open — or she opens. And:"},
     {"mt": "jiftaħ"},
-    {"en": "He opens. We open? Niftħu. They open? Jiftħu. 👍"},
+    {"en": "He opens. We open?"},
+    {"mt": "Niftħu"},
+    {"en": "They open?"},
+    {"mt": "Jiftħu"},
+    {"en": "👍"},
     {"en": "If the imperative starts with a **consonant** — like the command for 'bring' — you add an 'i' buffer:"},
     {"mt": "inġib"},
     {"en": "I bring. 'He brings' stays close to the root:"},
@@ -78,10 +79,8 @@
     {"mt": "jiekol"},
     {"en": "He eats. We eat and they eat follow the same pattern. 🍽️"},
     {"en": "Practise conjugating iekol in the exercises — once you crack one verb, the pattern works for all of them.", "kind": "tip"},
-
     {"en": "📖 PART 4 — GRAMMAR 📖", "kind": "header"},
     {"en": "Four grammar points packed into this unit. Let's run through them quickly."},
-
     {"en": "POINT 1: The future. Just add one tiny word in front of the present tense.", "kind": "rule"},
     {"en": "Use **se**, **ser**, or **ħa** — all mean 'going to'. For example:"},
     {"mt": "Se niekol"},
@@ -91,7 +90,6 @@
     {"mt": "Ħa npoġġi"},
     {"en": "I'm going to sit down. One word. Future sorted. ✅"},
     {"en": "Important note: the future particle is **se** — never write 'sa' on its own for this. 'Sa' means 'until'.", "kind": "tip"},
-
     {"en": "POINT 2: Saying 'I have'. Maltese has a single dedicated verb for this."},
     {"mt": "Għandi ħin"},
     {"en": "I have time."},
@@ -99,7 +97,6 @@
     {"en": "Do you have a car?"},
     {"mt": "M'għandix flus"},
     {"en": "I don't have money. Notice the negative form — it wraps around the verb like a little bracket. 💡", "kind": "fact"},
-
     {"en": "POINT 3: 'There is / there are' — one single word covers both:"},
     {"mt": "Hemm"},
     {"en": "Examples:"},
@@ -109,13 +106,11 @@
     {"en": "There are two chairs."},
     {"mt": "M'hemmx ħin"},
     {"en": "There's no time. The negative uses the same bracket trick you just heard. 🚫"},
-
     {"en": "POINT 4: Word order. The safe default is Subject-Verb-Object — just like English:"},
     {"mt": "Joseph jixrob il-kapuċċino"},
     {"en": "Joseph drinks the cappuccino."},
     {"mt": "Mary taqra ktieb"},
     {"en": "Mary reads a book. Maltese can lead with the verb for emphasis — but Subject-Verb-Object always works. 👌", "kind": "key"},
-
     {"en": "✅ DONE!", "kind": "win"},
     {"en": "Daily routine. Commands. Present tense. Future, 'I have', 'there is'. That's Unit 6."},
     {"en": "The sentence-building tools are all here. Use the exercises and watch it click. 💪"},

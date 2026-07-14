@@ -44,7 +44,13 @@
     {"mt": "il-ħajjata"},
     {"en": "The cobbler:"},
     {"mt": "l-iskarpan"},
-    {"en": "And the grocery shop — ħanut tal-merċa — for everyday food. Notice 'ħanut' means shop, and 'tal-' tells you what it sells.", "kind": "tip"},
+    {"en": "And the grocery shop —", "kind": "tip"},
+    {"mt": "ħanut tal-merċa"},
+    {"en": "— for everyday food. Notice"},
+    {"mt": "ħanut"},
+    {"en": "means shop, and"},
+    {"en": "'tal-'"},
+    {"en": "tells you what it sells."},
     {"en": "✅ DONE!", "kind": "win"},
     {"en": "Furniture, the għ past tense, old shops. That's Module 4 complete. **Prosit!** 🇲🇹"}
   ]

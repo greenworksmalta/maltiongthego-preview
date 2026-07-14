@@ -55,7 +55,14 @@
     {"mt": "kamra tas-sodda"},
     {"en": "Bathroom:"},
     {"mt": "kamra tal-banju"},
-    {"en": "And watch the broken plurals here too — kitchen, kċina, becomes kċejjen; staircase, taraġ, becomes turġien.", "kind": "tip"},
+    {"en": "And watch the broken plurals here too — kitchen,", "kind": "tip"},
+    {"mt": "kċina"},
+    {"en": "becomes"},
+    {"mt": "kċejjen"},
+    {"en": "staircase,"},
+    {"mt": "taraġ"},
+    {"en": "becomes"},
+    {"mt": "turġien"},
     {"en": "✅ DONE!", "kind": "win"},
     {"en": "Jobs, the article, animals, houses. Now try the sections. **Prosit!** 🇲🇹"}
   ]
