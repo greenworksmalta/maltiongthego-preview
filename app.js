@@ -20,7 +20,7 @@ const VERSION = "1.0.7";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "dev0714023706";
+const BUILD = "dev0714024728";
 // Bump ONLY when audio clips are regenerated (re-voiced). Audio filenames are
 // sha1(mt) so a re-voiced clip keeps its name; without a changing query the
 // browser/SW serve the OLD cached audio. play() busts on this.
@@ -518,7 +518,12 @@ player.addEventListener("ended", ()=>{ if(currentBtn){ currentBtn.classList.remo
     ".flip.multi{align-items:stretch;gap:4px;}",
     ".form-row{display:flex;align-items:center;gap:8px;width:100%;padding:3px 2px;border-radius:8px;}",
     ".form-label{font-size:12px;font-weight:700;color:#2f6b6b;min-width:30px;text-align:left;}",
-    ".form-mt{font-size:17px;font-weight:600;color:#1f3d3d;}"
+    ".form-mt{font-size:17px;font-weight:600;color:#1f3d3d;}",
+    ".num-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:8px;margin:6px 0;}",
+    ".num-tile{background:#fff;border-radius:12px;box-shadow:0 1px 4px rgba(0,0,0,.08);padding:12px 6px;text-align:center;cursor:pointer;}",
+    ".num-tile .num-icon{font-size:26px;line-height:1.15;}",
+    ".num-tile .num-mt{font-size:15px;font-weight:700;color:#1f3d3d;margin-top:4px;}",
+    ".num-tile.ap-current{box-shadow:0 0 0 3px #2f6b6b;background:rgba(47,107,107,.10);}"
   ].join("");
   document.head.appendChild(s);
 })();
@@ -593,10 +598,21 @@ function shuffled(arr){
 function renderVocabScreen(root, sec, onNext){
   if(sec.intro) root.appendChild(el("p","muted", sec.intro));
   (sec.facts||[]).forEach(f => root.appendChild(el("p","muted", f)));
+  const gridMode = sec.display === "grid";
   const entries = [];
   const pushEntry = (e, sink) => { entries.push(e); if(sink) sink.push(e); };
   root.appendChild(autoPlayBtn(() => entries));
   const buildCard = (item, sink) => {
+    // Grid mode (e.g. numbers 1-30): a VISIBLE tile (icon + word), not a flip card,
+    // so you see them all while Play-all reads through. Tap a tile to hear it.
+    if(gridMode){
+      const t = el("div","num-tile");
+      if(item.icon){ const ic = el("div","num-icon"); ic.textContent = item.icon; t.appendChild(ic); }
+      t.appendChild(el("div","num-mt", item.mt));
+      t.addEventListener("click", e => { if(AutoPlay.active) return; play(item.mt); });
+      pushEntry({ mt:item.mt, node:t, group:t }, sink);
+      return t;
+    }
     // Multi-form card (jobs): masculine / feminine / plural forms together, each
     // with its own audio; auto-play walks through them. Gloss shown (not veiled).
     if(Array.isArray(item.forms) && item.forms.length){
@@ -657,7 +673,7 @@ function renderVocabScreen(root, sec, onNext){
       head.appendChild(el("h3","", title));
       root.appendChild(head);
     }
-    const grid = el("div","flip-grid");
+    const grid = el("div", gridMode ? "num-grid" : "flip-grid");
     (items||[]).forEach(it => grid.appendChild(buildCard(it, null)));   // one top-level Play-all only
     root.appendChild(grid);
   };
