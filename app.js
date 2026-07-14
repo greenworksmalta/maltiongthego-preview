@@ -20,7 +20,7 @@ const VERSION = "1.0.7";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "dev0714091731";
+const BUILD = "dev0714094347";
 // Bump ONLY when audio clips are regenerated (re-voiced). Audio filenames are
 // sha1(mt) so a re-voiced clip keeps its name; without a changing query the
 // browser/SW serve the OLD cached audio. play() busts on this.
@@ -151,6 +151,7 @@ const I18N = {
       startUnit: "Start / loop from",
       allUnits: "All units",
       vocabOnly: "Vocabulary only (skip dialogues)",
+      pace: "Pace",
     },
   },
   es: {
@@ -273,6 +274,7 @@ const I18N = {
       startUnit: "Empezar / repetir desde",
       allUnits: "Todas las unidades",
       vocabOnly: "Solo vocabulario (sin diálogos)",
+      pace: "Ritmo",
     },
   },
 };
@@ -591,6 +593,14 @@ const AutoPlay = {
 // User-chosen pace for Play-all (persisted). "within" is the shorter gap between
 // forms of the same card; "pause" is the gap between cards/items.
 const PACE = { short:{pause:0,within:0,rate:1.15}, normal:{pause:500,within:100,rate:1}, long:{pause:1500,within:200,rate:1} };
+// Listen/Car mode pace: beat = gap between the translation and its Maltese; gap =
+// pause before the next item; headerGap = pause after a spoken section header; rate
+// = playbackRate for the translation + Maltese clips (overviews/headers stay 1×).
+const LISTEN_PACE = {
+  short:  { beat:120, gap:150, headerGap:150, rate:1.15 },
+  normal: { beat:280, gap:380, headerGap:220, rate:1 },
+  long:   { beat:520, gap:1000, headerGap:600, rate:1 },
+};
 function getPace(){ try{ return localStorage.getItem("malti_ap_pace") || "normal"; }catch(_){ return "normal"; } }
 function applyPace(p){ const c = PACE[p] || PACE.normal; AutoPlay.PAUSE_MS = c.pause; AutoPlay.WITHIN_MS = c.within; AutoPlay.RATE = c.rate || 1; }
 applyPace(getPace());   // apply saved choice at startup
@@ -1095,6 +1105,8 @@ async function renderListen(){
   // ── Settings: start/loop unit + vocabulary-only ──────────────
   let vocabOnly = !!load("listen_vocab_only");
   let startUnit = load("listen_start_unit") || "";
+  let listenPace = load("listen_pace") || "normal";
+  const lp = () => LISTEN_PACE[listenPace] || LISTEN_PACE.normal;
   const settings = el("div","listen-settings");
   settings.style.cssText = "display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:center;margin:8px 0 4px;font-size:.9rem;";
   const unitWrap = el("label",""); unitWrap.style.cssText = "display:flex;gap:6px;align-items:center;";
@@ -1108,6 +1120,21 @@ async function renderListen(){
   const vocabCb = document.createElement("input"); vocabCb.type = "checkbox"; vocabCb.checked = vocabOnly;
   vocabWrap.appendChild(vocabCb); vocabWrap.appendChild(el("span","", "🔤 " + t.vocabOnly));
   settings.appendChild(vocabWrap);
+  // Pace pills (Short / Normal / Long) — same control the lessons use; here it tunes
+  // the gaps + playback speed of the hands-free session. Applies live on the next clip.
+  const paceWrap = el("label",""); paceWrap.style.cssText = "display:flex;gap:6px;align-items:center;";
+  paceWrap.appendChild(el("span","muted", (t.pace || "Pace") + ":"));
+  [["short","Short"],["normal","Normal"],["long","Long"]].forEach(([v,label]) => {
+    const p = el("button","pace-pill" + (listenPace===v ? " on" : ""), label);
+    p.addEventListener("click", e => {
+      e.preventDefault(); e.stopPropagation();
+      listenPace = v; save("listen_pace", v);
+      paceWrap.querySelectorAll(".pace-pill").forEach(x => x.classList.remove("on"));
+      p.classList.add("on");
+    });
+    paceWrap.appendChild(p);
+  });
+  settings.appendChild(paceWrap);
   root.appendChild(settings);
 
   // Now-playing card
@@ -1215,7 +1242,7 @@ async function renderListen(){
     if(tr.type === "header"){ const s = translationSrc(headerTextFor(tr)); if(s) setSrcAndPlay(s); else scheduleGap(advance, 50); return; }
     phase = 0;
     const ts = translationSrc(tr.translation);
-    if(ts){ setSrcAndPlay(ts); }
+    if(ts){ setSrcAndPlay(ts, lp().rate); }
     else { phase = 1; playMaltese(); }   // no translation clip → straight to Maltese
   }
   function playMaltese(){
@@ -1223,7 +1250,7 @@ async function renderListen(){
     const src = audioSrcFor(tr.mt);
     // Kiteb/ikteb/iktbu-style verb-transformation rows get rushed by the TTS —
     // play only those Maltese halves slower (everything else stays normal speed).
-    if(src){ setSrcAndPlay(src, tr.slow ? 0.72 : 1); }
+    if(src){ setSrcAndPlay(src, (tr.slow ? 0.72 : 1) * lp().rate); }
     else { advance(); }                  // no Maltese clip either → skip item
   }
   function setSrcAndPlay(src, rate){
@@ -1262,8 +1289,8 @@ async function renderListen(){
   la.addEventListener("error", ()=>{ if(!paused && !(tracks[idx] && tracks[idx].type === "overview")) failSkip(); });
   la.addEventListener("ended", ()=>{
     const tr = tracks[idx];
-    if(tr && tr.type === "item" && phase === 0){ phase = 1; scheduleGap(playMaltese, 280); }   // translation → beat → Maltese
-    else { scheduleGap(advance, tr && tr.type === "header" ? 220 : 380); }
+    if(tr && tr.type === "item" && phase === 0){ phase = 1; scheduleGap(playMaltese, lp().beat); }   // translation → beat → Maltese
+    else { scheduleGap(advance, tr && tr.type === "header" ? lp().headerGap : lp().gap); }
   });
 
   // Wake lock — keep the screen on while playing (MVP is screen-on; true
