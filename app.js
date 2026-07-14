@@ -20,7 +20,7 @@ const VERSION = "1.0.7";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "dev0714052900";
+const BUILD = "dev0714053721";
 // Bump ONLY when audio clips are regenerated (re-voiced). Audio filenames are
 // sha1(mt) so a re-voiced clip keeps its name; without a changing query the
 // browser/SW serve the OLD cached audio. play() busts on this.
@@ -634,8 +634,7 @@ function renderVocabScreen(root, sec, onNext){
   const pushEntry = (e, sink) => { entries.push(e); if(sink) sink.push(e); };
   root.appendChild(autoPlayBtn(() => entries));
   const buildCard = (item, sink) => {
-    // Grid mode (e.g. numbers 1-30): a VISIBLE tile (icon + word), not a flip card,
-    // so you see them all while Play-all reads through. Tap a tile to hear it.
+    // Grid mode (e.g. numbers 1-30): a VISIBLE tile (icon + word). Tap to hear.
     if(gridMode){
       const t = el("div","num-tile");
       if(item.icon){ const ic = el("div","num-icon"); ic.textContent = item.icon; t.appendChild(ic); }
@@ -644,58 +643,39 @@ function renderVocabScreen(root, sec, onNext){
       pushEntry({ mt:item.mt, node:t, group:t }, sink);
       return t;
     }
-    // Multi-form card (jobs): masculine / feminine / plural forms together, each
-    // with its own audio; auto-play walks through them. Gloss shown (not veiled).
+    // Multi-form (jobs): a labelled card — icon + gloss, then the m/f/plural forms
+    // as visible rows, each with its own audio. Auto-play reads through them.
     if(Array.isArray(item.forms) && item.forms.length){
-      const c = el("div","flip multi");
-      c.appendChild(el("div","flip-hint","tap to flip"));
-      const face = el("div","flip-face");
-      if(item.icon){ const ic = el("div","flip-icon"); ic.textContent = item.icon; face.appendChild(ic); }
-      face.appendChild(el("div","flip-en", item.en || ""));
-      const reveal = () => { c.classList.add("revealed"); };
-      const formEntries = [];
+      const c = el("div","card vocab-multi");
+      const head = el("div","row vocab-head");
+      if(item.icon){ const ic = el("div","vocab-group-icon"); ic.textContent = item.icon; head.appendChild(ic); }
+      head.appendChild(el("h3","", item.en || ""));
+      c.appendChild(head);
       item.forms.forEach(f => {
-        const fr = el("div","form-row");
+        const fr = el("div","vocab-item");
         fr.appendChild(apAudioBtn(f.mt));
         if(f.label) fr.appendChild(el("span","form-label", f.label));
-        fr.appendChild(el("span","form-mt", f.mt));
-        fr.addEventListener("click", e => { if(e.target.tagName!=="BUTTON"){ if(AutoPlay.active) return; reveal(); play(f.mt); } });
-        const entry = { mt:f.mt, node:fr, reveal, group:c };
-        pushEntry(entry, sink);
-        formEntries.push(entry);
-        face.appendChild(fr);
-      });
-      c.appendChild(face);
-      // First tap (blank front): flip open AND play this card's forms in sequence.
-      // Once open, individual form taps play just that form (handled above).
-      c.addEventListener("click", e => {
-        if(e.target.tagName === "BUTTON") return;
-        if(AutoPlay.active) return;   // Play-all running: press Stop for manual flips
-        if(c.classList.contains("revealed")) return;
-        reveal();
-        AutoPlay.start(formEntries, null);
+        const tx = el("div","grow vocab-text");
+        tx.appendChild(el("div","mt", f.mt));
+        fr.appendChild(tx);
+        fr.addEventListener("click", e => { if(e.target.tagName!=="BUTTON"){ if(AutoPlay.active) return; play(f.mt); } });
+        pushEntry({ mt:f.mt, node:fr, group:c }, sink);
+        c.appendChild(fr);
       });
       return c;
     }
-    // Blank front (nothing shown); tap flips to reveal BOTH Maltese + English (and
-    // audio), on a tinted background. Auto-play flips each card as it plays it.
-    const c = el("div","flip");
-    c.appendChild(el("div","flip-hint","tap to flip"));
-    const face = el("div","flip-face");
-    if(item.icon){ const ic = el("div","flip-icon"); ic.textContent = item.icon; face.appendChild(ic); }
-    face.appendChild(apAudioBtn(item.mt));
-    face.appendChild(el("div","flip-mt", item.mt));
-    face.appendChild(el("div","flip-en", item.en || ""));
-    c.appendChild(face);
-    const reveal = () => { c.classList.add("revealed"); };
-    c.addEventListener("click", e => {
-      if(e.target.tagName === "BUTTON") return;
-      if(AutoPlay.active) return;   // Play-all running: press Stop for manual flips
-      reveal();
-      play(item.mt);
-    });
-    pushEntry({ mt:item.mt, node:c, reveal, group:c }, sink);
-    return c;
+    // Plain vocab: a VISIBLE list row — audio, icon, Maltese + English. Tap to hear.
+    const r = el("div","vocab-item");
+    r.appendChild(apAudioBtn(item.mt));
+    const ic = el("div","vocab-icon"); ic.textContent = item.icon || "🔹"; r.appendChild(ic);
+    const tx = el("div","grow vocab-text");
+    tx.appendChild(el("div","mt", item.mt));
+    tx.appendChild(el("div","en", item.en || ""));
+    if(item.note) tx.appendChild(el("div","muted", item.note));
+    r.appendChild(tx);
+    r.addEventListener("click", e => { if(e.target.tagName!=="BUTTON"){ if(AutoPlay.active) return; play(item.mt); } });
+    pushEntry({ mt:item.mt, node:r, group:r }, sink);
+    return r;
   };
   const renderGroup = (title, icon, items) => {
     if(title){
@@ -704,7 +684,8 @@ function renderVocabScreen(root, sec, onNext){
       head.appendChild(el("h3","", title));
       root.appendChild(head);
     }
-    const grid = el("div", gridMode ? "num-grid" : "flip-grid");
+    const wrapClass = gridMode ? "num-grid" : "vocab-list";
+    const grid = el("div", wrapClass);
     (items||[]).forEach(it => grid.appendChild(buildCard(it, null)));   // one top-level Play-all only
     root.appendChild(grid);
   };
