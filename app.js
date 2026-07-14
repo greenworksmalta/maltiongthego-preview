@@ -20,7 +20,7 @@ const VERSION = "1.0.7";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "dev0714020133";
+const BUILD = "dev0714020727";
 // Bump ONLY when audio clips are regenerated (re-voiced). Audio filenames are
 // sha1(mt) so a re-voiced clip keeps its name; without a changing query the
 // browser/SW serve the OLD cached audio. play() busts on this.
@@ -603,17 +603,27 @@ function renderVocabScreen(root, sec, onNext){
       if(item.icon){ const ic = el("div","flip-icon"); ic.textContent = item.icon; face.appendChild(ic); }
       face.appendChild(el("div","flip-en", item.en || ""));
       const reveal = () => { c.classList.add("revealed"); };
+      const formEntries = [];
       item.forms.forEach(f => {
         const fr = el("div","form-row");
         fr.appendChild(apAudioBtn(f.mt));
         if(f.label) fr.appendChild(el("span","form-label", f.label));
         fr.appendChild(el("span","form-mt", f.mt));
         fr.addEventListener("click", e => { if(e.target.tagName!=="BUTTON"){ reveal(); if(!AutoPlay.jumpTo(f.mt)) play(f.mt); } });
-        pushEntry({ mt:f.mt, node:fr, reveal }, sink);
+        const entry = { mt:f.mt, node:fr, reveal };
+        pushEntry(entry, sink);
+        formEntries.push(entry);
         face.appendChild(fr);
       });
       c.appendChild(face);
-      c.addEventListener("click", e => { if(e.target.tagName!=="BUTTON") reveal(); });
+      // First tap (blank front): flip open AND play this card's forms in sequence.
+      // Once open, individual form taps play just that form (handled above).
+      c.addEventListener("click", e => {
+        if(e.target.tagName === "BUTTON") return;
+        if(c.classList.contains("revealed")) return;
+        reveal();
+        if(!AutoPlay.active) AutoPlay.start(formEntries, null);
+      });
       return c;
     }
     // Blank front (nothing shown); tap flips to reveal BOTH Maltese + English (and
