@@ -524,7 +524,7 @@ player.addEventListener("ended", ()=>{ if(currentBtn){ currentBtn.classList.remo
 })();
 
 const AutoPlay = {
-  entries:[], i:0, active:false, btn:null, timer:null, _ended:null, PAUSE_MS:2000,
+  entries:[], i:0, active:false, btn:null, timer:null, _ended:null, PAUSE_MS:1000,
   start(entries, btn, opts){
     opts = opts || {}; this.stop();
     entries = (entries||[]).filter(e => e && e.mt && audioSrcFor(e.mt));
@@ -636,16 +636,14 @@ function renderVocabScreen(root, sec, onNext){
     return c;
   };
   const renderGroup = (title, icon, items) => {
-    const groupEntries = [];
     if(title){
       const head = el("div","row vocab-head");
       if(icon){ const gi = el("div","vocab-group-icon"); gi.textContent = icon; head.appendChild(gi); }
       head.appendChild(el("h3","", title));
       root.appendChild(head);
-      root.appendChild(autoPlayBtn(() => groupEntries));   // Play-all for THIS group
     }
     const grid = el("div","flip-grid");
-    (items||[]).forEach(it => grid.appendChild(buildCard(it, groupEntries)));
+    (items||[]).forEach(it => grid.appendChild(buildCard(it, null)));   // one top-level Play-all only
     root.appendChild(grid);
   };
   const flat = Array.isArray(sec.items) ? sec.items : (Array.isArray(sec.vocab) ? sec.vocab : null);
