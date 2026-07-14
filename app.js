@@ -20,7 +20,7 @@ const VERSION = "1.0.7";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "dev0714075415";
+const BUILD = "dev0714080253";
 // Bump ONLY when audio clips are regenerated (re-voiced). Audio filenames are
 // sha1(mt) so a re-voiced clip keeps its name; without a changing query the
 // browser/SW serve the OLD cached audio. play() busts on this.
@@ -590,7 +590,7 @@ const AutoPlay = {
 };
 // User-chosen pace for Play-all (persisted). "within" is the shorter gap between
 // forms of the same card; "pause" is the gap between cards/items.
-const PACE = { short:{pause:0,within:0,rate:1.25}, normal:{pause:500,within:100,rate:1}, long:{pause:1500,within:200,rate:1} };
+const PACE = { short:{pause:0,within:0,rate:1.15}, normal:{pause:500,within:100,rate:1}, long:{pause:1500,within:200,rate:1} };
 function getPace(){ try{ return localStorage.getItem("malti_ap_pace") || "normal"; }catch(_){ return "normal"; } }
 function applyPace(p){ const c = PACE[p] || PACE.normal; AutoPlay.PAUSE_MS = c.pause; AutoPlay.WITHIN_MS = c.within; AutoPlay.RATE = c.rate || 1; }
 applyPace(getPace());   // apply saved choice at startup
