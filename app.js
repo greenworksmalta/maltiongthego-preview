@@ -508,6 +508,11 @@ player.addEventListener("ended", ()=>{ if(currentBtn){ currentBtn.classList.remo
     ".flip .flip-en.veil{visibility:hidden;}",
     ".flip .flip-tap{font-size:11px;color:#9aa;letter-spacing:.3px;}",
     ".flip.revealed .flip-tap{visibility:hidden;}",
+    ".flip-hint{font-size:14px;color:#9aa;letter-spacing:.3px;}",
+    ".flip-face{display:none;flex-direction:column;align-items:center;gap:6px;width:100%;}",
+    ".flip.revealed .flip-hint{display:none;}",
+    ".flip.revealed .flip-face{display:flex;}",
+    ".flip.revealed{background:#dcebeb;}",
     ".conj-table{display:flex;flex-direction:column;gap:6px;margin-top:8px;}",
     ".conj-row{align-items:center;}",
     ".flip.multi{align-items:stretch;gap:4px;}",
@@ -519,7 +524,7 @@ player.addEventListener("ended", ()=>{ if(currentBtn){ currentBtn.classList.remo
 })();
 
 const AutoPlay = {
-  entries:[], i:0, active:false, btn:null, timer:null, _ended:null, PAUSE_MS:1500,
+  entries:[], i:0, active:false, btn:null, timer:null, _ended:null, PAUSE_MS:2000,
   start(entries, btn, opts){
     opts = opts || {}; this.stop();
     entries = (entries||[]).filter(e => e && e.mt && audioSrcFor(e.mt));
@@ -606,14 +611,17 @@ function renderVocabScreen(root, sec, onNext){
       });
       return c;
     }
+    // Blank front (nothing shown); tap flips to reveal BOTH Maltese + English (and
+    // audio), on a tinted background. Auto-play flips each card as it plays it.
     const c = el("div","flip");
-    if(item.icon){ const ic = el("div","flip-icon"); ic.textContent = item.icon; c.appendChild(ic); }
-    c.appendChild(apAudioBtn(item.mt));
-    c.appendChild(el("div","flip-mt", item.mt));
-    const en = el("div","flip-en veil", item.en || "");
-    c.appendChild(en);
-    c.appendChild(el("div","flip-tap","tap to reveal"));
-    const reveal = () => { c.classList.add("revealed"); en.classList.remove("veil"); };
+    c.appendChild(el("div","flip-hint","tap to flip"));
+    const face = el("div","flip-face");
+    if(item.icon){ const ic = el("div","flip-icon"); ic.textContent = item.icon; face.appendChild(ic); }
+    face.appendChild(apAudioBtn(item.mt));
+    face.appendChild(el("div","flip-mt", item.mt));
+    face.appendChild(el("div","flip-en", item.en || ""));
+    c.appendChild(face);
+    const reveal = () => { c.classList.add("revealed"); };
     c.addEventListener("click", e => {
       if(e.target.tagName === "BUTTON") return;
       reveal();
@@ -4763,7 +4771,7 @@ function renderGrammarRulesStep(root, sec, idx, onNext){
   }
   const r = sec.rules[idx];
   const entries = [];
-  root.appendChild(autoPlayBtn(() => entries, { initialDelayMs: 2000 }));
+  root.appendChild(autoPlayBtn(() => entries));
   const clickPlay = (str) => (evt) => { if(evt.target.tagName!=="BUTTON"){ if(!AutoPlay.jumpTo(str)) play(str); } };
   const card = el("div","card rule");
   if(r.title) card.appendChild(el("h2","",r.title));
