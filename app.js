@@ -4397,16 +4397,19 @@ STEP_RENDERERS["weekend:flash"] = (root, sec, idx, onNext) => {
 STEP_RENDERERS["weekend:dialogue"] = (root, sec, idx, onNext) => {
   const card = el("div","card");
   card.appendChild(el("h3","","Mini-dialogue"));
-  card.appendChild(el("p","muted","Tap each line to hear it spoken."));
+  card.appendChild(el("p","muted","Tap each line to hear it, or Play all to listen through."));
   root.appendChild(card);
+  const entries = [];
+  root.appendChild(autoPlayBtn(() => entries));
   sec.dialogue.forEach(line=>{
     const r = el("div","passage-line");
-    r.appendChild(audioBtn(line.mt));
+    r.appendChild(apAudioBtn(line.mt));
     const t = el("div","txt");
     t.appendChild(el("span","mt", line.mt));
     t.appendChild(el("span","en", line.en));
     r.appendChild(t);
-    r.addEventListener("click", e=>{ if(e.target.tagName!=="BUTTON") play(line.mt); });
+    r.addEventListener("click", e=>{ if(e.target.tagName!=="BUTTON"){ if(!AutoPlay.jumpTo(line.mt)) play(line.mt); } });
+    if(line.mt && audioSrcFor(line.mt)) entries.push({ mt:line.mt, node:r });
     root.appendChild(r);
   });
   root.appendChild(nextBtn("Done →", onNext));
