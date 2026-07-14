@@ -41,10 +41,10 @@
       "icon": "💼",
       "title": "Jobs",
       "subtitle": "Ix-xogħol: what people do",
-      "intro": "Common jobs and how to ask about them. Feminine forms are marked (f).",
+      "intro": "Common jobs. Each card shows the masculine, feminine and plural forms, tap Play all to hear them.",
       "facts": [
-        "Most jobs make the feminine by adding -a: tabib becomes tabiba, kok becomes koka, għalliem becomes għalliema.",
-        "A few borrowed jobs don't change, like mekkanik (mechanic)."
+        "Most jobs make the feminine by adding -a: tabib to tabiba, kok to koka, għalliem to għalliema.",
+        "The plural is often different again: tabib to tobba, kok to koki. A few borrowed jobs don't change for m/f, like mekkanik."
       ],
       "items": [
         {
@@ -53,39 +53,176 @@
           "icon": "💼"
         },
         {
-          "mt": "Għalliem",
-          "en": "teacher (m)",
-          "icon": "👨‍🏫"
+          "en": "teacher",
+          "icon": "👨‍🏫",
+          "forms": [
+            {
+              "mt": "għalliem",
+              "label": "m"
+            },
+            {
+              "mt": "għalliema",
+              "label": "f"
+            },
+            {
+              "mt": "għalliema",
+              "label": "pl"
+            }
+          ]
         },
         {
-          "mt": "Għalliema",
-          "en": "teacher (f)",
-          "icon": "👩‍🏫"
+          "en": "doctor",
+          "icon": "🩺",
+          "forms": [
+            {
+              "mt": "tabib",
+              "label": "m"
+            },
+            {
+              "mt": "tabiba",
+              "label": "f"
+            },
+            {
+              "mt": "tobba",
+              "label": "pl"
+            }
+          ]
         },
         {
-          "mt": "Tabib",
-          "en": "doctor (m)",
-          "icon": "🩺"
+          "en": "nurse",
+          "icon": "🧑‍⚕️",
+          "forms": [
+            {
+              "mt": "infermier",
+              "label": "m"
+            },
+            {
+              "mt": "infermiera",
+              "label": "f"
+            },
+            {
+              "mt": "infermieri",
+              "label": "pl"
+            }
+          ]
         },
         {
-          "mt": "Tabiba",
-          "en": "doctor (f)",
-          "icon": "🩺"
-        },
-        {
-          "mt": "Infermier",
-          "en": "nurse (m)",
-          "icon": "🧑‍⚕️"
-        },
-        {
-          "mt": "Infermiera",
-          "en": "nurse (f)",
-          "icon": "👩‍⚕️"
-        },
-        {
-          "mt": "Kok",
           "en": "chef",
-          "icon": "👨‍🍳"
+          "icon": "👨‍🍳",
+          "forms": [
+            {
+              "mt": "kok",
+              "label": "m"
+            },
+            {
+              "mt": "koka",
+              "label": "f"
+            },
+            {
+              "mt": "koki",
+              "label": "pl"
+            }
+          ]
+        },
+        {
+          "en": "pharmacist",
+          "icon": "💊",
+          "forms": [
+            {
+              "mt": "spiżjar",
+              "label": "m"
+            },
+            {
+              "mt": "spiżjara",
+              "label": "f"
+            },
+            {
+              "mt": "spiżjari",
+              "label": "pl"
+            }
+          ]
+        },
+        {
+          "en": "journalist",
+          "icon": "📰",
+          "forms": [
+            {
+              "mt": "ġurnalist",
+              "label": "m"
+            },
+            {
+              "mt": "ġurnalista",
+              "label": "f"
+            },
+            {
+              "mt": "ġurnalisti",
+              "label": "pl"
+            }
+          ]
+        },
+        {
+          "en": "farmer",
+          "icon": "🧑‍🌾",
+          "forms": [
+            {
+              "mt": "bidwi",
+              "label": "m"
+            },
+            {
+              "mt": "bidwija",
+              "label": "f"
+            },
+            {
+              "mt": "bdiewa",
+              "label": "pl"
+            }
+          ]
+        },
+        {
+          "en": "dentist",
+          "icon": "🦷",
+          "forms": [
+            {
+              "mt": "dentist",
+              "label": "m"
+            },
+            {
+              "mt": "dentista",
+              "label": "f"
+            },
+            {
+              "mt": "dentisti",
+              "label": "pl"
+            }
+          ]
+        },
+        {
+          "en": "mechanic",
+          "icon": "🔧",
+          "forms": [
+            {
+              "mt": "mekkanik",
+              "label": "m/f"
+            },
+            {
+              "mt": "mekkaniks",
+              "label": "pl"
+            }
+          ]
+        },
+        {
+          "en": "waiter",
+          "icon": "🍽️",
+          "forms": [
+            {
+              "mt": "wejter",
+              "label": "m/f"
+            },
+            {
+              "mt": "wejters",
+              "label": "pl"
+            }
+          ]
         },
         {
           "mt": "Bennej",
@@ -103,19 +240,9 @@
           "icon": "🚗"
         },
         {
-          "mt": "Spiżjar",
-          "en": "pharmacist",
-          "icon": "💊"
-        },
-        {
           "mt": "Furnar",
           "en": "baker",
           "icon": "🥖"
-        },
-        {
-          "mt": "Mekkanik",
-          "en": "mechanic (m/f)",
-          "icon": "🔧"
         },
         {
           "mt": "Sid",
@@ -301,43 +428,50 @@
               "person": "Jien (I)",
               "ending": "-t",
               "form": "ktibt",
-              "en": "I wrote"
+              "en": "I wrote",
+              "say": "Jien ktibt"
             },
             {
               "person": "Int (you)",
               "ending": "-t",
               "form": "ktibt",
-              "en": "you wrote"
+              "en": "you wrote",
+              "say": "Int ktibt"
             },
             {
               "person": "Hu (he)",
               "ending": "-",
               "form": "kiteb",
-              "en": "he wrote"
+              "en": "he wrote",
+              "say": "Hu kiteb"
             },
             {
               "person": "Hi (she)",
               "ending": "-et",
               "form": "kitbet",
-              "en": "she wrote"
+              "en": "she wrote",
+              "say": "Hi kitbet"
             },
             {
               "person": "Aħna (we)",
               "ending": "-na",
               "form": "ktibna",
-              "en": "we wrote"
+              "en": "we wrote",
+              "say": "Aħna ktibna"
             },
             {
               "person": "Intom (you pl)",
               "ending": "-tu",
               "form": "ktibtu",
-              "en": "you (pl) wrote"
+              "en": "you (pl) wrote",
+              "say": "Intom ktibtu"
             },
             {
               "person": "Huma (they)",
               "ending": "-u",
               "form": "kitbu",
-              "en": "they wrote"
+              "en": "they wrote",
+              "say": "Huma kitbu"
             }
           ]
         },
@@ -349,43 +483,50 @@
               "person": "Jien (I)",
               "ending": "-t",
               "form": "għamilt",
-              "en": "I did"
+              "en": "I did",
+              "say": "Jien għamilt"
             },
             {
               "person": "Int (you)",
               "ending": "-t",
               "form": "għamilt",
-              "en": "you did"
+              "en": "you did",
+              "say": "Int għamilt"
             },
             {
               "person": "Hu (he)",
               "ending": "-",
               "form": "għamel",
-              "en": "he did"
+              "en": "he did",
+              "say": "Hu għamel"
             },
             {
               "person": "Hi (she)",
               "ending": "-et",
               "form": "għamlet",
-              "en": "she did"
+              "en": "she did",
+              "say": "Hi għamlet"
             },
             {
               "person": "Aħna (we)",
               "ending": "-na",
               "form": "għamilna",
-              "en": "we did"
+              "en": "we did",
+              "say": "Aħna għamilna"
             },
             {
               "person": "Intom (you pl)",
               "ending": "-tu",
               "form": "għamiltu",
-              "en": "you (pl) did"
+              "en": "you (pl) did",
+              "say": "Intom għamiltu"
             },
             {
               "person": "Huma (they)",
               "ending": "-u",
               "form": "għamlu",
-              "en": "they did"
+              "en": "they did",
+              "say": "Huma għamlu"
             }
           ]
         },
@@ -397,43 +538,50 @@
               "person": "Jien (I)",
               "ending": "-t",
               "form": "ħdimt",
-              "en": "I worked"
+              "en": "I worked",
+              "say": "Jien ħdimt"
             },
             {
               "person": "Int (you)",
               "ending": "-t",
               "form": "ħdimt",
-              "en": "you worked"
+              "en": "you worked",
+              "say": "Int ħdimt"
             },
             {
               "person": "Hu (he)",
               "ending": "-",
               "form": "ħadem",
-              "en": "he worked"
+              "en": "he worked",
+              "say": "Hu ħadem"
             },
             {
               "person": "Hi (she)",
               "ending": "-et",
               "form": "ħadmet",
-              "en": "she worked"
+              "en": "she worked",
+              "say": "Hi ħadmet"
             },
             {
               "person": "Aħna (we)",
               "ending": "-na",
               "form": "ħdimna",
-              "en": "we worked"
+              "en": "we worked",
+              "say": "Aħna ħdimna"
             },
             {
               "person": "Intom (you pl)",
               "ending": "-tu",
               "form": "ħdimtu",
-              "en": "you (pl) worked"
+              "en": "you (pl) worked",
+              "say": "Intom ħdimtu"
             },
             {
               "person": "Huma (they)",
               "ending": "-u",
               "form": "ħadmu",
-              "en": "they worked"
+              "en": "they worked",
+              "say": "Huma ħadmu"
             }
           ]
         },
@@ -445,43 +593,50 @@
               "person": "Jien (I)",
               "ending": "-t",
               "form": "kilt",
-              "en": "I ate"
+              "en": "I ate",
+              "say": "Jien kilt"
             },
             {
               "person": "Int (you)",
               "ending": "-t",
               "form": "kilt",
-              "en": "you ate"
+              "en": "you ate",
+              "say": "Int kilt"
             },
             {
               "person": "Hu (he)",
               "ending": "-",
               "form": "kiel",
-              "en": "he ate"
+              "en": "he ate",
+              "say": "Hu kiel"
             },
             {
               "person": "Hi (she)",
               "ending": "-et",
               "form": "kielet",
-              "en": "she ate"
+              "en": "she ate",
+              "say": "Hi kielet"
             },
             {
               "person": "Aħna (we)",
               "ending": "-na",
               "form": "kilna",
-              "en": "we ate"
+              "en": "we ate",
+              "say": "Aħna kilna"
             },
             {
               "person": "Intom (you pl)",
               "ending": "-tu",
               "form": "kiltu",
-              "en": "you (pl) ate"
+              "en": "you (pl) ate",
+              "say": "Intom kiltu"
             },
             {
               "person": "Huma (they)",
               "ending": "-u",
               "form": "kielu",
-              "en": "they ate"
+              "en": "they ate",
+              "say": "Huma kielu"
             }
           ]
         },
@@ -493,43 +648,50 @@
               "person": "Jien (I)",
               "ending": "-t",
               "form": "mort",
-              "en": "I went"
+              "en": "I went",
+              "say": "Jien mort"
             },
             {
               "person": "Int (you)",
               "ending": "-t",
               "form": "mort",
-              "en": "you went"
+              "en": "you went",
+              "say": "Int mort"
             },
             {
               "person": "Hu (he)",
               "ending": "-",
               "form": "mar",
-              "en": "he went"
+              "en": "he went",
+              "say": "Hu mar"
             },
             {
               "person": "Hi (she)",
               "ending": "-et",
               "form": "marret",
-              "en": "she went"
+              "en": "she went",
+              "say": "Hi marret"
             },
             {
               "person": "Aħna (we)",
               "ending": "-na",
               "form": "morna",
-              "en": "we went"
+              "en": "we went",
+              "say": "Aħna morna"
             },
             {
               "person": "Intom (you pl)",
               "ending": "-tu",
               "form": "mortu",
-              "en": "you (pl) went"
+              "en": "you (pl) went",
+              "say": "Intom mortu"
             },
             {
               "person": "Huma (they)",
               "ending": "-u",
               "form": "marru",
-              "en": "they went"
+              "en": "they went",
+              "say": "Huma marru"
             }
           ]
         }
@@ -768,18 +930,18 @@
             },
             {
               "mt": "Kok",
-              "en": "cook / chef",
+              "en": "chef",
               "icon": "👨‍🍳"
             },
             {
-              "mt": "Bennej",
-              "en": "builder",
-              "icon": "🧱"
+              "mt": "Spiżjar",
+              "en": "pharmacist",
+              "icon": "💊"
             },
             {
-              "mt": "Xufier",
-              "en": "driver",
-              "icon": "🚗"
+              "mt": "Ġurnalist",
+              "en": "journalist",
+              "icon": "📰"
             },
             {
               "mt": "Sid",

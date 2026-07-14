@@ -509,7 +509,11 @@ player.addEventListener("ended", ()=>{ if(currentBtn){ currentBtn.classList.remo
     ".flip .flip-tap{font-size:11px;color:#9aa;letter-spacing:.3px;}",
     ".flip.revealed .flip-tap{visibility:hidden;}",
     ".conj-table{display:flex;flex-direction:column;gap:6px;margin-top:8px;}",
-    ".conj-row{align-items:center;}"
+    ".conj-row{align-items:center;}",
+    ".flip.multi{align-items:stretch;gap:4px;}",
+    ".form-row{display:flex;align-items:center;gap:8px;width:100%;padding:3px 2px;border-radius:8px;}",
+    ".form-label{font-size:12px;font-weight:700;color:#2f6b6b;min-width:30px;text-align:left;}",
+    ".form-mt{font-size:17px;font-weight:600;color:#1f3d3d;}"
   ].join("");
   document.head.appendChild(s);
 })();
@@ -563,6 +567,15 @@ function autoPlayBtn(getEntries, opts){
   b.addEventListener("click", e=>{ e.stopPropagation(); AutoPlay.toggle(getEntries(), b, opts); });
   return b;
 }
+// Audio button that, DURING hands-free auto-play, jumps the loop to this clip and
+// continues from here (instead of the loop resuming at its previous position).
+// Outside auto-play it behaves like a normal audio button.
+function apAudioBtn(mt){
+  const b = el("button","audio-btn sm","🔊");
+  b.setAttribute("aria-label","Play "+mt);
+  b.addEventListener("click", e=>{ e.stopPropagation(); if(!AutoPlay.jumpTo(mt)) playBtn(b, mt); });
+  return b;
+}
 function shuffled(arr){
   const a = (arr||[]).slice();
   for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); const t=a[i]; a[i]=a[j]; a[j]=t; }
@@ -573,11 +586,29 @@ function renderVocabScreen(root, sec, onNext){
   if(sec.intro) root.appendChild(el("p","muted", sec.intro));
   (sec.facts||[]).forEach(f => root.appendChild(el("p","muted", f)));
   const entries = [];
+  const pushEntry = (e, sink) => { entries.push(e); if(sink) sink.push(e); };
   root.appendChild(autoPlayBtn(() => entries));
-  const buildCard = (item) => {
+  const buildCard = (item, sink) => {
+    // Multi-form card (jobs): masculine / feminine / plural forms together, each
+    // with its own audio; auto-play walks through them. Gloss shown (not veiled).
+    if(Array.isArray(item.forms) && item.forms.length){
+      const c = el("div","flip multi");
+      if(item.icon){ const ic = el("div","flip-icon"); ic.textContent = item.icon; c.appendChild(ic); }
+      c.appendChild(el("div","flip-en", item.en || ""));
+      item.forms.forEach(f => {
+        const fr = el("div","form-row");
+        fr.appendChild(apAudioBtn(f.mt));
+        if(f.label) fr.appendChild(el("span","form-label", f.label));
+        fr.appendChild(el("span","form-mt", f.mt));
+        fr.addEventListener("click", e => { if(e.target.tagName!=="BUTTON"){ if(!AutoPlay.jumpTo(f.mt)) play(f.mt); } });
+        pushEntry({ mt:f.mt, node:fr }, sink);
+        c.appendChild(fr);
+      });
+      return c;
+    }
     const c = el("div","flip");
     if(item.icon){ const ic = el("div","flip-icon"); ic.textContent = item.icon; c.appendChild(ic); }
-    c.appendChild(audioBtn(item.mt, {size:"sm"}));
+    c.appendChild(apAudioBtn(item.mt));
     c.appendChild(el("div","flip-mt", item.mt));
     const en = el("div","flip-en veil", item.en || "");
     c.appendChild(en);
@@ -588,18 +619,20 @@ function renderVocabScreen(root, sec, onNext){
       reveal();
       if(!AutoPlay.jumpTo(item.mt)) play(item.mt);
     });
-    entries.push({ mt:item.mt, node:c, reveal });
+    pushEntry({ mt:item.mt, node:c, reveal }, sink);
     return c;
   };
   const renderGroup = (title, icon, items) => {
+    const groupEntries = [];
     if(title){
       const head = el("div","row vocab-head");
       if(icon){ const gi = el("div","vocab-group-icon"); gi.textContent = icon; head.appendChild(gi); }
       head.appendChild(el("h3","", title));
       root.appendChild(head);
+      root.appendChild(autoPlayBtn(() => groupEntries));   // Play-all for THIS group
     }
     const grid = el("div","flip-grid");
-    (items||[]).forEach(it => grid.appendChild(buildCard(it)));
+    (items||[]).forEach(it => grid.appendChild(buildCard(it, groupEntries)));
     root.appendChild(grid);
   };
   const flat = Array.isArray(sec.items) ? sec.items : (Array.isArray(sec.vocab) ? sec.vocab : null);
@@ -2706,7 +2739,7 @@ function ensureSectionRegistered(sec){
   if(Array.isArray(sec.rules) && sec.rules.length){
     flow.push("rules");
     STEP_RENDERERS[id+":rules"] = renderGrammarRulesStep;
-    STEP_COUNTS[id+":rules"] = () => 1;   // single-screen: all rules at once
+    STEP_COUNTS[id+":rules"] = s => s.rules.length;   // one rule/verb-table per screen
   }
 
   // Fallback: a section with none of the above but with an `intro`/`facts` —
@@ -3627,8 +3660,18 @@ function makeMatchStep(itemsField, leftField, rightField, headline, getXp){
     card.appendChild(el("p","muted","Tap a Maltese item, then tap its English."));
     root.appendChild(card);
     const wrapper = el("div","match");
-    const left = items.map(i=>i[leftField]).sort(()=>Math.random()-.5);
-    const right = items.map(i=>i[rightField]).sort(()=>Math.random()-.5);
+    const left = shuffled(items.map(i=>i[leftField]));
+    const matchFor = {}; items.forEach(i=>{ matchFor[i[leftField]] = i[rightField]; });
+    let right = shuffled(items.map(i=>i[rightField]));
+    // Avoid a matching pair landing on the SAME ROW (that gives the answer away):
+    // reshuffle the right column until no right[i] is the correct match of left[i].
+    for(let t=0; t<25; t++){
+      if(!left.some((l,i)=> right[i]===matchFor[l])) break;
+      right = shuffled(right);
+    }
+    for(let i=0;i<right.length;i++){
+      if(right[i]===matchFor[left[i]]){ const j=(i+1)%right.length; const tmp=right[i]; right[i]=right[j]; right[j]=tmp; }
+    }
     const lc = el("div",""); lc.style.display="grid"; lc.style.gap="8px";
     const rc = el("div",""); rc.style.display="grid"; rc.style.gap="8px";
     let selL=null, selR=null, matched=0;
@@ -4701,64 +4744,73 @@ STEP_RENDERERS["vocabulary:list"] = (root, sec, idx, onNext) => {
 // including conjugation `rows` tables (previously not drawn). Auto-play walks
 // every audible form/example top-to-bottom, with an initial read-delay so the
 // learner can read the explanation before the audio starts.
+// "Jien (I)" → "Jien" : the Maltese pronoun without the English gloss, so we can
+// speak the pronoun + verb form together ("Jien ktibt").
+function personBare(p){ return (p||"").replace(/\s*\(.*?\)\s*/g, " ").trim(); }
+// ONE rule per screen (each conjugation table is a full 7-row screen). Renders the
+// rule's explanation, letters, `rows` table (person · form · audio · gloss) and
+// examples; auto-plays this screen's audible items after a read-delay. Conjugation
+// audio speaks the PRONOUN + form (row.say, e.g. "Jien ktibt"), not the bare verb.
 function renderGrammarRulesStep(root, sec, idx, onNext){
-  if(sec.subtitle || sec.intro){
+  if(idx===0 && (sec.subtitle || sec.intro)){
     const head = el("div","card");
     if(sec.subtitle) head.appendChild(el("h3","",sec.subtitle));
     if(sec.intro) head.appendChild(el("p","muted",sec.intro));
     root.appendChild(head);
   }
+  const r = sec.rules[idx];
   const entries = [];
-  root.appendChild(autoPlayBtn(() => entries, { initialDelayMs: 3500 }));
+  root.appendChild(autoPlayBtn(() => entries, { initialDelayMs: 3000 }));
   const clickPlay = (str) => (evt) => { if(evt.target.tagName!=="BUTTON"){ if(!AutoPlay.jumpTo(str)) play(str); } };
-  (sec.rules||[]).forEach(r => {
-    const card = el("div","card rule");
-    if(r.title) card.appendChild(el("h2","",r.title));
-    if(r.explanation) card.appendChild(el("p","",r.explanation));
-    if(r.letters && r.letters.length){
-      const ll = el("div","letters");
-      r.letters.forEach(L=>ll.appendChild(el("span","",L)));
-      card.appendChild(ll);
-    }
-    // Conjugation / declension tables (rows) — person · form · audio · gloss.
-    if(Array.isArray(r.rows) && r.rows.length){
-      const tbl = el("div","conj-table");
-      r.rows.forEach(row => {
-        const form = row.form || row.mt || "";
-        const tr = el("div","vocab-item conj-row");
-        tr.appendChild(audioBtn(form, {size:"sm"}));
-        const g = el("div","grow vocab-text");
-        g.appendChild(el("div","mt", (row.person ? row.person + " · " : "") + form));
-        if(row.ending) g.appendChild(el("div","muted", "ending " + row.ending));
-        tr.appendChild(g);
-        if(row.en) tr.appendChild(el("div","en", row.en));
-        tr.addEventListener("click", clickPlay(form));
-        if(form && audioSrcFor(form)) entries.push({ mt:form, node:tr });
-        tbl.appendChild(tr);
-      });
-      card.appendChild(tbl);
-    }
-    // Example sentences.
-    if(Array.isArray(r.examples) && r.examples.length){
-      const ex = el("div","examples-grid");
-      r.examples.forEach(e=>{
-        const audioStr = e.full || e.mt || e.phrase || e.word;
-        const row = el("div","vocab-item ex");
-        row.appendChild(audioBtn(audioStr, {size:"sm"}));
-        const fx = el("div","grow vocab-text");
-        fx.appendChild(el("div","mt", e.full || e.phrase || e.mt || e.word));
-        row.appendChild(fx);
-        if(e.en) row.appendChild(el("div","en", e.en));
-        row.addEventListener("click", clickPlay(audioStr));
-        if(audioStr && audioSrcFor(audioStr)) entries.push({ mt:audioStr, node:row });
-        ex.appendChild(row);
-      });
-      card.appendChild(ex);
-    }
-    root.appendChild(card);
-  });
+  const card = el("div","card rule");
+  if(r.title) card.appendChild(el("h2","",r.title));
+  if(r.explanation) card.appendChild(el("p","",r.explanation));
+  if(r.letters && r.letters.length){
+    const ll = el("div","letters");
+    r.letters.forEach(L=>ll.appendChild(el("span","",L)));
+    card.appendChild(ll);
+  }
+  // Conjugation / declension tables (rows) — person · form · audio · gloss.
+  if(Array.isArray(r.rows) && r.rows.length){
+    const tbl = el("div","conj-table");
+    r.rows.forEach(row => {
+      const form = row.form || row.mt || "";
+      const bare = personBare(row.person);
+      const say = row.say || (bare ? (bare + " " + form).trim() : form);
+      const tr = el("div","vocab-item conj-row");
+      tr.appendChild(apAudioBtn(say));
+      const g = el("div","grow vocab-text");
+      g.appendChild(el("div","mt", (row.person ? row.person + " · " : "") + form));
+      if(row.ending) g.appendChild(el("div","muted", "ending " + row.ending));
+      tr.appendChild(g);
+      if(row.en) tr.appendChild(el("div","en", row.en));
+      tr.addEventListener("click", clickPlay(say));
+      if(say && audioSrcFor(say)) entries.push({ mt:say, node:tr });
+      tbl.appendChild(tr);
+    });
+    card.appendChild(tbl);
+  }
+  // Example sentences.
+  if(Array.isArray(r.examples) && r.examples.length){
+    const ex = el("div","examples-grid");
+    r.examples.forEach(e=>{
+      const audioStr = e.full || e.mt || e.phrase || e.word;
+      const row = el("div","vocab-item ex");
+      row.appendChild(apAudioBtn(audioStr));
+      const fx = el("div","grow vocab-text");
+      fx.appendChild(el("div","mt", e.full || e.phrase || e.mt || e.word));
+      row.appendChild(fx);
+      if(e.en) row.appendChild(el("div","en", e.en));
+      row.addEventListener("click", clickPlay(audioStr));
+      if(audioStr && audioSrcFor(audioStr)) entries.push({ mt:audioStr, node:row });
+      ex.appendChild(row);
+    });
+    card.appendChild(ex);
+  }
+  root.appendChild(card);
+  const isLast = idx+1 === sec.rules.length;
   const hasExercises = sec.exercises && sec.exercises.length;
-  root.appendChild(nextBtn(hasExercises ? "Try the exercises →" : "Done →", onNext));
+  root.appendChild(nextBtn(isLast ? (hasExercises ? "Try the exercises →" : "Done →") : "Next →", onNext));
 }
 STEP_RENDERERS["grammarwelcome:rules"] = renderGrammarRulesStep;
 STEP_RENDERERS["grammar2:rules"] = renderGrammarRulesStep;
