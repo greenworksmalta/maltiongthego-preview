@@ -20,7 +20,7 @@ const VERSION = "1.0.7";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "dev0714023302";
+const BUILD = "dev0714023706";
 // Bump ONLY when audio clips are regenerated (re-voiced). Audio filenames are
 // sha1(mt) so a re-voiced clip keeps its name; without a changing query the
 // browser/SW serve the OLD cached audio. play() busts on this.
@@ -4726,46 +4726,9 @@ STEP_RENDERERS["time:ex8"] = makeSentenceMcStep("ex8", {noPromptAudio: true});
 
 // Single-page grouped vocabulary list. Each group is a card with a heading
 // and a stack of items (audio + optional emoji icon + mt + en).
-STEP_RENDERERS["vocabulary:list"] = (root, sec, idx, onNext) => {
-  if(sec.intro){
-    root.appendChild(el("p","muted",sec.intro));
-  }
-  (sec.groups||[]).forEach(group => {
-    const card = el("div","card vocab-group");
-    const head = el("div","row vocab-head");
-    if(group.icon){
-      const ic = el("div","vocab-group-icon");
-      ic.textContent = group.icon;
-      head.appendChild(ic);
-    }
-    const titleWrap = el("div","grow");
-    titleWrap.appendChild(el("h3","",group.title));
-    if(group.subtitle) titleWrap.appendChild(el("div","muted",group.subtitle));
-    head.appendChild(titleWrap);
-    card.appendChild(head);
-
-    const list = el("div","vocab-list");
-    (group.items||[]).forEach(item => {
-      const r = el("div","vocab-item");
-      r.appendChild(audioBtn(item.mt, {size:"sm"}));
-      // Always render an icon slot so rows stay aligned; fall back to a question
-      // mark for questions, otherwise a neutral default.
-      const ic = el("div","vocab-icon");
-      ic.textContent = item.icon || (/\?\s*$/.test(item.mt || item.en || "") ? "❓" : "🔹");
-      r.appendChild(ic);
-      const tx = el("div","grow vocab-text");
-      tx.appendChild(el("div","mt",item.mt));
-      tx.appendChild(el("div","en",item.en));
-      if(item.note) tx.appendChild(el("div","muted",item.note));
-      r.appendChild(tx);
-      r.addEventListener("click", e=>{ if(e.target.tagName!=="BUTTON") play(item.mt); });
-      list.appendChild(r);
-    });
-    card.appendChild(list);
-    root.appendChild(card);
-  });
-  root.appendChild(nextBtn("Done →", onNext));
-};
+// Vocabulary review uses the same single-screen flip-card + Play-all renderer as
+// the rest (was a plain list without a Play-all).
+STEP_RENDERERS["vocabulary:list"] = (root, sec, idx, onNext) => renderVocabScreen(root, sec, onNext);
 
 // Generic Grammar rules renderer — same shape as grammar:rules but the final
 // CTA is "Done →" when the section has no exercises (lessons 7/8/9 don't yet).
