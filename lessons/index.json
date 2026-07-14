@@ -164,8 +164,12 @@
       "title": "At Work & At Home",
       "subtitle": "Jobs, your home, and what you did",
       "icon": "💼",
+      "titleEs": "En el Trabajo y en Casa",
+      "subtitleEs": "Trabajos, tu casa y lo que hiciste",
+      "moduleEs": "Casa, Trabajo y el Pasado",
       "languages": [
-        "en"
+        "en",
+        "es"
       ]
     }
   ],

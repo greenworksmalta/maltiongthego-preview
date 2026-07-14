@@ -1,0 +1,1091 @@
+{
+  "id": "u10",
+  "lang": "es",
+  "title": "En el Trabajo y en Casa",
+  "subtitle": "Ix-xogħol u d-dar: trabajos, tu casa y lo que hiciste",
+  "sections": [
+    {
+      "id": "day",
+      "icon": "🗓️",
+      "title": "¿Cómo estuvo tu día?",
+      "subtitle": "X'għamilt illum: el pasado en acción",
+      "intro": "Una breve charla sobre el día. Fíjate en las terminaciones en '-t', ese es el pasado. Lo explicamos justo después.",
+      "dialogue": [
+        {
+          "mt": "Fejn ħdimt illum?",
+          "en": "¿Dónde trabajaste hoy?"
+        },
+        {
+          "mt": "Ħdimt fl-uffiċċju.",
+          "en": "Trabajé en la oficina."
+        },
+        {
+          "mt": "X'għamilt wara?",
+          "en": "¿Qué hiciste después?"
+        },
+        {
+          "mt": "Mort id-dar u kilt.",
+          "en": "Fui a casa y comí."
+        },
+        {
+          "mt": "U lbieraħ x'għamilt?",
+          "en": "Y ayer, ¿qué hiciste?"
+        },
+        {
+          "mt": "Ilbieraħ ma ħdimtx, mort il-baħar!",
+          "en": "¡Ayer no trabajé, fui al mar!"
+        }
+      ]
+    },
+    {
+      "id": "jobs",
+      "icon": "💼",
+      "title": "Trabajos",
+      "subtitle": "Ix-xogħol: a qué se dedica la gente",
+      "intro": "Trabajos comunes. Cada tarjeta muestra las formas masculina, femenina y plural; toca Reproducir todo para escucharlas.",
+      "facts": [
+        "La mayoría de los trabajos forman el femenino añadiendo -a: tabib a tabiba, kok a koka, għalliem a għalliema.",
+        "El plural suele ser distinto otra vez: tabib a tobba, kok a koki. Unos pocos trabajos prestados no cambian para m/f, como mekkanik."
+      ],
+      "items": [
+        {
+          "mt": "Xogħol",
+          "en": "trabajo / empleo",
+          "icon": "💼"
+        },
+        {
+          "en": "profesor/a",
+          "icon": "👨‍🏫",
+          "forms": [
+            {
+              "mt": "għalliem",
+              "label": "m"
+            },
+            {
+              "mt": "għalliema",
+              "label": "f"
+            },
+            {
+              "mt": "għalliema",
+              "label": "pl"
+            }
+          ]
+        },
+        {
+          "en": "médico/a",
+          "icon": "🩺",
+          "forms": [
+            {
+              "mt": "tabib",
+              "label": "m"
+            },
+            {
+              "mt": "tabiba",
+              "label": "f"
+            },
+            {
+              "mt": "tobba",
+              "label": "pl"
+            }
+          ]
+        },
+        {
+          "en": "enfermero/a",
+          "icon": "🧑‍⚕️",
+          "forms": [
+            {
+              "mt": "infermier",
+              "label": "m"
+            },
+            {
+              "mt": "infermiera",
+              "label": "f"
+            },
+            {
+              "mt": "infermieri",
+              "label": "pl"
+            }
+          ]
+        },
+        {
+          "en": "chef / cocinero",
+          "icon": "👨‍🍳",
+          "forms": [
+            {
+              "mt": "kok",
+              "label": "m"
+            },
+            {
+              "mt": "koka",
+              "label": "f"
+            },
+            {
+              "mt": "koki",
+              "label": "pl"
+            }
+          ]
+        },
+        {
+          "en": "farmacéutico/a",
+          "icon": "💊",
+          "forms": [
+            {
+              "mt": "spiżjar",
+              "label": "m"
+            },
+            {
+              "mt": "spiżjara",
+              "label": "f"
+            },
+            {
+              "mt": "spiżjara",
+              "label": "pl"
+            }
+          ]
+        },
+        {
+          "en": "periodista",
+          "icon": "📰",
+          "forms": [
+            {
+              "mt": "ġurnalist",
+              "label": "m"
+            },
+            {
+              "mt": "ġurnalista",
+              "label": "f"
+            },
+            {
+              "mt": "ġurnalisti",
+              "label": "pl"
+            }
+          ]
+        },
+        {
+          "en": "agricultor/a",
+          "icon": "🧑‍🌾",
+          "forms": [
+            {
+              "mt": "bidwi",
+              "label": "m"
+            },
+            {
+              "mt": "bidwija",
+              "label": "f"
+            },
+            {
+              "mt": "bdiewa",
+              "label": "pl"
+            }
+          ]
+        },
+        {
+          "en": "dentista",
+          "icon": "🦷",
+          "forms": [
+            {
+              "mt": "dentist",
+              "label": "m"
+            },
+            {
+              "mt": "dentista",
+              "label": "f"
+            },
+            {
+              "mt": "dentisti",
+              "label": "pl"
+            }
+          ]
+        },
+        {
+          "en": "mecánico",
+          "icon": "🔧",
+          "forms": [
+            {
+              "mt": "mekkanik",
+              "label": "m/f"
+            },
+            {
+              "mt": "mekkaniks",
+              "label": "pl"
+            }
+          ]
+        },
+        {
+          "en": "camarero",
+          "icon": "🍽️",
+          "forms": [
+            {
+              "mt": "wejter",
+              "label": "m/f"
+            },
+            {
+              "mt": "wejters",
+              "label": "pl"
+            }
+          ]
+        },
+        {
+          "en": "albañil",
+          "icon": "🧱",
+          "forms": [
+            {
+              "mt": "bennej",
+              "label": "m/f"
+            },
+            {
+              "mt": "bennejja",
+              "label": "pl"
+            }
+          ]
+        },
+        {
+          "en": "vendedor/a",
+          "icon": "🛒",
+          "forms": [
+            {
+              "mt": "bejjiegħ",
+              "label": "m"
+            },
+            {
+              "mt": "bejjiegħa",
+              "label": "f"
+            },
+            {
+              "mt": "bejjiegħa",
+              "label": "pl"
+            }
+          ]
+        },
+        {
+          "en": "conductor/a",
+          "icon": "🚗",
+          "forms": [
+            {
+              "mt": "xufier",
+              "label": "m"
+            },
+            {
+              "mt": "xufiera",
+              "label": "f"
+            },
+            {
+              "mt": "xufieri",
+              "label": "pl"
+            }
+          ]
+        },
+        {
+          "en": "panadero/a",
+          "icon": "🥖",
+          "forms": [
+            {
+              "mt": "furnar",
+              "label": "m"
+            },
+            {
+              "mt": "furnara",
+              "label": "f"
+            },
+            {
+              "mt": "furnara",
+              "label": "pl"
+            }
+          ]
+        },
+        {
+          "en": "jefe / dueño",
+          "icon": "👔",
+          "forms": [
+            {
+              "mt": "sid",
+              "label": "m/f"
+            },
+            {
+              "mt": "sidien",
+              "label": "pl"
+            }
+          ]
+        },
+        {
+          "mt": "Uffiċċju",
+          "en": "oficina",
+          "icon": "🏢"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "jobsask",
+          "icon": "❓",
+          "title": "Preguntar por el trabajo",
+          "subtitle": "Las dos frases que de verdad usas",
+          "items": [
+            {
+              "mt": "X'taħdem?",
+              "en": "¿En qué trabajas?"
+            },
+            {
+              "mt": "Naħdem bħala kok.",
+              "en": "Trabajo de cocinero."
+            },
+            {
+              "mt": "Fejn taħdem?",
+              "en": "¿Dónde trabajas?"
+            },
+            {
+              "mt": "Naħdem f'uffiċċju.",
+              "en": "Trabajo en una oficina."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "home",
+      "icon": "🏠",
+      "title": "En casa",
+      "subtitle": "Id-dar: habitaciones y muebles",
+      "intro": "Las habitaciones de una casa y las cosas que hay en ellas.",
+      "groups": [
+        {
+          "title": "Habitaciones",
+          "icon": "🚪",
+          "items": [
+            {
+              "mt": "Dar",
+              "en": "casa / hogar",
+              "icon": "🏠"
+            },
+            {
+              "mt": "Kċina",
+              "en": "cocina",
+              "icon": "🍳"
+            },
+            {
+              "mt": "Kamra tas-sodda",
+              "en": "dormitorio",
+              "icon": "🛏️"
+            },
+            {
+              "mt": "Kamra tal-banju",
+              "en": "baño",
+              "icon": "🛁"
+            },
+            {
+              "mt": "Salott",
+              "en": "sala de estar",
+              "icon": "🛋️"
+            },
+            {
+              "mt": "Gallarija",
+              "en": "balcón",
+              "icon": "🏙️"
+            },
+            {
+              "mt": "Bieb",
+              "en": "puerta",
+              "icon": "🚪"
+            },
+            {
+              "mt": "Tieqa",
+              "en": "ventana",
+              "icon": "🪟"
+            },
+            {
+              "mt": "Bejt",
+              "en": "tejado",
+              "icon": "🏚️"
+            },
+            {
+              "mt": "Ġnien",
+              "en": "jardín",
+              "icon": "🌳"
+            },
+            {
+              "mt": "Garaxx",
+              "en": "garaje",
+              "icon": "🚙"
+            }
+          ]
+        },
+        {
+          "title": "Muebles y cosas",
+          "icon": "🛋️",
+          "items": [
+            {
+              "mt": "Mejda",
+              "en": "mesa",
+              "icon": "🪑"
+            },
+            {
+              "mt": "Siġġu",
+              "en": "silla",
+              "icon": "🪑"
+            },
+            {
+              "mt": "Sodda",
+              "en": "cama",
+              "icon": "🛏️"
+            },
+            {
+              "mt": "Sufan",
+              "en": "sofá",
+              "icon": "🛋️"
+            },
+            {
+              "mt": "Friġġ",
+              "en": "nevera",
+              "icon": "🧊"
+            },
+            {
+              "mt": "Forn",
+              "en": "horno",
+              "icon": "🔥"
+            },
+            {
+              "mt": "Kabord",
+              "en": "armario",
+              "icon": "🗄️"
+            },
+            {
+              "mt": "Televixin",
+              "en": "televisión",
+              "icon": "📺"
+            },
+            {
+              "mt": "Dawl",
+              "en": "luz",
+              "icon": "💡"
+            },
+            {
+              "mt": "Gwardarobba",
+              "en": "ropero",
+              "icon": "🧥"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "past",
+      "icon": "⏪",
+      "title": "El pasado",
+      "subtitle": "Il-Passat: añade una terminación, no un prefijo",
+      "intro": "El presente añadía un prefijo. El pasado añade una TERMINACIÓN. Parte de lo que hizo ÉL, esa es la raíz, y añade una terminación para cada persona.",
+      "facts": [
+        "Las terminaciones son: jien -t, int -t, hu (nada), hi -et, aħna -na, intom -tu, huma -u.",
+        "'Hu' (él hizo) es la raíz pura sin terminación, es la forma desde la que se construye.",
+        "La mayoría de los verbos siguen este patrón. Unos pocos verbos 'débiles' (como mar, fue) cambian sus vocales, mira la última tabla."
+      ],
+      "rules": [
+        {
+          "id": "kiteb",
+          "title": "kiteb (él escribió), el verbo modelo",
+          "rows": [
+            {
+              "person": "Jien (yo)",
+              "ending": "-t",
+              "form": "ktibt",
+              "en": "yo escribí",
+              "say": "Jien ktibt"
+            },
+            {
+              "person": "Int (tú)",
+              "ending": "-t",
+              "form": "ktibt",
+              "en": "tú escribiste",
+              "say": "Int ktibt"
+            },
+            {
+              "person": "Hu (él)",
+              "ending": "-",
+              "form": "kiteb",
+              "en": "él escribió",
+              "say": "Hu kiteb"
+            },
+            {
+              "person": "Hi (ella)",
+              "ending": "-et",
+              "form": "kitbet",
+              "en": "ella escribió",
+              "say": "Hi kitbet"
+            },
+            {
+              "person": "Aħna (nosotros)",
+              "ending": "-na",
+              "form": "ktibna",
+              "en": "nosotros escribimos",
+              "say": "Aħna ktibna"
+            },
+            {
+              "person": "Intom (ustedes)",
+              "ending": "-tu",
+              "form": "ktibtu",
+              "en": "ustedes escribieron",
+              "say": "Intom ktibtu"
+            },
+            {
+              "person": "Huma (ellos)",
+              "ending": "-u",
+              "form": "kitbu",
+              "en": "ellos escribieron",
+              "say": "Huma kitbu"
+            }
+          ]
+        },
+        {
+          "id": "ghamel",
+          "title": "għamel (él hizo)",
+          "rows": [
+            {
+              "person": "Jien (yo)",
+              "ending": "-t",
+              "form": "għamilt",
+              "en": "yo hice",
+              "say": "Jien għamilt"
+            },
+            {
+              "person": "Int (tú)",
+              "ending": "-t",
+              "form": "għamilt",
+              "en": "tú hiciste",
+              "say": "Int għamilt"
+            },
+            {
+              "person": "Hu (él)",
+              "ending": "-",
+              "form": "għamel",
+              "en": "él hizo",
+              "say": "Hu għamel"
+            },
+            {
+              "person": "Hi (ella)",
+              "ending": "-et",
+              "form": "għamlet",
+              "en": "ella hizo",
+              "say": "Hi għamlet"
+            },
+            {
+              "person": "Aħna (nosotros)",
+              "ending": "-na",
+              "form": "għamilna",
+              "en": "nosotros hicimos",
+              "say": "Aħna għamilna"
+            },
+            {
+              "person": "Intom (ustedes)",
+              "ending": "-tu",
+              "form": "għamiltu",
+              "en": "ustedes hicieron",
+              "say": "Intom għamiltu"
+            },
+            {
+              "person": "Huma (ellos)",
+              "ending": "-u",
+              "form": "għamlu",
+              "en": "ellos hicieron",
+              "say": "Huma għamlu"
+            }
+          ]
+        },
+        {
+          "id": "hadem",
+          "title": "ħadem (él trabajó)",
+          "rows": [
+            {
+              "person": "Jien (yo)",
+              "ending": "-t",
+              "form": "ħdimt",
+              "en": "yo trabajé",
+              "say": "Jien ħdimt"
+            },
+            {
+              "person": "Int (tú)",
+              "ending": "-t",
+              "form": "ħdimt",
+              "en": "tú trabajaste",
+              "say": "Int ħdimt"
+            },
+            {
+              "person": "Hu (él)",
+              "ending": "-",
+              "form": "ħadem",
+              "en": "él trabajó",
+              "say": "Hu ħadem"
+            },
+            {
+              "person": "Hi (ella)",
+              "ending": "-et",
+              "form": "ħadmet",
+              "en": "ella trabajó",
+              "say": "Hi ħadmet"
+            },
+            {
+              "person": "Aħna (nosotros)",
+              "ending": "-na",
+              "form": "ħdimna",
+              "en": "nosotros trabajamos",
+              "say": "Aħna ħdimna"
+            },
+            {
+              "person": "Intom (ustedes)",
+              "ending": "-tu",
+              "form": "ħdimtu",
+              "en": "ustedes trabajaron",
+              "say": "Intom ħdimtu"
+            },
+            {
+              "person": "Huma (ellos)",
+              "ending": "-u",
+              "form": "ħadmu",
+              "en": "ellos trabajaron",
+              "say": "Huma ħadmu"
+            }
+          ]
+        },
+        {
+          "id": "kiel",
+          "title": "kiel (él comió)",
+          "rows": [
+            {
+              "person": "Jien (yo)",
+              "ending": "-t",
+              "form": "kilt",
+              "en": "yo comí",
+              "say": "Jien kilt"
+            },
+            {
+              "person": "Int (tú)",
+              "ending": "-t",
+              "form": "kilt",
+              "en": "tú comiste",
+              "say": "Int kilt"
+            },
+            {
+              "person": "Hu (él)",
+              "ending": "-",
+              "form": "kiel",
+              "en": "él comió",
+              "say": "Hu kiel"
+            },
+            {
+              "person": "Hi (ella)",
+              "ending": "-et",
+              "form": "kielet",
+              "en": "ella comió",
+              "say": "Hi kielet"
+            },
+            {
+              "person": "Aħna (nosotros)",
+              "ending": "-na",
+              "form": "kilna",
+              "en": "nosotros comimos",
+              "say": "Aħna kilna"
+            },
+            {
+              "person": "Intom (ustedes)",
+              "ending": "-tu",
+              "form": "kiltu",
+              "en": "ustedes comieron",
+              "say": "Intom kiltu"
+            },
+            {
+              "person": "Huma (ellos)",
+              "ending": "-u",
+              "form": "kielu",
+              "en": "ellos comieron",
+              "say": "Huma kielu"
+            }
+          ]
+        },
+        {
+          "id": "mar",
+          "title": "mar (él fue), un verbo DÉBIL, fíjate en las vocales",
+          "rows": [
+            {
+              "person": "Jien (yo)",
+              "ending": "-t",
+              "form": "mort",
+              "en": "yo fui",
+              "say": "Jien mort"
+            },
+            {
+              "person": "Int (tú)",
+              "ending": "-t",
+              "form": "mort",
+              "en": "tú fuiste",
+              "say": "Int mort"
+            },
+            {
+              "person": "Hu (él)",
+              "ending": "-",
+              "form": "mar",
+              "en": "él fue",
+              "say": "Hu mar"
+            },
+            {
+              "person": "Hi (ella)",
+              "ending": "-et",
+              "form": "marret",
+              "en": "ella fue",
+              "say": "Hi marret"
+            },
+            {
+              "person": "Aħna (nosotros)",
+              "ending": "-na",
+              "form": "morna",
+              "en": "nosotros fuimos",
+              "say": "Aħna morna"
+            },
+            {
+              "person": "Intom (ustedes)",
+              "ending": "-tu",
+              "form": "mortu",
+              "en": "ustedes fueron",
+              "say": "Intom mortu"
+            },
+            {
+              "person": "Huma (ellos)",
+              "ending": "-u",
+              "form": "marru",
+              "en": "ellos fueron",
+              "say": "Huma marru"
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex-past-kiteb",
+          "title": "Ejercicio: conjuga kiteb (escribir) en pasado",
+          "instructions": "Elige la forma correcta del pasado para cada pronombre.",
+          "choices": [
+            "ktibt",
+            "kiteb",
+            "kitbet",
+            "ktibna",
+            "ktibtu",
+            "kitbu"
+          ],
+          "items": [
+            {
+              "pronoun": "Jien",
+              "en": "yo escribí",
+              "answer": "ktibt"
+            },
+            {
+              "pronoun": "Hu",
+              "en": "Él escribió",
+              "answer": "kiteb"
+            },
+            {
+              "pronoun": "Hi",
+              "en": "Ella escribió",
+              "answer": "kitbet"
+            },
+            {
+              "pronoun": "Aħna",
+              "en": "Nosotros escribimos",
+              "answer": "ktibna"
+            },
+            {
+              "pronoun": "Intom",
+              "en": "Vosotros escribisteis",
+              "answer": "ktibtu"
+            },
+            {
+              "pronoun": "Huma",
+              "en": "Ellos escribieron",
+              "answer": "kitbu"
+            }
+          ]
+        },
+        {
+          "id": "past-match",
+          "type": "match",
+          "title": "Relaciona: él hizo con yo hice",
+          "leftField": "he",
+          "rightField": "i",
+          "items": [
+            {
+              "he": "kiteb",
+              "i": "ktibt"
+            },
+            {
+              "he": "għamel",
+              "i": "għamilt"
+            },
+            {
+              "he": "ħadem",
+              "i": "ħdimt"
+            },
+            {
+              "he": "kiel",
+              "i": "kilt"
+            },
+            {
+              "he": "mar",
+              "i": "mort"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar10",
+      "icon": "📖",
+      "title": "Gramática",
+      "subtitle": "Il-grammatika: usar el pasado",
+      "intro": "Dos cosas que hacen útil el pasado: decir que NO hiciste algo, y decir CUÁNDO.",
+      "rules": [
+        {
+          "id": "negative-past",
+          "title": "Decir que no: el envoltorio ma...x",
+          "explanation": "Para hacer el pasado negativo, envuelve el verbo: pon 'ma' delante y 'x' al final. Ħdimt (yo trabajé) se convierte en ma ħdimtx (yo no trabajé).",
+          "examples": [
+            {
+              "mt": "Ma ħdimtx illum",
+              "en": "Hoy no trabajé"
+            },
+            {
+              "mt": "Ma kiltx il-fenek",
+              "en": "No me comí el conejo"
+            },
+            {
+              "mt": "Ma mortx ix-xogħol",
+              "en": "No fui al trabajo"
+            },
+            {
+              "mt": "M'għamilt xejn",
+              "en": "No hice nada"
+            }
+          ]
+        },
+        {
+          "id": "time-words",
+          "title": "Decir cuándo: ayer, la semana pasada",
+          "explanation": "Ancla el pasado con una palabra de tiempo, normalmente al principio o al final de la frase.",
+          "letters": [
+            "ilbieraħ, yesterday",
+            "illum, today",
+            "il-ġimgħa l-oħra, last week",
+            "is-sena l-oħra, last year"
+          ],
+          "examples": [
+            {
+              "mt": "Ilbieraħ mort Malta",
+              "en": "Ayer fui a Malta"
+            },
+            {
+              "mt": "Il-ġimgħa l-oħra ħdimt ħafna",
+              "en": "La semana pasada trabajé mucho"
+            },
+            {
+              "mt": "Is-sena l-oħra mort Għawdex",
+              "en": "El año pasado fui a Gozo"
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "g10build",
+          "type": "build",
+          "max": 5,
+          "title": "Construye la frase",
+          "items": [
+            {
+              "mt": "Ilbieraħ mort id-dar",
+              "en": "Ayer fui a casa"
+            },
+            {
+              "mt": "Ma ħdimtx illum",
+              "en": "Hoy no trabajé"
+            },
+            {
+              "mt": "Hi kitbet ittra",
+              "en": "Ella escribió una carta"
+            },
+            {
+              "mt": "Għamilna kollox",
+              "en": "Lo hicimos todo"
+            },
+            {
+              "mt": "Huma kielu l-pizza",
+              "en": "Se comieron la pizza"
+            }
+          ]
+        },
+        {
+          "id": "g10bucket",
+          "type": "bucket",
+          "batch": 6,
+          "title": "¿Ahora o antes?",
+          "instructions": "Clasifica cada verbo: ¿es presente (ahora) o pasado (antes)?",
+          "choices": [
+            "Presente (ahora)",
+            "Pasado (antes)"
+          ],
+          "items": [
+            {
+              "word": "naħdem",
+              "answer": "Presente (ahora)"
+            },
+            {
+              "word": "ħdimt",
+              "answer": "Pasado (antes)"
+            },
+            {
+              "word": "niekol",
+              "answer": "Presente (ahora)"
+            },
+            {
+              "word": "kilt",
+              "answer": "Pasado (antes)"
+            },
+            {
+              "word": "immur",
+              "answer": "Presente (ahora)"
+            },
+            {
+              "word": "mort",
+              "answer": "Pasado (antes)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "icon": "📚",
+      "title": "Vocabulario",
+      "subtitle": "Il-vokabularju: todas las palabras en un solo lugar",
+      "intro": "Todo lo de esta unidad, reunido para repasar. Toca cualquier palabra para escucharla.",
+      "groups": [
+        {
+          "title": "Trabajos",
+          "icon": "💼",
+          "items": [
+            {
+              "mt": "Xogħol",
+              "en": "trabajo / empleo",
+              "icon": "💼"
+            },
+            {
+              "mt": "Għalliem",
+              "en": "profesor (m)",
+              "icon": "👨‍🏫"
+            },
+            {
+              "mt": "Tabib",
+              "en": "médico/a",
+              "icon": "🩺"
+            },
+            {
+              "mt": "Infermier",
+              "en": "enfermero/a",
+              "icon": "🧑‍⚕️"
+            },
+            {
+              "mt": "Kok",
+              "en": "chef / cocinero",
+              "icon": "👨‍🍳"
+            },
+            {
+              "mt": "Spiżjar",
+              "en": "farmacéutico/a",
+              "icon": "💊"
+            },
+            {
+              "mt": "Ġurnalist",
+              "en": "periodista",
+              "icon": "📰"
+            },
+            {
+              "mt": "Sid",
+              "en": "jefe / dueño",
+              "icon": "👔"
+            }
+          ]
+        },
+        {
+          "title": "Casa",
+          "icon": "🏠",
+          "items": [
+            {
+              "mt": "Dar",
+              "en": "casa / hogar",
+              "icon": "🏠"
+            },
+            {
+              "mt": "Kċina",
+              "en": "cocina",
+              "icon": "🍳"
+            },
+            {
+              "mt": "Kamra tas-sodda",
+              "en": "dormitorio",
+              "icon": "🛏️"
+            },
+            {
+              "mt": "Kamra tal-banju",
+              "en": "baño",
+              "icon": "🛁"
+            },
+            {
+              "mt": "Salott",
+              "en": "sala de estar",
+              "icon": "🛋️"
+            },
+            {
+              "mt": "Gallarija",
+              "en": "balcón",
+              "icon": "🏙️"
+            },
+            {
+              "mt": "Mejda",
+              "en": "mesa",
+              "icon": "🪑"
+            },
+            {
+              "mt": "Siġġu",
+              "en": "silla",
+              "icon": "🪑"
+            }
+          ]
+        },
+        {
+          "title": "Verbos en pasado (él hizo / yo hice)",
+          "icon": "⏪",
+          "items": [
+            {
+              "mt": "kiteb / ktibt",
+              "en": "escribió",
+              "icon": "✏️"
+            },
+            {
+              "mt": "għamel / għamilt",
+              "en": "hizo",
+              "icon": "🛠️"
+            },
+            {
+              "mt": "ħadem / ħdimt",
+              "en": "trabajó",
+              "icon": "💼"
+            },
+            {
+              "mt": "kiel / kilt",
+              "en": "comió",
+              "icon": "🍽️"
+            },
+            {
+              "mt": "mar / mort",
+              "en": "fue",
+              "icon": "🚶"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
