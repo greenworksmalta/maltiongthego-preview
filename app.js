@@ -498,7 +498,7 @@ player.addEventListener("ended", ()=>{ if(currentBtn){ currentBtn.classList.remo
       "border-radius:14px;background:#2f6b6b;color:#fff;font-size:16px;font-weight:600;cursor:pointer;}",
     ".ap-btn.ap-on{background:#b0413e;}",
     ".ap-current{box-shadow:0 0 0 3px #2f6b6b;background:rgba(47,107,107,.08);border-radius:12px;}",
-    ".flip-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(148px,1fr));gap:10px;margin:6px 0 4px;}",
+    ".flip-grid{display:grid;grid-template-columns:1fr;gap:10px;margin:6px 0 4px;}",
     ".flip{position:relative;min-height:112px;border-radius:14px;background:#fff;",
       "box-shadow:0 1px 4px rgba(0,0,0,.08);padding:12px 10px;cursor:pointer;display:flex;",
       "flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:6px;}",
