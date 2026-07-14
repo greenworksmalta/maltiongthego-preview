@@ -20,7 +20,7 @@ const VERSION = "1.0.7";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "dev0714045653";
+const BUILD = "dev0714052012";
 // Bump ONLY when audio clips are regenerated (re-voiced). Audio filenames are
 // sha1(mt) so a re-voiced clip keeps its name; without a changing query the
 // browser/SW serve the OLD cached audio. play() busts on this.
@@ -523,7 +523,13 @@ player.addEventListener("ended", ()=>{ if(currentBtn){ currentBtn.classList.remo
     ".num-tile{background:#fff;border-radius:12px;box-shadow:0 1px 4px rgba(0,0,0,.08);padding:12px 6px;text-align:center;cursor:pointer;}",
     ".num-tile .num-icon{font-size:26px;line-height:1.15;}",
     ".num-tile .num-mt{font-size:15px;font-weight:700;color:#1f3d3d;margin-top:4px;}",
-    ".num-tile.ap-current{box-shadow:0 0 0 3px #2f6b6b;background:rgba(47,107,107,.10);}"
+    ".num-tile.ap-current{box-shadow:0 0 0 3px #2f6b6b;background:rgba(47,107,107,.10);}",
+    ".ap-wrap{margin:6px 0 12px;}",
+    ".ap-wrap .ap-btn{margin:0;}",
+    ".pace-row{display:flex;align-items:center;justify-content:center;gap:6px;margin-top:6px;}",
+    ".pace-lbl{font-size:12px;color:#888;}",
+    ".pace-pill{border:1px solid #cfd8d8;background:#fff;color:#2f6b6b;border-radius:14px;padding:4px 12px;font-size:13px;font-weight:600;cursor:pointer;}",
+    ".pace-pill.on{background:#2f6b6b;color:#fff;border-color:#2f6b6b;}"
   ].join("");
   document.head.appendChild(s);
 })();
@@ -575,10 +581,35 @@ const AutoPlay = {
   },
   toggle(entries, btn, opts){ if(this.active) this.stop(); else this.start(entries, btn, opts); }
 };
+// User-chosen pace for Play-all (persisted). "within" is the shorter gap between
+// forms of the same card; "pause" is the gap between cards/items.
+const PACE = { short:{pause:500,within:80}, normal:{pause:1000,within:150}, long:{pause:2000,within:250} };
+function getPace(){ try{ return localStorage.getItem("malti_ap_pace") || "normal"; }catch(_){ return "normal"; } }
+function applyPace(p){ const c = PACE[p] || PACE.normal; AutoPlay.PAUSE_MS = c.pause; AutoPlay.WITHIN_MS = c.within; }
+applyPace(getPace());   // apply saved choice at startup
+function paceControl(){
+  const row = el("div","pace-row");
+  row.appendChild(el("span","pace-lbl","Pace:"));
+  [["short","Short"],["normal","Normal"],["long","Long"]].forEach(([v,label]) => {
+    const p = el("button","pace-pill" + (getPace()===v ? " on" : ""), label);
+    p.addEventListener("click", e => {
+      e.stopPropagation();
+      try{ localStorage.setItem("malti_ap_pace", v); }catch(_){}
+      applyPace(v);
+      row.querySelectorAll(".pace-pill").forEach(x => x.classList.remove("on"));
+      p.classList.add("on");
+    });
+    row.appendChild(p);
+  });
+  return row;
+}
 function autoPlayBtn(getEntries, opts){
+  const wrap = el("div","ap-wrap");
   const b = el("button","ap-btn","▶ Play all");
   b.addEventListener("click", e=>{ e.stopPropagation(); AutoPlay.toggle(getEntries(), b, opts); });
-  return b;
+  wrap.appendChild(b);
+  wrap.appendChild(paceControl());
+  return wrap;
 }
 // Audio button that, DURING hands-free auto-play, jumps the loop to this clip and
 // continues from here (instead of the loop resuming at its previous position).
