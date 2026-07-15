@@ -20,7 +20,7 @@ const VERSION = "1.0.7";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "dev0715c";
+const BUILD = "dev0715d";
 // Bump ONLY when audio clips are regenerated (re-voiced). Audio filenames are
 // sha1(mt) so a re-voiced clip keeps its name; without a changing query the
 // browser/SW serve the OLD cached audio. play() busts on this.
@@ -527,6 +527,7 @@ player.addEventListener("ended", ()=>{ if(currentBtn){ currentBtn.classList.remo
     ".num-tile .num-n{font-size:28px;font-weight:800;line-height:1.1;color:#2f6b6b;}",
     ".num-tile .num-mt{font-size:15px;font-weight:700;color:#1f3d3d;margin-top:4px;}",
     ".num-tile .num-en{font-size:12px;color:#5a6b6b;margin-top:2px;}",
+    ".vocab-item .vocab-icon.num{font-weight:800;color:#2f6b6b;font-size:1.05rem;min-width:1.4em;text-align:center;}",
     ".num-tile.ap-current{box-shadow:0 0 0 3px #2f6b6b;background:rgba(47,107,107,.10);}",
     ".ap-wrap{margin:6px 0 12px;}",
     ".ap-wrap .ap-btn{margin:0;}",
@@ -745,7 +746,10 @@ function renderVocabScreen(root, sec, onNext){
     // Plain vocab (ledger): a VISIBLE list row — audio, icon, Maltese + English.
     const r = el("div","vocab-item");
     r.appendChild(apAudioBtn(item.mt));
-    const ic = el("div","vocab-icon"); ic.textContent = item.icon || "🔹"; r.appendChild(ic);
+    const ic = el("div","vocab-icon");
+    if(item.n !== undefined && item.n !== null){ ic.classList.add("num"); ic.textContent = String(item.n); }
+    else ic.textContent = item.icon || "🔹";
+    r.appendChild(ic);
     const tx = el("div","grow vocab-text");
     tx.appendChild(el("div","mt", item.mt));
     tx.appendChild(el("div","en", item.en || ""));
