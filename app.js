@@ -20,7 +20,7 @@ const VERSION = "1.0.7";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "dev0714163712";
+const BUILD = "dev0715a";
 // Bump ONLY when audio clips are regenerated (re-voiced). Audio filenames are
 // sha1(mt) so a re-voiced clip keeps its name; without a changing query the
 // browser/SW serve the OLD cached audio. play() busts on this.
@@ -274,7 +274,7 @@ const I18N = {
       startUnit: "Empezar / repetir desde",
       allUnits: "Todas las unidades",
       vocabOnly: "Solo vocabulario (sin diálogos)",
-      pace: "Ritmo",
+      pace: "Velocidad",
     },
   },
 };
@@ -604,10 +604,21 @@ const LISTEN_PACE = {
 function getPace(){ try{ return localStorage.getItem("malti_ap_pace") || "normal"; }catch(_){ return "normal"; } }
 function applyPace(p){ const c = PACE[p] || PACE.normal; AutoPlay.PAUSE_MS = c.pause; AutoPlay.WITHIN_MS = c.within; AutoPlay.RATE = c.rate || 1; }
 applyPace(getPace());   // apply saved choice at startup
+// Localized labels for the pace toggle (shared by lessons Play-all + Listen mode).
+// EN keeps Pace / Short·Normal·Long; ES uses Velocidad / Rápido·Normal·Lento.
+function paceLabels(){
+  const es = (State.lang === "es");
+  return {
+    label: es ? "Velocidad" : "Pace",
+    pills: es ? [["short","Rápido"],["normal","Normal"],["long","Lento"]]
+              : [["short","Short"],["normal","Normal"],["long","Long"]],
+  };
+}
 function paceControl(){
   const row = el("div","pace-row");
-  row.appendChild(el("span","pace-lbl","Pace:"));
-  [["short","Short"],["normal","Normal"],["long","Long"]].forEach(([v,label]) => {
+  const L = paceLabels();
+  row.appendChild(el("span","pace-lbl",L.label + ":"));
+  L.pills.forEach(([v,label]) => {
     const p = el("button","pace-pill" + (getPace()===v ? " on" : ""), label);
     p.addEventListener("click", e => {
       e.stopPropagation();
@@ -1123,8 +1134,9 @@ async function renderListen(){
   // Pace pills (Short / Normal / Long) — same control the lessons use; here it tunes
   // the gaps + playback speed of the hands-free session. Applies live on the next clip.
   const paceWrap = el("label",""); paceWrap.style.cssText = "display:flex;gap:6px;align-items:center;";
-  paceWrap.appendChild(el("span","muted", (t.pace || "Pace") + ":"));
-  [["short","Short"],["normal","Normal"],["long","Long"]].forEach(([v,label]) => {
+  const paceL = paceLabels();
+  paceWrap.appendChild(el("span","muted", paceL.label + ":"));
+  paceL.pills.forEach(([v,label]) => {
     const p = el("button","pace-pill" + (listenPace===v ? " on" : ""), label);
     p.addEventListener("click", e => {
       e.preventDefault(); e.stopPropagation();
