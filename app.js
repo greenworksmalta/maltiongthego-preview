@@ -20,7 +20,7 @@ const VERSION = "1.0.7";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "dev0715a";
+const BUILD = "dev0715b";
 // Bump ONLY when audio clips are regenerated (re-voiced). Audio filenames are
 // sha1(mt) so a re-voiced clip keeps its name; without a changing query the
 // browser/SW serve the OLD cached audio. play() busts on this.
@@ -524,7 +524,9 @@ player.addEventListener("ended", ()=>{ if(currentBtn){ currentBtn.classList.remo
     ".num-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:8px;margin:6px 0;}",
     ".num-tile{background:#fff;border-radius:12px;box-shadow:0 1px 4px rgba(0,0,0,.08);padding:12px 6px;text-align:center;cursor:pointer;}",
     ".num-tile .num-icon{font-size:26px;line-height:1.15;}",
+    ".num-tile .num-n{font-size:28px;font-weight:800;line-height:1.1;color:#2f6b6b;}",
     ".num-tile .num-mt{font-size:15px;font-weight:700;color:#1f3d3d;margin-top:4px;}",
+    ".num-tile .num-en{font-size:12px;color:#5a6b6b;margin-top:2px;}",
     ".num-tile.ap-current{box-shadow:0 0 0 3px #2f6b6b;background:rgba(47,107,107,.10);}",
     ".ap-wrap{margin:6px 0 12px;}",
     ".ap-wrap .ap-btn{margin:0;}",
@@ -614,21 +616,25 @@ function paceLabels(){
               : [["short","Short"],["normal","Normal"],["long","Long"]],
   };
 }
-function paceControl(){
-  const row = el("div","pace-row");
-  const L = paceLabels();
-  row.appendChild(el("span","pace-lbl",L.label + ":"));
-  L.pills.forEach(([v,label]) => {
-    const p = el("button","pace-pill" + (getPace()===v ? " on" : ""), label);
+// Short/Normal/Long pace pills. getCurrent() -> active value; onPick(v) persists +
+// applies. Shared by the lessons Play-all bar and the Listen-mode settings.
+function pacePills(getCurrent, onPick){
+  return paceLabels().pills.map(([v,label]) => {
+    const p = el("button","pace-pill" + (getCurrent()===v ? " on" : ""), label);
     p.addEventListener("click", e => {
-      e.stopPropagation();
-      try{ localStorage.setItem("malti_ap_pace", v); }catch(_){}
-      applyPace(v);
-      row.querySelectorAll(".pace-pill").forEach(x => x.classList.remove("on"));
+      e.preventDefault(); e.stopPropagation();
+      onPick(v);
+      p.parentNode.querySelectorAll(".pace-pill").forEach(x => x.classList.remove("on"));
       p.classList.add("on");
     });
-    row.appendChild(p);
+    return p;
   });
+}
+function paceControl(){
+  const row = el("div","pace-row");
+  row.appendChild(el("span","pace-lbl", paceLabels().label + ":"));
+  pacePills(getPace, v => { try{ localStorage.setItem("malti_ap_pace", v); }catch(_){}; applyPace(v); })
+    .forEach(p => row.appendChild(p));
   return row;
 }
 function autoPlayBtn(getEntries, opts){
@@ -660,17 +666,28 @@ function renderVocabScreen(root, sec, onNext){
   const gridMode = sec.display === "grid";
   // Sections with multi-form items (e.g. Jobs: masc/fem/plural) keep the FLIP-CARD
   // presentation; plain vocab lists render as a visible framed list (Option B ledger).
-  const allItems = [].concat(sec.items || [], sec.vocab || [], ...(sec.groups || []).map(g => g.items || []));
-  const flipMode = !gridMode && allItems.some(it => Array.isArray(it.forms) && it.forms.length);
+  // Short-circuiting scan for any multi-form item across items/vocab/groups —
+  // avoids allocating a merged array just to evaluate one boolean.
+  const hasForms = it => Array.isArray(it.forms) && it.forms.length;
+  const anyForms = (sec.items || []).some(hasForms) || (sec.vocab || []).some(hasForms)
+    || (sec.groups || []).some(g => (g.items || []).some(hasForms));
+  const flipMode = !gridMode && anyForms;
   const entries = [];
   const pushEntry = (e, sink) => { entries.push(e); if(sink) sink.push(e); };
   root.appendChild(autoPlayBtn(() => entries));
   const buildCard = (item, sink) => {
-    // Grid mode (e.g. numbers 1-30): a VISIBLE tile (icon + word). Tap to hear.
+    // Grid mode (e.g. numbers 1-30): a VISIBLE tile. Show the numeral (item.n) big
+    // so 11-30 are learnable (their icon is the generic 🔢), the Maltese word, and
+    // the English gloss. Fall back to the emoji icon for grids that have no numeral.
     if(gridMode){
       const t = el("div","num-tile");
-      if(item.icon){ const ic = el("div","num-icon"); ic.textContent = item.icon; t.appendChild(ic); }
+      if(item.n !== undefined && item.n !== null){
+        t.appendChild(el("div","num-n", String(item.n)));
+      } else if(item.icon){
+        const ic = el("div","num-icon"); ic.textContent = item.icon; t.appendChild(ic);
+      }
       t.appendChild(el("div","num-mt", item.mt));
+      if(item.en) t.appendChild(el("div","num-en", item.en));
       t.addEventListener("click", e => { if(AutoPlay.active) return; play(item.mt); });
       pushEntry({ mt:item.mt, node:t, group:t }, sink);
       return t;
@@ -1005,8 +1022,10 @@ window.addEventListener("hashchange", route);
 // State.listenManifest). Nothing here touches the normal lesson/exercise playback.
 
 // Collect a section's spoken items in document order, tagging each vocab vs dialogue
-// by its source key, deduped by mt. Skips only interactive drills (LISTEN_SKIP_KEYS) —
-// grammar rule examples + usage examples ARE read, mirroring generate_listen_audio.py
+// by its source key, deduped by mt. Reads every clean {mt,en} sentence pair — INCLUDING
+// grammar/jobs exercise sentences (e.g. "She wrote a letter" / "Hi kitbet ittra").
+// Pure drills (choices / scrambled / answer fragments) carry no full mt+en pair, so the
+// filter below skips them automatically. Mirrors generate_listen_audio.py's SKIP_KEYS
 // so every requested clip exists.
 const LISTEN_SKIP_KEYS = {};
 // Spoken intro played as the header of each unit's Vocabulary section. Must match
@@ -1134,18 +1153,9 @@ async function renderListen(){
   // Pace pills (Short / Normal / Long) — same control the lessons use; here it tunes
   // the gaps + playback speed of the hands-free session. Applies live on the next clip.
   const paceWrap = el("label",""); paceWrap.style.cssText = "display:flex;gap:6px;align-items:center;";
-  const paceL = paceLabels();
-  paceWrap.appendChild(el("span","muted", paceL.label + ":"));
-  paceL.pills.forEach(([v,label]) => {
-    const p = el("button","pace-pill" + (listenPace===v ? " on" : ""), label);
-    p.addEventListener("click", e => {
-      e.preventDefault(); e.stopPropagation();
-      listenPace = v; save("listen_pace", v);
-      paceWrap.querySelectorAll(".pace-pill").forEach(x => x.classList.remove("on"));
-      p.classList.add("on");
-    });
-    paceWrap.appendChild(p);
-  });
+  paceWrap.appendChild(el("span","muted", paceLabels().label + ":"));
+  pacePills(() => listenPace, v => { listenPace = v; save("listen_pace", v); })
+    .forEach(p => paceWrap.appendChild(p));
   settings.appendChild(paceWrap);
   root.appendChild(settings);
 
@@ -3802,8 +3812,18 @@ function makeMatchStep(itemsField, leftField, rightField, headline, getXp){
       if(!left.some((l,i)=> right[i]===matchFor[l])) break;
       right = shuffled(right);
     }
+    // If a correct pair is still on the same row, swap it with a partner row that
+    // (a) doesn't already hold this row's answer and (b) won't be given away by
+    // receiving right[i]. Re-check the destination so the swap never reveals a pair.
+    // If no safe partner exists (degenerate duplicate-value set) we leave it as is.
     for(let i=0;i<right.length;i++){
-      if(right[i]===matchFor[left[i]]){ const j=(i+1)%right.length; const tmp=right[i]; right[i]=right[j]; right[j]=tmp; }
+      if(right[i]!==matchFor[left[i]]) continue;
+      for(let d=1; d<right.length; d++){
+        const j=(i+d)%right.length;
+        if(right[j]!==matchFor[left[i]] && right[i]!==matchFor[left[j]]){
+          const tmp=right[i]; right[i]=right[j]; right[j]=tmp; break;
+        }
+      }
     }
     const lc = el("div",""); lc.style.display="grid"; lc.style.gap="8px";
     const rc = el("div",""); rc.style.display="grid"; rc.style.gap="8px";
@@ -4829,10 +4849,9 @@ STEP_RENDERERS["vocabulary:list"] = (root, sec, idx, onNext) => renderVocabScree
 
 // Generic Grammar rules renderer — same shape as grammar:rules but the final
 // CTA is "Done →" when the section has no exercises (lessons 7/8/9 don't yet).
-// Single-screen grammar: renders EVERY rule at once (no per-rule stepping),
+// Single-screen grammar: ONE rule per screen (STEP_COUNTS = rules.length),
 // including conjugation `rows` tables (previously not drawn). Auto-play walks
-// every audible form/example top-to-bottom, with an initial read-delay so the
-// learner can read the explanation before the audio starts.
+// this screen's audible forms/examples top-to-bottom.
 // "Jien (I)" → "Jien" : the Maltese pronoun without the English gloss, so we can
 // speak the pronoun + verb form together ("Jien ktibt").
 function personBare(p){ return (p||"").replace(/\s*\(.*?\)\s*/g, " ").trim(); }
