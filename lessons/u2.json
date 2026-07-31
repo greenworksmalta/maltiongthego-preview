@@ -46,151 +46,181 @@
       "items": [
         {
           "n": 1,
+          "icon": "1️⃣",
           "mt": "wieħed",
           "en": "one"
         },
         {
           "n": 2,
+          "icon": "2️⃣",
           "mt": "tnejn",
           "en": "two"
         },
         {
           "n": 3,
+          "icon": "3️⃣",
           "mt": "tlieta",
           "en": "three"
         },
         {
           "n": 4,
+          "icon": "4️⃣",
           "mt": "erbgħa",
           "en": "four"
         },
         {
           "n": 5,
+          "icon": "5️⃣",
           "mt": "ħamsa",
           "en": "five"
         },
         {
           "n": 6,
+          "icon": "6️⃣",
           "mt": "sitta",
           "en": "six"
         },
         {
           "n": 7,
+          "icon": "7️⃣",
           "mt": "sebgħa",
           "en": "seven"
         },
         {
           "n": 8,
+          "icon": "8️⃣",
           "mt": "tmienja",
           "en": "eight"
         },
         {
           "n": 9,
+          "icon": "9️⃣",
           "mt": "disgħa",
           "en": "nine"
         },
         {
           "n": 10,
+          "icon": "🔟",
           "mt": "għaxra",
           "en": "ten"
         },
         {
           "n": 11,
+          "icon": "🔢",
           "mt": "ħdax",
           "en": "eleven"
         },
         {
           "n": 12,
+          "icon": "🔢",
           "mt": "tnax",
           "en": "twelve"
         },
         {
           "n": 13,
+          "icon": "🔢",
           "mt": "tlettax",
           "en": "thirteen"
         },
         {
           "n": 14,
+          "icon": "🔢",
           "mt": "erbatax",
           "en": "fourteen"
         },
         {
           "n": 15,
+          "icon": "🔢",
           "mt": "ħmistax",
           "en": "fifteen"
         },
         {
           "n": 16,
+          "icon": "🔢",
           "mt": "sittax",
           "en": "sixteen"
         },
         {
           "n": 17,
+          "icon": "🔢",
           "mt": "sbatax",
           "en": "seventeen"
         },
         {
           "n": 18,
+          "icon": "🔢",
           "mt": "tmintax",
           "en": "eighteen"
         },
         {
           "n": 19,
+          "icon": "🔢",
           "mt": "dsatax",
           "en": "nineteen"
         },
         {
           "n": 20,
+          "icon": "🔢",
           "mt": "għoxrin",
           "en": "twenty"
         },
         {
           "n": 21,
+          "icon": "🔢",
           "mt": "wieħed u għoxrin",
           "en": "twenty-one"
         },
         {
           "n": 22,
+          "icon": "🔢",
           "mt": "tnejn u għoxrin",
           "en": "twenty-two"
         },
         {
           "n": 23,
+          "icon": "🔢",
           "mt": "tlieta u għoxrin",
           "en": "twenty-three"
         },
         {
           "n": 24,
+          "icon": "🔢",
           "mt": "erbgħa u għoxrin",
           "en": "twenty-four"
         },
         {
           "n": 25,
+          "icon": "🔢",
           "mt": "ħamsa u għoxrin",
           "en": "twenty-five"
         },
         {
           "n": 26,
+          "icon": "🔢",
           "mt": "sitta u għoxrin",
           "en": "twenty-six"
         },
         {
           "n": 27,
+          "icon": "🔢",
           "mt": "sebgħa u għoxrin",
           "en": "twenty-seven"
         },
         {
           "n": 28,
+          "icon": "🔢",
           "mt": "tmienja u għoxrin",
           "en": "twenty-eight"
         },
         {
           "n": 29,
+          "icon": "🔢",
           "mt": "disgħa u għoxrin",
           "en": "twenty-nine"
         },
         {
           "n": 30,
+          "icon": "🔢",
           "mt": "tletin",
           "en": "thirty"
         }
@@ -255,45 +285,44 @@
       "title": "Tens & hundred",
       "subtitle": "Għexieren: counting in tens",
       "intro": "The tens, plus zero and one hundred. To count the numbers in between, say the unit first, then 'u' (and), then the ten: wieħed u ħamsin (51), tnejn u ħamsin (52), tlieta u sittin (63).",
-      "display": "grid",
       "items": [
         {
-          "n": 0,
+          "icon": "0️⃣",
           "mt": "żero",
           "en": "zero"
         },
         {
-          "n": 40,
+          "icon": "🔢",
           "mt": "erbgħin",
           "en": "forty"
         },
         {
-          "n": 50,
+          "icon": "🔢",
           "mt": "ħamsin",
           "en": "fifty"
         },
         {
-          "n": 60,
+          "icon": "🔢",
           "mt": "sittin",
           "en": "sixty"
         },
         {
-          "n": 70,
+          "icon": "🔢",
           "mt": "sebgħin",
           "en": "seventy"
         },
         {
-          "n": 80,
+          "icon": "🔢",
           "mt": "tmenin",
           "en": "eighty"
         },
         {
-          "n": 90,
+          "icon": "🔢",
           "mt": "disgħin",
           "en": "ninety"
         },
         {
-          "n": 100,
+          "icon": "💯",
           "mt": "mija",
           "en": "one hundred"
         }
@@ -502,154 +531,154 @@
           "icon": "🔢",
           "items": [
             {
+              "icon": "1️⃣",
               "mt": "wieħed",
-              "en": "one",
-              "n": 1
+              "en": "one"
             },
             {
+              "icon": "2️⃣",
               "mt": "tnejn",
-              "en": "two",
-              "n": 2
+              "en": "two"
             },
             {
+              "icon": "3️⃣",
               "mt": "tlieta",
-              "en": "three",
-              "n": 3
+              "en": "three"
             },
             {
+              "icon": "4️⃣",
               "mt": "erbgħa",
-              "en": "four",
-              "n": 4
+              "en": "four"
             },
             {
+              "icon": "5️⃣",
               "mt": "ħamsa",
-              "en": "five",
-              "n": 5
+              "en": "five"
             },
             {
+              "icon": "6️⃣",
               "mt": "sitta",
-              "en": "six",
-              "n": 6
+              "en": "six"
             },
             {
+              "icon": "7️⃣",
               "mt": "sebgħa",
-              "en": "seven",
-              "n": 7
+              "en": "seven"
             },
             {
+              "icon": "8️⃣",
               "mt": "tmienja",
-              "en": "eight",
-              "n": 8
+              "en": "eight"
             },
             {
+              "icon": "9️⃣",
               "mt": "disgħa",
-              "en": "nine",
-              "n": 9
+              "en": "nine"
             },
             {
+              "icon": "🔟",
               "mt": "għaxra",
-              "en": "ten",
-              "n": 10
+              "en": "ten"
             },
             {
+              "icon": "🔢",
               "mt": "ħdax",
-              "en": "eleven",
-              "n": 11
+              "en": "eleven"
             },
             {
+              "icon": "🔢",
               "mt": "tnax",
-              "en": "twelve",
-              "n": 12
+              "en": "twelve"
             },
             {
+              "icon": "🔢",
               "mt": "tlettax",
-              "en": "thirteen",
-              "n": 13
+              "en": "thirteen"
             },
             {
+              "icon": "🔢",
               "mt": "erbatax",
-              "en": "fourteen",
-              "n": 14
+              "en": "fourteen"
             },
             {
+              "icon": "🔢",
               "mt": "ħmistax",
-              "en": "fifteen",
-              "n": 15
+              "en": "fifteen"
             },
             {
+              "icon": "🔢",
               "mt": "sittax",
-              "en": "sixteen",
-              "n": 16
+              "en": "sixteen"
             },
             {
+              "icon": "🔢",
               "mt": "sbatax",
-              "en": "seventeen",
-              "n": 17
+              "en": "seventeen"
             },
             {
+              "icon": "🔢",
               "mt": "tmintax",
-              "en": "eighteen",
-              "n": 18
+              "en": "eighteen"
             },
             {
+              "icon": "🔢",
               "mt": "dsatax",
-              "en": "nineteen",
-              "n": 19
+              "en": "nineteen"
             },
             {
+              "icon": "🔢",
               "mt": "għoxrin",
-              "en": "twenty",
-              "n": 20
+              "en": "twenty"
             },
             {
+              "icon": "🔢",
               "mt": "wieħed u għoxrin",
-              "en": "twenty-one",
-              "n": 21
+              "en": "twenty-one"
             },
             {
+              "icon": "🔢",
               "mt": "tnejn u għoxrin",
-              "en": "twenty-two",
-              "n": 22
+              "en": "twenty-two"
             },
             {
+              "icon": "🔢",
               "mt": "tlieta u għoxrin",
-              "en": "twenty-three",
-              "n": 23
+              "en": "twenty-three"
             },
             {
+              "icon": "🔢",
               "mt": "erbgħa u għoxrin",
-              "en": "twenty-four",
-              "n": 24
+              "en": "twenty-four"
             },
             {
+              "icon": "🔢",
               "mt": "ħamsa u għoxrin",
-              "en": "twenty-five",
-              "n": 25
+              "en": "twenty-five"
             },
             {
+              "icon": "🔢",
               "mt": "sitta u għoxrin",
-              "en": "twenty-six",
-              "n": 26
+              "en": "twenty-six"
             },
             {
+              "icon": "🔢",
               "mt": "sebgħa u għoxrin",
-              "en": "twenty-seven",
-              "n": 27
+              "en": "twenty-seven"
             },
             {
+              "icon": "🔢",
               "mt": "tmienja u għoxrin",
-              "en": "twenty-eight",
-              "n": 28
+              "en": "twenty-eight"
             },
             {
+              "icon": "🔢",
               "mt": "disgħa u għoxrin",
-              "en": "twenty-nine",
-              "n": 29
+              "en": "twenty-nine"
             },
             {
+              "icon": "🔢",
               "mt": "tletin",
-              "en": "thirty",
-              "n": 30
+              "en": "thirty"
             }
           ]
         },
@@ -714,44 +743,44 @@
           "icon": "💯",
           "items": [
             {
+              "icon": "0️⃣",
               "mt": "żero",
-              "en": "zero",
-              "n": 0
+              "en": "zero"
             },
             {
+              "icon": "🔢",
               "mt": "erbgħin",
-              "en": "forty",
-              "n": 40
+              "en": "forty"
             },
             {
+              "icon": "🔢",
               "mt": "ħamsin",
-              "en": "fifty",
-              "n": 50
+              "en": "fifty"
             },
             {
+              "icon": "🔢",
               "mt": "sittin",
-              "en": "sixty",
-              "n": 60
+              "en": "sixty"
             },
             {
+              "icon": "🔢",
               "mt": "sebgħin",
-              "en": "seventy",
-              "n": 70
+              "en": "seventy"
             },
             {
+              "icon": "🔢",
               "mt": "tmenin",
-              "en": "eighty",
-              "n": 80
+              "en": "eighty"
             },
             {
+              "icon": "🔢",
               "mt": "disgħin",
-              "en": "ninety",
-              "n": 90
+              "en": "ninety"
             },
             {
+              "icon": "💯",
               "mt": "mija",
-              "en": "one hundred",
-              "n": 100
+              "en": "one hundred"
             }
           ]
         },

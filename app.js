@@ -16,11 +16,11 @@
 //   - VERSION below                    (in-app footer + ?v= cache buster)
 //   - <script src="app.js?v=..."> tag in index.html
 //   - CACHE_NAME in sw.js              (forces SW reinstall)
-const VERSION = "1.0.7";
+const VERSION = "1.0.9";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "dev0715d";
+const BUILD = "dev0731a";
 // Bump ONLY when audio clips are regenerated (re-voiced). Audio filenames are
 // sha1(mt) so a re-voiced clip keeps its name; without a changing query the
 // browser/SW serve the OLD cached audio. play() busts on this.
@@ -92,7 +92,7 @@ const I18N = {
       monthlyTitle: "Monthly",
       monthlyPrice: "€4.99",
       monthlyTag: "per month",
-      monthlyBody: "The full course, plus a fresh drop of new content every month — while you're subscribed.",
+      monthlyBody: "The full course, plus new content every month while you're subscribed. The monthly drops have started, and the newest unit is At Work & At Home.",
       yearlyTitle: "Yearly",
       yearlyPrice: "€49.99",
       yearlyTag: "per year — save 16%",
@@ -215,7 +215,7 @@ const I18N = {
       monthlyTitle: "Mensual",
       monthlyPrice: "€4,99",
       monthlyTag: "al mes",
-      monthlyBody: "El curso completo, más contenido nuevo cada mes — mientras estés suscrito.",
+      monthlyBody: "El curso completo, más contenido nuevo cada mes mientras estés suscrito. Los lanzamientos mensuales ya empezaron, y la unidad más reciente es En el Trabajo y en Casa.",
       yearlyTitle: "Anual",
       yearlyPrice: "€49,99",
       yearlyTag: "al año — ahorra 16 %",

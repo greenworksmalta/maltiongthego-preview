@@ -1,183 +1,194 @@
 {
-  "lessons": [
-    {
-      "id": "extra1",
-      "module": "Start Here · Free",
-      "moduleEs": "Empieza Aquí · Gratis",
-      "n": 1,
-      "title": "Welcome Lesson",
-      "titleEs": "Lección de Bienvenida",
-      "subtitle": "Your free starter — survival Maltese for everyday life",
-      "subtitleEs": "Tu lección gratis — maltés de supervivencia para la vida diaria",
-      "icon": "🛟",
-      "free": true,
-      "languages": [
-        "en",
-        "es"
-      ]
-    },
-    {
-      "id": "extra2",
-      "module": "Start Here · Free",
-      "moduleEs": "Empieza Aquí · Gratis",
-      "n": 2,
-      "title": "Welcome to Malta",
-      "titleEs": "Bienvenido a Malta",
-      "subtitle": "A fun intro to island life — and your first taste of Maltese",
-      "subtitleEs": "Una intro divertida a la vida isleña",
-      "icon": "🇲🇹",
-      "free": true,
-      "languages": [
-        "en",
-        "es"
-      ]
-    },
-    {
-      "id": "u1",
-      "module": "First Words",
-      "title": "Hello & the Alphabet",
-      "subtitle": "Greetings, introductions, the 30 letters, the article, the days",
-      "icon": "🇲🇹",
-      "languages": [
-        "en",
-        "es"
-      ],
-      "titleEs": "Hola y el Alfabeto",
-      "subtitleEs": "Saludos, presentarte, las 30 letras, el artículo, los días de la semana",
-      "moduleEs": "Primeras Palabras"
-    },
-    {
-      "id": "u2",
-      "module": "First Words",
-      "title": "Numbers & Everyday Info",
-      "subtitle": "Numbers, tens, money, age, months",
-      "icon": "🔢",
-      "languages": [
-        "en",
-        "es"
-      ],
-      "titleEs": "Números e Información Cotidiana",
-      "subtitleEs": "Números, decenas, dinero, edad, meses",
-      "moduleEs": "Primeras Palabras"
-    },
-    {
-      "id": "u3",
-      "module": "First Words",
-      "title": "Getting Help",
-      "subtitle": "Asking for help, slowing down, switching to English",
-      "icon": "🆘",
-      "languages": [
-        "en",
-        "es"
-      ],
-      "titleEs": "Primeros Pasos y Pedir Ayuda",
-      "subtitleEs": "Nacionalidades, sílabas y pedir ayuda",
-      "moduleEs": "Primeras Palabras"
-    },
-    {
-      "id": "u4",
-      "module": "Everyday Malti",
-      "title": "Describing Things",
-      "subtitle": "Colours, sizes, describing objects & clothes",
-      "icon": "🎨",
-      "languages": [
-        "en",
-        "es"
-      ],
-      "titleEs": "Describir Cosas",
-      "subtitleEs": "Colores, tamaños, describir objetos y ropa",
-      "moduleEs": "Maltés Cotidiano"
-    },
-    {
-      "id": "u5",
-      "module": "Everyday Malti",
-      "title": "People, Family & Belonging",
-      "subtitle": "Pronouns, family, this/that, belonging",
-      "icon": "👨‍👩‍👧",
-      "languages": [
-        "en",
-        "es"
-      ],
-      "titleEs": "Personas, Familia y Pertenencia",
-      "subtitleEs": "Pronombres, familia, este y ese, quién posee qué",
-      "moduleEs": "Maltés Cotidiano"
-    },
-    {
-      "id": "u6",
-      "module": "Everyday Malti",
-      "title": "Building Sentences & Doing",
-      "subtitle": "I am, I have, there is, verbs",
-      "icon": "🧩",
-      "languages": [
-        "en",
-        "es"
-      ],
-      "titleEs": "Construir Oraciones y Actuar",
-      "subtitleEs": "Verbos, tener y hay: uniendo palabras",
-      "moduleEs": "Maltés Cotidiano"
-    },
-    {
-      "id": "u7",
-      "module": "Out & About",
-      "title": "Asking Questions & Directions",
-      "subtitle": "Wh-questions, finding your way",
-      "icon": "🧭",
-      "languages": [
-        "en",
-        "es"
-      ],
-      "titleEs": "Hacer Preguntas y Pedir Indicaciones",
-      "subtitleEs": "Palabras interrogativas, direcciones, cómo orientarte",
-      "moduleEs": "Por la Ciudad"
-    },
-    {
-      "id": "u8",
-      "module": "Out & About",
-      "title": "Food, Cafés & Eating Out",
-      "subtitle": "Ordering, fruit & veg, Maltese dishes",
-      "icon": "🍽️",
-      "languages": [
-        "en",
-        "es"
-      ],
-      "titleEs": "Comida, Cafés y Comer Fuera",
-      "subtitleEs": "Pedir bebidas y comida, y pagar la cuenta",
-      "moduleEs": "Por la Ciudad"
-    },
-    {
-      "id": "u9",
-      "module": "Out & About",
-      "title": "Shopping, Money & Time",
-      "subtitle": "Shopping, paying, telling the time",
-      "icon": "🛍️",
-      "languages": [
-        "en",
-        "es"
-      ],
-      "titleEs": "Compras, Dinero y la Hora",
-      "subtitleEs": "Ir de compras, pagar y decir la hora",
-      "moduleEs": "Por la Ciudad"
-    },
-    {
-      "id": "u10",
-      "module": "Home, Work & the Past",
-      "title": "At Work & At Home",
-      "subtitle": "Jobs, your home, and what you did",
-      "icon": "💼",
-      "titleEs": "En el Trabajo y en Casa",
-      "subtitleEs": "Trabajos, tu casa y lo que hiciste",
-      "moduleEs": "Casa, Trabajo y el Pasado",
-      "languages": [
-        "en",
-        "es"
-      ]
-    }
-  ],
-  "packOrder": [
-    "Start Here · Free",
-    "First Words",
-    "Everyday Malti",
-    "Out & About",
-    "Home, Work & the Past"
-  ]
+ "lessons": [
+  {
+   "id": "extra1",
+   "module": "Start Here · Free",
+   "moduleEs": "Empieza Aquí · Gratis",
+   "n": 1,
+   "title": "Welcome Lesson",
+   "titleEs": "Lección de Bienvenida",
+   "subtitle": "Your free starter — survival Maltese for everyday life",
+   "subtitleEs": "Tu lección gratis — maltés de supervivencia para la vida diaria",
+   "icon": "🛟",
+   "free": true,
+   "languages": [
+    "en",
+    "es"
+   ]
+  },
+  {
+   "id": "extra2",
+   "module": "Start Here · Free",
+   "moduleEs": "Empieza Aquí · Gratis",
+   "n": 2,
+   "title": "Welcome to Malta",
+   "titleEs": "Bienvenido a Malta",
+   "subtitle": "A fun intro to island life — and your first taste of Maltese",
+   "subtitleEs": "Una intro divertida a la vida isleña",
+   "icon": "🇲🇹",
+   "free": true,
+   "languages": [
+    "en",
+    "es"
+   ]
+  },
+  {
+   "id": "u1",
+   "module": "First Words",
+   "title": "Hello & the Alphabet",
+   "subtitle": "Greetings, introductions, the 30 letters, the article, the days",
+   "icon": "🇲🇹",
+   "languages": [
+    "en",
+    "es"
+   ],
+   "titleEs": "Hola y el Alfabeto",
+   "subtitleEs": "Saludos, presentarte, las 30 letras, el artículo, los días de la semana",
+   "moduleEs": "Primeras Palabras"
+  },
+  {
+   "id": "u2",
+   "module": "First Words",
+   "title": "Numbers & Everyday Info",
+   "subtitle": "Numbers, tens, money, age, months",
+   "icon": "🔢",
+   "languages": [
+    "en",
+    "es"
+   ],
+   "titleEs": "Números e Información Cotidiana",
+   "subtitleEs": "Números, decenas, dinero, edad, meses",
+   "moduleEs": "Primeras Palabras"
+  },
+  {
+   "id": "u3",
+   "module": "First Words",
+   "title": "Getting Help",
+   "subtitle": "Asking for help, slowing down, switching to English",
+   "icon": "🆘",
+   "languages": [
+    "en",
+    "es"
+   ],
+   "titleEs": "Primeros Pasos y Pedir Ayuda",
+   "subtitleEs": "Nacionalidades, sílabas y pedir ayuda",
+   "moduleEs": "Primeras Palabras"
+  },
+  {
+   "id": "u4",
+   "module": "Everyday Malti",
+   "title": "Describing Things",
+   "subtitle": "Colours, sizes, describing objects & clothes",
+   "icon": "🎨",
+   "languages": [
+    "en",
+    "es"
+   ],
+   "titleEs": "Describir Cosas",
+   "subtitleEs": "Colores, tamaños, describir objetos y ropa",
+   "moduleEs": "Maltés Cotidiano"
+  },
+  {
+   "id": "u5",
+   "module": "Everyday Malti",
+   "title": "People, Family & Belonging",
+   "subtitle": "Pronouns, family, this/that, belonging",
+   "icon": "👨‍👩‍👧",
+   "languages": [
+    "en",
+    "es"
+   ],
+   "titleEs": "Personas, Familia y Pertenencia",
+   "subtitleEs": "Pronombres, familia, este y ese, quién posee qué",
+   "moduleEs": "Maltés Cotidiano"
+  },
+  {
+   "id": "u6",
+   "module": "Everyday Malti",
+   "title": "Building Sentences & Doing",
+   "subtitle": "I am, I have, there is, verbs",
+   "icon": "🧩",
+   "languages": [
+    "en",
+    "es"
+   ],
+   "titleEs": "Construir Oraciones y Actuar",
+   "subtitleEs": "Verbos, tener y hay: uniendo palabras",
+   "moduleEs": "Maltés Cotidiano"
+  },
+  {
+   "id": "u7",
+   "module": "Out & About",
+   "title": "Asking Questions & Directions",
+   "subtitle": "Wh-questions, finding your way",
+   "icon": "🧭",
+   "languages": [
+    "en",
+    "es"
+   ],
+   "titleEs": "Hacer Preguntas y Pedir Indicaciones",
+   "subtitleEs": "Palabras interrogativas, direcciones, cómo orientarte",
+   "moduleEs": "Por la Ciudad"
+  },
+  {
+   "id": "u8",
+   "module": "Out & About",
+   "title": "Food, Cafés & Eating Out",
+   "subtitle": "Ordering, fruit & veg, Maltese dishes",
+   "icon": "🍽️",
+   "languages": [
+    "en",
+    "es"
+   ],
+   "titleEs": "Comida, Cafés y Comer Fuera",
+   "subtitleEs": "Pedir bebidas y comida, y pagar la cuenta",
+   "moduleEs": "Por la Ciudad"
+  },
+  {
+   "id": "u9",
+   "module": "Out & About",
+   "title": "Shopping, Money & Time",
+   "subtitle": "Shopping, paying, telling the time",
+   "icon": "🛍️",
+   "languages": [
+    "en",
+    "es"
+   ],
+   "titleEs": "Compras, Dinero y la Hora",
+   "subtitleEs": "Ir de compras, pagar y decir la hora",
+   "moduleEs": "Por la Ciudad"
+  },
+  {
+   "id": "u10",
+   "module": "Home, Work & the Past",
+   "title": "At Work & At Home",
+   "subtitle": "Jobs, your home, and what you did",
+   "icon": "💼",
+   "titleEs": "En el Trabajo y en Casa",
+   "subtitleEs": "Trabajos, tu casa y lo que hiciste",
+   "moduleEs": "Casa, Trabajo y el Pasado",
+   "languages": [
+    "en",
+    "es"
+   ]
+  },
+  {
+   "id": "u11",
+   "module": "Home, Work & the Past",
+   "title": "One or Many",
+   "subtitle": "Plurals, your home and animals",
+   "icon": "🔢",
+   "languages": [
+    "en"
+   ],
+   "dev": true
+  }
+ ],
+ "packOrder": [
+  "Start Here · Free",
+  "First Words",
+  "Everyday Malti",
+  "Out & About",
+  "Home, Work & the Past"
+ ]
 }
