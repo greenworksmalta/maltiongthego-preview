@@ -1,0 +1,667 @@
+{
+  "id": "u12",
+  "title": "Old Malta",
+  "subtitle": "Old shops, old ways of getting around, and how to talk about the past",
+  "sections": [
+    {
+      "id": "shops12",
+      "icon": "🏪",
+      "title": "Ħwienet antiki",
+      "subtitle": "Old shops and the trades behind them",
+      "intro": "Every village had these. Most of the trades have gone, but the words are still on shop signs and street names.",
+      "vocab": [
+        {
+          "mt": "il-barbier",
+          "en": "the barber",
+          "icon": "💈",
+          "note": "He shaved customers too, and the shop was where village news travelled."
+        },
+        {
+          "mt": "il-furnar",
+          "en": "the baker",
+          "icon": "🥖",
+          "note": "Families brought their own dough to be baked."
+        },
+        {
+          "mt": "il-ħajjat",
+          "en": "the tailor",
+          "icon": "🧵",
+          "note": "Clothes were mended and altered, not replaced."
+        },
+        {
+          "mt": "l-iskarpan",
+          "en": "the cobbler",
+          "icon": "👞",
+          "note": "Repaired shoes until cheap factory-made footwear arrived."
+        },
+        {
+          "mt": "il-ħaddied",
+          "en": "the blacksmith",
+          "icon": "🔨",
+          "note": "Worked iron for tools and things around the house."
+        },
+        {
+          "mt": "il-ħanut tal-merċa",
+          "en": "the grocery shop",
+          "icon": "🛒",
+          "note": "Sold loose goods, weighed out for you, not packets."
+        },
+        {
+          "mt": "il-ħanut tal-ħelu",
+          "en": "the sweet shop",
+          "icon": "🍬",
+          "note": "Small, family-run, and beloved by children."
+        },
+        {
+          "mt": "il-ħanut tal-gazzetti",
+          "en": "the newsagent",
+          "icon": "📰",
+          "note": "Newspapers and magazines, local and foreign."
+        },
+        {
+          "mt": "il-ħanut tat-te",
+          "en": "the tea shop",
+          "icon": "☕",
+          "note": "Somewhere to sit, talk and drink; a social place more than a shop."
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex1",
+          "type": "listen",
+          "max": 6,
+          "items": [
+            {
+              "mt": "il-barbier",
+              "en": "the barber"
+            },
+            {
+              "mt": "il-furnar",
+              "en": "the baker"
+            },
+            {
+              "mt": "il-ħajjat",
+              "en": "the tailor"
+            },
+            {
+              "mt": "l-iskarpan",
+              "en": "the cobbler"
+            },
+            {
+              "mt": "il-ħaddied",
+              "en": "the blacksmith"
+            },
+            {
+              "mt": "il-ħanut tal-merċa",
+              "en": "the grocery shop"
+            }
+          ]
+        },
+        {
+          "id": "ex2",
+          "type": "match",
+          "title": "Match the pairs",
+          "leftField": "mt",
+          "rightField": "en",
+          "items": [
+            {
+              "mt": "il-barbier",
+              "en": "the barber"
+            },
+            {
+              "mt": "il-furnar",
+              "en": "the baker"
+            },
+            {
+              "mt": "il-ħajjat",
+              "en": "the tailor"
+            },
+            {
+              "mt": "l-iskarpan",
+              "en": "the cobbler"
+            },
+            {
+              "mt": "il-ħaddied",
+              "en": "the blacksmith"
+            },
+            {
+              "mt": "il-ħanut tal-merċa",
+              "en": "the grocery shop"
+            }
+          ]
+        },
+        {
+          "id": "ex4",
+          "type": "recall",
+          "max": 5,
+          "items": [
+            {
+              "mt": "il-barbier",
+              "en": "the barber"
+            },
+            {
+              "mt": "il-furnar",
+              "en": "the baker"
+            },
+            {
+              "mt": "il-ħajjat",
+              "en": "the tailor"
+            },
+            {
+              "mt": "l-iskarpan",
+              "en": "the cobbler"
+            },
+            {
+              "mt": "il-ħaddied",
+              "en": "the blacksmith"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "transport12",
+      "icon": "🚊",
+      "title": "Mezzi ta' trasport",
+      "subtitle": "How Malta got around, then and now",
+      "intro": "From a mule and two wooden wheels to the buses and ferries you use today.",
+      "vocab": [
+        {
+          "mt": "il-kaless",
+          "en": "the caleche",
+          "icon": "🐴",
+          "note": "Two big wooden wheels and one mule or horse. The driver walked alongside."
+        },
+        {
+          "mt": "il-karozzin",
+          "en": "the horse-drawn carriage",
+          "icon": "🎠",
+          "note": "From 1856. Enclosed and sprung, and this time the driver could sit."
+        },
+        {
+          "mt": "l-omnibus",
+          "en": "the omnibus",
+          "icon": "🚋",
+          "note": "Malta's first public transport: three horses, twenty-two passengers."
+        },
+        {
+          "mt": "il-ferrovija",
+          "en": "the railway",
+          "icon": "🚂",
+          "note": "Valletta to Mdina, from 1883 until it closed in 1931."
+        },
+        {
+          "mt": "it-tramm",
+          "en": "the tram",
+          "icon": "🚊",
+          "note": "From 1905, with an upper and a lower deck."
+        },
+        {
+          "mt": "il-karozza tal-linja",
+          "en": "the bus",
+          "icon": "🚌",
+          "note": "Owners once painted their own buses; today's service began in 2014."
+        },
+        {
+          "mt": "il-vapur ta' Għawdex",
+          "en": "the Gozo ferry",
+          "icon": "⛴️",
+          "note": "Gozo Channel has run the crossing since 1979."
+        },
+        {
+          "mt": "il-lanċa tal-passiġġieri",
+          "en": "the passenger ferry",
+          "icon": "🚤",
+          "note": "Small boats still carry people across the harbour."
+        },
+        {
+          "mt": "il-luzzu",
+          "en": "a traditional Maltese fishing boat",
+          "icon": "🎣",
+          "note": "The fishing boat with an eye painted on the bow."
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex1",
+          "type": "listen",
+          "max": 6,
+          "items": [
+            {
+              "mt": "il-kaless",
+              "en": "the caleche"
+            },
+            {
+              "mt": "il-karozzin",
+              "en": "the horse-drawn carriage"
+            },
+            {
+              "mt": "l-omnibus",
+              "en": "the omnibus"
+            },
+            {
+              "mt": "il-ferrovija",
+              "en": "the railway"
+            },
+            {
+              "mt": "it-tramm",
+              "en": "the tram"
+            },
+            {
+              "mt": "il-karozza tal-linja",
+              "en": "the bus"
+            }
+          ]
+        },
+        {
+          "id": "ex2",
+          "type": "match",
+          "title": "Match the pairs",
+          "leftField": "mt",
+          "rightField": "en",
+          "items": [
+            {
+              "mt": "il-ferrovija",
+              "en": "the railway"
+            },
+            {
+              "mt": "it-tramm",
+              "en": "the tram"
+            },
+            {
+              "mt": "il-karozza tal-linja",
+              "en": "the bus"
+            },
+            {
+              "mt": "il-vapur ta' Għawdex",
+              "en": "the Gozo ferry"
+            },
+            {
+              "mt": "il-lanċa tal-passiġġieri",
+              "en": "the passenger ferry"
+            },
+            {
+              "mt": "il-luzzu",
+              "en": "a traditional Maltese fishing boat"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nannu12",
+      "icon": "👴",
+      "title": "Nitkellmu man-nannu",
+      "subtitle": "Dialogue with a grandfather on how things used to be",
+      "intro": "Mary asks her grandfather about old Malta. Listen for kont, it turns up in almost every line.",
+      "dialogue": [
+        {
+          "mt": "Nannu, kif kont tmur għax-xogħol meta kont żgħir?",
+          "en": "Grandad, how did you go to work when you were young?"
+        },
+        {
+          "mt": "Kont immur bit-tramm jew bil-karozza tal-linja.",
+          "en": "I used to go by tram or by bus."
+        },
+        {
+          "mt": "U l-ferrovija kont tużaha?",
+          "en": "And the railway, did you use it?"
+        },
+        {
+          "mt": "Iva, kont nuża l-ferrovija ukoll.",
+          "en": "Yes, I used to use the railway too."
+        },
+        {
+          "mt": "Fejn kont taħdem?",
+          "en": "Where did you work?"
+        },
+        {
+          "mt": "Jien kont ħaddied.",
+          "en": "I was a blacksmith."
+        },
+        {
+          "mt": "Kont issib ħwienet tal-ħelu?",
+          "en": "Were there any sweet shops?"
+        },
+        {
+          "mt": "Iva, kont niekol ħelu kuljum!",
+          "en": "Yes, I used to eat sweets every day!"
+        },
+        {
+          "mt": "Kemm hu interessanti nisma' fuq il-passat, nannu!",
+          "en": "How interesting it is to hear about the past, grandad!"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex3",
+          "type": "build",
+          "max": 4,
+          "items": [
+            {
+              "mt": "Kont immur bit-tramm jew bil-karozza tal-linja.",
+              "en": "I used to go by tram or by bus."
+            },
+            {
+              "mt": "Fejn kont taħdem?",
+              "en": "Where did you work?"
+            },
+            {
+              "mt": "Jien kont ħaddied.",
+              "en": "I was a blacksmith."
+            },
+            {
+              "mt": "Kemm hu interessanti nisma' fuq il-passat, nannu!",
+              "en": "How interesting it is to hear about the past, grandad!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kont12",
+      "icon": "🕰️",
+      "title": "Grammar · Kont",
+      "subtitle": "The verb kien, and how kont makes 'used to'",
+      "intro": "You already know the past endings from kiteb and ħadem. The verb kien takes the same endings.",
+      "rules": [
+        {
+          "id": "kien",
+          "title": "kien (he was): the same endings you already know",
+          "rows": [
+            {
+              "person": "Jien (I)",
+              "ending": "-t",
+              "form": "kont",
+              "en": "I was",
+              "say": "Jien kont"
+            },
+            {
+              "person": "Int (you)",
+              "ending": "-t",
+              "form": "kont",
+              "en": "you were",
+              "say": "Int kont"
+            },
+            {
+              "person": "Hu (he)",
+              "ending": "-",
+              "form": "kien",
+              "en": "he was",
+              "say": "Hu kien"
+            },
+            {
+              "person": "Hi (she)",
+              "ending": "-et",
+              "form": "kienet",
+              "en": "she was",
+              "say": "Hi kienet"
+            },
+            {
+              "person": "Aħna (we)",
+              "ending": "-na",
+              "form": "konna",
+              "en": "we were",
+              "say": "Aħna konna"
+            },
+            {
+              "person": "Intom (you)",
+              "ending": "-tu",
+              "form": "kontu",
+              "en": "you were",
+              "say": "Intom kontu"
+            },
+            {
+              "person": "Huma (they)",
+              "ending": "-u",
+              "form": "kienu",
+              "en": "they were",
+              "say": "Huma kienu"
+            }
+          ]
+        }
+      ],
+      "facts": [
+        "kont plus a verb means 'used to'. Kont immur = I used to go. Kont niekol = I used to eat.",
+        "kont plus a noun means 'was'. Jien kont ħaddied = I was a blacksmith.",
+        "The plural of ħanut is ħwienet, one of the broken plurals from Unit 11."
+      ]
+    },
+    {
+      "id": "grammar12",
+      "icon": "📖",
+      "title": "Grammar · Using kont",
+      "subtitle": "Il-grammatika: saying you weren't, and asking about the past",
+      "intro": "Three things that make kont useful: saying you weren't, saying there was, and asking someone about their own past.",
+      "rules": [
+        {
+          "id": "negative-kont",
+          "title": "Saying you weren't: the ma...x wrap",
+          "explanation": "You met this wrap with other verbs in Unit 10. Kien takes it too: ma in front, x on the end. Kont (I was) becomes ma kontx (I wasn't).",
+          "examples": [
+            {
+              "mt": "Ma kontx naħdem bħala ħaddied",
+              "en": "I did not work as a blacksmith"
+            },
+            {
+              "mt": "Ma kontx immur bit-tramm",
+              "en": "I didn't use to go by tram"
+            },
+            {
+              "mt": "Ma kienx hemm ferrovija",
+              "en": "There was no railway"
+            },
+            {
+              "mt": "Ma konniex id-dar",
+              "en": "We weren't at home"
+            }
+          ]
+        },
+        {
+          "id": "kien-hemm",
+          "title": "Kien hemm: there was, there were",
+          "explanation": "Kien hemm covers both there was and there were. It does not change for the plural. Mind the place name: fil-belt, small b, is in the city, any city. il-Belt with a capital B is Valletta itself, and it takes no preposition.",
+          "examples": [
+            {
+              "mt": "Kien hemm ħanut tal-ħelu f'kull raħal",
+              "en": "There was a sweet shop in every village"
+            },
+            {
+              "mt": "Kien hemm ħafna ħwienet fil-belt",
+              "en": "There were many shops in the city"
+            },
+            {
+              "mt": "Kien hemm ħafna ħwienet il-Belt Valletta",
+              "en": "There were many shops in Valletta"
+            },
+            {
+              "mt": "Ma kienx hemm karozzi",
+              "en": "There were no cars"
+            }
+          ]
+        },
+        {
+          "id": "asking-past",
+          "title": "Asking about the past",
+          "explanation": "Put a question word in front of kont and you can ask anyone about their own past.",
+          "letters": [
+            "fejn, where",
+            "kif, how",
+            "meta, when",
+            "x', what"
+          ],
+          "examples": [
+            {
+              "mt": "Fejn kont taħdem?",
+              "en": "Where did you work?"
+            },
+            {
+              "mt": "Kif kont tmur għax-xogħol?",
+              "en": "How did you go to work?"
+            },
+            {
+              "mt": "X'kont taħdem?",
+              "en": "What did you do for work?"
+            },
+            {
+              "mt": "Meta kont hemm?",
+              "en": "When were you there?"
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "g12build",
+          "type": "build",
+          "max": 4,
+          "title": "Build the sentence",
+          "items": [
+            {
+              "mt": "Ma kontx naħdem bħala ħaddied",
+              "en": "I did not work as a blacksmith"
+            },
+            {
+              "mt": "Kien hemm ħanut tal-ħelu f'kull raħal",
+              "en": "There was a sweet shop in every village"
+            },
+            {
+              "mt": "Fejn kont taħdem?",
+              "en": "Where did you work?"
+            },
+            {
+              "mt": "Ma kienx hemm ferrovija",
+              "en": "There was no railway"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "icon": "📖",
+      "title": "Vocabulary",
+      "subtitle": "Everything in this unit",
+      "groups": [
+        {
+          "title": "Old shops",
+          "items": [
+            {
+              "mt": "il-barbier",
+              "en": "the barber",
+              "icon": "💈",
+              "note": "He shaved customers too, and the shop was where village news travelled."
+            },
+            {
+              "mt": "il-furnar",
+              "en": "the baker",
+              "icon": "🥖",
+              "note": "Families brought their own dough to be baked."
+            },
+            {
+              "mt": "il-ħajjat",
+              "en": "the tailor",
+              "icon": "🧵",
+              "note": "Clothes were mended and altered, not replaced."
+            },
+            {
+              "mt": "l-iskarpan",
+              "en": "the cobbler",
+              "icon": "👞",
+              "note": "Repaired shoes until cheap factory-made footwear arrived."
+            },
+            {
+              "mt": "il-ħaddied",
+              "en": "the blacksmith",
+              "icon": "🔨",
+              "note": "Worked iron for tools and things around the house."
+            },
+            {
+              "mt": "il-ħanut tal-merċa",
+              "en": "the grocery shop",
+              "icon": "🛒",
+              "note": "Sold loose goods, weighed out for you, not packets."
+            },
+            {
+              "mt": "il-ħanut tal-ħelu",
+              "en": "the sweet shop",
+              "icon": "🍬",
+              "note": "Small, family-run, and beloved by children."
+            },
+            {
+              "mt": "il-ħanut tal-gazzetti",
+              "en": "the newsagent",
+              "icon": "📰",
+              "note": "Newspapers and magazines, local and foreign."
+            },
+            {
+              "mt": "il-ħanut tat-te",
+              "en": "the tea shop",
+              "icon": "☕",
+              "note": "Somewhere to sit, talk and drink; a social place more than a shop."
+            }
+          ]
+        },
+        {
+          "title": "Transport",
+          "items": [
+            {
+              "mt": "il-kaless",
+              "en": "the caleche",
+              "icon": "🐴",
+              "note": "Two big wooden wheels and one mule or horse. The driver walked alongside."
+            },
+            {
+              "mt": "il-karozzin",
+              "en": "the horse-drawn carriage",
+              "icon": "🎠",
+              "note": "From 1856. Enclosed and sprung, and this time the driver could sit."
+            },
+            {
+              "mt": "l-omnibus",
+              "en": "the omnibus",
+              "icon": "🚋",
+              "note": "Malta's first public transport: three horses, twenty-two passengers."
+            },
+            {
+              "mt": "il-ferrovija",
+              "en": "the railway",
+              "icon": "🚂",
+              "note": "Valletta to Mdina, from 1883 until it closed in 1931."
+            },
+            {
+              "mt": "it-tramm",
+              "en": "the tram",
+              "icon": "🚊",
+              "note": "From 1905, with an upper and a lower deck."
+            },
+            {
+              "mt": "il-karozza tal-linja",
+              "en": "the bus",
+              "icon": "🚌",
+              "note": "Owners once painted their own buses; today's service began in 2014."
+            },
+            {
+              "mt": "il-vapur ta' Għawdex",
+              "en": "the Gozo ferry",
+              "icon": "⛴️",
+              "note": "Gozo Channel has run the crossing since 1979."
+            },
+            {
+              "mt": "il-lanċa tal-passiġġieri",
+              "en": "the passenger ferry",
+              "icon": "🚤",
+              "note": "Small boats still carry people across the harbour."
+            },
+            {
+              "mt": "il-luzzu",
+              "en": "a traditional Maltese fishing boat",
+              "icon": "🎣",
+              "note": "The fishing boat with an eye painted on the bow."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

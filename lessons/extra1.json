@@ -92,6 +92,95 @@
           "mt": "Il-ġurnata t-tajba!",
           "en": "Have a good day!"
         }
+      ],
+      "exercises": [
+        {
+          "id": "ex1",
+          "type": "listen",
+          "max": 6,
+          "items": [
+            {
+              "mt": "Bonġu",
+              "en": "Good morning"
+            },
+            {
+              "mt": "Grazzi",
+              "en": "Thank you"
+            },
+            {
+              "mt": "Jekk jogħġbok",
+              "en": "Please"
+            },
+            {
+              "mt": "Skużani",
+              "en": "Excuse me / Sorry"
+            },
+            {
+              "mt": "Iva",
+              "en": "Yes"
+            },
+            {
+              "mt": "Le",
+              "en": "No"
+            }
+          ]
+        },
+        {
+          "id": "ex2",
+          "type": "match",
+          "title": "Match the pairs",
+          "leftField": "mt",
+          "rightField": "en",
+          "items": [
+            {
+              "mt": "Bonswa",
+              "en": "Good evening"
+            },
+            {
+              "mt": "Mhux problema",
+              "en": "No problem"
+            },
+            {
+              "mt": "Il-ġurnata t-tajba",
+              "en": "Have a good day"
+            },
+            {
+              "mt": "Prosit",
+              "en": "Well done"
+            },
+            {
+              "mt": "Ferm",
+              "en": "Very"
+            },
+            {
+              "mt": "Ċaw",
+              "en": "Bye (casual)"
+            }
+          ]
+        },
+        {
+          "id": "ex4",
+          "type": "recall",
+          "max": 4,
+          "items": [
+            {
+              "mt": "Bonġu",
+              "en": "Good morning"
+            },
+            {
+              "mt": "Grazzi",
+              "en": "Thank you"
+            },
+            {
+              "mt": "Jekk jogħġbok",
+              "en": "Please"
+            },
+            {
+              "mt": "Skużani",
+              "en": "Excuse me / Sorry"
+            }
+          ]
+        }
       ]
     },
     {
@@ -113,11 +202,11 @@
           "en": "Cappuccino with sugar"
         },
         {
-          "mt": "Tè",
+          "mt": "Te",
           "en": "Tea"
         },
         {
-          "mt": "Tè bil-lumi",
+          "mt": "Te bil-lumi",
           "en": "Tea with lemon"
         },
         {
@@ -150,7 +239,7 @@
         },
         {
           "mt": "Bil-karta tal-kreditu",
-          "en": "With (credit) card"
+          "en": "By credit card"
         },
         {
           "mt": "Trid xi ħaġa oħra?",
@@ -184,15 +273,104 @@
         },
         {
           "mt": "Kemm jiswa?",
-          "en": "How much is it?"
+          "en": "How much does it cost?"
         },
         {
           "mt": "Żewġ ewro u sebgħin ċenteżmu",
-          "en": "Two euros seventy."
+          "en": "Two euros seventy"
         },
         {
           "mt": "Hawn huma. Grazzi!",
           "en": "There you go. Thanks!"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex1",
+          "type": "listen",
+          "max": 6,
+          "items": [
+            {
+              "mt": "Nixtieq",
+              "en": "I would like"
+            },
+            {
+              "mt": "Ilma",
+              "en": "Water"
+            },
+            {
+              "mt": "Birra",
+              "en": "Beer"
+            },
+            {
+              "mt": "Pastizz",
+              "en": "Maltese savoury pastry (ricotta or pea filling)"
+            },
+            {
+              "mt": "Kemm jiswa?",
+              "en": "How much does it cost?"
+            },
+            {
+              "mt": "Te",
+              "en": "Tea"
+            }
+          ]
+        },
+        {
+          "id": "ex2",
+          "type": "match",
+          "title": "Match the pairs",
+          "leftField": "mt",
+          "rightField": "en",
+          "items": [
+            {
+              "mt": "Kapuċċino",
+              "en": "Cappuccino"
+            },
+            {
+              "mt": "Te bil-lumi",
+              "en": "Tea with lemon"
+            },
+            {
+              "mt": "Żewġ ewro",
+              "en": "Two euros"
+            },
+            {
+              "mt": "Bil-flus",
+              "en": "With cash"
+            },
+            {
+              "mt": "Bil-karta tal-kreditu",
+              "en": "By credit card"
+            },
+            {
+              "mt": "Trid xi ħaġa oħra?",
+              "en": "Would you like anything else?"
+            }
+          ]
+        },
+        {
+          "id": "ex3",
+          "type": "build",
+          "max": 4,
+          "items": [
+            {
+              "mt": "Nixtieq kapuċċino biz-zokkor, jekk jogħġbok.",
+              "en": "I would like a cappuccino with sugar, please."
+            },
+            {
+              "mt": "Trid xi ħaġa oħra?",
+              "en": "Would you like anything else?"
+            },
+            {
+              "mt": "Iva, pastizz jekk jogħġbok.",
+              "en": "Yes, pastizz please."
+            },
+            {
+              "mt": "Hawn huma. Grazzi!",
+              "en": "There you go. Thanks!"
+            }
+          ]
         }
       ]
     },
@@ -239,7 +417,7 @@
           "en": "Can you help me?"
         },
         {
-          "mt": "Kif tgħid bil-Malti?",
+          "mt": "Kif tgħidha bil-Malti?",
           "en": "How do you say it in Maltese?"
         },
         {
@@ -275,6 +453,72 @@
         {
           "mt": "Mhux problema. Hekk hu...",
           "en": "No problem. Like this..."
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex1",
+          "type": "listen",
+          "max": 6,
+          "items": [
+            {
+              "mt": "Ma nifhimx",
+              "en": "I don't understand"
+            },
+            {
+              "mt": "Tista' tirrepeti?",
+              "en": "Can you repeat that?"
+            },
+            {
+              "mt": "Bil-mod, jekk jogħġbok",
+              "en": "Slowly, please"
+            },
+            {
+              "mt": "Tista' tgħinni?",
+              "en": "Can you help me?"
+            },
+            {
+              "mt": "X'jiġifieri?",
+              "en": "What does it mean?"
+            },
+            {
+              "mt": "Naħdem hawn",
+              "en": "I work here"
+            }
+          ]
+        },
+        {
+          "id": "ex2",
+          "type": "match",
+          "title": "Match the pairs",
+          "leftField": "mt",
+          "rightField": "en",
+          "items": [
+            {
+              "mt": "Ma nitkellimx bil-Malti",
+              "en": "I don't speak Maltese"
+            },
+            {
+              "mt": "Nitkellem ftit Malti",
+              "en": "I speak a little Maltese"
+            },
+            {
+              "mt": "Qed nitgħallem il-Malti",
+              "en": "I am learning Maltese"
+            },
+            {
+              "mt": "Tista' tiktibha?",
+              "en": "Can you write it down?"
+            },
+            {
+              "mt": "Kif tgħidha bil-Malti?",
+              "en": "How do you say it in Maltese?"
+            },
+            {
+              "mt": "Titkellem bl-Ingliż?",
+              "en": "Do you speak English?"
+            }
+          ]
         }
       ]
     },
@@ -365,11 +609,11 @@
           "examples": [
             {
               "mt": "Grazzi",
-              "en": "Thanks"
+              "en": "Thank you"
             },
             {
               "mt": "Grazzi ħafna",
-              "en": "Thanks a lot"
+              "en": "Thank you very much"
             },
             {
               "mt": "Skużani, tista' tgħinni?",
@@ -509,12 +753,12 @@
             },
             {
               "icon": "🍵",
-              "mt": "Tè",
+              "mt": "Te",
               "en": "Tea"
             },
             {
               "icon": "🍋",
-              "mt": "Tè bil-lumi",
+              "mt": "Te bil-lumi",
               "en": "Tea with lemon"
             },
             {
@@ -616,7 +860,7 @@
             },
             {
               "icon": "❓",
-              "mt": "Kif tgħid bil-Malti?",
+              "mt": "Kif tgħidha bil-Malti?",
               "en": "How do you say it in Maltese?"
             },
             {

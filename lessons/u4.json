@@ -388,6 +388,33 @@
               "answer": "Stays the same"
             }
           ]
+        },
+        {
+          "id": "ex4",
+          "type": "recall",
+          "max": 5,
+          "items": [
+            {
+              "mt": "blu",
+              "en": "blue"
+            },
+            {
+              "mt": "griż",
+              "en": "grey"
+            },
+            {
+              "mt": "roża",
+              "en": "pink"
+            },
+            {
+              "mt": "abjad",
+              "en": "white"
+            },
+            {
+              "mt": "aħdar",
+              "en": "green"
+            }
+          ]
         }
       ]
     },
@@ -729,19 +756,19 @@
           "items": [
             {
               "word": "raġel",
-              "en": "man (m)",
+              "en": "a tall man (m)",
               "answer": "twil",
               "mt": "raġel twil"
             },
             {
               "word": "mara",
-              "en": "woman (f)",
+              "en": "a tall woman (f)",
               "answer": "twila",
               "mt": "mara twila"
             },
             {
               "word": "tfal",
-              "en": "children (pl)",
+              "en": "tall children (pl)",
               "answer": "twal",
               "mt": "tfal twal"
             }

@@ -1,0 +1,1808 @@
+{
+  "id": "u11",
+  "lang": "es",
+  "title": "Plurales, Casa y Animales",
+  "subtitle": "Tu casa por dentro y por fuera, plurales y reglas para contar",
+  "sections": [
+    {
+      "id": "flat",
+      "icon": "🔑",
+      "title": "El apartamento nuevo · una visita",
+      "subtitle": "Il-flett il-ġdid: contar lo que hay en un lugar",
+      "intro": "Joanne está viendo un apartamento y Karl se lo muestra. Casi todas las respuestas están en plural. Fíjate en cómo cambian las palabras cuando hay más de una.",
+      "dialogue": [
+        {
+          "mt": "Kemm hemm kmamar?",
+          "en": "¿Cuántos cuartos hay?"
+        },
+        {
+          "mt": "Hemm żewġ kmamar tas-sodda u salott kbir.",
+          "en": "Hay dos dormitorios y una sala grande."
+        },
+        {
+          "mt": "U l-kċina?",
+          "en": "¿Y la cocina?"
+        },
+        {
+          "mt": "Fil-kċina hemm żewġ twieqi kbar.",
+          "en": "En la cocina hay dos ventanas grandes."
+        },
+        {
+          "mt": "Hemm garaxx?",
+          "en": "¿Hay garaje?"
+        },
+        {
+          "mt": "Le, imma hemm bejt u terazzin żgħir.",
+          "en": "No, pero hay azotea y una terraza pequeña."
+        },
+        {
+          "mt": "U l-għamara?",
+          "en": "¿Y los muebles?"
+        },
+        {
+          "mt": "Hemm sodda, mejda u tliet siġġijiet.",
+          "en": "Hay una cama, una mesa y tres sillas."
+        },
+        {
+          "mt": "Nieħdu ċ-ċwievet illum?",
+          "en": "¿Nos llevamos las llaves hoy?"
+        },
+        {
+          "mt": "Iva, hawn huma ċ-ċwievet.",
+          "en": "Sí, aquí están las llaves."
+        }
+      ]
+    },
+    {
+      "id": "house",
+      "icon": "🏠",
+      "title": "Por la casa",
+      "subtitle": "Id-dar: las palabras de todo anuncio inmobiliario en Malta",
+      "intro": "Tipos de vivienda, y las partes de una. Toca una tarjeta para voltearla: al frente uno, al reverso más de uno.",
+      "facts": [
+        "Ya viste dar, kċina y los cuartos. Aquí cada uno recibe su plural.",
+        "Kamra significa cuarto, así que las palabras de los cuartos se forman igual: kamra tas-sodda, kamra tal-banju, kamra tal-ikel. Pon kamra en plural y la frase entera lo sigue: kmamar tas-sodda."
+      ],
+      "groups": [
+        {
+          "title": "Tipos de vivienda",
+          "icon": "🏘️",
+          "items": [
+            {
+              "en": "casa",
+              "icon": "🏠",
+              "forms": [
+                {
+                  "mt": "dar",
+                  "label": "uno"
+                },
+                {
+                  "mt": "djar",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "apartamento",
+              "icon": "🏢",
+              "forms": [
+                {
+                  "mt": "flett",
+                  "label": "uno"
+                },
+                {
+                  "mt": "flettijiet",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "villa",
+              "icon": "🏡",
+              "forms": [
+                {
+                  "mt": "villa",
+                  "label": "uno"
+                },
+                {
+                  "mt": "vilel",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "dúplex",
+              "icon": "🏘️",
+              "forms": [
+                {
+                  "mt": "mezzanin",
+                  "label": "uno y muchos, no cambia"
+                }
+              ]
+            },
+            {
+              "en": "bungaló",
+              "icon": "🛖",
+              "forms": [
+                {
+                  "mt": "bungalow",
+                  "label": "uno"
+                },
+                {
+                  "mt": "bungalows",
+                  "label": "muchos"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Partes de una vivienda",
+          "icon": "🚪",
+          "items": [
+            {
+              "en": "azotea",
+              "icon": "🏚️",
+              "forms": [
+                {
+                  "mt": "bejt",
+                  "label": "uno"
+                },
+                {
+                  "mt": "bjut",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "patio",
+              "icon": "🧱",
+              "forms": [
+                {
+                  "mt": "bitħa",
+                  "label": "uno"
+                },
+                {
+                  "mt": "btieħi",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "llave",
+              "icon": "🔑",
+              "forms": [
+                {
+                  "mt": "ċavetta",
+                  "label": "uno"
+                },
+                {
+                  "mt": "ċwievet",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "jardín",
+              "icon": "🌳",
+              "forms": [
+                {
+                  "mt": "ġnien",
+                  "label": "uno"
+                },
+                {
+                  "mt": "ġonna",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "garaje",
+              "icon": "🚙",
+              "forms": [
+                {
+                  "mt": "garaxx",
+                  "label": "uno"
+                },
+                {
+                  "mt": "garaxxijiet",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "vestíbulo",
+              "icon": "🚶",
+              "forms": [
+                {
+                  "mt": "intrata",
+                  "label": "uno"
+                },
+                {
+                  "mt": "intrati",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "baño",
+              "icon": "🚻",
+              "forms": [
+                {
+                  "mt": "kamra tal-banju",
+                  "label": "uno"
+                },
+                {
+                  "mt": "kmamar tal-banju",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "comedor",
+              "icon": "🍴",
+              "forms": [
+                {
+                  "mt": "kamra tal-ikel",
+                  "label": "uno"
+                },
+                {
+                  "mt": "kmamar tal-ikel",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "dormitorio",
+              "icon": "💤",
+              "forms": [
+                {
+                  "mt": "kamra tas-sodda",
+                  "label": "uno"
+                },
+                {
+                  "mt": "kmamar tas-sodda",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "sótano",
+              "icon": "📦",
+              "forms": [
+                {
+                  "mt": "kantina",
+                  "label": "uno"
+                },
+                {
+                  "mt": "kantini",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "cocina",
+              "icon": "🥘",
+              "forms": [
+                {
+                  "mt": "kċina",
+                  "label": "uno"
+                },
+                {
+                  "mt": "kċejjen",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "ascensor / elevador",
+              "icon": "🛗",
+              "forms": [
+                {
+                  "mt": "lift",
+                  "label": "uno"
+                },
+                {
+                  "mt": "liftijiet",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "piscina",
+              "icon": "🏊",
+              "forms": [
+                {
+                  "mt": "pixxina",
+                  "label": "uno"
+                },
+                {
+                  "mt": "pixxini",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "sala",
+              "icon": "📺",
+              "forms": [
+                {
+                  "mt": "salott",
+                  "label": "uno"
+                },
+                {
+                  "mt": "salotti",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "escalera",
+              "icon": "🪜",
+              "forms": [
+                {
+                  "mt": "taraġ",
+                  "label": "uno"
+                },
+                {
+                  "mt": "turġien",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "terraza pequeña",
+              "icon": "🌇",
+              "forms": [
+                {
+                  "mt": "terazzin",
+                  "label": "uno"
+                },
+                {
+                  "mt": "terazzini",
+                  "label": "muchos"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "things",
+      "icon": "🛋️",
+      "title": "Cosas de la casa",
+      "subtitle": "L-għamara: cuarto por cuarto",
+      "intro": "Las cosas que de verdad nombras en casa, agrupadas por el cuarto donde están.",
+      "facts": [
+        "Las palabras que el maltés tomó del inglés y del italiano casi siempre solo añaden una terminación: kabord, kabords. Las palabras maltesas más antiguas suelen reconstruirse por dentro: forn, fran."
+      ],
+      "groups": [
+        {
+          "title": "Fil-kċina · en la cocina",
+          "icon": "🍳",
+          "items": [
+            {
+              "en": "silla",
+              "icon": "🪑",
+              "forms": [
+                {
+                  "mt": "siġġu",
+                  "label": "uno"
+                },
+                {
+                  "mt": "siġġijiet",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "mesa",
+              "icon": "🍽️",
+              "forms": [
+                {
+                  "mt": "mejda",
+                  "label": "uno"
+                },
+                {
+                  "mt": "imwejjed",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "alacena",
+              "icon": "🗄️",
+              "forms": [
+                {
+                  "mt": "kabord",
+                  "label": "uno"
+                },
+                {
+                  "mt": "kabords",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "encimera de cocina",
+              "icon": "🧼",
+              "forms": [
+                {
+                  "mt": "bank tal-kċina",
+                  "label": "uno"
+                },
+                {
+                  "mt": "bankijiet tal-kċina",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "taburete",
+              "icon": "💺",
+              "forms": [
+                {
+                  "mt": "banketta",
+                  "label": "uno"
+                },
+                {
+                  "mt": "banketti",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "luz",
+              "icon": "💡",
+              "forms": [
+                {
+                  "mt": "dawl",
+                  "label": "uno"
+                },
+                {
+                  "mt": "dwal",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "horno",
+              "icon": "🔥",
+              "forms": [
+                {
+                  "mt": "forn",
+                  "label": "uno"
+                },
+                {
+                  "mt": "fran",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "refrigerador",
+              "icon": "🧊",
+              "forms": [
+                {
+                  "mt": "friġġ",
+                  "label": "uno"
+                },
+                {
+                  "mt": "friġis",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "congelador",
+              "icon": "❄️",
+              "forms": [
+                {
+                  "mt": "friżer",
+                  "label": "uno"
+                },
+                {
+                  "mt": "friżers",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "hervidor",
+              "icon": "🫖",
+              "forms": [
+                {
+                  "mt": "kitla",
+                  "label": "uno"
+                },
+                {
+                  "mt": "ktieli",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "estufa",
+              "icon": "🍳",
+              "forms": [
+                {
+                  "mt": "kuker",
+                  "label": "uno"
+                },
+                {
+                  "mt": "kukers",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "fregadero",
+              "icon": "🚰",
+              "forms": [
+                {
+                  "mt": "sink",
+                  "label": "uno"
+                },
+                {
+                  "mt": "sinkijiet",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "interruptor",
+              "icon": "🔘",
+              "forms": [
+                {
+                  "mt": "swiċċ",
+                  "label": "uno"
+                },
+                {
+                  "mt": "swiċċijiet",
+                  "label": "muchos"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Fil-kamra tas-sodda · en el dormitorio",
+          "icon": "🛏️",
+          "items": [
+            {
+              "en": "cama",
+              "icon": "🛏️",
+              "forms": [
+                {
+                  "mt": "sodda",
+                  "label": "uno"
+                },
+                {
+                  "mt": "soddod",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "cabecera",
+              "icon": "🛌",
+              "forms": [
+                {
+                  "mt": "tistiera",
+                  "label": "uno"
+                },
+                {
+                  "mt": "tistieri",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "puerta",
+              "icon": "🚪",
+              "forms": [
+                {
+                  "mt": "bieb",
+                  "label": "uno"
+                },
+                {
+                  "mt": "bibien",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "ventana",
+              "icon": "🪟",
+              "forms": [
+                {
+                  "mt": "tieqa",
+                  "label": "uno"
+                },
+                {
+                  "mt": "twieqi",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "armario",
+              "icon": "🧥",
+              "forms": [
+                {
+                  "mt": "gwardarobba",
+                  "label": "uno"
+                },
+                {
+                  "mt": "gwardarobbi",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "cómoda",
+              "icon": "🗃️",
+              "forms": [
+                {
+                  "mt": "gradenza",
+                  "label": "uno"
+                },
+                {
+                  "mt": "gradenzi",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "mesa de noche",
+              "icon": "🕰️",
+              "forms": [
+                {
+                  "mt": "kommodina",
+                  "label": "uno"
+                },
+                {
+                  "mt": "kommodini",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "estante",
+              "icon": "📚",
+              "forms": [
+                {
+                  "mt": "xkaffa",
+                  "label": "uno"
+                },
+                {
+                  "mt": "xkafef",
+                  "label": "muchos"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Fil-kamra tal-banju · en el baño",
+          "icon": "🛁",
+          "items": [
+            {
+              "en": "espejo",
+              "icon": "🪞",
+              "forms": [
+                {
+                  "mt": "mera",
+                  "label": "uno"
+                },
+                {
+                  "mt": "mirja",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "bañera",
+              "icon": "🛁",
+              "forms": [
+                {
+                  "mt": "banju",
+                  "label": "uno"
+                },
+                {
+                  "mt": "banjijiet",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "ducha",
+              "icon": "🚿",
+              "forms": [
+                {
+                  "mt": "xawer",
+                  "label": "uno"
+                },
+                {
+                  "mt": "xawers",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "inodoro",
+              "icon": "🚽",
+              "forms": [
+                {
+                  "mt": "tojlit",
+                  "label": "uno"
+                },
+                {
+                  "mt": "tojlits",
+                  "label": "muchos"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Fis-salott · en la sala",
+          "icon": "🛋️",
+          "items": [
+            {
+              "en": "sofá",
+              "icon": "🛋️",
+              "forms": [
+                {
+                  "mt": "sufan",
+                  "label": "uno"
+                },
+                {
+                  "mt": "sufanijiet",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "librero",
+              "icon": "📖",
+              "forms": [
+                {
+                  "mt": "librerija",
+                  "label": "uno"
+                },
+                {
+                  "mt": "libreriji",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "escritorio",
+              "icon": "🖊️",
+              "forms": [
+                {
+                  "mt": "skrivanija",
+                  "label": "uno"
+                },
+                {
+                  "mt": "skrivaniji",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "arco",
+              "icon": "🏛️",
+              "forms": [
+                {
+                  "mt": "ħnejja",
+                  "label": "uno"
+                },
+                {
+                  "mt": "ħnejjiet",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "columna",
+              "icon": "🗿",
+              "forms": [
+                {
+                  "mt": "kolonna",
+                  "label": "uno"
+                },
+                {
+                  "mt": "kolonni",
+                  "label": "muchos"
+                }
+              ]
+            },
+            {
+              "en": "marco",
+              "icon": "🖼️",
+              "forms": [
+                {
+                  "mt": "inkwatru",
+                  "label": "uno"
+                },
+                {
+                  "mt": "inkwatri",
+                  "label": "muchos"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "animals",
+      "icon": "🐕",
+      "title": "Animales",
+      "subtitle": "L-annimali: macho, hembra y más de uno",
+      "intro": "Los seres vivos tienen tres formas, igual que los trabajos de la unidad anterior: macho, hembra y plural. El plural suele ser otra palabra distinta.",
+      "facts": [
+        "El femenino suele ser el masculino más -a: kelb pasa a kelba, qattus pasa a qattusa.",
+        "El plural casi nunca sigue ese patrón. Kelb pasa a klieb y qattus pasa a qtates, reconstruidos por dentro.",
+        "Los animales de granja suelen usar dos palabras distintas para el macho y la hembra, como toro y vaca en español."
+      ],
+      "groups": [
+        {
+          "title": "A tu alrededor",
+          "icon": "🐈",
+          "items": [
+            {
+              "en": "conejo",
+              "icon": "🐰",
+              "forms": [
+                {
+                  "mt": "fenek",
+                  "label": "m"
+                },
+                {
+                  "mt": "fenka",
+                  "label": "f"
+                },
+                {
+                  "mt": "fniek",
+                  "label": "pl"
+                }
+              ]
+            },
+            {
+              "en": "cachorro",
+              "icon": "🐶",
+              "forms": [
+                {
+                  "mt": "ġeru",
+                  "label": "m"
+                },
+                {
+                  "mt": "ġerwa",
+                  "label": "f"
+                },
+                {
+                  "mt": "ġriewi",
+                  "label": "pl"
+                }
+              ]
+            },
+            {
+              "en": "ratón",
+              "icon": "🐭",
+              "forms": [
+                {
+                  "mt": "ġurdien",
+                  "label": "m"
+                },
+                {
+                  "mt": "ġurdiena",
+                  "label": "f"
+                },
+                {
+                  "mt": "ġrieden",
+                  "label": "pl"
+                }
+              ]
+            },
+            {
+              "en": "perro",
+              "icon": "🐕",
+              "forms": [
+                {
+                  "mt": "kelb",
+                  "label": "m"
+                },
+                {
+                  "mt": "kelba",
+                  "label": "f"
+                },
+                {
+                  "mt": "klieb",
+                  "label": "pl"
+                }
+              ]
+            },
+            {
+              "en": "pato",
+              "icon": "🦆",
+              "forms": [
+                {
+                  "mt": "papru",
+                  "label": "m"
+                },
+                {
+                  "mt": "papra",
+                  "label": "f"
+                },
+                {
+                  "mt": "papri",
+                  "label": "pl"
+                }
+              ]
+            },
+            {
+              "en": "gato",
+              "icon": "🐈",
+              "forms": [
+                {
+                  "mt": "qattus",
+                  "label": "m"
+                },
+                {
+                  "mt": "qattusa",
+                  "label": "f"
+                },
+                {
+                  "mt": "qtates",
+                  "label": "pl"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "En la granja y más allá",
+          "icon": "🐐",
+          "items": [
+            {
+              "en": "ciervo",
+              "icon": "🦌",
+              "forms": [
+                {
+                  "mt": "ċerv",
+                  "label": "m"
+                },
+                {
+                  "mt": "ċerva",
+                  "label": "f"
+                },
+                {
+                  "mt": "ċriev",
+                  "label": "pl"
+                }
+              ]
+            },
+            {
+              "en": "cerdo",
+              "icon": "🐷",
+              "forms": [
+                {
+                  "mt": "ħanżir",
+                  "label": "m"
+                },
+                {
+                  "mt": "ħanżira",
+                  "label": "f"
+                },
+                {
+                  "mt": "ħnieżer",
+                  "label": "pl"
+                }
+              ]
+            },
+            {
+              "en": "burro",
+              "icon": "🫏",
+              "forms": [
+                {
+                  "mt": "ħmar",
+                  "label": "m"
+                },
+                {
+                  "mt": "ħmara",
+                  "label": "f"
+                },
+                {
+                  "mt": "ħmir",
+                  "label": "pl"
+                }
+              ]
+            },
+            {
+              "en": "oso",
+              "icon": "🐻",
+              "forms": [
+                {
+                  "mt": "ors",
+                  "label": "m"
+                },
+                {
+                  "mt": "orsa",
+                  "label": "f"
+                },
+                {
+                  "mt": "orsijiet",
+                  "label": "pl"
+                }
+              ]
+            },
+            {
+              "en": "mono",
+              "icon": "🐒",
+              "forms": [
+                {
+                  "mt": "xadin",
+                  "label": "m"
+                },
+                {
+                  "mt": "xadina",
+                  "label": "f"
+                },
+                {
+                  "mt": "xadini",
+                  "label": "pl"
+                }
+              ]
+            },
+            {
+              "en": "toro",
+              "icon": "🐂",
+              "forms": [
+                {
+                  "mt": "barri",
+                  "label": "m"
+                },
+                {
+                  "mt": "baqra",
+                  "label": "f"
+                },
+                {
+                  "mt": "barrin / baqar",
+                  "label": "pl"
+                }
+              ]
+            },
+            {
+              "en": "macho cabrío",
+              "icon": "🐐",
+              "forms": [
+                {
+                  "mt": "bodbod",
+                  "label": "m"
+                },
+                {
+                  "mt": "mogħża",
+                  "label": "f"
+                },
+                {
+                  "mt": "bdabad / mogħoż",
+                  "label": "pl"
+                }
+              ]
+            },
+            {
+              "en": "carnero",
+              "icon": "🐏",
+              "forms": [
+                {
+                  "mt": "muntun",
+                  "label": "m"
+                },
+                {
+                  "mt": "nagħġa",
+                  "label": "f"
+                },
+                {
+                  "mt": "imtaten / nagħaġ",
+                  "label": "pl"
+                }
+              ]
+            },
+            {
+              "en": "gallo",
+              "icon": "🐓",
+              "forms": [
+                {
+                  "mt": "serduk",
+                  "label": "m"
+                },
+                {
+                  "mt": "tiġieġa",
+                  "label": "f"
+                },
+                {
+                  "mt": "sriedaq / tiġieġ",
+                  "label": "pl"
+                }
+              ]
+            },
+            {
+              "en": "caballo",
+              "icon": "🐴",
+              "forms": [
+                {
+                  "mt": "żiemel",
+                  "label": "m"
+                },
+                {
+                  "mt": "debba",
+                  "label": "f"
+                },
+                {
+                  "mt": "żwiemel",
+                  "label": "pl"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plural11",
+      "icon": "🔢",
+      "title": "Gramática · El plural",
+      "subtitle": "Il-plural: formar más de uno",
+      "intro": "El maltés tiene dos maneras de formar el plural, una regla para contar que sorprende a todos, y una pequeña regla sobre la letra i.",
+      "facts": [
+        "En maltés no hay una única terminación de plural. Qué camino toma cada palabra es parte de la palabra.",
+        "El segundo camino usa el mismo mecanismo que el pasado de la unidad anterior: las consonantes se quedan quietas y las vocales se mueven a su alrededor."
+      ],
+      "rules": [
+        {
+          "id": "pl-ending",
+          "title": "Camino uno: la palabra mantiene su forma y añade una terminación",
+          "explanation": "La palabra sigue siendo reconocible y se le añade una terminación, casi siempre -i, -jiet o -s. Las palabras que el maltés tomó del inglés o del italiano casi siempre van por aquí, así que si una palabra te suena familiar, este es el camino probable.",
+          "examples": [
+            {
+              "mt": "siġġu / siġġijiet",
+              "en": "silla, sillas"
+            },
+            {
+              "mt": "garaxx / garaxxijiet",
+              "en": "garaje, garajes"
+            },
+            {
+              "mt": "salott / salotti",
+              "en": "sala, salas"
+            },
+            {
+              "mt": "pixxina / pixxini",
+              "en": "piscina, piscinas"
+            },
+            {
+              "mt": "kabord / kabords",
+              "en": "alacena, alacenas"
+            },
+            {
+              "mt": "lift / liftijiet",
+              "en": "ascensor, ascensores"
+            }
+          ]
+        },
+        {
+          "id": "pl-broken",
+          "title": "Camino dos: la palabra se reconstruye por dentro",
+          "explanation": "Aquí la terminación no es lo importante. Las consonantes se mantienen en orden y las vocales entre ellas cambian, así que el plural puede parecer otra palabra. Esta es la capa más antigua del maltés, y es el mismo patrón que convierte kiteb en ktibt en el pasado.",
+          "examples": [
+            {
+              "mt": "kelb / klieb",
+              "en": "perro, perros"
+            },
+            {
+              "mt": "dar / djar",
+              "en": "casa, casas"
+            },
+            {
+              "mt": "forn / fran",
+              "en": "horno, hornos"
+            },
+            {
+              "mt": "tieqa / twieqi",
+              "en": "ventana, ventanas"
+            },
+            {
+              "mt": "kamra / kmamar",
+              "en": "cuarto, cuartos"
+            },
+            {
+              "mt": "qattus / qtates",
+              "en": "gato, gatos"
+            }
+          ]
+        },
+        {
+          "id": "pl-counting",
+          "title": "Contar: y luego vuelve al singular",
+          "explanation": "Dos lleva żewġ con el plural. Del tres al diez también llevan plural. Pero a partir de once el sustantivo vuelve al SINGULAR, lo que suena raro en español y es el error más común de quien aprende.",
+          "letters": [
+            "żewġ + plural, para dos",
+            "del tres al diez + plural",
+            "de once en adelante + singular"
+          ],
+          "examples": [
+            {
+              "mt": "żewġ siġġijiet",
+              "en": "dos sillas"
+            },
+            {
+              "mt": "tliet twieqi",
+              "en": "tres ventanas"
+            },
+            {
+              "mt": "ħames kmamar",
+              "en": "cinco cuartos"
+            },
+            {
+              "mt": "għaxar bibien",
+              "en": "diez puertas"
+            },
+            {
+              "mt": "ħdax-il siġġu",
+              "en": "once sillas"
+            },
+            {
+              "mt": "għoxrin tieqa",
+              "en": "veinte ventanas"
+            }
+          ]
+        },
+        {
+          "id": "pl-helping-i",
+          "title": "La i- de apoyo",
+          "explanation": "Algunos plurales empiezan con dos consonantes y llevan una i- de apoyo delante: imwejjed, imtaten. Apréndelos con la i-, porque esa es la palabra. La i- se mantiene cuando la palabra anterior termina en consonante, y desaparece cuando termina en vocal. Ya viste esta regla: iċ-ċurkett pasa a nixtri ċ-ċurkett por exactamente la misma razón.",
+          "letters": [
+            "tras consonante, la i- se mantiene",
+            "tras vocal, la i- desaparece"
+          ],
+          "examples": [
+            {
+              "mt": "imwejjed",
+              "en": "mesas, la forma que hay que aprender"
+            },
+            {
+              "mt": "żewġt imwejjed",
+              "en": "dos mesas, żewġ toma una t y la i- se mantiene"
+            },
+            {
+              "mt": "ħafna mwejjed",
+              "en": "muchas mesas, ħafna termina en vocal así que la i- desaparece"
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "u11-route",
+          "type": "bucket",
+          "batch": 8,
+          "title": "¿Qué camino?",
+          "instructions": "Clasifica cada plural: ¿la palabra mantuvo su forma y añadió una terminación, o se reconstruyó por dentro?",
+          "choices": [
+            "Añade una terminación",
+            "Reconstruida por dentro"
+          ],
+          "items": [
+            {
+              "word": "siġġijiet",
+              "answer": "Añade una terminación"
+            },
+            {
+              "word": "klieb",
+              "answer": "Reconstruida por dentro"
+            },
+            {
+              "word": "garaxxijiet",
+              "answer": "Añade una terminación"
+            },
+            {
+              "word": "twieqi",
+              "answer": "Reconstruida por dentro"
+            },
+            {
+              "word": "salotti",
+              "answer": "Añade una terminación"
+            },
+            {
+              "word": "djar",
+              "answer": "Reconstruida por dentro"
+            },
+            {
+              "word": "kmamar",
+              "answer": "Reconstruida por dentro"
+            },
+            {
+              "word": "pixxini",
+              "answer": "Añade una terminación"
+            }
+          ]
+        },
+        {
+          "id": "u11-onemany",
+          "type": "match",
+          "title": "Relaciona: uno con muchos",
+          "leftField": "one",
+          "rightField": "many",
+          "items": [
+            {
+              "one": "kelb",
+              "many": "klieb"
+            },
+            {
+              "one": "dar",
+              "many": "djar"
+            },
+            {
+              "one": "tieqa",
+              "many": "twieqi"
+            },
+            {
+              "one": "forn",
+              "many": "fran"
+            },
+            {
+              "one": "siġġu",
+              "many": "siġġijiet"
+            }
+          ]
+        },
+        {
+          "id": "u11-mf",
+          "type": "match",
+          "title": "Relaciona: macho con hembra",
+          "leftField": "one",
+          "rightField": "many",
+          "items": [
+            {
+              "one": "barri",
+              "many": "baqra"
+            },
+            {
+              "one": "kelb",
+              "many": "kelba"
+            },
+            {
+              "one": "qattus",
+              "many": "qattusa"
+            },
+            {
+              "one": "serduk",
+              "many": "tiġieġa"
+            },
+            {
+              "one": "żiemel",
+              "many": "debba"
+            }
+          ]
+        },
+        {
+          "id": "u11-build",
+          "type": "build",
+          "max": 5,
+          "title": "Construye la frase",
+          "items": [
+            {
+              "mt": "Fil-kċina hemm żewġ siġġijiet.",
+              "en": "En la cocina hay dos sillas."
+            },
+            {
+              "mt": "Id-dar għandha tliet kmamar.",
+              "en": "La casa tiene tres cuartos."
+            },
+            {
+              "mt": "Il-klieb qegħdin fil-ġnien.",
+              "en": "Los perros están en el jardín."
+            },
+            {
+              "mt": "Iċ-ċwievet qegħdin fuq il-mejda.",
+              "en": "Las llaves están sobre la mesa."
+            },
+            {
+              "mt": "Hemm ħdax-il siġġu fis-salott.",
+              "en": "Hay once sillas en la sala."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "icon": "📚",
+      "title": "Vocabulario",
+      "subtitle": "Il-vokabularju: todas las palabras en un solo lugar",
+      "intro": "Todo lo de esta unidad, reunido para repasar. Toca cualquier palabra para escucharla.",
+      "groups": [
+        {
+          "title": "Casa",
+          "icon": "🏠",
+          "items": [
+            {
+              "mt": "dar",
+              "en": "casa",
+              "icon": "🏠"
+            },
+            {
+              "mt": "flett",
+              "en": "apartamento",
+              "icon": "🏢"
+            },
+            {
+              "mt": "villa",
+              "en": "villa",
+              "icon": "🏡"
+            },
+            {
+              "mt": "mezzanin",
+              "en": "dúplex",
+              "icon": "🏘️"
+            },
+            {
+              "mt": "bungalow",
+              "en": "bungaló",
+              "icon": "🛖"
+            },
+            {
+              "mt": "bejt",
+              "en": "azotea",
+              "icon": "🏚️"
+            },
+            {
+              "mt": "bitħa",
+              "en": "patio",
+              "icon": "🧱"
+            },
+            {
+              "mt": "ċavetta",
+              "en": "llave",
+              "icon": "🔑"
+            },
+            {
+              "mt": "ġnien",
+              "en": "jardín",
+              "icon": "🌳"
+            },
+            {
+              "mt": "garaxx",
+              "en": "garaje",
+              "icon": "🚙"
+            },
+            {
+              "mt": "intrata",
+              "en": "vestíbulo",
+              "icon": "🚶"
+            },
+            {
+              "mt": "kamra tal-banju",
+              "en": "baño",
+              "icon": "🚻"
+            },
+            {
+              "mt": "kamra tal-ikel",
+              "en": "comedor",
+              "icon": "🍴"
+            },
+            {
+              "mt": "kamra tas-sodda",
+              "en": "dormitorio",
+              "icon": "💤"
+            },
+            {
+              "mt": "kantina",
+              "en": "sótano",
+              "icon": "📦"
+            },
+            {
+              "mt": "kċina",
+              "en": "cocina",
+              "icon": "🥘"
+            },
+            {
+              "mt": "lift",
+              "en": "ascensor / elevador",
+              "icon": "🛗"
+            },
+            {
+              "mt": "pixxina",
+              "en": "piscina",
+              "icon": "🏊"
+            },
+            {
+              "mt": "salott",
+              "en": "sala",
+              "icon": "📺"
+            },
+            {
+              "mt": "taraġ",
+              "en": "escalera",
+              "icon": "🪜"
+            },
+            {
+              "mt": "terazzin",
+              "en": "terraza pequeña",
+              "icon": "🌇"
+            }
+          ]
+        },
+        {
+          "title": "Cocina",
+          "icon": "🍳",
+          "items": [
+            {
+              "mt": "siġġu",
+              "en": "silla",
+              "icon": "🪑"
+            },
+            {
+              "mt": "mejda",
+              "en": "mesa",
+              "icon": "🍽️"
+            },
+            {
+              "mt": "kabord",
+              "en": "alacena",
+              "icon": "🗄️"
+            },
+            {
+              "mt": "bank tal-kċina",
+              "en": "encimera de cocina",
+              "icon": "🧼"
+            },
+            {
+              "mt": "banketta",
+              "en": "taburete",
+              "icon": "💺"
+            },
+            {
+              "mt": "dawl",
+              "en": "luz",
+              "icon": "💡"
+            },
+            {
+              "mt": "forn",
+              "en": "horno",
+              "icon": "🔥"
+            },
+            {
+              "mt": "friġġ",
+              "en": "refrigerador",
+              "icon": "🧊"
+            },
+            {
+              "mt": "friżer",
+              "en": "congelador",
+              "icon": "❄️"
+            },
+            {
+              "mt": "kitla",
+              "en": "hervidor",
+              "icon": "🫖"
+            },
+            {
+              "mt": "kuker",
+              "en": "estufa",
+              "icon": "🍳"
+            },
+            {
+              "mt": "sink",
+              "en": "fregadero",
+              "icon": "🚰"
+            },
+            {
+              "mt": "swiċċ",
+              "en": "interruptor",
+              "icon": "🔘"
+            }
+          ]
+        },
+        {
+          "title": "Dormitorio",
+          "icon": "🛏️",
+          "items": [
+            {
+              "mt": "sodda",
+              "en": "cama",
+              "icon": "🛏️"
+            },
+            {
+              "mt": "tistiera",
+              "en": "cabecera",
+              "icon": "🛌"
+            },
+            {
+              "mt": "bieb",
+              "en": "puerta",
+              "icon": "🚪"
+            },
+            {
+              "mt": "tieqa",
+              "en": "ventana",
+              "icon": "🪟"
+            },
+            {
+              "mt": "gwardarobba",
+              "en": "armario",
+              "icon": "🧥"
+            },
+            {
+              "mt": "gradenza",
+              "en": "cómoda",
+              "icon": "🗃️"
+            },
+            {
+              "mt": "kommodina",
+              "en": "mesa de noche",
+              "icon": "🕰️"
+            },
+            {
+              "mt": "xkaffa",
+              "en": "estante",
+              "icon": "📚"
+            }
+          ]
+        },
+        {
+          "title": "Baño",
+          "icon": "🛁",
+          "items": [
+            {
+              "mt": "mera",
+              "en": "espejo",
+              "icon": "🪞"
+            },
+            {
+              "mt": "banju",
+              "en": "bañera",
+              "icon": "🛁"
+            },
+            {
+              "mt": "xawer",
+              "en": "ducha",
+              "icon": "🚿"
+            },
+            {
+              "mt": "tojlit",
+              "en": "inodoro",
+              "icon": "🚽"
+            }
+          ]
+        },
+        {
+          "title": "Sala",
+          "icon": "🛋️",
+          "items": [
+            {
+              "mt": "sufan",
+              "en": "sofá",
+              "icon": "🛋️"
+            },
+            {
+              "mt": "librerija",
+              "en": "librero",
+              "icon": "📖"
+            },
+            {
+              "mt": "skrivanija",
+              "en": "escritorio",
+              "icon": "🖊️"
+            },
+            {
+              "mt": "ħnejja",
+              "en": "arco",
+              "icon": "🏛️"
+            },
+            {
+              "mt": "kolonna",
+              "en": "columna",
+              "icon": "🗿"
+            },
+            {
+              "mt": "inkwatru",
+              "en": "marco",
+              "icon": "🖼️"
+            }
+          ]
+        },
+        {
+          "title": "Animales",
+          "icon": "🐕",
+          "items": [
+            {
+              "mt": "fenek",
+              "en": "conejo",
+              "icon": "🐰"
+            },
+            {
+              "mt": "ġeru",
+              "en": "cachorro",
+              "icon": "🐶"
+            },
+            {
+              "mt": "ġurdien",
+              "en": "ratón",
+              "icon": "🐭"
+            },
+            {
+              "mt": "ċerv",
+              "en": "ciervo",
+              "icon": "🦌"
+            },
+            {
+              "mt": "ħanżir",
+              "en": "cerdo",
+              "icon": "🐷"
+            },
+            {
+              "mt": "ħmar",
+              "en": "burro",
+              "icon": "🫏"
+            },
+            {
+              "mt": "kelb",
+              "en": "perro",
+              "icon": "🐕"
+            },
+            {
+              "mt": "ors",
+              "en": "oso",
+              "icon": "🐻"
+            },
+            {
+              "mt": "papra",
+              "en": "pato",
+              "icon": "🦆"
+            },
+            {
+              "mt": "qattus",
+              "en": "gato",
+              "icon": "🐈"
+            },
+            {
+              "mt": "xadin",
+              "en": "mono",
+              "icon": "🐒"
+            },
+            {
+              "mt": "barri",
+              "en": "toro",
+              "icon": "🐂"
+            },
+            {
+              "mt": "bodbod",
+              "en": "macho cabrío",
+              "icon": "🐐"
+            },
+            {
+              "mt": "muntun",
+              "en": "carnero",
+              "icon": "🐏"
+            },
+            {
+              "mt": "serduk",
+              "en": "gallo",
+              "icon": "🐓"
+            },
+            {
+              "mt": "żiemel",
+              "en": "caballo",
+              "icon": "🐴"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

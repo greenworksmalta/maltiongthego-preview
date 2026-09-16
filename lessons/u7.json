@@ -316,6 +316,35 @@
           "en": "North West",
           "icon": "↖️"
         }
+      ],
+      "exercises": [
+        {
+          "id": "ex4",
+          "type": "recall",
+          "max": 5,
+          "items": [
+            {
+              "mt": "Dur",
+              "en": "Turn (singular)"
+            },
+            {
+              "mt": "Suq",
+              "en": "Drive (singular)"
+            },
+            {
+              "mt": "Bejn",
+              "en": "Between"
+            },
+            {
+              "mt": "Hawn",
+              "en": "Here"
+            },
+            {
+              "mt": "Hemm",
+              "en": "There"
+            }
+          ]
+        }
       ]
     },
     {

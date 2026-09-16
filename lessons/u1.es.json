@@ -181,8 +181,96 @@
         },
         {
           "mt": "Naħdem bħala perit",
-          "en": "Trabajo como arquitecto",
+          "en": "Trabajo como arquitecto (hombre)",
           "icon": "💼"
+        },
+        {
+          "mt": "Naħdem bħala perita",
+          "en": "Trabajo como arquitecta (mujer)",
+          "icon": "💼"
+        }
+      ],
+      "dialogue": [
+        {
+          "mt": "Bonġu Mary! Kif int?",
+          "en": "¡Buenos días, Mary! ¿Cómo estás?"
+        },
+        {
+          "mt": "Tajba, grazzi. U int?",
+          "en": "Bien, gracias. ¿Y tú?"
+        },
+        {
+          "mt": "Tajjeb, grazzi. Skużani, x'kunjomok?",
+          "en": "Bien, gracias. Disculpa, ¿cuál es tu apellido?"
+        },
+        {
+          "mt": "Kunjomi Smith.",
+          "en": "Mi apellido es Smith."
+        },
+        {
+          "mt": "Int Maltija?",
+          "en": "¿Eres maltesa?"
+        },
+        {
+          "mt": "Le, jien barranija Ingliża.",
+          "en": "No, soy una extranjera inglesa."
+        },
+        {
+          "mt": "Kemm ilek hawn?",
+          "en": "¿Cuánto llevas aquí?"
+        },
+        {
+          "mt": "Ili Malta sena.",
+          "en": "Llevo un año en Malta."
+        },
+        {
+          "mt": "U fejn toqgħod, jekk jogħġbok?",
+          "en": "¿Y dónde vives, por favor?"
+        },
+        {
+          "mt": "Jien noqgħod Birkirkara. U int, x'taħdem?",
+          "en": "Vivo en Birkirkara. ¿Y tú, en qué trabajas?"
+        },
+        {
+          "mt": "Jien naħdem bħala perit. U int?",
+          "en": "Trabajo como arquitecto. ¿Y tú?"
+        },
+        {
+          "mt": "Jien naħdem bħala għalliema fl-iskola. Grazzi ħafna. Saħħa!",
+          "en": "Trabajo como profesora en la escuela. Muchas gracias. ¡Adiós!"
+        },
+        {
+          "mt": "Ċaw Mary!",
+          "en": "¡Chao, Mary!"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex4",
+          "type": "recall",
+          "max": 5,
+          "items": [
+            {
+              "mt": "Bonġu",
+              "en": "Buenos días"
+            },
+            {
+              "mt": "Kif int?",
+              "en": "¿Cómo estás?"
+            },
+            {
+              "mt": "Skużani",
+              "en": "Disculpa"
+            },
+            {
+              "mt": "Fejn toqgħod?",
+              "en": "¿Dónde vives?"
+            },
+            {
+              "mt": "Kemm ilek hawn?",
+              "en": "¿Cuánto llevas aquí?"
+            }
+          ]
         }
       ]
     },

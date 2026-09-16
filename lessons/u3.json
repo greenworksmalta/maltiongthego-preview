@@ -57,7 +57,7 @@
         },
         {
           "icon": "❓",
-          "mt": "Kif tgħid bil-Malti?",
+          "mt": "Kif tgħidha bil-Malti?",
           "en": "How do you say it in Maltese?"
         },
         {
@@ -97,6 +97,35 @@
         {
           "mt": "Mhux problema. Hekk hu...",
           "en": "No problem. Like this..."
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex4",
+          "type": "recall",
+          "max": 5,
+          "items": [
+            {
+              "mt": "Ma nifhimx",
+              "en": "I don't understand"
+            },
+            {
+              "mt": "Naħdem hawn",
+              "en": "I work here"
+            },
+            {
+              "mt": "Jien barrani",
+              "en": "I'm a foreigner"
+            },
+            {
+              "mt": "X'jiġifieri?",
+              "en": "What does it mean?"
+            },
+            {
+              "mt": "Tista' tgħinni?",
+              "en": "Can you help me?"
+            }
+          ]
         }
       ]
     },
@@ -163,11 +192,11 @@
           "examples": [
             {
               "mt": "Grazzi",
-              "en": "Thanks"
+              "en": "Thank you"
             },
             {
               "mt": "Grazzi ħafna",
-              "en": "Thanks a lot"
+              "en": "Thank you very much"
             },
             {
               "mt": "Skużani, tista' tgħinni?",
@@ -222,7 +251,7 @@
             {
               "icon": "🔁",
               "mt": "Tista' tirrepeti?",
-              "en": "Can you repeat?"
+              "en": "Can you repeat that?"
             },
             {
               "icon": "✍️",
@@ -292,7 +321,7 @@
             },
             {
               "icon": "❓",
-              "mt": "Kif tgħid bil-Malti?",
+              "mt": "Kif tgħidha bil-Malti?",
               "en": "How do you say it in Maltese?"
             },
             {

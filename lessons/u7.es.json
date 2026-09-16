@@ -309,6 +309,35 @@
           "mt": "Majjistral",
           "en": "Noroeste"
         }
+      ],
+      "exercises": [
+        {
+          "id": "ex4",
+          "type": "recall",
+          "max": 5,
+          "items": [
+            {
+              "mt": "Dur",
+              "en": "Gira (singular)"
+            },
+            {
+              "mt": "Suq",
+              "en": "Maneja (singular)"
+            },
+            {
+              "mt": "Bejn",
+              "en": "Entre"
+            },
+            {
+              "mt": "Hawn",
+              "en": "Aquí"
+            },
+            {
+              "mt": "Hemm",
+              "en": "Allí"
+            }
+          ]
+        }
       ]
     },
     {

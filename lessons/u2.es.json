@@ -267,6 +267,35 @@
           "mt": "L-għaxar",
           "en": "Décimo"
         }
+      ],
+      "exercises": [
+        {
+          "id": "ex4",
+          "type": "recall",
+          "max": 5,
+          "items": [
+            {
+              "mt": "tnax",
+              "en": "doce"
+            },
+            {
+              "mt": "ħdax",
+              "en": "once"
+            },
+            {
+              "mt": "sitta",
+              "en": "seis"
+            },
+            {
+              "mt": "tnejn",
+              "en": "dos"
+            },
+            {
+              "mt": "ħamsa",
+              "en": "cinco"
+            }
+          ]
+        }
       ]
     },
     {

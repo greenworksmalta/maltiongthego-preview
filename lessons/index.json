@@ -160,13 +160,13 @@
   },
   {
    "id": "u10",
-   "module": "Home, Work & the Past",
+   "module": "Home, Work & Grammar",
    "title": "At Work & At Home",
    "subtitle": "Jobs, your home, and what you did",
    "icon": "💼",
    "titleEs": "En el Trabajo y en Casa",
    "subtitleEs": "Trabajos, tu casa y lo que hiciste",
-   "moduleEs": "Casa, Trabajo y el Pasado",
+   "moduleEs": "Casa, Trabajo y Gramática",
    "languages": [
     "en",
     "es"
@@ -174,12 +174,30 @@
   },
   {
    "id": "u11",
-   "module": "Home, Work & the Past",
-   "title": "One or Many",
-   "subtitle": "Plurals, your home and animals",
+   "module": "Home, Work & Grammar",
+   "title": "Plurals, House & Animals",
+   "subtitle": "Your house inside and out, plurals and counting rules",
    "icon": "🔢",
+   "titleEs": "Plurales, Casa y Animales",
+   "subtitleEs": "Tu casa por dentro y por fuera, plurales y reglas para contar",
+   "moduleEs": "Casa, Trabajo y Gramática",
    "languages": [
-    "en"
+    "en",
+    "es"
+   ]
+  },
+  {
+   "id": "u12",
+   "module": "Home, Work & Grammar",
+   "moduleEs": "Casa, Trabajo y Gramática",
+   "title": "Old Malta",
+   "titleEs": "La Malta Antigua",
+   "subtitle": "Old shops, old ways of getting around, and talking about the past",
+   "subtitleEs": "Tiendas antiguas, transporte de antes y cómo hablar del pasado",
+   "icon": "🏺",
+   "languages": [
+    "en",
+    "es"
    ],
    "dev": true
   }
@@ -189,6 +207,6 @@
   "First Words",
   "Everyday Malti",
   "Out & About",
-  "Home, Work & the Past"
+  "Home, Work & Grammar"
  ]
 }

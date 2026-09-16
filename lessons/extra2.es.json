@@ -29,6 +29,47 @@
         {"mt": "Tgħix il-Belt?", "en": "¿Vives en La Valeta?"},
         {"mt": "Le, ngħix f'raħal ħdejn il-baħar.", "en": "No, vivo en un pueblo cerca del mar."},
         {"mt": "Sabiħ! Malta gżira sabiħa.", "en": "¡Qué bien! Malta es una isla preciosa."}
+      ],
+      "exercises": [
+        {
+          "id": "ex1",
+          "type": "listen",
+          "max": 6,
+          "items": [
+            {"mt": "Għawdex", "en": "Gozo"},
+            {"mt": "Kemmuna", "en": "Comino"},
+            {"mt": "il-baħar", "en": "el mar"},
+            {"mt": "ix-xemx", "en": "el sol"},
+            {"mt": "il-knisja", "en": "la iglesia"},
+            {"mt": "il-festa", "en": "la fiesta del pueblo"}
+          ]
+        },
+        {
+          "id": "ex2",
+          "type": "match",
+          "title": "Match the pairs",
+          "leftField": "mt",
+          "rightField": "en",
+          "items": [
+            {"mt": "Malta", "en": "Malta"},
+            {"mt": "il-gżira", "en": "la isla"},
+            {"mt": "il-gżejjer", "en": "las islas"},
+            {"mt": "il-Belt", "en": "La Valeta (la Ciudad)"},
+            {"mt": "ir-raħal", "en": "el pueblo"},
+            {"mt": "il-pjazza", "en": "la plaza"}
+          ]
+        },
+        {
+          "id": "ex4",
+          "type": "recall",
+          "max": 4,
+          "items": [
+            {"mt": "Malta", "en": "Malta"},
+            {"mt": "Għawdex", "en": "Gozo"},
+            {"mt": "il-baħar", "en": "el mar"},
+            {"mt": "ix-xemx", "en": "el sol"}
+          ]
+        }
       ]
     },
     {
@@ -46,7 +87,7 @@
         {"mt": "Kinnie", "en": "el refresco de naranja amarga de Malta"},
         {"mt": "inbid", "en": "vino"},
         {"mt": "birra", "en": "cerveza"},
-        {"mt": "kafè", "en": "café"},
+        {"mt": "kafe", "en": "café"},
         {"mt": "platt Malti", "en": "un plato maltés"},
         {"mt": "bnin", "en": "delicioso"}
       ],
@@ -56,6 +97,47 @@
         {"mt": "Tal-irkotta jew tal-piżelli?", "en": "¿De ricotta o de guisantes?"},
         {"mt": "Wieħed minn kull wieħed!", "en": "¡Uno de cada!"},
         {"mt": "Prosit, dik għażla Maltija!", "en": "¡Bien, esa es una elección maltesa!"}
+      ],
+      "exercises": [
+        {
+          "id": "ex1",
+          "type": "listen",
+          "max": 6,
+          "items": [
+            {"mt": "ftira", "en": "pan maltés / pan plano gozitano"},
+            {"mt": "imqaret", "en": "pasteles fritos rellenos de dátiles"},
+            {"mt": "kannoli", "en": "canutillos rellenos de ricotta"},
+            {"mt": "ġelat", "en": "helado"},
+            {"mt": "Kinnie", "en": "el refresco de naranja amarga de Malta"},
+            {"mt": "bnin", "en": "delicioso"}
+          ]
+        },
+        {
+          "id": "ex2",
+          "type": "match",
+          "title": "Match the pairs",
+          "leftField": "mt",
+          "rightField": "en",
+          "items": [
+            {"mt": "pastizz", "en": "hojaldre con ricotta o guisantes"},
+            {"mt": "ħobż biż-żejt", "en": "pan con aceite, tomate y atún"},
+            {"mt": "inbid", "en": "vino"},
+            {"mt": "birra", "en": "cerveza"},
+            {"mt": "kafe", "en": "café"},
+            {"mt": "platt Malti", "en": "un plato maltés"}
+          ]
+        },
+        {
+          "id": "ex3",
+          "type": "build",
+          "max": 4,
+          "items": [
+            {"mt": "Żewġ pastizzi u Kinnie, jekk jogħġbok.", "en": "Dos pastizzi y un Kinnie, por favor."},
+            {"mt": "Tal-irkotta jew tal-piżelli?", "en": "¿De ricotta o de guisantes?"},
+            {"mt": "Wieħed minn kull wieħed!", "en": "¡Uno de cada!"},
+            {"mt": "Prosit, dik għażla Maltija!", "en": "¡Bien, esa es una elección maltesa!"}
+          ]
+        }
       ]
     },
     {
@@ -68,21 +150,49 @@
         {"mt": "Isma'", "en": "escucha / oye"},
         {"mt": "Ajma", "en": "Ay"},
         {"mt": "Ħanini", "en": "cariño / querido (a un hombre)"},
-        {"mt": "Ħanina", "en": "cariño / querida (a una mujer)"},
         {"mt": "Iva mela", "en": "sí, claro"},
         {"mt": "Le le", "en": "no no"},
         {"mt": "Mhux hekk?", "en": "¿verdad? / ¿no?"},
         {"mt": "Tassew?", "en": "¿en serio?"},
         {"mt": "Prosit", "en": "bien hecho"},
         {"mt": "Sabiħ", "en": "precioso / bonito"},
-        {"mt": "Mela hekk", "en": "eso es / exacto"}
+        {"mt": "Hekk hu", "en": "eso es / exacto"}
       ],
       "dialogue": [
         {"mt": "Isma', ġej il-festa llejla?", "en": "Oye, ¿vienes a la fiesta esta noche?"},
         {"mt": "Mela! Ma nitlifhiex.", "en": "¡Claro! No me la pierdo."},
         {"mt": "Ajma, qed tagħmel ħafna sħana.", "en": "Ay, hace muchísimo calor."},
-        {"mt": "Iva, imma l-logħob tan-nar isbaħ billejl.", "en": "Sí, pero los fuegos artificiales son más bonitos de noche."},
-        {"mt": "Mela hekk, ħanini!", "en": "¡Eso es, cariño!"}
+        {"mt": "Iva, imma l-logħob tan-nar isbaħ bil-lejl.", "en": "Sí, pero los fuegos artificiales son más bonitos de noche."},
+        {"mt": "Hekk hu, qalbi!", "en": "¡Eso es, cariño!"}
+      ],
+      "exercises": [
+        {
+          "id": "ex1",
+          "type": "listen",
+          "max": 6,
+          "items": [
+            {"mt": "Isma'", "en": "escucha / oye"},
+            {"mt": "Ajma", "en": "Ay"},
+            {"mt": "Tassew?", "en": "¿en serio?"},
+            {"mt": "Prosit", "en": "bien hecho"},
+            {"mt": "Sabiħ", "en": "precioso / bonito"},
+            {"mt": "Le le", "en": "no no"}
+          ]
+        },
+        {
+          "id": "ex2",
+          "type": "match",
+          "title": "Match the pairs",
+          "leftField": "mt",
+          "rightField": "en",
+          "items": [
+            {"mt": "Mela", "en": "pues / claro / por supuesto (¡la palabra más maltesa!)"},
+            {"mt": "Iva mela", "en": "sí, claro"},
+            {"mt": "Hekk hu", "en": "eso es / exacto"},
+            {"mt": "Mhux hekk?", "en": "¿verdad? / ¿no?"},
+            {"mt": "Ħanini", "en": "cariño / querido (a un hombre)"}
+          ]
+        }
       ]
     },
     {
@@ -121,7 +231,7 @@
             {"mt": "Mela!", "en": "¡Claro! / ¡Por supuesto!"},
             {"mt": "Iva mela", "en": "Sí, claro"},
             {"mt": "Mela ejja", "en": "Venga, vamos"},
-            {"mt": "Mela hekk", "en": "Eso es / exacto"}
+            {"mt": "Hekk hu", "en": "Eso es / exacto"}
           ]
         },
         {
@@ -184,7 +294,7 @@
             {"icon": "🥤", "mt": "Kinnie", "en": "refresco de naranja amarga"},
             {"icon": "🍷", "mt": "inbid", "en": "vino"},
             {"icon": "🍺", "mt": "birra", "en": "cerveza"},
-            {"icon": "☕", "mt": "kafè", "en": "café"},
+            {"icon": "☕", "mt": "kafe", "en": "café"},
             {"icon": "😋", "mt": "bnin", "en": "delicioso"}
           ]
         },
@@ -196,7 +306,6 @@
             {"icon": "👂", "mt": "Isma'", "en": "escucha / oye"},
             {"icon": "😣", "mt": "Ajma", "en": "Ay"},
             {"icon": "💙", "mt": "Ħanini", "en": "cariño (a un hombre)"},
-            {"icon": "💗", "mt": "Ħanina", "en": "cariño (a una mujer)"},
             {"icon": "✅", "mt": "Iva mela", "en": "sí, claro"},
             {"icon": "🙅", "mt": "Le le", "en": "no no"},
             {"icon": "❓", "mt": "Mhux hekk?", "en": "¿verdad? / ¿no?"},

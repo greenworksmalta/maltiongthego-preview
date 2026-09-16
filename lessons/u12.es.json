@@ -1,0 +1,668 @@
+{
+  "id": "u12",
+  "title": "La Malta Antigua",
+  "subtitle": "Tiendas antiguas, transporte de antes y cómo hablar del pasado",
+  "lang": "es",
+  "sections": [
+    {
+      "id": "shops12",
+      "icon": "🏪",
+      "title": "Ħwienet antiki",
+      "subtitle": "Tiendas antiguas y los oficios que había detrás",
+      "intro": "Cada pueblo tenía estas tiendas. Casi todos los oficios han desaparecido, pero las palabras siguen en carteles y nombres de calles.",
+      "vocab": [
+        {
+          "mt": "il-barbier",
+          "en": "el barbero",
+          "icon": "💈",
+          "note": "También afeitaba a los clientes, y la tienda era donde corrían las noticias del pueblo."
+        },
+        {
+          "mt": "il-furnar",
+          "en": "el panadero",
+          "icon": "🥖",
+          "note": "Las familias traían su propia masa para que se la hornearan."
+        },
+        {
+          "mt": "il-ħajjat",
+          "en": "el sastre",
+          "icon": "🧵",
+          "note": "La ropa se remendaba y se arreglaba, no se reemplazaba."
+        },
+        {
+          "mt": "l-iskarpan",
+          "en": "el zapatero",
+          "icon": "👞",
+          "note": "Reparaba zapatos hasta que llegó el calzado barato de fábrica."
+        },
+        {
+          "mt": "il-ħaddied",
+          "en": "el herrero",
+          "icon": "🔨",
+          "note": "Trabajaba el hierro para herramientas y cosas de casa."
+        },
+        {
+          "mt": "il-ħanut tal-merċa",
+          "en": "la tienda de comestibles",
+          "icon": "🛒",
+          "note": "Vendía a granel, pesado en el momento, no en paquetes."
+        },
+        {
+          "mt": "il-ħanut tal-ħelu",
+          "en": "la tienda de dulces",
+          "icon": "🍬",
+          "note": "Pequeña, familiar, y adorada por los niños."
+        },
+        {
+          "mt": "il-ħanut tal-gazzetti",
+          "en": "el quiosco",
+          "icon": "📰",
+          "note": "Periódicos y revistas, locales y extranjeros."
+        },
+        {
+          "mt": "il-ħanut tat-te",
+          "en": "la casa de té",
+          "icon": "☕",
+          "note": "Un sitio para sentarse, charlar y beber; más social que comercial."
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex1",
+          "type": "listen",
+          "max": 6,
+          "items": [
+            {
+              "mt": "il-barbier",
+              "en": "el barbero"
+            },
+            {
+              "mt": "il-furnar",
+              "en": "el panadero"
+            },
+            {
+              "mt": "il-ħajjat",
+              "en": "el sastre"
+            },
+            {
+              "mt": "l-iskarpan",
+              "en": "el zapatero"
+            },
+            {
+              "mt": "il-ħaddied",
+              "en": "el herrero"
+            },
+            {
+              "mt": "il-ħanut tal-merċa",
+              "en": "la tienda de comestibles"
+            }
+          ]
+        },
+        {
+          "id": "ex2",
+          "type": "match",
+          "title": "Match the pairs",
+          "leftField": "mt",
+          "rightField": "en",
+          "items": [
+            {
+              "mt": "il-barbier",
+              "en": "el barbero"
+            },
+            {
+              "mt": "il-furnar",
+              "en": "el panadero"
+            },
+            {
+              "mt": "il-ħajjat",
+              "en": "el sastre"
+            },
+            {
+              "mt": "l-iskarpan",
+              "en": "el zapatero"
+            },
+            {
+              "mt": "il-ħaddied",
+              "en": "el herrero"
+            },
+            {
+              "mt": "il-ħanut tal-merċa",
+              "en": "la tienda de comestibles"
+            }
+          ]
+        },
+        {
+          "id": "ex4",
+          "type": "recall",
+          "max": 5,
+          "items": [
+            {
+              "mt": "il-barbier",
+              "en": "el barbero"
+            },
+            {
+              "mt": "il-furnar",
+              "en": "el panadero"
+            },
+            {
+              "mt": "il-ħajjat",
+              "en": "el sastre"
+            },
+            {
+              "mt": "l-iskarpan",
+              "en": "el zapatero"
+            },
+            {
+              "mt": "il-ħaddied",
+              "en": "el herrero"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "transport12",
+      "icon": "🚊",
+      "title": "Mezzi ta' trasport",
+      "subtitle": "Cómo se movía Malta, antes y ahora",
+      "intro": "De una mula y dos ruedas de madera a los autobuses y ferris de hoy.",
+      "vocab": [
+        {
+          "mt": "il-kaless",
+          "en": "la calesa",
+          "icon": "🐴",
+          "note": "Dos ruedas grandes de madera y una mula o un caballo. El conductor iba a pie al lado."
+        },
+        {
+          "mt": "il-karozzin",
+          "en": "el carruaje de caballos",
+          "icon": "🎠",
+          "note": "Desde 1856. Cerrado y con muelles, y esta vez el conductor podía ir sentado."
+        },
+        {
+          "mt": "l-omnibus",
+          "en": "el ómnibus",
+          "icon": "🚋",
+          "note": "El primer transporte público de Malta: tres caballos, veintidós pasajeros."
+        },
+        {
+          "mt": "il-ferrovija",
+          "en": "el ferrocarril",
+          "icon": "🚂",
+          "note": "De La Valeta a Mdina, desde 1883 hasta que cerró en 1931."
+        },
+        {
+          "mt": "it-tramm",
+          "en": "el tranvía",
+          "icon": "🚊",
+          "note": "Desde 1905, con piso superior e inferior."
+        },
+        {
+          "mt": "il-karozza tal-linja",
+          "en": "el autobús",
+          "icon": "🚌",
+          "note": "Los dueños pintaban sus propios autobuses; el servicio actual empezó en 2014."
+        },
+        {
+          "mt": "il-vapur ta' Għawdex",
+          "en": "el ferry de Gozo",
+          "icon": "⛴️",
+          "note": "Gozo Channel opera la travesía desde 1979."
+        },
+        {
+          "mt": "il-lanċa tal-passiġġieri",
+          "en": "la lancha de pasajeros",
+          "icon": "🚤",
+          "note": "Pequeñas embarcaciones siguen cruzando el puerto con pasajeros."
+        },
+        {
+          "mt": "il-luzzu",
+          "en": "una barca de pesca tradicional maltesa",
+          "icon": "🎣",
+          "note": "La barca de pesca con un ojo pintado en la proa."
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex1",
+          "type": "listen",
+          "max": 6,
+          "items": [
+            {
+              "mt": "il-kaless",
+              "en": "la calesa"
+            },
+            {
+              "mt": "il-karozzin",
+              "en": "el carruaje de caballos"
+            },
+            {
+              "mt": "l-omnibus",
+              "en": "el ómnibus"
+            },
+            {
+              "mt": "il-ferrovija",
+              "en": "el ferrocarril"
+            },
+            {
+              "mt": "it-tramm",
+              "en": "el tranvía"
+            },
+            {
+              "mt": "il-karozza tal-linja",
+              "en": "el autobús"
+            }
+          ]
+        },
+        {
+          "id": "ex2",
+          "type": "match",
+          "title": "Match the pairs",
+          "leftField": "mt",
+          "rightField": "en",
+          "items": [
+            {
+              "mt": "il-ferrovija",
+              "en": "el ferrocarril"
+            },
+            {
+              "mt": "it-tramm",
+              "en": "el tranvía"
+            },
+            {
+              "mt": "il-karozza tal-linja",
+              "en": "el autobús"
+            },
+            {
+              "mt": "il-vapur ta' Għawdex",
+              "en": "el ferry de Gozo"
+            },
+            {
+              "mt": "il-lanċa tal-passiġġieri",
+              "en": "la lancha de pasajeros"
+            },
+            {
+              "mt": "il-luzzu",
+              "en": "una barca de pesca tradicional maltesa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nannu12",
+      "icon": "👴",
+      "title": "Nitkellmu man-nannu",
+      "subtitle": "Diálogo con un abuelo sobre cómo eran las cosas",
+      "intro": "Mary pregunta a su abuelo por la Malta antigua. Fíjate en kont: aparece en casi todas las frases.",
+      "dialogue": [
+        {
+          "mt": "Nannu, kif kont tmur għax-xogħol meta kont żgħir?",
+          "en": "Abuelo, ¿cómo ibas al trabajo cuando eras joven?"
+        },
+        {
+          "mt": "Kont immur bit-tramm jew bil-karozza tal-linja.",
+          "en": "Iba en tranvía o en autobús."
+        },
+        {
+          "mt": "U l-ferrovija kont tużaha?",
+          "en": "¿Y el ferrocarril, lo usabas?"
+        },
+        {
+          "mt": "Iva, kont nuża l-ferrovija ukoll.",
+          "en": "Sí, también usaba el ferrocarril."
+        },
+        {
+          "mt": "Fejn kont taħdem?",
+          "en": "¿Dónde trabajabas?"
+        },
+        {
+          "mt": "Jien kont ħaddied.",
+          "en": "Yo era herrero."
+        },
+        {
+          "mt": "Kont issib ħwienet tal-ħelu?",
+          "en": "¿Había alguna tienda de dulces?"
+        },
+        {
+          "mt": "Iva, kont niekol ħelu kuljum!",
+          "en": "¡Sí, comía dulces todos los días!"
+        },
+        {
+          "mt": "Kemm hu interessanti nisma' fuq il-passat, nannu!",
+          "en": "¡Qué interesante es oír hablar del pasado, abuelo!"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex3",
+          "type": "build",
+          "max": 4,
+          "items": [
+            {
+              "mt": "Kont immur bit-tramm jew bil-karozza tal-linja.",
+              "en": "Iba en tranvía o en autobús."
+            },
+            {
+              "mt": "Fejn kont taħdem?",
+              "en": "¿Dónde trabajabas?"
+            },
+            {
+              "mt": "Jien kont ħaddied.",
+              "en": "Yo era herrero."
+            },
+            {
+              "mt": "Kemm hu interessanti nisma' fuq il-passat, nannu!",
+              "en": "¡Qué interesante es oír hablar del pasado, abuelo!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kont12",
+      "icon": "🕰️",
+      "title": "Gramática · Kont",
+      "subtitle": "El verbo kien, y cómo kont forma 'solía'",
+      "intro": "Ya conoces las terminaciones del pasado por kiteb y ħadem. El verbo kien lleva las mismas.",
+      "rules": [
+        {
+          "id": "kien",
+          "title": "kien (él era): las mismas terminaciones que ya conoces",
+          "rows": [
+            {
+              "person": "Jien (I)",
+              "ending": "-t",
+              "form": "kont",
+              "en": "yo era",
+              "say": "Jien kont"
+            },
+            {
+              "person": "Int (you)",
+              "ending": "-t",
+              "form": "kont",
+              "en": "tú eras",
+              "say": "Int kont"
+            },
+            {
+              "person": "Hu (he)",
+              "ending": "-",
+              "form": "kien",
+              "en": "él era",
+              "say": "Hu kien"
+            },
+            {
+              "person": "Hi (she)",
+              "ending": "-et",
+              "form": "kienet",
+              "en": "ella era",
+              "say": "Hi kienet"
+            },
+            {
+              "person": "Aħna (we)",
+              "ending": "-na",
+              "form": "konna",
+              "en": "nosotros éramos",
+              "say": "Aħna konna"
+            },
+            {
+              "person": "Intom (you)",
+              "ending": "-tu",
+              "form": "kontu",
+              "en": "vosotros erais",
+              "say": "Intom kontu"
+            },
+            {
+              "person": "Huma (they)",
+              "ending": "-u",
+              "form": "kienu",
+              "en": "ellos eran",
+              "say": "Huma kienu"
+            }
+          ]
+        }
+      ],
+      "facts": [
+        "kont + un verbo = 'solía'. Kont immur = solía ir. Kont niekol = solía comer.",
+        "kont + un sustantivo = 'era'. Jien kont ħaddied = yo era herrero.",
+        "El plural de ħanut es ħwienet, una de las formas irregulares de la Unidad 11."
+      ]
+    },
+    {
+      "id": "grammar12",
+      "icon": "📖",
+      "title": "Gramática · Usar kont",
+      "subtitle": "Il-grammatika: decir que no eras, y preguntar por el pasado",
+      "intro": "Tres cosas que hacen útil a kont: decir que no eras, decir que había, y preguntarle a alguien por su pasado.",
+      "rules": [
+        {
+          "id": "negative-kont",
+          "title": "Decir que no eras: el cerco ma...x",
+          "explanation": "Ya viste este cerco con otros verbos en la Unidad 10. Kien lo lleva igual: ma delante y x al final. Kont (yo era) pasa a ma kontx (yo no era).",
+          "examples": [
+            {
+              "mt": "Ma kontx naħdem bħala ħaddied",
+              "en": "No trabajaba como herrero"
+            },
+            {
+              "mt": "Ma kontx immur bit-tramm",
+              "en": "No solía ir en tranvía"
+            },
+            {
+              "mt": "Ma kienx hemm ferrovija",
+              "en": "No había ferrocarril"
+            },
+            {
+              "mt": "Ma konniex id-dar",
+              "en": "No estábamos en casa"
+            }
+          ]
+        },
+        {
+          "id": "kien-hemm",
+          "title": "Kien hemm: había",
+          "explanation": "Kien hemm sirve para había en singular y en plural. No cambia. Fíjate en el nombre del lugar: fil-belt, con b minúscula, es en la ciudad, cualquier ciudad. il-Belt con B mayúscula es La Valeta y no lleva preposición.",
+          "examples": [
+            {
+              "mt": "Kien hemm ħanut tal-ħelu f'kull raħal",
+              "en": "Había una tienda de dulces en cada pueblo"
+            },
+            {
+              "mt": "Kien hemm ħafna ħwienet fil-belt",
+              "en": "Había muchas tiendas en la ciudad"
+            },
+            {
+              "mt": "Kien hemm ħafna ħwienet il-Belt Valletta",
+              "en": "Había muchas tiendas en La Valeta"
+            },
+            {
+              "mt": "Ma kienx hemm karozzi",
+              "en": "No había coches"
+            }
+          ]
+        },
+        {
+          "id": "asking-past",
+          "title": "Preguntar por el pasado",
+          "explanation": "Pon una palabra interrogativa delante de kont y puedes preguntarle a cualquiera por su pasado.",
+          "letters": [
+            "fejn, dónde",
+            "kif, cómo",
+            "meta, cuándo",
+            "x', qué"
+          ],
+          "examples": [
+            {
+              "mt": "Fejn kont taħdem?",
+              "en": "¿Dónde trabajabas?"
+            },
+            {
+              "mt": "Kif kont tmur għax-xogħol?",
+              "en": "¿Cómo ibas al trabajo?"
+            },
+            {
+              "mt": "X'kont taħdem?",
+              "en": "¿En qué trabajabas?"
+            },
+            {
+              "mt": "Meta kont hemm?",
+              "en": "¿Cuándo estuviste allí?"
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "g12build",
+          "type": "build",
+          "max": 4,
+          "title": "Construye la frase",
+          "items": [
+            {
+              "mt": "Ma kontx naħdem bħala ħaddied",
+              "en": "No trabajaba como herrero"
+            },
+            {
+              "mt": "Kien hemm ħanut tal-ħelu f'kull raħal",
+              "en": "Había una tienda de dulces en cada pueblo"
+            },
+            {
+              "mt": "Fejn kont taħdem?",
+              "en": "¿Dónde trabajabas?"
+            },
+            {
+              "mt": "Ma kienx hemm ferrovija",
+              "en": "No había ferrocarril"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "icon": "📖",
+      "title": "Vocabulario",
+      "subtitle": "Todo lo de esta unidad",
+      "groups": [
+        {
+          "title": "Tiendas antiguas",
+          "items": [
+            {
+              "mt": "il-barbier",
+              "en": "el barbero",
+              "icon": "💈",
+              "note": "También afeitaba a los clientes, y la tienda era donde corrían las noticias del pueblo."
+            },
+            {
+              "mt": "il-furnar",
+              "en": "el panadero",
+              "icon": "🥖",
+              "note": "Las familias traían su propia masa para que se la hornearan."
+            },
+            {
+              "mt": "il-ħajjat",
+              "en": "el sastre",
+              "icon": "🧵",
+              "note": "La ropa se remendaba y se arreglaba, no se reemplazaba."
+            },
+            {
+              "mt": "l-iskarpan",
+              "en": "el zapatero",
+              "icon": "👞",
+              "note": "Reparaba zapatos hasta que llegó el calzado barato de fábrica."
+            },
+            {
+              "mt": "il-ħaddied",
+              "en": "el herrero",
+              "icon": "🔨",
+              "note": "Trabajaba el hierro para herramientas y cosas de casa."
+            },
+            {
+              "mt": "il-ħanut tal-merċa",
+              "en": "la tienda de comestibles",
+              "icon": "🛒",
+              "note": "Vendía a granel, pesado en el momento, no en paquetes."
+            },
+            {
+              "mt": "il-ħanut tal-ħelu",
+              "en": "la tienda de dulces",
+              "icon": "🍬",
+              "note": "Pequeña, familiar, y adorada por los niños."
+            },
+            {
+              "mt": "il-ħanut tal-gazzetti",
+              "en": "el quiosco",
+              "icon": "📰",
+              "note": "Periódicos y revistas, locales y extranjeros."
+            },
+            {
+              "mt": "il-ħanut tat-te",
+              "en": "la casa de té",
+              "icon": "☕",
+              "note": "Un sitio para sentarse, charlar y beber; más social que comercial."
+            }
+          ]
+        },
+        {
+          "title": "Transporte",
+          "items": [
+            {
+              "mt": "il-kaless",
+              "en": "la calesa",
+              "icon": "🐴",
+              "note": "Dos ruedas grandes de madera y una mula o un caballo. El conductor iba a pie al lado."
+            },
+            {
+              "mt": "il-karozzin",
+              "en": "el carruaje de caballos",
+              "icon": "🎠",
+              "note": "Desde 1856. Cerrado y con muelles, y esta vez el conductor podía ir sentado."
+            },
+            {
+              "mt": "l-omnibus",
+              "en": "el ómnibus",
+              "icon": "🚋",
+              "note": "El primer transporte público de Malta: tres caballos, veintidós pasajeros."
+            },
+            {
+              "mt": "il-ferrovija",
+              "en": "el ferrocarril",
+              "icon": "🚂",
+              "note": "De La Valeta a Mdina, desde 1883 hasta que cerró en 1931."
+            },
+            {
+              "mt": "it-tramm",
+              "en": "el tranvía",
+              "icon": "🚊",
+              "note": "Desde 1905, con piso superior e inferior."
+            },
+            {
+              "mt": "il-karozza tal-linja",
+              "en": "el autobús",
+              "icon": "🚌",
+              "note": "Los dueños pintaban sus propios autobuses; el servicio actual empezó en 2014."
+            },
+            {
+              "mt": "il-vapur ta' Għawdex",
+              "en": "el ferry de Gozo",
+              "icon": "⛴️",
+              "note": "Gozo Channel opera la travesía desde 1979."
+            },
+            {
+              "mt": "il-lanċa tal-passiġġieri",
+              "en": "la lancha de pasajeros",
+              "icon": "🚤",
+              "note": "Pequeñas embarcaciones siguen cruzando el puerto con pasajeros."
+            },
+            {
+              "mt": "il-luzzu",
+              "en": "una barca de pesca tradicional maltesa",
+              "icon": "🎣",
+              "note": "La barca de pesca con un ojo pintado en la proa."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

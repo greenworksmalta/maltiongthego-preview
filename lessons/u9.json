@@ -137,6 +137,33 @@
               "en": "milk"
             }
           ]
+        },
+        {
+          "id": "ex4",
+          "type": "recall",
+          "max": 5,
+          "items": [
+            {
+              "mt": "suq",
+              "en": "market"
+            },
+            {
+              "mt": "ħut",
+              "en": "fish"
+            },
+            {
+              "mt": "bajd",
+              "en": "eggs"
+            },
+            {
+              "mt": "forn",
+              "en": "bakery"
+            },
+            {
+              "mt": "kilo",
+              "en": "a kilo"
+            }
+          ]
         }
       ]
     },
@@ -236,7 +263,7 @@
       "vocab": [
         {
           "mt": "Kemm jiswa?",
-          "en": "How much is it?",
+          "en": "How much does it cost?",
           "icon": "💶"
         },
         {
@@ -246,12 +273,12 @@
         },
         {
           "mt": "Bil-flus",
-          "en": "In cash",
+          "en": "With cash",
           "icon": "💵"
         },
         {
           "mt": "Bil-karta tal-kreditu",
-          "en": "By card",
+          "en": "By credit card",
           "icon": "💳"
         },
         {
@@ -511,7 +538,7 @@
           "items": [
             {
               "mt": "Kemm jiswa?",
-              "en": "How much is it?",
+              "en": "How much does it cost?",
               "icon": "💶"
             },
             {
@@ -521,12 +548,12 @@
             },
             {
               "mt": "Bil-flus",
-              "en": "In cash",
+              "en": "With cash",
               "icon": "💵"
             },
             {
               "mt": "Bil-karta tal-kreditu",
-              "en": "By card",
+              "en": "By credit card",
               "icon": "💳"
             },
             {

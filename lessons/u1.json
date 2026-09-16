@@ -61,12 +61,12 @@
         {
           "icon": "👋",
           "mt": "Ċaw",
-          "en": "Bye"
+          "en": "Bye (casual)"
         },
         {
           "icon": "🤝",
           "mt": "Għandi pjaċir",
-          "en": "Pleasure (nice to meet you)"
+          "en": "Pleased to meet you"
         },
         {
           "icon": "🙏",
@@ -181,7 +181,95 @@
         {
           "icon": "💼",
           "mt": "Naħdem bħala perit",
-          "en": "I work as an architect"
+          "en": "I work as an architect (male)"
+        },
+        {
+          "icon": "💼",
+          "mt": "Naħdem bħala perita",
+          "en": "I work as an architect (female)"
+        }
+      ],
+      "dialogue": [
+        {
+          "mt": "Bonġu Mary! Kif int?",
+          "en": "Good morning Mary! How are you?"
+        },
+        {
+          "mt": "Tajba, grazzi. U int?",
+          "en": "Well, thanks. And you?"
+        },
+        {
+          "mt": "Tajjeb, grazzi. Skużani, x'kunjomok?",
+          "en": "Well, thanks. Excuse me, what is your surname?"
+        },
+        {
+          "mt": "Kunjomi Smith.",
+          "en": "My surname is Smith."
+        },
+        {
+          "mt": "Int Maltija?",
+          "en": "Are you Maltese?"
+        },
+        {
+          "mt": "Le, jien barranija Ingliża.",
+          "en": "No, I am an English foreigner."
+        },
+        {
+          "mt": "Kemm ilek hawn?",
+          "en": "How long have you been here?"
+        },
+        {
+          "mt": "Ili Malta sena.",
+          "en": "I have been in Malta a year."
+        },
+        {
+          "mt": "U fejn toqgħod, jekk jogħġbok?",
+          "en": "And where do you live, please?"
+        },
+        {
+          "mt": "Jien noqgħod Birkirkara. U int, x'taħdem?",
+          "en": "I live in Birkirkara. And you, what do you do?"
+        },
+        {
+          "mt": "Jien naħdem bħala perit. U int?",
+          "en": "I work as an architect. And you?"
+        },
+        {
+          "mt": "Jien naħdem bħala għalliema fl-iskola. Grazzi ħafna. Saħħa!",
+          "en": "I work as a teacher at the school. Thanks a lot. Bye!"
+        },
+        {
+          "mt": "Ċaw Mary!",
+          "en": "Bye Mary!"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex4",
+          "type": "recall",
+          "max": 5,
+          "items": [
+            {
+              "mt": "Bonġu",
+              "en": "Good morning"
+            },
+            {
+              "mt": "Kif int?",
+              "en": "How are you?"
+            },
+            {
+              "mt": "Skużani",
+              "en": "Excuse me"
+            },
+            {
+              "mt": "Fejn toqgħod?",
+              "en": "Where do you live?"
+            },
+            {
+              "mt": "Kemm ilek hawn?",
+              "en": "How long have you been here?"
+            }
+          ]
         }
       ]
     },
@@ -1468,7 +1556,7 @@
             {
               "icon": "👋",
               "mt": "Ċaw",
-              "en": "Bye"
+              "en": "Bye (casual)"
             },
             {
               "icon": "🙏",

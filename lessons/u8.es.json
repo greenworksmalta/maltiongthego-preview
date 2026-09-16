@@ -45,7 +45,7 @@
       "intro": "Las bebidas que más vas a pedir. Toca cualquier palabra para escucharla.",
       "vocab": [
         {
-          "mt": "kafè",
+          "mt": "kafe",
           "en": "café",
           "icon": "☕"
         },
@@ -55,17 +55,17 @@
           "icon": "☕"
         },
         {
-          "mt": "tè",
+          "mt": "te",
           "en": "té",
           "icon": "🍵"
         },
         {
-          "mt": "kikkra kafè",
+          "mt": "kikkra kafe",
           "en": "una taza de café",
           "icon": "☕"
         },
         {
-          "mt": "kafè bil-ħalib",
+          "mt": "kafe bil-ħalib",
           "en": "café con leche",
           "icon": "☕"
         },
@@ -114,11 +114,11 @@
           "rightField": "en",
           "items": [
             {
-              "mt": "kafè",
+              "mt": "kafe",
               "en": "café"
             },
             {
-              "mt": "tè",
+              "mt": "te",
               "en": "té"
             },
             {
@@ -136,6 +136,33 @@
             {
               "mt": "birra",
               "en": "cerveza"
+            }
+          ]
+        },
+        {
+          "id": "ex4",
+          "type": "recall",
+          "max": 5,
+          "items": [
+            {
+              "mt": "te",
+              "en": "té"
+            },
+            {
+              "mt": "ilma",
+              "en": "agua"
+            },
+            {
+              "mt": "kafe",
+              "en": "café"
+            },
+            {
+              "mt": "birra",
+              "en": "cerveza"
+            },
+            {
+              "mt": "inbid",
+              "en": "vino"
             }
           ]
         }
@@ -328,7 +355,7 @@
           "explanation": "Para agregar algo, usa bil- (con). Sigue la misma regla 'Xemxin'/'Qamrin' que el artículo: antes de la mayoría de las letras se queda como bil- (bil-ħalib, bil-lumi), pero antes de una consonante 'Xemxin' se dobla (biz-zokkor, con azúcar).",
           "examples": [
             {
-              "mt": "kafè bil-ħalib",
+              "mt": "kafe bil-ħalib",
               "en": "café con leche"
             },
             {
@@ -352,10 +379,10 @@
           ],
           "items": [
             {
-              "word": "kafè ___ ħalib",
+              "word": "kafe ___ ħalib",
               "answer": "bil-",
               "en": "café con leche",
-              "mt": "kafè bil-ħalib"
+              "mt": "kafe bil-ħalib"
             },
             {
               "word": "ilma ___ lumi",
@@ -388,7 +415,7 @@
           "title": "Bebidas",
           "items": [
             {
-              "mt": "kafè",
+              "mt": "kafe",
               "en": "café",
               "icon": "☕"
             },
@@ -398,17 +425,17 @@
               "icon": "☕"
             },
             {
-              "mt": "tè",
+              "mt": "te",
               "en": "té",
               "icon": "🍵"
             },
             {
-              "mt": "kikkra kafè",
+              "mt": "kikkra kafe",
               "en": "una taza de café",
               "icon": "☕"
             },
             {
-              "mt": "kafè bil-ħalib",
+              "mt": "kafe bil-ħalib",
               "en": "café con leche",
               "icon": "☕"
             },

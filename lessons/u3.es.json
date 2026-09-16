@@ -57,7 +57,7 @@
           "icon": "🆘"
         },
         {
-          "mt": "Kif tgħid bil-Malti?",
+          "mt": "Kif tgħidha bil-Malti?",
           "en": "¿Cómo se dice en maltés?",
           "icon": "❓"
         },
@@ -98,6 +98,35 @@
         {
           "mt": "Mhux problema. Hekk hu...",
           "en": "Sin problema. Así es..."
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex4",
+          "type": "recall",
+          "max": 5,
+          "items": [
+            {
+              "mt": "Ma nifhimx",
+              "en": "No entiendo"
+            },
+            {
+              "mt": "Naħdem hawn",
+              "en": "Trabajo aquí"
+            },
+            {
+              "mt": "Jien barrani",
+              "en": "Soy extranjero"
+            },
+            {
+              "mt": "X'jiġifieri?",
+              "en": "¿Qué significa?"
+            },
+            {
+              "mt": "Tista' tgħinni?",
+              "en": "¿Puedes ayudarme?"
+            }
+          ]
         }
       ]
     },
@@ -287,7 +316,7 @@
             },
             {
               "icon": "❓",
-              "mt": "Kif tgħid bil-Malti?",
+              "mt": "Kif tgħidha bil-Malti?",
               "en": "¿Cómo se dice en maltés?"
             },
             {

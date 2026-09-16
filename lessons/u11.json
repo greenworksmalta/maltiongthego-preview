@@ -1,7 +1,7 @@
 {
   "id": "u11",
-  "title": "One or Many",
-  "subtitle": "Id-dar, l-affarijiet u l-annimali: making more than one",
+  "title": "Plurals, House & Animals",
+  "subtitle": "Your house inside and out, plurals and counting rules",
   "sections": [
     {
       "id": "flat",
@@ -47,8 +47,8 @@
           "en": "Do we take the keys today?"
         },
         {
-          "mt": "Iva, dawn iċ-ċwievet.",
-          "en": "Yes, these are the keys."
+          "mt": "Iva, hawn huma ċ-ċwievet.",
+          "en": "Yes, here are the keys."
         }
       ]
     },
@@ -211,7 +211,7 @@
             },
             {
               "en": "entrance hall",
-              "icon": "🚪",
+              "icon": "🚶",
               "forms": [
                 {
                   "mt": "intrata",
@@ -225,7 +225,7 @@
             },
             {
               "en": "bathroom",
-              "icon": "🛁",
+              "icon": "🚻",
               "forms": [
                 {
                   "mt": "kamra tal-banju",
@@ -253,7 +253,7 @@
             },
             {
               "en": "bedroom",
-              "icon": "🛏️",
+              "icon": "💤",
               "forms": [
                 {
                   "mt": "kamra tas-sodda",
@@ -281,7 +281,7 @@
             },
             {
               "en": "kitchen",
-              "icon": "🍳",
+              "icon": "🥘",
               "forms": [
                 {
                   "mt": "kċina",
@@ -323,7 +323,7 @@
             },
             {
               "en": "living room",
-              "icon": "🛋️",
+              "icon": "📺",
               "forms": [
                 {
                   "mt": "salott",
@@ -439,7 +439,7 @@
             },
             {
               "en": "stool",
-              "icon": "🪑",
+              "icon": "💺",
               "forms": [
                 {
                   "mt": "banketta",
@@ -980,7 +980,7 @@
                   "label": "f"
                 },
                 {
-                  "mt": "ċrievi",
+                  "mt": "ċriev",
                   "label": "pl"
                 }
               ]
@@ -1106,7 +1106,7 @@
                   "label": "f"
                 },
                 {
-                  "mt": "mtaten / nagħaġ",
+                  "mt": "imtaten / nagħaġ",
                   "label": "pl"
                 }
               ]
@@ -1154,9 +1154,9 @@
     {
       "id": "plural11",
       "icon": "🔢",
-      "title": "Grammar",
+      "title": "Grammar · The Plural",
       "subtitle": "Il-plural: making more than one",
-      "intro": "Maltese has two ways of making a plural, and then one rule about counting that catches everybody out.",
+      "intro": "Maltese has two ways of making a plural, one rule about counting that catches everybody out, and one small rule about the letter i.",
       "facts": [
         "There is no single plural ending in Maltese. Which route a word takes is part of the word.",
         "The second route is the same machinery as the past tense you met last unit: the consonants hold still and the vowels move around them."
@@ -1168,28 +1168,28 @@
           "explanation": "The word stays recognisable and an ending is added, usually -i, -jiet or -s. Words Maltese borrowed from English or Italian nearly always go this way, so if a word looks familiar to you, this is the likely route.",
           "examples": [
             {
-              "mt": "siġġu",
-              "en": "chair, siġġijiet"
+              "mt": "siġġu / siġġijiet",
+              "en": "chair, chairs"
             },
             {
-              "mt": "garaxx",
-              "en": "garage, garaxxijiet"
+              "mt": "garaxx / garaxxijiet",
+              "en": "garage, garages"
             },
             {
-              "mt": "salott",
-              "en": "living room, salotti"
+              "mt": "salott / salotti",
+              "en": "living room, living rooms"
             },
             {
-              "mt": "pixxina",
-              "en": "swimming pool, pixxini"
+              "mt": "pixxina / pixxini",
+              "en": "swimming pool, swimming pools"
             },
             {
-              "mt": "kabord",
-              "en": "cupboard, kabords"
+              "mt": "kabord / kabords",
+              "en": "cupboard, cupboards"
             },
             {
-              "mt": "lift",
-              "en": "lift, liftijiet"
+              "mt": "lift / liftijiet",
+              "en": "lift, lifts"
             }
           ]
         },
@@ -1199,28 +1199,28 @@
           "explanation": "Here the ending is not the point. The consonants stay in order and the vowels between them change, so the plural can look like a different word. This is the older Maltese layer, and it is the same pattern that turns kiteb into ktibt in the past tense.",
           "examples": [
             {
-              "mt": "kelb",
-              "en": "dog, klieb"
+              "mt": "kelb / klieb",
+              "en": "dog, dogs"
             },
             {
-              "mt": "dar",
-              "en": "house, djar"
+              "mt": "dar / djar",
+              "en": "house, houses"
             },
             {
-              "mt": "forn",
-              "en": "oven, fran"
+              "mt": "forn / fran",
+              "en": "oven, ovens"
             },
             {
-              "mt": "tieqa",
-              "en": "window, twieqi"
+              "mt": "tieqa / twieqi",
+              "en": "window, windows"
             },
             {
-              "mt": "kamra",
-              "en": "room, kmamar"
+              "mt": "kamra / kmamar",
+              "en": "room, rooms"
             },
             {
-              "mt": "qattus",
-              "en": "cat, qtates"
+              "mt": "qattus / qtates",
+              "en": "cat, cats"
             }
           ]
         },
@@ -1259,13 +1259,36 @@
               "en": "twenty windows"
             }
           ]
+        },
+        {
+          "id": "pl-helping-i",
+          "title": "The helping i-",
+          "explanation": "A few plurals begin with two consonants and carry a helping i- in front: imwejjed, imtaten. Learn them with the i-, because that is the word. The i- holds when the word before it ends in a consonant, and drops when the word before it ends in a vowel. You have met this rule already: iċ-ċurkett becomes nixtri ċ-ċurkett for exactly the same reason.",
+          "letters": [
+            "after a consonant, the i- stays",
+            "after a vowel, the i- drops"
+          ],
+          "examples": [
+            {
+              "mt": "imwejjed",
+              "en": "tables, the form to learn"
+            },
+            {
+              "mt": "żewġt imwejjed",
+              "en": "two tables, żewġ takes a t and the i- stays"
+            },
+            {
+              "mt": "ħafna mwejjed",
+              "en": "many tables, ħafna ends in a vowel so the i- drops"
+            }
+          ]
         }
       ],
       "exercises": [
         {
           "id": "u11-route",
           "type": "bucket",
-          "batch": 6,
+          "batch": 8,
           "title": "Which route?",
           "instructions": "Sort each plural: did the word keep its shape and take an ending, or was it rebuilt from the inside?",
           "choices": [
@@ -1459,12 +1482,12 @@
             {
               "mt": "intrata",
               "en": "entrance hall",
-              "icon": "🚪"
+              "icon": "🚶"
             },
             {
               "mt": "kamra tal-banju",
               "en": "bathroom",
-              "icon": "🛁"
+              "icon": "🚻"
             },
             {
               "mt": "kamra tal-ikel",
@@ -1474,7 +1497,7 @@
             {
               "mt": "kamra tas-sodda",
               "en": "bedroom",
-              "icon": "🛏️"
+              "icon": "💤"
             },
             {
               "mt": "kantina",
@@ -1484,7 +1507,7 @@
             {
               "mt": "kċina",
               "en": "kitchen",
-              "icon": "🍳"
+              "icon": "🥘"
             },
             {
               "mt": "lift",
@@ -1499,7 +1522,7 @@
             {
               "mt": "salott",
               "en": "living room",
-              "icon": "🛋️"
+              "icon": "📺"
             },
             {
               "mt": "taraġ",
@@ -1540,7 +1563,7 @@
             {
               "mt": "banketta",
               "en": "stool",
-              "icon": "🪑"
+              "icon": "💺"
             },
             {
               "mt": "dawl",
@@ -1737,7 +1760,7 @@
               "icon": "🐻"
             },
             {
-              "mt": "papru",
+              "mt": "papra",
               "en": "duck",
               "icon": "🦆"
             },

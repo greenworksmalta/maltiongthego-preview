@@ -16,11 +16,11 @@
 //   - VERSION below                    (in-app footer + ?v= cache buster)
 //   - <script src="app.js?v=..."> tag in index.html
 //   - CACHE_NAME in sw.js              (forces SW reinstall)
-const VERSION = "1.0.9";
+const VERSION = "1.2.0";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "dev0731a";
+const BUILD = "dev0916032100";
 // Bump ONLY when audio clips are regenerated (re-voiced). Audio filenames are
 // sha1(mt) so a re-voiced clip keeps its name; without a changing query the
 // browser/SW serve the OLD cached audio. play() busts on this.
@@ -33,7 +33,45 @@ const I18N = {
   en: {
     done: "Done",
     sectionComplete: "Mela! Section complete.",
+    sectionSkipped: "Section finished.",
+    review: {
+      title: "Daily review", homeTitle: "Daily review", homeLoading: "…",
+      loading: "Building today's review…",
+      failed: "Could not build the review. Refresh and try again.",
+      prompt: "Listen and pick the meaning",
+      tapHint: "Tap the speaker, then choose.",
+      counter: "{i} of {n}", notQuite: "Not quite.", nextBtn: "Next →",
+      caughtUpTitle: "All caught up",
+      caughtUpBody: "Nothing is due today. Work through a lesson section and it will start showing up here.",
+      streakLine: "Current streak: {n} days",
+      doneTitle: "Review complete!", correctLabel: "correct", streakLabel: "day streak",
+      comeBack: "Come back tomorrow to keep your streak going.",
+      backHome: "Back home",
+      homeDue: "{n} to review", homeNone: "All caught up", homeStart: "Practise today", homeStreak: "{n}-day streak",
+    },
+    recall: {
+      prompt: "Write it in Maltese",
+      placeholder: "Type your answer",
+      check: "Check",
+      notQuite: "Not quite.",
+      tryAgainHint: "Have another go — check the spelling.",
+      answerIs: "The answer is",
+      nextBtn: "Next →",
+    },
+    reminder: {
+      title: "Daily reminder",
+      turnOn: "Off — tap to turn on",
+      at: "Every day at {t}",
+      timeLabel: "Time",
+      denied: "Blocked. Allow notifications for MaltiOnTheGo in your device settings.",
+      pushTitle: "Bonġu!",
+      pushBody: "A few minutes of Maltese keeps your streak going.",
+      testNow: "Send a test now (dev)", testSent: "Test sent — arrives in 15s",
+    },
     brilliantWork: "Brilliant work!",
+    skippedWork: "You skipped the exercises, so there's no XP this time. Answer them to earn it.",
+    skippedListening: "You scrolled past without listening. Tap the audio here to earn XP.",
+    partialWork: "Good start. Answer more of the exercises for the full bonus.",
     xpEarned: "XP earned",
     totalXp: "Total XP",
     backToLesson: "Back",
@@ -157,7 +195,45 @@ const I18N = {
   es: {
     done: "¡Listo!",
     sectionComplete: "¡Mela! Sección completa.",
+    sectionSkipped: "Sección terminada.",
+    review: {
+      title: "Repaso diario", homeTitle: "Repaso diario", homeLoading: "…",
+      loading: "Preparando el repaso de hoy…",
+      failed: "No se pudo preparar el repaso. Actualiza e inténtalo de nuevo.",
+      prompt: "Escucha y elige el significado",
+      tapHint: "Toca el altavoz y luego elige.",
+      counter: "{i} de {n}", notQuite: "Casi.", nextBtn: "Siguiente →",
+      caughtUpTitle: "Todo al día",
+      caughtUpBody: "Hoy no hay nada pendiente. Practica una sección y empezará a aparecer aquí.",
+      streakLine: "Racha actual: {n} días",
+      doneTitle: "¡Repaso completado!", correctLabel: "correctas", streakLabel: "días de racha",
+      comeBack: "Vuelve mañana para mantener tu racha.",
+      backHome: "Volver al inicio",
+      homeDue: "{n} para repasar", homeNone: "Todo al día", homeStart: "Practica hoy", homeStreak: "racha de {n} días",
+    },
+    recall: {
+      prompt: "Escríbelo en maltés",
+      placeholder: "Escribe tu respuesta",
+      check: "Comprobar",
+      notQuite: "Casi.",
+      tryAgainHint: "Inténtalo otra vez — revisa la ortografía.",
+      answerIs: "La respuesta es",
+      nextBtn: "Siguiente →",
+    },
+    reminder: {
+      title: "Recordatorio diario",
+      turnOn: "Desactivado — toca para activar",
+      at: "Todos los días a las {t}",
+      timeLabel: "Hora",
+      denied: "Bloqueado. Permite las notificaciones de MaltiOnTheGo en los ajustes de tu dispositivo.",
+      pushTitle: "¡Bonġu!",
+      pushBody: "Unos minutos de maltés mantienen tu racha.",
+      testNow: "Enviar una prueba (dev)", testSent: "Enviada — llega en 15s",
+    },
     brilliantWork: "¡Buen trabajo!",
+    skippedWork: "Saltaste los ejercicios, así que esta vez no hay XP. Respóndelos para ganarlos.",
+    skippedListening: "Pasaste de largo sin escuchar. Toca el audio aquí para ganar XP.",
+    partialWork: "Buen comienzo. Responde más ejercicios para conseguir el bono completo.",
     xpEarned: "XP ganados",
     totalXp: "XP total",
     backToLesson: "Volver a la lección",
@@ -311,6 +387,15 @@ const State = {
 function save(k,v){ try{localStorage.setItem("malti."+k, JSON.stringify(v));}catch(e){} }
 function load(k){ try{const v=localStorage.getItem("malti."+k);return v?JSON.parse(v):null;}catch(e){return null;} }
 
+// The query string, captured BEFORE anything touches it. applyTesterUnlock()
+// strips the whole search string so the secret does not sit in screenshots, and
+// it runs first -- so every later reader saw an empty query and ?ota=off and
+// ?sw=off silently did nothing for days. Read from here, never location.search.
+const URL_PARAMS = (() => {
+  try { return new URLSearchParams(location.search); }
+  catch(e){ return new URLSearchParams(''); }
+})();
+
 // ── Tester unlock (web PWA only) ──────────────────────────────────────────
 // The trap-door dev unlock was removed for production launch, but the team
 // still needs a way to test paid lessons from a phone browser (iPhone has no
@@ -329,8 +414,7 @@ function load(k){ try{const v=localStorage.getItem("malti."+k);return v?JSON.par
 const TESTER_UNLOCK_SECRET = "maltimt2026";
 function applyTesterUnlock(){
   try {
-    const params = new URLSearchParams(location.search);
-    const v = params.get("unlock");
+    const v = URL_PARAMS.get("unlock");
     if(v === TESTER_UNLOCK_SECRET){
       localStorage.setItem("malti.testerUnlock", "1");
       localStorage.setItem("malti.devUnlock", "1");
@@ -353,6 +437,63 @@ function applyTesterUnlock(){
   return false;
 }
 const TESTER_UNLOCKED = applyTesterUnlock();
+
+// ── Local content testing: force BUNDLED content ─────────────────────────
+// OTA_ENABLED is true, so the app prefers the copy of each lesson on the CDN
+// over the one in the build. That is right in production and wrong on a test
+// device: edit a lesson locally, open it on your phone, and you see the LIVE
+// content instead, with no hint that anything was ignored. This cost an hour
+// before anyone noticed the local file was never being read.
+//
+//   ?ota=off   use the bundled lessons only, until cleared (sticky)
+//   ?ota=on    go back to normal over-the-air behaviour
+//
+// Sticky in localStorage so it survives the reloads a test session involves.
+// It only ever makes the app IGNORE remote content, so the worst case is
+// testing against slightly older lessons -- never shipping something odd.
+function applyOtaOverride(){
+  try {
+    const v = URL_PARAMS.get('ota');
+    if(v === 'off') localStorage.setItem('malti.otaOff', '1');
+    else if(v === 'on') localStorage.removeItem('malti.otaOff');
+    if(v) history.replaceState(null, '', location.pathname + location.hash);
+    if(localStorage.getItem('malti.otaOff') === '1' && window.CONTENT_CONFIG){
+      window.CONTENT_CONFIG.OTA_ENABLED = false;
+      return true;
+    }
+  } catch(e){}
+  return false;
+}
+const OTA_FORCED_OFF = applyOtaOverride();
+
+// ── Local testing: turn the service worker OFF ───────────────────────────
+// app.js is precached CACHE-FIRST, and on the dev server index.html asks for it
+// as a constant URL (only the build rewrites that to carry BUILD). So the worker
+// keeps serving the app.js it cached first, which then requests the lesson URLs
+// that old build knew about. Editing content and bumping BUILD changes nothing
+// on a phone until the worker lets go. This cost three rounds of confusion.
+//
+//   ?sw=off   unregister the worker and drop every cache, until cleared (sticky)
+//   ?sw=on    normal behaviour again
+//
+// Production is untouched: nothing sets this unless the URL asks for it.
+function applySwOverride(){
+  try {
+    const v = URL_PARAMS.get('sw');
+    if(v === 'off') localStorage.setItem('malti.swOff', '1');
+    else if(v === 'on') localStorage.removeItem('malti.swOff');
+    if(localStorage.getItem('malti.swOff') !== '1') return false;
+    if('serviceWorker' in navigator){
+      navigator.serviceWorker.getRegistrations()
+        .then(rs => rs.forEach(r => r.unregister())).catch(()=>{});
+    }
+    if(window.caches){
+      caches.keys().then(ks => ks.forEach(k => caches.delete(k))).catch(()=>{});
+    }
+    return true;
+  } catch(e){ return false; }
+}
+const SW_DISABLED = applySwOverride();
 // Normalize stored entitlement to the current shape, migrating the legacy
 // `starterPack: bool` field to the generalized `packs` map.
 function normalizeEntitlement(e){
@@ -428,6 +569,143 @@ function setSectionProgress(lid,sid,pct){
 }
 function addXp(n){ State.xp += n; save("xp", State.xp); }
 
+// ── Section scoring ───────────────────────────
+// XP used to be handed out for TRAVERSAL: the +20 section bonus fired the moment
+// the step counter ran off the end, so tapping "Next" through a whole section
+// without answering anything still paid out, and the done screen congratulated
+// you for it. A reviewer spotted exactly that and called the whole currency
+// fake. XP now tracks PERFORMANCE:
+//   - the completion bonus scales with how many answerable items you actually
+//     answered (right or wrong — engaging counts, skipping doesn't),
+//   - a correct answer after a wrong try on the same item pays half, so the two
+//     exercises that allow unlimited retries (listen-and-pick, matching) can't
+//     be ground for the same points as getting it right first time.
+//
+// Which steps are answerable is NOT derived from step names — exercise steps are
+// registered dynamically from lesson content by ensureSectionRegistered(), so any
+// name list would go stale. Instead every renderer that can award XP is tagged
+// scored() at creation, and renderSection marks the tagged ones as seen.
+const SECTION_BONUS = 20;        // full completion bonus, at or above the threshold
+const ENGAGE_TARGET = 0.7;       // answer this share of answerable items for full bonus
+const OVERVIEW_BONUS = 0;        // finishing a narrated overview demonstrates nothing
+
+// Tag a renderer as one that can award XP. Returns the function so it can wrap
+// an assignment or a factory's return value inline.
+function scored(fn){ if(typeof fn === "function") fn.scored = true; return fn; }
+
+// Declare WHICH section field a renderer reads. pruneDeadSteps() drops a flow
+// step whose data is missing, and it used to decide that from a global
+// step-NAME table — which is wrong the moment two sections use the same step
+// name for different exercises. "match" was mapped to `letters`, correct for
+// Alphabet but wrong for Days and Months, whose match step is a listen-and-pick
+// over `items`; both were silently deleted from the flow on every session even
+// though the exercises worked. The renderer is the only thing that actually
+// knows, so it says so here and the prune rule asks it first.
+function needs(fn, field){ if(typeof fn === "function" && field) fn.needs = field; return fn; }
+
+// The step currently on screen, as "step:idx". Set by renderSection before it
+// hands off, so award sites don't need lid/sid threaded through them — only one
+// section is ever on screen at a time.
+let CurrentStepKey = null;
+
+// Per-section tally. Transient: a section's score is a record of THIS run
+// through it, so re-entering resets. seen/answered are keyed by step:idx so
+// walking back and forth with Previous/Next can't double-count an item.
+// Transient per-section tally. The completion bonus it feeds is capped by a
+// PERSISTED per-section record (bonusPaidStore), so neither re-walking a
+// finished section nor bouncing out and back can pay it twice.
+const SectionScore = { key: null, seen: new Set(), answered: new Set(), played: new Set(), wrong: {}, correct: 0 };
+function resetSectionScore(key){
+  SectionScore.key = key;
+  SectionScore.seen = new Set();
+  SectionScore.answered = new Set();
+  SectionScore.played = new Set();
+  SectionScore.wrong = {};
+  SectionScore.correct = 0;
+}
+// Lazily adopt a section if the user deep-linked into the middle of one (a
+// resumed URL, a search result) without passing through its first step.
+function ensureSectionScore(key){ if(SectionScore.key !== key) resetSectionScore(key); }
+function markSeen(){ if(CurrentStepKey) SectionScore.seen.add(CurrentStepKey); }
+// For a scored renderer that turns out to have nothing answerable to show (an
+// audio exercise whose clips have not landed yet). Without this the step counts
+// as shown-but-unanswered and drags the completion bonus down.
+function unmarkSeen(){ if(CurrentStepKey) SectionScore.seen.delete(CurrentStepKey); }
+
+// A correct answer. First attempt on this item pays in full, anything after a
+// wrong try pays half (minimum 1, so a retried win is never worth nothing).
+function awardCorrect(base){
+  const key = CurrentStepKey;
+  markSeen();
+  const missed = key ? (SectionScore.wrong[key] || 0) : 0;
+  const xp = missed ? Math.max(1, Math.floor(base / 2)) : base;
+  if(key) SectionScore.answered.add(key);
+  SectionScore.correct++;
+  addXp(xp);
+  return xp;
+}
+// A wrong answer. Earns nothing, but still counts as engaging with the item —
+// the completion bonus rewards showing up, not being right.
+function awardWrong(){
+  const key = CurrentStepKey;
+  markSeen();
+  if(key){
+    SectionScore.wrong[key] = (SectionScore.wrong[key] || 0) + 1;
+    SectionScore.answered.add(key);
+  }
+}
+// Share of the answerable items shown that got an answer. A section with nothing
+// to answer (a pure study screen: rules, vocabulary lists) returns 1 — reaching
+// the end IS the engagement there, so it still earns its bonus.
+// Share of the answerable items shown that got an answer. A section with
+// nothing to answer (a vocabulary list, a grammar page) is scored on how much of
+// it was actually LISTENED to instead: scrolling to the bottom without playing a
+// single clip demonstrates nothing and used to pay the full bonus.
+const PLAY_TARGET = 5;
+function sectionEngagement(){
+  const seen = SectionScore.seen.size;
+  if(seen) return SectionScore.answered.size / seen;
+  return Math.min(1, SectionScore.played.size / PLAY_TARGET);
+}
+// Completion bonus for the section just finished, and whether it was skipped
+// outright (nothing answered despite there being something to answer).
+// How much completion bonus each section has ALREADY paid out, persisted.
+// Without this the bonus is farmable in about six taps: the in-session score
+// resets whenever you move to a different section, so opening a study-only
+// section (a vocabulary list, a grammar page), stepping into any other section
+// and coming back paid the full bonus again, forever, without answering
+// anything. Dorothy found exactly that.
+function bonusPaidStore(){
+  if(!State.bonusPaid) State.bonusPaid = load("bonusPaid") || {};
+  return State.bonusPaid;
+}
+function sectionBonus(){
+  const ratio = sectionEngagement();
+  const answered = SectionScore.answered.size;
+  // "Skipped" now covers the study-only case too: nothing answered AND
+  // nothing played means the learner just scrolled past.
+  const skipped = (SectionScore.seen.size > 0 && answered === 0)
+              || (SectionScore.seen.size === 0 && SectionScore.played.size === 0);
+  const earned = ratio >= ENGAGE_TARGET
+    ? SECTION_BONUS
+    : Math.round(SECTION_BONUS * (ratio / ENGAGE_TARGET));
+  // A section pays its bonus once, in total, ever. Doing it badly and coming
+  // back to do it properly still pays the DIFFERENCE, so improving is rewarded
+  // and repeating is not. Per-answer XP is unaffected: redoing exercises still
+  // earns, because that requires actually answering.
+  const key = SectionScore.key;
+  const store = bonusPaidStore();
+  const already = (key && store[key]) || 0;
+  const bonus = Math.max(0, earned - already);
+  if(key && bonus > 0){
+    store[key] = earned;
+    save("bonusPaid", store);
+  }
+  return { bonus: bonus, ratio: ratio, skipped: skipped, answered: answered,
+           studyOnly: SectionScore.seen.size === 0,
+           repeat: bonus === 0 && already > 0 };
+}
+
 // ── DOM helpers ───────────────────────────────
 function el(tag, cls, txt){
   const e = document.createElement(tag);
@@ -460,6 +738,10 @@ function play(mt, opts){
   opts = opts || {};
   const src = audioSrcFor(mt);
   if(!src){ console.warn("No audio for:", mt); return; }
+  // Listening IS the engagement on a study-only screen. CurrentStepKey is
+  // only set while a lesson section is rendered, so this never counts Listen
+  // mode or the review queue.
+  if(CurrentStepKey) SectionScore.played.add(mt);
   if(currentBtn){ currentBtn.classList.remove("playing"); currentBtn=null; }
   try{
     player.pause();
@@ -547,29 +829,61 @@ player.addEventListener("ended", ()=>{ if(currentBtn){ currentBtn.classList.remo
 })();
 
 const AutoPlay = {
-  entries:[], i:0, active:false, btn:null, timer:null, _ended:null, PAUSE_MS:500, WITHIN_MS:100, RATE:1,
+  entries:[], i:0, active:false, btn:null, timer:null, guard:null,
+  _ended:null, _err:null, _meta:null, _armed:false,
+  PAUSE_MS:500, WITHIN_MS:100, RATE:1,
+  // Backstop for a clip that fires NO event at all: a play() promise rejected by an
+  // incoming call or notification, or media suspended in the background. A failed
+  // fetch fires "error" and is handled at once, so this only catches silent cases.
+  GUARD_MS:20000,
   start(entries, btn, opts){
     opts = opts || {}; this.stop();
     entries = (entries||[]).filter(e => e && e.mt && audioSrcFor(e.mt));
     if(!entries.length) return;
     this.entries = entries; this.btn = btn; this.active = true; this.i = 0;
     if(btn){ btn.classList.add("ap-on"); btn.textContent = "⏸ Stop"; }
-    this._ended = () => {
-      if(!this.active) return;
-      clearTimeout(this.timer);
-      // Short gap between forms of the SAME card (same group), full gap between cards.
-      const cur = this.entries[this.i], nxt = this.entries[this.i+1];
-      const gap = (cur && nxt && cur.group != null && cur.group === nxt.group) ? this.WITHIN_MS : this.PAUSE_MS;
-      this.timer = setTimeout(() => {
-        if(!this.active) return;
-        this.i++;
-        if(this.i >= this.entries.length){ this.stop(); return; }
-        this._playCur();
-      }, gap);
+    // Play-all used to advance ONLY on "ended", with no error handling and no
+    // timeout. One clip that never ended stopped the whole sequence dead and it
+    // never recovered — a different word each time, so it read as random. Listen
+    // mode already skipped on error (see its "error" -> failSkip); Play-all now
+    // does the same, plus a watchdog for the cases that fire no event at all.
+    this._ended = () => this._advance(false);
+    this._err   = () => this._advance(true);
+    // Once the real length is known, shorten the backstop from a blanket 20s to
+    // just past the end of this clip, so a stall is caught in seconds not tens.
+    this._meta  = () => {
+      if(!this.active || !this._armed) return;
+      const d = player.duration;
+      if(!isFinite(d) || d <= 0) return;
+      clearTimeout(this.guard);
+      this.guard = setTimeout(() => this._advance(true),
+                              (d / (player.playbackRate || 1)) * 1000 + 2500);
     };
     player.addEventListener("ended", this._ended);
+    player.addEventListener("error", this._err);
+    player.addEventListener("loadedmetadata", this._meta);
     const begin = () => { if(this.active) this._playCur(); };
     if(opts.initialDelayMs){ this.timer = setTimeout(begin, opts.initialDelayMs); } else begin();
+  },
+  // Exactly one advance per clip. `_armed` is set when a clip starts and cleared by
+  // whichever of ended / error / watchdog arrives first, so a late event can never
+  // skip an extra word. `failed` moves on immediately rather than pausing first —
+  // there is nothing to pause after.
+  _advance(failed){
+    if(!this.active || !this._armed) return;
+    this._armed = false;
+    clearTimeout(this.guard); this.guard = null;
+    clearTimeout(this.timer);
+    // Short gap between forms of the SAME card (same group), full gap between cards.
+    const cur = this.entries[this.i], nxt = this.entries[this.i+1];
+    const gap = failed ? 0
+      : (cur && nxt && cur.group != null && cur.group === nxt.group) ? this.WITHIN_MS : this.PAUSE_MS;
+    this.timer = setTimeout(() => {
+      if(!this.active) return;
+      this.i++;
+      if(this.i >= this.entries.length){ this.stop(); return; }
+      this._playCur();
+    }, gap);
   },
   _playCur(){
     const e = this.entries[this.i];
@@ -577,6 +891,9 @@ const AutoPlay = {
     if(e.reveal){ try{ e.reveal(); }catch(_){} }
     if(e.node && e.node.scrollIntoView){ try{ e.node.scrollIntoView({block:"center", behavior:"smooth"}); }catch(_){} }
     play(e.mt, this.RATE !== 1 ? { rate: this.RATE } : undefined);
+    this._armed = true;
+    clearTimeout(this.guard);
+    this.guard = setTimeout(() => this._advance(true), this.GUARD_MS);
   },
   jumpTo(mt){
     if(!this.active) return false;
@@ -585,7 +902,16 @@ const AutoPlay = {
     clearTimeout(this.timer); this.i = idx; this._playCur(); return true;
   },
   stop(){
-    this.active = false; clearTimeout(this.timer); this.timer = null;
+    this.active = false; this._armed = false;
+    clearTimeout(this.timer); this.timer = null;
+    clearTimeout(this.guard); this.guard = null;
+    // Silence the clip that is playing RIGHT NOW. Without this, Stop only cancelled
+    // the queue: the loop never advanced, but the current word played on to its end,
+    // so the button said "Play all" while audio was still coming out of the phone.
+    // Reported on the Vocabulary screen, but AutoPlay is shared by every Play-all.
+    try{ player.pause(); }catch(_){}
+    if(this._err){ player.removeEventListener("error", this._err); this._err = null; }
+    if(this._meta){ player.removeEventListener("loadedmetadata", this._meta); this._meta = null; }
     if(this._ended){ player.removeEventListener("ended", this._ended); this._ended = null; }
     (this.entries||[]).forEach(e => { if(e.node) e.node.classList.remove("ap-current"); });
     if(this.btn){ this.btn.classList.remove("ap-on"); this.btn.textContent = "▶ Play all"; }
@@ -753,8 +1079,11 @@ function renderVocabScreen(root, sec, onNext){
     const tx = el("div","grow vocab-text");
     tx.appendChild(el("div","mt", item.mt));
     tx.appendChild(el("div","en", item.en || ""));
-    if(item.note) tx.appendChild(el("div","muted", item.note));
     r.appendChild(tx);
+    // The note goes on the ROW, not in the text column, so it wraps to the full
+    // card width instead of the narrow column beside the audio button and icon.
+    // A one-line fact squeezed into that column took three lines.
+    if(item.note) r.appendChild(el("div","vocab-note", item.note));
     r.addEventListener("click", e => { if(e.target.tagName!=="BUTTON"){ if(AutoPlay.active) return; play(item.mt); } });
     pushEntry({ mt:item.mt, node:r, group:r }, sink);
     return r;
@@ -857,6 +1186,7 @@ function showUpdateConfirmation(){
 // controlling the page), show a top banner inviting the user to refresh.
 // Replaces the inline registration that used to live in index.html.
 function registerServiceWorker(){
+  if(SW_DISABLED) return;            // ?sw=off is on for this device
   if(!("serviceWorker" in navigator)) return;
   navigator.serviceWorker.register("./sw.js").then(reg => {
     // First-load case: a new SW was queued from a previous session.
@@ -1383,6 +1713,454 @@ async function renderListen(){
   rebuild();
 }
 
+/* ============================================================
+   Daily reminder — the other half of the streak
+   ============================================================
+   A streak with no reminder underperforms badly: the reminder IS the mechanism
+   that produces the daily return, the streak is just the score. This schedules a
+   repeating local notification through @capacitor/local-notifications.
+
+   Native only. The plugin does not exist in the web PWA, so every function here
+   degrades to a no-op and the home screen hides the control rather than offering
+   a switch that does nothing.
+
+   Permission is requested when the user turns the reminder ON, never on first
+   launch. Asking cold, before the app has shown any value, is the reliable way
+   to get a permanent "no" from both stores' users.
+   ============================================================ */
+
+const REMINDER_ID = 1;                 // stable id, so scheduling replaces rather than stacks
+const REMINDER_DEFAULT_HOUR = 19;
+// Every waking hour. The original nine were arbitrary: someone who wants 15:00
+// could not have it, and with the next option hours away there was no way to
+// verify a reminder without waiting for it (Dorothy, testing at 14:30 with
+// 17:00 the soonest choice).
+const REMINDER_HOURS = [6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22];
+
+function reminderStore(){
+  if(!State.reminder) State.reminder = load("reminder") || { on: false, hour: REMINDER_DEFAULT_HOUR };
+  return State.reminder;
+}
+function localNotifications(){
+  return (window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.LocalNotifications) || null;
+}
+function remindersAvailable(){
+  return isNativePlatform() && !!localNotifications();
+}
+function formatHour(h){
+  return (h < 10 ? "0" : "") + h + ":00";
+}
+
+// Cancel then re-schedule. Cancelling first means changing the time or the UI
+// language replaces the pending notification instead of leaving a stale one, and
+// it makes this safe to call on every boot.
+async function syncReminder(){
+  const LN = localNotifications();
+  if(!LN) return false;
+  const s = reminderStore();
+  try {
+    await LN.cancel({ notifications: [{ id: REMINDER_ID }] });
+    if(!s.on) return true;
+    const t = (I18N[State.lang] || I18N.en).reminder;
+    await LN.schedule({ notifications: [{
+      id: REMINDER_ID,
+      title: t.pushTitle,
+      body: t.pushBody,
+      // `on` with hour+minute repeats daily at that local time.
+      schedule: { on: { hour: s.hour, minute: 0 }, allowWhileIdle: true },
+    }]});
+    return true;
+  } catch(e){
+    console.warn("reminder scheduling failed", e);
+    return false;
+  }
+}
+
+// Returns true if the reminder ended up ON. Returns false when the OS refused,
+// so the caller can put the switch back rather than lying about the state.
+async function setReminder(on, hour){
+  const s = reminderStore();
+  if(on && !s.on){
+    const LN = localNotifications();
+    if(LN){
+      try {
+        const perm = await LN.requestPermissions();
+        if(!perm || perm.display !== "granted") return false;
+      } catch(e){ return false; }
+    }
+  }
+  s.on = !!on;
+  if(typeof hour === "number") s.hour = hour;
+  save("reminder", s);
+  await syncReminder();
+  return !!s.on;
+}
+
+// The home-screen control. Rendered only in the native builds, because the
+// plugin is absent in the browser and a dead switch is worse than no switch.
+function reminderCard(root){
+  if(!remindersAvailable()) return;
+  const t = (I18N[State.lang] || I18N.en).reminder;
+  const s = reminderStore();
+
+  const wrap = el("div", "reminder-wrap");
+  const row = el("button", "search-entry reminder-entry");
+  row.appendChild(el("span", "search-entry-icon", "🔔"));
+  const meta = el("div", "search-entry-meta");
+  meta.appendChild(el("strong", "", t.title));
+  const sub = el("span", "", s.on ? t.at.replace("{t}", formatHour(s.hour)) : t.turnOn);
+  meta.appendChild(sub);
+  row.appendChild(meta);
+  const state = el("span", "chev", s.on ? "✓" : "");
+  row.appendChild(state);
+  wrap.appendChild(row);
+
+  // Hour picker, only meaningful once the reminder is on.
+  const timeRow = el("div", "reminder-time");
+
+  timeRow.appendChild(el("span", "muted", t.timeLabel));
+  const sel = document.createElement("select");
+  REMINDER_HOURS.forEach(h => {
+    const o = document.createElement("option");
+    o.value = String(h);
+    o.textContent = formatHour(h);
+    if(h === s.hour) o.selected = true;
+    sel.appendChild(o);
+  });
+  sel.addEventListener("change", async () => {
+    await setReminder(true, parseInt(sel.value, 10));
+    sub.textContent = t.at.replace("{t}", formatHour(reminderStore().hour));
+  });
+  timeRow.appendChild(sel);
+  timeRow.style.display = s.on ? "flex" : "none";
+  wrap.appendChild(timeRow);
+
+  // Dev-only: prove the whole path (permission -> schedule -> OS delivery)
+  // in seconds instead of waiting for the chosen hour. Reachable on TestFlight
+  // by tapping the version label 7x. Uses its own notification id so it can
+  // never disturb the real daily one.
+  if(isDevMode()){
+    const test = el("button", "btn-prev", t.testNow);
+    test.style.cssText = "margin:0 18px 14px;padding:8px 12px;font-size:.85rem;";
+    test.addEventListener("click", async () => {
+      const LN = localNotifications();
+      if(!LN) return;
+      try {
+        const perm = await LN.requestPermissions();
+        if(!perm || perm.display !== "granted"){ test.textContent = t.denied; return; }
+        await LN.schedule({ notifications: [{
+          id: REMINDER_ID + 1,
+          title: t.pushTitle,
+          body: t.pushBody,
+          schedule: { at: new Date(Date.now() + 15000) },
+        }]});
+        test.textContent = t.testSent;
+      } catch(e){ test.textContent = String(e.message || e); }
+    });
+    wrap.appendChild(test);
+  }
+
+  row.addEventListener("click", async () => {
+    const want = !reminderStore().on;
+    const got = await setReminder(want, undefined);
+    if(want && !got){
+      // The OS said no. Say so plainly instead of leaving a switch that looks on.
+      sub.textContent = t.denied;
+      return;
+    }
+    sub.textContent = got ? t.at.replace("{t}", formatHour(reminderStore().hour)) : t.turnOn;
+    state.textContent = got ? "✓" : "";
+    timeRow.style.display = got ? "flex" : "none";
+  });
+
+  root.appendChild(wrap);
+}
+
+/* ============================================================
+   Daily review — spaced repetition over what you've already learned
+   ============================================================
+   The app taught material well but never brought it back. A reviewer called it
+   "more of an ad-hoc dictionary of phrases than a language learning app", and he
+   was right: nothing ever asked you to remember anything a second time.
+
+   Design notes:
+   - Leitner boxes, not SM-2. For a vocabulary app this size the retention
+     difference is noise and the debuggability difference is not.
+   - The item pool is buildSearchIndex()'s flattened phrase list, so review needs
+     NO new content: it drills what the learner already owns and has started.
+   - Items with no audio clip are excluded. The exercise is listen-and-pick, so a
+     silent item would be pure guesswork.
+   - Everything is capped. An unbounded queue is how review apps lose people.
+   ============================================================ */
+
+const REVIEW_INTERVALS   = [1, 3, 7, 16, 35];  // days until due, indexed by box
+const REVIEW_DAILY_CAP   = 20;                 // most items in one session
+const REVIEW_NEW_PER_DAY = 6;                  // most brand-new items introduced
+
+// Days since the epoch in LOCAL time. Must not be UTC: a Malta user practising
+// at 01:00 would have it counted as the previous day and lose the streak.
+function todayIndex(){
+  const d = new Date();
+  return Math.floor((d.getTime() - d.getTimezoneOffset() * 60000) / 86400000);
+}
+
+// { items: { "<mt>": {b: box, due: dayIndex} } }. A record is only created once
+// an item has actually been reviewed, so storage tracks what the learner has
+// seen rather than the whole catalogue.
+function reviewStore(){
+  if(!State.review) State.review = load("review") || { items: {} };
+  if(!State.review.items) State.review.items = {};
+  return State.review;
+}
+function streakStore(){
+  if(!State.streak) State.streak = load("streak") || { cur: 0, best: 0, last: null, freezeWeek: null };
+  return State.streak;
+}
+
+// Every phrase the learner could sensibly be asked about: owned, started, voiced.
+async function reviewPool(){
+  const idx = await buildSearchIndex();
+  // The search index is deduped on mt+translation, so one Maltese phrase can
+  // appear more than once when two lessons gloss it slightly differently
+  // ("Grazzi" is both "Thank you" and "Thanks"; 54 phrases are like this).
+  // Left alone that produces review questions with two correct answers, one of
+  // which is marked wrong. Keep the first gloss for each phrase.
+  const seen = new Set();
+  return (idx.entries || []).filter(e => {
+    if(!isLessonUnlocked(e.lid)) return false;
+    const prog = State.progress[e.lid];
+    if(!prog || !Object.keys(prog).length) return false;   // never opened it
+    if(!audioSrcFor(e.mt)) return false;
+    if(seen.has(e.mt)) return false;
+    seen.add(e.mt);
+    return true;
+  });
+}
+
+// Due first, oldest due first, then top up with a few new items. Returning fewer
+// than the cap is normal and good: it is what "done for today" looks like.
+async function buildReviewSession(){
+  const pool = await reviewPool();
+  const t = todayIndex();
+  const rec = reviewStore().items;
+  const due = [], fresh = [];
+  for(const e of pool){
+    const r = rec[e.mt];
+    if(r){ if(r.due <= t) due.push(e); }
+    else fresh.push(e);
+  }
+  due.sort((a, b) => rec[a.mt].due - rec[b.mt].due);
+  const out = due.slice(0, REVIEW_DAILY_CAP);
+  // New material is capped per DAY, not per session. Without that a learner who
+  // re-opens review repeatedly introduces unlimited new items today and gets
+  // all of them back tomorrow, which is exactly the flood the cap exists to
+  // prevent. The allowance is spent when an item is actually answered, not
+  // when it is merely queued, so abandoning a session costs nothing.
+  const room = Math.min(newAllowanceLeft(), REVIEW_DAILY_CAP - out.length);
+  if(room > 0){
+    fresh.sort(() => Math.random() - .5);
+    out.push(...fresh.slice(0, room));
+  }
+  return { queue: out, pool: pool };
+}
+
+// How much of today's new-material allowance is left.
+function newAllowanceLeft(){
+  const st = reviewStore();
+  const t = todayIndex();
+  if(st.newDay !== t){ st.newDay = t; st.newCount = 0; }
+  return Math.max(0, REVIEW_NEW_PER_DAY - (st.newCount || 0));
+}
+
+// How many are waiting, for the HOME CARD. Reads only what is already in
+// localStorage: deliberately does NOT touch buildSearchIndex(), which fetches
+// every lesson JSON in the catalogue. Home is rendered on every cold start, on
+// every tier, and must not pull the whole course down to print a number.
+function dueFromRecords(){
+  const t = todayIndex();
+  const items = reviewStore().items;
+  let n = 0;
+  for(const k in items){ if(items[k].due <= t) n++; }
+  return Math.min(n, REVIEW_DAILY_CAP);
+}
+
+// Promote on a correct answer, reset to the start on a wrong one. A first
+// correct answer schedules +1 day; the box only starts growing after that.
+function gradeReview(mt, ok){
+  const t = todayIndex();
+  const items = reviewStore().items;
+  const isNew = !items[mt];
+  const r = items[mt] || { b: 0, due: t };
+  if(isNew){
+    const st = reviewStore();
+    if(st.newDay !== t){ st.newDay = t; st.newCount = 0; }
+    st.newCount = (st.newCount || 0) + 1;
+  }
+  if(ok){
+    r.due = t + REVIEW_INTERVALS[Math.min(r.b, REVIEW_INTERVALS.length - 1)];
+    r.b   = Math.min(r.b + 1, REVIEW_INTERVALS.length - 1);
+  } else {
+    r.b = 0;
+    r.due = t + 1;
+  }
+  items[mt] = r;
+  save("review", State.review);
+}
+
+// Called when the learner has actually practised today. Runs at most once a day.
+// One missed day is forgiven once a week: losing a long streak to a single bad
+// day is the most common reason people abandon a streak app for good.
+function markPractice(){
+  const t = todayIndex();
+  const s = streakStore();
+  if(s.last === t) return false;
+  const week = Math.floor(t / 7);
+  if(s.last === t - 1){
+    s.cur = (s.cur || 0) + 1;
+  } else if(s.last === t - 2 && s.freezeWeek !== week){
+    s.freezeWeek = week;             // spend this week's forgiveness
+    s.cur = (s.cur || 0) + 1;
+  } else {
+    s.cur = 1;
+  }
+  s.last = t;
+  s.best = Math.max(s.best || 0, s.cur);
+  save("streak", s);
+  return true;
+}
+
+/* ── The review screen ──────────────────────────────────────────────────────
+   Deliberately NOT routed through renderSection: that machinery is built around
+   a lesson id, a section id and SECTION_FLOWS, none of which a review session
+   has. It repeats a little of makeListenStep's shape and in exchange stays
+   independent of the lesson flow, owning its own grading and summary. */
+function renderReview(){
+  const t = I18N[State.lang] || I18N.en;
+  const r = t.review;
+  const root = $app();
+  root.innerHTML = "";
+  root.appendChild(topbar(r.title, "/home"));
+  root.appendChild(el("p", "muted", r.loading));
+  // Building the queue can take seconds on a cold start (it loads every lesson
+  // to index the phrases). If the learner navigates away while that runs, these
+  // callbacks would paint the review screen over whatever they went to, because
+  // $app() re-resolves the live root. Bail if the route moved on.
+  const atStart = location.hash;
+  buildReviewSession().then(({ queue, pool }) => {
+    if(location.hash !== atStart) return;
+    if(!queue.length) return reviewEmpty(r);
+    queue.sort(() => Math.random() - .5);
+    runReview(queue, pool, r, { right: 0, wrong: 0 }, 0);
+  }).catch(e => {
+    if(location.hash !== atStart) return;
+    $app().innerHTML = "<p>" + r.failed + "</p><p class='muted'>" + (e.message || e) + "</p>";
+  });
+}
+
+function reviewEmpty(r){
+  const s = streakStore();
+  const root = $app();
+  root.innerHTML = "";
+  root.appendChild(topbar(r.title, "/home"));
+  const box = el("div", "done-screen");
+  box.appendChild(el("div", "emoji", "🌱"));
+  box.appendChild(el("h1", "", r.caughtUpTitle));
+  box.appendChild(el("p", "", r.caughtUpBody));
+  if(s.cur) box.appendChild(el("p", "muted", r.streakLine.replace("{n}", s.cur)));
+  const back = el("button", "btn", r.backHome);
+  back.addEventListener("click", () => go("/home"));
+  box.appendChild(back);
+  root.appendChild(box);
+}
+
+function runReview(queue, pool, r, tally, i){
+  if(i >= queue.length) return reviewDone(queue, r, tally);
+  const item = queue[i];
+  const root = $app();
+  root.innerHTML = "";
+  root.appendChild(topbar(r.title, "/home"));
+  root.appendChild(progressBar(Math.round((i / queue.length) * 100)));
+
+  const card = el("div", "card");
+  card.appendChild(el("h3", "", r.prompt));
+  const row = el("div", "row");
+  row.appendChild(audioBtn(item.mt, { size: "lg" }));
+  row.appendChild(el("div", "grow muted", r.tapHint));
+  card.appendChild(row);
+  card.appendChild(el("div", "muted", r.counter.replace("{i}", i + 1).replace("{n}", queue.length)));
+
+  // Distractors come from the rest of the queue where possible, so the choices
+  // are plausible neighbours rather than random vocabulary from anywhere.
+  const differs = x => x !== item && x.tr !== item.tr && x.mt !== item.mt;
+  const others = queue.filter(differs);
+  others.sort(() => Math.random() - .5);
+  // With only one or two items due, the queue alone cannot supply three
+  // distractors and the learner would be shown the answer as the only button.
+  // Top up from the wider pool so a question is always a real question.
+  if(others.length < 3){
+    const seen = new Set(others.map(x => x.mt));
+    const extra = (pool || []).filter(x => differs(x) && !seen.has(x.mt));
+    extra.sort(() => Math.random() - .5);
+    others.push(...extra.slice(0, 3 - others.length));
+  }
+  const opts = [item, ...others.slice(0, 3)].sort(() => Math.random() - .5);
+
+  const choices = el("div", "choices col");
+  opts.forEach(o => {
+    const b = el("button", "choice", o.tr);
+    b.addEventListener("click", () => {
+      const ok = (o === item);
+      gradeReview(item.mt, ok);
+      if(ok){
+        b.classList.add("right");
+        addXp(2);
+        tally.right++;
+        showFeedback(true, "Sewwa!", item.mt + " → " + item.tr, () => runReview(queue, pool, r, tally, i + 1));
+      } else {
+        b.classList.add("wrong");
+        tally.wrong++;
+        // The explicit label is load-bearing, not cosmetic: showFeedback IGNORES the
+        // callback on a wrong answer unless one is given, calling route() instead to
+        // re-render the current step as a retry. In a review session route() rebuilds
+        // the entire queue, so the session would restart on every wrong answer. A
+        // wrong item here is graded and comes back tomorrow, so there is no retry.
+        showFeedback(false, r.notQuite, item.mt + " → " + item.tr,
+          () => runReview(queue, pool, r, tally, i + 1), { label: r.nextBtn });
+      }
+      [...choices.children].forEach(c => { if(c !== b) c.classList.add("dim"); c.disabled = true; });
+    });
+    choices.appendChild(b);
+  });
+  card.appendChild(choices);
+  root.appendChild(card);
+  setTimeout(() => play(item.mt), 300);
+}
+
+function reviewDone(queue, r, tally){
+  markPractice();
+  const s = streakStore();
+  const root = $app();
+  root.innerHTML = "";
+  root.appendChild(topbar(r.title, "/home"));
+  const box = el("div", "done-screen");
+  box.appendChild(el("div", "emoji", "🎉"));
+  box.appendChild(el("h1", "", r.doneTitle));
+  const stats = el("div", "stats");
+  const s1 = el("div", "stat");
+  s1.appendChild(el("strong", "", tally.right + "/" + queue.length));
+  s1.appendChild(el("span", "", r.correctLabel));
+  const s2 = el("div", "stat");
+  s2.appendChild(el("strong", "", String(s.cur || 1)));
+  s2.appendChild(el("span", "", r.streakLabel));
+  stats.appendChild(s1); stats.appendChild(s2);
+  box.appendChild(stats);
+  box.appendChild(el("p", "muted", r.comeBack));
+  const back = el("button", "btn", r.backHome);
+  back.addEventListener("click", () => go("/home"));
+  box.appendChild(back);
+  root.appendChild(box);
+}
+
 function route(){
   hideFeedback();
   if(AutoPlay.active) AutoPlay.stop();  // stop hands-free playback on navigation
@@ -1392,6 +2170,10 @@ function route(){
   try { window.scrollTo(0, 0); } catch(e) {}
   // Strip query string off the hash before splitting routes — paywall uses
   // ?from=<lid> as a soft analytics breadcrumb and ?dev=1 to enable dev unlock.
+  // Clear before dispatching: only renderSection sets it, so anything else
+  // (home, Listen, the review queue) leaves it null and cannot bank plays
+  // against whichever section happened to be open last.
+  CurrentStepKey = null;
   const raw = location.hash.replace(/^#\/?/, "") || "home";
   const h = raw.split("?")[0];
   const parts = h.split("/").filter(Boolean);
@@ -1399,6 +2181,7 @@ function route(){
   if(parts[0]==="paywall") return renderPaywall();
   if(parts[0]==="search") return renderSearch();
   if(parts[0]==="listen") return renderListen();
+  if(parts[0]==="review") return renderReview();
   if(parts[0]==="lesson"){
     const lid = parts[1];
     if(!lid) return renderHome();
@@ -2026,6 +2809,14 @@ function renderHome(){
     const tag = el("div","tester-banner","🧪 Tester unlock active — full access. Append ?unlock=off to clear.");
     root.appendChild(tag);
   }
+  // Never let "I am testing against bundled content" be an invisible state:
+  // it is the difference between seeing your edit and seeing the live lesson.
+  if(OTA_FORCED_OFF){
+    root.appendChild(el("div","tester-banner","📦 Bundled content only (OTA off). Append ?ota=on to restore."));
+  }
+  if(SW_DISABLED){
+    root.appendChild(el("div","tester-banner","🚫 Service worker off, nothing is cached. Append ?sw=on to restore."));
+  }
 
   // Branded splash hero — uses the generated splash.png so the wordmark + balcony
   // illustration hits the user the moment they open the app.
@@ -2062,6 +2853,29 @@ function renderHome(){
     langWrap.appendChild(b);
   });
   root.appendChild(langWrap);
+
+  // Daily review entry — the one recurring habit loop in the app. FREE for
+  // everyone: it only ever drills content the learner already owns, so it costs
+  // nothing to give away, and a daily return is what a one-off purchase lacks.
+  const tRev = tHome.review;
+  const revEntry = el("button","search-entry review-entry");
+  revEntry.appendChild(el("span","search-entry-icon","🔁"));
+  const rMeta = el("div","search-entry-meta");
+  rMeta.appendChild(el("strong","", tRev.homeTitle));
+  const stRev = streakStore();
+  const dueNow = dueFromRecords();
+  const revBits = [dueNow ? tRev.homeDue.replace("{n}", dueNow) : tRev.homeStart];
+  if(stRev.cur) revBits.push(tRev.homeStreak.replace("{n}", stRev.cur));
+  const rSub = el("span","", revBits.join(" · "));
+  rMeta.appendChild(rSub);
+  revEntry.appendChild(rMeta);
+  revEntry.appendChild(el("span","chev","›"));
+  revEntry.addEventListener("click", ()=>go("/review"));
+  root.appendChild(revEntry);
+  reminderCard(root);
+  // The due count needs the phrase index, which is built lazily, so fill it in
+  // once it resolves rather than blocking the whole home screen on it.
+
 
   // Phrase search entry — a subscriber perk. Subscribers get a search
   // affordance; everyone else sees a locked teaser. Both route to /search,
@@ -2692,10 +3506,14 @@ async function renderOverview(lid, lang){
     playB.textContent = "▶";
     releaseWakeLock();
     setSectionProgress(lid, "_overview", 100);
-    addXp(15);
+    // Listening to a narrated overview through to the end demonstrates nothing,
+    // so it no longer pays XP (OVERVIEW_BONUS is 0). Progress is still recorded.
+    if(OVERVIEW_BONUS > 0) addXp(OVERVIEW_BONUS);
     // Wire Next to actually return to the lesson home — the empty callback
     // here used to just dismiss the toast, leaving the user stranded.
-    showFeedback(true,"Done!", "Overview finished. +15 XP", ()=>go("/lesson/"+lid));
+    showFeedback(true,"Done!", OVERVIEW_BONUS > 0
+      ? ("Overview finished. +" + OVERVIEW_BONUS + " XP")
+      : "Overview finished. Now try the exercises to earn XP.", ()=>go("/lesson/"+lid));
   });
 
   playB.addEventListener("click", ()=>{
@@ -2753,7 +3571,12 @@ function pruneDeadSteps(sec){
   const flow = SECTION_FLOWS[sec.id];
   if(!Array.isArray(flow)) return;
   const kept = flow.filter(step => {
-    const need = STEP_DATA_REQUIRES[step];
+    // The renderer's own declaration wins: STEP_DATA_REQUIRES is keyed by step
+    // NAME, which collides whenever two sections use the same name for a
+    // different exercise (see needs() above). Fall back to the name table only
+    // for steps whose renderer has not declared a field.
+    const r = STEP_RENDERERS[sec.id + ":" + step];
+    const need = (r && r.needs) || STEP_DATA_REQUIRES[step];
     if(!need) return true;                       // step has no data dependency we track
     const v = sec[need];
     return Array.isArray(v) ? v.length > 0 : !!v;
@@ -2809,6 +3632,10 @@ function wireDataExercise(sec, ex){
       STEP_RENDERERS[fid] = makeListenStep("_ls_" + ex.id);
       STEP_COUNTS[fid] = s => Math.min(ex.max || 6, itemsOf(s).length) || 1;
       break;
+    case "recall":
+      STEP_RENDERERS[fid] = makeRecallStep(ex.id);
+      STEP_COUNTS[fid] = s => Math.min(ex.max || 5, itemsOf(s).length) || 1;
+      break;
     default: return;                       // unknown type → not ours; leave alone
   }
 }
@@ -2823,6 +3650,7 @@ function appendDataExercises(sec){
     if(ex.type === "match")  sec["_mx_" + ex.id] = ex.items;
     if(ex.type === "build")  sec["_bd_" + ex.id] = ex.items;
     if(ex.type === "listen") sec["_ls_" + ex.id] = ex.items;
+    if(ex.type === "recall") sec["_rc_" + ex.id] = ex.items;
     wireDataExercise(sec, ex);
     if(STEP_RENDERERS[sec.id + ":" + ex.id] && !flow.includes(ex.id)) flow.push(ex.id);
   });
@@ -2933,6 +3761,12 @@ function renderSection(lid, sid, step, idx){
   if(stepIdx === 0 && idx === 0){
     State.sectionStartXp[lid+":"+sid] = State.xp;
   }
+  // Adopt the section, resetting ONLY when it is a different one from the one
+  // being scored. This must not key off "first step", because Previous can walk
+  // back to the first step: a learner who answered everything, went back to
+  // re-read the opening card and tapped forward would have had their whole run
+  // wiped and been told they skipped the exercises.
+  ensureSectionScore(lid+":"+sid);
   if(flow.length){
     root.appendChild(progressBar(Math.round((stepIdx/flow.length)*100)));
   }
@@ -2946,6 +3780,12 @@ function renderSection(lid, sid, step, idx){
     return;
   }
   const _beforeRenderer = root.childElementCount;
+  // Tell the award helpers which item is on screen, and — if this renderer is one
+  // that can award XP — record that an answerable item was SHOWN. That's what
+  // makes tapping "Next" past an exercise count against the completion bonus:
+  // the item lands in `seen` but never in `answered`.
+  CurrentStepKey = step + ":" + idx;
+  if(renderer.scored) markSeen();
   renderer(root, sec, idx, ()=>nextStep(lid, sid, step, idx, sec, flow));
   // Guarantee the section's intro shows on its FIRST screen, whatever the
   // renderer does. Skip if the renderer already printed it (no duplicates).
@@ -3035,10 +3875,20 @@ function nextStep(lid, sid, step, idx, sec, flow){
     go("/lesson/"+lid+"/section/"+sid+"/"+flow[i+1]+"/0");
   } else {
     setSectionProgress(lid, sid, 100);
-    addXp(20);
+    // The completion bonus is EARNED, not automatic. It scales with the share of
+    // answerable items that actually got an answer, so pressing "Next" through a
+    // section without answering anything now pays nothing — which is what a
+    // reviewer (rightly) called out as making the whole XP number meaningless.
+    const result = sectionBonus();
+    if(result.bonus > 0) addXp(result.bonus);
+    // A section worked through properly counts as practising today, so the
+    // streak tracks learning generally and not just the review queue. It requires
+    // an actual ANSWER: study-only sections (flashcards, grammar rules) still earn
+    // their XP bonus, but pressing Next through cards must not sustain a streak.
+    if(result.answered > 0) markPractice();
     const baseline = State.sectionStartXp[lid+":"+sid];
-    const earned = (typeof baseline === "number") ? (State.xp - baseline) : 20;
-    showSectionDone(lid, sid, earned);
+    const earned = (typeof baseline === "number") ? (State.xp - baseline) : result.bonus;
+    showSectionDone(lid, sid, earned, result);
   }
 }
 
@@ -3097,7 +3947,7 @@ function findNext(lid, sid){
   return { nextSid, nextLid };
 }
 
-function showSectionDone(lid, sid, earnedXp){
+function showSectionDone(lid, sid, earnedXp, result){
   // Backwards-compatible: `sid` was added when we introduced the
   // next-section/next-lesson buttons; legacy callers pass earnedXp as the
   // second arg, so detect that shape and swap.
@@ -3110,14 +3960,22 @@ function showSectionDone(lid, sid, earnedXp){
   root.appendChild(topbar(t.done, "/lesson/"+lid));
   const { nextSid, nextLid } = findNext(lid, sid);
   const lessonDone = !nextSid;       // last section of the lesson?
+  // Don't congratulate someone who skipped: the celebration used to fire
+  // identically whether they'd answered everything or tapped straight through.
+  const skipped = !!(result && result.skipped);
+  const partial = !!(result && !result.skipped && result.ratio < ENGAGE_TARGET);
   const ds = el("div","done-screen");
-  ds.appendChild(el("div","emoji","🎉"));
-  ds.appendChild(el("h1","", lessonDone ? t.lessonComplete : t.sectionComplete));
-  ds.appendChild(el("p","",t.brilliantWork));
+  ds.appendChild(el("div","emoji", skipped ? "➡️" : "🎉"));
+  ds.appendChild(el("h1","", skipped ? t.sectionSkipped
+    : (lessonDone ? t.lessonComplete : t.sectionComplete)));
+  // A vocabulary or grammar screen has no exercises to skip, so the message has
+  // to name what it DOES want: tapping the audio.
+  const skipMsg = (result && result.studyOnly) ? t.skippedListening : t.skippedWork;
+  ds.appendChild(el("p","", skipped ? skipMsg : (partial ? t.partialWork : t.brilliantWork)));
   const stats = el("div","stats");
-  // Fall back to +20 (the section bonus) if the caller didn't pass a baseline,
-  // so legacy callers / external nav still produce a sensible display.
-  const earnedLabel = "+" + (typeof earnedXp === "number" ? earnedXp : 20);
+  // Fall back to the full bonus if the caller didn't pass a baseline, so legacy
+  // callers / external nav still produce a sensible display.
+  const earnedLabel = "+" + (typeof earnedXp === "number" ? earnedXp : SECTION_BONUS);
   const s1 = el("div","stat"); s1.appendChild(el("strong","",earnedLabel)); s1.appendChild(el("span","",t.xpEarned));
   const s2 = el("div","stat"); s2.appendChild(el("strong","",String(State.xp))); s2.appendChild(el("span","",t.totalXp));
   stats.appendChild(s1); stats.appendChild(s2);
@@ -3361,7 +4219,19 @@ function skipBtn(onNext){ return document.createComment("nav"); }
 // step with a fresh shuffle) instead of being pushed straight on.
 function makeListenStep(field){
   const render = (root, sec, idx, onNext) => {
-    const items = sec[field];
+    // Audio-only exercise, so items with no clip are unanswerable. Text can and
+    // does arrive over the air ahead of its audio (lesson JSON and clips ship on
+    // different cadences), and a restored dialogue starts life with no clips at
+    // all -- serving eight rounds of pure guessing is worse than serving nothing.
+    const items = (sec[field] || []).filter(x => x && audioSrcFor(x.mt));
+    if(items.length < 4){
+      unmarkSeen();
+      const wait = el("div","card");
+      wait.appendChild(el("h3","","Listening practice"));
+      wait.appendChild(el("p","muted","The audio for this section is still on its way. Carry on with the other exercises for now."));
+      root.appendChild(wait);
+      return;
+    }
     const correct = items[idx % items.length];
     const distractors = items.filter(x=>x!==correct).sort(()=>Math.random()-.5).slice(0,3);
     const opts = [correct, ...distractors].sort(()=>Math.random()-.5);
@@ -3378,10 +4248,10 @@ function makeListenStep(field){
       const b = el("button","choice", o.en);
       b.addEventListener("click", ()=>{
         if(o===correct){
-          b.classList.add("right"); addXp(5);
+          b.classList.add("right"); awardCorrect(5);
           showFeedback(true,"Sewwa! Correct.", correct.mt+" → "+correct.en, onNext);
         } else {
-          b.classList.add("wrong");
+          b.classList.add("wrong"); awardWrong();
           // Wrong → offer a retry. showFeedback's button re-renders this step.
           showFeedback(false,"Not quite — try again.", "Tap the speaker again and listen carefully.", retry, {label:"Try again ↺"});
         }
@@ -3393,12 +4263,12 @@ function makeListenStep(field){
     root.appendChild(skipBtn(onNext));
     setTimeout(()=>play(correct.mt), 300);
   };
-  return render;
+  return needs(scored(render), field);
 }
 
 // Tap-to-build sentence
 function makeBuildStep(field){
-  return (root, sec, idx, onNext) => {
+  return needs(scored((root, sec, idx, onNext) => {
     const items = sec[field];
     const item = items[idx % items.length];
     const tokens = item.mt.split(/\s+/);
@@ -3432,15 +4302,15 @@ function makeBuildStep(field){
       const got = placed.map(p=>p.t).join(" ").trim();
       const want = tokens.join(" ").trim();
       if(got===want){
-        addXp(10); play(item.mt);
+        awardCorrect(10); play(item.mt);
         showFeedback(true,"Mela! Spot on.", item.mt+" — "+item.en, onNext);
       } else {
-        showFeedback(false,"Not quite.","Correct: "+item.mt, onNext);
+        awardWrong(); showFeedback(false,"Not quite.","Correct: "+item.mt, onNext);
       }
     });
     root.appendChild(check);
     root.appendChild(skipBtn(onNext));
-  };
+  }), field);
 }
 
 // Slower playback for MC grammar audio. The default -8% SSML rate still feels
@@ -3456,7 +4326,7 @@ const MC_RATE = 0.86;
 function makeBucketSortStep(exId, opts){
   opts = opts || {};
   const N = opts.batch || 6;           // words per round
-  return (root, sec, idx, onNext) => {
+  return scored((root, sec, idx, onNext) => {
     const ex = sec.exercises.find(e=>e.id===exId);
     const buckets = ex.choices.slice();
     // take a batch (idx-based so revisits vary), wrap around
@@ -3515,22 +4385,22 @@ function makeBucketSortStep(exId, opts){
           play(selected.dataset.say || selected.dataset.full);   // reveal full/feminine audio
           const moved = el("span","tile mini", selected.dataset.reveal || selected.textContent);
           bucketEls[b].appendChild(moved);
-          selected.disabled=true; selected=null; placed++; addXp(3);
+          selected.disabled=true; selected=null; placed++; awardCorrect(3);
           if(placed===batch.length){ showFeedback(true,"Sewwa!","All sorted.", onNext); }
         } else {
-          const s=selected; s.classList.add("wrong"); setTimeout(()=>s.classList.remove("wrong","sel"),600); selected=null;
+          awardWrong(); const s=selected; s.classList.add("wrong"); setTimeout(()=>s.classList.remove("wrong","sel"),600); selected=null;
         }
       });
     });
     root.appendChild(skipBtn(onNext));
-  };
+  });
 }
 
 // Article tap-to-build: assemble the full form by tapping the article tile then
 // the word (e.g. id- + dar -> id-dar). Different from the slide multiple-choice;
 // reinforces the sound-doubling. Each item {word, answer(article)}.
 function makeArticleBuildStep(exId){
-  return (root, sec, idx, onNext) => {
+  return scored((root, sec, idx, onNext) => {
     const ex = sec.exercises.find(e=>e.id===exId);
     const item = ex.items[idx % ex.items.length];
     const full = item.answer + item.word;
@@ -3554,14 +4424,14 @@ function makeArticleBuildStep(exId){
         chosenArticle=a; [...pool.children].forEach(c=>c.classList.remove("sel")); t.classList.add("sel");
         built.innerHTML=""; built.appendChild(el("span","tile",a)); built.appendChild(el("span","tile",item.word));
         // auto-check
-        if(a===item.answer){ addXp(5); play(full); showFeedback(true,"Sewwa!", full+(item.en?" — "+item.en:""), onNext); }
-        else { t.classList.add("wrong"); showFeedback(false,"Not quite — try again.", "Listen for the doubled sound.", ()=>{ root.innerHTML=""; STEP_RENDERERS[sec.id+":"+exId]&&makeArticleBuildStep(exId)(root,sec,idx,onNext); }, {label:"Try again ↺"}); }
+        if(a===item.answer){ awardCorrect(5); play(full); showFeedback(true,"Sewwa!", full+(item.en?" — "+item.en:""), onNext); }
+        else { awardWrong(); t.classList.add("wrong"); showFeedback(false,"Not quite — try again.", "Listen for the doubled sound.", ()=>{ root.innerHTML=""; STEP_RENDERERS[sec.id+":"+exId]&&makeArticleBuildStep(exId)(root,sec,idx,onNext); }, {label:"Try again ↺"}); }
       });
       pool.appendChild(t);
     });
     card.appendChild(pool);
     root.appendChild(skipBtn(onNext));
-  };
+  });
 }
 
 function makeMcStep(exId, opts){
@@ -3569,7 +4439,7 @@ function makeMcStep(exId, opts){
   const wordField = opts.wordField || "word";          // field that holds the displayed Maltese
   const subField = opts.subField || "en";              // english/secondary
   const audioCombine = opts.audioCombine || null;      // function(item)->string to play
-  return (root, sec, idx, onNext) => {
+  return scored((root, sec, idx, onNext) => {
     const ex = sec.exercises.find(e=>e.id===exId);
     const item = ex.items[idx % ex.items.length];
     const card = el("div","card");
@@ -3603,11 +4473,11 @@ function makeMcStep(exId, opts){
       const b = el("button","chip", c);
       b.addEventListener("click", ()=>{
         if(c===item.answer){
-          b.classList.add("right"); addXp(5);
+          b.classList.add("right"); awardCorrect(5);
           play(opts.audioAnswer ? answerAudio : audioStr, {rate: MC_RATE});
           showFeedback(true,"Sewwa!", (opts.audioAnswer ? answerAudio : item.answer)+(opts.detailFn? " "+opts.detailFn(item):""), onNext);
         } else {
-          b.classList.add("wrong");
+          b.classList.add("wrong"); awardWrong();
           [...chips.children].forEach(x=>{ if(x.textContent===item.answer) x.classList.add("right"); });
           showFeedback(false,"Not quite.","Correct: "+item.answer, onNext);
         }
@@ -3617,7 +4487,7 @@ function makeMcStep(exId, opts){
     });
     card.appendChild(chips);
     root.appendChild(skipBtn(onNext));
-  };
+  });
 }
 
 // ── Lesson 1 renderers ─────────────────────────
@@ -3678,10 +4548,10 @@ STEP_RENDERERS["alphabet:match"] = (root, sec, idx, onNext) => {
     b.style.fontSize="1.6rem"; b.style.fontWeight="800";
     b.addEventListener("click", ()=>{
       if(o===letter.upper){
-        b.classList.add("right"); addXp(5);
+        b.classList.add("right"); awardCorrect(5);
         showFeedback(true,"Sewwa!", word.mt+" → "+word.en+" (starts with "+letter.upper+")", onNext);
       } else {
-        b.classList.add("wrong");
+        b.classList.add("wrong"); awardWrong();
         showFeedback(false,"Not quite.", word.mt+" starts with "+letter.upper, onNext);
       }
       [...grid.children].forEach(c=>{ if(c!==b) c.classList.add("dim"); c.disabled=true; });
@@ -3788,10 +4658,10 @@ STEP_RENDERERS["days:scramble"] = (root, sec, idx, onNext) => {
     const got = placed.map(p=>p.L).join("").toLowerCase();
     const want = dayName.toLowerCase();
     if(got===want){
-      addXp(10); play(item.mt);
+      awardCorrect(10); play(item.mt);
       showFeedback(true,"Sewwa! "+item.mt, item.en, onNext);
     } else {
-      showFeedback(false,"Not quite.","Correct: "+item.mt, onNext);
+      awardWrong(); showFeedback(false,"Not quite.","Correct: "+item.mt, onNext);
     }
   });
   root.appendChild(check);
@@ -3800,7 +4670,7 @@ STEP_RENDERERS["days:scramble"] = (root, sec, idx, onNext) => {
 
 // Generic match-pairs step
 function makeMatchStep(itemsField, leftField, rightField, headline, getXp){
-  return (root, sec, idx, onNext) => {
+  return needs(scored((root, sec, idx, onNext) => {
     const items = sec[itemsField].slice();
     const card = el("div","card");
     card.appendChild(el("h3","",headline));
@@ -3838,17 +4708,19 @@ function makeMatchStep(itemsField, leftField, rightField, headline, getXp){
       const ok = items.some(i => i[leftField]===l && i[rightField]===r);
       if(ok){
         selL.classList.add("right"); selR.classList.add("right");
-        // Voice ONE side (no overlap): for opposite/synonym matches (rightField
-        // != "en") play the OPPOSITE the learner just matched; for Maltese↔English
-        // matches play the Maltese (left).
-        play(rightField !== "en" && r ? r : l);
+        // Selecting the Maltese tile ALREADY played it, so replaying the same
+        // clip on a successful match is pure repetition -- you hear the word,
+        // tap its English, and hear the identical word again. Opposite/synonym
+        // sets are different: there the match reveals a DIFFERENT word, which is
+        // worth hearing, so those still speak.
+        if(rightField !== "en" && r) play(r);
         matched++; selL=null; selR=null;
         if(matched===items.length){
-          addXp(getXp ? getXp(items) : 15);
+          awardCorrect(getXp ? getXp(items) : 15);
           showFeedback(true,"Perfect!","All matched.", onNext);
         }
       } else {
-        const a=selL,b=selR; a.classList.add("wrong"); b.classList.add("wrong");
+        awardWrong(); const a=selL,b=selR; a.classList.add("wrong"); b.classList.add("wrong");
         setTimeout(()=>{ a.classList.remove("wrong","sel"); b.classList.remove("wrong","sel"); },700);
         selL=null; selR=null;
       }
@@ -3876,7 +4748,7 @@ function makeMatchStep(itemsField, leftField, rightField, headline, getXp){
     wrapper.appendChild(lc); wrapper.appendChild(rc);
     card.appendChild(wrapper);
     root.appendChild(skipBtn(onNext));
-  };
+  }), itemsField);
 }
 
 /* ============================================================
@@ -4033,10 +4905,10 @@ STEP_RENDERERS["pronouns:ex1"] = (root, sec, idx, onNext) => {
     const b = el("button","chip", c);
     b.addEventListener("click", ()=>{
       if(c===item.answer){
-        b.classList.add("right"); addXp(5); play(item.full || item.answer);
+        b.classList.add("right"); awardCorrect(5); play(item.full || item.answer);
         showFeedback(true,"Sewwa!", item.full || (item.answer+" replaces it."), onNext);
       } else {
-        b.classList.add("wrong");
+        b.classList.add("wrong"); awardWrong();
         [...chips.children].forEach(x=>{ if(x.textContent===item.answer) x.classList.add("right"); });
         showFeedback(false,"Not quite.", "Correct: "+item.answer, onNext);
       }
@@ -4140,10 +5012,10 @@ STEP_RENDERERS["family:plurals"] = (root, sec, idx, onNext) => {
     const b = el("button","choice", o);
     b.addEventListener("click", ()=>{
       if(o===item.plural){
-        b.classList.add("right"); addXp(5); play(item.plural);
+        b.classList.add("right"); awardCorrect(5); play(item.plural);
         showFeedback(true,"Sewwa!", item.singular+" → "+item.plural, onNext);
       } else {
-        b.classList.add("wrong");
+        b.classList.add("wrong"); awardWrong();
         showFeedback(false,"Not quite.", "Correct: "+item.plural, onNext);
       }
       [...ch.children].forEach(c=>{ if(c!==b) c.classList.add("dim"); c.disabled=true; });
@@ -4314,10 +5186,10 @@ STEP_RENDERERS["imperative:ex8"] = (root, sec, idx, onNext) => {
     b.dataset.v = c;
     b.addEventListener("click", ()=>{
       if(c===item.answer){
-        b.classList.add("right"); addXp(5); play(item.imperative);
+        b.classList.add("right"); awardCorrect(5); play(item.imperative);
         showFeedback(true,"Sewwa!", item.imperative+" — "+item.answer, onNext);
       } else {
-        b.classList.add("wrong");
+        b.classList.add("wrong"); awardWrong();
         showFeedback(false,"Not quite.","Correct: "+item.answer, onNext);
       }
       [...ch.children].forEach(x=>x.disabled=true);
@@ -4359,10 +5231,10 @@ STEP_RENDERERS["present:ex9"] = (root, sec, idx, onNext) => {
     const b = el("button","chip", c);
     b.addEventListener("click", ()=>{
       if(c===item.answer){
-        b.classList.add("right"); addXp(5); play(item.pronoun + " " + item.answer);
+        b.classList.add("right"); awardCorrect(5); play(item.pronoun + " " + item.answer);
         showFeedback(true,"Sewwa!", item.pronoun+" "+item.answer, onNext);
       } else {
-        b.classList.add("wrong");
+        b.classList.add("wrong"); awardWrong();
         [...ch.children].forEach(x=>{ if(x.textContent===item.answer) x.classList.add("right"); });
         showFeedback(false,"Not quite.","Correct: "+item.answer, onNext);
       }
@@ -4444,16 +5316,19 @@ STEP_RENDERERS["questions:passage"] = (root, sec, idx, onNext) => {
       const qr = el("div","row");
       qr.appendChild(audioBtn(q.q));
       const qw = el("div","grow");
-      qw.appendChild(el("div","mtline", q.q));
-      qw.appendChild(el("div","muted", q.qen));
+      // Passage sizes, not .mtline: .mtline is the EXERCISE PROMPT style at
+      // 1.4rem, so the answers rendered 37% bigger than the passage they belong
+      // to and read as a different kind of content (Dorothy, on device).
+      qw.appendChild(el("div","qa-mt", q.q));
+      qw.appendChild(el("div","qa-en", q.qen));
       qr.appendChild(qw);
       c2.appendChild(qr);
       const ar = el("div","row");
       ar.style.marginTop="8px";
       ar.appendChild(audioBtn(q.a));
       const aw = el("div","grow");
-      aw.appendChild(el("div","mtline", q.a));
-      aw.appendChild(el("div","muted", q.aen));
+      aw.appendChild(el("div","qa-mt", q.a));
+      aw.appendChild(el("div","qa-en", q.aen));
       ar.appendChild(aw);
       c2.appendChild(ar);
       root.appendChild(c2);
@@ -4480,10 +5355,10 @@ STEP_RENDERERS["ghpresent:ex5"] = (root, sec, idx, onNext) => {
     const b = el("button","chip", c);
     b.addEventListener("click", ()=>{
       if(c===item.answer){
-        b.classList.add("right"); addXp(5); play(item.pronoun + " " + item.answer);
+        b.classList.add("right"); awardCorrect(5); play(item.pronoun + " " + item.answer);
         showFeedback(true,"Sewwa!", item.pronoun+" "+item.answer, onNext);
       } else {
-        b.classList.add("wrong");
+        b.classList.add("wrong"); awardWrong();
         [...ch.children].forEach(x=>{ if(x.textContent===item.answer) x.classList.add("right"); });
         showFeedback(false,"Not quite.","Correct: "+item.answer, onNext);
       }
@@ -4508,10 +5383,10 @@ STEP_RENDERERS["ghpresent:ex6"] = (root, sec, idx, onNext) => {
     const b = el("button","chip", c);
     b.addEventListener("click", ()=>{
       if(c===item.answer){
-        b.classList.add("right"); addXp(5); play(item.answer);
+        b.classList.add("right"); awardCorrect(5); play(item.answer);
         showFeedback(true,"Sewwa!", item.answer+" — "+item.en, onNext);
       } else {
-        b.classList.add("wrong");
+        b.classList.add("wrong"); awardWrong();
         [...ch.children].forEach(x=>{ if(x.textContent===item.answer) x.classList.add("right"); });
         showFeedback(false,"Not quite.","Correct: "+item.answer, onNext);
       }
@@ -4621,9 +5496,112 @@ STEP_RENDERERS["particles:examples"] = (root, sec, idx, onNext) => {
 // We use it for time:ex8 because the prompt there is a digital time string like
 // "7:30 pm" which Maltese TTS pronounces wrong; the only audio worth hearing is
 // the Maltese answer ("Is-sebgħa u nofs"), which still plays on a correct pick.
+/* ── Recall: write it in Maltese ─────────────────────────────────────────────
+   Every other exercise in the app is RECOGNITION: pick one of four, or assemble
+   from tiles that are handed to you. Nothing asked the learner to produce
+   Maltese from nothing, which matters for a product aimed at an exam where
+   producing the language is the point.
+
+   Marking is deliberately lenient about diacritics. Typing għ, ħ, ż and ċ on a
+   phone keyboard means switching layouts for almost every Maltese word; marking
+   "ghandi" wrong would teach people to avoid the exercise rather than to spell.
+   The answer is accepted, and the CORRECT spelling is then shown and spoken, so
+   the orthography is taught by exposure instead of by punishment.
+   ────────────────────────────────────────────────────────────────────────── */
+
+// Fold a typed answer to a comparable form: case, Maltese diacritics, curly
+// apostrophes, and end punctuation all stop mattering. Word ORDER and word
+// BOUNDARIES still do, so this stays a real test.
+function normalizeAnswer(s){
+  return (s || "")
+    .toLowerCase()
+    .replace(/[‘’ʼ`]/g, "'")   // curly/modifier apostrophes -> plain
+    .replace(/ġ/g, "g").replace(/ħ/g, "h").replace(/ż/g, "z").replace(/ċ/g, "c")
+    .replace(/['’]/g, "")                // Tista' == tista
+    .replace(/[.,!?;:…]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function makeRecallStep(exId){
+  // Declares the INJECTED field, not "exercises". Section ids are shared across
+  // units (extra1/extra2/u3 all have "work"), and appendDataExercises pushes ids
+  // into the SHARED flow entry. Keyed on "exercises" this step would survive
+  // pruning in any section that merely has some OTHER exercise, and render a
+  // blank screen there.
+  return needs(scored((root, sec, idx, onNext) => {
+    const ex = (sec.exercises || []).find(e => e.id === exId) || {};
+    const items = sec["_rc_" + exId] || ex.items || [];
+    const item = items[idx % items.length];
+    if(!item){ unmarkSeen(); return; }
+    const t = (I18N[State.lang] || I18N.en).recall;
+
+    const card = el("div", "card");
+    card.appendChild(el("h3", "", t.prompt));
+    card.appendChild(el("div", "mtline", item.en));
+    if(item.hint) card.appendChild(el("div", "muted", item.hint));
+
+    const input = document.createElement("input");
+    input.type = "text";
+    input.className = "recall-input";
+    // Phone keyboards will happily "correct" Maltese into English words, which
+    // would mark a right answer wrong. Turn the lot off.
+    input.setAttribute("autocomplete", "off");
+    input.setAttribute("autocapitalize", "off");
+    input.setAttribute("autocorrect", "off");
+    input.setAttribute("spellcheck", "false");
+    input.setAttribute("enterkeyhint", "done");
+    input.placeholder = t.placeholder;
+    input.style.cssText = "width:100%;box-sizing:border-box;margin-top:10px;padding:12px 14px;"
+      + "font-size:1.1rem;border:2px solid rgba(0,0,0,.15);border-radius:12px;background:#fff;";
+    card.appendChild(input);
+    root.appendChild(card);
+
+    let done = false;
+    const submit = () => {
+      if(done) return;
+      const typed = input.value;
+      if(!normalizeAnswer(typed)) return;      // ignore an empty submit
+      done = true;
+      input.disabled = true;
+      const ok = normalizeAnswer(typed) === normalizeAnswer(item.mt);
+      if(ok){
+        input.style.borderColor = "#2e7d32";
+        awardCorrect(8);                       // producing is worth more than picking
+        play(item.mt);
+        showFeedback(true, "Sewwa!", item.mt + " — " + item.en, onNext);
+      } else {
+        input.style.borderColor = "#c62828";
+        awardWrong();
+        // Two strikes. Revealing the answer on the FIRST mistake teaches less
+        // than another attempt does, and a typo should not cost you the item.
+        // awardWrong() already counts attempts per step, so the count survives
+        // the re-render. Second miss reveals the answer and moves on, because
+        // by then another blind guess is not learning anything.
+        const misses = (SectionScore.wrong[CurrentStepKey] || 0);
+        if(misses < 2){
+          // No label: showFeedback re-renders this step itself, which is exactly
+          // the retry we want here -- same item, empty box, answer still hidden.
+          showFeedback(false, t.notQuite, t.tryAgainHint);
+        } else {
+          play(item.mt);
+          showFeedback(false, t.notQuite, t.answerIs + " " + item.mt,
+                       onNext, { label: t.nextBtn });
+        }
+      }
+    };
+    input.addEventListener("keydown", e => { if(e.key === "Enter") submit(); });
+
+    const check = el("button", "btn", t.check);
+    check.addEventListener("click", submit);
+    root.appendChild(check);
+    setTimeout(() => { try { input.focus(); } catch(e){} }, 120);
+  }), "_rc_" + exId);
+}
+
 function makeSentenceMcStep(exId, opts){
   opts = opts || {};
-  return (root, sec, idx, onNext) => {
+  return scored((root, sec, idx, onNext) => {
     const ex = sec.exercises.find(e=>e.id===exId) || sec.exercises[0];
     const item = ex.items[idx % ex.items.length];
     const card = el("div","card");
@@ -4644,10 +5622,10 @@ function makeSentenceMcStep(exId, opts){
       const b = el("button","chip", c);
       b.addEventListener("click", ()=>{
         if(c===item.answer){
-          b.classList.add("right"); addXp(5); play(item.answer, {rate: MC_RATE});
+          b.classList.add("right"); awardCorrect(5); play(item.answer, {rate: MC_RATE});
           showFeedback(true,"Sewwa!", item.answer, onNext);
         } else {
-          b.classList.add("wrong");
+          b.classList.add("wrong"); awardWrong();
           [...ch.children].forEach(x=>{ if(x.textContent===item.answer) x.classList.add("right"); });
           showFeedback(false,"Not quite.","Correct: "+item.answer, onNext);
         }
@@ -4660,7 +5638,7 @@ function makeSentenceMcStep(exId, opts){
     if(!opts.noPromptAudio){
       setTimeout(()=>play(item.sentence, {rate: MC_RATE}), 350);
     }
-  };
+  });
 }
 STEP_RENDERERS["particles:ex7"] = makeSentenceMcStep("ex7");
 
@@ -4937,6 +5915,23 @@ STEP_RENDERERS["grammar10:rules"] = renderGrammarRulesStep;
 STEP_RENDERERS["grammar11:rules"] = renderGrammarRulesStep;
 STEP_RENDERERS["grammar12:rules"] = renderGrammarRulesStep;
 
+// The hand-written exercise renderers (the ones not produced by a scored()
+// factory above). Tagging by key rather than wrapping each definition keeps the
+// list readable and travels with the function object, so the aliases
+// ensureSectionRegistered() copies onto other sections stay tagged too.
+// To regenerate after adding an exercise renderer:
+//   awk '/^STEP_RENDERERS\[|^function make/{o=$0} /awardCorrect\(/{print o}' app.js
+["alphabet:match","days:scramble","pronouns:ex1","family:plurals",
+ "imperative:ex8","present:ex9","ghpresent:ex5","ghpresent:ex6",
+].forEach(k => scored(STEP_RENDERERS[k]));
+
+// Hand-written renderers that read one specific section field. The factories
+// declare theirs automatically; these cannot, so they are named here.
+Object.entries({
+  "alphabet:letter": "letters", "alphabet:match": "letters",
+  "alphabet:passage": "passage", "days:scramble": "items",
+}).forEach(([k, f]) => needs(STEP_RENDERERS[k], f));
+
 /* ============================================================
    Observability — Sentry + Plausible
    ============================================================
@@ -5092,6 +6087,11 @@ async function boot(){
     // Register the SW (replaces the inline script in index.html). Will fire a
     // separate orange "Update available" banner whenever a new version lands.
     registerServiceWorker();
+    // Re-arm the daily reminder on every launch. Cheap, and it repairs the two
+    // cases a fire-and-forget schedule would miss: the notification text is
+    // stale after a UI language switch, and a reinstall or OS upgrade can drop
+    // pending notifications entirely. No-ops in the web build.
+    if(reminderStore().on) syncReminder();
     // iOS Safari doesn't fire beforeinstallprompt — trigger the manual instructions
     // a few seconds after first load so it isn't immediately in the user's face.
     if(isIOS() && !isStandalone()){

@@ -582,6 +582,33 @@
               "en": "Abuela"
             }
           ]
+        },
+        {
+          "id": "ex4",
+          "type": "recall",
+          "max": 5,
+          "items": [
+            {
+              "mt": "Ħu",
+              "en": "Hermano"
+            },
+            {
+              "mt": "Omm",
+              "en": "Madre"
+            },
+            {
+              "mt": "Oħt",
+              "en": "Hermana"
+            },
+            {
+              "mt": "Bint",
+              "en": "Hija"
+            },
+            {
+              "mt": "Iben",
+              "en": "Hijo"
+            }
+          ]
         }
       ]
     },

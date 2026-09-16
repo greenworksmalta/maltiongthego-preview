@@ -581,6 +581,33 @@
               "en": "Grandmother"
             }
           ]
+        },
+        {
+          "id": "ex4",
+          "type": "recall",
+          "max": 5,
+          "items": [
+            {
+              "mt": "Ħu",
+              "en": "Brother"
+            },
+            {
+              "mt": "Omm",
+              "en": "Mother"
+            },
+            {
+              "mt": "Oħt",
+              "en": "Sister"
+            },
+            {
+              "mt": "Bint",
+              "en": "Daughter"
+            },
+            {
+              "mt": "Iben",
+              "en": "Son"
+            }
+          ]
         }
       ]
     },
@@ -1142,32 +1169,32 @@
           "items": [
             {
               "mt": "Dan",
-              "en": "This (m)",
+              "en": "This (masculine)",
               "icon": "👆"
             },
             {
               "mt": "Din",
-              "en": "This (f)",
+              "en": "This (feminine)",
               "icon": "👆"
             },
             {
               "mt": "Dawn",
-              "en": "These (pl)",
+              "en": "These (plural)",
               "icon": "👆"
             },
             {
               "mt": "Dak",
-              "en": "That (m)",
+              "en": "That (masculine)",
               "icon": "👇"
             },
             {
               "mt": "Dik",
-              "en": "That (f)",
+              "en": "That (feminine)",
               "icon": "👇"
             },
             {
               "mt": "Dawk",
-              "en": "Those (pl)",
+              "en": "Those (plural)",
               "icon": "👇"
             }
           ],

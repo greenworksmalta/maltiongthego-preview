@@ -314,6 +314,24 @@
               "label": "pl"
             }
           ]
+        },
+        {
+          "en": "arquitecto/a",
+          "icon": "📐",
+          "forms": [
+            {
+              "mt": "perit",
+              "label": "m"
+            },
+            {
+              "mt": "perita",
+              "label": "f"
+            },
+            {
+              "mt": "periti",
+              "label": "pl"
+            }
+          ]
         }
       ],
       "exercises": [

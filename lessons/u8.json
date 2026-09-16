@@ -44,7 +44,7 @@
       "intro": "The drinks you'll order most. Tap any word to hear it.",
       "vocab": [
         {
-          "mt": "kafè",
+          "mt": "kafe",
           "en": "coffee",
           "icon": "☕"
         },
@@ -54,17 +54,17 @@
           "icon": "☕"
         },
         {
-          "mt": "tè",
+          "mt": "te",
           "en": "tea",
           "icon": "🍵"
         },
         {
-          "mt": "kikkra kafè",
+          "mt": "kikkra kafe",
           "en": "a cup of coffee",
           "icon": "☕"
         },
         {
-          "mt": "kafè bil-ħalib",
+          "mt": "kafe bil-ħalib",
           "en": "coffee with milk",
           "icon": "☕"
         },
@@ -113,11 +113,11 @@
           "rightField": "en",
           "items": [
             {
-              "mt": "kafè",
+              "mt": "kafe",
               "en": "coffee"
             },
             {
-              "mt": "tè",
+              "mt": "te",
               "en": "tea"
             },
             {
@@ -135,6 +135,33 @@
             {
               "mt": "birra",
               "en": "beer"
+            }
+          ]
+        },
+        {
+          "id": "ex4",
+          "type": "recall",
+          "max": 5,
+          "items": [
+            {
+              "mt": "te",
+              "en": "tea"
+            },
+            {
+              "mt": "ilma",
+              "en": "water"
+            },
+            {
+              "mt": "kafe",
+              "en": "coffee"
+            },
+            {
+              "mt": "birra",
+              "en": "beer"
+            },
+            {
+              "mt": "inbid",
+              "en": "wine"
             }
           ]
         }
@@ -260,7 +287,7 @@
         },
         {
           "mt": "Kemm jiswa?",
-          "en": "How much is it?",
+          "en": "How much does it cost?",
           "icon": "💶"
         },
         {
@@ -327,7 +354,7 @@
           "explanation": "To add something, use bil- (with). It follows the same Xemxin/Qamrin rule as the article: before most letters it stays bil- (bil-ħalib, bil-lumi), but before a Xemxin letter it doubles (biz-zokkor, with sugar).",
           "examples": [
             {
-              "mt": "kafè bil-ħalib",
+              "mt": "kafe bil-ħalib",
               "en": "coffee with milk"
             },
             {
@@ -351,10 +378,10 @@
           ],
           "items": [
             {
-              "word": "kafè ___ ħalib",
+              "word": "kafe ___ ħalib",
               "answer": "bil-",
               "en": "coffee with milk",
-              "mt": "kafè bil-ħalib"
+              "mt": "kafe bil-ħalib"
             },
             {
               "word": "ilma ___ lumi",
@@ -387,7 +414,7 @@
           "title": "Drinks",
           "items": [
             {
-              "mt": "kafè",
+              "mt": "kafe",
               "en": "coffee",
               "icon": "☕"
             },
@@ -397,17 +424,17 @@
               "icon": "☕"
             },
             {
-              "mt": "tè",
+              "mt": "te",
               "en": "tea",
               "icon": "🍵"
             },
             {
-              "mt": "kikkra kafè",
+              "mt": "kikkra kafe",
               "en": "a cup of coffee",
               "icon": "☕"
             },
             {
-              "mt": "kafè bil-ħalib",
+              "mt": "kafe bil-ħalib",
               "en": "coffee with milk",
               "icon": "☕"
             },
@@ -530,7 +557,7 @@
             },
             {
               "mt": "Kemm jiswa?",
-              "en": "How much is it?",
+              "en": "How much does it cost?",
               "icon": "💶"
             },
             {

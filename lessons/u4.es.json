@@ -389,6 +389,33 @@
               "answer": "Se queda igual"
             }
           ]
+        },
+        {
+          "id": "ex4",
+          "type": "recall",
+          "max": 5,
+          "items": [
+            {
+              "mt": "blu",
+              "en": "azul"
+            },
+            {
+              "mt": "griż",
+              "en": "gris"
+            },
+            {
+              "mt": "roża",
+              "en": "rosa"
+            },
+            {
+              "mt": "abjad",
+              "en": "blanco"
+            },
+            {
+              "mt": "aħdar",
+              "en": "verde"
+            }
+          ]
         }
       ]
     },

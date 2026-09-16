@@ -277,6 +277,35 @@
           "mt": "L-għaxar",
           "en": "Tenth"
         }
+      ],
+      "exercises": [
+        {
+          "id": "ex4",
+          "type": "recall",
+          "max": 5,
+          "items": [
+            {
+              "mt": "tnax",
+              "en": "twelve"
+            },
+            {
+              "mt": "ħdax",
+              "en": "eleven"
+            },
+            {
+              "mt": "sitta",
+              "en": "six"
+            },
+            {
+              "mt": "tnejn",
+              "en": "two"
+            },
+            {
+              "mt": "ħamsa",
+              "en": "five"
+            }
+          ]
+        }
       ]
     },
     {
@@ -358,12 +387,12 @@
         {
           "icon": "💵",
           "mt": "Bil-flus",
-          "en": "with cash"
+          "en": "With cash"
         },
         {
           "icon": "💳",
           "mt": "Bil-karta tal-kreditu",
-          "en": "by (credit) card"
+          "en": "By credit card"
         },
         {
           "icon": "❓",
@@ -811,12 +840,12 @@
             {
               "icon": "💵",
               "mt": "Bil-flus",
-              "en": "with cash"
+              "en": "With cash"
             },
             {
               "icon": "💳",
               "mt": "Bil-karta tal-kreditu",
-              "en": "by (credit) card"
+              "en": "By credit card"
             },
             {
               "icon": "❓",
