@@ -20,7 +20,7 @@ const VERSION = "1.2.0";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "dev1019091906";
+const BUILD = "dev1019092302";
 // Bump ONLY when audio clips are regenerated (re-voiced). Audio filenames are
 // sha1(mt) so a re-voiced clip keeps its name; without a changing query the
 // browser/SW serve the OLD cached audio. play() busts on this.
@@ -100,6 +100,7 @@ const I18N = {
     version: "Version",
     updatedTo: "✓ Updated to version",
     updateAvailable: "↻ Update available — tap to refresh",
+    newLesson: { one: "New lesson added!", many: "New lessons added!", sub: "Fresh content is waiting for you.", open: "Open", later: "Later" },
     privacy: "Privacy",
     install: {
       title: "Add MaltiOnTheGo to your home screen",
@@ -261,6 +262,7 @@ const I18N = {
     version: "Versión",
     updatedTo: "✓ Actualizado a la versión",
     updateAvailable: "↻ Actualización disponible — toca para refrescar",
+    newLesson: { one: "¡Nueva lección!", many: "¡Nuevas lecciones!", sub: "Tienes contenido nuevo esperándote.", open: "Abrir", later: "Más tarde" },
     privacy: "Privacidad",
     install: {
       title: "Añade MaltiOnTheGo a tu pantalla de inicio",
@@ -1267,7 +1269,8 @@ function isNativeApp(){
 }
 
 function maybeShowInstallPrompt(){
-  if(isNativeApp()) return;                          // native app — already "installed", no A2HS prompt
+  if(isNativeApp()) return;
+  if(newLessonPromptOpen()) return;                  // never stack two bottom sheets                          // native app — already "installed", no A2HS prompt
   if(isStandalone()) return;                         // already installed
   if(load("install_dismissed_at")) {
     // Suppress for 14 days after dismissal
@@ -1332,6 +1335,58 @@ function showInstallPrompt(){
   el2.appendChild(actions);
   el2.classList.add("show");
   el2.setAttribute("aria-hidden","false");
+}
+
+// "New lesson added" sheet. The app remembers which lesson ids it has already
+// shown; when an OTA drop adds a unit, the next launch announces it once. The
+// very first run (fresh install, or the first launch of the build that added
+// this) only records what exists, so nobody is told about lessons that are not
+// new to them. Fully data-driven: future drops need no code or content change.
+// Test hook: ?newlesson=<id> treats that one lesson as unseen.
+function newLessonPromptOpen(){
+  const p = document.getElementById("newlesson-prompt");
+  return !!(p && p.classList.contains("show"));
+}
+function maybeShowNewLessons(){
+  const visible = (State.index && State.index.lessons || []).filter(isLessonVisible);
+  const ids = visible.map(L => L.id);
+  let seen = load("seen_lessons");
+  const forced = URL_PARAMS.get("newlesson");   // read early: the unlock param strips the URL
+  if(forced && Array.isArray(seen)) seen = seen.filter(id => id !== forced);
+  // Keep ids no longer listed (a dev-gated unit hidden again), so they are not re-announced.
+  save("seen_lessons", ids.concat((Array.isArray(seen) ? seen : []).filter(id => !ids.includes(id))));
+  if(!Array.isArray(seen)) return;
+  const fresh = visible.filter(L => !seen.includes(L.id));
+  if(fresh.length) showNewLessonPrompt(fresh);
+}
+function showNewLessonPrompt(fresh){
+  const t = (I18N[State.lang] || I18N.en).newLesson;
+  const box = document.getElementById("newlesson-prompt");
+  if(!box) return;
+  box.innerHTML = "";
+  const close = () => { box.classList.remove("show"); box.setAttribute("aria-hidden","true"); };
+  const closeB = el("button","close","×");
+  closeB.setAttribute("aria-label","Close");
+  closeB.addEventListener("click", close);
+  box.appendChild(closeB);
+  box.appendChild(el("h3","", fresh.length > 1 ? t.many : t.one));
+  box.appendChild(el("p","", t.sub));
+  fresh.forEach(L => {
+    const r = el("div","row");
+    r.appendChild(el("div","icon-step", L.icon || "📘"));
+    r.appendChild(el("div","step-text", (State.lang === "es" && L.titleEs) ? L.titleEs : L.title));
+    box.appendChild(r);
+  });
+  const actions = el("div","actions");
+  const later = el("button","", t.later);
+  later.addEventListener("click", close);
+  actions.appendChild(later);
+  const open = el("button","primary", t.open);
+  open.addEventListener("click", () => { close(); go("/lesson/" + fresh[0].id); });
+  actions.appendChild(open);
+  box.appendChild(actions);
+  box.classList.add("show");
+  box.setAttribute("aria-hidden","false");
 }
 
 function dismissInstallPrompt(){
@@ -6068,6 +6123,8 @@ async function boot(){
     // the first render so locked/unlocked cards are correct. No-op on web.
     await Billing.init().catch(e => console.warn("[billing] init", e));
     route();
+    // Announce lessons added since the last launch, once the home screen has settled.
+    setTimeout(() => { try { maybeShowNewLessons(); } catch(e){ console.warn("[new-lesson]", e); } }, 1200);
     // OTA: refresh content in the background. If a NEWER drop is fetched, surface
     // the existing "↻ Update available" banner so the user can apply it with one
     // tap — no hard-close needed. Re-check on every foreground (warm resume) too,
