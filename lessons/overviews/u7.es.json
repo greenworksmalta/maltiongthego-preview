@@ -68,8 +68,11 @@
     {"en": "🗺️ PARTE 3 — DIRECCIONES 🗺️", "kind": "header"},
     {"en": "La forma educada e infalible de pedir indicaciones. Esta frase de apertura funciona siempre:", "kind": "rule"},
     {"mt": "Skużani. Tista' tgħidli fejn hi l-iskola, jekk jogħġbok?"},
-    {"en": "Disculpe. ¿Puede decirme dónde está la escuela, por favor? Nota: **Tista'** significa 'Can you' — la forma educada para hacer una petición. 💡"},
-    {"en": "Concuerda con el género del lugar: usa **hi** para lugares femeninos como l-iskola, y **hu** para masculinos como l-isptar:"},
+    {"en": "Disculpe. ¿Puede decirme dónde está la escuela, por favor? Nota: esa palabra inicial significa 'puedes', la forma educada para hacer una petición. 💡"},
+    {"en": "Concuerda con el género del lugar. Para lugares femeninos, como la escuela, usa:"},
+    {"mt": "hi"},
+    {"en": "y para masculinos, como el hospital, usa:"},
+    {"mt": "hu"},
     {"mt": "Skużi. Tista' tgħidli fejn hu l-isptar, jekk jogħġbok?"},
     {"en": "Disculpe. ¿Puede decirme dónde está el hospital, por favor? 🏥"},
     {"en": "Ahora las palabras de dirección que escucharás en la respuesta. Derecha:"},
@@ -112,7 +115,13 @@
     {"en": "— noreste, sureste, suroeste, noroeste. Siempre en mayúscula al escribir."},
     {"en": "✅ ¡LISTO!", "kind": "win"},
     {"en": "Diálogo de direcciones. Ocho palabras interrogativas. Pedir indicaciones de manera educada. Eso es la Unidad 7."},
-    {"en": "Min, Fejn, Kif — tres de esas ocho cubrirán el 80% de tus preguntas del día a día. Empieza por ahí. 💪"},
+    {"en": "Quién:"},
+    {"mt": "Min"},
+    {"en": "dónde:"},
+    {"mt": "Fejn"},
+    {"en": "cómo:"},
+    {"mt": "Kif"},
+    {"en": "Tres de esas ocho cubrirán el 80% de tus preguntas del día a día. Empieza por ahí. 💪"},
     {"en": "Saħħa! 🇲🇹"}
   ]
 }

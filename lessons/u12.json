@@ -6,7 +6,7 @@
     {
       "id": "shops12",
       "icon": "🏪",
-      "title": "Ħwienet antiki",
+      "title": "Old shops",
       "subtitle": "Old shops and the trades behind them",
       "intro": "Every village had these. Most of the trades have gone, but the words are still on shop signs and street names.",
       "vocab": [
@@ -162,7 +162,7 @@
     {
       "id": "transport12",
       "icon": "🚊",
-      "title": "Mezzi ta' trasport",
+      "title": "Getting around",
       "subtitle": "How Malta got around, then and now",
       "intro": "From a mule and two wooden wheels to the buses and ferries you use today.",
       "vocab": [
@@ -291,7 +291,7 @@
     {
       "id": "nannu12",
       "icon": "👴",
-      "title": "Nitkellmu man-nannu",
+      "title": "Talking to grandad · a chat",
       "subtitle": "Dialogue with a grandfather on how things used to be",
       "intro": "Mary asks her grandfather about old Malta. Listen for kont, it turns up in almost every line.",
       "dialogue": [
@@ -361,7 +361,7 @@
     {
       "id": "kont12",
       "icon": "🕰️",
-      "title": "Grammar · Kont",
+      "title": "The past of to be",
       "subtitle": "The verb kien, and how kont makes 'used to'",
       "intro": "You already know the past endings from kiteb and ħadem. The verb kien takes the same endings.",
       "rules": [
@@ -430,7 +430,7 @@
     {
       "id": "grammar12",
       "icon": "📖",
-      "title": "Grammar · Using kont",
+      "title": "Grammar",
       "subtitle": "Il-grammatika: saying you weren't, and asking about the past",
       "intro": "Three things that make kont useful: saying you weren't, saying there was, and asking someone about their own past.",
       "rules": [

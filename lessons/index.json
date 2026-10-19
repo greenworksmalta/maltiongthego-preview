@@ -198,6 +198,20 @@
    "languages": [
     "en",
     "es"
+   ]
+  },
+  {
+   "id": "u13",
+   "module": "Living in Malta",
+   "moduleEs": "Vivir en Malta",
+   "title": "The Body, Health & a Pharmacy Visit",
+   "titleEs": "Cuerpo, Salud y Visita a la Farmacia",
+   "subtitle": "Naming the body, saying what hurts, and getting what you need at the pharmacy",
+   "subtitleEs": "Nombrar el cuerpo, decir qué duele y conseguir lo que necesitas en la farmacia",
+   "icon": "🩺",
+   "languages": [
+    "en",
+    "es"
    ],
    "dev": true
   }
@@ -207,6 +221,7 @@
   "First Words",
   "Everyday Malti",
   "Out & About",
-  "Home, Work & Grammar"
+  "Home, Work & Grammar",
+  "Living in Malta"
  ]
 }

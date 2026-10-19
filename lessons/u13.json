@@ -1,0 +1,807 @@
+{
+  "id": "u13",
+  "title": "The Body, Health & a Pharmacy Visit",
+  "subtitle": "Naming the body, saying what hurts, and getting what you need at the pharmacy",
+  "sections": [
+    {
+      "id": "body13",
+      "icon": "🦶",
+      "title": "The body",
+      "subtitle": "The parts you will need to point at",
+      "intro": "Start with the words themselves. The pair forms come later in the unit, so for now just learn each one on its own.",
+      "vocab": [
+        {
+          "mt": "ir-ras",
+          "en": "the head",
+          "icon": "🧠",
+          "note": "Uġigħ ta' ras, a headache, is the phrase you will need most."
+        },
+        {
+          "mt": "l-għajn",
+          "en": "the eye",
+          "icon": "👁️",
+          "note": "The pair form għajnejn is the one you will hear most, since eyes come in twos."
+        },
+        {
+          "mt": "il-widna",
+          "en": "the ear",
+          "icon": "👂",
+          "note": "The pair form is widnejn. Uġigħ fil-widna is earache."
+        },
+        {
+          "mt": "l-imnieħer",
+          "en": "the nose",
+          "icon": "👃",
+          "note": "Written with the i: an m at the start of a word, before a consonant, is said im-."
+        },
+        {
+          "mt": "il-ħalq",
+          "en": "the mouth",
+          "icon": "👄",
+          "note": "Also where you point when a tooth hurts."
+        },
+        {
+          "mt": "ix-xagħar",
+          "en": "the hair",
+          "icon": "🦳",
+          "note": "One word for the whole head of hair, not a count of strands."
+        },
+        {
+          "mt": "l-għonq",
+          "en": "the neck",
+          "icon": "🧍",
+          "note": "Plural għenuq. A stiff neck is a common complaint after a long drive."
+        },
+        {
+          "mt": "l-ispalla",
+          "en": "the shoulder",
+          "icon": "💪",
+          "note": "Takes l- with a helping i, like l-iskola. Two shoulders is spallejn."
+        },
+        {
+          "mt": "id-dahar",
+          "en": "the back",
+          "icon": "🧍",
+          "note": "Plural dhur. Uġigħ ta' dahar is back pain."
+        },
+        {
+          "mt": "is-sider",
+          "en": "the chest",
+          "icon": "🫁",
+          "note": "Plural isdra."
+        },
+        {
+          "mt": "iż-żaqq",
+          "en": "the belly",
+          "icon": "🫃",
+          "note": "Plural żquq. Uġigħ ta' żaqq covers most stomach trouble."
+        },
+        {
+          "mt": "l-id",
+          "en": "the hand",
+          "icon": "✋",
+          "note": "There is no ordinary plural, only the pair form idejn."
+        },
+        {
+          "mt": "il-minkeb",
+          "en": "the elbow",
+          "icon": "💪",
+          "note": "The pair form is minkbejn."
+        },
+        {
+          "mt": "il-polz",
+          "en": "the wrist",
+          "icon": "⌚",
+          "note": "Also the word for a pulse."
+        },
+        {
+          "mt": "is-saba'",
+          "en": "the finger",
+          "icon": "👆",
+          "note": "Two fingers is subgħajn, many fingers is swaba'. Note the straight apostrophe."
+        },
+        {
+          "mt": "id-difer",
+          "en": "the nail",
+          "icon": "💅",
+          "note": "Two nails is difrejn, many is dwiefer."
+        },
+        {
+          "mt": "is-sieq",
+          "en": "the foot",
+          "icon": "🦶",
+          "note": "The pair form saqajn is used constantly. riġel is the leg."
+        },
+        {
+          "mt": "l-irkoppa",
+          "en": "the knee",
+          "icon": "🦵",
+          "note": "Pair form irkopptejn, plural irkoppiet."
+        },
+        {
+          "mt": "il-ġilda",
+          "en": "the skin",
+          "icon": "🧴",
+          "note": "No plural, it works like a substance word."
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex1",
+          "type": "listen",
+          "max": 6,
+          "items": [
+            {
+              "mt": "ir-ras",
+              "en": "the head"
+            },
+            {
+              "mt": "l-għonq",
+              "en": "the neck"
+            },
+            {
+              "mt": "l-ispalla",
+              "en": "the shoulder"
+            },
+            {
+              "mt": "id-dahar",
+              "en": "the back"
+            },
+            {
+              "mt": "is-sider",
+              "en": "the chest"
+            },
+            {
+              "mt": "iż-żaqq",
+              "en": "the belly"
+            }
+          ]
+        },
+        {
+          "id": "ex2",
+          "type": "match",
+          "max": 6,
+          "items": [
+            {
+              "mt": "l-id",
+              "en": "the hand"
+            },
+            {
+              "mt": "il-minkeb",
+              "en": "the elbow"
+            },
+            {
+              "mt": "il-polz",
+              "en": "the wrist"
+            },
+            {
+              "mt": "is-saba'",
+              "en": "the finger"
+            },
+            {
+              "mt": "id-difer",
+              "en": "the nail"
+            },
+            {
+              "mt": "is-sieq",
+              "en": "the foot"
+            }
+          ]
+        },
+        {
+          "id": "ex3",
+          "type": "recall",
+          "max": 5,
+          "items": [
+            {
+              "mt": "ir-ras",
+              "en": "the head"
+            },
+            {
+              "mt": "l-għonq",
+              "en": "the neck"
+            },
+            {
+              "mt": "l-ispalla",
+              "en": "the shoulder"
+            },
+            {
+              "mt": "id-dahar",
+              "en": "the back"
+            },
+            {
+              "mt": "is-sider",
+              "en": "the chest"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unwell13",
+      "icon": "🤒",
+      "title": "Feeling rough",
+      "subtitle": "Symptoms, and the words on the pharmacy counter",
+      "intro": "Most complaints in Maltese are built the same way: għandi, I have, followed by the thing that is wrong. Għandi riħ, għandi d-deni, għandi uġigħ ta' ras.",
+      "vocab": [
+        {
+          "mt": "l-uġigħ",
+          "en": "the pain",
+          "icon": "🤕",
+          "note": "Build with ta': uġigħ ta' ras, uġigħ ta' żaqq, uġigħ ta' snien."
+        },
+        {
+          "mt": "id-deni",
+          "en": "the fever",
+          "icon": "🌡️",
+          "note": "Għandi d-deni, I have a temperature."
+        },
+        {
+          "mt": "is-sogħla",
+          "en": "the cough",
+          "icon": "😶‍🌫️",
+          "note": "To cough is nisgħol."
+        },
+        {
+          "mt": "riħ",
+          "en": "a cold",
+          "icon": "🤧",
+          "note": "Għandi riħ, I have a cold. No article. kiesaħ is the weather being cold, not you being ill."
+        },
+        {
+          "mt": "il-griżmejn",
+          "en": "the tonsils",
+          "icon": "🗣️",
+          "note": "Already a pair form, so it never appears on its own."
+        },
+        {
+          "mt": "is-sinna",
+          "en": "the tooth",
+          "icon": "🦷",
+          "note": "Plural snien. Uġigħ ta' snien is toothache."
+        },
+        {
+          "mt": "marid",
+          "en": "ill",
+          "icon": "🤒",
+          "note": "Marid for a man, marida for a woman."
+        },
+        {
+          "mt": "l-ispiżerija",
+          "en": "the pharmacy",
+          "icon": "💊",
+          "note": "Takes l- with a helping i. Open on a village rota on Sundays."
+        },
+        {
+          "mt": "il-mediċina",
+          "en": "the medicine",
+          "icon": "🧪",
+          "note": "Also duwa in everyday speech."
+        },
+        {
+          "mt": "ir-riċetta",
+          "en": "the prescription",
+          "icon": "📝",
+          "note": "Same word as a cooking recipe."
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex1",
+          "type": "listen",
+          "max": 6,
+          "items": [
+            {
+              "mt": "l-uġigħ",
+              "en": "the pain"
+            },
+            {
+              "mt": "id-deni",
+              "en": "the fever"
+            },
+            {
+              "mt": "is-sogħla",
+              "en": "the cough"
+            },
+            {
+              "mt": "riħ",
+              "en": "a cold"
+            },
+            {
+              "mt": "il-griżmejn",
+              "en": "the tonsils"
+            },
+            {
+              "mt": "is-sinna",
+              "en": "the tooth"
+            }
+          ]
+        },
+        {
+          "id": "ex2",
+          "type": "match",
+          "max": 6,
+          "items": [
+            {
+              "mt": "il-griżmejn",
+              "en": "the tonsils"
+            },
+            {
+              "mt": "is-sinna",
+              "en": "the tooth"
+            },
+            {
+              "mt": "marid",
+              "en": "ill"
+            },
+            {
+              "mt": "l-ispiżerija",
+              "en": "the pharmacy"
+            },
+            {
+              "mt": "il-mediċina",
+              "en": "the medicine"
+            },
+            {
+              "mt": "ir-riċetta",
+              "en": "the prescription"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spizerija13",
+      "icon": "💊",
+      "title": "At the pharmacy · a chat",
+      "subtitle": "Mary describes what is wrong and is sent home to rest",
+      "intro": "Every Maltese village has a pharmacy, and the pharmacist is usually the first person you ask. Listen for għandi, it carries almost every symptom in this conversation.",
+      "dialogue": [
+        {
+          "mt": "Bonġu, kif nista' ngħinek?",
+          "en": "Good morning, how can I help you?"
+        },
+        {
+          "mt": "Bonġu. Mhux qed inħossni sew illum.",
+          "en": "Good morning. I don't feel well today."
+        },
+        {
+          "mt": "X'qed tħoss?",
+          "en": "What are you feeling?"
+        },
+        {
+          "mt": "Għandi uġigħ ta' ras u għandi d-deni.",
+          "en": "I have a headache and a temperature."
+        },
+        {
+          "mt": "Minn meta?",
+          "en": "Since when?"
+        },
+        {
+          "mt": "Mil-lbieraħ. Għandi wkoll uġigħ fil-griżmejn.",
+          "en": "Since yesterday. I also have a sore throat (literal translation: pain in the tonsils)."
+        },
+        {
+          "mt": "Qed tiekol sew? Qed torqod sew?",
+          "en": "Are you eating properly? Are you sleeping properly?"
+        },
+        {
+          "mt": "Mhux qed niekol ħafna. Mhux qed norqod sew.",
+          "en": "I'm not eating much. I'm not sleeping well."
+        },
+        {
+          "mt": "Ħu din il-mediċina darbtejn kuljum, u strieħ.",
+          "en": "Take this medicine twice a day, and rest."
+        },
+        {
+          "mt": "Għandi bżonn riċetta?",
+          "en": "Do I need a prescription?"
+        },
+        {
+          "mt": "Le, m'għandekx bżonn riċetta.",
+          "en": "No, you don't need a prescription."
+        },
+        {
+          "mt": "Grazzi ħafna. Saħħa!",
+          "en": "Thank you very much. Bye!"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex4",
+          "type": "build",
+          "max": 5,
+          "items": [
+            {
+              "mt": "Mhux qed inħossni sew",
+              "en": "I am not feeling well"
+            },
+            {
+              "mt": "Għandi uġigħ ta' ras",
+              "en": "I have a headache"
+            },
+            {
+              "mt": "Għandi bżonn riċetta?",
+              "en": "Do I need a prescription?"
+            },
+            {
+              "mt": "Le, m'għandekx bżonn riċetta",
+              "en": "No, you don't need a prescription"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dual13",
+      "icon": "👆",
+      "title": "Ones, twos and manys",
+      "subtitle": "Il-grammatika: the pair form",
+      "intro": "Maltese counts in three steps, not two. This is the step most learners never meet, and the body is where it lives.",
+      "rules": [
+        {
+          "id": "dual-pairs",
+          "title": "Things that come in twos: the pair form",
+          "explanation": "Maltese has a third number sitting between one and many, used when there are exactly two. It usually ends in -ejn or -ajn. Body parts that come as a pair almost always use it, and for some words it is the only form there is: id has no ordinary plural at all, only idejn.",
+          "letters": [
+            "għajn, għajnejn",
+            "id, idejn",
+            "sieq, saqajn",
+            "spalla, spallejn",
+            "minkeb, minkbejn",
+            "irkoppa, irkopptejn"
+          ],
+          "examples": [
+            {
+              "mt": "Għajnejja qed juġgħuni",
+              "en": "My eyes hurt"
+            },
+            {
+              "mt": "Għandi uġigħ f'saqajja",
+              "en": "My feet hurt"
+            },
+            {
+              "mt": "Aħsel idejk",
+              "en": "Wash your hands"
+            }
+          ]
+        },
+        {
+          "id": "dual-time",
+          "title": "The pair form is not only for the body",
+          "explanation": "Units of time take it too, which is where you will meet it outside the pharmacy. Once you can hear the -ejn ending you will spot it everywhere.",
+          "letters": [
+            "ġurnata, ġranet",
+            "jum, jumejn",
+            "ġimgħa, ġimagħtejn",
+            "xahar, xahrejn",
+            "sena, sentejn",
+            "siegħa, sagħtejn",
+            "darba, darbtejn"
+          ],
+          "examples": [
+            {
+              "mt": "Ħu l-mediċina darbtejn kuljum",
+              "en": "Take the medicine twice a day"
+            },
+            {
+              "mt": "Ilni marid jumejn",
+              "en": "I have been ill for two days"
+            },
+            {
+              "mt": "Se nkun Malta għal ġimagħtejn",
+              "en": "I'm going to be in Malta for two weeks"
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "g13bucket",
+          "type": "bucket",
+          "batch": 6,
+          "title": "One or two?",
+          "instructions": "Sort each word: is it one, or two?",
+          "choices": [
+            "One",
+            "Two"
+          ],
+          "items": [
+            {
+              "word": "id",
+              "answer": "One"
+            },
+            {
+              "word": "idejn",
+              "answer": "Two"
+            },
+            {
+              "word": "sieq",
+              "answer": "One"
+            },
+            {
+              "word": "saqajn",
+              "answer": "Two"
+            },
+            {
+              "word": "ġimgħa",
+              "answer": "One"
+            },
+            {
+              "word": "ġimagħtejn",
+              "answer": "Two"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar13",
+      "icon": "📖",
+      "title": "Grammar",
+      "subtitle": "Il-grammatika: saying no in the present",
+      "intro": "One wrap covers both tenses, which makes this the cheapest piece of grammar in the whole app.",
+      "rules": [
+        {
+          "id": "negative-present",
+          "title": "Saying you don't: the same wrap, in the present",
+          "explanation": "You already wrap the past with ma and x. The present works exactly the same way: ma before the verb, x on the end. Nifhem becomes ma nifhimx, niekol becomes ma nikolx.",
+          "examples": [
+            {
+              "mt": "Ma nifhimx",
+              "en": "I don't understand"
+            },
+            {
+              "mt": "Ma nafx",
+              "en": "I don't know"
+            },
+            {
+              "mt": "Ma nikolx laħam",
+              "en": "I don't eat meat"
+            },
+            {
+              "mt": "Mhux qed inħossni sew",
+              "en": "I am not feeling well"
+            }
+          ]
+        },
+        {
+          "id": "negative-short",
+          "title": "When ma shrinks to m'",
+          "explanation": "Before a vowel, an għ or an h, ma drops its own vowel and joins on with an apostrophe. You have already used two of these without thinking about it: m'għandix and m'hemmx.",
+          "examples": [
+            {
+              "mt": "M'għandix deni",
+              "en": "I don't have a temperature"
+            },
+            {
+              "mt": "M'hawnx spiżerija hawn",
+              "en": "There's no pharmacy here"
+            },
+            {
+              "mt": "M'għandekx bżonn riċetta",
+              "en": "You don't need a prescription"
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "g13build",
+          "type": "build",
+          "max": 5,
+          "items": [
+            {
+              "mt": "Ma nifhimx",
+              "en": "I don't understand"
+            },
+            {
+              "mt": "Ma nikolx laħam",
+              "en": "I don't eat meat"
+            },
+            {
+              "mt": "M'għandix deni",
+              "en": "I don't have a temperature"
+            },
+            {
+              "mt": "M'hawnx spiżerija hawn",
+              "en": "There's no pharmacy here"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "icon": "📖",
+      "title": "Vocabulary",
+      "subtitle": "Everything in this unit",
+      "groups": [
+        {
+          "title": "The body",
+          "items": [
+            {
+              "mt": "ir-ras",
+              "en": "the head",
+              "icon": "🧠",
+              "note": "Uġigħ ta' ras, a headache, is the phrase you will need most."
+            },
+            {
+              "mt": "l-għajn",
+              "en": "the eye",
+              "icon": "👁️",
+              "note": "The pair form għajnejn is the one you will hear most, since eyes come in twos."
+            },
+            {
+              "mt": "il-widna",
+              "en": "the ear",
+              "icon": "👂",
+              "note": "The pair form is widnejn. Uġigħ fil-widna is earache."
+            },
+            {
+              "mt": "l-imnieħer",
+              "en": "the nose",
+              "icon": "👃",
+              "note": "Written with the i: an m at the start of a word, before a consonant, is said im-."
+            },
+            {
+              "mt": "il-ħalq",
+              "en": "the mouth",
+              "icon": "👄",
+              "note": "Also where you point when a tooth hurts."
+            },
+            {
+              "mt": "ix-xagħar",
+              "en": "the hair",
+              "icon": "🦳",
+              "note": "One word for the whole head of hair, not a count of strands."
+            },
+            {
+              "mt": "l-għonq",
+              "en": "the neck",
+              "icon": "🧍",
+              "note": "Plural għenuq. A stiff neck is a common complaint after a long drive."
+            },
+            {
+              "mt": "l-ispalla",
+              "en": "the shoulder",
+              "icon": "💪",
+              "note": "Takes l- with a helping i, like l-iskola. Two shoulders is spallejn."
+            },
+            {
+              "mt": "id-dahar",
+              "en": "the back",
+              "icon": "🧍",
+              "note": "Plural dhur. Uġigħ ta' dahar is back pain."
+            },
+            {
+              "mt": "is-sider",
+              "en": "the chest",
+              "icon": "🫁",
+              "note": "Plural isdra."
+            },
+            {
+              "mt": "iż-żaqq",
+              "en": "the belly",
+              "icon": "🫃",
+              "note": "Plural żquq. Uġigħ ta' żaqq covers most stomach trouble."
+            },
+            {
+              "mt": "l-id",
+              "en": "the hand",
+              "icon": "✋",
+              "note": "There is no ordinary plural, only the pair form idejn."
+            },
+            {
+              "mt": "il-minkeb",
+              "en": "the elbow",
+              "icon": "💪",
+              "note": "The pair form is minkbejn."
+            },
+            {
+              "mt": "il-polz",
+              "en": "the wrist",
+              "icon": "⌚",
+              "note": "Also the word for a pulse."
+            },
+            {
+              "mt": "is-saba'",
+              "en": "the finger",
+              "icon": "👆",
+              "note": "Two fingers is subgħajn, many fingers is swaba'. Note the straight apostrophe."
+            },
+            {
+              "mt": "id-difer",
+              "en": "the nail",
+              "icon": "💅",
+              "note": "Two nails is difrejn, many is dwiefer."
+            },
+            {
+              "mt": "is-sieq",
+              "en": "the foot",
+              "icon": "🦶",
+              "note": "The pair form saqajn is used constantly. riġel is the leg."
+            },
+            {
+              "mt": "l-irkoppa",
+              "en": "the knee",
+              "icon": "🦵",
+              "note": "Pair form irkopptejn, plural irkoppiet."
+            },
+            {
+              "mt": "il-ġilda",
+              "en": "the skin",
+              "icon": "🧴",
+              "note": "No plural, it works like a substance word."
+            }
+          ]
+        },
+        {
+          "title": "Feeling rough",
+          "items": [
+            {
+              "mt": "l-uġigħ",
+              "en": "the pain",
+              "icon": "🤕",
+              "note": "Build with ta': uġigħ ta' ras, uġigħ ta' żaqq, uġigħ ta' snien."
+            },
+            {
+              "mt": "id-deni",
+              "en": "the fever",
+              "icon": "🌡️",
+              "note": "Għandi d-deni, I have a temperature."
+            },
+            {
+              "mt": "is-sogħla",
+              "en": "the cough",
+              "icon": "😶‍🌫️",
+              "note": "To cough is nisgħol."
+            },
+            {
+              "mt": "riħ",
+              "en": "a cold",
+              "icon": "🤧",
+              "note": "Għandi riħ, I have a cold. No article. kiesaħ is the weather being cold, not you being ill."
+            },
+            {
+              "mt": "il-griżmejn",
+              "en": "the tonsils",
+              "icon": "🗣️",
+              "note": "Already a pair form, so it never appears on its own."
+            },
+            {
+              "mt": "is-sinna",
+              "en": "the tooth",
+              "icon": "🦷",
+              "note": "Plural snien. Uġigħ ta' snien is toothache."
+            },
+            {
+              "mt": "marid",
+              "en": "ill",
+              "icon": "🤒",
+              "note": "Marid for a man, marida for a woman."
+            },
+            {
+              "mt": "l-ispiżerija",
+              "en": "the pharmacy",
+              "icon": "💊",
+              "note": "Takes l- with a helping i. Open on a village rota on Sundays."
+            },
+            {
+              "mt": "il-mediċina",
+              "en": "the medicine",
+              "icon": "🧪",
+              "note": "Also duwa in everyday speech."
+            },
+            {
+              "mt": "ir-riċetta",
+              "en": "the prescription",
+              "icon": "📝",
+              "note": "Same word as a cooking recipe."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

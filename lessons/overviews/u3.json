@@ -79,7 +79,8 @@
     {"mt": "Le grazzi"},
     {"en": "The more you stack, the warmer it sounds. There's no upper limit on Maltese politeness! 🌟", "kind": "tip"},
 
-    {"en": "Now the most useful request structure in the whole language — **Tista'…?**", "kind": "rule"},
+    {"en": "Now the most useful request structure in the whole language:", "kind": "rule"},
+    {"mt": "Tista'"},
     {"en": "This word is simply 'you can'. Put any verb after it for a polite ask. Repeat?"},
     {"mt": "Tista' tirrepeti?"},
     {"en": "Help me?"},
@@ -94,7 +95,7 @@
     {"en": "Then switch to English guilt-free. You've already won! 😄"},
 
     {"en": "✅ DONE!", "kind": "win"},
-    {"en": "Help phrases. Nationalities. Politeness through stacking. The Tista' structure. That's Unit 3."},
+    {"en": "Help phrases. Nationalities. Politeness through stacking. The polite request structure. That's Unit 3."},
     {"en": "The exercises will drill these in. Every phrase you learn here makes life in Malta easier. Keep going! 💪"},
     {"en": "Saħħa! 🇲🇹"}
   ]

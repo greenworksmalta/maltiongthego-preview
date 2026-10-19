@@ -7,9 +7,11 @@
     {"en": "Four things today: **counting 1 to 30**, the **tens up to 100**, **money and age**, and the **twelve months**. Plus a grammar twist that surprises most learners. Let's go!"},
 
     {"en": "🛒 PART 1 — BUYING SOMETHING 🛒", "kind": "header"},
-    {"en": "The scene: you're at a pastizzi counter. Pastizzi — those flaky savoury pastries you'll smell everywhere. How much is one?"},
+    {"en": "The scene: you're at a pastry counter, buying these:"},
+    {"mt": "pastizzi"},
+    {"en": "Those flaky savoury pastries you'll smell everywhere. How much is one?"},
     {"mt": "Kemm jiswa dan il-pastizz?"},
-    {"en": "How much is this pastizz? The reply:"},
+    {"en": "How much is this one? The reply:"},
     {"mt": "Tletin ċenteżmu."},
     {"en": "Thirty cents. And if you want two?"},
     {"mt": "U żewġ pastizzi?"},

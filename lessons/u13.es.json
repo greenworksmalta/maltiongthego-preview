@@ -1,0 +1,808 @@
+{
+  "id": "u13",
+  "title": "Cuerpo, Salud y Visita a la Farmacia",
+  "subtitle": "Nombrar el cuerpo, decir qué duele y conseguir lo que necesitas en la farmacia",
+  "lang": "es",
+  "sections": [
+    {
+      "id": "body13",
+      "icon": "🦶",
+      "title": "El cuerpo",
+      "subtitle": "Las partes que vas a necesitar señalar",
+      "intro": "Empieza por las palabras en sí. Las formas de par llegan más adelante en la unidad, así que por ahora aprende cada una por separado.",
+      "vocab": [
+        {
+          "mt": "ir-ras",
+          "en": "la cabeza",
+          "icon": "🧠",
+          "note": "Uġigħ ta' ras, dolor de cabeza, es la frase que más vas a necesitar."
+        },
+        {
+          "mt": "l-għajn",
+          "en": "el ojo",
+          "icon": "👁️",
+          "note": "La forma de par għajnejn es la que más oirás, porque los ojos van de dos en dos."
+        },
+        {
+          "mt": "il-widna",
+          "en": "la oreja",
+          "icon": "👂",
+          "note": "La forma de par es widnejn. Uġigħ fil-widna es dolor de oído."
+        },
+        {
+          "mt": "l-imnieħer",
+          "en": "la nariz",
+          "icon": "👃",
+          "note": "Se escribe con la i: una m al principio de palabra, delante de consonante, se pronuncia im-."
+        },
+        {
+          "mt": "il-ħalq",
+          "en": "la boca",
+          "icon": "👄",
+          "note": "También es donde señalas cuando te duele una muela."
+        },
+        {
+          "mt": "ix-xagħar",
+          "en": "el pelo",
+          "icon": "🦳",
+          "note": "Una sola palabra para todo el pelo, no para contar cabellos."
+        },
+        {
+          "mt": "l-għonq",
+          "en": "el cuello",
+          "icon": "🧍",
+          "note": "Plural għenuq. El cuello rígido es una queja habitual después de un viaje largo en coche."
+        },
+        {
+          "mt": "l-ispalla",
+          "en": "el hombro",
+          "icon": "💪",
+          "note": "Lleva l- con una i de apoyo, como l-iskola. Dos hombros es spallejn."
+        },
+        {
+          "mt": "id-dahar",
+          "en": "la espalda",
+          "icon": "🧍",
+          "note": "Plural dhur. Uġigħ ta' dahar es dolor de espalda."
+        },
+        {
+          "mt": "is-sider",
+          "en": "el pecho",
+          "icon": "🫁",
+          "note": "Plural isdra."
+        },
+        {
+          "mt": "iż-żaqq",
+          "en": "la barriga",
+          "icon": "🫃",
+          "note": "Plural żquq. Uġigħ ta' żaqq sirve para casi cualquier molestia de estómago."
+        },
+        {
+          "mt": "l-id",
+          "en": "la mano",
+          "icon": "✋",
+          "note": "No tiene plural normal, solo la forma de par idejn."
+        },
+        {
+          "mt": "il-minkeb",
+          "en": "el codo",
+          "icon": "💪",
+          "note": "La forma de par es minkbejn."
+        },
+        {
+          "mt": "il-polz",
+          "en": "la muñeca",
+          "icon": "⌚",
+          "note": "También es la palabra para el pulso."
+        },
+        {
+          "mt": "is-saba'",
+          "en": "el dedo",
+          "icon": "👆",
+          "note": "Dos dedos es subgħajn, muchos dedos es swaba'. Fíjate en el apóstrofo recto."
+        },
+        {
+          "mt": "id-difer",
+          "en": "la uña",
+          "icon": "💅",
+          "note": "Dos uñas es difrejn, muchas es dwiefer."
+        },
+        {
+          "mt": "is-sieq",
+          "en": "el pie",
+          "icon": "🦶",
+          "note": "La forma de par saqajn se usa constantemente. riġel es la pierna."
+        },
+        {
+          "mt": "l-irkoppa",
+          "en": "la rodilla",
+          "icon": "🦵",
+          "note": "Forma de par irkopptejn, plural irkoppiet."
+        },
+        {
+          "mt": "il-ġilda",
+          "en": "la piel",
+          "icon": "🧴",
+          "note": "No tiene plural, funciona como una palabra de materia."
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex1",
+          "type": "listen",
+          "max": 6,
+          "items": [
+            {
+              "mt": "ir-ras",
+              "en": "la cabeza"
+            },
+            {
+              "mt": "l-għonq",
+              "en": "el cuello"
+            },
+            {
+              "mt": "l-ispalla",
+              "en": "el hombro"
+            },
+            {
+              "mt": "id-dahar",
+              "en": "la espalda"
+            },
+            {
+              "mt": "is-sider",
+              "en": "el pecho"
+            },
+            {
+              "mt": "iż-żaqq",
+              "en": "la barriga"
+            }
+          ]
+        },
+        {
+          "id": "ex2",
+          "type": "match",
+          "max": 6,
+          "items": [
+            {
+              "mt": "l-id",
+              "en": "la mano"
+            },
+            {
+              "mt": "il-minkeb",
+              "en": "el codo"
+            },
+            {
+              "mt": "il-polz",
+              "en": "la muñeca"
+            },
+            {
+              "mt": "is-saba'",
+              "en": "el dedo"
+            },
+            {
+              "mt": "id-difer",
+              "en": "la uña"
+            },
+            {
+              "mt": "is-sieq",
+              "en": "el pie"
+            }
+          ]
+        },
+        {
+          "id": "ex3",
+          "type": "recall",
+          "max": 5,
+          "items": [
+            {
+              "mt": "ir-ras",
+              "en": "la cabeza"
+            },
+            {
+              "mt": "l-għonq",
+              "en": "el cuello"
+            },
+            {
+              "mt": "l-ispalla",
+              "en": "el hombro"
+            },
+            {
+              "mt": "id-dahar",
+              "en": "la espalda"
+            },
+            {
+              "mt": "is-sider",
+              "en": "el pecho"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unwell13",
+      "icon": "🤒",
+      "title": "Encontrarse mal",
+      "subtitle": "Síntomas y las palabras del mostrador de la farmacia",
+      "intro": "Casi todas las molestias en maltés se dicen igual: għandi, tengo, seguido de lo que te pasa. Għandi riħ, għandi d-deni, għandi uġigħ ta' ras.",
+      "vocab": [
+        {
+          "mt": "l-uġigħ",
+          "en": "el dolor",
+          "icon": "🤕",
+          "note": "Se construye con ta': uġigħ ta' ras, uġigħ ta' żaqq, uġigħ ta' snien."
+        },
+        {
+          "mt": "id-deni",
+          "en": "la fiebre",
+          "icon": "🌡️",
+          "note": "Għandi d-deni, tengo fiebre."
+        },
+        {
+          "mt": "is-sogħla",
+          "en": "la tos",
+          "icon": "😶‍🌫️",
+          "note": "Toser es nisgħol."
+        },
+        {
+          "mt": "riħ",
+          "en": "un resfriado",
+          "icon": "🤧",
+          "note": "Għandi riħ, tengo un resfriado. Sin artículo. kiesaħ es el frío del tiempo, no estar enfermo."
+        },
+        {
+          "mt": "il-griżmejn",
+          "en": "las amígdalas",
+          "icon": "🗣️",
+          "note": "Ya es una forma de par, así que nunca aparece sola."
+        },
+        {
+          "mt": "is-sinna",
+          "en": "el diente",
+          "icon": "🦷",
+          "note": "Plural snien. Uġigħ ta' snien es dolor de muelas."
+        },
+        {
+          "mt": "marid",
+          "en": "enfermo",
+          "icon": "🤒",
+          "note": "Marid para un hombre, marida para una mujer."
+        },
+        {
+          "mt": "l-ispiżerija",
+          "en": "la farmacia",
+          "icon": "💊",
+          "note": "Lleva l- con una i de apoyo. Los domingos abren por turnos entre los pueblos."
+        },
+        {
+          "mt": "il-mediċina",
+          "en": "el medicamento",
+          "icon": "🧪",
+          "note": "En el habla de cada día también se dice duwa."
+        },
+        {
+          "mt": "ir-riċetta",
+          "en": "la receta",
+          "icon": "📝",
+          "note": "La misma palabra que una receta de cocina, igual que en español."
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex1",
+          "type": "listen",
+          "max": 6,
+          "items": [
+            {
+              "mt": "l-uġigħ",
+              "en": "el dolor"
+            },
+            {
+              "mt": "id-deni",
+              "en": "la fiebre"
+            },
+            {
+              "mt": "is-sogħla",
+              "en": "la tos"
+            },
+            {
+              "mt": "riħ",
+              "en": "un resfriado"
+            },
+            {
+              "mt": "il-griżmejn",
+              "en": "las amígdalas"
+            },
+            {
+              "mt": "is-sinna",
+              "en": "el diente"
+            }
+          ]
+        },
+        {
+          "id": "ex2",
+          "type": "match",
+          "max": 6,
+          "items": [
+            {
+              "mt": "il-griżmejn",
+              "en": "las amígdalas"
+            },
+            {
+              "mt": "is-sinna",
+              "en": "el diente"
+            },
+            {
+              "mt": "marid",
+              "en": "enfermo"
+            },
+            {
+              "mt": "l-ispiżerija",
+              "en": "la farmacia"
+            },
+            {
+              "mt": "il-mediċina",
+              "en": "el medicamento"
+            },
+            {
+              "mt": "ir-riċetta",
+              "en": "la receta"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spizerija13",
+      "icon": "💊",
+      "title": "En la farmacia · una charla",
+      "subtitle": "Mary cuenta lo que le pasa y la mandan a casa a descansar",
+      "intro": "Cada pueblo maltés tiene su farmacia, y el farmacéutico suele ser la primera persona a quien preguntas. Fíjate en għandi: lleva casi todos los síntomas de esta conversación.",
+      "dialogue": [
+        {
+          "mt": "Bonġu, kif nista' ngħinek?",
+          "en": "Buenos días, ¿en qué puedo ayudarle?"
+        },
+        {
+          "mt": "Bonġu. Mhux qed inħossni sew illum.",
+          "en": "Buenos días. Hoy no me encuentro bien."
+        },
+        {
+          "mt": "X'qed tħoss?",
+          "en": "¿Qué siente?"
+        },
+        {
+          "mt": "Għandi uġigħ ta' ras u għandi d-deni.",
+          "en": "Tengo dolor de cabeza y fiebre."
+        },
+        {
+          "mt": "Minn meta?",
+          "en": "¿Desde cuándo?"
+        },
+        {
+          "mt": "Mil-lbieraħ. Għandi wkoll uġigħ fil-griżmejn.",
+          "en": "Desde ayer. También me duele la garganta (traducción literal: dolor en las amígdalas)."
+        },
+        {
+          "mt": "Qed tiekol sew? Qed torqod sew?",
+          "en": "¿Come bien? ¿Duerme bien?"
+        },
+        {
+          "mt": "Mhux qed niekol ħafna. Mhux qed norqod sew.",
+          "en": "No estoy comiendo mucho. No estoy durmiendo bien."
+        },
+        {
+          "mt": "Ħu din il-mediċina darbtejn kuljum, u strieħ.",
+          "en": "Tome este medicamento dos veces al día, y descanse."
+        },
+        {
+          "mt": "Għandi bżonn riċetta?",
+          "en": "¿Necesito receta?"
+        },
+        {
+          "mt": "Le, m'għandekx bżonn riċetta.",
+          "en": "No, no necesita receta."
+        },
+        {
+          "mt": "Grazzi ħafna. Saħħa!",
+          "en": "Muchas gracias. ¡Adiós!"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex4",
+          "type": "build",
+          "max": 5,
+          "items": [
+            {
+              "mt": "Mhux qed inħossni sew",
+              "en": "No me encuentro bien"
+            },
+            {
+              "mt": "Għandi uġigħ ta' ras",
+              "en": "Tengo dolor de cabeza"
+            },
+            {
+              "mt": "Għandi bżonn riċetta?",
+              "en": "¿Necesito receta?"
+            },
+            {
+              "mt": "Le, m'għandekx bżonn riċetta",
+              "en": "No, no necesita receta"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dual13",
+      "icon": "👆",
+      "title": "Uno, dos y muchos",
+      "subtitle": "Il-grammatika: la forma de par",
+      "intro": "El maltés cuenta en tres pasos, no en dos. Es el paso que la mayoría de estudiantes nunca llega a ver, y vive en el cuerpo.",
+      "rules": [
+        {
+          "id": "dual-pairs",
+          "title": "Lo que va de dos en dos: la forma de par",
+          "explanation": "El maltés tiene un tercer número entre uno y muchos, que se usa cuando hay exactamente dos. Suele terminar en -ejn o -ajn. Las partes del cuerpo que van en pareja casi siempre lo usan, y en algunas palabras es la única forma que existe: id no tiene plural normal, solo idejn.",
+          "letters": [
+            "għajn, għajnejn",
+            "id, idejn",
+            "sieq, saqajn",
+            "spalla, spallejn",
+            "minkeb, minkbejn",
+            "irkoppa, irkopptejn"
+          ],
+          "examples": [
+            {
+              "mt": "Għajnejja qed juġgħuni",
+              "en": "Me duelen los ojos"
+            },
+            {
+              "mt": "Għandi uġigħ f'saqajja",
+              "en": "Me duelen los pies"
+            },
+            {
+              "mt": "Aħsel idejk",
+              "en": "Lávate las manos"
+            }
+          ]
+        },
+        {
+          "id": "dual-time",
+          "title": "La forma de par no es solo para el cuerpo",
+          "explanation": "Las unidades de tiempo también la usan, y ahí es donde la encontrarás fuera de la farmacia. En cuanto reconozcas la terminación -ejn, la verás por todas partes.",
+          "letters": [
+            "ġurnata, ġranet",
+            "jum, jumejn",
+            "ġimgħa, ġimagħtejn",
+            "xahar, xahrejn",
+            "sena, sentejn",
+            "siegħa, sagħtejn",
+            "darba, darbtejn"
+          ],
+          "examples": [
+            {
+              "mt": "Ħu l-mediċina darbtejn kuljum",
+              "en": "Tómate el medicamento dos veces al día"
+            },
+            {
+              "mt": "Ilni marid jumejn",
+              "en": "Llevo dos días enfermo"
+            },
+            {
+              "mt": "Se nkun Malta għal ġimagħtejn",
+              "en": "Voy a estar en Malta dos semanas"
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "g13bucket",
+          "type": "bucket",
+          "batch": 6,
+          "title": "¿Uno o dos?",
+          "instructions": "Clasifica cada palabra: ¿es uno o dos?",
+          "choices": [
+            "Uno",
+            "Dos"
+          ],
+          "items": [
+            {
+              "word": "id",
+              "answer": "Uno"
+            },
+            {
+              "word": "idejn",
+              "answer": "Dos"
+            },
+            {
+              "word": "sieq",
+              "answer": "Uno"
+            },
+            {
+              "word": "saqajn",
+              "answer": "Dos"
+            },
+            {
+              "word": "ġimgħa",
+              "answer": "Uno"
+            },
+            {
+              "word": "ġimagħtejn",
+              "answer": "Dos"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar13",
+      "icon": "📖",
+      "title": "Gramática",
+      "subtitle": "Il-grammatika: decir que no en presente",
+      "intro": "Un mismo envoltorio sirve para los dos tiempos, así que es la gramática más barata de toda la app.",
+      "rules": [
+        {
+          "id": "negative-present",
+          "title": "Decir que no: el mismo envoltorio, en presente",
+          "explanation": "Ya envuelves el pasado con ma y x. El presente funciona exactamente igual: ma delante del verbo, x al final. Nifhem pasa a ser ma nifhimx, niekol pasa a ser ma nikolx.",
+          "examples": [
+            {
+              "mt": "Ma nifhimx",
+              "en": "No entiendo"
+            },
+            {
+              "mt": "Ma nafx",
+              "en": "No sé"
+            },
+            {
+              "mt": "Ma nikolx laħam",
+              "en": "No como carne"
+            },
+            {
+              "mt": "Mhux qed inħossni sew",
+              "en": "No me encuentro bien"
+            }
+          ]
+        },
+        {
+          "id": "negative-short",
+          "title": "Cuando ma se encoge a m'",
+          "explanation": "Delante de vocal, de għ o de h, ma pierde su vocal y se une con un apóstrofo. Ya has usado dos sin darte cuenta: m'għandix y m'hemmx.",
+          "examples": [
+            {
+              "mt": "M'għandix deni",
+              "en": "No tengo fiebre"
+            },
+            {
+              "mt": "M'hawnx spiżerija hawn",
+              "en": "Aquí no hay farmacia"
+            },
+            {
+              "mt": "M'għandekx bżonn riċetta",
+              "en": "No necesita receta"
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "g13build",
+          "type": "build",
+          "max": 5,
+          "items": [
+            {
+              "mt": "Ma nifhimx",
+              "en": "No entiendo"
+            },
+            {
+              "mt": "Ma nikolx laħam",
+              "en": "No como carne"
+            },
+            {
+              "mt": "M'għandix deni",
+              "en": "No tengo fiebre"
+            },
+            {
+              "mt": "M'hawnx spiżerija hawn",
+              "en": "Aquí no hay farmacia"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "icon": "📖",
+      "title": "Vocabulario",
+      "subtitle": "Todo lo de esta unidad",
+      "groups": [
+        {
+          "title": "El cuerpo",
+          "items": [
+            {
+              "mt": "ir-ras",
+              "en": "la cabeza",
+              "icon": "🧠",
+              "note": "Uġigħ ta' ras, dolor de cabeza, es la frase que más vas a necesitar."
+            },
+            {
+              "mt": "l-għajn",
+              "en": "el ojo",
+              "icon": "👁️",
+              "note": "La forma de par għajnejn es la que más oirás, porque los ojos van de dos en dos."
+            },
+            {
+              "mt": "il-widna",
+              "en": "la oreja",
+              "icon": "👂",
+              "note": "La forma de par es widnejn. Uġigħ fil-widna es dolor de oído."
+            },
+            {
+              "mt": "l-imnieħer",
+              "en": "la nariz",
+              "icon": "👃",
+              "note": "Se escribe con la i: una m al principio de palabra, delante de consonante, se pronuncia im-."
+            },
+            {
+              "mt": "il-ħalq",
+              "en": "la boca",
+              "icon": "👄",
+              "note": "También es donde señalas cuando te duele una muela."
+            },
+            {
+              "mt": "ix-xagħar",
+              "en": "el pelo",
+              "icon": "🦳",
+              "note": "Una sola palabra para todo el pelo, no para contar cabellos."
+            },
+            {
+              "mt": "l-għonq",
+              "en": "el cuello",
+              "icon": "🧍",
+              "note": "Plural għenuq. El cuello rígido es una queja habitual después de un viaje largo en coche."
+            },
+            {
+              "mt": "l-ispalla",
+              "en": "el hombro",
+              "icon": "💪",
+              "note": "Lleva l- con una i de apoyo, como l-iskola. Dos hombros es spallejn."
+            },
+            {
+              "mt": "id-dahar",
+              "en": "la espalda",
+              "icon": "🧍",
+              "note": "Plural dhur. Uġigħ ta' dahar es dolor de espalda."
+            },
+            {
+              "mt": "is-sider",
+              "en": "el pecho",
+              "icon": "🫁",
+              "note": "Plural isdra."
+            },
+            {
+              "mt": "iż-żaqq",
+              "en": "la barriga",
+              "icon": "🫃",
+              "note": "Plural żquq. Uġigħ ta' żaqq sirve para casi cualquier molestia de estómago."
+            },
+            {
+              "mt": "l-id",
+              "en": "la mano",
+              "icon": "✋",
+              "note": "No tiene plural normal, solo la forma de par idejn."
+            },
+            {
+              "mt": "il-minkeb",
+              "en": "el codo",
+              "icon": "💪",
+              "note": "La forma de par es minkbejn."
+            },
+            {
+              "mt": "il-polz",
+              "en": "la muñeca",
+              "icon": "⌚",
+              "note": "También es la palabra para el pulso."
+            },
+            {
+              "mt": "is-saba'",
+              "en": "el dedo",
+              "icon": "👆",
+              "note": "Dos dedos es subgħajn, muchos dedos es swaba'. Fíjate en el apóstrofo recto."
+            },
+            {
+              "mt": "id-difer",
+              "en": "la uña",
+              "icon": "💅",
+              "note": "Dos uñas es difrejn, muchas es dwiefer."
+            },
+            {
+              "mt": "is-sieq",
+              "en": "el pie",
+              "icon": "🦶",
+              "note": "La forma de par saqajn se usa constantemente. riġel es la pierna."
+            },
+            {
+              "mt": "l-irkoppa",
+              "en": "la rodilla",
+              "icon": "🦵",
+              "note": "Forma de par irkopptejn, plural irkoppiet."
+            },
+            {
+              "mt": "il-ġilda",
+              "en": "la piel",
+              "icon": "🧴",
+              "note": "No tiene plural, funciona como una palabra de materia."
+            }
+          ]
+        },
+        {
+          "title": "Encontrarse mal",
+          "items": [
+            {
+              "mt": "l-uġigħ",
+              "en": "el dolor",
+              "icon": "🤕",
+              "note": "Se construye con ta': uġigħ ta' ras, uġigħ ta' żaqq, uġigħ ta' snien."
+            },
+            {
+              "mt": "id-deni",
+              "en": "la fiebre",
+              "icon": "🌡️",
+              "note": "Għandi d-deni, tengo fiebre."
+            },
+            {
+              "mt": "is-sogħla",
+              "en": "la tos",
+              "icon": "😶‍🌫️",
+              "note": "Toser es nisgħol."
+            },
+            {
+              "mt": "riħ",
+              "en": "un resfriado",
+              "icon": "🤧",
+              "note": "Għandi riħ, tengo un resfriado. Sin artículo. kiesaħ es el frío del tiempo, no estar enfermo."
+            },
+            {
+              "mt": "il-griżmejn",
+              "en": "las amígdalas",
+              "icon": "🗣️",
+              "note": "Ya es una forma de par, así que nunca aparece sola."
+            },
+            {
+              "mt": "is-sinna",
+              "en": "el diente",
+              "icon": "🦷",
+              "note": "Plural snien. Uġigħ ta' snien es dolor de muelas."
+            },
+            {
+              "mt": "marid",
+              "en": "enfermo",
+              "icon": "🤒",
+              "note": "Marid para un hombre, marida para una mujer."
+            },
+            {
+              "mt": "l-ispiżerija",
+              "en": "la farmacia",
+              "icon": "💊",
+              "note": "Lleva l- con una i de apoyo. Los domingos abren por turnos entre los pueblos."
+            },
+            {
+              "mt": "il-mediċina",
+              "en": "el medicamento",
+              "icon": "🧪",
+              "note": "En el habla de cada día también se dice duwa."
+            },
+            {
+              "mt": "ir-riċetta",
+              "en": "la receta",
+              "icon": "📝",
+              "note": "La misma palabra que una receta de cocina, igual que en español."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
