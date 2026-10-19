@@ -16,11 +16,11 @@
 //   - VERSION below                    (in-app footer + ?v= cache buster)
 //   - <script src="app.js?v=..."> tag in index.html
 //   - CACHE_NAME in sw.js              (forces SW reinstall)
-const VERSION = "1.2.0";
+const VERSION = "1.3.0";
 // BUILD changes on EVERY content/code push (VERSION stays pinned to the native
 // release). The footer shows it so you can confirm at a glance you're on the
 // latest local/preview build — match it against the sw.js CACHE_NAME suffix.
-const BUILD = "dev1019093118";
+const BUILD = "dev1019094315";
 // Bump ONLY when audio clips are regenerated (re-voiced). Audio filenames are
 // sha1(mt) so a re-voiced clip keeps its name; without a changing query the
 // browser/SW serve the OLD cached audio. play() busts on this.
@@ -1269,6 +1269,9 @@ function isNativeApp(){
 }
 
 function maybeShowInstallPrompt(){
+  // Retired 2026-10-19 (Dorothy): the app ships through the stores, so the browser
+  // "add to home screen" sheet only ever reached testers. Kept dormant, not deleted.
+  return;
   if(isNativeApp()) return;
   if(newLessonPromptOpen()) return;                  // never stack two bottom sheets                          // native app — already "installed", no A2HS prompt
   if(isStandalone()) return;                         // already installed
@@ -1343,6 +1346,7 @@ function showInstallPrompt(){
 // this) only records what exists, so nobody is told about lessons that are not
 // new to them. Fully data-driven: future drops need no code or content change.
 // Test hook: ?newlesson=<id> treats that one lesson as unseen.
+// Index field "newUntil" (optional, per lesson): see the first-run rule below.
 function newLessonPromptOpen(){
   const p = document.getElementById("newlesson-prompt");
   return !!(p && p.classList.contains("show"));
@@ -1355,8 +1359,13 @@ function maybeShowNewLessons(){
   if(forced && Array.isArray(seen)) seen = seen.filter(id => id !== forced);
   // Keep ids no longer listed (a dev-gated unit hidden again), so they are not re-announced.
   save("seen_lessons", ids.concat((Array.isArray(seen) ? seen : []).filter(id => !ids.includes(id))));
-  if(!Array.isArray(seen)) return;
-  const fresh = visible.filter(L => !seen.includes(L.id));
+  // First run records silently, EXCEPT units the index marks "newUntil": "YYYY-MM-DD"
+  // and that date has not passed. That lets the release that adds this popup still
+  // announce the unit shipped alongside it, instead of starting with the next one.
+  const today = new Date().toISOString().slice(0, 10);
+  const fresh = Array.isArray(seen)
+    ? visible.filter(L => !seen.includes(L.id))
+    : visible.filter(L => L.newUntil && L.newUntil >= today);
   if(fresh.length) showNewLessonPrompt(fresh);
 }
 function showNewLessonPrompt(fresh){
