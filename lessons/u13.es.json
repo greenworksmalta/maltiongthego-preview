@@ -48,12 +48,6 @@
           "note": "Una sola palabra para todo el pelo, no para contar cabellos."
         },
         {
-          "mt": "l-għonq",
-          "en": "el cuello",
-          "icon": "🧍",
-          "note": "Plural għenuq. El cuello rígido es una queja habitual después de un viaje largo en coche."
-        },
-        {
           "mt": "l-ispalla",
           "en": "el hombro",
           "icon": "💪",
@@ -137,8 +131,8 @@
               "en": "la cabeza"
             },
             {
-              "mt": "l-għonq",
-              "en": "el cuello"
+              "mt": "l-għajn",
+              "en": "el ojo"
             },
             {
               "mt": "l-ispalla",
@@ -199,8 +193,8 @@
               "en": "la cabeza"
             },
             {
-              "mt": "l-għonq",
-              "en": "el cuello"
+              "mt": "l-għajn",
+              "en": "el ojo"
             },
             {
               "mt": "l-ispalla",
@@ -656,12 +650,6 @@
               "en": "el pelo",
               "icon": "🦳",
               "note": "Una sola palabra para todo el pelo, no para contar cabellos."
-            },
-            {
-              "mt": "l-għonq",
-              "en": "el cuello",
-              "icon": "🧍",
-              "note": "Plural għenuq. El cuello rígido es una queja habitual después de un viaje largo en coche."
             },
             {
               "mt": "l-ispalla",

@@ -47,12 +47,6 @@
           "note": "One word for the whole head of hair, not a count of strands."
         },
         {
-          "mt": "l-għonq",
-          "en": "the neck",
-          "icon": "🧍",
-          "note": "Plural għenuq. A stiff neck is a common complaint after a long drive."
-        },
-        {
           "mt": "l-ispalla",
           "en": "the shoulder",
           "icon": "💪",
@@ -136,8 +130,8 @@
               "en": "the head"
             },
             {
-              "mt": "l-għonq",
-              "en": "the neck"
+              "mt": "l-għajn",
+              "en": "the eye"
             },
             {
               "mt": "l-ispalla",
@@ -198,8 +192,8 @@
               "en": "the head"
             },
             {
-              "mt": "l-għonq",
-              "en": "the neck"
+              "mt": "l-għajn",
+              "en": "the eye"
             },
             {
               "mt": "l-ispalla",
@@ -655,12 +649,6 @@
               "en": "the hair",
               "icon": "🦳",
               "note": "One word for the whole head of hair, not a count of strands."
-            },
-            {
-              "mt": "l-għonq",
-              "en": "the neck",
-              "icon": "🧍",
-              "note": "Plural għenuq. A stiff neck is a common complaint after a long drive."
             },
             {
               "mt": "l-ispalla",
